@@ -20,10 +20,10 @@ Pick a colour by picker, hex, RGB or HSL sliders and ChromaEngine hands back eve
 
 Already have a colour scheme? Add up to five colours and ChromaEngine reads the room:
 
-1. **Palette overview** — a 0–100 behaviour score with a checklist: accessibility, hierarchy, competing accents, value spread, presence of a true neutral, and temperature balance. Roles (ground, ink, lead accent, supports) are assigned automatically
+1. **Palette Health Score** — a 0–100 score built from measurable colour science, not a magic AI number. Dimensions include accessibility (WCAG contrast banding), harmony (best-fit against harmonic templates, e.g. "78% triadic", plus OKLab perceptual spacing, temperature distribution and saturation rhythm), value hierarchy (range, minimum separation, evenness), chroma balance (intentional saturation, colour fatigue), distinctiveness (OKLab ΔE between every pair), practicality (can buttons, links, body text, cards, dark mode and CMYK print actually be built?), flexibility (how many pairings pass contrast), plus brand proxies (memorability, emotional consistency) and focal emphasis. The dimensions and their weights change with the chosen goal — 🧭 General, 🌐 Website, 🎨 Brand, 📱 Social, 📦 Packaging, 📖 Editorial, or 🎭 Fine art, where accessibility all but disappears because it isn't the objective. Roles (ground, ink, lead accent, supports) are assigned automatically
 2. **Observations, not errors** — plain-language notes on what's straining ("Teal and orange are both demanding attention"), each with a concrete suggestion in exact numbers
 3. **One-click fixes** — moves, not replacements: every suggestion keeps the hue exactly where you put it and only nudges saturation or lightness
-4. **Improve but keep my style** — applies all the moves at once and tells you what it bought ("I can improve accessibility by 24% without changing how the brand feels"), with before/after strips and an undo-friendly apply
+4. **Improve but keep my style** — applies all the moves at once and reports the result against the health score ("Overall palette quality improved by 31%"), with 🟢🟡🟠 per-dimension deltas, before/after strips, and an undo-friendly apply
 
 ## Running it
 

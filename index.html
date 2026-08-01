@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Colour families for painters, printmakers, illustrators and designers — build from one colour or analyse an existing palette, with WCAG contrast checks and hue-preserving fixes.">
+<meta name="description" content="Colour harmony explorer with a goal-weighted Palette Health Score — build from one colour or analyse an existing palette across measurable colour-science dimensions.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 <title>Hue Studio — colour families for artists</title>
 <style>
@@ -282,6 +282,23 @@
   .role-li .dot { height: 2rem; width: 2rem; flex-shrink: 0; border: 1px solid var(--border); border-radius: var(--radius); }
   .role-li .grow { min-width: 0; flex: 1; }
 
+  /* ---------- analyse: health score breakdown ---------- */
+  .goal-row { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+  .breakdown { list-style: none; margin: 2rem 0 0; padding: 0; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
+  .breakdown li {
+    display: grid; grid-template-columns: 1.4rem 1fr auto auto; gap: .25rem .75rem; align-items: baseline;
+    padding: .65rem 1rem; border-bottom: 1px solid var(--border);
+  }
+  .breakdown li:last-child { border-bottom: 0; }
+  .breakdown .b-label { font-size: .875rem; }
+  .breakdown .b-score { font-family: var(--font-display); font-size: 1.35rem; text-align: right; }
+  .breakdown .b-meta { grid-column: 1 / -1; }
+  .b-bar { height: 4px; background: var(--border); border-radius: 99px; overflow: hidden; margin-top: .35rem; }
+  .b-bar span { display: block; height: 100%; background: var(--ink); }
+  .delta-list { list-style: none; margin: 1.25rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .4rem; }
+  .delta-list li { font-size: .9rem; display: flex; gap: .6rem; align-items: baseline; }
+  .delta-list .d-num { font-family: var(--font-mono); font-size: .8rem; margin-left: auto; }
+
   /* ---------- analyse: observations ---------- */
   .obs-cards { display: flex; flex-direction: column; gap: 1rem; }
   .obs-card {
@@ -475,7 +492,9 @@
     </section>
 
     <section class="step">
-      <h2 class="label-caps step-label">02 — Palette overview</h2>
+      <h2 class="label-caps step-label">02 — Palette health</h2>
+      <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1rem">Every dimension is measured from colour science — WCAG ratios, OKLab distances, value gaps — then weighted for what the palette is for.</p>
+      <div class="goal-row" id="palGoals" role="group" aria-label="Score the palette for"></div>
       <div class="overview-grid">
         <div id="palGauge"></div>
         <div>
@@ -487,6 +506,7 @@
           <ul class="list-panel" id="palRoles" style="margin-top:.75rem"></ul>
         </div>
       </div>
+      <ul class="breakdown" id="palBreakdown"></ul>
     </section>
 
     <section class="step">
@@ -1308,6 +1328,7 @@ function wireThemeControls() {
 /* ============ palette analysis (Analyse mode) ============ */
 const EXAMPLE_PALETTE = ["#C8452B", "#1F5F5B", "#E4A11B", "#F7F3EA", "#2A2118"];
 let palette = [...EXAMPLE_PALETTE];
+let analyseGoal = "general";
 
 const hueDist = (a, b) => { const d = Math.abs(a - b) % 360; return d > 180 ? 360 - d : d; };
 const isWarmHue = (h) => { const hh = ((h % 360) + 360) % 360; return hh < 60 || hh >= 260; };
@@ -1540,6 +1561,228 @@ function improvePalette(hexes) {
   return { improved, applied, pct, scoreBefore: before.score, scoreAfter: analysePalette(improved).score };
 }
 
+/* ============ Palette Health Score (multi-dimensional, goal-weighted) ============ */
+const meanOf = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0);
+const stdevOf = (a) => { if (a.length < 2) return 0; const m = meanOf(a); return Math.sqrt(meanOf(a.map((v) => (v - m) * (v - m)))); };
+
+/* sRGB → OKLab, for perceptual spacing and ΔE */
+function hexToOklab(hex) {
+  const rgb = hexToRgb(hex) ?? { r: 0, g: 0, b: 0 };
+  const f = (v) => { v /= 255; return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
+  const r = f(rgb.r), g = f(rgb.g), b = f(rgb.b);
+  const l = Math.cbrt(0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b);
+  const m = Math.cbrt(0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b);
+  const s = Math.cbrt(0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b);
+  return {
+    L: 0.2104542553 * l + 0.793617785 * m - 0.0040720468 * s,
+    a: 1.9779984951 * l - 2.428592205 * m + 0.4505937099 * s,
+    b2: 0.0259040371 * l + 0.7827717662 * m - 0.808675766 * s,
+  };
+}
+const dOk = (p, q) => Math.hypot(p.L - q.L, p.a - q.a, p.b2 - q.b2);
+const dOkAB = (p, q) => Math.hypot(p.a - q.a, p.b2 - q.b2);
+
+/* How close is the set of hues to a recognised harmonic structure? */
+const HARMONY_TEMPLATES = [
+  ["monochromatic", [0]],
+  ["analogous", [0, 30, -30]],
+  ["complementary", [0, 180]],
+  ["split-complementary", [0, 150, 210]],
+  ["triadic", [0, 120, 240]],
+  ["tetradic", [0, 90, 180, 270]],
+];
+function hueTemplateFit(hues) {
+  if (hues.length <= 1) return { name: "monochromatic", fit: 100 };
+  let best = { name: "free-form", fit: 0 };
+  for (const [name, offs] of HARMONY_TEMPLATES) {
+    for (const anchor of hues) {
+      const devs = hues.map((h) => Math.min(...offs.map((o) => hueDist(h, anchor + o))));
+      const fit = Math.max(0, Math.round(100 - meanOf(devs) * (100 / 40)));
+      if (fit > best.fit) best = { name, fit };
+    }
+  }
+  return best;
+}
+
+function temperatureScore(items) {
+  const sat = items.filter((it) => it.hsl.s >= 20);
+  if (!sat.length) return { score: 70, note: "temperature neutral" };
+  const warm = sat.filter((it) => isWarmHue(it.hsl.h)).length;
+  const cool = sat.length - warm;
+  if (warm && cool) return { score: 100, note: warm + " warm · " + cool + " cool" };
+  const lean = warm ? "warm" : "cool";
+  if (items.some((it) => it.hsl.s <= 12)) return { score: 75, note: "leans " + lean + ", neutral relief" };
+  return { score: 50, note: "all " + lean + ", no relief" };
+}
+
+function computeMetrics(hexes, goal) {
+  const R = assignRoles(hexes);
+  const items = R.items.map((it) => ({ ...it, ok: hexToOklab(it.hex) }));
+  const n = items.length;
+  const byId = {};
+  const put = (id, score, note) => { byId[id] = { score: clamp(Math.round(score), 0, 100), note }; };
+
+  /* -- accessibility: WCAG banding -- */
+  const inkR = contrastHex(R.ink.hex, R.ground.hex);
+  const accentsOk = R.accents.every((a) => contrastHex(a.hex, R.ground.hex) >= WCAG.uiAA);
+  let acc;
+  if (inkR >= 7) acc = accentsOk ? 100 : 88;
+  else if (inkR >= 4.5) acc = accentsOk ? 90 : 78;
+  else if (inkR >= 3) acc = 65;
+  else if (inkR >= 2) acc = 40;
+  else acc = Math.max(0, Math.round((inkR - 1) * 40));
+  put("accessibility", acc, "ink " + inkR.toFixed(1) + ":1 on the ground");
+
+  /* -- harmony: template fit 40 / perceptual spacing 30 / temperature 20 / saturation rhythm 10 -- */
+  const sat = items.filter((it) => it.hsl.s >= 20);
+  const fit = hueTemplateFit(sat.map((it) => it.hsl.h));
+  let closeAB = 0;
+  for (let i = 0; i < sat.length; i++) for (let j = i + 1; j < sat.length; j++)
+    if (dOkAB(sat[i].ok, sat[j].ok) < 0.04) closeAB++;
+  const spacing = clamp(100 - closeAB * 45, 0, 100);
+  const temp = temperatureScore(items);
+  const gaps0 = [...items.map((it) => it.hsl.s)].sort((a, b) => b - a);
+  const sGaps = gaps0.slice(1).map((v, i) => gaps0[i] - v);
+  const cvS = meanOf(sGaps) > 0 ? stdevOf(sGaps) / meanOf(sGaps) : 0;
+  const rhythm = clamp(100 - cvS * 35, 40, 100);
+  put("harmony", 0.4 * fit.fit + 0.3 * spacing + 0.2 * temp.score + 0.1 * rhythm, fit.fit + "% " + fit.name);
+
+  /* -- value hierarchy: range / minimum separation / evenness, goal-tuned -- */
+  const tgt = goal === "art" ? { range: 40, minGap: 6 }
+    : (goal === "website" || goal === "brand" || goal === "packaging") ? { range: 60, minGap: 10 }
+    : { range: 55, minGap: 8 };
+  const Ls = items.map((it) => it.hsl.l).sort((a, b) => a - b);
+  const range = Ls[Ls.length - 1] - Ls[0];
+  const lGaps = Ls.slice(1).map((v, i) => v - Ls[i]);
+  const minGap = lGaps.length ? Math.min(...lGaps) : 0;
+  const cvL = meanOf(lGaps) > 0 ? stdevOf(lGaps) / meanOf(lGaps) : 1;
+  const hier = 0.45 * Math.min(range / tgt.range, 1) * 100 + 0.3 * Math.min(minGap / tgt.minGap, 1) * 100 + 0.25 * clamp(100 - cvL * 55, 0, 100);
+  put("hierarchy", hier, "range " + Math.round(range) + " L · min gap " + Math.round(minGap));
+
+  /* -- chroma balance: intentional saturation, not maximum saturation -- */
+  const Ss = items.map((it) => it.hsl.s).sort((a, b) => b - a);
+  const screamers = Ss.filter((s) => s > 75).length;
+  let chr = 55;
+  const dom = (Ss[0] ?? 0) - (Ss[1] ?? 0);
+  if (dom >= 18) chr += 25;
+  else if ((Ss[0] ?? 0) < 45) chr += 18;
+  const sdS = stdevOf(Ss);
+  if (sdS >= 8 && sdS <= 40) chr += 12;
+  if (screamers >= 3) chr -= 30; else if (screamers === 2) chr -= 10;
+  put("chroma", chr, dom >= 18 ? "one lead at S " + Math.round(Ss[0]) : screamers >= 3 ? screamers + " colours over S 75" : "σ " + Math.round(sdS));
+
+  /* -- distinctiveness: OKLab ΔE between every pair -- */
+  let dmin = Infinity, dsum = 0, pairs = 0;
+  for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) {
+    const d = dOk(items[i].ok, items[j].ok);
+    dmin = Math.min(dmin, d); dsum += d; pairs++;
+  }
+  const davg = pairs ? dsum / pairs : 1;
+  if (!isFinite(dmin)) dmin = 1;
+  put("distinct", ((dmin - 0.02) / 0.10) * 75 + Math.min(davg / 0.35, 1) * 25, "closest pair ΔE " + dmin.toFixed(2));
+
+  /* -- practicality: can real components be built from this? -- */
+  const g = R.ground.hex;
+  const jobs = [
+    ["buttons", R.accents.some((a) => contrastHex(inkFor(a.hex), a.hex) >= WCAG.bodyAA && contrastHex(a.hex, g) >= WCAG.uiAA)],
+    ["links", R.accents.some((a) => contrastHex(a.hex, g) >= WCAG.bodyAA)],
+    ["body text", inkR >= WCAG.bodyAA],
+    ["cards", items.some((it) => it !== R.ground && Math.abs(it.hsl.l - R.ground.hsl.l) <= 18 && contrastHex(R.ink.hex, it.hex) >= WCAG.bodyAA)],
+    ["dark mode", items.some((d) => d.hsl.l <= 25 && items.some((l2) => contrastHex(l2.hex, d.hex) >= WCAG.bodyAA))],
+    ["CMYK print", !items.some((it) => it.hsl.s > 85 && it.hsl.l > 45)],
+    ["visibility", !items.some((it) => it !== R.ground && contrastHex(it.hex, g) < 1.15)],
+  ];
+  const jobsPassed = jobs.filter((j) => j[1]).length;
+  put("practical", (jobsPassed / jobs.length) * 100, jobsPassed + " of " + jobs.length + " jobs possible");
+  byId.practical.jobs = jobs;
+
+  /* -- flexibility: how many pairings actually work -- */
+  let textPairs = 0, uiPairs = 0;
+  for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) {
+    const r = contrastHex(items[i].hex, items[j].hex);
+    if (r >= WCAG.bodyAA) textPairs++;
+    else if (r >= WCAG.uiAA) uiPairs++;
+  }
+  put("flex", ((textPairs + 0.3 * uiPairs) / (pairs * 0.5 || 1)) * 100, textPairs + " of " + pairs + " pairings read as text");
+
+  /* -- readability: long-form comfort -- */
+  const hasNeutral = items.some((it) => it.hsl.s <= 12);
+  put("readability", 0.75 * acc + 0.25 * (hasNeutral ? 100 : R.ground.hsl.s <= 20 ? 70 : 40),
+    hasNeutral ? "true neutral present" : "no neutral ground");
+
+  /* -- focal emphasis / focus visibility -- */
+  const lead = R.accents[0];
+  if (!lead) put("focus", 30, "no saturated accent");
+  else {
+    const lr = contrastHex(lead.hex, g);
+    const ldom = lead.hsl.s - (R.accents[1]?.hsl.s ?? 0);
+    const others = sat.filter((it) => it !== lead);
+    const minHD = others.length ? Math.min(...others.map((o) => hueDist(lead.hsl.h, o.hsl.h))) : 90;
+    put("focus", Math.min(lr / 4.5, 1) * 45 + (ldom >= 18 ? 30 : ldom >= 8 ? 18 : 8) + Math.min(minHD / 40, 1) * 25,
+      "lead " + lr.toFixed(1) + ":1 on ground");
+  }
+
+  /* -- memorability: measurable proxies, no invented psychology -- */
+  if (!lead) put("memorability", 25, "no colour to own");
+  else {
+    let mem = 20;
+    const mdom = lead.hsl.s - (R.accents[1]?.hsl.s ?? 0);
+    if (mdom >= 18 || R.accents.length === 1) mem += 25; else mem += 8;
+    if (lead.hsl.s >= 50) mem += 15;
+    const crowdDist = hueDist(lead.hsl.h, 222);
+    mem += Math.min(crowdDist / 90, 1) * 20;
+    const distinctHues = sat.filter((it, i) => sat.findIndex((o) => hueDist(o.hsl.h, it.hsl.h) < 25) === i).length;
+    mem += distinctHues <= 2 ? 12 : distinctHues === 3 ? 6 : 0;
+    if (range >= 50) mem += 8;
+    put("memorability", mem, "lead hue " + Math.round(crowdDist) + "° from the tech-blue crowd");
+  }
+
+  /* -- emotional consistency: does the palette feel like one voice? -- */
+  const warmN = sat.filter((it) => isWarmHue(it.hsl.h)).length;
+  const mixedTemp = warmN > 0 && warmN < sat.length;
+  let emo = mixedTemp ? 12 : 30;
+  emo += sdS <= 15 ? 25 : Math.max(5, 25 - (sdS - 15));
+  let hueSpread = 0;
+  for (let i = 0; i < sat.length; i++) for (let j = i + 1; j < sat.length; j++)
+    hueSpread = Math.max(hueSpread, hueDist(sat[i].hsl.h, sat[j].hsl.h));
+  emo += hueSpread <= 100 ? 25 : Math.max(5, 25 - (hueSpread - 100) / 6);
+  emo += clamp(100 - cvL * 55, 0, 100) * 0.2;
+  put("emotional", emo, mixedTemp ? "warm and cool mixed" : sat.length ? "one temperature family" : "neutral throughout");
+
+  /* -- temperature (standalone, for fine art) -- */
+  put("temperature", temp.score, temp.note);
+
+  return { byId, R };
+}
+
+const ANALYSE_GOALS = [
+  ["general", "🧭 General"],
+  ["website", "🌐 Website / App"],
+  ["brand", "🎨 Brand identity"],
+  ["social", "📱 Social media"],
+  ["packaging", "📦 Packaging"],
+  ["editorial", "📖 Book / Editorial"],
+  ["art", "🎭 Fine art"],
+];
+const SCORECARDS = {
+  general: [["accessibility", "Accessibility", 20], ["harmony", "Harmony", 15], ["hierarchy", "Value hierarchy", 15], ["distinct", "Distinctiveness", 10], ["flex", "Flexibility", 15], ["practical", "Practicality", 15], ["chroma", "Chroma balance", 10]],
+  website: [["accessibility", "Accessibility", 30], ["readability", "Readability", 20], ["hierarchy", "UI hierarchy", 20], ["focus", "Focus visibility", 15], ["emotional", "Brand consistency", 15]],
+  brand: [["memorability", "Memorability", 25], ["distinct", "Colour distinctiveness", 25], ["emotional", "Emotional consistency", 20], ["practical", "Scalability", 15], ["accessibility", "Accessibility", 15]],
+  social: [["focus", "Focal impact", 25], ["accessibility", "Accessibility", 20], ["distinct", "Distinctiveness", 20], ["chroma", "Chroma balance", 20], ["flex", "Flexibility", 15]],
+  packaging: [["practical", "Practicality", 25], ["harmony", "Harmony", 20], ["distinct", "Distinctiveness", 20], ["hierarchy", "Value hierarchy", 20], ["chroma", "Chroma balance", 15]],
+  editorial: [["readability", "Readability", 30], ["accessibility", "Accessibility", 25], ["emotional", "Emotional consistency", 15], ["hierarchy", "Value hierarchy", 15], ["chroma", "Chroma balance", 15]],
+  art: [["hierarchy", "Value composition", 25], ["harmony", "Colour harmony", 20], ["chroma", "Chroma distribution", 20], ["temperature", "Temperature balance", 20], ["focus", "Focal emphasis", 15]],
+};
+function healthScore(hexes, goal) {
+  const m = computeMetrics(hexes, goal);
+  const card = SCORECARDS[goal] ?? SCORECARDS.general;
+  const rows = card.map(([id, label, weight]) => ({ id, label, weight, score: m.byId[id].score, note: m.byId[id].note }));
+  const overall = Math.round(rows.reduce((sum, r) => sum + r.score * r.weight, 0) / rows.reduce((sum, r) => sum + r.weight, 0));
+  return { overall, rows, metrics: m };
+}
+const scoreLight = (s) => (s >= 80 ? "🟢" : s >= 60 ? "🟡" : s >= 40 ? "🟠" : "🔴");
+const deltaLight = (d) => (d >= 10 ? "🟢" : d >= 5 ? "🟡" : d >= 1 ? "🟠" : "⚪");
+
 /* ---------- analyse mode rendering ---------- */
 function renderPalRows() {
   $("palRows").innerHTML = palette.map((hx, i) =>
@@ -1574,6 +1817,7 @@ function scoreWord(score) {
 }
 function renderAnalysis() {
   const A = analysePalette(palette);
+  const H = healthScore(palette, analyseGoal);
 
   A.R.items.forEach((it) => {
     const tag = $("palRows").querySelector('[data-role="' + it.i + '"]');
@@ -1583,14 +1827,27 @@ function renderAnalysis() {
   $("palStrip").innerHTML = stripHtml(A.R.items.map((it) => ({ hex: it.hex, label: A.R.role.get(it) ?? "" })), false);
   wireStrips($("palStrip"));
 
+  $("palGoals").innerHTML = ANALYSE_GOALS.map(([id, label]) =>
+    '<button type="button" class="btn' + (analyseGoal === id ? " active" : "") + '" data-goal="' + id + '" aria-pressed="' + (analyseGoal === id) + '">' + label + "</button>").join("");
+  $("palGoals").querySelectorAll("[data-goal]").forEach((b) =>
+    b.addEventListener("click", () => { analyseGoal = b.dataset.goal; $("improveResult").innerHTML = ""; renderAnalysis(); }));
+
   const r = 64, c = 2 * Math.PI * r;
   $("palGauge").innerHTML =
     '<div class="gauge">' +
-    '<svg viewBox="0 0 176 176" width="176" height="176" role="img" aria-label="Palette score ' + A.score + ' out of 100">' +
+    '<svg viewBox="0 0 176 176" width="176" height="176" role="img" aria-label="Palette health ' + H.overall + ' out of 100">' +
     '<circle cx="88" cy="88" r="' + r + '" fill="none" stroke="var(--border)" stroke-width="10"></circle>' +
-    '<circle cx="88" cy="88" r="' + r + '" fill="none" stroke="var(--ink)" stroke-width="10" stroke-linecap="round" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + (c * (1 - A.score / 100)).toFixed(1) + '"></circle></svg>' +
-    '<span class="score"><span class="n tnum">' + A.score + '</span><span class="label-caps muted">/ 100</span></span></div>' +
-    '<p class="label-caps" style="text-align:center; margin:.75rem 0 0; max-width:11rem">' + scoreWord(A.score) + "</p>";
+    '<circle cx="88" cy="88" r="' + r + '" fill="none" stroke="var(--ink)" stroke-width="10" stroke-linecap="round" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + (c * (1 - H.overall / 100)).toFixed(1) + '"></circle></svg>' +
+    '<span class="score"><span class="n tnum">' + H.overall + '</span><span class="label-caps muted">/ 100</span></span></div>' +
+    '<p class="label-caps" style="text-align:center; margin:.75rem 0 0; max-width:11rem">' + scoreWord(H.overall) + "</p>";
+
+  $("palBreakdown").innerHTML = H.rows.map((row) =>
+    '<li><span aria-hidden="true">' + scoreLight(row.score) + "</span>" +
+    '<span class="b-label">' + esc(row.label) + "</span>" +
+    '<span class="b-score tnum">' + row.score + "</span>" +
+    '<span class="label-caps muted">× ' + row.weight + "</span>" +
+    '<span class="b-meta"><span class="label-caps muted">' + esc(row.note ?? "") + "</span>" +
+    '<span class="b-bar"><span style="width:' + row.score + '%"></span></span></span></li>').join("");
 
   $("palChecks").innerHTML = A.checks.map((chk) =>
     '<li><span class="mark" aria-hidden="true">' + chk.mark + '</span><span>' + esc(chk.text) + "</span></li>").join("");
@@ -1644,15 +1901,28 @@ function renderImprove() {
     return;
   }
   const changed = new Set(res.applied.map((f) => f.idx));
-  const msg = res.pct > 0
-    ? "I can improve accessibility by " + res.pct + "% without changing how the brand feels."
-    : "I can tidy the hierarchy without changing how the brand feels — the accessibility was already there.";
+  const Hb = healthScore(palette, analyseGoal);
+  const Ha = healthScore(res.improved, analyseGoal);
+  const overallPct = Math.round(((Ha.overall - Hb.overall) / Math.max(Hb.overall, 1)) * 100);
+  const msg = overallPct > 0
+    ? "I can improve overall palette quality by " + overallPct + "% without changing how the brand feels."
+    : "I can tidy the behaviour without changing how the brand feels — the quality was already there.";
+  const deltas = Ha.rows.map((row) => {
+    const before = Hb.rows.find((b) => b.id === row.id);
+    const d = before ? Math.round(((row.score - before.score) / Math.max(before.score, 1)) * 100) : 0;
+    return { label: row.label, d };
+  });
   out.innerHTML =
     '<div class="improve-quote" style="margin-top:1.5rem"><p>&ldquo;' + msg + "&rdquo;</p></div>" +
+    '<ul class="delta-list">' +
+    deltas.map((dl) =>
+      '<li><span aria-hidden="true">' + deltaLight(dl.d) + "</span><span>" + esc(dl.label) + "</span>" +
+      '<span class="d-num tnum">' + (dl.d > 0 ? "+" : "") + dl.d + "%</span></li>").join("") +
+    "</ul>" +
     '<div class="ba-grid">' +
-    '<div><p class="label-caps muted" style="margin:0 0 .5rem">Before · score ' + res.scoreBefore + "</p>" +
+    '<div><p class="label-caps muted" style="margin:0 0 .5rem">Before · ' + Hb.overall + " / 100</p>" +
     stripHtml(palette.map((hx) => ({ hex: hx, label: "" })), false) + "</div>" +
-    '<div><p class="label-caps muted" style="margin:0 0 .5rem">After · score ' + res.scoreAfter + "</p>" +
+    '<div><p class="label-caps muted" style="margin:0 0 .5rem">After · ' + Ha.overall + " / 100</p>" +
     stripHtml(res.improved.map((hx, i) => ({ hex: hx, label: changed.has(i) ? "moved" : "" })), false) + "</div></div>" +
     '<ul class="move-list">' +
     res.applied.map((f) => '<li><span class="mark" aria-hidden="true">✔</span><span>' + esc(f.title) + " — " + f.from + " → " + f.to + "</span></li>").join("") +
