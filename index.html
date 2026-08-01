@@ -1,0 +1,1118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Colour families for painters, printmakers, illustrators and designers — schemes, tints, WCAG contrast checks and accessible UI themes from any base colour.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+<title>Hue Studio — colour families for artists</title>
+<style>
+  :root {
+    --paper: #F6F3EC;
+    --card: #FCFAF6;
+    --ink: #26221B;
+    --muted: #6F675A;
+    --border: #D8D1C2;
+    --accent-soft: #E9E4D7;
+    --radius: 3px;
+    --shadow-plate: 0 1px 0 rgba(38,34,27,.08), 0 12px 28px -18px rgba(38,34,27,.5);
+    --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Helvetica, Arial, sans-serif;
+    --font-mono: "SF Mono", "Cascadia Mono", Menlo, Consolas, "Liberation Mono", ui-monospace, monospace;
+    color-scheme: light;
+  }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 62rem; margin: 0 auto; padding: 2.5rem 1.25rem 6rem; }
+  @media (min-width: 768px) { main { padding-left: 2rem; padding-right: 2rem; } }
+
+  h1, h2, h3, h4, .font-display { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.01em; }
+  h1 { font-size: 2.6rem; line-height: 1.05; margin: 0; text-wrap: balance; }
+  @media (min-width: 768px) { h1 { font-size: 3.2rem; } }
+  .h-sub { font-size: 1.5rem; line-height: 1.2; margin: 0; }
+
+  .label-caps {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .muted { color: var(--muted); }
+  .mono { font-family: var(--font-mono); }
+  .tnum { font-variant-numeric: tabular-nums; }
+
+  header.masthead {
+    display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between;
+    gap: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 3rem;
+  }
+  header.masthead p { margin: .35rem 0 0; max-width: 26rem; font-size: .875rem; color: var(--muted); }
+
+  section.step { margin-bottom: 3.5rem; }
+  section.step > .step-label { display: block; margin-bottom: 1.25rem; color: var(--muted); }
+
+  /* ---------- shared controls ---------- */
+  .btn {
+    font-family: var(--font-mono); font-size: .6875rem; letter-spacing: .14em; text-transform: uppercase;
+    min-height: 2.75rem; padding: 0 1rem; border: 1px solid var(--border); border-radius: var(--radius);
+    background: transparent; color: inherit; cursor: pointer; transition: background-color .15s ease;
+  }
+  .btn:hover { background: var(--accent-soft); }
+  .btn:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 2px solid var(--ink); outline-offset: 2px;
+  }
+  .btn.small { padding: 0 .75rem; }
+  input.text-field {
+    height: 2.75rem; width: 100%; border: 1px solid var(--border); border-radius: var(--radius);
+    background: var(--card); padding: 0 .75rem; font-family: var(--font-mono); font-size: .875rem;
+    color: inherit; outline: none;
+  }
+  input.text-field:focus { border-color: var(--ink); }
+  input[type="color"] {
+    height: 2.75rem; border: 1px solid var(--border); border-radius: var(--radius);
+    background: var(--card); padding: .25rem; cursor: pointer;
+  }
+  input[type="range"] {
+    flex: 1; height: 4px; appearance: none; -webkit-appearance: none; border-radius: 99px;
+    background: var(--border); cursor: pointer; accent-color: var(--ink);
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; height: 16px; width: 16px; border-radius: 50%;
+    background: var(--ink); border: none; cursor: pointer;
+  }
+  input[type="range"]::-moz-range-thumb {
+    height: 16px; width: 16px; border-radius: 50%; background: var(--ink); border: none; cursor: pointer;
+  }
+  .panel { border: 1px solid var(--border); border-radius: var(--radius); }
+  .panel.pad { padding: 1rem; }
+  .list-panel { border: 1px solid var(--border); border-radius: var(--radius); padding: .25rem 1rem; list-style: none; margin: .75rem 0 0; }
+  .list-panel > li { border-bottom: 1px solid var(--border); padding: .5rem 0; }
+  .list-panel > li:last-child { border-bottom: 0; }
+
+  /* ---------- 01 input panel ---------- */
+  .input-grid { display: grid; gap: 2rem; }
+  @media (min-width: 768px) { .input-grid { grid-template-columns: minmax(0,1fr) minmax(0,1.1fr); align-items: start; } }
+  .plate {
+    position: relative; display: flex; flex-direction: column; justify-content: flex-end;
+    aspect-ratio: 4/3; border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.25rem; box-shadow: var(--shadow-plate);
+  }
+  .plate .hex-big { font-family: var(--font-display); font-size: 2.4rem; line-height: 1; }
+  .controls { display: flex; flex-direction: column; gap: 1.25rem; }
+  .field-row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 1rem; }
+  .field-row label { display: block; }
+  .field-row label > span { display: block; margin-bottom: .25rem; color: var(--muted); }
+  .slider-row { display: flex; align-items: center; gap: .75rem; }
+  .slider-row > .slider-name { width: 5rem; color: var(--muted); flex-shrink: 0; }
+  .slider-row > .slider-val { width: 2.5rem; text-align: right; font-family: var(--font-mono); font-size: .75rem; }
+  .seeds { display: flex; gap: .5rem; margin-top: .5rem; }
+  .seeds button {
+    height: 2rem; width: 2rem; border-radius: 50%; border: 1px solid var(--border);
+    cursor: pointer; transition: transform .15s ease; padding: 0;
+  }
+  .seeds button:hover { transform: scale(1.1); }
+
+  /* ---------- 02 plan ---------- */
+  .plan-banner {
+    position: relative; overflow: hidden; border-width: 2px; border-style: solid;
+    border-radius: var(--radius); padding: 1.5rem;
+  }
+  @media (min-width: 768px) { .plan-banner { padding: 2rem; } }
+  .plan-banner .blob {
+    pointer-events: none; position: absolute; right: -4rem; top: -5rem; height: 14rem; width: 14rem;
+    transform: rotate(12deg); border-radius: var(--radius);
+  }
+  .plan-banner h3 { font-size: 2.2rem; line-height: .95; margin: .25rem 0 0; max-width: 32rem; }
+  @media (min-width: 768px) { .plan-banner h3 { font-size: 2.9rem; } }
+  .plan-options { position: relative; display: grid; gap: .75rem; margin-top: 1.5rem; }
+  @media (min-width: 640px) { .plan-options { grid-template-columns: 1fr 1fr; } }
+  .plan-options button {
+    min-height: 2.75rem; border-width: 2px; border-style: solid; border-radius: var(--radius);
+    padding: .75rem 1rem; text-align: left; cursor: pointer; background: transparent;
+    transition: transform .15s ease; font-family: inherit;
+  }
+  .plan-options button:hover { transform: translateY(-2px); }
+  .plan-options .opt-name { display: block; font-family: var(--font-display); font-size: 1.4rem; line-height: 1; }
+  .plan-options .opt-tag { display: block; margin-top: .4rem; opacity: .75; }
+  .verdict-block { border-left: 4px solid; padding-left: 1.25rem; }
+  .verdict-block p.v { font-family: var(--font-display); font-size: 1.5rem; line-height: 1.35; margin: .25rem 0 0; }
+  @media (min-width: 768px) { .verdict-block p.v { font-size: 1.8rem; } }
+  .brief-grid { display: grid; gap: 2rem; margin-top: 2rem; }
+  @media (min-width: 768px) { .brief-grid { grid-template-columns: 1fr 1fr; align-items: start; } }
+  .moves { list-style: none; margin: .75rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .75rem; }
+  .moves li { display: flex; gap: .75rem; }
+  .moves .num {
+    font-family: var(--font-mono); font-size: .6875rem; letter-spacing: .1em;
+    margin-top: .1rem; display: flex; height: 1.75rem; width: 1.75rem; flex-shrink: 0;
+    align-items: center; justify-content: center; border-radius: var(--radius);
+  }
+  .moves .m-title { display: block; font-size: .875rem; font-weight: 600; }
+  .moves .m-detail { display: block; margin-top: .1rem; font-size: .875rem; color: var(--muted); }
+  .spec-li { display: flex; align-items: center; gap: .75rem; }
+  .spec-li .grow { min-width: 0; flex: 1; }
+  .check-li { display: flex; align-items: flex-start; gap: .75rem; }
+  .check-li .grow { min-width: 0; flex: 1; }
+
+  /* ---------- swatch strips ---------- */
+  .strip { display: flex; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); }
+  .strip button {
+    position: relative; flex: 1; min-width: 0; border: none; cursor: pointer; padding: 0;
+    transition: transform .2s ease;
+  }
+  .strip button:hover { z-index: 10; transform: scale(1.03); }
+  .strip .sw-hex, .strip .sw-label {
+    font-family: var(--font-mono); font-size: .6875rem; letter-spacing: .14em; text-transform: uppercase;
+    position: absolute; left: 0; right: 0; padding: 0 .25rem;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .strip .sw-hex { bottom: .5rem; opacity: .7; }
+  .strip button:hover .sw-hex { opacity: 1; }
+  .strip .sw-label { top: .5rem; opacity: .45; }
+  .strip.tall button { height: 7rem; }
+  .strip.short button { height: 5rem; }
+
+  .scheme { border-top: 1px solid var(--border); padding-top: 1.5rem; }
+  .scheme + .scheme { margin-top: 2.5rem; }
+  .scheme-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .25rem 1.5rem; margin-bottom: 1rem; }
+  .scheme p { max-width: 36rem; font-size: .875rem; line-height: 1.6; margin: 0; }
+  .scheme p.blurb { margin-top: 1rem; color: var(--muted); }
+  .scheme p.use { margin-top: .25rem; }
+
+  /* ---------- 05 previews ---------- */
+  .previews { display: grid; gap: 1.5rem; }
+  @media (min-width: 768px) { .previews { grid-template-columns: repeat(3, 1fr); } }
+  .previews figure { margin: 0; display: flex; flex-direction: column; gap: .75rem; }
+  .previews figcaption { color: var(--muted); }
+  .mock { aspect-ratio: 3/4; border-radius: var(--radius); }
+  .mock .chip { display: inline-block; padding: .3rem .75rem; font-size: .75rem; font-weight: 500; }
+
+  /* ---------- 06 contrast ---------- */
+  .contrast-grid { display: grid; gap: 2rem; }
+  @media (min-width: 768px) { .contrast-grid { grid-template-columns: 1fr 1fr; align-items: start; } }
+  .hex-fields { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .hex-field { flex: 1; min-width: 10rem; }
+  .hex-field .pair { display: flex; gap: .5rem; margin-top: .25rem; }
+  .hex-field input[type="color"] { width: 3rem; flex-shrink: 0; }
+  .ratio-line { display: flex; align-items: baseline; gap: .75rem; }
+  .ratio-line .big { font-family: var(--font-display); font-size: 3.2rem; line-height: 1; }
+  .verdict-row { display: flex; align-items: baseline; justify-content: space-between; gap: .75rem; border-bottom: 1px solid var(--border); padding: .4rem 0; }
+  .verdict-row:last-child { border-bottom: 0; }
+  .fix-row { display: flex; align-items: center; gap: .75rem; }
+  .fix-row + .fix-row { margin-top: .5rem; }
+  .fix-row .aa {
+    display: flex; height: 2.5rem; width: 3.5rem; flex-shrink: 0; align-items: center; justify-content: center;
+    border: 1px solid var(--border); border-radius: var(--radius); font-family: var(--font-mono); font-size: .625rem;
+  }
+  .pairs-grid { display: grid; gap: 1rem; margin-top: 1.25rem; list-style: none; padding: 0; }
+  @media (min-width: 640px) { .pairs-grid { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1024px) { .pairs-grid { grid-template-columns: repeat(3, 1fr); } }
+  .pair-card {
+    display: block; height: 100%; width: 100%; border: 1px solid var(--border); border-radius: var(--radius);
+    text-align: left; cursor: pointer; background: var(--card); padding: 0; overflow: hidden;
+    transition: transform .15s ease; font-family: inherit; color: inherit;
+  }
+  .pair-card:hover { transform: translateY(-2px); }
+  .pair-card .swatch-area { display: block; padding: 1.5rem 1rem; }
+  .pair-card .swatch-area .p-label { display: block; font-family: var(--font-display); font-size: 1.25rem; }
+  .pair-card .meta { display: block; padding: .75rem 1rem; }
+  .pair-card .meta .note { display: block; margin-top: .25rem; font-size: .875rem; color: var(--muted); }
+
+  /* ---------- 07 theme ---------- */
+  .theme-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+  .btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .theme-grid { display: grid; gap: 2rem; margin-top: 1.5rem; }
+  @media (min-width: 768px) { .theme-grid { grid-template-columns: 1fr 1fr; align-items: start; } }
+  .token-row { display: flex; align-items: center; gap: .75rem; }
+  .token-row .dot { height: 2rem; width: 2rem; flex-shrink: 0; border: 1px solid var(--border); border-radius: var(--radius); }
+  .token-row .grow { min-width: 0; flex: 1; }
+  pre.css-out {
+    overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius);
+    background: var(--card); padding: 1rem; font-family: var(--font-mono); font-size: .75rem;
+    line-height: 1.7; margin: 1.5rem 0 0;
+  }
+
+  .truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pass-tag { white-space: nowrap; }
+
+  #toast {
+    position: fixed; left: 50%; bottom: 1.5rem; transform: translateX(-50%) translateY(1rem);
+    background: var(--ink); color: var(--paper); font-family: var(--font-mono); font-size: .75rem;
+    letter-spacing: .08em; padding: .6rem 1.1rem; border-radius: var(--radius);
+    opacity: 0; pointer-events: none; transition: opacity .2s ease, transform .2s ease; z-index: 50;
+  }
+  #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div>
+      <h1>Hue Studio</h1>
+      <p>Colour families for painters, printmakers, illustrators and designers — any medium, one wheel.</p>
+    </div>
+    <span class="label-caps muted">Tap any swatch to copy</span>
+  </header>
+
+  <section class="step">
+    <h2 class="label-caps step-label">01 — Choose your colour</h2>
+    <div class="input-grid">
+      <div class="plate" id="plate">
+        <span class="label-caps" id="plateHue" style="opacity:.7"></span>
+        <span class="hex-big" id="plateHex"></span>
+        <span class="label-caps" id="plateMeta" style="opacity:.7; margin-top:.5rem"></span>
+      </div>
+      <div class="controls">
+        <div class="field-row">
+          <label>
+            <span class="label-caps">Picker</span>
+            <input type="color" id="picker" style="width:4rem" aria-label="Colour picker">
+          </label>
+          <label style="min-width:7rem; flex:1">
+            <span class="label-caps">Hex</span>
+            <input class="text-field" id="hexField" spellcheck="false" placeholder="#C8452B" style="text-transform:uppercase">
+          </label>
+          <label style="min-width:9rem; flex:1">
+            <span class="label-caps">RGB</span>
+            <input class="text-field" id="rgbField" spellcheck="false" placeholder="200, 69, 43">
+          </label>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:.75rem" id="sliders"></div>
+        <div>
+          <span class="label-caps muted">Studio starts</span>
+          <div class="seeds" id="seeds"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2 class="label-caps step-label">02 — What&rsquo;s the plan for your palette?</h2>
+    <div style="display:flex; flex-direction:column; gap:2rem">
+      <div id="planBanner"></div>
+      <div id="planBrief"></div>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2 class="label-caps step-label" style="margin-bottom:1rem">03 — Tints &amp; shades</h2>
+    <div id="ramp"></div>
+  </section>
+
+  <section class="step">
+    <h2 class="label-caps step-label" style="margin-bottom:2rem">04 — Colour families</h2>
+    <div id="schemes"></div>
+  </section>
+
+  <section class="step">
+    <h2 class="label-caps step-label">05 — Put to work: advertising, web, promotion</h2>
+    <div class="previews" id="previews"></div>
+  </section>
+
+  <section class="step">
+    <h2 class="label-caps step-label">06 — Contrast &amp; legibility check</h2>
+    <div style="display:flex; flex-direction:column; gap:2.5rem">
+      <div class="contrast-grid">
+        <div style="display:flex; flex-direction:column; gap:1.25rem">
+          <div class="hex-fields">
+            <div class="hex-field">
+              <label for="cFgHex" class="label-caps muted">Foreground</label>
+              <div class="pair">
+                <input type="color" id="cFgPicker" aria-label="Foreground colour picker">
+                <input class="text-field" id="cFgHex" spellcheck="false" style="text-transform:uppercase">
+              </div>
+            </div>
+            <div class="hex-field">
+              <label for="cBgHex" class="label-caps muted">Background</label>
+              <div class="pair">
+                <input type="color" id="cBgPicker" aria-label="Background colour picker">
+                <input class="text-field" id="cBgHex" spellcheck="false" style="text-transform:uppercase">
+              </div>
+            </div>
+          </div>
+          <div><button type="button" class="btn" id="swapBtn">Swap colours</button></div>
+          <div class="panel" id="cPreview" style="padding:1.25rem">
+            <p class="font-display" style="font-size:1.9rem; line-height:1.2; margin:0">Large heading, 30px</p>
+            <p style="font-size:.875rem; line-height:1.6; margin:.5rem 0 0">Body copy at 14px. If this feels like hard work to read, the ratio below will say so.</p>
+            <span id="cPreviewBox" style="display:inline-block; height:2rem; width:4rem; border-radius:var(--radius); border:2px solid; margin-top:.75rem" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:1rem">
+          <div class="ratio-line">
+            <span class="big tnum" id="cRatio">0.00</span>
+            <span class="label-caps muted">: 1 contrast</span>
+          </div>
+          <div class="panel pad" id="cVerdicts" role="status" aria-live="polite"></div>
+          <div id="cFixes"></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="h-sub">Readable pairs from your colour</h3>
+        <p class="muted" style="max-width:36rem; font-size:.875rem; margin:.25rem 0 0">Each pairing below clears the WCAG minimum for its job — tap a card to load it into the checker.</p>
+        <ul class="pairs-grid" id="cPairs"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="step" style="margin-bottom:0">
+    <h2 class="label-caps step-label">07 — Accessible UI theme</h2>
+    <div class="theme-controls" role="group" aria-label="Theme mode">
+      <button type="button" class="btn" id="tabLight" aria-pressed="true">Light theme</button>
+      <button type="button" class="btn" id="tabDark" aria-pressed="false">Dark theme</button>
+      <button type="button" class="btn" id="copyCssBtn">Copy CSS variables</button>
+    </div>
+    <div class="theme-grid">
+      <div id="themePreview"></div>
+      <div>
+        <p class="label-caps muted" style="margin:0">Every token, checked against its partner</p>
+        <ul class="list-panel" id="themeTokens"></ul>
+      </div>
+    </div>
+    <pre class="css-out" id="themeCss"></pre>
+  </section>
+</main>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+"use strict";
+/* ============ colour library (ported from Hue Studio) ============ */
+const clamp = (v, min = 0, max = 255) => Math.min(max, Math.max(min, v));
+
+function hexToRgb(hex) {
+  let h = hex.trim().replace(/^#/, "");
+  if (h.length === 3) h = h.split("").map((c) => c + c).join("");
+  if (!/^[0-9a-fA-F]{6}$/.test(h)) return null;
+  return { r: parseInt(h.slice(0, 2), 16), g: parseInt(h.slice(2, 4), 16), b: parseInt(h.slice(4, 6), 16) };
+}
+function rgbToHex({ r, g, b }) {
+  return "#" + [r, g, b].map((v) => clamp(Math.round(v)).toString(16).padStart(2, "0")).join("");
+}
+function parseRgbString(input) {
+  const nums = input.match(/-?\d+(\.\d+)?/g);
+  if (!nums || nums.length < 3) return null;
+  const r = Number(nums[0]), g = Number(nums[1]), b = Number(nums[2]);
+  if ([r, g, b].some((v) => v < 0 || v > 255)) return null;
+  return { r, g, b };
+}
+function rgbToHsl({ r, g, b }) {
+  const rn = r / 255, gn = g / 255, bn = b / 255;
+  const max = Math.max(rn, gn, bn), min = Math.min(rn, gn, bn);
+  const l = (max + min) / 2;
+  let h = 0, s = 0;
+  const d = max - min;
+  if (d !== 0) {
+    s = d / (1 - Math.abs(2 * l - 1));
+    switch (max) {
+      case rn: h = ((gn - bn) / d) % 6; break;
+      case gn: h = (bn - rn) / d + 2; break;
+      default: h = (rn - gn) / d + 4;
+    }
+    h *= 60;
+    if (h < 0) h += 360;
+  }
+  return { h, s: s * 100, l: l * 100 };
+}
+function hslToRgb({ h, s, l }) {
+  const sn = s / 100, ln = l / 100;
+  const c = (1 - Math.abs(2 * ln - 1)) * sn;
+  const hp = (((h % 360) + 360) % 360) / 60;
+  const x = c * (1 - Math.abs((hp % 2) - 1));
+  let r = 0, g = 0, b = 0;
+  if (hp < 1) { r = c; g = x; }
+  else if (hp < 2) { r = x; g = c; }
+  else if (hp < 3) { g = c; b = x; }
+  else if (hp < 4) { g = x; b = c; }
+  else if (hp < 5) { r = x; b = c; }
+  else { r = c; b = x; }
+  const m = ln - c / 2;
+  return { r: Math.round((r + m) * 255), g: Math.round((g + m) * 255), b: Math.round((b + m) * 255) };
+}
+const hexToHsl = (hex) => { const rgb = hexToRgb(hex); return rgb ? rgbToHsl(rgb) : null; };
+const hslToHex = (hsl) => rgbToHex(hslToRgb(hsl));
+const rotate = (hsl, deg) => ({ ...hsl, h: (((hsl.h + deg) % 360) + 360) % 360 });
+
+function luminance({ r, g, b }) {
+  const f = (v) => { const c = v / 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); };
+  return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
+}
+function contrastRatio(a, b) {
+  const l1 = luminance(a), l2 = luminance(b);
+  const hi = Math.max(l1, l2), lo = Math.min(l1, l2);
+  return (hi + 0.05) / (lo + 0.05);
+}
+function inkFor(hex) {
+  const rgb = hexToRgb(hex) ?? { r: 0, g: 0, b: 0 };
+  const white = { r: 255, g: 255, b: 255 }, black = { r: 17, g: 17, b: 17 };
+  return contrastRatio(rgb, white) >= contrastRatio(rgb, black) ? "#ffffff" : "#111111";
+}
+const sw = (hsl, label) => ({ hex: hslToHex(hsl), label });
+
+function buildSchemes(base) {
+  return [
+    { id: "analogous", name: "Analogous",
+      blurb: "Neighbours on the wheel — 30° apart. Low tension, high harmony.",
+      use: "Landscape painting, gradients, calm editorial layouts.",
+      swatches: [sw(rotate(base, -60), "−60°"), sw(rotate(base, -30), "−30°"), sw(base, "Base"), sw(rotate(base, 30), "+30°"), sw(rotate(base, 60), "+60°")] },
+    { id: "complementary", name: "Complementary",
+      blurb: "Direct opposites. Maximum vibration where they meet.",
+      use: "Posters, CTA buttons, focal points in figurative work.",
+      swatches: [sw(base, "Base"), sw({ ...base, l: Math.min(92, base.l + 22) }, "Base light"), sw(rotate(base, 180), "Complement"), sw({ ...rotate(base, 180), l: Math.max(12, base.l - 22) }, "Comp. shade")] },
+    { id: "split", name: "Split complementary",
+      blurb: "The complement, split 30° either side. Contrast without clash.",
+      use: "Illustration, brand systems, packaging.",
+      swatches: [sw(base, "Base"), sw(rotate(base, 150), "+150°"), sw(rotate(base, 210), "+210°")] },
+    { id: "triadic", name: "Triadic",
+      blurb: "Three hues, evenly spaced 120°. Balanced and lively.",
+      use: "Children's books, murals, playful advertising.",
+      swatches: [sw(base, "Base"), sw(rotate(base, 120), "+120°"), sw(rotate(base, 240), "+240°")] },
+    { id: "tetradic", name: "Tetradic / quadratic",
+      blurb: "Two complementary pairs on a square. Rich, needs one lead colour.",
+      use: "Textiles, complex compositions, editorial spreads.",
+      swatches: [sw(base, "Base"), sw(rotate(base, 90), "+90°"), sw(rotate(base, 180), "+180°"), sw(rotate(base, 270), "+270°")] },
+    { id: "monochrome", name: "Monochromatic",
+      blurb: "One hue, stepped through value and saturation.",
+      use: "Tonal studies, minimal interfaces, photography grades.",
+      swatches: [92, 74, 56, 38, 20].map((l, i) => sw({ ...base, l, s: Math.max(8, base.s - (i - 2) * 6) }, "L " + l)) },
+  ];
+}
+const tintsAndShades = (base) => [95, 85, 70, 55, 40, 25, 12].map((l) => sw({ ...base, l }, String(l)));
+
+function hueName(h) {
+  const names = [[15, "red"], [45, "orange"], [65, "yellow"], [95, "lime"], [150, "green"], [185, "teal"], [215, "cyan-blue"], [255, "blue"], [285, "violet"], [320, "magenta"], [345, "pink"], [360, "red"]];
+  const hh = ((h % 360) + 360) % 360;
+  for (const [max, name] of names) if (hh <= max) return name;
+  return "red";
+}
+
+const WCAG = { bodyAA: 4.5, bodyAAA: 7, largeAA: 3, largeAAA: 4.5, uiAA: 3 };
+
+function contrastHex(a, b) {
+  const ra = hexToRgb(a), rb = hexToRgb(b);
+  if (!ra || !rb) return 1;
+  return contrastRatio(ra, rb);
+}
+function judgeContrast(fg, bg) {
+  const ratio = contrastHex(fg, bg);
+  return { ratio, bodyAA: ratio >= WCAG.bodyAA, bodyAAA: ratio >= WCAG.bodyAAA, largeAA: ratio >= WCAG.largeAA, largeAAA: ratio >= WCAG.largeAAA, uiAA: ratio >= WCAG.uiAA };
+}
+function nearestAccessible(colour, against, target) {
+  const hsl = hexToHsl(colour);
+  if (!hsl) return null;
+  let best = null;
+  for (let step = 0; step <= 100; step += 1) {
+    for (const dir of step === 0 ? [0] : [-1, 1]) {
+      const l = hsl.l + dir * step;
+      if (l < 0 || l > 100) continue;
+      const hex = hslToHex({ ...hsl, l });
+      const ratio = contrastHex(hex, against);
+      if (ratio >= target) { best = { hex, ratio, delta: Math.round(l - hsl.l) }; break; }
+    }
+    if (best) break;
+  }
+  return best;
+}
+const mkPair = (id, label, note, fg, bg) => ({ id, label, note, fg, bg, ratio: contrastHex(fg, bg) });
+
+function suggestedPairs(base) {
+  const baseHex = hslToHex(base);
+  const paper = "#F7F5F0", ink = "#141210";
+  const out = [];
+  const onPaper = nearestAccessible(baseHex, paper, WCAG.bodyAA);
+  if (onPaper) out.push(mkPair("text-on-paper", "Body text on paper",
+    onPaper.delta === 0 ? "Your colour already passes as body text."
+      : "Lightness " + (onPaper.delta > 0 ? "+" : "") + onPaper.delta + " to clear 4.5:1.",
+    onPaper.hex, paper));
+  const deepGround = hslToHex({ ...base, l: 14, s: Math.min(base.s, 45) });
+  const onDeep = nearestAccessible(hslToHex({ ...base, l: 78 }), deepGround, WCAG.bodyAA);
+  if (onDeep) out.push(mkPair("text-on-deep", "Text on a deep tint of your colour", "Tinted dark ground keeps the hue while staying legible.", onDeep.hex, deepGround));
+  out.push(mkPair("solid-button", "Solid button",
+    "Label uses " + (inkFor(baseHex) === "#ffffff" ? "white" : "near-black") + " ink for the strongest reading.",
+    inkFor(baseHex), baseHex));
+  const softBg = hslToHex({ ...base, l: 94, s: Math.min(base.s, 60) });
+  const softFg = nearestAccessible(baseHex, softBg, WCAG.bodyAA);
+  if (softFg) out.push(mkPair("soft-badge", "Soft badge / callout", "Tinted surface, darkened hue for the label.", softFg.hex, softBg));
+  const borderOnPaper = nearestAccessible(baseHex, paper, WCAG.uiAA);
+  if (borderOnPaper) out.push(mkPair("ui-border", "Borders, icons, focus rings", "Non-text UI only needs 3:1 — this is the lightest version that holds.", borderOnPaper.hex, paper));
+  out.push(mkPair("inverse", "Your colour on ink", "Useful for dark headers and footers.", nearestAccessible(baseHex, ink, WCAG.bodyAA)?.hex ?? baseHex, ink));
+  return out;
+}
+
+function mkToken(key, label, hex, against, againstLabel, required, role) {
+  const ratio = contrastHex(hex, against);
+  return { key, label, hex: hex.toUpperCase(), against, againstLabel, required, ratio, pass: ratio >= required, role };
+}
+function buildThemes(base) {
+  const sat = (v) => Math.min(base.s, v);
+  const fit = (hsl, bg, target) => nearestAccessible(hslToHex(hsl), bg, target)?.hex ?? inkFor(bg);
+
+  const lBg = hslToHex({ h: base.h, s: sat(14), l: 97 });
+  const lSurface = hslToHex({ h: base.h, s: sat(18), l: 93 });
+  const lText = fit({ h: base.h, s: sat(28), l: 18 }, lBg, WCAG.bodyAAA);
+  const lMuted = fit({ h: base.h, s: sat(22), l: 42 }, lBg, WCAG.bodyAA);
+  const lBtn = fit({ ...base, l: base.l }, lBg, WCAG.uiAA);
+  const lBtnInk = inkFor(lBtn);
+  const lLink = fit({ ...base, s: Math.max(base.s, 45), l: base.l }, lBg, WCAG.bodyAA);
+  const lLine = fit({ h: base.h, s: sat(30), l: 55 }, lBg, WCAG.uiAA);
+
+  const dBg = hslToHex({ h: base.h, s: sat(24), l: 10 });
+  const dSurface = hslToHex({ h: base.h, s: sat(26), l: 16 });
+  const dText = fit({ h: base.h, s: sat(16), l: 92 }, dBg, WCAG.bodyAAA);
+  const dMuted = fit({ h: base.h, s: sat(18), l: 68 }, dBg, WCAG.bodyAA);
+  const dBtn = fit({ ...base, l: Math.max(base.l, 62) }, dBg, WCAG.uiAA);
+  const dBtnInk = inkFor(dBtn);
+  const dLink = fit({ ...base, s: Math.max(base.s, 45), l: 72 }, dBg, WCAG.bodyAA);
+  const dLine = fit({ h: base.h, s: sat(30), l: 45 }, dBg, WCAG.uiAA);
+
+  return [
+    { id: "light", name: "Light theme", background: lBg, surface: lSurface, tokens: [
+      mkToken("background", "Page background", lBg, lText, "body text", WCAG.bodyAA, "surface"),
+      mkToken("surface", "Card surface", lSurface, lText, "body text", WCAG.bodyAA, "surface"),
+      mkToken("text", "Body text", lText, lBg, "background", WCAG.bodyAAA, "text"),
+      mkToken("muted", "Muted text", lMuted, lBg, "background", WCAG.bodyAA, "text"),
+      mkToken("button", "Button fill", lBtn, lBg, "background", WCAG.uiAA, "action"),
+      mkToken("buttonInk", "Button label", lBtnInk, lBtn, "button fill", WCAG.bodyAA, "action"),
+      mkToken("link", "Link", lLink, lBg, "background", WCAG.bodyAA, "action"),
+      mkToken("border", "Border / focus ring", lLine, lBg, "background", WCAG.uiAA, "line"),
+    ] },
+    { id: "dark", name: "Dark theme", background: dBg, surface: dSurface, tokens: [
+      mkToken("background", "Page background", dBg, dText, "body text", WCAG.bodyAA, "surface"),
+      mkToken("surface", "Card surface", dSurface, dText, "body text", WCAG.bodyAA, "surface"),
+      mkToken("text", "Body text", dText, dBg, "background", WCAG.bodyAAA, "text"),
+      mkToken("muted", "Muted text", dMuted, dBg, "background", WCAG.bodyAA, "text"),
+      mkToken("button", "Button fill", dBtn, dBg, "background", WCAG.uiAA, "action"),
+      mkToken("buttonInk", "Button label", dBtnInk, dBtn, "button fill", WCAG.bodyAA, "action"),
+      mkToken("link", "Link", dLink, dBg, "background", WCAG.bodyAA, "action"),
+      mkToken("border", "Border / focus ring", dLine, dBg, "background", WCAG.uiAA, "line"),
+    ] },
+  ];
+}
+function themeToCss(theme) {
+  const get = (k) => theme.tokens.find((t) => t.key === k)?.hex.toLowerCase() ?? "#000000";
+  const sel = theme.id === "dark" ? ".dark" : ":root";
+  return [sel + " {",
+    "  --background: " + get("background") + ";",
+    "  --surface: " + get("surface") + ";",
+    "  --foreground: " + get("text") + ";",
+    "  --muted-foreground: " + get("muted") + ";",
+    "  --primary: " + get("button") + ";",
+    "  --primary-foreground: " + get("buttonInk") + ";",
+    "  --link: " + get("link") + ";",
+    "  --border: " + get("border") + ";",
+    "  --ring: " + get("border") + ";",
+    "}"].join("\n");
+}
+
+/* ---------- palette plan ---------- */
+const PLAN_OPTIONS = [
+  { id: "website", name: "A website or app", tagline: "Tested, legible, forward-thinking" },
+  { id: "promo", name: "Promotional & business", tagline: "Exact values, nailed down for print" },
+  { id: "brand", name: "Brand identity", tagline: "One lead colour, a full supporting cast" },
+  { id: "art", name: "Studio & fine art", tagline: "Mixing notes, temperature, value plan" },
+];
+function rgbToCmyk({ r, g, b }) {
+  const rn = r / 255, gn = g / 255, bn = b / 255;
+  const k = 1 - Math.max(rn, gn, bn);
+  if (k === 1) return { c: 0, m: 0, y: 0, k: 100 };
+  return {
+    c: Math.round(((1 - rn - k) / (1 - k)) * 100),
+    m: Math.round(((1 - gn - k) / (1 - k)) * 100),
+    y: Math.round(((1 - bn - k) / (1 - k)) * 100),
+    k: Math.round(k * 100),
+  };
+}
+const round = Math.round;
+function baseSpecs(hex, hsl) {
+  const rgb = hexToRgb(hex) ?? { r: 0, g: 0, b: 0 };
+  const cmyk = rgbToCmyk(rgb);
+  return [
+    { label: "HEX", value: hex.toUpperCase(), hint: "Screen, CSS, exports" },
+    { label: "RGB", value: rgb.r + ", " + rgb.g + ", " + rgb.b, hint: "Digital artwork, video" },
+    { label: "CMYK (approx)", value: cmyk.c + ", " + cmyk.m + ", " + cmyk.y + ", " + cmyk.k, hint: "Ask the printer to proof before signing off" },
+    { label: "HSL", value: round(hsl.h) + "°, " + round(hsl.s) + "%, " + round(hsl.l) + "%", hint: "For building tints and shades by hand" },
+  ];
+}
+function planBrief(id, hsl) {
+  const hex = hslToHex(hsl);
+  const meta = PLAN_OPTIONS.find((o) => o.id === id) ?? PLAN_OPTIONS[0];
+  const hue = hueName(hsl.h);
+  const themes = buildThemes(hsl);
+  const light = themes[0], dark = themes[1];
+  const paper = "#F7F5F0", ink = "#141210";
+  const failedLight = light.tokens.filter((t) => !t.pass);
+  const failedDark = dark.tokens.filter((t) => !t.pass);
+  const onPaper = contrastHex(hex, paper);
+  const onInk = contrastHex(hex, ink);
+  const button = light.tokens.find((t) => t.key === "button");
+  const buttonInk = light.tokens.find((t) => t.key === "buttonInk");
+  const bodyFix = nearestAccessible(hex, paper, WCAG.bodyAA);
+  const shared = { id, name: meta.name, tagline: meta.tagline };
+
+  if (id === "website") {
+    return { ...shared,
+      verdict: onPaper >= WCAG.bodyAA
+        ? "Your " + hue + " is strong enough to carry body text on light ground — lead with it and let the neutrals recede."
+        : "Your " + hue + " is a signal colour, not a text colour. Use it for actions and accents, and darken it to " + (bodyFix?.hex.toUpperCase() ?? "a deeper tone") + " whenever it has to be read.",
+      moves: [
+        { title: "Ship it as a token set, not a hex", detail: "Take the light and dark themes in section 07 and drop them in as CSS variables so every surface, label and focus ring moves together." },
+        { title: "Spend the colour where the decision happens", detail: "Primary buttons at " + button.hex + ", focus rings and active states from the same hue, everything else quiet." },
+        { title: "Push it forward", detail: "Large type in the hue, generous flat fields, one unexpected pairing from the split-complementary family — no gradients on white." },
+        { title: "Test in the dark", detail: "Dark mode wants the lifted version of the hue, not the same one: " + dark.tokens.find((t) => t.key === "button").hex + "." },
+      ],
+      specs: [...baseSpecs(hex, hsl),
+        { label: "Button fill / label", value: button.hex + " · " + buttonInk.hex, hint: "Light theme" },
+        { label: "Focus ring", value: light.tokens.find((t) => t.key === "border").hex, hint: "Clears 3:1 against the page" },
+      ],
+      checks: [
+        { label: "Light theme tokens",
+          detail: failedLight.length === 0 ? "All eight tokens clear their WCAG target." : failedLight.length + " token" + (failedLight.length > 1 ? "s" : "") + " short: " + failedLight.map((t) => t.label).join(", ") + ".",
+          pass: failedLight.length === 0 },
+        { label: "Dark theme tokens",
+          detail: failedDark.length === 0 ? "All eight tokens clear their WCAG target." : failedDark.length + " token" + (failedDark.length > 1 ? "s" : "") + " short: " + failedDark.map((t) => t.label).join(", ") + ".",
+          pass: failedDark.length === 0 },
+        { label: "Colour as body text", detail: onPaper.toFixed(2) + " : 1 on paper — " + (onPaper >= WCAG.bodyAA ? "safe at any size" : "accents and large type only") + ".", pass: onPaper >= WCAG.bodyAA },
+        { label: "Non-text UI (borders, icons)", detail: "Needs 3:1. Currently " + onPaper.toFixed(2) + " : 1 straight from your colour.", pass: onPaper >= WCAG.uiAA },
+      ] };
+  }
+  if (id === "promo") {
+    const spot = hslToHex({ ...hsl, s: Math.min(100, hsl.s + 6) });
+    return { ...shared,
+      verdict: "Lock the " + hue + " to one set of numbers and never re-eyeball it — every printer, ad platform and deck pulls from the same row.",
+      moves: [
+        { title: "One master value, four translations", detail: "Hex for screen, RGB for digital ads and video, CMYK for litho, and a coated ink match for anything spot-printed." },
+        { title: "Give the colour room", detail: "Flat fields, big margins, one supporting neutral. Promotional work dies when the hero colour has to compete." },
+        { title: "Set the loud pairing on purpose", detail: "Take the complement for a single call-to-action only — headline, price flash or sticker — never for body copy." },
+        { title: "Write the do-not list", detail: "No drop shadows on the hue, no gradients, no reprinting from screenshots — always the values below." },
+      ],
+      specs: [...baseSpecs(hex, hsl),
+        { label: "Punched-up spot version", value: spot.toUpperCase(), hint: "For vinyl, stickers and signage" },
+        { label: "Reversed-out ink", value: inkFor(hex).toUpperCase(), hint: "Type sitting on the colour" },
+        { label: "Safe headline on colour", value: inkFor(hex).toUpperCase() + " at " + contrastHex(inkFor(hex), hex).toFixed(2) + " : 1", hint: "Above 4.5:1 stays readable at small sizes" },
+      ],
+      checks: [
+        { label: "Type on the colour", detail: inkFor(hex).toUpperCase() + " gives " + contrastHex(inkFor(hex), hex).toFixed(2) + " : 1 — the strongest ink for this fill.", pass: contrastHex(inkFor(hex), hex) >= WCAG.bodyAA },
+        { label: "Colour on white stock", detail: onPaper.toFixed(2) + " : 1 — " + (onPaper >= WCAG.largeAA ? "fine for display sizes" : "too pale for type, use as a field instead") + ".", pass: onPaper >= WCAG.largeAA },
+        { label: "Colour on black stock", detail: onInk.toFixed(2) + " : 1 against near-black.", pass: onInk >= WCAG.largeAA },
+        { label: "Print gamut caution",
+          detail: hsl.s > 85 && hsl.l > 45 ? "Very saturated — CMYK will dull it. Proof it or specify a spot ink." : "Reproduces predictably in four-colour process.",
+          pass: !(hsl.s > 85 && hsl.l > 45) },
+      ] };
+  }
+  if (id === "brand") {
+    const support = hslToHex(rotate(hsl, 210));
+    return { ...shared,
+      verdict: "Make the " + hue + " the one colour people remember, then build a quiet cast around it so it never has to shout twice.",
+      moves: [
+        { title: "Name the roles", detail: "Lead colour, one supporting hue, one neutral ground, one ink. Anything else is decoration." },
+        { title: "Ratio discipline", detail: "Roughly 60% neutral, 30% supporting, 10% lead. The lead reads as confident, not loud." },
+        { title: "Pick the supporting hue", detail: "The split-complementary at " + support.toUpperCase() + " gives contrast without the vibration of the direct opposite." },
+        { title: "Prove it small", detail: "Favicon, app icon, one-colour stamp. If it survives at 16px it survives everywhere." },
+      ],
+      specs: [...baseSpecs(hex, hsl),
+        { label: "Supporting hue", value: support.toUpperCase(), hint: "Split complementary" },
+        { label: "Neutral ground", value: hslToHex({ h: hsl.h, s: Math.min(hsl.s, 12), l: 96 }).toUpperCase(), hint: "Warm-tinted paper" },
+        { label: "Ink", value: hslToHex({ h: hsl.h, s: Math.min(hsl.s, 30), l: 13 }).toUpperCase(), hint: "Headlines and body" },
+      ],
+      checks: [
+        { label: "Lead on ground", detail: onPaper.toFixed(2) + " : 1 against the tinted paper.", pass: onPaper >= WCAG.uiAA },
+        { label: "Lead on ink", detail: onInk.toFixed(2) + " : 1 — used for dark headers and footers.", pass: onInk >= WCAG.largeAA },
+        { label: "One-colour version",
+          detail: hsl.l > 20 && hsl.l < 85 ? "Mid value — reads well as a solid stamp or emboss." : "Very light or very dark; add a mid-value variant for one-colour work.",
+          pass: hsl.l > 20 && hsl.l < 85 },
+        { label: "Distinctiveness",
+          detail: hsl.s < 18 ? "Nearly neutral — hard to own as a brand colour. Consider raising saturation." : "Clearly a " + hue + "; easy to describe and recall.",
+          pass: hsl.s >= 18 },
+      ] };
+  }
+  const temp = hsl.h >= 60 && hsl.h <= 260 ? "cool" : "warm";
+  return { ...shared,
+    verdict: "Treat the " + hue + " as a value first and a hue second — mix it at " + round(hsl.l) + "% lightness and the composition will hold even in greyscale.",
+    moves: [
+      { title: "Mix from a limited palette", detail: "Lean " + temp + ": bias the mix toward its " + temp + " neighbours and knock it back with the complement rather than black." },
+      { title: "Grey it with its opposite", detail: "A touch of " + hueName(hsl.h + 180) + " gives a living neutral; black just kills the chroma." },
+      { title: "Plan three values", detail: "Light, mid and dark from the tints-and-shades strip in section 03 — commit before you start." },
+      { title: "Check it in greyscale", detail: "If two areas share a value they'll merge from across the room, however different the hues look up close." },
+    ],
+    specs: [...baseSpecs(hex, hsl),
+      { label: "Temperature", value: temp === "warm" ? "Warm" : "Cool", hint: "Which way to bias the mix" },
+      { label: "Value (lightness)", value: round(hsl.l) + "%", hint: "Greyscale reading of your colour" },
+      { label: "Living neutral", value: hslToHex({ ...hsl, s: Math.max(6, hsl.s * 0.18) }).toUpperCase(), hint: "Colour knocked back with its complement" },
+    ],
+    checks: [
+      { label: "Value separation from white ground", detail: onPaper.toFixed(2) + " : 1 — " + (onPaper >= 2 ? "reads as a distinct shape" : "very close in value; will melt into the ground") + ".", pass: onPaper >= 2 },
+      { label: "Value separation from dark ground", detail: onInk.toFixed(2) + " : 1 against near-black.", pass: onInk >= 2 },
+      { label: "Saturation headroom", detail: hsl.s > 90 ? "At the edge of most pigment ranges — expect to approximate it in paint." : "Mixable with common pigments.", pass: hsl.s <= 90 },
+      { label: "Mid-value anchor", detail: hsl.l > 25 && hsl.l < 75 ? "Sits in the mid range — useful as the composition's anchor." : "An extreme value; pair it with a mid tone so the eye has somewhere to rest.", pass: hsl.l > 25 && hsl.l < 75 },
+    ] };
+}
+
+/* ============ app state & rendering ============ */
+const SEEDS = ["#C8452B", "#1F5F5B", "#E4A11B", "#2E4A8A", "#7A2E4A", "#4F6B2A"];
+let hex = "#C8452B";
+let plan = null;
+let themeTab = "light";
+let cFg = "#C8452B";
+let cBg = "#F7F5F0";
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+let toastTimer = null;
+function toast(msg) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove("show"), 1800);
+}
+function copyText(text, label) {
+  const done = () => toast((label ?? text) + " copied");
+  if (navigator.clipboard?.writeText) {
+    navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text, done));
+  } else fallbackCopy(text, done);
+}
+function fallbackCopy(text, done) {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.style.position = "fixed";
+  ta.style.opacity = "0";
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand("copy"); done(); } catch { toast("Copy failed — select manually"); }
+  document.body.removeChild(ta);
+}
+const passTag = (pass, failWord) =>
+  '<span class="label-caps pass-tag"><span aria-hidden="true">' + (pass ? "✓" : "✕") + " </span>" + (pass ? "Pass" : (failWord ?? "Fail")) + "</span>";
+
+/* ---------- 01 input panel ---------- */
+function currentHsl() { return hexToHsl(hex) ?? { h: 0, s: 0, l: 50 }; }
+
+function setHex(next, opts = {}) {
+  const rgb = hexToRgb(next);
+  if (!rgb) return;
+  hex = rgbToHex(rgb);
+  cFg = hex;
+  renderAll(opts);
+}
+
+function buildSliders() {
+  const defs = [["h", "Hue", 360], ["s", "Saturation", 100], ["l", "Lightness", 100]];
+  $("sliders").innerHTML = defs.map(([key, label, max]) =>
+    '<label class="slider-row">' +
+    '<span class="label-caps slider-name">' + label + "</span>" +
+    '<input type="range" min="0" max="' + max + '" data-channel="' + key + '" aria-label="' + label + '">' +
+    '<span class="slider-val tnum" data-val="' + key + '"></span>' +
+    "</label>").join("");
+  $("sliders").querySelectorAll("input[type=range]").forEach((input) => {
+    input.addEventListener("input", () => {
+      const hsl = currentHsl();
+      hsl[input.dataset.channel] = Number(input.value);
+      setHex(hslToHex(hsl), { fromSlider: input.dataset.channel });
+    });
+  });
+}
+function buildSeeds() {
+  $("seeds").innerHTML = SEEDS.map((seed) =>
+    '<button type="button" data-seed="' + seed + '" style="background-color:' + seed + '" aria-label="Use ' + seed + '"></button>').join("");
+  $("seeds").querySelectorAll("button").forEach((b) =>
+    b.addEventListener("click", () => setHex(b.dataset.seed)));
+}
+function syncInputPanel(opts) {
+  const hsl = currentHsl();
+  const rgb = hexToRgb(hex);
+  const plate = $("plate");
+  plate.style.backgroundColor = hex;
+  plate.style.color = inkFor(hex);
+  $("plateHue").textContent = hueName(hsl.h) + " · " + round(hsl.h) + "° hue";
+  $("plateHex").textContent = hex.toUpperCase();
+  $("plateMeta").textContent = "rgb " + rgb.r + " " + rgb.g + " " + rgb.b + " · hsl " + round(hsl.h) + " " + round(hsl.s) + "% " + round(hsl.l) + "%";
+  if (document.activeElement !== $("picker")) $("picker").value = hex;
+  if (document.activeElement !== $("hexField")) $("hexField").value = hex.toUpperCase();
+  if (document.activeElement !== $("rgbField")) $("rgbField").value = rgb.r + ", " + rgb.g + ", " + rgb.b;
+  $("sliders").querySelectorAll("input[type=range]").forEach((input) => {
+    if (opts.fromSlider !== input.dataset.channel) input.value = round(hsl[input.dataset.channel]);
+  });
+  $("sliders").querySelectorAll("[data-val]").forEach((el) => {
+    el.textContent = round(hsl[el.dataset.val]);
+  });
+}
+
+/* ---------- 02 plan ---------- */
+function renderPlan() {
+  const hsl = currentHsl();
+  const ink = inkFor(hex);
+  const accent = hslToHex(rotate(hsl, 180));
+  const banner = $("planBanner");
+  banner.innerHTML =
+    '<div class="plan-banner" style="background-color:' + hex + "; color:" + ink + "; border-color:" + ink + '">' +
+    '<span class="blob" style="background-color:' + accent + '; opacity:.35" aria-hidden="true"></span>' +
+    '<p class="label-caps" style="opacity:.75; margin:0; position:relative">Before we go further</p>' +
+    "<h3>What’s the plan for your palette?</h3>" +
+    '<p style="max-width:26rem; font-size:.875rem; line-height:1.6; opacity:.85; margin:.75rem 0 0; position:relative">Same colour, very different rules. Tell me the job and I’ll hand back the moves, the exact numbers, and the tests it has to pass.</p>' +
+    '<div class="plan-options" role="group" aria-label="What’s the plan for your palette?">' +
+    PLAN_OPTIONS.map((o) => {
+      const active = plan === o.id;
+      return '<button type="button" data-plan="' + o.id + '" aria-pressed="' + active + '" style="border-color:' + ink +
+        "; background-color:" + (active ? ink : "transparent") + "; color:" + (active ? hex : ink) + '">' +
+        '<span class="opt-name">' + esc(o.name) + "</span>" +
+        '<span class="opt-tag label-caps">' + esc(o.tagline) + "</span></button>";
+    }).join("") +
+    "</div></div>";
+  banner.querySelectorAll("[data-plan]").forEach((b) =>
+    b.addEventListener("click", () => { plan = b.dataset.plan; renderPlan(); }));
+
+  const briefEl = $("planBrief");
+  if (!plan) {
+    briefEl.innerHTML = '<p class="muted" style="font-size:.875rem; margin:0">Pick a plan above — the brief appears here, tuned to your colour.</p>';
+    return;
+  }
+  const brief = planBrief(plan, hsl);
+  briefEl.innerHTML =
+    '<div style="display:flex; flex-direction:column; gap:2rem">' +
+    '<div class="verdict-block" style="border-color:' + hex + '">' +
+    '<p class="label-caps muted" style="margin:0">The verdict</p>' +
+    '<p class="v">' + esc(brief.verdict) + "</p></div>" +
+    '<div class="brief-grid" style="margin-top:0">' +
+    "<div><h4 class='h-sub'>Four moves</h4><ol class='moves'>" +
+    brief.moves.map((m, i) =>
+      '<li><span class="num" style="background-color:' + hex + "; color:" + inkFor(hex) + '" aria-hidden="true">' + (i + 1) + "</span>" +
+      '<span><span class="m-title">' + esc(m.title) + '</span><span class="m-detail">' + esc(m.detail) + "</span></span></li>").join("") +
+    "</ol></div>" +
+    '<div style="display:flex; flex-direction:column; gap:1.5rem">' +
+    "<div><h4 class='h-sub'>Hand-off values</h4><ul class='list-panel'>" +
+    brief.specs.map((s2) =>
+      '<li class="spec-li"><span class="grow">' +
+      '<span class="label-caps muted" style="display:block">' + esc(s2.label) + "</span>" +
+      '<span class="mono" style="display:block; font-size:.875rem">' + esc(s2.value) + "</span>" +
+      (s2.hint ? '<span class="muted" style="display:block; margin-top:.1rem; font-size:.75rem">' + esc(s2.hint) + "</span>" : "") +
+      "</span>" +
+      '<button type="button" class="btn small" data-copy="' + esc(s2.value) + '" aria-label="Copy ' + esc(s2.label) + " " + esc(s2.value) + '" style="flex-shrink:0">Copy</button></li>').join("") +
+    "</ul></div>" +
+    "<div><h4 class='h-sub'>Tests it has to pass</h4><ul class='list-panel'>" +
+    brief.checks.map((c) =>
+      '<li class="check-li"><span class="grow">' +
+      '<span style="display:block; font-size:.875rem">' + esc(c.label) + "</span>" +
+      '<span class="muted" style="display:block; margin-top:.1rem; font-size:.75rem">' + esc(c.detail) + "</span></span>" +
+      passTag(c.pass, "Watch") + "</li>").join("") +
+    "</ul></div></div></div></div>";
+  briefEl.querySelectorAll("[data-copy]").forEach((b) =>
+    b.addEventListener("click", () => copyText(b.dataset.copy)));
+}
+
+/* ---------- swatch strips ---------- */
+function stripHtml(swatches, tall) {
+  return '<div class="strip ' + (tall ? "tall" : "short") + '">' +
+    swatches.map((s2) =>
+      '<button type="button" data-copyhex="' + s2.hex + '" style="background-color:' + s2.hex + "; color:" + inkFor(s2.hex) + '" aria-label="Copy ' + s2.hex + '">' +
+      '<span class="sw-label">' + esc(s2.label) + "</span>" +
+      '<span class="sw-hex">' + s2.hex.replace("#", "") + "</span></button>").join("") +
+    "</div>";
+}
+function wireStrips(container) {
+  container.querySelectorAll("[data-copyhex]").forEach((b) =>
+    b.addEventListener("click", () => copyText(b.dataset.copyhex.toUpperCase())));
+}
+function renderRamp() {
+  $("ramp").innerHTML = stripHtml(tintsAndShades(currentHsl()), false);
+  wireStrips($("ramp"));
+}
+function renderSchemes() {
+  const schemes = buildSchemes(currentHsl());
+  $("schemes").innerHTML = schemes.map((scheme) =>
+    '<article class="scheme">' +
+    '<div class="scheme-head"><h3 class="h-sub">' + esc(scheme.name) + "</h3>" +
+    '<span class="label-caps muted">' + scheme.swatches.length + " colours</span></div>" +
+    stripHtml(scheme.swatches, true) +
+    '<p class="blurb">' + esc(scheme.blurb) + "</p>" +
+    '<p class="use"><span class="label-caps muted">Works for </span>' + esc(scheme.use) + "</p></article>").join("");
+  wireStrips($("schemes"));
+  return schemes;
+}
+
+/* ---------- 05 previews ---------- */
+function renderPreviews(schemes) {
+  const pick = (id, index, fallback) => schemes.find((s2) => s2.id === id)?.swatches[index]?.hex ?? fallback;
+  const comp = pick("complementary", 2, hex);
+  const analog = pick("analogous", 3, hex);
+  const tri = pick("triadic", 1, hex);
+  const light = pick("monochrome", 0, "#ffffff");
+  const deep = pick("monochrome", 4, "#111111");
+  $("previews").innerHTML =
+    "<figure>" +
+    '<div class="mock" style="display:flex; flex-direction:column; justify-content:space-between; padding:1.25rem; background-color:' + hex + "; color:" + inkFor(hex) + '">' +
+    '<span class="label-caps" style="opacity:.8">Spring season</span>' +
+    '<div><p class="font-display" style="font-size:1.9rem; line-height:1; margin:0">Colour<br>in the<br>open air</p>' +
+    '<span class="chip" style="margin-top:1rem; background-color:' + comp + "; color:" + inkFor(comp) + '">Book a viewing</span></div></div>' +
+    '<figcaption class="label-caps">Advertising — base + complement accent</figcaption></figure>' +
+    "<figure>" +
+    '<div class="mock" style="overflow:hidden; border:1px solid var(--border); background-color:' + light + "; color:" + inkFor(light) + '">' +
+    '<div style="display:flex; align-items:center; justify-content:space-between; padding:.75rem 1rem; background-color:' + deep + "; color:" + inkFor(deep) + '">' +
+    '<span class="font-display" style="font-size:1rem">Atelier</span><span class="label-caps" style="opacity:.7">Menu</span></div>' +
+    '<div style="display:flex; flex-direction:column; gap:.75rem; padding:1rem; align-items:flex-start">' +
+    '<div style="height:4rem; width:100%; background-color:' + hex + '"></div>' +
+    '<div style="height:.5rem; width:80%; border-radius:99px; background-color:' + analog + '"></div>' +
+    '<div style="height:.5rem; width:60%; border-radius:99px; opacity:.4; background-color:' + deep + '"></div>' +
+    '<div style="height:.5rem; width:66%; border-radius:99px; opacity:.25; background-color:' + deep + '"></div>' +
+    '<span class="chip" style="background-color:' + comp + "; color:" + inkFor(comp) + '">Get in touch</span></div></div>' +
+    '<figcaption class="label-caps">Website — tinted surface, saturated accents</figcaption></figure>' +
+    "<figure>" +
+    '<div class="mock" style="position:relative; display:flex; flex-direction:column; justify-content:center; gap:.75rem; padding:1.25rem; background-color:' + deep + "; color:" + inkFor(deep) + '">' +
+    '<div style="display:flex; gap:.4rem">' +
+    [hex, analog, tri, comp].map((c) => '<span style="height:2.5rem; flex:1; background-color:' + c + '"></span>').join("") +
+    "</div>" +
+    '<p class="font-display" style="font-size:1.5rem; line-height:1.25; margin:0">Studio print sale — 20% off</p>' +
+    '<span class="label-caps" style="opacity:.6">Promotional / social tile</span></div>' +
+    '<figcaption class="label-caps">Promo — deep ground, full family</figcaption></figure>';
+}
+
+/* ---------- 06 contrast ---------- */
+function setContrast(fg, bg) {
+  cFg = fg; cBg = bg;
+  if (document.activeElement !== $("cFgHex")) $("cFgHex").value = cFg.toUpperCase();
+  if (document.activeElement !== $("cBgHex")) $("cBgHex").value = cBg.toUpperCase();
+  if (document.activeElement !== $("cFgPicker")) $("cFgPicker").value = cFg;
+  if (document.activeElement !== $("cBgPicker")) $("cBgPicker").value = cBg;
+  renderContrastResults();
+}
+function renderContrastResults() {
+  const v = judgeContrast(cFg, cBg);
+  $("cRatio").textContent = v.ratio.toFixed(2);
+  const preview = $("cPreview");
+  preview.style.backgroundColor = cBg;
+  preview.style.color = cFg;
+  $("cPreviewBox").style.borderColor = cFg;
+  const rows = [
+    [v.bodyAA, "Body text, AA (4.5:1)"],
+    [v.bodyAAA, "Body text, AAA (7:1)"],
+    [v.largeAA, "Large text 24px+, AA (3:1)"],
+    [v.largeAAA, "Large text 24px+, AAA (4.5:1)"],
+    [v.uiAA, "Borders, icons, focus rings (3:1)"],
+  ];
+  $("cVerdicts").innerHTML = rows.map(([pass, label]) =>
+    '<div class="verdict-row"><span style="font-size:.875rem">' + label + "</span>" + passTag(pass) + "</div>").join("");
+
+  const fixes = $("cFixes");
+  if (v.bodyAA) {
+    fixes.innerHTML = '<p class="muted" style="font-size:.875rem; margin:0">This pair is safe for body text at any size.</p>';
+  } else {
+    const fixFg = nearestAccessible(cFg, cBg, WCAG.bodyAA);
+    const fixBg = nearestAccessible(cBg, cFg, WCAG.bodyAA);
+    if (!fixFg && !fixBg) { fixes.innerHTML = ""; }
+    else {
+      const row = (label, hexValue, other, ratio, target) =>
+        '<div class="fix-row">' +
+        '<span class="aa" style="background-color:' + other + "; color:" + hexValue + '">Aa</span>' +
+        '<span class="grow" style="min-width:0; flex:1; font-size:.875rem"><span class="truncate" style="display:block">' + label + "</span>" +
+        '<span class="label-caps muted">' + hexValue.toUpperCase() + " · " + ratio.toFixed(2) + " : 1</span></span>" +
+        '<button type="button" class="btn small" data-fix="' + target + '" data-hex="' + hexValue + '">Use</button>' +
+        '<button type="button" class="btn small" data-copyfix="' + hexValue.toUpperCase() + '" aria-label="Copy ' + hexValue.toUpperCase() + '">Copy</button></div>';
+      fixes.innerHTML =
+        '<div class="panel pad" style="background-color:var(--card)">' +
+        '<p class="label-caps muted" style="margin:0 0 .5rem">Nearest passing swaps</p>' +
+        (fixFg ? row("Keep the background", fixFg.hex, cBg, fixFg.ratio, "fg") : "") +
+        (fixBg ? row("Keep the foreground", fixBg.hex, cFg, fixBg.ratio, "bg") : "") +
+        "</div>";
+      fixes.querySelectorAll("[data-fix]").forEach((b) =>
+        b.addEventListener("click", () => {
+          if (b.dataset.fix === "fg") setContrast(b.dataset.hex, cBg);
+          else setContrast(cFg, b.dataset.hex);
+        }));
+      fixes.querySelectorAll("[data-copyfix]").forEach((b) =>
+        b.addEventListener("click", () => copyText(b.dataset.copyfix)));
+    }
+  }
+}
+function renderPairs() {
+  const pairs = suggestedPairs(currentHsl());
+  $("cPairs").innerHTML = pairs.map((p) =>
+    '<li><button type="button" class="pair-card" data-fg="' + p.fg + '" data-bg="' + p.bg + '">' +
+    '<span class="swatch-area" style="background-color:' + p.bg + "; color:" + p.fg + '">' +
+    '<span class="p-label">' + esc(p.label) + "</span>" +
+    '<span class="label-caps" style="display:block; margin-top:.25rem; color:' + inkFor(p.bg) + '">' + p.fg.toUpperCase() + " on " + p.bg.toUpperCase() + "</span></span>" +
+    '<span class="meta"><span class="label-caps">' + p.ratio.toFixed(2) + ' : 1</span><span class="note">' + esc(p.note) + "</span></span>" +
+    "</button></li>").join("");
+  $("cPairs").querySelectorAll(".pair-card").forEach((b) =>
+    b.addEventListener("click", () => {
+      setContrast(b.dataset.fg, b.dataset.bg);
+      $("cPreview").scrollIntoView({ behavior: "smooth", block: "center" });
+    }));
+}
+function wireContrastInputs() {
+  $("cFgPicker").addEventListener("input", () => setContrast($("cFgPicker").value, cBg));
+  $("cBgPicker").addEventListener("input", () => setContrast(cFg, $("cBgPicker").value));
+  $("cFgHex").addEventListener("input", () => { if (hexToRgb($("cFgHex").value)) setContrast(rgbToHex(hexToRgb($("cFgHex").value)), cBg); });
+  $("cBgHex").addEventListener("input", () => { if (hexToRgb($("cBgHex").value)) setContrast(cFg, rgbToHex(hexToRgb($("cBgHex").value))); });
+  $("swapBtn").addEventListener("click", () => setContrast(cBg, cFg));
+}
+
+/* ---------- 07 theme ---------- */
+function renderTheme() {
+  const themes = buildThemes(currentHsl());
+  const theme = themes.find((t) => t.id === themeTab) ?? themes[0];
+  $("tabLight").classList.toggle("active", themeTab === "light");
+  $("tabDark").classList.toggle("active", themeTab === "dark");
+  $("tabLight").setAttribute("aria-pressed", String(themeTab === "light"));
+  $("tabDark").setAttribute("aria-pressed", String(themeTab === "dark"));
+  const tok = (k) => theme.tokens.find((t) => t.key === k);
+  $("themePreview").innerHTML =
+    '<div style="border:1px solid ' + tok("border").hex + "; border-radius:var(--radius); padding:1.25rem; background-color:" + tok("background").hex + "; color:" + tok("text").hex + '">' +
+    '<p class="font-display" style="font-size:1.9rem; line-height:1.2; margin:0">Studio interface</p>' +
+    '<p style="font-size:.875rem; line-height:1.6; margin:.5rem 0 0; color:' + tok("muted").hex + '">Muted supporting copy sits under the heading, still clearing 4.5:1.</p>' +
+    '<div style="margin-top:1rem; border:1px solid ' + tok("border").hex + "; border-radius:var(--radius); padding:1rem; background-color:" + tok("surface").hex + '">' +
+    '<p style="font-size:.875rem; margin:0">Card surface with body text and <span style="color:' + tok("link").hex + '; text-decoration:underline">an inline link</span>.</p>' +
+    '<span class="label-caps" style="display:inline-flex; min-height:2.75rem; align-items:center; border-radius:var(--radius); padding:0 1rem; margin-top:.75rem; background-color:' + tok("button").hex + "; color:" + tok("buttonInk").hex + '">Primary action</span>' +
+    "</div></div>";
+  $("themeTokens").innerHTML = theme.tokens.map((t) =>
+    '<li class="token-row">' +
+    '<span class="dot" style="background-color:' + t.hex + '" aria-hidden="true"></span>' +
+    '<span class="grow"><span class="truncate" style="display:block; font-size:.875rem">' + esc(t.label) + "</span>" +
+    '<span class="label-caps muted">' + t.hex + " · " + t.ratio.toFixed(2) + " : 1 vs " + esc(t.againstLabel) + " (needs " + t.required + ")</span></span>" +
+    passTag(t.pass) +
+    '<button type="button" class="btn small" data-copytoken="' + t.hex + '" aria-label="Copy ' + esc(t.label) + " " + t.hex + '">Copy</button></li>').join("");
+  $("themeTokens").querySelectorAll("[data-copytoken]").forEach((b) =>
+    b.addEventListener("click", () => copyText(b.dataset.copytoken)));
+  $("themeCss").textContent = themeToCss(theme);
+}
+function wireThemeControls() {
+  $("tabLight").addEventListener("click", () => { themeTab = "light"; renderTheme(); });
+  $("tabDark").addEventListener("click", () => { themeTab = "dark"; renderTheme(); });
+  $("copyCssBtn").addEventListener("click", () => {
+    const themes = buildThemes(currentHsl());
+    const theme = themes.find((t) => t.id === themeTab) ?? themes[0];
+    copyText(themeToCss(theme), "CSS variables");
+  });
+}
+
+/* ---------- master render ---------- */
+function renderAll(opts = {}) {
+  syncInputPanel(opts);
+  renderPlan();
+  renderRamp();
+  const schemes = renderSchemes();
+  renderPreviews(schemes);
+  setContrast(cFg, cBg);
+  renderPairs();
+  renderTheme();
+}
+
+/* ---------- boot ---------- */
+buildSliders();
+buildSeeds();
+wireContrastInputs();
+wireThemeControls();
+$("picker").addEventListener("input", () => setHex($("picker").value));
+$("hexField").addEventListener("input", () => { const rgb = hexToRgb($("hexField").value); if (rgb) setHex(rgbToHex(rgb)); });
+$("rgbField").addEventListener("input", () => { const rgb = parseRgbString($("rgbField").value); if (rgb) setHex(rgbToHex(rgb)); });
+renderAll();
+</script>
+
+</body>
+</html>
