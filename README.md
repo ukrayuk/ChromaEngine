@@ -2,15 +2,28 @@
 
 A colour harmony explorer for painters, printmakers, illustrators and designers — any medium, one wheel.
 
+Two modes: **build a palette from one colour**, or **analyse a palette you already have**.
+
+## Build from a colour
+
 Pick a colour by picker, hex, RGB or HSL sliders and ChromaEngine hands back everything you need to put it to work:
 
 1. **Choose your colour** — picker, hex, RGB, and H/S/L sliders, plus six studio-start swatches
-2. **What's the plan for your palette?** — an opinionated brief tuned to the job: website/app, promotional & business print, brand identity, or studio & fine art. Each brief gives a verdict, four moves, exact hand-off values (HEX / RGB / CMYK / HSL and more), and the tests the colour has to pass
+2. **What's the plan for your palette?** — an opinionated brief tuned to the job: 🌐 Website/App, 🎨 Brand identity, 📱 Social media, 📦 Packaging, 📖 Book/Editorial, 🎭 Illustration/Fine art, or ➕ Other. Each brief gives a verdict, four moves, exact hand-off values (HEX / RGB / CMYK / HSL and more), and the tests the colour has to pass
 3. **Tints & shades** — a seven-step value ramp
 4. **Colour families** — analogous, complementary, split-complementary, triadic, tetradic and monochromatic schemes, every swatch copy-on-tap
 5. **Put to work** — live poster, website and promo-tile mockups built from the current family
 6. **Contrast & legibility** — WCAG 2.x contrast ratios (AA/AAA, body/large/UI), nearest-passing colour fixes, and ready-made readable pairs
 7. **Accessible UI theme** — light and dark token sets derived from the colour, each token checked against its WCAG target, exportable as CSS variables
+
+## Analyse a palette
+
+Already have a colour scheme? Add up to five colours and ChromaEngine reads the room:
+
+1. **Palette overview** — a 0–100 behaviour score with a checklist: accessibility, hierarchy, competing accents, value spread, presence of a true neutral, and temperature balance. Roles (ground, ink, lead accent, supports) are assigned automatically
+2. **Observations, not errors** — plain-language notes on what's straining ("Teal and orange are both demanding attention"), each with a concrete suggestion in exact numbers
+3. **One-click fixes** — moves, not replacements: every suggestion keeps the hue exactly where you put it and only nudges saturation or lightness
+4. **Improve but keep my style** — applies all the moves at once and tells you what it bought ("I can improve accessibility by 24% without changing how the brand feels"), with before/after strips and an undo-friendly apply
 
 ## Running it
 

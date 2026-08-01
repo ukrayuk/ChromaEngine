@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Colour families for painters, printmakers, illustrators and designers — schemes, tints, WCAG contrast checks and accessible UI themes from any base colour.">
+<meta name="description" content="Colour families for painters, printmakers, illustrators and designers — build from one colour or analyse an existing palette, with WCAG contrast checks and hue-preserving fixes.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 <title>Hue Studio — colour families for artists</title>
 <style>
@@ -247,6 +247,82 @@
     opacity: 0; pointer-events: none; transition: opacity .2s ease, transform .2s ease; z-index: 50;
   }
   #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* ---------- mode toggle ---------- */
+  .mode-toggle { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 3rem; }
+
+  /* ---------- analyse: palette input ---------- */
+  .pal-intro { max-width: 36rem; font-size: .95rem; line-height: 1.6; margin: 0 0 1.5rem; }
+  .pal-rows { display: flex; flex-direction: column; gap: .75rem; }
+  .pal-row { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+  .pal-row input[type="color"] { width: 3rem; flex-shrink: 0; }
+  .pal-row .text-field { max-width: 9rem; }
+  .pal-row .role-tag { min-width: 9rem; }
+  .pal-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
+  #palStrip { margin-top: 1.5rem; }
+
+  /* ---------- analyse: overview ---------- */
+  .overview-grid { display: grid; gap: 2rem; align-items: start; }
+  @media (min-width: 768px) { .overview-grid { grid-template-columns: auto 1fr 1fr; } }
+  .gauge { position: relative; width: 11rem; height: 11rem; }
+  .gauge svg { display: block; transform: rotate(-90deg); }
+  .gauge .score {
+    position: absolute; inset: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: .15rem;
+  }
+  .gauge .score .n { font-family: var(--font-display); font-size: 3rem; line-height: 1; }
+  .check-list { list-style: none; margin: .75rem 0 0; padding: 0; }
+  .check-list li {
+    display: flex; align-items: baseline; gap: .6rem; padding: .45rem 0;
+    border-bottom: 1px solid var(--border); font-size: .875rem;
+  }
+  .check-list li:last-child { border-bottom: 0; }
+  .check-list .mark { font-family: var(--font-mono); flex-shrink: 0; }
+  .role-li { display: flex; align-items: center; gap: .75rem; }
+  .role-li .dot { height: 2rem; width: 2rem; flex-shrink: 0; border: 1px solid var(--border); border-radius: var(--radius); }
+  .role-li .grow { min-width: 0; flex: 1; }
+
+  /* ---------- analyse: observations ---------- */
+  .obs-cards { display: flex; flex-direction: column; gap: 1rem; }
+  .obs-card {
+    border: 1px solid var(--border); border-left-width: 4px; border-radius: var(--radius);
+    background: var(--card); padding: 1rem 1.25rem;
+  }
+  .obs-card .statement { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.35; margin: 0; }
+  .obs-card .detail { font-size: .875rem; color: var(--muted); margin: .35rem 0 0; max-width: 40rem; }
+  .obs-card .suggestion { font-size: .875rem; margin: .6rem 0 0; }
+
+  /* ---------- analyse: fixes ---------- */
+  .fix-cards { display: grid; gap: 1rem; }
+  @media (min-width: 768px) { .fix-cards { grid-template-columns: 1fr 1fr; } }
+  .fix-card {
+    border: 1px solid var(--border); border-radius: var(--radius); background: var(--card);
+    padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: .75rem;
+  }
+  .fix-card .swap-line { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+  .fix-sw { height: 3rem; width: 3rem; border: 1px solid var(--border); border-radius: var(--radius); flex-shrink: 0; }
+  .fix-card .arrow { font-family: var(--font-mono); color: var(--muted); }
+  .fix-card .reason { font-size: .875rem; color: var(--muted); margin: 0; }
+  .fix-card .foot { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-top: auto; }
+
+  /* ---------- analyse: improve ---------- */
+  .improve-cta {
+    font-family: var(--font-display); font-size: 1.35rem; letter-spacing: 0;
+    text-transform: none; background: var(--ink); color: var(--paper); border-color: var(--ink);
+    padding: .9rem 1.75rem; min-height: 3.25rem;
+  }
+  .improve-cta:hover { background: #3a352c; }
+  .improve-note { font-size: .875rem; color: var(--muted); max-width: 34rem; margin: .75rem 0 0; }
+  #improveResult { margin-top: 2rem; }
+  .improve-quote { border-left: 4px solid var(--ink); padding-left: 1.25rem; }
+  .improve-quote p { font-family: var(--font-display); font-size: 1.6rem; line-height: 1.35; margin: 0; }
+  @media (min-width: 768px) { .improve-quote p { font-size: 1.9rem; } }
+  .ba-grid { display: grid; gap: 1.5rem; margin-top: 1.5rem; }
+  @media (min-width: 768px) { .ba-grid { grid-template-columns: 1fr 1fr; } }
+  .move-list { list-style: none; margin: 1.25rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .5rem; }
+  .move-list li { font-size: .875rem; display: flex; gap: .6rem; align-items: baseline; }
+  .move-list .mark { font-family: var(--font-mono); flex-shrink: 0; }
+
   @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; }
   }
@@ -262,6 +338,12 @@
     <span class="label-caps muted">Tap any swatch to copy</span>
   </header>
 
+  <div class="mode-toggle" role="group" aria-label="Mode">
+    <button type="button" class="btn active" id="modeBtnBuild" aria-pressed="true">Build from a colour</button>
+    <button type="button" class="btn" id="modeBtnAnalyse" aria-pressed="false">Analyse a palette</button>
+  </div>
+
+  <div id="modeBuild">
   <section class="step">
     <h2 class="label-caps step-label">01 — Choose your colour</h2>
     <div class="input-grid">
@@ -378,6 +460,53 @@
     </div>
     <pre class="css-out" id="themeCss"></pre>
   </section>
+  </div>
+
+  <div id="modeAnalyse" hidden>
+    <section class="step">
+      <h2 class="label-caps step-label">01 — Your palette</h2>
+      <p class="pal-intro">Already have a colour scheme? Let&rsquo;s see how it&rsquo;s behaving. Add up to five colours — ground, ink, accents — and I&rsquo;ll read the room.</p>
+      <div class="pal-rows" id="palRows"></div>
+      <div class="pal-actions">
+        <button type="button" class="btn" id="palAdd">+ Add a colour</button>
+        <button type="button" class="btn" id="palExample">Load an example</button>
+      </div>
+      <div id="palStrip"></div>
+    </section>
+
+    <section class="step">
+      <h2 class="label-caps step-label">02 — Palette overview</h2>
+      <div class="overview-grid">
+        <div id="palGauge"></div>
+        <div>
+          <p class="label-caps muted" style="margin:0">How it&rsquo;s behaving</p>
+          <ul class="check-list" id="palChecks"></ul>
+        </div>
+        <div>
+          <p class="label-caps muted" style="margin:0">Colour roles</p>
+          <ul class="list-panel" id="palRoles" style="margin-top:.75rem"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="step">
+      <h2 class="label-caps step-label">03 — Observations</h2>
+      <div class="obs-cards" id="palObs"></div>
+    </section>
+
+    <section class="step">
+      <h2 class="label-caps step-label">04 — One-click fixes</h2>
+      <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1.25rem">Moves, not replacements — every suggestion keeps your hue exactly where you put it, and only nudges saturation or lightness.</p>
+      <div class="fix-cards" id="palFixes"></div>
+    </section>
+
+    <section class="step" style="margin-bottom:0">
+      <h2 class="label-caps step-label">05 — Improve but keep my style</h2>
+      <button type="button" class="btn improve-cta" id="improveBtn">Improve but keep my style</button>
+      <p class="improve-note">Not a new palette. Every hue stays put — only saturation and lightness move, and only as far as they must. Preserve personality; improve behaviour.</p>
+      <div id="improveResult"></div>
+    </section>
+  </div>
 </main>
 
 <div id="toast" role="status" aria-live="polite"></div>
@@ -613,10 +742,13 @@ function themeToCss(theme) {
 
 /* ---------- palette plan ---------- */
 const PLAN_OPTIONS = [
-  { id: "website", name: "A website or app", tagline: "Tested, legible, forward-thinking" },
-  { id: "promo", name: "Promotional & business", tagline: "Exact values, nailed down for print" },
-  { id: "brand", name: "Brand identity", tagline: "One lead colour, a full supporting cast" },
-  { id: "art", name: "Studio & fine art", tagline: "Mixing notes, temperature, value plan" },
+  { id: "website", emoji: "🌐", name: "Website / App", tagline: "Tested, legible, forward-thinking" },
+  { id: "brand", emoji: "🎨", name: "Brand identity", tagline: "One lead colour, a full supporting cast" },
+  { id: "social", emoji: "📱", name: "Social media", tagline: "Thumb-stopping at sixty pixels" },
+  { id: "packaging", emoji: "📦", name: "Packaging", tagline: "Shelf impact, proofed for print" },
+  { id: "editorial", emoji: "📖", name: "Book / Editorial", tagline: "Quiet pages, deliberate accents" },
+  { id: "art", emoji: "🎭", name: "Illustration / Fine art", tagline: "Mixing notes, temperature, value plan" },
+  { id: "other", emoji: "➕", name: "Other", tagline: "The numbers that travel anywhere" },
 ];
 function rgbToCmyk({ r, g, b }) {
   const rn = r / 255, gn = g / 255, bn = b / 255;
@@ -682,28 +814,110 @@ function planBrief(id, hsl) {
         { label: "Non-text UI (borders, icons)", detail: "Needs 3:1. Currently " + onPaper.toFixed(2) + " : 1 straight from your colour.", pass: onPaper >= WCAG.uiAA },
       ] };
   }
-  if (id === "promo") {
+  if (id === "packaging") {
     const spot = hslToHex({ ...hsl, s: Math.min(100, hsl.s + 6) });
+    const kraft = "#B99B6B";
+    const onKraft = contrastHex(hex, kraft);
     return { ...shared,
-      verdict: "Lock the " + hue + " to one set of numbers and never re-eyeball it — every printer, ad platform and deck pulls from the same row.",
+      verdict: "On a shelf your " + hue + " has about two seconds and three metres — lock it to one set of numbers and let a flat, generous field of it do the talking.",
       moves: [
-        { title: "One master value, four translations", detail: "Hex for screen, RGB for digital ads and video, CMYK for litho, and a coated ink match for anything spot-printed." },
-        { title: "Give the colour room", detail: "Flat fields, big margins, one supporting neutral. Promotional work dies when the hero colour has to compete." },
-        { title: "Set the loud pairing on purpose", detail: "Take the complement for a single call-to-action only — headline, price flash or sticker — never for body copy." },
-        { title: "Write the do-not list", detail: "No drop shadows on the hue, no gradients, no reprinting from screenshots — always the values below." },
+        { title: "One master value, four translations", detail: "Hex for mockups, RGB for e-commerce shots, CMYK for litho, and a coated spot-ink match for the run itself." },
+        { title: "Pass the three-metre test", detail: "Squint from across the room: the pack should read as one confident field of the hue, not a collage. Value contrast beats detail at distance." },
+        { title: "Respect the substrate", detail: "The same ink lands differently on white board, kraft and film. Check the kraft ratio below before committing to an uncoated stock." },
+        { title: "Write the do-not list", detail: "No drop shadows on the hue, no gradients, no reprinting from screenshots — always the values below, and always a wet proof." },
       ],
       specs: [...baseSpecs(hex, hsl),
-        { label: "Punched-up spot version", value: spot.toUpperCase(), hint: "For vinyl, stickers and signage" },
+        { label: "Punched-up spot version", value: spot.toUpperCase(), hint: "For film, foil and sleeves" },
         { label: "Reversed-out ink", value: inkFor(hex).toUpperCase(), hint: "Type sitting on the colour" },
-        { label: "Safe headline on colour", value: inkFor(hex).toUpperCase() + " at " + contrastHex(inkFor(hex), hex).toFixed(2) + " : 1", hint: "Above 4.5:1 stays readable at small sizes" },
+        { label: "On kraft stock", value: onKraft.toFixed(2) + " : 1", hint: "Against uncoated kraft board" },
       ],
       checks: [
         { label: "Type on the colour", detail: inkFor(hex).toUpperCase() + " gives " + contrastHex(inkFor(hex), hex).toFixed(2) + " : 1 — the strongest ink for this fill.", pass: contrastHex(inkFor(hex), hex) >= WCAG.bodyAA },
-        { label: "Colour on white stock", detail: onPaper.toFixed(2) + " : 1 — " + (onPaper >= WCAG.largeAA ? "fine for display sizes" : "too pale for type, use as a field instead") + ".", pass: onPaper >= WCAG.largeAA },
-        { label: "Colour on black stock", detail: onInk.toFixed(2) + " : 1 against near-black.", pass: onInk >= WCAG.largeAA },
+        { label: "Colour on white board", detail: onPaper.toFixed(2) + " : 1 — " + (onPaper >= WCAG.largeAA ? "fine for display sizes" : "too pale for type, use as a field instead") + ".", pass: onPaper >= WCAG.largeAA },
+        { label: "Colour on kraft board", detail: onKraft.toFixed(2) + " : 1 — " + (onKraft >= WCAG.largeAA ? "holds on uncoated brown stock" : "will sink into kraft; keep it on a printed white panel") + ".", pass: onKraft >= WCAG.largeAA },
         { label: "Print gamut caution",
           detail: hsl.s > 85 && hsl.l > 45 ? "Very saturated — CMYK will dull it. Proof it or specify a spot ink." : "Reproduces predictably in four-colour process.",
           pass: !(hsl.s > 85 && hsl.l > 45) },
+      ] };
+  }
+  if (id === "social") {
+    const feedLight = "#FFFFFF", feedDark = "#0B0B0D";
+    const onFeed = contrastHex(hex, feedLight);
+    const onDarkFeed = contrastHex(hex, feedDark);
+    const story = hslToHex({ ...hsl, s: Math.min(100, hsl.s + 8) });
+    const liftDark = nearestAccessible(hex, feedDark, WCAG.largeAA);
+    const anchorLight = nearestAccessible(hex, feedLight, WCAG.largeAA);
+    return { ...shared,
+      verdict: onFeed >= WCAG.largeAA
+        ? "Your " + hue + " will stop a thumb on a white feed — own one combination of it and repeat it until people recognise the colour before the name."
+        : "Your " + hue + " melts into a white feed on its own — give every post a ground of the colour and let the ground do the stopping.",
+      moves: [
+        { title: "Own one combination", detail: "Base plus one accent, used identically on every tile. Recognition comes from repetition, not variety." },
+        { title: "Design for both feeds", detail: "Every asset lives on white and on dark mode. Use " + (anchorLight?.hex.toUpperCase() ?? hex.toUpperCase()) + " on light feeds and " + (liftDark?.hex.toUpperCase() ?? hex.toUpperCase()) + " on dark ones." },
+        { title: "Make templates, not posts", detail: "Fix the colour tokens once — ground, type, accent — and pour new content in. The palette is the brand asset, not the post." },
+        { title: "Survive the thumbnail", detail: "Shrink every design to sixty pixels. If the hue and the message still read, ship it; if not, simplify until they do." },
+      ],
+      specs: [...baseSpecs(hex, hsl),
+        { label: "On a light feed", value: (anchorLight?.hex.toUpperCase() ?? hex.toUpperCase()), hint: "Nearest version that holds 3:1 on white" },
+        { label: "On a dark feed", value: (liftDark?.hex.toUpperCase() ?? hex.toUpperCase()), hint: "Nearest version that holds 3:1 on near-black" },
+        { label: "Story punch version", value: story.toUpperCase(), hint: "Saturation +8 for stories and reels" },
+      ],
+      checks: [
+        { label: "Against a white feed", detail: onFeed.toFixed(2) + " : 1 — " + (onFeed >= WCAG.largeAA ? "stops the scroll on its own" : "needs a ground or outline to register") + ".", pass: onFeed >= WCAG.largeAA },
+        { label: "Against dark mode", detail: onDarkFeed.toFixed(2) + " : 1 against near-black.", pass: onDarkFeed >= WCAG.largeAA },
+        { label: "Reads at thumbnail size", detail: hsl.s >= 30 ? "Saturated enough to register at sixty pixels." : "Nearly neutral — at thumbnail size it reads as grey. Raise saturation for social work.", pass: hsl.s >= 30 },
+        { label: "Caption-safe pairing", detail: inkFor(hex).toUpperCase() + " on the colour gives " + contrastHex(inkFor(hex), hex).toFixed(2) + " : 1 for overlay text.", pass: contrastHex(inkFor(hex), hex) >= WCAG.bodyAA },
+      ] };
+  }
+  if (id === "editorial") {
+    const bookInk = hslToHex({ h: hsl.h, s: Math.min(hsl.s, 22), l: 14 });
+    const bookPaper = hslToHex({ h: hsl.h, s: Math.min(hsl.s, 10), l: 96 });
+    const headAccent = nearestAccessible(hex, bookPaper, WCAG.largeAA);
+    const inkOnPaper = contrastHex(bookInk, bookPaper);
+    return { ...shared,
+      verdict: "In a book your " + hue + " is punctuation, not prose — keep the running text in a quiet ink and spend the colour where the reader pauses.",
+      moves: [
+        { title: "Keep the prose neutral", detail: "Long reading wants near-black ink on softly tinted paper. Use " + bookInk.toUpperCase() + " for body text and save the hue itself for moments." },
+        { title: "Give the hue a job", detail: "Chapter numbers, running heads, rules, pull-quotes, captions — pick two of those and nowhere else. Restraint is what makes it feel designed." },
+        { title: "Tint the paper, don't paint it", detail: "A whisper of the hue in the page ground (" + bookPaper.toUpperCase() + ") warms the whole book without anyone noticing why." },
+        { title: "Proof the print", detail: "Editorial colour lives or dies in CMYK on uncoated stock. Proof the accent and the tint together before the run." },
+      ],
+      specs: [...baseSpecs(hex, hsl),
+        { label: "Body ink", value: bookInk.toUpperCase(), hint: "Running text, " + inkOnPaper.toFixed(2) + " : 1 on the tinted paper" },
+        { label: "Paper tint", value: bookPaper.toUpperCase(), hint: "Page ground with a whisper of the hue" },
+        { label: "Heading accent", value: (headAccent?.hex.toUpperCase() ?? hex.toUpperCase()), hint: "Chapter heads and pull-quotes, clears 3:1" },
+      ],
+      checks: [
+        { label: "Ink for long reading", detail: inkOnPaper.toFixed(2) + " : 1 — " + (inkOnPaper >= WCAG.bodyAAA ? "comfortable for chapters at a stretch" : "short of the 7:1 that long-form reading deserves") + ".", pass: inkOnPaper >= WCAG.bodyAAA },
+        { label: "Hue as display type", detail: onPaper.toFixed(2) + " : 1 on paper — " + (onPaper >= WCAG.largeAA ? "fine for headings and folios" : "too light even for display; use the heading accent above") + ".", pass: onPaper >= WCAG.largeAA },
+        { label: "Hue as body text", detail: onPaper.toFixed(2) + " : 1 — " + (onPaper >= WCAG.bodyAA ? "could carry a caption if it had to" : "never for running text; punctuation only") + ".", pass: onPaper >= WCAG.bodyAA },
+        { label: "Print gamut caution",
+          detail: hsl.s > 85 && hsl.l > 45 ? "Very saturated — uncoated stock will dull it further. Proof early." : "Reproduces predictably in four-colour process.",
+          pass: !(hsl.s > 85 && hsl.l > 45) },
+      ] };
+  }
+  if (id === "other") {
+    const onWhite = contrastHex(hex, "#FFFFFF");
+    const safeLight = nearestAccessible(hex, "#FFFFFF", WCAG.bodyAA);
+    const safeDark = nearestAccessible(hex, "#111111", WCAG.bodyAA);
+    return { ...shared,
+      verdict: "Whatever the " + hue + " ends up on, the same physics apply — carry these numbers with you and test them where the colour actually lives.",
+      moves: [
+        { title: "Keep one master value", detail: "Everything derives from " + hex.toUpperCase() + ". Never re-pick it by eye — every drifted copy weakens the identity." },
+        { title: "Build one light and one dark pairing", detail: "A version that reads on white (" + (safeLight?.hex.toUpperCase() ?? hex.toUpperCase()) + ") and one that reads on near-black (" + (safeDark?.hex.toUpperCase() ?? hex.toUpperCase()) + ") cover almost every surface you'll meet." },
+        { title: "Keep a neutral in your pocket", detail: "A desaturated companion of the same hue gives the colour somewhere to rest without breaking temperature." },
+        { title: "Test in situ", detail: "Screens, print, fabric, paint — each shifts the hue. Judge the colour in its destination, not on this page." },
+      ],
+      specs: [...baseSpecs(hex, hsl),
+        { label: "Reads on white", value: (safeLight?.hex.toUpperCase() ?? hex.toUpperCase()), hint: "Nearest version clearing 4.5:1 on white" },
+        { label: "Reads on black", value: (safeDark?.hex.toUpperCase() ?? hex.toUpperCase()), hint: "Nearest version clearing 4.5:1 on near-black" },
+        { label: "Living neutral", value: hslToHex({ ...hsl, s: Math.max(6, hsl.s * 0.18) }).toUpperCase(), hint: "Same hue, knocked right back" },
+      ],
+      checks: [
+        { label: "On white", detail: onWhite.toFixed(2) + " : 1 — " + (onWhite >= WCAG.bodyAA ? "safe for text on light grounds" : "accents and large sizes only on light grounds") + ".", pass: onWhite >= WCAG.bodyAA },
+        { label: "On near-black", detail: onInk.toFixed(2) + " : 1 — " + (onInk >= WCAG.bodyAA ? "safe for text on dark grounds" : "accents and large sizes only on dark grounds") + ".", pass: onInk >= WCAG.bodyAA },
+        { label: "Non-text UI and marks", detail: "Needs 3:1. Currently " + onPaper.toFixed(2) + " : 1 on paper.", pass: onPaper >= WCAG.uiAA },
+        { label: "Distinctiveness", detail: hsl.s < 18 ? "Nearly neutral — easy to lose in reproduction." : "Clearly a " + hue + "; survives being described over the phone.", pass: hsl.s >= 18 },
       ] };
   }
   if (id === "brand") {
@@ -862,7 +1076,7 @@ function renderPlan() {
       const active = plan === o.id;
       return '<button type="button" data-plan="' + o.id + '" aria-pressed="' + active + '" style="border-color:' + ink +
         "; background-color:" + (active ? ink : "transparent") + "; color:" + (active ? hex : ink) + '">' +
-        '<span class="opt-name">' + esc(o.name) + "</span>" +
+        '<span class="opt-name">' + (o.emoji ? o.emoji + " " : "") + esc(o.name) + "</span>" +
         '<span class="opt-tag label-caps">' + esc(o.tagline) + "</span></button>";
     }).join("") +
     "</div></div>";
@@ -1091,6 +1305,383 @@ function wireThemeControls() {
   });
 }
 
+/* ============ palette analysis (Analyse mode) ============ */
+const EXAMPLE_PALETTE = ["#C8452B", "#1F5F5B", "#E4A11B", "#F7F3EA", "#2A2118"];
+let palette = [...EXAMPLE_PALETTE];
+
+const hueDist = (a, b) => { const d = Math.abs(a - b) % 360; return d > 180 ? 360 - d : d; };
+const isWarmHue = (h) => { const hh = ((h % 360) + 360) % 360; return hh < 60 || hh >= 260; };
+const capFirst = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+
+function assignRoles(hexes) {
+  const items = hexes.map((hx, i) => ({ hex: hx.toUpperCase(), hsl: hexToHsl(hx), i }));
+  const byL = [...items].sort((a, b) => b.hsl.l - a.hsl.l);
+  const ground = byL[0];
+  const ink = byL[byL.length - 1];
+  const rest = items.filter((it) => it !== ground && it !== ink);
+  const bySat = [...rest].sort((a, b) => b.hsl.s - a.hsl.s);
+  const accents = bySat.filter((it) => it.hsl.s >= 18);
+  const neutrals = bySat.filter((it) => it.hsl.s < 18);
+  const role = new Map();
+  role.set(ground, "Ground / background");
+  role.set(ink, "Ink / text");
+  accents.forEach((it, idx) => role.set(it, idx === 0 ? "Lead accent" : "Supporting accent"));
+  neutrals.forEach((it) => role.set(it, "Neutral / support"));
+  return { items, ground, ink, accents, neutrals, role };
+}
+
+function accessMetric(R) {
+  const inkRatio = contrastHex(R.ink.hex, R.ground.hex);
+  let m = (Math.min(inkRatio, 7) / 7) * 60;
+  if (R.accents.length) {
+    const a = R.accents.reduce((sum, it) => sum + Math.min(contrastHex(it.hex, R.ground.hex), 4.5) / 4.5, 0) / R.accents.length;
+    m += a * 40;
+  } else m += 40;
+  return m;
+}
+
+function analysePalette(hexes) {
+  const R = assignRoles(hexes);
+  const ok = (text) => ({ mark: "✔", pass: true, text });
+  const warn = (text) => ({ mark: "⚠", pass: false, text });
+  const checks = [], observations = [], fixes = [];
+  const fixIdx = new Set();
+  const addFix = (f) => { if (!fixIdx.has(f.idx) && f.to.toUpperCase() !== f.from.toUpperCase()) { fixIdx.add(f.idx); fixes.push(f); } };
+  let score = 0;
+  const lightGround = R.ground.hsl.l >= 50;
+
+  /* -- accessibility (35) -- */
+  const inkRatio = contrastHex(R.ink.hex, R.ground.hex);
+  if (inkRatio >= WCAG.bodyAAA) { score += 35; checks.push(ok("Accessible — ink clears " + inkRatio.toFixed(1) + ":1 on the ground, AAA territory")); }
+  else if (inkRatio >= WCAG.bodyAA) { score += 29; checks.push(ok("Accessible — ink clears 4.5:1 on the ground")); }
+  else {
+    score += Math.max(0, Math.round((inkRatio / WCAG.bodyAA) * 18));
+    checks.push(warn("Ink only reaches " + inkRatio.toFixed(2) + ":1 on the ground"));
+    const fixed = nearestAccessible(R.ink.hex, R.ground.hex, WCAG.bodyAA);
+    if (fixed) {
+      observations.push({
+        colour: R.ink.hex,
+        statement: "Your text colour can't quite hold the page.",
+        detail: inkRatio.toFixed(2) + " : 1 against the ground — body text will strain long before the reader admits it.",
+        suggestion: "Move the ink to " + fixed.hex.toUpperCase() + " — lightness " + (fixed.delta > 0 ? "+" : "") + fixed.delta + ", hue untouched — and it clears 4.5:1.",
+      });
+      addFix({ idx: R.ink.i, from: R.ink.hex, to: fixed.hex.toUpperCase(), title: "Ink that clears body text",
+        reasons: ["Keeps the hue.", "Clears 4.5:1 for body text.", "Anchors the whole hierarchy."] });
+    }
+  }
+
+  /* accents sinking into the ground (observations, not the checklist) */
+  for (const a of R.accents) {
+    const r = contrastHex(a.hex, R.ground.hex);
+    if (r < WCAG.uiAA) {
+      const fixed = nearestAccessible(a.hex, R.ground.hex, WCAG.uiAA);
+      if (fixed) {
+        observations.push({
+          colour: a.hex,
+          statement: "The " + hueName(a.hsl.h) + " accent is sinking into the ground.",
+          detail: r.toFixed(2) + " : 1 — below the 3:1 that buttons, icons and borders need to register.",
+          suggestion: "Shift it to " + fixed.hex.toUpperCase() + " (lightness " + (fixed.delta > 0 ? "+" : "") + fixed.delta + ") and it holds its own.",
+        });
+        addFix({ idx: a.i, from: a.hex, to: fixed.hex.toUpperCase(), title: "Lift the " + hueName(a.hsl.h) + " off the ground",
+          reasons: ["Keeps the hue.", "Clears 3:1 for UI work.", "Stops it disappearing."] });
+      }
+    }
+  }
+
+  /* -- hierarchy (15) + competing accents (10) -- */
+  let competePair = null;
+  for (let i = 0; i < R.accents.length && !competePair; i++) {
+    for (let j = i + 1; j < R.accents.length && !competePair; j++) {
+      const a = R.accents[i], b = R.accents[j];
+      if (a.hsl.s >= 45 && b.hsl.s >= 45 && hueDist(a.hsl.h, b.hsl.h) > 60 && Math.abs(a.hsl.s - b.hsl.s) < 15) competePair = [a, b];
+    }
+  }
+  const lead = R.accents[0], second = R.accents[1];
+  const hierarchyPass = R.accents.length <= 1 || (lead.hsl.s - second.hsl.s >= 12) || hueDist(lead.hsl.h, second.hsl.h) <= 30;
+  if (hierarchyPass) { score += 15; checks.push(ok("Good hierarchy — one voice leads")); }
+  else { score += 5; checks.push(warn("No clear lead — the accents are at the same volume")); }
+  if (!competePair) { score += 10; if (R.accents.length > 1) checks.push(ok("Accents know their place")); }
+  else {
+    checks.push(warn("Accent colours compete"));
+    const [a, b] = competePair;
+    const newS = Math.max(10, a.hsl.s - 15);
+    const reduction = Math.round(b.hsl.s - newS);
+    if (reduction > 0) {
+      const to = hslToHex({ ...b.hsl, s: newS }).toUpperCase();
+      observations.push({
+        colour: b.hex,
+        statement: capFirst(hueName(a.hsl.h)) + " and " + hueName(b.hsl.h) + " are both demanding attention.",
+        detail: "Two saturated voices " + Math.round(hueDist(a.hsl.h, b.hsl.h)) + "° apart at nearly the same volume — the eye ping-pongs instead of landing.",
+        suggestion: "Reduce saturation of the " + hueName(b.hsl.h) + " by " + reduction + "%. It stays " + hueName(b.hsl.h) + " — it just stops shouting.",
+      });
+      addFix({ idx: b.i, from: b.hex, to, title: "Let the " + hueName(a.hsl.h) + " lead",
+        reasons: ["Keeps the " + hueName(b.hsl.h) + "'s warmth and hue.", "One voice leads, one supports.", "Creates stronger hierarchy."] });
+    }
+  }
+  if (!hierarchyPass && !competePair && lead && second) {
+    const newS = Math.max(10, lead.hsl.s - 12);
+    if (second.hsl.s > newS) {
+      const to = hslToHex({ ...second.hsl, s: newS }).toUpperCase();
+      observations.push({
+        colour: second.hex,
+        statement: "No single colour is in charge.",
+        detail: "The " + hueName(lead.hsl.h) + " and the " + hueName(second.hsl.h) + " sit at almost identical saturation — a hierarchy needs a lead.",
+        suggestion: "Drop the " + hueName(second.hsl.h) + " to " + Math.round(newS) + "% saturation and let the " + hueName(lead.hsl.h) + " front the band.",
+      });
+      addFix({ idx: second.i, from: second.hex, to, title: "Give the " + hueName(lead.hsl.h) + " the lead",
+        reasons: ["Keeps both hues.", "Second voice steps back.", "The lead reads as chosen, not loud."] });
+    }
+  }
+
+  /* -- value spread (20) -- */
+  const Ls = R.items.map((it) => it.hsl.l).sort((x, y) => x - y);
+  const range = Ls[Ls.length - 1] - Ls[0];
+  if (range >= 55) { score += 20; checks.push(ok("Good value spread — " + Math.round(range) + " L points from lightest to darkest")); }
+  else {
+    score += Math.max(0, Math.round((range / 55) * 12));
+    checks.push(warn("Values too compressed — the whole palette lives inside " + Math.round(range) + " L points"));
+    observations.push({
+      colour: R.ground.hex,
+      statement: "Values too compressed.",
+      detail: "Squint and this palette turns into one grey. Only " + Math.round(range) + " L points separate the lightest colour from the darkest — shapes will merge from across the room.",
+      suggestion: lightGround
+        ? "Stretch the ground up toward L 94 and the ink down toward L 16 until the range clears 55."
+        : "Push the ground down toward L 10 and the ink up toward L 90 until the range clears 55.",
+    });
+    const gTarget = lightGround ? Math.max(R.ground.hsl.l, 94) : Math.min(R.ground.hsl.l, 10);
+    const iTarget = lightGround ? Math.min(R.ink.hsl.l, 16) : Math.max(R.ink.hsl.l, 90);
+    if (Math.abs(gTarget - R.ground.hsl.l) >= 2) addFix({ idx: R.ground.i, from: R.ground.hex, to: hslToHex({ ...R.ground.hsl, l: gTarget }).toUpperCase(),
+      title: lightGround ? "Stretch the ground lighter" : "Deepen the ground",
+      reasons: ["Keeps the hue and its cast.", "Opens the value range.", "Everything else gains contrast for free."] });
+    if (Math.abs(iTarget - R.ink.hsl.l) >= 2) addFix({ idx: R.ink.i, from: R.ink.hex, to: hslToHex({ ...R.ink.hsl, l: iTarget }).toUpperCase(),
+      title: lightGround ? "Deepen the ink" : "Lift the ink",
+      reasons: ["Keeps the hue.", "Widens the value range.", "Text gains authority."] });
+  }
+
+  /* ink vs darkest accent proximity */
+  if (R.accents.length) {
+    const nearest = [...R.accents].sort((a, b) => Math.abs(a.hsl.l - R.ink.hsl.l) - Math.abs(b.hsl.l - R.ink.hsl.l))[0];
+    const dL = Math.abs(nearest.hsl.l - R.ink.hsl.l);
+    if (dL < 12) {
+      score = Math.max(0, score - 5);
+      const need = Math.round(12 - dL);
+      const newL = clamp(lightGround ? R.ink.hsl.l + 14 : R.ink.hsl.l - 14, 0, 100);
+      const to = hslToHex({ ...nearest.hsl, l: newL }).toUpperCase();
+      observations.push({
+        colour: nearest.hex,
+        statement: "Your text colour is almost identical to the darkest accent.",
+        detail: "Only " + Math.round(dL) + " L points apart — at a glance they read as the same colour doing two different jobs.",
+        suggestion: "Separate them by another " + need + " L — take the " + hueName(nearest.hsl.h) + " to " + to + " and the two roles come apart.",
+      });
+      addFix({ idx: nearest.i, from: nearest.hex, to, title: "Separate accent from ink",
+        reasons: ["Keeps the hue.", "Two jobs, two values.", "The accent stops impersonating the text."] });
+    }
+  }
+
+  /* -- true neutral (10) -- */
+  const hasNeutral = R.items.some((it) => it.hsl.s <= 12);
+  if (hasNeutral) { score += 10; checks.push(ok("A true neutral gives the eye somewhere to rest")); }
+  else {
+    checks.push(warn("No true neutral — everything carries colour"));
+    const calmest = [...R.items].sort((a, b) => a.hsl.s - b.hsl.s)[0];
+    const newS = Math.min(calmest.hsl.s, 10);
+    observations.push({
+      colour: calmest.hex,
+      statement: "No true neutral. Everything carries colour.",
+      detail: "Every surface hums a little. That's exciting for a poster and tiring for anything read at length — the eye never gets to rest.",
+      suggestion: "Knock the " + hueName(calmest.hsl.h) + " back to " + Math.round(newS) + "% saturation. Same hue, same temperature — but now it's a resting place.",
+    });
+    addFix({ idx: calmest.i, from: calmest.hex, to: hslToHex({ ...calmest.hsl, s: newS }).toUpperCase(), title: "A living neutral from your own hue",
+      reasons: ["Keeps the hue and temperature.", "Rest for long reading.", "Makes the saturated colours feel louder by contrast."] });
+  }
+
+  /* -- temperature (10) -- */
+  const saturated = R.items.filter((it) => it.hsl.s >= 20);
+  const warmCount = saturated.filter((it) => isWarmHue(it.hsl.h)).length;
+  const coolCount = saturated.length - warmCount;
+  if (saturated.length === 0) { score += 10; checks.push(ok("Temperature neutral throughout")); }
+  else if (warmCount > 0 && coolCount > 0) { score += 10; checks.push(ok("Temperature balanced — warm and cool both present")); }
+  else {
+    const temp = warmCount > 0 ? "warm" : "cool";
+    if (hasNeutral || saturated.length <= 2) { score += 8; checks.push(ok("Leans " + temp + " on purpose — reads as a deliberate cast")); }
+    else {
+      score += 4;
+      checks.push(warn("All-" + temp + ", all saturated — nowhere for the eye to cool off"));
+      observations.push({
+        colour: saturated[0].hex,
+        statement: "Everything leans " + temp + " at full volume.",
+        detail: "A committed temperature can be a signature — but with no neutral and no counter-note, long exposure gets sticky.",
+        suggestion: "The neutral fix above is the gentlest answer: it keeps the " + temp + " cast while giving the eye one place to rest.",
+      });
+    }
+  }
+
+  score = clamp(Math.round(score), 0, 100);
+  return { R, score, checks, observations, fixes, inkRatio };
+}
+
+function improvePalette(hexes) {
+  const before = analysePalette(hexes);
+  const improved = [...hexes];
+  const applied = [];
+  let fixes = before.fixes;
+  for (let pass = 0; pass < 3 && fixes.length; pass++) {
+    for (const f of fixes) {
+      improved[f.idx] = f.to;
+      const prev = applied.find((m) => m.idx === f.idx);
+      if (prev) prev.to = f.to;
+      else applied.push({ ...f });
+    }
+    fixes = analysePalette(improved).fixes;
+  }
+  const mBefore = accessMetric(before.R);
+  const mAfter = accessMetric(assignRoles(improved));
+  const pct = mBefore > 0 ? Math.round(((mAfter - mBefore) / mBefore) * 100) : 0;
+  return { improved, applied, pct, scoreBefore: before.score, scoreAfter: analysePalette(improved).score };
+}
+
+/* ---------- analyse mode rendering ---------- */
+function renderPalRows() {
+  $("palRows").innerHTML = palette.map((hx, i) =>
+    '<div class="pal-row" data-row="' + i + '">' +
+    '<input type="color" value="' + hx + '" data-pk="' + i + '" aria-label="Colour ' + (i + 1) + ' picker">' +
+    '<input class="text-field" value="' + hx.toUpperCase() + '" data-hx="' + i + '" spellcheck="false" style="text-transform:uppercase" aria-label="Colour ' + (i + 1) + ' hex">' +
+    '<span class="label-caps muted role-tag" data-role="' + i + '"></span>' +
+    (palette.length > 2 ? '<button type="button" class="btn small" data-rm="' + i + '" aria-label="Remove colour ' + (i + 1) + '">Remove</button>' : "") +
+    "</div>").join("");
+  $("palRows").querySelectorAll("[data-pk]").forEach((inp) =>
+    inp.addEventListener("input", () => { palette[Number(inp.dataset.pk)] = inp.value; syncPalRow(Number(inp.dataset.pk)); renderAnalysis(); }));
+  $("palRows").querySelectorAll("[data-hx]").forEach((inp) =>
+    inp.addEventListener("input", () => {
+      const rgb = hexToRgb(inp.value);
+      if (rgb) { palette[Number(inp.dataset.hx)] = rgbToHex(rgb); syncPalRow(Number(inp.dataset.hx)); renderAnalysis(); }
+    }));
+  $("palRows").querySelectorAll("[data-rm]").forEach((b) =>
+    b.addEventListener("click", () => { palette.splice(Number(b.dataset.rm), 1); renderPalRows(); renderAnalysis(); }));
+  $("palAdd").style.display = palette.length >= 5 ? "none" : "";
+}
+function syncPalRow(i) {
+  const pk = $("palRows").querySelector('[data-pk="' + i + '"]');
+  const hx = $("palRows").querySelector('[data-hx="' + i + '"]');
+  if (pk && document.activeElement !== pk) pk.value = palette[i];
+  if (hx && document.activeElement !== hx) hx.value = palette[i].toUpperCase();
+}
+function scoreWord(score) {
+  if (score >= 85) return "Behaving beautifully";
+  if (score >= 65) return "Mostly behaving";
+  if (score >= 45) return "Needs a hand";
+  return "Fighting itself";
+}
+function renderAnalysis() {
+  const A = analysePalette(palette);
+
+  A.R.items.forEach((it) => {
+    const tag = $("palRows").querySelector('[data-role="' + it.i + '"]');
+    if (tag) tag.textContent = A.R.role.get(it) ?? "";
+  });
+
+  $("palStrip").innerHTML = stripHtml(A.R.items.map((it) => ({ hex: it.hex, label: A.R.role.get(it) ?? "" })), false);
+  wireStrips($("palStrip"));
+
+  const r = 64, c = 2 * Math.PI * r;
+  $("palGauge").innerHTML =
+    '<div class="gauge">' +
+    '<svg viewBox="0 0 176 176" width="176" height="176" role="img" aria-label="Palette score ' + A.score + ' out of 100">' +
+    '<circle cx="88" cy="88" r="' + r + '" fill="none" stroke="var(--border)" stroke-width="10"></circle>' +
+    '<circle cx="88" cy="88" r="' + r + '" fill="none" stroke="var(--ink)" stroke-width="10" stroke-linecap="round" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + (c * (1 - A.score / 100)).toFixed(1) + '"></circle></svg>' +
+    '<span class="score"><span class="n tnum">' + A.score + '</span><span class="label-caps muted">/ 100</span></span></div>' +
+    '<p class="label-caps" style="text-align:center; margin:.75rem 0 0; max-width:11rem">' + scoreWord(A.score) + "</p>";
+
+  $("palChecks").innerHTML = A.checks.map((chk) =>
+    '<li><span class="mark" aria-hidden="true">' + chk.mark + '</span><span>' + esc(chk.text) + "</span></li>").join("");
+
+  $("palRoles").innerHTML = A.R.items.map((it) =>
+    '<li class="role-li"><span class="dot" style="background-color:' + it.hex + '" aria-hidden="true"></span>' +
+    '<span class="grow"><span class="truncate" style="display:block; font-size:.875rem">' + esc(A.R.role.get(it) ?? "") + "</span>" +
+    '<span class="label-caps muted">' + it.hex + " · S " + Math.round(it.hsl.s) + " · L " + Math.round(it.hsl.l) + "</span></span></li>").join("");
+
+  $("palObs").innerHTML = A.observations.length
+    ? A.observations.map((o) =>
+        '<div class="obs-card" style="border-left-color:' + (o.colour ?? "var(--border)") + '">' +
+        '<span class="label-caps muted">⚠ Observation</span>' +
+        '<p class="statement">' + esc(o.statement) + "</p>" +
+        (o.detail ? '<p class="detail">' + esc(o.detail) + "</p>" : "") +
+        '<p class="suggestion"><span class="label-caps muted">Suggestion </span>' + esc(o.suggestion) + "</p></div>").join("")
+    : '<div class="obs-card" style="border-left-color:var(--ink)"><span class="label-caps muted">✔ All clear</span>' +
+      '<p class="statement">Nothing fighting, nothing straining.</p>' +
+      '<p class="detail">Ink holds the page, one voice leads, the values separate and the eye gets to rest. This palette knows what it&rsquo;s doing.</p></div>';
+
+  $("palFixes").innerHTML = A.fixes.length
+    ? A.fixes.map((f, i) =>
+        '<div class="fix-card">' +
+        '<span class="label-caps muted">' + esc(f.title) + "</span>" +
+        '<div class="swap-line">' +
+        '<span class="fix-sw" style="background-color:' + f.from + '" aria-hidden="true"></span>' +
+        '<span class="mono" style="font-size:.875rem">' + f.from + "</span>" +
+        '<span class="arrow" aria-hidden="true">→</span>' +
+        '<span class="fix-sw" style="background-color:' + f.to + '" aria-hidden="true"></span>' +
+        '<span class="mono" style="font-size:.875rem">' + f.to + "</span></div>" +
+        '<p class="reason">' + f.reasons.map(esc).join(" ") + "</p>" +
+        '<div class="foot"><button type="button" class="btn small" data-applyfix="' + i + '">Use this move</button>' +
+        '<button type="button" class="btn small" data-copy="' + f.to + '" aria-label="Copy ' + f.to + '">Copy</button></div></div>').join("")
+    : '<p class="muted" style="font-size:.875rem; margin:0">No moves needed — the numbers already behave.</p>';
+  $("palFixes").querySelectorAll("[data-applyfix]").forEach((b) =>
+    b.addEventListener("click", () => {
+      const f = A.fixes[Number(b.dataset.applyfix)];
+      palette[f.idx] = f.to;
+      renderPalRows(); renderAnalysis();
+      $("improveResult").innerHTML = "";
+      toast(f.from + " → " + f.to);
+    }));
+  $("palFixes").querySelectorAll("[data-copy]").forEach((b) =>
+    b.addEventListener("click", () => copyText(b.dataset.copy)));
+}
+function renderImprove() {
+  const res = improvePalette(palette);
+  const out = $("improveResult");
+  if (!res.applied.length) {
+    out.innerHTML = '<div class="improve-quote" style="margin-top:1.5rem"><p>&ldquo;Your palette already behaves. There&rsquo;s nothing to improve without touching the personality — and I won&rsquo;t do that.&rdquo;</p></div>';
+    return;
+  }
+  const changed = new Set(res.applied.map((f) => f.idx));
+  const msg = res.pct > 0
+    ? "I can improve accessibility by " + res.pct + "% without changing how the brand feels."
+    : "I can tidy the hierarchy without changing how the brand feels — the accessibility was already there.";
+  out.innerHTML =
+    '<div class="improve-quote" style="margin-top:1.5rem"><p>&ldquo;' + msg + "&rdquo;</p></div>" +
+    '<div class="ba-grid">' +
+    '<div><p class="label-caps muted" style="margin:0 0 .5rem">Before · score ' + res.scoreBefore + "</p>" +
+    stripHtml(palette.map((hx) => ({ hex: hx, label: "" })), false) + "</div>" +
+    '<div><p class="label-caps muted" style="margin:0 0 .5rem">After · score ' + res.scoreAfter + "</p>" +
+    stripHtml(res.improved.map((hx, i) => ({ hex: hx, label: changed.has(i) ? "moved" : "" })), false) + "</div></div>" +
+    '<ul class="move-list">' +
+    res.applied.map((f) => '<li><span class="mark" aria-hidden="true">✔</span><span>' + esc(f.title) + " — " + f.from + " → " + f.to + "</span></li>").join("") +
+    "</ul>" +
+    '<p class="muted" style="font-size:.875rem; max-width:34rem; margin:1rem 0 0">Every hue is exactly where you left it — only saturation and lightness moved, and only as far as they had to.</p>' +
+    '<div style="display:flex; gap:.75rem; margin-top:1.25rem; flex-wrap:wrap">' +
+    '<button type="button" class="btn" id="improveApply">Apply the moves</button>' +
+    '<button type="button" class="btn" id="improveDismiss">Keep it as it was</button></div>';
+  wireStrips(out);
+  $("improveApply").addEventListener("click", () => {
+    palette = res.improved;
+    renderPalRows(); renderAnalysis();
+    out.innerHTML = "";
+    toast("Palette improved — hues untouched");
+  });
+  $("improveDismiss").addEventListener("click", () => { out.innerHTML = ""; });
+}
+
+/* ---------- mode toggle ---------- */
+function setMode(mode) {
+  const build = mode === "build";
+  $("modeBuild").hidden = !build;
+  $("modeAnalyse").hidden = build;
+  $("modeBtnBuild").classList.toggle("active", build);
+  $("modeBtnAnalyse").classList.toggle("active", !build);
+  $("modeBtnBuild").setAttribute("aria-pressed", String(build));
+  $("modeBtnAnalyse").setAttribute("aria-pressed", String(!build));
+}
+
 /* ---------- master render ---------- */
 function renderAll(opts = {}) {
   syncInputPanel(opts);
@@ -1111,7 +1702,22 @@ wireThemeControls();
 $("picker").addEventListener("input", () => setHex($("picker").value));
 $("hexField").addEventListener("input", () => { const rgb = hexToRgb($("hexField").value); if (rgb) setHex(rgbToHex(rgb)); });
 $("rgbField").addEventListener("input", () => { const rgb = parseRgbString($("rgbField").value); if (rgb) setHex(rgbToHex(rgb)); });
+$("modeBtnBuild").addEventListener("click", () => setMode("build"));
+$("modeBtnAnalyse").addEventListener("click", () => setMode("analyse"));
+$("palAdd").addEventListener("click", () => {
+  if (palette.length >= 5) return;
+  palette.push("#8C8478");
+  renderPalRows(); renderAnalysis();
+});
+$("palExample").addEventListener("click", () => {
+  palette = [...EXAMPLE_PALETTE];
+  renderPalRows(); renderAnalysis();
+  $("improveResult").innerHTML = "";
+});
+$("improveBtn").addEventListener("click", renderImprove);
 renderAll();
+renderPalRows();
+renderAnalysis();
 </script>
 
 </body>
