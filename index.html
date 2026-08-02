@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ChromaEngine — colour tool for artists with a dedicated photo extraction tab (up to 8 swatches), Polychromos pencil matching, a goal-weighted Palette Health Score, and production-ready themes.">
+<meta name="description" content="ChromaEngine — colour tool for artists with a dedicated photo extraction tab, Polychromos pencil matching, a goal-weighted Palette Health Score, and production-ready themes.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 <title>ChromaEngine — colour families for artists</title>
 <style>
@@ -2134,6 +2134,20 @@ function extractPaletteFromImage(img, k) {
   return kMeansOklab(points, k);
 }
 let photoObjectUrl = null;
+let lastPhotoImg = null;
+function runPhotoExtraction(img, url) {
+  $("photoResult").innerHTML = '<p class="label-caps muted" style="margin-top:1.25rem">Sampling your photo&hellip;</p>';
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    let swatches;
+    try {
+      swatches = extractPaletteFromImage(img, Number($("photoCount").value || 5));
+    } catch (err) {
+      $("photoResult").innerHTML = '<p class="label-caps muted" style="margin-top:1.25rem">Couldn&rsquo;t read that photo — try a different file.</p>';
+      return;
+    }
+    renderPhotoResult(url, swatches);
+  }));
+}
 function handlePhotoFile(file) {
   if (!file || !file.type.startsWith("image/")) { toast("That doesn't look like an image"); return; }
   if (photoObjectUrl) URL.revokeObjectURL(photoObjectUrl);
@@ -2141,17 +2155,8 @@ function handlePhotoFile(file) {
   const url = photoObjectUrl;
   const img = new Image();
   img.onload = () => {
-    $("photoResult").innerHTML = '<p class="label-caps muted" style="margin-top:1.25rem">Sampling your photo&hellip;</p>';
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      let swatches;
-      try {
-        swatches = extractPaletteFromImage(img, Number($("photoCount").value || 5));
-      } catch (err) {
-        $("photoResult").innerHTML = '<p class="label-caps muted" style="margin-top:1.25rem">Couldn&rsquo;t read that photo — try a different file.</p>';
-        return;
-      }
-      renderPhotoResult(url, swatches);
-    }));
+    lastPhotoImg = img;
+    runPhotoExtraction(img, url);
   };
   img.onerror = () => {
     toast("Couldn't load that image");
@@ -2545,6 +2550,9 @@ $("photoBtn").addEventListener("click", () => $("photoInput").click());
 $("photoInput").addEventListener("change", (e) => {
   const file = e.target.files && e.target.files[0];
   if (file) handlePhotoFile(file);
+});
+$("photoCount").addEventListener("change", () => {
+  if (lastPhotoImg) runPhotoExtraction(lastPhotoImg, photoObjectUrl);
 });
 {
   const dropZone = $("photoExtract");
