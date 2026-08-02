@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ChromaEngine — colour harmony explorer with a goal-weighted Palette Health Score. Build from one colour or analyse an existing palette across measurable colour-science dimensions.">
+<meta name="description" content="ChromaEngine — colour harmony explorer with a goal-weighted Palette Health Score. Build from one colour or analyse an existing palette and export a production-ready theme.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 <title>ChromaEngine — colour families for artists</title>
 <style>
@@ -331,6 +331,7 @@
   .improve-cta:hover { background: #3a352c; }
   .improve-note { font-size: .875rem; color: var(--muted); max-width: 34rem; margin: .75rem 0 0; }
   #improveResult { margin-top: 2rem; }
+  #analyseThemeResult:not(:empty) { margin-top: 1.5rem; }
   .improve-quote { border-left: 4px solid var(--ink); padding-left: 1.25rem; }
   .improve-quote p { font-family: var(--font-display); font-size: 1.6rem; line-height: 1.35; margin: 0; }
   @media (min-width: 768px) { .improve-quote p { font-size: 1.9rem; } }
@@ -520,11 +521,18 @@
       <div class="fix-cards" id="palFixes"></div>
     </section>
 
-    <section class="step" style="margin-bottom:0">
+    <section class="step">
       <h2 class="label-caps step-label">05 — Improve but keep my style</h2>
       <button type="button" class="btn improve-cta" id="improveBtn">Improve but keep my style</button>
       <p class="improve-note">Not a new palette. Every hue stays put — only saturation and lightness move, and only as far as they must. Preserve personality; improve behaviour.</p>
       <div id="improveResult"></div>
+    </section>
+
+    <section class="step" style="margin-bottom:0">
+      <h2 class="label-caps step-label">06 — Production-ready Theme</h2>
+      <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1.25rem" id="analyseThemeIntro">Once the palette is behaving, turn it into a full light and dark UI theme — same system as section 07, built from your palette's lead colour.</p>
+      <button type="button" class="btn improve-cta" id="analyseThemeBtn">Generate production-ready theme</button>
+      <div id="analyseThemeResult"></div>
     </section>
   </div>
 </main>
@@ -1287,7 +1295,30 @@ function wireContrastInputs() {
   $("swapBtn").addEventListener("click", () => setContrast(cBg, cFg));
 }
 
-/* ---------- 07 theme ---------- */
+/* ---------- 07 theme (shared renderers) ---------- */
+function themePreviewHtml(theme) {
+  const tok = (k) => theme.tokens.find((t) => t.key === k);
+  return '<div style="border:1px solid ' + tok("border").hex + "; border-radius:var(--radius); padding:1.25rem; background-color:" + tok("background").hex + "; color:" + tok("text").hex + '">' +
+    '<p class="font-display" style="font-size:1.9rem; line-height:1.2; margin:0">Studio interface</p>' +
+    '<p style="font-size:.875rem; line-height:1.6; margin:.5rem 0 0; color:' + tok("muted").hex + '">Muted supporting copy sits under the heading, still clearing 4.5:1.</p>' +
+    '<div style="margin-top:1rem; border:1px solid ' + tok("border").hex + "; border-radius:var(--radius); padding:1rem; background-color:" + tok("surface").hex + '">' +
+    '<p style="font-size:.875rem; margin:0">Card surface with body text and <span style="color:' + tok("link").hex + '; text-decoration:underline">an inline link</span>.</p>' +
+    '<span class="label-caps" style="display:inline-flex; min-height:2.75rem; align-items:center; border-radius:var(--radius); padding:0 1rem; margin-top:.75rem; background-color:' + tok("button").hex + "; color:" + tok("buttonInk").hex + '">Primary action</span>' +
+    "</div></div>";
+}
+function themeTokenRowsHtml(theme) {
+  return theme.tokens.map((t) =>
+    '<li class="token-row">' +
+    '<span class="dot" style="background-color:' + t.hex + '" aria-hidden="true"></span>' +
+    '<span class="grow"><span class="truncate" style="display:block; font-size:.875rem">' + esc(t.label) + "</span>" +
+    '<span class="label-caps muted">' + t.hex + " · " + t.ratio.toFixed(2) + " : 1 vs " + esc(t.againstLabel) + " (needs " + t.required + ")</span></span>" +
+    passTag(t.pass) +
+    '<button type="button" class="btn small" data-copytoken="' + t.hex + '" aria-label="Copy ' + esc(t.label) + " " + t.hex + '">Copy</button></li>').join("");
+}
+function wireTokenCopies(container) {
+  container.querySelectorAll("[data-copytoken]").forEach((b) =>
+    b.addEventListener("click", () => copyText(b.dataset.copytoken)));
+}
 function renderTheme() {
   const themes = buildThemes(currentHsl());
   const theme = themes.find((t) => t.id === themeTab) ?? themes[0];
@@ -1295,24 +1326,9 @@ function renderTheme() {
   $("tabDark").classList.toggle("active", themeTab === "dark");
   $("tabLight").setAttribute("aria-pressed", String(themeTab === "light"));
   $("tabDark").setAttribute("aria-pressed", String(themeTab === "dark"));
-  const tok = (k) => theme.tokens.find((t) => t.key === k);
-  $("themePreview").innerHTML =
-    '<div style="border:1px solid ' + tok("border").hex + "; border-radius:var(--radius); padding:1.25rem; background-color:" + tok("background").hex + "; color:" + tok("text").hex + '">' +
-    '<p class="font-display" style="font-size:1.9rem; line-height:1.2; margin:0">Studio interface</p>' +
-    '<p style="font-size:.875rem; line-height:1.6; margin:.5rem 0 0; color:' + tok("muted").hex + '">Muted supporting copy sits under the heading, still clearing 4.5:1.</p>' +
-    '<div style="margin-top:1rem; border:1px solid ' + tok("border").hex + "; border-radius:var(--radius); padding:1rem; background-color:" + tok("surface").hex + '">' +
-    '<p style="font-size:.875rem; margin:0">Card surface with body text and <span style="color:' + tok("link").hex + '; text-decoration:underline">an inline link</span>.</p>' +
-    '<span class="label-caps" style="display:inline-flex; min-height:2.75rem; align-items:center; border-radius:var(--radius); padding:0 1rem; margin-top:.75rem; background-color:' + tok("button").hex + "; color:" + tok("buttonInk").hex + '">Primary action</span>' +
-    "</div></div>";
-  $("themeTokens").innerHTML = theme.tokens.map((t) =>
-    '<li class="token-row">' +
-    '<span class="dot" style="background-color:' + t.hex + '" aria-hidden="true"></span>' +
-    '<span class="grow"><span class="truncate" style="display:block; font-size:.875rem">' + esc(t.label) + "</span>" +
-    '<span class="label-caps muted">' + t.hex + " · " + t.ratio.toFixed(2) + " : 1 vs " + esc(t.againstLabel) + " (needs " + t.required + ")</span></span>" +
-    passTag(t.pass) +
-    '<button type="button" class="btn small" data-copytoken="' + t.hex + '" aria-label="Copy ' + esc(t.label) + " " + t.hex + '">Copy</button></li>').join("");
-  $("themeTokens").querySelectorAll("[data-copytoken]").forEach((b) =>
-    b.addEventListener("click", () => copyText(b.dataset.copytoken)));
+  $("themePreview").innerHTML = themePreviewHtml(theme);
+  $("themeTokens").innerHTML = themeTokenRowsHtml(theme);
+  wireTokenCopies($("themeTokens"));
   $("themeCss").textContent = themeToCss(theme);
 }
 function wireThemeControls() {
@@ -1329,6 +1345,7 @@ function wireThemeControls() {
 const EXAMPLE_PALETTE = ["#C8452B", "#1F5F5B", "#E4A11B", "#F7F3EA", "#2A2118"];
 let palette = [...EXAMPLE_PALETTE];
 let analyseGoal = "general";
+let analyseThemeTab = "light";
 
 const hueDist = (a, b) => { const d = Math.abs(a - b) % 360; return d > 180 ? 360 - d : d; };
 const isWarmHue = (h) => { const hh = ((h % 360) + 360) % 360; return hh < 60 || hh >= 260; };
@@ -1892,6 +1909,8 @@ function renderAnalysis() {
     }));
   $("palFixes").querySelectorAll("[data-copy]").forEach((b) =>
     b.addEventListener("click", () => copyText(b.dataset.copy)));
+
+  if ($("analyseThemeResult").innerHTML.trim()) renderAnalyseTheme();
 }
 function renderImprove() {
   const res = improvePalette(palette);
@@ -1941,6 +1960,55 @@ function renderImprove() {
   $("improveDismiss").addEventListener("click", () => { out.innerHTML = ""; });
 }
 
+/* ---------- analyse mode: production-ready theme (reuses section 07's renderers) ---------- */
+function analyseThemeBase() {
+  const R = assignRoles(palette);
+  const source = R.accents[0] ?? R.ink ?? R.ground;
+  return { hsl: source.hsl, hex: source.hex, role: (R.role.get(source) ?? "lead colour").toLowerCase() };
+}
+function combinedThemeCss(themes) {
+  return themes.map(themeToCss).join("\n\n") + "\n";
+}
+function downloadText(filename, text, mime) {
+  const blob = new Blob([text], { type: (mime || "text/plain") + ";charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+function renderAnalyseTheme() {
+  const base = analyseThemeBase();
+  const themes = buildThemes(base.hsl);
+  const theme = themes.find((t) => t.id === analyseThemeTab) ?? themes[0];
+  const out = $("analyseThemeResult");
+  out.innerHTML =
+    '<p class="label-caps muted" style="margin:0 0 .75rem">Built from your ' + esc(base.role) + " — " + base.hex + "</p>" +
+    '<div class="theme-controls" role="group" aria-label="Theme mode">' +
+    '<button type="button" class="btn' + (analyseThemeTab === "light" ? " active" : "") + '" id="analyseTabLight" aria-pressed="' + (analyseThemeTab === "light") + '">Light theme</button>' +
+    '<button type="button" class="btn' + (analyseThemeTab === "dark" ? " active" : "") + '" id="analyseTabDark" aria-pressed="' + (analyseThemeTab === "dark") + '">Dark theme</button>' +
+    '<button type="button" class="btn" id="analyseThemeCopyBtn">Copy CSS variables</button>' +
+    '<button type="button" class="btn" id="analyseThemeSaveBtn">Save theme.css</button>' +
+    "</div>" +
+    '<div class="theme-grid">' +
+    "<div>" + themePreviewHtml(theme) + "</div>" +
+    '<div><p class="label-caps muted" style="margin:0">Every token, checked against its partner</p>' +
+    '<ul class="list-panel" style="margin-top:.75rem">' + themeTokenRowsHtml(theme) + "</ul></div>" +
+    "</div>" +
+    '<pre class="css-out">' + esc(themeToCss(theme)) + "</pre>";
+  wireTokenCopies(out);
+  $("analyseTabLight").addEventListener("click", () => { analyseThemeTab = "light"; renderAnalyseTheme(); });
+  $("analyseTabDark").addEventListener("click", () => { analyseThemeTab = "dark"; renderAnalyseTheme(); });
+  $("analyseThemeCopyBtn").addEventListener("click", () => copyText(themeToCss(theme), "CSS variables"));
+  $("analyseThemeSaveBtn").addEventListener("click", () => {
+    downloadText("chromaengine-theme.css", combinedThemeCss(themes), "text/css");
+    toast("theme.css saved");
+  });
+}
+
 /* ---------- mode toggle ---------- */
 function setMode(mode) {
   const build = mode === "build";
@@ -1985,6 +2053,7 @@ $("palExample").addEventListener("click", () => {
   $("improveResult").innerHTML = "";
 });
 $("improveBtn").addEventListener("click", renderImprove);
+$("analyseThemeBtn").addEventListener("click", renderAnalyseTheme);
 renderAll();
 renderPalRows();
 renderAnalysis();
