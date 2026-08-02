@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ChromaEngine — colour harmony explorer with a goal-weighted Palette Health Score. Build from one colour or analyse an existing palette and export a production-ready theme built from your approved colours.">
+<meta name="description" content="ChromaEngine — colour harmony explorer with a sticky jump-to nav, goal-weighted Palette Health Score, and a production-ready theme built from your approved colours.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 <title>ChromaEngine — colour families for artists</title>
 <style>
@@ -21,7 +21,7 @@
     --font-mono: "SF Mono", "Cascadia Mono", Menlo, Consolas, "Liberation Mono", ui-monospace, monospace;
     color-scheme: light;
   }
-  html { -webkit-text-size-adjust: 100%; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
   body {
     background: var(--paper);
     color: var(--ink);
@@ -54,8 +54,24 @@
   }
   header.masthead p { margin: .35rem 0 0; max-width: 26rem; font-size: .875rem; color: var(--muted); }
 
-  section.step { margin-bottom: 3.5rem; }
+  section.step { margin-bottom: 3.5rem; scroll-margin-top: 4.75rem; }
   section.step > .step-label { display: block; margin-bottom: 1.25rem; color: var(--muted); }
+
+  /* ---------- section nav ---------- */
+  .section-nav {
+    position: sticky; top: 0; z-index: 30; display: flex; gap: .5rem; overflow-x: auto;
+    padding: .875rem 0; margin: 0 0 2.5rem; background: var(--paper); border-bottom: 1px solid var(--border);
+    scrollbar-width: none;
+  }
+  .section-nav::-webkit-scrollbar { display: none; }
+  .section-nav a {
+    flex-shrink: 0; font-family: var(--font-mono); font-size: .6875rem; letter-spacing: .1em;
+    text-transform: uppercase; padding: .5rem .85rem; border: 1px solid var(--border); border-radius: var(--radius);
+    color: var(--muted); text-decoration: none; white-space: nowrap; transition: background-color .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .section-nav a:hover { background: var(--accent-soft); color: var(--ink); }
+  .section-nav a:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .section-nav a.current { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 
   /* ---------- shared controls ---------- */
   .btn {
@@ -343,6 +359,7 @@
 
   @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; }
+    html { scroll-behavior: auto; }
   }
 </style>
 </head>
@@ -361,8 +378,10 @@
     <button type="button" class="btn" id="modeBtnAnalyse" aria-pressed="false">Analyse a palette</button>
   </div>
 
+  <nav class="section-nav" id="sectionNav" aria-label="Jump to section"></nav>
+
   <div id="modeBuild">
-  <section class="step">
+  <section class="step" id="s-color">
     <h2 class="label-caps step-label">01 — Choose your colour</h2>
     <div class="input-grid">
       <div class="plate" id="plate">
@@ -394,7 +413,7 @@
     </div>
   </section>
 
-  <section class="step">
+  <section class="step" id="s-plan">
     <h2 class="label-caps step-label">02 — What&rsquo;s the plan for your palette?</h2>
     <div style="display:flex; flex-direction:column; gap:2rem">
       <div id="planBanner"></div>
@@ -402,22 +421,22 @@
     </div>
   </section>
 
-  <section class="step">
+  <section class="step" id="s-tints">
     <h2 class="label-caps step-label" style="margin-bottom:1rem">03 — Tints &amp; shades</h2>
     <div id="ramp"></div>
   </section>
 
-  <section class="step">
+  <section class="step" id="s-families">
     <h2 class="label-caps step-label" style="margin-bottom:2rem">04 — Colour families</h2>
     <div id="schemes"></div>
   </section>
 
-  <section class="step">
+  <section class="step" id="s-previews">
     <h2 class="label-caps step-label">05 — Put to work: advertising, web, promotion</h2>
     <div class="previews" id="previews"></div>
   </section>
 
-  <section class="step">
+  <section class="step" id="s-contrast">
     <h2 class="label-caps step-label">06 — Contrast &amp; legibility check</h2>
     <div style="display:flex; flex-direction:column; gap:2.5rem">
       <div class="contrast-grid">
@@ -462,7 +481,7 @@
     </div>
   </section>
 
-  <section class="step" style="margin-bottom:0">
+  <section class="step" id="s-theme" style="margin-bottom:0">
     <h2 class="label-caps step-label">07 — Production-ready Theme</h2>
     <div class="theme-controls" role="group" aria-label="Theme mode">
       <button type="button" class="btn" id="tabLight" aria-pressed="true">Light theme</button>
@@ -481,7 +500,7 @@
   </div>
 
   <div id="modeAnalyse" hidden>
-    <section class="step">
+    <section class="step" id="s-palette">
       <h2 class="label-caps step-label">01 — Your palette</h2>
       <p class="pal-intro">Already have a colour scheme? Let&rsquo;s see how it&rsquo;s behaving. Add up to five colours — ground, ink, accents — and I&rsquo;ll read the room.</p>
       <div class="pal-rows" id="palRows"></div>
@@ -492,7 +511,7 @@
       <div id="palStrip"></div>
     </section>
 
-    <section class="step">
+    <section class="step" id="s-health">
       <h2 class="label-caps step-label">02 — Palette health</h2>
       <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1rem">Every dimension is measured from colour science — WCAG ratios, OKLab distances, value gaps — then weighted for what the palette is for.</p>
       <div class="goal-row" id="palGoals" role="group" aria-label="Score the palette for"></div>
@@ -510,25 +529,25 @@
       <ul class="breakdown" id="palBreakdown"></ul>
     </section>
 
-    <section class="step">
+    <section class="step" id="s-observations">
       <h2 class="label-caps step-label">03 — Observations</h2>
       <div class="obs-cards" id="palObs"></div>
     </section>
 
-    <section class="step">
+    <section class="step" id="s-fixes">
       <h2 class="label-caps step-label">04 — One-click fixes</h2>
       <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1.25rem">Moves, not replacements — every suggestion keeps your hue exactly where you put it, and only nudges saturation or lightness.</p>
       <div class="fix-cards" id="palFixes"></div>
     </section>
 
-    <section class="step">
+    <section class="step" id="s-improve">
       <h2 class="label-caps step-label">05 — Improve but keep my style</h2>
       <button type="button" class="btn improve-cta" id="improveBtn">Improve but keep my style</button>
       <p class="improve-note">Not a new palette. Every hue stays put — only saturation and lightness move, and only as far as they must. Preserve personality; improve behaviour.</p>
       <div id="improveResult"></div>
     </section>
 
-    <section class="step" style="margin-bottom:0">
+    <section class="step" id="s-analysetheme" style="margin-bottom:0">
       <h2 class="label-caps step-label">06 — Production-ready Theme</h2>
       <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1.25rem" id="analyseThemeIntro">Once the palette is behaving, turn it into a full light and dark UI theme — same system as section 07, built from your palette's lead colour.</p>
       <button type="button" class="btn improve-cta" id="analyseThemeBtn">Generate production-ready theme</button>
@@ -2056,8 +2075,47 @@ function renderAnalyseTheme() {
   });
 }
 
+/* ---------- section nav (sticky jump-to + scrollspy) ---------- */
+const BUILD_SECTIONS = [
+  ["s-color", "01 Colour"],
+  ["s-plan", "02 Plan"],
+  ["s-tints", "03 Tints"],
+  ["s-families", "04 Families"],
+  ["s-previews", "05 Preview"],
+  ["s-contrast", "06 Contrast"],
+  ["s-theme", "07 Theme"],
+];
+const ANALYSE_SECTIONS = [
+  ["s-palette", "01 Palette"],
+  ["s-health", "02 Health"],
+  ["s-observations", "03 Notes"],
+  ["s-fixes", "04 Fixes"],
+  ["s-improve", "05 Improve"],
+  ["s-analysetheme", "06 Theme"],
+];
+let sectionObserver = null;
+function renderSectionNav(mode) {
+  const sections = mode === "build" ? BUILD_SECTIONS : ANALYSE_SECTIONS;
+  const nav = $("sectionNav");
+  nav.innerHTML = sections.map(([id, label]) => '<a href="#' + id + '" data-target="' + id + '">' + label + "</a>").join("");
+  if (sectionObserver) sectionObserver.disconnect();
+  const links = {};
+  nav.querySelectorAll("a").forEach((a) => { links[a.dataset.target] = a; });
+  sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      Object.values(links).forEach((a) => a.classList.remove("current"));
+      const a = links[entry.target.id];
+      if (a) a.classList.add("current");
+    });
+  }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
+  sections.forEach(([id]) => { const el = document.getElementById(id); if (el) sectionObserver.observe(el); });
+  const first = nav.querySelector("a");
+  if (first) first.classList.add("current");
+}
+
 /* ---------- mode toggle ---------- */
-function setMode(mode) {
+function setMode(mode, opts = {}) {
   const build = mode === "build";
   $("modeBuild").hidden = !build;
   $("modeAnalyse").hidden = build;
@@ -2065,6 +2123,8 @@ function setMode(mode) {
   $("modeBtnAnalyse").classList.toggle("active", !build);
   $("modeBtnBuild").setAttribute("aria-pressed", String(build));
   $("modeBtnAnalyse").setAttribute("aria-pressed", String(!build));
+  renderSectionNav(mode);
+  if (opts.scrollTop) window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
 }
 
 /* ---------- master render ---------- */
@@ -2087,8 +2147,8 @@ wireThemeControls();
 $("picker").addEventListener("input", () => setHex($("picker").value));
 $("hexField").addEventListener("input", () => { const rgb = hexToRgb($("hexField").value); if (rgb) setHex(rgbToHex(rgb)); });
 $("rgbField").addEventListener("input", () => { const rgb = parseRgbString($("rgbField").value); if (rgb) setHex(rgbToHex(rgb)); });
-$("modeBtnBuild").addEventListener("click", () => setMode("build"));
-$("modeBtnAnalyse").addEventListener("click", () => setMode("analyse"));
+$("modeBtnBuild").addEventListener("click", () => setMode("build", { scrollTop: true }));
+$("modeBtnAnalyse").addEventListener("click", () => setMode("analyse", { scrollTop: true }));
 $("palAdd").addEventListener("click", () => {
   if (palette.length >= 5) return;
   palette.push("#8C8478");
@@ -2104,6 +2164,7 @@ $("analyseThemeBtn").addEventListener("click", renderAnalyseTheme);
 renderAll();
 renderPalRows();
 renderAnalysis();
+renderSectionNav("build");
 </script>
 
 </body>
