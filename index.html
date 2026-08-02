@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ChromaEngine — colour harmony explorer with a sticky jump-to nav, goal-weighted Palette Health Score, and a production-ready theme built from your approved colours.">
+<meta name="description" content="ChromaEngine — colour harmony explorer with photo-to-palette extraction, a goal-weighted Palette Health Score, and a production-ready theme built from your approved colours.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 <title>ChromaEngine — colour families for artists</title>
 <style>
@@ -277,6 +277,17 @@
   .pal-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
   #palStrip { margin-top: 1.5rem; }
 
+  /* ---------- analyse: extract from a photo ---------- */
+  .photo-extract { border-top: 1px solid var(--border); margin-top: 2rem; padding-top: 1.5rem; border-radius: var(--radius); transition: background-color .15s ease; }
+  .photo-extract.drag-over { background: var(--accent-soft); }
+  .photo-extract .pal-actions { margin-top: 1rem; align-items: center; }
+  .photo-count { display: flex; align-items: center; gap: .5rem; }
+  .photo-count select { height: 2.75rem; width: 4rem; padding: 0 .5rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); font-family: var(--font-mono); font-size: .875rem; color: inherit; }
+  .photo-grid { display: grid; gap: 1rem; margin-top: 1.25rem; }
+  @media (min-width: 640px) { .photo-grid { grid-template-columns: 1fr 1.4fr; align-items: stretch; } }
+  .photo-thumb { display: block; width: 100%; height: 100%; min-height: 9rem; max-height: 16rem; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--border); }
+  .photo-actions { display: flex; gap: .75rem; margin-top: 1.25rem; flex-wrap: wrap; }
+
   /* ---------- analyse: overview ---------- */
   .overview-grid { display: grid; gap: 2rem; align-items: start; }
   @media (min-width: 768px) { .overview-grid { grid-template-columns: auto 1fr 1fr; } }
@@ -509,6 +520,24 @@
         <button type="button" class="btn" id="palExample">Load an example</button>
       </div>
       <div id="palStrip"></div>
+
+      <div class="photo-extract" id="photoExtract">
+        <p class="label-caps muted" style="margin:0">Or start from a photo</p>
+        <p class="muted" style="font-size:.875rem; max-width:36rem; margin:.4rem 0 0">Drop in a reference image and I&rsquo;ll sample it for you — spread across the shadows, midtones and highlights, the way you&rsquo;d read a photo before mixing.</p>
+        <div class="pal-actions">
+          <button type="button" class="btn" id="photoBtn">📷 Extract from a photo</button>
+          <label class="photo-count label-caps muted">
+            Swatches
+            <select id="photoCount" aria-label="Number of swatches to extract">
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected>5</option>
+            </select>
+          </label>
+        </div>
+        <input type="file" id="photoInput" accept="image/*" hidden aria-label="Upload a reference photo">
+        <div id="photoResult"></div>
+      </div>
     </section>
 
     <section class="step" id="s-health">
@@ -1602,18 +1631,21 @@ const meanOf = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0);
 const stdevOf = (a) => { if (a.length < 2) return 0; const m = meanOf(a); return Math.sqrt(meanOf(a.map((v) => (v - m) * (v - m)))); };
 
 /* sRGB → OKLab, for perceptual spacing and ΔE */
-function hexToOklab(hex) {
-  const rgb = hexToRgb(hex) ?? { r: 0, g: 0, b: 0 };
+function rgbToOklab(r, g, b) {
   const f = (v) => { v /= 255; return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
-  const r = f(rgb.r), g = f(rgb.g), b = f(rgb.b);
-  const l = Math.cbrt(0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b);
-  const m = Math.cbrt(0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b);
-  const s = Math.cbrt(0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b);
+  const rl = f(r), gl = f(g), bl = f(b);
+  const l = Math.cbrt(0.4122214708 * rl + 0.5363325363 * gl + 0.0514459929 * bl);
+  const m = Math.cbrt(0.2119034982 * rl + 0.6806995451 * gl + 0.1073969566 * bl);
+  const s = Math.cbrt(0.0883024619 * rl + 0.2817188376 * gl + 0.6299787005 * bl);
   return {
     L: 0.2104542553 * l + 0.793617785 * m - 0.0040720468 * s,
     a: 1.9779984951 * l - 2.428592205 * m + 0.4505937099 * s,
     b2: 0.0259040371 * l + 0.7827717662 * m - 0.808675766 * s,
   };
+}
+function hexToOklab(hex) {
+  const rgb = hexToRgb(hex) ?? { r: 0, g: 0, b: 0 };
+  return rgbToOklab(rgb.r, rgb.g, rgb.b);
 }
 const dOk = (p, q) => Math.hypot(p.L - q.L, p.a - q.a, p.b2 - q.b2);
 const dOkAB = (p, q) => Math.hypot(p.a - q.a, p.b2 - q.b2);
@@ -1818,6 +1850,121 @@ function healthScore(hexes, goal) {
 }
 const scoreLight = (s) => (s >= 80 ? "🟢" : s >= 60 ? "🟡" : s >= 40 ? "🟠" : "🔴");
 const deltaLight = (d) => (d >= 10 ? "🟢" : d >= 5 ? "🟡" : d >= 1 ? "🟠" : "⚪");
+
+/* ============ extract a palette from a photo (client-side, nothing uploaded) ============ */
+/* Downscales onto a canvas, reads pixels, and k-means clusters them in OKLab so the
+   result spreads across the image's actual tonal range (shadows/mid/highlights)
+   instead of averaging into mud. Each swatch is the real pixel nearest its cluster
+   centre, never a synthetic blend. */
+function kMeansOklab(points, k) {
+  const sorted = [...points].sort((p, q) => p.L - q.L);
+  let centroids = [];
+  for (let i = 0; i < k; i++) {
+    const idx = Math.min(sorted.length - 1, Math.floor(((i + 0.5) / k) * sorted.length));
+    centroids.push({ L: sorted[idx].L, a: sorted[idx].a, b2: sorted[idx].b2 });
+  }
+  const distSq = (p, c) => { const dl = p.L - c.L, da = p.a - c.a, db = p.b2 - c.b2; return dl * dl + da * da + db * db; };
+  let assign = new Array(points.length).fill(0);
+  for (let iter = 0; iter < 10; iter++) {
+    for (let i = 0; i < points.length; i++) {
+      let best = 0, bestD = Infinity;
+      for (let c = 0; c < k; c++) {
+        const d = distSq(points[i], centroids[c]);
+        if (d < bestD) { bestD = d; best = c; }
+      }
+      assign[i] = best;
+    }
+    const sums = Array.from({ length: k }, () => ({ L: 0, a: 0, b2: 0, n: 0 }));
+    for (let i = 0; i < points.length; i++) {
+      const s = sums[assign[i]];
+      s.L += points[i].L; s.a += points[i].a; s.b2 += points[i].b2; s.n++;
+    }
+    centroids = centroids.map((c, idx) => (sums[idx].n ? { L: sums[idx].L / sums[idx].n, a: sums[idx].a / sums[idx].n, b2: sums[idx].b2 / sums[idx].n } : c));
+  }
+  const clusters = Array.from({ length: k }, () => []);
+  for (let i = 0; i < points.length; i++) clusters[assign[i]].push(points[i]);
+  const results = [];
+  for (let c = 0; c < k; c++) {
+    const members = clusters[c];
+    if (!members.length) continue;
+    let best = members[0], bestD = Infinity;
+    for (const m of members) {
+      const d = distSq(m, centroids[c]);
+      if (d < bestD) { bestD = d; best = m; }
+    }
+    results.push({ hex: rgbToHex({ r: best.r, g: best.g, b: best.b }), count: members.length, L: centroids[c].L });
+  }
+  return results.sort((x, y) => x.L - y.L);
+}
+function extractPaletteFromImage(img, k) {
+  const maxDim = 150;
+  const scale = Math.min(1, maxDim / Math.max(img.naturalWidth || img.width, img.naturalHeight || img.height));
+  const w = Math.max(1, Math.round((img.naturalWidth || img.width) * scale));
+  const h = Math.max(1, Math.round((img.naturalHeight || img.height) * scale));
+  const canvas = document.createElement("canvas");
+  canvas.width = w; canvas.height = h;
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+  ctx.drawImage(img, 0, 0, w, h);
+  const data = ctx.getImageData(0, 0, w, h).data;
+  const points = [];
+  for (let i = 0; i < data.length; i += 8) {
+    if (data[i + 3] < 200) continue;
+    const r = data[i], g = data[i + 1], b = data[i + 2];
+    const ok = rgbToOklab(r, g, b);
+    points.push({ r, g, b, L: ok.L, a: ok.a, b2: ok.b2 });
+  }
+  if (points.length <= k) return points.map((p) => ({ hex: rgbToHex({ r: p.r, g: p.g, b: p.b }), count: 1, L: p.L }));
+  return kMeansOklab(points, k);
+}
+let photoObjectUrl = null;
+function handlePhotoFile(file) {
+  if (!file || !file.type.startsWith("image/")) { toast("That doesn't look like an image"); return; }
+  if (photoObjectUrl) URL.revokeObjectURL(photoObjectUrl);
+  photoObjectUrl = URL.createObjectURL(file);
+  const url = photoObjectUrl;
+  const img = new Image();
+  img.onload = () => {
+    $("photoResult").innerHTML = '<p class="label-caps muted" style="margin-top:1.25rem">Sampling your photo&hellip;</p>';
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      let swatches;
+      try {
+        swatches = extractPaletteFromImage(img, Number($("photoCount").value || 5));
+      } catch (err) {
+        $("photoResult").innerHTML = '<p class="label-caps muted" style="margin-top:1.25rem">Couldn&rsquo;t read that photo — try a different file.</p>';
+        return;
+      }
+      renderPhotoResult(url, swatches);
+    }));
+  };
+  img.onerror = () => {
+    toast("Couldn't load that image");
+    $("photoResult").innerHTML = "";
+  };
+  img.src = url;
+}
+function renderPhotoResult(url, swatches) {
+  const out = $("photoResult");
+  out.innerHTML =
+    '<div class="photo-grid">' +
+    '<img src="' + url + '" alt="Uploaded reference photo" class="photo-thumb">' +
+    "<div>" + stripHtml(swatches.map((s, i) => ({ hex: s.hex, label: "Swatch " + (i + 1) })), true) + "</div>" +
+    "</div>" +
+    '<div class="photo-actions">' +
+    '<button type="button" class="btn" id="photoUseBtn">Use these ' + swatches.length + " colour" + (swatches.length === 1 ? "" : "s") + "</button>" +
+    '<button type="button" class="btn" id="photoAnotherBtn">Try another photo</button>' +
+    "</div>";
+  wireStrips(out);
+  $("photoUseBtn").addEventListener("click", () => {
+    palette = swatches.map((s) => s.hex);
+    renderPalRows();
+    renderAnalysis();
+    $("improveResult").innerHTML = "";
+    toast("Palette sampled from your photo");
+    const health = document.getElementById("s-health");
+    if (health) health.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+  });
+  $("photoAnotherBtn").addEventListener("click", () => { $("photoInput").value = ""; $("photoInput").click(); });
+}
 
 /* ---------- analyse mode rendering ---------- */
 function renderPalRows() {
@@ -2161,6 +2308,22 @@ $("palExample").addEventListener("click", () => {
 });
 $("improveBtn").addEventListener("click", renderImprove);
 $("analyseThemeBtn").addEventListener("click", renderAnalyseTheme);
+$("photoBtn").addEventListener("click", () => $("photoInput").click());
+$("photoInput").addEventListener("change", (e) => {
+  const file = e.target.files && e.target.files[0];
+  if (file) handlePhotoFile(file);
+});
+{
+  const dropZone = $("photoExtract");
+  dropZone.addEventListener("dragover", (e) => { e.preventDefault(); dropZone.classList.add("drag-over"); });
+  dropZone.addEventListener("dragleave", () => dropZone.classList.remove("drag-over"));
+  dropZone.addEventListener("drop", (e) => {
+    e.preventDefault();
+    dropZone.classList.remove("drag-over");
+    const file = e.dataTransfer.files && e.dataTransfer.files[0];
+    if (file) handlePhotoFile(file);
+  });
+}
 renderAll();
 renderPalRows();
 renderAnalysis();
