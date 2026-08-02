@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ChromaEngine — colour tool for artists with a dedicated photo extraction tab, Polychromos pencil matching, a goal-weighted Palette Health Score, and production-ready themes.">
+<meta name="description" content="ChromaEngine — colour tool for artists with an intent-first Discover-a-palette wizard, Polychromos pencil matching, photo extraction, and a goal-weighted Palette Health Score.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 <title>ChromaEngine — colour families for artists</title>
 <style>
@@ -289,6 +289,46 @@
   .pal-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
   #palStrip { margin-top: 1.5rem; }
 
+  /* ---------- discover a palette ---------- */
+  .discover-field { display: block; margin-bottom: 1.5rem; max-width: 34rem; }
+  .discover-field > span { display: block; margin-bottom: .4rem; color: var(--muted); }
+  .word-grid { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .word-chip {
+    font-family: var(--font-mono); font-size: .75rem; letter-spacing: .04em;
+    padding: .5rem .9rem; border: 1px solid var(--border); border-radius: 99px;
+    background: transparent; color: inherit; cursor: pointer; transition: background-color .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .word-chip:hover { background: var(--accent-soft); }
+  .word-chip.chip-yes { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .word-chip.chip-no { background: transparent; color: var(--muted); border-color: var(--muted); text-decoration: line-through; }
+  .word-chip:disabled { opacity: .35; cursor: not-allowed; }
+  .word-chip:disabled:hover { background: transparent; }
+  .mood-round { border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; margin-top: 1.25rem; }
+  .mood-round .m-question { margin: 0 0 .9rem; font-size: .95rem; }
+  .mood-pair { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; }
+  .mood-side {
+    border: 2px solid var(--border); border-radius: var(--radius); background: transparent;
+    padding: 0; cursor: pointer; text-align: left; overflow: hidden; transition: border-color .15s ease, transform .15s ease;
+    font-family: inherit; color: inherit;
+  }
+  .mood-side:hover { transform: translateY(-2px); }
+  .mood-side.picked { border-color: var(--ink); }
+  .mood-side .m-label { display: block; padding: .5rem .75rem; font-size: .8125rem; }
+  .mood-swatch-strip { display: flex; height: 4.5rem; }
+  .mood-swatch-strip span { flex: 1; }
+  .mood-photo-toggle { margin-top: .6rem; }
+  .mood-photo-drop {
+    border: 1px dashed var(--border); border-radius: var(--radius); padding: .75rem;
+    display: flex; flex-direction: column; gap: .5rem; align-items: flex-start;
+  }
+  .mood-photo-thumb { width: 100%; height: 5rem; object-fit: cover; border-radius: 3px; }
+  .direction-card { border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); padding: 1.25rem; margin-top: 1.25rem; }
+  .direction-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1.5rem; }
+  .direction-head h3 { margin: 0; font-size: 1.6rem; }
+  .direction-score { font-family: var(--font-mono); font-size: .875rem; color: var(--muted); }
+  .direction-why { font-size: .875rem; color: var(--muted); max-width: 40rem; margin: .75rem 0 1rem; }
+  .gen-status { font-size: .8125rem; color: var(--muted); margin-top: 1rem; }
+
   /* ---------- extract from a photo ---------- */
   .photo-extract { border-radius: var(--radius); transition: background-color .15s ease; }
   .photo-extract.drag-over { background: var(--accent-soft); }
@@ -400,6 +440,7 @@
     <button type="button" class="btn active" id="modeBtnBuild" aria-pressed="true">Build from a colour</button>
     <button type="button" class="btn" id="modeBtnAnalyse" aria-pressed="false">Analyse a palette</button>
     <button type="button" class="btn" id="modeBtnPhoto" aria-pressed="false">Extract from a photo</button>
+    <button type="button" class="btn" id="modeBtnDiscover" aria-pressed="false">Discover a palette</button>
   </div>
 
   <nav class="section-nav" id="sectionNav" aria-label="Jump to section"></nav>
@@ -606,6 +647,44 @@
         <input type="file" id="photoInput" accept="image/*" hidden aria-label="Upload a reference photo">
         <div id="photoResult"></div>
       </div>
+    </section>
+  </div>
+
+  <div id="modeDiscover" hidden>
+    <section class="step" id="s-discover-words">
+      <h2 class="label-caps step-label">01 — About the brand</h2>
+      <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1.5rem">Not "what's your favourite colour" — most people don't know that. What they know is what they want to feel. Answer these and the palette gets generated from the feeling, not the other way round.</p>
+      <label class="discover-field">
+        <span class="label-caps">What do you do? <span style="text-transform:none; letter-spacing:0; opacity:.7">(optional, just for the write-up below)</span></span>
+        <input class="text-field" id="discoverBusiness" style="width:100%" placeholder="e.g. a craft brewery, a bespoke tailoring studio, a family law firm">
+      </label>
+      <div class="discover-field">
+        <span class="label-caps">Pick up to three words that describe the brand</span>
+        <div class="word-grid" id="wordsYes"></div>
+      </div>
+      <div class="discover-field">
+        <span class="label-caps">Pick up to three words you never want to hear about it</span>
+        <div class="word-grid" id="wordsNo"></div>
+      </div>
+    </section>
+
+    <section class="step" id="s-discover-usecase">
+      <h2 class="label-caps step-label">02 — What's it for</h2>
+      <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1.25rem">This sets which weights the generated directions get scored against — the same weighting system already behind the Health Score.</p>
+      <div class="goal-row" id="discoverGoals" role="group" aria-label="What is this palette for"></div>
+    </section>
+
+    <section class="step" id="s-discover-mood">
+      <h2 class="label-caps step-label">03 — Which feels closer</h2>
+      <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1.25rem">Four quick calls. No colour names, just which side feels more like the brand. Each one narrows the search.</p>
+      <div id="moodRounds"></div>
+    </section>
+
+    <section class="step" id="s-discover-results" style="margin-bottom:0">
+      <h2 class="label-caps step-label">04 — Your directions</h2>
+      <button type="button" class="btn improve-cta" id="discoverGenBtn">Generate directions</button>
+      <div class="gen-status" id="discoverStatus"></div>
+      <div id="discoverResults"></div>
     </section>
   </div>
 </main>
@@ -2068,6 +2147,196 @@ function healthScore(hexes, goal) {
 const scoreLight = (s) => (s >= 80 ? "🟢" : s >= 60 ? "🟡" : s >= 40 ? "🟠" : "🔴");
 const deltaLight = (d) => (d >= 10 ? "🟢" : d >= 5 ? "🟡" : d >= 1 ? "🟠" : "⚪");
 
+/* ============ Discover a palette: intent-first palette generation ============ */
+/* Never asks "what colour do you want" — it asks what the brand is trying to feel,
+   turns that into a target region of colour space (chroma / value-range / temperature /
+   harmony-tension / accent-count), generates hundreds of candidate palettes inside that
+   region, scores every one with the exact same health-score engine used everywhere else
+   in the app, and keeps the best that are also visibly distinct from each other. Nothing
+   here is a separate "AI opinion" — it's the same deterministic colour science, just run
+   forward (generate) instead of backward (analyse). */
+const BRAND_WORDS = [
+  ["modern", "Modern", { chroma: -0.1, value: 0.2, temp: -0.3, tension: 0.3, accents: -0.1 }],
+  ["heritage", "Heritage", { chroma: -0.3, value: 0.1, temp: 0.5, tension: -0.4, accents: -0.2 }],
+  ["premium", "Premium", { chroma: -0.4, value: 0.3, temp: 0.0, tension: -0.2, accents: -0.3 }],
+  ["approachable", "Approachable", { chroma: 0.2, value: -0.2, temp: 0.3, tension: -0.2, accents: 0.1 }],
+  ["playful", "Playful", { chroma: 0.6, value: -0.1, temp: 0.2, tension: 0.4, accents: 0.4 }],
+  ["serious", "Serious", { chroma: -0.4, value: 0.2, temp: -0.1, tension: -0.3, accents: -0.3 }],
+  ["bold", "Bold", { chroma: 0.5, value: 0.1, temp: 0.0, tension: 0.6, accents: 0.2 }],
+  ["calm", "Calm", { chroma: -0.5, value: -0.1, temp: -0.2, tension: -0.5, accents: -0.3 }],
+  ["trustworthy", "Trustworthy", { chroma: -0.3, value: 0.2, temp: -0.2, tension: -0.4, accents: -0.2 }],
+  ["energetic", "Energetic", { chroma: 0.6, value: 0.0, temp: 0.3, tension: 0.5, accents: 0.3 }],
+  ["luxurious", "Luxurious", { chroma: -0.3, value: 0.4, temp: -0.1, tension: -0.1, accents: -0.4 }],
+  ["handmade", "Handmade", { chroma: 0.1, value: -0.1, temp: 0.4, tension: -0.1, accents: 0.2 }],
+  ["minimal", "Minimal", { chroma: -0.5, value: 0.1, temp: 0.0, tension: -0.5, accents: -0.5 }],
+  ["vibrant", "Vibrant", { chroma: 0.7, value: 0.0, temp: 0.1, tension: 0.3, accents: 0.3 }],
+  ["earthy", "Earthy", { chroma: -0.2, value: -0.1, temp: 0.5, tension: -0.3, accents: 0.0 }],
+  ["clean", "Clean", { chroma: -0.3, value: 0.2, temp: -0.3, tension: -0.4, accents: -0.3 }],
+  ["warm", "Warm", { chroma: 0.1, value: 0.0, temp: 0.7, tension: -0.1, accents: 0.0 }],
+  ["cool", "Cool", { chroma: 0.0, value: 0.0, temp: -0.7, tension: -0.1, accents: 0.0 }],
+  ["confident", "Confident", { chroma: 0.2, value: 0.3, temp: 0.0, tension: 0.3, accents: 0.0 }],
+  ["friendly", "Friendly", { chroma: 0.3, value: -0.2, temp: 0.3, tension: -0.2, accents: 0.2 }],
+  ["traditional", "Traditional", { chroma: -0.3, value: 0.0, temp: 0.4, tension: -0.4, accents: -0.2 }],
+  ["contemporary", "Contemporary", { chroma: -0.1, value: 0.2, temp: -0.3, tension: 0.2, accents: -0.1 }],
+  ["loud", "Loud", { chroma: 0.7, value: 0.1, temp: 0.1, tension: 0.6, accents: 0.4 }],
+  ["refined", "Refined", { chroma: -0.4, value: 0.3, temp: -0.1, tension: -0.4, accents: -0.4 }],
+];
+const BRAND_WORD_BY_ID = Object.fromEntries(BRAND_WORDS.map((w) => [w[0], w]));
+function aggregateWordNudges(yesIds, noIds) {
+  const total = { chroma: 0, value: 0, temp: 0, tension: 0, accents: 0 };
+  yesIds.forEach((id) => { const v = BRAND_WORD_BY_ID[id]?.[2]; if (v) Object.keys(total).forEach((k) => { total[k] += v[k]; }); });
+  noIds.forEach((id) => { const v = BRAND_WORD_BY_ID[id]?.[2]; if (v) Object.keys(total).forEach((k) => { total[k] -= v[k]; }); });
+  return total;
+}
+
+/* Built-in mood pairs: abstract colour/tone cards, never photography — keeps the whole
+   app a single self-contained file with no external or licensed imagery. Each side
+   carries the pole it represents on its axis (+1/-1) so a click nudges that axis directly. */
+const MOOD_ROUNDS = [
+  { id: "temp", axis: "temp", question: "Which feels closer — warm or cool?",
+    sideA: { label: "Warm", hexes: ["#8C4A2F", "#C97A3D", "#E8B04B", "#F3D9A8"], value: 1 },
+    sideB: { label: "Cool", hexes: ["#264653", "#2A6F77", "#5FA8B0", "#BEE3E8"], value: -1 } },
+  { id: "chroma", axis: "chroma", question: "Which feels closer — muted or vibrant?",
+    sideA: { label: "Muted", hexes: ["#8A8478", "#A79E8E", "#C4B9A6", "#E4DCC9"], value: -1 },
+    sideB: { label: "Vibrant", hexes: ["#E4572E", "#F3A712", "#17BEBB", "#2E294E"], value: 1 } },
+  { id: "tension", axis: "tension", question: "Which feels closer — restrained or bold?",
+    sideA: { label: "Restrained", hexes: ["#3A4A3F", "#5C6E5F", "#8FA189", "#D8E0D2"], value: -1 },
+    sideB: { label: "Bold", hexes: ["#1B1B3A", "#D7263D", "#F2E863", "#F8F1FF"], value: 1 } },
+  { id: "accents", axis: "accents", question: "Which feels closer — minimal or layered?",
+    sideA: { label: "Minimal", hexes: ["#1A1A1A", "#F5F5F0"], value: -1 },
+    sideB: { label: "Layered", hexes: ["#22223B", "#4A4E69", "#9A8C98", "#C9ADA7", "#F2E9E4"], value: 1 } },
+];
+/* Optional escape hatch: compare two of your own photos instead of the built-in cards.
+   Each photo is measured with the same OKLab pipeline as everywhere else in the app —
+   never trusted as a vibe — and whichever one is picked nudges the round's axis by how
+   much it actually measured warmer / more saturated / more varied than the other. */
+function photoMoodStats(img) {
+  const maxDim = 100;
+  const scale = Math.min(1, maxDim / Math.max(img.naturalWidth || img.width, img.naturalHeight || img.height));
+  const w = Math.max(1, Math.round((img.naturalWidth || img.width) * scale));
+  const h = Math.max(1, Math.round((img.naturalHeight || img.height) * scale));
+  const canvas = document.createElement("canvas");
+  canvas.width = w; canvas.height = h;
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+  ctx.drawImage(img, 0, 0, w, h);
+  const data = ctx.getImageData(0, 0, w, h).data;
+  let n = 0, sumChroma = 0, warmSum = 0;
+  const hues = [];
+  for (let i = 0; i < data.length; i += 16) {
+    if (data[i + 3] < 200) continue;
+    const r = data[i], g = data[i + 1], b = data[i + 2];
+    const ok = rgbToOklab(r, g, b);
+    const chroma = Math.hypot(ok.a, ok.b2);
+    sumChroma += chroma; n++;
+    const hueDeg = rgbToHsl({ r, g, b }).h;
+    hues.push(hueDeg);
+    warmSum += isWarmHue(hueDeg) ? chroma : -chroma * 0.4;
+  }
+  if (!n) return { meanChroma: 0, warmth: 0, hueSpread: 0 };
+  const meanHue = hues.reduce((s, hh) => s + hh, 0) / hues.length;
+  const hueSpread = Math.sqrt(hues.reduce((s, hh) => s + hueDist(hh, meanHue) ** 2, 0) / hues.length);
+  return { meanChroma: sumChroma / n, warmth: warmSum / n, hueSpread };
+}
+function moodAxisStat(axis, stats) {
+  if (axis === "temp") return stats.warmth;
+  if (axis === "accents") return stats.hueSpread / 40;
+  return stats.meanChroma / 0.12;
+}
+function photoRoundNudge(axis, statsPicked, statsOther) {
+  return clamp(moodAxisStat(axis, statsPicked) - moodAxisStat(axis, statsOther), -1, 1);
+}
+
+/* Candidate generation: sample a seed hue from the temperature-implied arc, pick a
+   harmony template weighted by the tension bias, build ground/ink/accents inside the
+   implied chroma and value-range targets, then score with the existing health engine. */
+const rand = (min, max) => min + Math.random() * (max - min);
+function generateCandidatePalette(nudges) {
+  const tempBias = clamp(nudges.temp, -1, 1);
+  const chromaBias = clamp(nudges.chroma, -1, 1);
+  const valueBias = clamp(nudges.value, -1, 1);
+  const tensionBias = clamp(nudges.tension, -1, 1);
+  const accentBias = clamp(nudges.accents, -1, 1);
+
+  let seedHue;
+  if (tempBias > 0.15) seedHue = Math.random() < 0.5 ? rand(0, 55) : rand(300, 360);
+  else if (tempBias < -0.15) seedHue = rand(150, 260);
+  else seedHue = rand(0, 360);
+
+  const templatesLow = [[0, 30, -30], [0]];
+  const templatesMid = [[0, 150, 210], [0, 30, -30]];
+  const templatesHigh = [[0, 180], [0, 120, 240], [0, 90, 180, 270]];
+  const pool = tensionBias < -0.2 ? templatesLow : tensionBias > 0.2 ? templatesHigh : templatesMid;
+  const offsets = pool[Math.floor(Math.random() * pool.length)];
+
+  const accentCount = clamp(Math.round(2 + (accentBias + 1)), 2, 4);
+  const groundL = clamp(90 + valueBias * 5 + rand(-2, 2), 82, 97);
+  const inkL = clamp(16 - valueBias * 8 + rand(-3, 3), 6, 28);
+  const neutralS = clamp(8 + (chromaBias + 1) * 5, 4, 22);
+
+  const ground = hslToHex({ h: seedHue, s: neutralS, l: groundL });
+  const ink = hslToHex({ h: seedHue, s: neutralS + 4, l: inkL });
+
+  const accents = [];
+  for (let i = 0; i < accentCount; i++) {
+    const offset = offsets[i % offsets.length] + rand(-8, 8);
+    const h = (((seedHue + offset) % 360) + 360) % 360;
+    const s = clamp(38 + chromaBias * 35 + rand(-8, 8), 15, 96);
+    const l = clamp(46 + (i - accentCount / 2) * 8 + rand(-6, 6), 28, 66);
+    accents.push(hslToHex({ h, s, l }));
+  }
+  return [ground, ink, ...accents];
+}
+function generateDirections(nudges, useCase, trials = 500) {
+  const candidates = [];
+  for (let i = 0; i < trials; i++) {
+    const hexes = generateCandidatePalette(nudges);
+    const health = healthScore(hexes, useCase);
+    candidates.push({ hexes, score: health.overall, rows: health.rows });
+  }
+  const passed = candidates.filter((c) => c.score >= 55);
+  const pool = (passed.length >= 20 ? passed : candidates).slice().sort((a, b) => b.score - a.score).slice(0, 80);
+  const chosen = [];
+  const distinctEnough = (cand) => chosen.every((c) => dOk(hexToOklab(cand.hexes[2]), hexToOklab(c.hexes[2])) > 0.06);
+  for (const cand of pool) { if (chosen.length >= 4) break; if (distinctEnough(cand)) chosen.push(cand); }
+  for (const cand of pool) { if (chosen.length >= 4) break; if (!chosen.includes(cand)) chosen.push(cand); }
+  return { chosen: chosen.slice(0, 4), totalGenerated: trials, totalPassed: passed.length };
+}
+
+const NAME_TEMP_WORDS = { warm: ["Warm", "Heritage", "Earthen", "Sunlit"], cool: ["Cool", "Contemporary", "Studio", "Clear"], neutral: ["Considered", "Editorial", "Quiet", "Balanced"] };
+const NAME_TENSION_WORDS = { low: ["Heritage", "Calm", "Classic", "Restrained"], mid: ["Studio", "Considered", "Modern", "Poised"], high: ["Bold", "Dynamic", "Energetic", "Vivid"] };
+function directionTraits(hexes) {
+  const accents = hexes.slice(2);
+  const hues = accents.map((h) => hexToHsl(h).h);
+  const warmCount = hues.filter((h) => isWarmHue(h)).length;
+  const tempBin = warmCount > accents.length / 2 ? "warm" : warmCount === 0 ? "cool" : "neutral";
+  let spread = 0;
+  for (let i = 0; i < hues.length; i++) for (let j = i + 1; j < hues.length; j++) spread = Math.max(spread, hueDist(hues[i], hues[j]));
+  const tensionBin = spread > 130 ? "high" : spread < 50 ? "low" : "mid";
+  return { tempBin, tensionBin };
+}
+function nameDirection(hexes, index) {
+  const { tempBin, tensionBin } = directionTraits(hexes);
+  const a = NAME_TEMP_WORDS[tempBin][index % NAME_TEMP_WORDS[tempBin].length];
+  const b = NAME_TENSION_WORDS[tensionBin][index % NAME_TENSION_WORDS[tensionBin].length];
+  return a === b ? a : a + " " + b;
+}
+function explainDirection(cand, answers) {
+  const yesLabels = answers.yesWords.map((id) => BRAND_WORD_BY_ID[id]?.[1]).filter(Boolean);
+  const noLabels = answers.noWords.map((id) => BRAND_WORD_BY_ID[id]?.[1]).filter(Boolean);
+  const goalMeta = ANALYSE_GOALS.find((g) => g[0] === answers.useCase);
+  const goalLabel = goalMeta ? goalMeta[1].replace(/^\S+\s/, "") : "this palette";
+  const topRows = [...cand.rows].sort((a, b) => b.score - a.score).slice(0, 2).map((r) => r.label.toLowerCase());
+  const { tempBin, tensionBin } = directionTraits(cand.hexes);
+  const tempWord = tempBin === "warm" ? "warm" : tempBin === "cool" ? "cool" : "balanced";
+  const tensionWord = tensionBin === "high" ? "bold" : tensionBin === "low" ? "restrained" : "measured";
+  let s = "";
+  if (answers.business && answers.business.trim()) s += "You told me you " + answers.business.trim().replace(/\.$/, "") + ". ";
+  if (yesLabels.length) s += "You described this as " + yesLabels.join(", ").toLowerCase() + ". ";
+  if (noLabels.length) s += "Steering away from " + noLabels.join(", ").toLowerCase() + ". ";
+  s += "For " + goalLabel + ", this direction leans " + tempWord + " and " + tensionWord + ", with strong " + topRows.join(" and ") + ".";
+  return s;
+}
+
 /* ============ extract a palette from a photo (client-side, nothing uploaded) ============ */
 /* Downscales onto a canvas, reads pixels, and k-means clusters them in OKLab so the
    result spreads across the image's actual tonal range (shadows/mid/highlights)
@@ -2473,7 +2742,13 @@ const ANALYSE_SECTIONS = [
 const PHOTO_SECTIONS = [
   ["s-photo", "01 Photo"],
 ];
-const MODE_SECTIONS = { build: BUILD_SECTIONS, analyse: ANALYSE_SECTIONS, photo: PHOTO_SECTIONS };
+const DISCOVER_SECTIONS = [
+  ["s-discover-words", "01 About"],
+  ["s-discover-usecase", "02 For"],
+  ["s-discover-mood", "03 Mood"],
+  ["s-discover-results", "04 Directions"],
+];
+const MODE_SECTIONS = { build: BUILD_SECTIONS, analyse: ANALYSE_SECTIONS, photo: PHOTO_SECTIONS, discover: DISCOVER_SECTIONS };
 let sectionObserver = null;
 function renderSectionNav(mode) {
   const sections = MODE_SECTIONS[mode] ?? BUILD_SECTIONS;
@@ -2495,17 +2770,171 @@ function renderSectionNav(mode) {
   if (first) first.classList.add("current");
 }
 
+/* ---------- discover a palette: wizard rendering ---------- */
+let discoverAnswers = { business: "", yesWords: [], noWords: [], useCase: null, moodPicks: {} };
+let moodContribution = {};
+let moodPhotoState = Object.fromEntries(MOOD_ROUNDS.map((r) => [r.id, { active: false, urlA: null, urlB: null, statsA: null, statsB: null }]));
+
+function renderWordChips() {
+  const build = (containerId, list, otherList, cls) => {
+    $(containerId).innerHTML = BRAND_WORDS.map(([id, label]) => {
+      const active = list.includes(id);
+      const disabled = !active && list.length >= 3;
+      return '<button type="button" class="word-chip' + (active ? " " + cls : "") + '" data-word="' + id + '" data-target="' + containerId + '"' + (disabled ? " disabled" : "") + '>' + esc(label) + "</button>";
+    }).join("");
+    $(containerId).querySelectorAll("[data-word]").forEach((b) => b.addEventListener("click", () => {
+      const id = b.dataset.word;
+      const oi = otherList.indexOf(id);
+      if (oi !== -1) otherList.splice(oi, 1);
+      const ti = list.indexOf(id);
+      if (ti !== -1) list.splice(ti, 1);
+      else if (list.length < 3) list.push(id);
+      renderWordChips();
+    }));
+  };
+  build("wordsYes", discoverAnswers.yesWords, discoverAnswers.noWords, "chip-yes");
+  build("wordsNo", discoverAnswers.noWords, discoverAnswers.yesWords, "chip-no");
+}
+function renderDiscoverGoals() {
+  $("discoverGoals").innerHTML = ANALYSE_GOALS.map(([id, label]) =>
+    '<button type="button" class="btn' + (discoverAnswers.useCase === id ? " active" : "") + '" data-goal="' + id + '" aria-pressed="' + (discoverAnswers.useCase === id) + '">' + label + "</button>").join("");
+  $("discoverGoals").querySelectorAll("[data-goal]").forEach((b) =>
+    b.addEventListener("click", () => { discoverAnswers.useCase = b.dataset.goal; renderDiscoverGoals(); }));
+}
+function moodSwatchStripHtml(hexes) {
+  return '<div class="mood-swatch-strip" aria-hidden="true">' + hexes.map((h) => '<span style="background-color:' + h + '"></span>').join("") + "</div>";
+}
+function moodSideHtml(round, side, def, picked) {
+  return (
+    '<button type="button" class="mood-side' + (picked ? " picked" : "") + '" data-round="' + round.id + '" data-side="' + side + '">' +
+    moodSwatchStripHtml(def.hexes) +
+    '<span class="m-label">' + esc(def.label) + "</span>" +
+    "</button>"
+  );
+}
+function moodPhotoSlotHtml(round, side, state) {
+  const url = side === "A" ? state.urlA : state.urlB;
+  const picked = discoverAnswers.moodPicks[round.id] === side;
+  const ready = state.statsA && state.statsB;
+  return (
+    '<div class="mood-photo-drop">' +
+    (url ? '<img src="' + url + '" class="mood-photo-thumb" alt="Photo ' + side + '">' : '<span class="label-caps muted">Photo ' + side + "</span>") +
+    (url ? "" : '<input type="file" accept="image/*" data-photoslot="' + round.id + ":" + side + '" aria-label="Upload photo ' + side + '">') +
+    (ready ? '<button type="button" class="btn small' + (picked ? " chip-yes" : "") + '" data-photopick="' + round.id + ":" + side + '">This one feels closer</button>' : "") +
+    "</div>"
+  );
+}
+function moodRoundHtml(round) {
+  const state = moodPhotoState[round.id];
+  const pickedVal = discoverAnswers.moodPicks[round.id];
+  const body = state.active
+    ? moodPhotoSlotHtml(round, "A", state) + moodPhotoSlotHtml(round, "B", state)
+    : moodSideHtml(round, "A", round.sideA, pickedVal === "A") + moodSideHtml(round, "B", round.sideB, pickedVal === "B");
+  return (
+    '<div class="mood-round" data-round="' + round.id + '">' +
+    '<p class="m-question">' + esc(round.question) + "</p>" +
+    '<div class="mood-pair">' + body + "</div>" +
+    '<button type="button" class="btn small mood-photo-toggle" data-photo-toggle="' + round.id + '">' +
+    (state.active ? "Use the built-in examples instead" : "Or compare two photos of your own instead") +
+    "</button></div>"
+  );
+}
+function renderMoodRounds() {
+  $("moodRounds").innerHTML = MOOD_ROUNDS.map((r) => moodRoundHtml(r)).join("");
+  MOOD_ROUNDS.forEach((round) => {
+    const el = document.querySelector('.mood-round[data-round="' + round.id + '"]');
+    if (!el) return;
+    el.querySelectorAll(".mood-side[data-side]").forEach((b) => b.addEventListener("click", () => {
+      const side = b.dataset.side;
+      const def = side === "A" ? round.sideA : round.sideB;
+      discoverAnswers.moodPicks[round.id] = side;
+      moodContribution[round.id] = { axis: round.axis, value: def.value };
+      renderMoodRounds();
+    }));
+    const toggleBtn = el.querySelector("[data-photo-toggle]");
+    if (toggleBtn) toggleBtn.addEventListener("click", () => {
+      moodPhotoState[round.id].active = !moodPhotoState[round.id].active;
+      renderMoodRounds();
+    });
+    if (moodPhotoState[round.id].active) {
+      const state = moodPhotoState[round.id];
+      ["A", "B"].forEach((side) => {
+        const input = el.querySelector('[data-photoslot="' + round.id + ":" + side + '"]');
+        if (input) input.addEventListener("change", (e) => {
+          const file = e.target.files && e.target.files[0];
+          if (!file) return;
+          const url = URL.createObjectURL(file);
+          const img = new Image();
+          img.onload = () => {
+            const stats = photoMoodStats(img);
+            if (side === "A") { state.urlA = url; state.statsA = stats; }
+            else { state.urlB = url; state.statsB = stats; }
+            renderMoodRounds();
+          };
+          img.src = url;
+        });
+      });
+      el.querySelectorAll("[data-photopick]").forEach((b) => b.addEventListener("click", () => {
+        const side = b.dataset.photopick.split(":")[1];
+        const picked = side === "A" ? state.statsA : state.statsB;
+        const other = side === "A" ? state.statsB : state.statsA;
+        const value = photoRoundNudge(round.axis, picked, other);
+        discoverAnswers.moodPicks[round.id] = side;
+        moodContribution[round.id] = { axis: round.axis, value };
+        renderMoodRounds();
+      }));
+    }
+  });
+}
+function recomputeMoodNudges() {
+  const totals = { chroma: 0, value: 0, temp: 0, tension: 0, accents: 0 };
+  Object.values(moodContribution).forEach((c) => { totals[c.axis] += c.value; });
+  return totals;
+}
+function renderDiscoverResults(gen) {
+  $("discoverStatus").textContent = "Generated " + gen.totalGenerated + " candidate palettes, " + gen.totalPassed + " cleared the accessibility and hierarchy gate, and these " + gen.chosen.length + " scored highest while staying visually distinct from each other.";
+  $("discoverResults").innerHTML = gen.chosen.map((cand, i) => {
+    const name = nameDirection(cand.hexes, i);
+    const why = explainDirection(cand, discoverAnswers);
+    return (
+      '<div class="direction-card">' +
+      '<div class="direction-head"><h3>' + esc(name) + "</h3>" +
+      '<span class="direction-score tnum">' + cand.score + " / 100</span></div>" +
+      stripHtml(cand.hexes.map((h, hi) => ({ hex: h, label: hi === 0 ? "Ground" : hi === 1 ? "Ink" : "Accent " + (hi - 1) })), false) +
+      '<p class="direction-why">' + esc(why) + "</p>" +
+      '<button type="button" class="btn" data-choose="' + i + '">Choose this direction</button>' +
+      "</div>"
+    );
+  }).join("");
+  wireStrips($("discoverResults"));
+  $("discoverResults").querySelectorAll("[data-choose]").forEach((b) =>
+    b.addEventListener("click", () => {
+      const cand = gen.chosen[Number(b.dataset.choose)];
+      palette = cand.hexes.slice();
+      renderPalRows();
+      renderAnalysis();
+      $("improveResult").innerHTML = "";
+      setMode("analyse");
+      toast("Direction loaded — scoring it now");
+      const health = document.getElementById("s-health");
+      if (health) health.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    }));
+}
+
 /* ---------- mode toggle ---------- */
 function setMode(mode, opts = {}) {
   $("modeBuild").hidden = mode !== "build";
   $("modeAnalyse").hidden = mode !== "analyse";
   $("modePhoto").hidden = mode !== "photo";
+  $("modeDiscover").hidden = mode !== "discover";
   $("modeBtnBuild").classList.toggle("active", mode === "build");
   $("modeBtnAnalyse").classList.toggle("active", mode === "analyse");
   $("modeBtnPhoto").classList.toggle("active", mode === "photo");
+  $("modeBtnDiscover").classList.toggle("active", mode === "discover");
   $("modeBtnBuild").setAttribute("aria-pressed", String(mode === "build"));
   $("modeBtnAnalyse").setAttribute("aria-pressed", String(mode === "analyse"));
   $("modeBtnPhoto").setAttribute("aria-pressed", String(mode === "photo"));
+  $("modeBtnDiscover").setAttribute("aria-pressed", String(mode === "discover"));
   renderSectionNav(mode);
   if (opts.scrollTop) window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
 }
@@ -2534,6 +2963,7 @@ $("rgbField").addEventListener("input", () => { const rgb = parseRgbString($("rg
 $("modeBtnBuild").addEventListener("click", () => setMode("build", { scrollTop: true }));
 $("modeBtnAnalyse").addEventListener("click", () => setMode("analyse", { scrollTop: true }));
 $("modeBtnPhoto").addEventListener("click", () => setMode("photo", { scrollTop: true }));
+$("modeBtnDiscover").addEventListener("click", () => setMode("discover", { scrollTop: true }));
 $("palAdd").addEventListener("click", () => {
   if (palette.length >= 8) return;
   palette.push("#8C8478");
@@ -2568,6 +2998,27 @@ $("photoCount").addEventListener("change", () => {
 renderAll();
 renderPalRows();
 renderAnalysis();
+renderWordChips();
+renderDiscoverGoals();
+renderMoodRounds();
+$("discoverGenBtn").addEventListener("click", () => {
+  discoverAnswers.business = $("discoverBusiness").value;
+  if (!discoverAnswers.useCase) { toast("Pick what it's for first"); return; }
+  $("discoverStatus").textContent = "Generating…";
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    const wordNudges = aggregateWordNudges(discoverAnswers.yesWords, discoverAnswers.noWords);
+    const moodNudges = recomputeMoodNudges();
+    const combined = {
+      chroma: wordNudges.chroma + moodNudges.chroma,
+      value: wordNudges.value + moodNudges.value,
+      temp: wordNudges.temp + moodNudges.temp,
+      tension: wordNudges.tension + moodNudges.tension,
+      accents: wordNudges.accents + moodNudges.accents,
+    };
+    const gen = generateDirections(combined, discoverAnswers.useCase, 500);
+    renderDiscoverResults(gen);
+  }));
+});
 renderSectionNav("build");
 </script>
 

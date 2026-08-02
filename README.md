@@ -2,7 +2,7 @@
 
 A colour harmony explorer for painters, printmakers, illustrators and designers — any medium, one wheel.
 
-Three modes: **build a palette from one colour**, **analyse a palette you already have**, or **extract one from a photo**.
+Four modes: **build a palette from one colour**, **analyse a palette you already have**, **extract one from a photo**, or **discover one from intent alone**.
 
 ## Build from a colour
 
@@ -29,6 +29,15 @@ Already have a colour scheme? Add up to eight colours and ChromaEngine reads the
 ## Extract from a photo
 
 Its own tab alongside Build and Analyse. Drop in a reference image (nothing leaves your browser) and it's sampled with k-means clustering in OKLab, spread across the shadows, midtones and highlights rather than averaged into mud. Every swatch is a real pixel from the photo, never a synthetic blend. Choose 3–8 swatches, then "Use these colours" switches you straight into Analyse mode with them loaded, ready for scoring, fixing and theming.
+
+## Discover a palette
+
+Never asks "what's your favourite colour" — most people don't know that. What they know is what they want to feel. This mode turns that feeling into a target region of colour space and generates palettes into it, rather than asking for one directly:
+
+1. **About the brand** — what you do (optional, only used in the write-up), up to three words that describe the brand and up to three you never want to hear about it, picked from a curated chip list. Each word nudges five measurable axes (chroma, value range, temperature, harmony tension, accent count) by a fixed, known amount — never an arbitrary interpretation of free text
+2. **What's it for** — the same seven goal categories as the Health Score, since that's exactly what they'll be used for: scoring the generated candidates
+3. **Which feels closer** — four quick pairwise calls (warm/cool, muted/vibrant, restrained/bold, minimal/layered) with no colour names at all, using abstract built-in colour cards. You can also compare two photos of your own instead of the built-in cards — each photo is measured with the same OKLab pipeline as everywhere else in the app (never trusted as a vibe), and whichever one you pick nudges the axis by how much it actually measured warmer, more saturated, or more varied than the other
+4. **Your directions** — generates ~500 candidate palettes inside the resulting target region (seed hue from the temperature bias, a harmony template weighted by the tension bias, chroma/value targets from the rest), scores every one with the exact same health-score engine used everywhere else, keeps the ones that pass a real accessibility/hierarchy gate, and surfaces the four highest-scoring that are also visibly distinct from each other. Each direction gets a name and a "why this" explanation derived entirely from your answers and that palette's own measured properties, never invented copy. Choosing one switches straight into Analyse mode with it loaded
 
 ## Polychromos pencil matching
 
