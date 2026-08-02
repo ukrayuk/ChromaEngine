@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Colour harmony explorer with a goal-weighted Palette Health Score — build from one colour or analyse an existing palette across measurable colour-science dimensions.">
+<meta name="description" content="ChromaEngine — colour harmony explorer with a goal-weighted Palette Health Score. Build from one colour or analyse an existing palette across measurable colour-science dimensions.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
-<title>Hue Studio — colour families for artists</title>
+<title>ChromaEngine — colour families for artists</title>
 <style>
   :root {
     --paper: #F6F3EC;
@@ -349,7 +349,7 @@
 <main>
   <header class="masthead">
     <div>
-      <h1>Hue Studio</h1>
+      <h1>ChromaEngine</h1>
       <p>Colour families for painters, printmakers, illustrators and designers — any medium, one wheel.</p>
     </div>
     <span class="label-caps muted">Tap any swatch to copy</span>
@@ -462,7 +462,7 @@
   </section>
 
   <section class="step" style="margin-bottom:0">
-    <h2 class="label-caps step-label">07 — Accessible UI theme</h2>
+    <h2 class="label-caps step-label">07 — Production-ready Theme</h2>
     <div class="theme-controls" role="group" aria-label="Theme mode">
       <button type="button" class="btn" id="tabLight" aria-pressed="true">Light theme</button>
       <button type="button" class="btn" id="tabDark" aria-pressed="false">Dark theme</button>
@@ -533,7 +533,7 @@
 
 <script>
 "use strict";
-/* ============ colour library (ported from Hue Studio) ============ */
+/* ============ ChromaEngine colour library ============ */
 const clamp = (v, min = 0, max = 255) => Math.min(max, Math.max(min, v));
 
 function hexToRgb(hex) {
