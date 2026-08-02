@@ -24,7 +24,7 @@ Already have a colour scheme? Add up to five colours and ChromaEngine reads the 
 2. **Observations, not errors** — plain-language notes on what's straining ("Teal and orange are both demanding attention"), each with a concrete suggestion in exact numbers
 3. **One-click fixes** — moves, not replacements: every suggestion keeps the hue exactly where you put it and only nudges saturation or lightness
 4. **Improve but keep my style** — applies all the moves at once and reports the result against the health score ("Overall palette quality improved by 31%"), with 🟢🟡🟠 per-dimension deltas, before/after strips, and an undo-friendly apply
-5. **Production-ready Theme** — once the palette is behaving, generate the same light/dark UI token system as the build-mode theme generator, built from your palette's lead accent. Copy the CSS variables or save `theme.css` straight to disk
+5. **Production-ready Theme** — once the palette is behaving, generate a light/dark UI token system mapped directly from your approved colours: ground → background, ink → body text, lead accent → button, next accent → link, a third accent or neutral → muted text. Nothing is resynthesized from a single hue — each token keeps the exact approved colour unless it fails its WCAG target, in which case it's nudged the minimum distance needed, exactly like the one-click fixes. Copy the CSS variables or save `theme.css` straight to disk
 
 ## Running it
 

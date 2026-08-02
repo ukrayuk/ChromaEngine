@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ChromaEngine — colour harmony explorer with a goal-weighted Palette Health Score. Build from one colour or analyse an existing palette and export a production-ready theme.">
+<meta name="description" content="ChromaEngine — colour harmony explorer with a goal-weighted Palette Health Score. Build from one colour or analyse an existing palette and export a production-ready theme built from your approved colours.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 <title>ChromaEngine — colour families for artists</title>
 <style>
@@ -1960,11 +1960,59 @@ function renderImprove() {
   $("improveDismiss").addEventListener("click", () => { out.innerHTML = ""; });
 }
 
-/* ---------- analyse mode: production-ready theme (reuses section 07's renderers) ---------- */
-function analyseThemeBase() {
-  const R = assignRoles(palette);
-  const source = R.accents[0] ?? R.ink ?? R.ground;
-  return { hsl: source.hsl, hex: source.hex, role: (R.role.get(source) ?? "lead colour").toLowerCase() };
+/* ---------- analyse mode: production-ready theme, built from the approved swatches ---------- */
+/* Maps ground/ink/lead-accent/second-accent straight into the token roles — only
+   saturation and lightness are nudged, and only where a token fails its WCAG
+   target, exactly like the one-click fixes. Nothing is resynthesized from a
+   single hue the way build mode's buildThemes() does. */
+function paletteThemeSide(bgHex, textHex, leadHex, linkHex, neutralHex) {
+  const fit = (hex, against, target) => {
+    if (contrastHex(hex, against) >= target) return hex;
+    return nearestAccessible(hex, against, target)?.hex ?? hex;
+  };
+  const bgHsl = hexToHsl(bgHex);
+  const dark = bgHsl.l < 50;
+  const background = bgHex;
+  const surface = hslToHex({ ...bgHsl, l: clamp(bgHsl.l + (dark ? 6 : -5), 0, 100) });
+  const text = fit(textHex, background, WCAG.bodyAAA);
+  const mutedHsl = hexToHsl(neutralHex ?? textHex);
+  const mutedL = dark ? Math.max(mutedHsl.l, 55) : Math.min(mutedHsl.l, 48);
+  const muted = fit(hslToHex({ ...mutedHsl, l: mutedL }), background, WCAG.bodyAA);
+  const button = fit(leadHex, background, WCAG.uiAA);
+  const buttonInk = inkFor(button);
+  const link = fit(linkHex, background, WCAG.bodyAA);
+  const border = fit(hslToHex({ ...bgHsl, l: clamp(bgHsl.l + (dark ? 22 : -22), 0, 100) }), background, WCAG.uiAA);
+  return { background, surface, text, muted, button, buttonInk, link, border };
+}
+function buildThemesFromPalette(hexes) {
+  const R = assignRoles(hexes);
+  const lead = R.accents[0] ?? R.ink;
+  const second = R.accents[1] ?? R.neutrals[0] ?? lead;
+  const neutralExtra = (R.neutrals[0] ?? R.accents[2] ?? null);
+  const L = paletteThemeSide(R.ground.hex, R.ink.hex, lead.hex, second.hex, neutralExtra?.hex);
+  const D = paletteThemeSide(R.ink.hex, R.ground.hex, lead.hex, second.hex, neutralExtra?.hex);
+  const mk = (side) => [
+    mkToken("background", "Page background", side.background, side.text, "body text", WCAG.bodyAA, "surface"),
+    mkToken("surface", "Card surface", side.surface, side.text, "body text", WCAG.bodyAA, "surface"),
+    mkToken("text", "Body text", side.text, side.background, "background", WCAG.bodyAAA, "text"),
+    mkToken("muted", "Muted text", side.muted, side.background, "background", WCAG.bodyAA, "text"),
+    mkToken("button", "Button fill", side.button, side.background, "background", WCAG.uiAA, "action"),
+    mkToken("buttonInk", "Button label", side.buttonInk, side.button, "button fill", WCAG.bodyAA, "action"),
+    mkToken("link", "Link", side.link, side.background, "background", WCAG.bodyAA, "action"),
+    mkToken("border", "Border / focus ring", side.border, side.background, "background", WCAG.uiAA, "line"),
+  ];
+  return [
+    { id: "light", name: "Light theme", background: L.background, surface: L.surface, tokens: mk(L) },
+    { id: "dark", name: "Dark theme", background: D.background, surface: D.surface, tokens: mk(D) },
+  ];
+}
+function describePaletteThemeSource(hexes) {
+  const R = assignRoles(hexes);
+  const lead = R.accents[0] ?? R.ink;
+  const second = R.accents[1] ?? R.neutrals[0] ?? lead;
+  const parts = ["Background " + R.ground.hex, "Text " + R.ink.hex, "Button " + lead.hex.toUpperCase()];
+  if (second.hex.toUpperCase() !== lead.hex.toUpperCase()) parts.push("Link " + second.hex.toUpperCase());
+  return parts.join(" · ");
 }
 function combinedThemeCss(themes) {
   return themes.map(themeToCss).join("\n\n") + "\n";
@@ -1981,12 +2029,11 @@ function downloadText(filename, text, mime) {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 function renderAnalyseTheme() {
-  const base = analyseThemeBase();
-  const themes = buildThemes(base.hsl);
+  const themes = buildThemesFromPalette(palette);
   const theme = themes.find((t) => t.id === analyseThemeTab) ?? themes[0];
   const out = $("analyseThemeResult");
   out.innerHTML =
-    '<p class="label-caps muted" style="margin:0 0 .75rem">Built from your ' + esc(base.role) + " — " + base.hex + "</p>" +
+    '<p class="label-caps muted" style="margin:0 0 .75rem">Mapped straight from your approved palette — ' + esc(describePaletteThemeSource(palette)) + '. Surface and border are the two tones this palette didn&rsquo;t supply, derived from the same hues.</p>' +
     '<div class="theme-controls" role="group" aria-label="Theme mode">' +
     '<button type="button" class="btn' + (analyseThemeTab === "light" ? " active" : "") + '" id="analyseTabLight" aria-pressed="' + (analyseThemeTab === "light") + '">Light theme</button>' +
     '<button type="button" class="btn' + (analyseThemeTab === "dark" ? " active" : "") + '" id="analyseTabDark" aria-pressed="' + (analyseThemeTab === "dark") + '">Dark theme</button>' +
