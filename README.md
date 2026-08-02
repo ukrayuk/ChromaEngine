@@ -28,6 +28,14 @@ Already have a colour scheme? Add up to five colours and ChromaEngine reads the 
 4. **Improve but keep my style** — applies all the moves at once and reports the result against the health score ("Overall palette quality improved by 31%"), with 🟢🟡🟠 per-dimension deltas, before/after strips, and an undo-friendly apply
 5. **Production-ready Theme** — once the palette is behaving, generate a light/dark UI token system mapped directly from your approved colours: ground → background, ink → body text, lead accent → button, next accent → link, a third accent or neutral → muted text. Nothing is resynthesized from a single hue — each token keeps the exact approved colour unless it fails its WCAG target, in which case it's nudged the minimum distance needed, exactly like the one-click fixes. Copy the CSS variables or save `theme.css` straight to disk
 
+## Polychromos pencil matching
+
+Every colour in the app, in Build mode's colour picker, every swatch in an analysed palette, and every photo-extracted swatch, is matched against a real set of 120 Faber-Castell Polychromos pencils (mapped to Pantone and hand-calibrated to RGB by swatching, scanning and colour-picking). Matching runs in OKLab, so "closest" tracks how the eye reads difference, not raw RGB distance.
+
+- Build mode shows the three nearest pencils with a plain-language read on how close each one is (near-identical, very close, close, noticeably different)
+- If no single pencil is genuinely close, it suggests a two-pencil layering estimate (e.g. "cadmium yellow lemon 60% + leaf green 40%"), clearly flagged as an approximation, since real layering depends on pressure, paper and order, not a physical mixing model
+- Analyse mode and photo extraction tag each swatch with its nearest pencil name inline
+
 ## Running it
 
 There is no build step and there are no dependencies. Everything — markup, styles, colour math — lives in a single `index.html`.

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ChromaEngine — colour harmony explorer with photo-to-palette extraction, a goal-weighted Palette Health Score, and a production-ready theme built from your approved colours.">
+<meta name="description" content="ChromaEngine — colour tool for artists with Polychromos pencil matching, a goal-weighted Palette Health Score, photo-to-palette extraction, and production-ready themes.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 <title>ChromaEngine — colour families for artists</title>
 <style>
@@ -128,6 +128,18 @@
   .slider-row > .slider-name { width: 5rem; color: var(--muted); flex-shrink: 0; }
   .slider-row > .slider-val { width: 2.5rem; text-align: right; font-family: var(--font-mono); font-size: .75rem; }
   .seeds { display: flex; gap: .5rem; margin-top: .5rem; }
+
+  /* ---------- pencil matching ---------- */
+  .pencil-panel { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
+  .pencil-list { list-style: none; margin: .75rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .6rem; }
+  .pencil-row { display: flex; align-items: center; gap: .75rem; }
+  .pencil-row .p-sw { height: 2.5rem; width: 2.5rem; flex-shrink: 0; border: 1px solid var(--border); border-radius: var(--radius); }
+  .pencil-row .grow { min-width: 0; flex: 1; }
+  .pencil-row .p-name { display: block; font-size: .875rem; }
+  .pencil-row .p-meta { display: block; margin-top: .1rem; }
+  .pencil-blend { margin-top: .85rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); padding: .85rem 1rem; }
+  .pencil-blend .b-sw { display: inline-block; height: 1.4rem; width: 1.4rem; border: 1px solid var(--border); border-radius: 3px; vertical-align: -.3rem; margin-right: .35rem; }
+  .swatch-pencil-tag { display: block; font-size: .625rem; letter-spacing: .06em; text-transform: uppercase; opacity: .8; margin-top: .15rem; }
   .seeds button {
     height: 2rem; width: 2rem; border-radius: 50%; border: 1px solid var(--border);
     cursor: pointer; transition: transform .15s ease; padding: 0;
@@ -421,6 +433,11 @@
           <div class="seeds" id="seeds"></div>
         </div>
       </div>
+    </div>
+    <div class="pencil-panel">
+      <p class="label-caps muted" style="margin:0">Nearest Polychromos pencils</p>
+      <ul class="pencil-list" id="pencilList"></ul>
+      <div id="pencilBlend"></div>
     </div>
   </section>
 
@@ -1134,6 +1151,33 @@ function syncInputPanel(opts) {
     el.textContent = round(hsl[el.dataset.val]);
   });
 }
+function renderPencilPanel() {
+  const top = nearestPencils(hex, 3);
+  $("pencilList").innerHTML = top.map((p) =>
+    '<li class="pencil-row">' +
+    '<span class="p-sw" style="background-color:' + p.hex + '" aria-hidden="true"></span>' +
+    '<span class="grow"><span class="p-name">' + esc(p.name) + ' <span class="mono muted">(' + p.code + ')</span></span>' +
+    '<span class="label-caps muted p-meta">' + (p.pantone ? esc(p.pantone) + " · " : "") + pencilMatchWord(p.dist) + "</span></span>" +
+    '<button type="button" class="btn small" data-copy="' + p.hex + '" aria-label="Copy ' + p.hex + '">Copy</button></li>').join("");
+  $("pencilList").querySelectorAll("[data-copy]").forEach((b) => b.addEventListener("click", () => copyText(b.dataset.copy)));
+
+  const blendEl = $("pencilBlend");
+  const bestSingle = top[0];
+  const blend = bestSingle && bestSingle.dist >= 0.05 ? bestPencilBlend(hex) : null;
+  if (blend && blend.dist < bestSingle.dist - 0.01) {
+    const pctA = Math.round((1 - blend.ratio) * 100), pctB = Math.round(blend.ratio * 100);
+    blendEl.innerHTML =
+      '<div class="pencil-blend"><span class="label-caps muted">Closer by layering</span>' +
+      '<p style="margin:.4rem 0 0; font-size:.875rem">' +
+      '<span class="b-sw" style="background-color:' + blend.a.hex + '" aria-hidden="true"></span>' + esc(blend.a.name) + " " + pctA + "%" +
+      ' <span class="muted">+</span> ' +
+      '<span class="b-sw" style="background-color:' + blend.b.hex + '" aria-hidden="true"></span>' + esc(blend.b.name) + " " + pctB + "%" +
+      "</p>" +
+      '<p class="muted" style="font-size:.8125rem; margin:.5rem 0 0">An estimate, not a physical mixing model, actual layering depends on pressure, paper and order. Worth a test swatch before committing.</p></div>';
+  } else {
+    blendEl.innerHTML = "";
+  }
+}
 
 /* ---------- 02 plan ---------- */
 function renderPlan() {
@@ -1650,6 +1694,171 @@ function hexToOklab(hex) {
 const dOk = (p, q) => Math.hypot(p.L - q.L, p.a - q.a, p.b2 - q.b2);
 const dOkAB = (p, q) => Math.hypot(p.a - q.a, p.b2 - q.b2);
 
+/* ============ Polychromos pencil matching ============ */
+/* Ray's own pencil-to-Pantone-to-RGB mapping, swatched, scanned and colour-picked
+   by hand. Matching runs in OKLab (same space as everything else in this file)
+   so "closest" tracks how the eye reads difference, not raw RGB distance. */
+const POLYCHROMOS_PENCILS = [
+  { code: "9201-101", name: "white", pantone: "", hex: "#FFFFFF" },
+  { code: "9201-102", name: "cream", pantone: "100 U", hex: "#FFF1B6" },
+  { code: "9201-103", name: "ivory", pantone: "1205 U", hex: "#FFF4D8" },
+  { code: "9201-104", name: "light yellow glaze", pantone: "3955 U", hex: "#F3EF6F" },
+  { code: "9201-105", name: "light cadmium yellow", pantone: "102 U", hex: "#FFE73E" },
+  { code: "9201-106", name: "light chrome yellow", pantone: "107 U", hex: "#FFDE45" },
+  { code: "9201-107", name: "cadmium yellow", pantone: "108 U", hex: "#FFD530" },
+  { code: "9201-108", name: "dark cadmium yellow", pantone: "109 U", hex: "#FFC220" },
+  { code: "9201-109", name: "dark chrome yellow", pantone: "116 U", hex: "#FAA632" },
+  { code: "9201-110", name: "phthalo blue", pantone: "299 U2X", hex: "#0B7DC2" },
+  { code: "9201-111", name: "cadmium orange", pantone: "137 U", hex: "#F78F26" },
+  { code: "9201-112", name: "leaf green", pantone: "375 U2X", hex: "#49B95C" },
+  { code: "9201-113", name: "orange glaze", pantone: "116 U2X", hex: "#F48034" },
+  { code: "9201-115", name: "dark cadmium orange", pantone: "Orange 021 U", hex: "#F47933" },
+  { code: "9201-117", name: "light cadmium red", pantone: "172 U", hex: "#F05544" },
+  { code: "9201-118", name: "scarlet red", pantone: "485 U", hex: "#E84D47" },
+  { code: "9201-119", name: "light magenta", pantone: "2375 U", hex: "#D786B9" },
+  { code: "9201-120", name: "ultramarine", pantone: "286 U", hex: "#506DB4" },
+  { code: "9201-121", name: "pale geranium lake", pantone: "1788 U", hex: "#EF4650" },
+  { code: "9201-123", name: "fuchsia", pantone: "226 U", hex: "#EF4C86" },
+  { code: "9201-124", name: "rose carmine", pantone: "191 U", hex: "#E95C72" },
+  { code: "9201-125", name: "middle purple pink", pantone: "239 U2X", hex: "#C3408B" },
+  { code: "9201-126", name: "permanent carmine", pantone: "185 U", hex: "#D82C4A" },
+  { code: "9201-127", name: "pink carmine", pantone: "206 U", hex: "#E85274" },
+  { code: "9201-128", name: "light purple pink", pantone: "225 U", hex: "#F06D98" },
+  { code: "9201-129", name: "pink madder lake", pantone: "203 U", hex: "#F389B2" },
+  { code: "9201-130", name: "dark flesh", pantone: "177 U", hex: "#F69892" },
+  { code: "9201-131", name: "medium flesh", pantone: "486 U", hex: "#F69C99" },
+  { code: "9201-132", name: "light flesh", pantone: "488 U", hex: "#FBC29F" },
+  { code: "9201-133", name: "magenta", pantone: "215 U", hex: "#934E67" },
+  { code: "9201-134", name: "crimson", pantone: "Purple U", hex: "#A14D9D" },
+  { code: "9201-135", name: "light red-violet", pantone: "681 U", hex: "#AB68A1" },
+  { code: "9201-136", name: "purple violet", pantone: "527 U", hex: "#7358A0" },
+  { code: "9201-137", name: "blue violet", pantone: "2735 U", hex: "#59529E" },
+  { code: "9201-138", name: "violet", pantone: "2587 U", hex: "#8A6BAF" },
+  { code: "9201-140", name: "light ultramarine", pantone: "284 U", hex: "#659AD2" },
+  { code: "9201-141", name: "Delft blue", pantone: "2746 U", hex: "#484F9F" },
+  { code: "9201-142", name: "madder", pantone: "193 U", hex: "#CD3F5C" },
+  { code: "9201-143", name: "cobalt blue", pantone: "2727 U", hex: "#056AB5" },
+  { code: "9201-144", name: "cobalt blue-greenish", pantone: "2935 U", hex: "#156DB6" },
+  { code: "9201-145", name: "light phthalo blue", pantone: "298 U", hex: "#43ACE1" },
+  { code: "9201-146", name: "skyblue", pantone: "283 U", hex: "#86B2DF" },
+  { code: "9201-149", name: "bluish turquoise", pantone: "307 U", hex: "#0077A2" },
+  { code: "9201-151", name: "helioblue-reddish", pantone: "300 U", hex: "#1770B8" },
+  { code: "9201-152", name: "middle phthalo blue", pantone: "299 U", hex: "#309CD6" },
+  { code: "9201-153", name: "cobalt turquoise", pantone: "3145 U", hex: "#0082A2" },
+  { code: "9201-154", name: "light cobalt turquoise", pantone: "3105 U", hex: "#66CBDA" },
+  { code: "9201-155", name: "helio turquoise", pantone: "3155 U", hex: "#087E90" },
+  { code: "9201-156", name: "cobalt green", pantone: "320 U", hex: "#01BABD" },
+  { code: "9201-157", name: "dark indigo", pantone: "303 U", hex: "#3E4A5B" },
+  { code: "9201-158", name: "deep cobalt green", pantone: "329 U", hex: "#146B60" },
+  { code: "9201-159", name: "Hooker's green", pantone: "341 U", hex: "#0B7764" },
+  { code: "9201-160", name: "manganese violet", pantone: "2593 U", hex: "#9A69AD" },
+  { code: "9201-161", name: "phthalo green", pantone: "Green U2X", hex: "#00B091" },
+  { code: "9201-162", name: "light phthalo green", pantone: "353 U", hex: "#38B88F" },
+  { code: "9201-163", name: "emerald green", pantone: "354 U", hex: "#0CB074" },
+  { code: "9201-165", name: "juniper green", pantone: "364 U", hex: "#44694D" },
+  { code: "9201-166", name: "grass green", pantone: "375 U2X", hex: "#76C25F" },
+  { code: "9201-167", name: "permanent green olive", pantone: "370 U", hex: "#4C7A4F" },
+  { code: "9201-168", name: "earth green yellowish", pantone: "383 U", hex: "#82A255" },
+  { code: "9201-169", name: "caput mortuum", pantone: "491 U", hex: "#9A5D58" },
+  { code: "9201-170", name: "may green", pantone: "390 U", hex: "#9FBB56" },
+  { code: "9201-171", name: "light green", pantone: "374 U", hex: "#A0D185" },
+  { code: "9201-172", name: "earth green", pantone: "5565 U", hex: "#738C70" },
+  { code: "9201-173", name: "olive green yellowish", pantone: "581 U", hex: "#5B5D44" },
+  { code: "9201-174", name: "chromium green opaque", pantone: "5757 U", hex: "#65714F" },
+  { code: "9201-175", name: "dark sepia", pantone: "Black 4 U2X", hex: "#474948" },
+  { code: "9201-176", name: "Van Dyck brown", pantone: "168 U", hex: "#6C5954" },
+  { code: "9201-177", name: "walnut brown", pantone: "4695 U", hex: "#5D4F48" },
+  { code: "9201-178", name: "nougat", pantone: "469 U", hex: "#927C6B" },
+  { code: "9201-179", name: "bistre", pantone: "731 U", hex: "#7C604C" },
+  { code: "9201-180", name: "raw umber", pantone: "139 U", hex: "#9A734A" },
+  { code: "9201-181", name: "Payne's grey", pantone: "Black 6 U", hex: "#484E55" },
+  { code: "9201-182", name: "brown ochre", pantone: "131 U", hex: "#C4925D" },
+  { code: "9201-183", name: "light yellow ochre", pantone: "129 U", hex: "#F2BC5F" },
+  { code: "9201-184", name: "dark Naples ochre", pantone: "115 U", hex: "#F5C25B" },
+  { code: "9201-185", name: "Naples yellow", pantone: "114 U", hex: "#F8D25A" },
+  { code: "9201-186", name: "terracotta", pantone: "152 U", hex: "#EC8E59" },
+  { code: "9201-187", name: "burnt ochre", pantone: "1385 U", hex: "#D89763" },
+  { code: "9201-188", name: "sanguine", pantone: "1665 U", hex: "#D77255" },
+  { code: "9201-189", name: "cinnamon", pantone: "472 U", hex: "#E4A893" },
+  { code: "9201-190", name: "Venetian red", pantone: "166 U", hex: "#DC7E76" },
+  { code: "9201-191", name: "Pompeian red", pantone: "179 U", hex: "#E77C83" },
+  { code: "9201-192", name: "Indian red", pantone: "1807 U", hex: "#91474A" },
+  { code: "9201-193", name: "burnt carmine", pantone: "1945 U", hex: "#AA5164" },
+  { code: "9201-194", name: "red-violet", pantone: "221 U", hex: "#88496D" },
+  { code: "9201-199", name: "black", pantone: "Black U", hex: "#050505" },
+  { code: "9201-205", name: "cadmium yellow lemon", pantone: "395 U", hex: "#EBEA64" },
+  { code: "9201-217", name: "middle cadmium red", pantone: "1807 U", hex: "#BC454F" },
+  { code: "9201-219", name: "deep scarlet red", pantone: "185 U2X", hex: "#E8495E" },
+  { code: "9201-223", name: "deep red", pantone: "485 U", hex: "#E42F44" },
+  { code: "9201-225", name: "dark red", pantone: "187 U", hex: "#A63055" },
+  { code: "9201-226", name: "alizarin crimson", pantone: "1935 U", hex: "#DF2D5D" },
+  { code: "9201-230", name: "cold grey I", pantone: "427 U", hex: "#CAD1D8" },
+  { code: "9201-231", name: "cold grey II", pantone: "428 U", hex: "#BEC4CC" },
+  { code: "9201-232", name: "cold grey III", pantone: "429 U", hex: "#ACB1B8" },
+  { code: "9201-233", name: "cold grey IV", pantone: "Cool Grey 9U", hex: "#8E9498" },
+  { code: "9201-234", name: "cold grey V", pantone: "424 U", hex: "#6E7176" },
+  { code: "9201-235", name: "cold grey VI", pantone: "433 U", hex: "#575758" },
+  { code: "9201-246", name: "Prussian blue", pantone: "2945 U", hex: "#126495" },
+  { code: "9201-247", name: "indanthrene blue", pantone: "288 U", hex: "#445E98" },
+  { code: "9201-249", name: "mauve", pantone: "2755 U", hex: "#6157A1" },
+  { code: "9201-250", name: "gold", pantone: "872 U", hex: "#CDC08D" },
+  { code: "9201-251", name: "silver", pantone: "877 U", hex: "#ABADB0" },
+  { code: "9201-252", name: "copper", pantone: "876 U", hex: "#B09092" },
+  { code: "9201-263", name: "caput mortuum violet", pantone: "1817 U", hex: "#824E51" },
+  { code: "9201-264", name: "dark phthalo green", pantone: "3415 U", hex: "#009378" },
+  { code: "9201-266", name: "permanent green", pantone: "376 U", hex: "#278A46" },
+  { code: "9201-267", name: "pine green", pantone: "357 U", hex: "#315C48" },
+  { code: "9201-268", name: "green gold", pantone: "117 U", hex: "#CA9439" },
+  { code: "9201-270", name: "warm grey I", pantone: "Warm Grey 1U", hex: "#D9D0CE" },
+  { code: "9201-271", name: "warm grey II", pantone: "Warm Grey 2U", hex: "#C8C1BE" },
+  { code: "9201-272", name: "warm grey III", pantone: "Warm Grey 3U", hex: "#A8A59F" },
+  { code: "9201-273", name: "warm grey IV", pantone: "404 U", hex: "#7C7E7F" },
+  { code: "9201-274", name: "warm grey V", pantone: "Black 7 U", hex: "#626060" },
+  { code: "9201-275", name: "warm grey VI", pantone: "440 U", hex: "#585557" },
+  { code: "9201-276", name: "chrome oxide green fiery", pantone: "3275 U", hex: "#00987F" },
+  { code: "9201-278", name: "chrome oxide green", pantone: "371 U", hex: "#4A614B" },
+  { code: "9201-280", name: "burnt umber", pantone: "4625 U", hex: "#685546" },
+  { code: "9201-283", name: "burnt siena", pantone: "470 U", hex: "#895A47" },
+];
+const PENCIL_OK = POLYCHROMOS_PENCILS.map((p) => ({ ...p, ok: hexToOklab(p.hex) }));
+
+function nearestPencils(hex, n = 3) {
+  const target = hexToOklab(hex);
+  return PENCIL_OK
+    .map((p) => ({ ...p, dist: dOk(p.ok, target) }))
+    .sort((a, b) => a.dist - b.dist)
+    .slice(0, n);
+}
+function pencilMatchWord(dist) {
+  if (dist < 0.02) return "near-identical";
+  if (dist < 0.05) return "very close";
+  if (dist < 0.1) return "close, slight difference";
+  return "noticeably different";
+}
+/* Estimates a two-pencil layering that lands closer to the target than any
+   single pencil can. Linear interpolation in OKLab between the two pencils —
+   an approximation of layered pigment, not a physical mixing model, since
+   real layering depends on pressure, paper and order. Only searched among the
+   dozen closest single pencils, and only surfaced if it meaningfully beats
+   the best single match. */
+function bestPencilBlend(hex, candidatePool = 12) {
+  const target = hexToOklab(hex);
+  const pool = nearestPencils(hex, candidatePool);
+  let best = null;
+  for (let i = 0; i < pool.length; i++) {
+    for (let j = i + 1; j < pool.length; j++) {
+      const a = pool[i], b = pool[j];
+      for (let step = 1; step <= 9; step++) {
+        const r = step / 10;
+        const blend = { L: a.ok.L + (b.ok.L - a.ok.L) * r, a: a.ok.a + (b.ok.a - a.ok.a) * r, b2: a.ok.b2 + (b.ok.b2 - a.ok.b2) * r };
+        const dist = dOk(blend, target);
+        if (!best || dist < best.dist) best = { a, b, ratio: r, dist };
+      }
+    }
+  }
+  return best;
+}
+
 /* How close is the set of hues to a recognised harmonic structure? */
 const HARMONY_TEMPLATES = [
   ["monochromatic", [0]],
@@ -1947,7 +2156,10 @@ function renderPhotoResult(url, swatches) {
   out.innerHTML =
     '<div class="photo-grid">' +
     '<img src="' + url + '" alt="Uploaded reference photo" class="photo-thumb">' +
-    "<div>" + stripHtml(swatches.map((s, i) => ({ hex: s.hex, label: "Swatch " + (i + 1) })), true) + "</div>" +
+    "<div>" + stripHtml(swatches.map((s, i) => {
+      const pencil = nearestPencils(s.hex, 1)[0];
+      return { hex: s.hex, label: "Swatch " + (i + 1) + (pencil ? " · " + pencil.name : "") };
+    }), true) + "</div>" +
     "</div>" +
     '<div class="photo-actions">' +
     '<button type="button" class="btn" id="photoUseBtn">Use these ' + swatches.length + " colour" + (swatches.length === 1 ? "" : "s") + "</button>" +
@@ -2007,7 +2219,11 @@ function renderAnalysis() {
     if (tag) tag.textContent = A.R.role.get(it) ?? "";
   });
 
-  $("palStrip").innerHTML = stripHtml(A.R.items.map((it) => ({ hex: it.hex, label: A.R.role.get(it) ?? "" })), false);
+  $("palStrip").innerHTML = stripHtml(A.R.items.map((it) => {
+    const role = A.R.role.get(it) ?? "";
+    const pencil = nearestPencils(it.hex, 1)[0];
+    return { hex: it.hex, label: role + (pencil ? " · " + pencil.name : "") };
+  }), false);
   wireStrips($("palStrip"));
 
   $("palGoals").innerHTML = ANALYSE_GOALS.map(([id, label]) =>
@@ -2277,6 +2493,7 @@ function setMode(mode, opts = {}) {
 /* ---------- master render ---------- */
 function renderAll(opts = {}) {
   syncInputPanel(opts);
+  renderPencilPanel();
   renderPlan();
   renderRamp();
   const schemes = renderSchemes();
