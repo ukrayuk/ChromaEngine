@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ChromaEngine — colour tool for artists with Polychromos pencil matching, a goal-weighted Palette Health Score, photo-to-palette extraction, and production-ready themes.">
+<meta name="description" content="ChromaEngine — colour tool for artists with a dedicated photo extraction tab (up to 8 swatches), Polychromos pencil matching, a goal-weighted Palette Health Score, and production-ready themes.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 <title>ChromaEngine — colour families for artists</title>
 <style>
@@ -289,8 +289,8 @@
   .pal-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
   #palStrip { margin-top: 1.5rem; }
 
-  /* ---------- analyse: extract from a photo ---------- */
-  .photo-extract { border-top: 1px solid var(--border); margin-top: 2rem; padding-top: 1.5rem; border-radius: var(--radius); transition: background-color .15s ease; }
+  /* ---------- extract from a photo ---------- */
+  .photo-extract { border-radius: var(--radius); transition: background-color .15s ease; }
   .photo-extract.drag-over { background: var(--accent-soft); }
   .photo-extract .pal-actions { margin-top: 1rem; align-items: center; }
   .photo-count { display: flex; align-items: center; gap: .5rem; }
@@ -399,6 +399,7 @@
   <div class="mode-toggle" role="group" aria-label="Mode">
     <button type="button" class="btn active" id="modeBtnBuild" aria-pressed="true">Build from a colour</button>
     <button type="button" class="btn" id="modeBtnAnalyse" aria-pressed="false">Analyse a palette</button>
+    <button type="button" class="btn" id="modeBtnPhoto" aria-pressed="false">Extract from a photo</button>
   </div>
 
   <nav class="section-nav" id="sectionNav" aria-label="Jump to section"></nav>
@@ -530,31 +531,13 @@
   <div id="modeAnalyse" hidden>
     <section class="step" id="s-palette">
       <h2 class="label-caps step-label">01 — Your palette</h2>
-      <p class="pal-intro">Already have a colour scheme? Let&rsquo;s see how it&rsquo;s behaving. Add up to five colours — ground, ink, accents — and I&rsquo;ll read the room.</p>
+      <p class="pal-intro">Already have a colour scheme? Let&rsquo;s see how it&rsquo;s behaving. Add up to eight colours — ground, ink, accents — and I&rsquo;ll read the room. Prefer to start from a photo instead? Switch to the <strong>Extract from a photo</strong> tab above.</p>
       <div class="pal-rows" id="palRows"></div>
       <div class="pal-actions">
         <button type="button" class="btn" id="palAdd">+ Add a colour</button>
         <button type="button" class="btn" id="palExample">Load an example</button>
       </div>
       <div id="palStrip"></div>
-
-      <div class="photo-extract" id="photoExtract">
-        <p class="label-caps muted" style="margin:0">Or start from a photo</p>
-        <p class="muted" style="font-size:.875rem; max-width:36rem; margin:.4rem 0 0">Drop in a reference image and I&rsquo;ll sample it for you — spread across the shadows, midtones and highlights, the way you&rsquo;d read a photo before mixing.</p>
-        <div class="pal-actions">
-          <button type="button" class="btn" id="photoBtn">📷 Extract from a photo</button>
-          <label class="photo-count label-caps muted">
-            Swatches
-            <select id="photoCount" aria-label="Number of swatches to extract">
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5" selected>5</option>
-            </select>
-          </label>
-        </div>
-        <input type="file" id="photoInput" accept="image/*" hidden aria-label="Upload a reference photo">
-        <div id="photoResult"></div>
-      </div>
     </section>
 
     <section class="step" id="s-health">
@@ -598,6 +581,31 @@
       <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1.25rem" id="analyseThemeIntro">Once the palette is behaving, turn it into a full light and dark UI theme — same system as section 07, built from your palette's lead colour.</p>
       <button type="button" class="btn improve-cta" id="analyseThemeBtn">Generate production-ready theme</button>
       <div id="analyseThemeResult"></div>
+    </section>
+  </div>
+
+  <div id="modePhoto" hidden>
+    <section class="step" id="s-photo" style="margin-bottom:0">
+      <h2 class="label-caps step-label">01 — Extract from a photo</h2>
+      <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1.25rem">Drop in a reference image and I&rsquo;ll sample it for you — spread across the shadows, midtones and highlights, the way you&rsquo;d read a photo before mixing.</p>
+      <div class="photo-extract" id="photoExtract">
+        <div class="pal-actions" style="margin-top:0">
+          <button type="button" class="btn" id="photoBtn">📷 Choose a photo</button>
+          <label class="photo-count label-caps muted">
+            Swatches
+            <select id="photoCount" aria-label="Number of swatches to extract">
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected>5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+          </label>
+        </div>
+        <input type="file" id="photoInput" accept="image/*" hidden aria-label="Upload a reference photo">
+        <div id="photoResult"></div>
+      </div>
     </section>
   </div>
 </main>
@@ -2171,6 +2179,7 @@ function renderPhotoResult(url, swatches) {
     renderPalRows();
     renderAnalysis();
     $("improveResult").innerHTML = "";
+    setMode("analyse");
     toast("Palette sampled from your photo");
     const health = document.getElementById("s-health");
     if (health) health.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
@@ -2196,7 +2205,7 @@ function renderPalRows() {
     }));
   $("palRows").querySelectorAll("[data-rm]").forEach((b) =>
     b.addEventListener("click", () => { palette.splice(Number(b.dataset.rm), 1); renderPalRows(); renderAnalysis(); }));
-  $("palAdd").style.display = palette.length >= 5 ? "none" : "";
+  $("palAdd").style.display = palette.length >= 8 ? "none" : "";
 }
 function syncPalRow(i) {
   const pk = $("palRows").querySelector('[data-pk="' + i + '"]');
@@ -2456,9 +2465,13 @@ const ANALYSE_SECTIONS = [
   ["s-improve", "05 Improve"],
   ["s-analysetheme", "06 Theme"],
 ];
+const PHOTO_SECTIONS = [
+  ["s-photo", "01 Photo"],
+];
+const MODE_SECTIONS = { build: BUILD_SECTIONS, analyse: ANALYSE_SECTIONS, photo: PHOTO_SECTIONS };
 let sectionObserver = null;
 function renderSectionNav(mode) {
-  const sections = mode === "build" ? BUILD_SECTIONS : ANALYSE_SECTIONS;
+  const sections = MODE_SECTIONS[mode] ?? BUILD_SECTIONS;
   const nav = $("sectionNav");
   nav.innerHTML = sections.map(([id, label]) => '<a href="#' + id + '" data-target="' + id + '">' + label + "</a>").join("");
   if (sectionObserver) sectionObserver.disconnect();
@@ -2479,13 +2492,15 @@ function renderSectionNav(mode) {
 
 /* ---------- mode toggle ---------- */
 function setMode(mode, opts = {}) {
-  const build = mode === "build";
-  $("modeBuild").hidden = !build;
-  $("modeAnalyse").hidden = build;
-  $("modeBtnBuild").classList.toggle("active", build);
-  $("modeBtnAnalyse").classList.toggle("active", !build);
-  $("modeBtnBuild").setAttribute("aria-pressed", String(build));
-  $("modeBtnAnalyse").setAttribute("aria-pressed", String(!build));
+  $("modeBuild").hidden = mode !== "build";
+  $("modeAnalyse").hidden = mode !== "analyse";
+  $("modePhoto").hidden = mode !== "photo";
+  $("modeBtnBuild").classList.toggle("active", mode === "build");
+  $("modeBtnAnalyse").classList.toggle("active", mode === "analyse");
+  $("modeBtnPhoto").classList.toggle("active", mode === "photo");
+  $("modeBtnBuild").setAttribute("aria-pressed", String(mode === "build"));
+  $("modeBtnAnalyse").setAttribute("aria-pressed", String(mode === "analyse"));
+  $("modeBtnPhoto").setAttribute("aria-pressed", String(mode === "photo"));
   renderSectionNav(mode);
   if (opts.scrollTop) window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
 }
@@ -2513,8 +2528,9 @@ $("hexField").addEventListener("input", () => { const rgb = hexToRgb($("hexField
 $("rgbField").addEventListener("input", () => { const rgb = parseRgbString($("rgbField").value); if (rgb) setHex(rgbToHex(rgb)); });
 $("modeBtnBuild").addEventListener("click", () => setMode("build", { scrollTop: true }));
 $("modeBtnAnalyse").addEventListener("click", () => setMode("analyse", { scrollTop: true }));
+$("modeBtnPhoto").addEventListener("click", () => setMode("photo", { scrollTop: true }));
 $("palAdd").addEventListener("click", () => {
-  if (palette.length >= 5) return;
+  if (palette.length >= 8) return;
   palette.push("#8C8478");
   renderPalRows(); renderAnalysis();
 });
