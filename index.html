@@ -2220,7 +2220,7 @@ function photoMoodStats(img) {
   const ctx = canvas.getContext("2d", { willReadFrequently: true });
   ctx.drawImage(img, 0, 0, w, h);
   const data = ctx.getImageData(0, 0, w, h).data;
-  let n = 0, sumChroma = 0, warmSum = 0;
+  let n = 0, sumChroma = 0, warmSum = 0, lMin = Infinity, lMax = -Infinity;
   const hues = [];
   for (let i = 0; i < data.length; i += 16) {
     if (data[i + 3] < 200) continue;
@@ -2228,18 +2228,26 @@ function photoMoodStats(img) {
     const ok = rgbToOklab(r, g, b);
     const chroma = Math.hypot(ok.a, ok.b2);
     sumChroma += chroma; n++;
+    if (ok.L < lMin) lMin = ok.L;
+    if (ok.L > lMax) lMax = ok.L;
     const hueDeg = rgbToHsl({ r, g, b }).h;
     hues.push(hueDeg);
     warmSum += isWarmHue(hueDeg) ? chroma : -chroma * 0.4;
   }
-  if (!n) return { meanChroma: 0, warmth: 0, hueSpread: 0 };
+  if (!n) return { meanChroma: 0, warmth: 0, hueSpread: 0, lRange: 0 };
   const meanHue = hues.reduce((s, hh) => s + hh, 0) / hues.length;
   const hueSpread = Math.sqrt(hues.reduce((s, hh) => s + hueDist(hh, meanHue) ** 2, 0) / hues.length);
-  return { meanChroma: sumChroma / n, warmth: warmSum / n, hueSpread };
+  return { meanChroma: sumChroma / n, warmth: warmSum / n, hueSpread, lRange: lMax - lMin };
 }
+/* Each axis is measured from something distinct so the four rounds actually test
+   different things: raw saturation for chroma, but lightness range (harsh light and
+   deep shadow vs even, soft lighting) for tension — "bold" is a contrast question as
+   much as a saturation one, and reusing chroma here would make this round redundant
+   with the muted/vibrant round. */
 function moodAxisStat(axis, stats) {
   if (axis === "temp") return stats.warmth;
   if (axis === "accents") return stats.hueSpread / 40;
+  if (axis === "tension") return stats.lRange / 0.5;
   return stats.meanChroma / 0.12;
 }
 function photoRoundNudge(axis, statsPicked, statsOther) {
