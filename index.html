@@ -127,7 +127,7 @@
   .slider-row { display: flex; align-items: center; gap: .75rem; }
   .slider-row > .slider-name { width: 5rem; color: var(--muted); flex-shrink: 0; }
   .slider-row > .slider-val { width: 2.5rem; text-align: right; font-family: var(--font-mono); font-size: .75rem; }
-  .seeds { display: flex; gap: .5rem; margin-top: .5rem; }
+  .seeds { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .5rem; }
 
   /* ---------- pencil matching ---------- */
   .pencil-panel { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem; }
@@ -204,6 +204,22 @@
   .strip .sw-label { top: .5rem; opacity: .45; }
   .strip.tall button { height: 7rem; }
   .strip.short button { height: 5rem; }
+  .strip-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+    overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); background: var(--border);
+  }
+  .strip-grid button {
+    position: relative; border: none; cursor: pointer; padding: 0; height: 3.25rem; transition: transform .15s ease;
+  }
+  .strip-grid button:hover { z-index: 10; transform: scale(1.05); }
+  .strip-grid .sw-hex, .strip-grid .sw-label {
+    font-family: var(--font-mono); font-size: .55rem; letter-spacing: .06em; text-transform: uppercase;
+    position: absolute; left: 0; right: 0; padding: 0 .2rem;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .strip-grid .sw-hex { bottom: .2rem; opacity: .7; }
+  .strip-grid button:hover .sw-hex { opacity: 1; }
+  .strip-grid .sw-label { top: .2rem; opacity: .45; }
 
   .scheme { border-top: 1px solid var(--border); padding-top: 1.5rem; }
   .scheme + .scheme { margin-top: 2.5rem; }
@@ -663,14 +679,14 @@
 
     <section class="step" id="s-fixes">
       <h2 class="label-caps step-label">04 — One-click fixes</h2>
-      <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1.25rem">Moves, not replacements — every suggestion keeps your hue exactly where you put it, and only nudges saturation or lightness.</p>
+      <p class="muted" style="font-size:.875rem; max-width:36rem; margin:0 0 1.25rem">Moves, not replacements — every suggestion keeps your hue exactly where you put it, and only nudges chroma or lightness.</p>
       <div class="fix-cards" id="palFixes"></div>
     </section>
 
     <section class="step" id="s-improve">
       <h2 class="label-caps step-label">05 — Improve but keep my style</h2>
       <button type="button" class="btn improve-cta" id="improveBtn">Improve but keep my style</button>
-      <p class="improve-note">Not a new palette. Every hue stays put — only saturation and lightness move, and only as far as they must. Preserve personality; improve behaviour.</p>
+      <p class="improve-note">Not a new palette. Every hue stays put — only chroma and lightness move, and only as far as they must. Preserve personality; improve behaviour.</p>
       <div id="improveResult"></div>
     </section>
 
@@ -824,6 +840,8 @@ function inkFor(hex) {
 const sw = (hsl, label) => ({ hex: hslToHex(hsl), label });
 
 function buildSchemes(base) {
+  const LIGHT_L = 75, DARK_L = 25;
+  const hueLabel = (deg) => (deg === 0 ? "Base" : "+" + deg + "°");
   return [
     { id: "analogous", name: "Analogous",
       blurb: "Neighbours on the wheel — 30° apart. Low tension, high harmony.",
@@ -832,26 +850,38 @@ function buildSchemes(base) {
     { id: "complementary", name: "Complementary",
       blurb: "Direct opposites. Maximum vibration where they meet.",
       use: "Posters, CTA buttons, focal points in figurative work.",
-      swatches: [sw(base, "Base"), sw({ ...base, l: Math.min(92, base.l + 22) }, "Base light"), sw(rotate(base, 180), "Complement"), sw({ ...rotate(base, 180), l: Math.max(12, base.l - 22) }, "Comp. shade")] },
+      swatches: [
+        sw({ ...base, l: DARK_L }, "Base dark"), sw(base, "Base"), sw({ ...base, l: LIGHT_L }, "Base light"),
+        sw({ ...rotate(base, 180), l: DARK_L }, "Comp. dark"), sw(rotate(base, 180), "Complement"), sw({ ...rotate(base, 180), l: LIGHT_L }, "Comp. light"),
+      ] },
     { id: "split", name: "Split complementary",
       blurb: "The complement, split 30° either side. Contrast without clash.",
       use: "Illustration, brand systems, packaging.",
-      swatches: [sw(base, "Base"), sw(rotate(base, 150), "+150°"), sw(rotate(base, 210), "+210°")] },
+      swatches: [
+        sw({ ...rotate(base, 150), l: DARK_L }, "+150° dark"), sw({ ...rotate(base, 150), l: LIGHT_L }, "+150° light"),
+        sw({ ...rotate(base, 210), l: DARK_L }, "+210° dark"), sw({ ...rotate(base, 210), l: LIGHT_L }, "+210° light"),
+      ] },
     { id: "triadic", name: "Triadic",
       blurb: "Three hues, evenly spaced 120°. Balanced and lively.",
       use: "Children's books, murals, playful advertising.",
-      swatches: [sw(base, "Base"), sw(rotate(base, 120), "+120°"), sw(rotate(base, 240), "+240°")] },
+      swatches: [
+        sw({ ...rotate(base, 120), l: DARK_L }, "+120° dark"), sw({ ...rotate(base, 120), l: LIGHT_L }, "+120° light"),
+        sw({ ...rotate(base, 240), l: DARK_L }, "+240° dark"), sw({ ...rotate(base, 240), l: LIGHT_L }, "+240° light"),
+      ] },
     { id: "tetradic", name: "Tetradic / quadratic",
       blurb: "Two complementary pairs on a square. Rich, needs one lead colour.",
       use: "Textiles, complex compositions, editorial spreads.",
-      swatches: [sw(base, "Base"), sw(rotate(base, 90), "+90°"), sw(rotate(base, 180), "+180°"), sw(rotate(base, 270), "+270°")] },
+      layout: "grid4",
+      swatches: [{ l: LIGHT_L, tag: " light" }, { l: base.l, tag: "" }, { l: DARK_L, tag: " dark" }]
+        .flatMap((row) => [0, 90, 180, 270].map((deg) => sw({ ...rotate(base, deg), l: row.l }, hueLabel(deg) + row.tag))) },
     { id: "monochrome", name: "Monochromatic",
-      blurb: "One hue, stepped through value and saturation.",
+      blurb: "One hue, stepped through value.",
       use: "Tonal studies, minimal interfaces, photography grades.",
-      swatches: [92, 74, 56, 38, 20].map((l, i) => sw({ ...base, l, s: Math.max(8, base.s - (i - 2) * 6) }, "L " + l)) },
+      swatches: [90, 66.67, 43.33, 20].map((l) => sw({ ...base, l: Math.round(l) }, "L " + Math.round(l))) },
   ];
 }
-const tintsAndShades = (base) => [95, 85, 70, 55, 40, 25, 12].map((l) => sw({ ...base, l }, String(l)));
+const TINT_SHADE_STOPS = Array.from({ length: 10 }, (_, i) => Math.round(95 - i * (85 / 9)));
+const tintsAndShades = (base) => TINT_SHADE_STOPS.map((l) => sw({ ...base, l }, String(l)));
 
 function hueName(h) {
   const names = [[15, "red"], [45, "orange"], [65, "yellow"], [95, "lime"], [150, "green"], [185, "teal"], [215, "cyan-blue"], [255, "blue"], [285, "violet"], [320, "magenta"], [345, "pink"], [360, "red"]];
@@ -1074,7 +1104,7 @@ function planBrief(id, hsl) {
         { label: "Colour on white board", detail: onPaper.toFixed(2) + " : 1 — " + (onPaper >= WCAG.largeAA ? "fine for display sizes" : "too pale for type, use as a field instead") + ".", pass: onPaper >= WCAG.largeAA },
         { label: "Colour on kraft board", detail: onKraft.toFixed(2) + " : 1 — " + (onKraft >= WCAG.largeAA ? "holds on uncoated brown stock" : "will sink into kraft; keep it on a printed white panel") + ".", pass: onKraft >= WCAG.largeAA },
         { label: "Print gamut caution",
-          detail: hsl.s > 85 && hsl.l > 45 ? "Very saturated — CMYK will dull it. Proof it or specify a spot ink." : "Reproduces predictably in four-colour process.",
+          detail: hsl.s > 85 && hsl.l > 45 ? "Very high chroma — CMYK will dull it. Proof it or specify a spot ink." : "Reproduces predictably in four-colour process.",
           pass: !(hsl.s > 85 && hsl.l > 45) },
       ] };
   }
@@ -1098,12 +1128,12 @@ function planBrief(id, hsl) {
       specs: [...baseSpecs(hex, hsl),
         { label: "On a light feed", value: (anchorLight?.hex.toUpperCase() ?? hex.toUpperCase()), hint: "Nearest version that holds 3:1 on white" },
         { label: "On a dark feed", value: (liftDark?.hex.toUpperCase() ?? hex.toUpperCase()), hint: "Nearest version that holds 3:1 on near-black" },
-        { label: "Story punch version", value: story.toUpperCase(), hint: "Saturation +8 for stories and reels" },
+        { label: "Story punch version", value: story.toUpperCase(), hint: "Chroma +8 for stories and reels" },
       ],
       checks: [
         { label: "Against a white feed", detail: onFeed.toFixed(2) + " : 1 — " + (onFeed >= WCAG.largeAA ? "stops the scroll on its own" : "needs a ground or outline to register") + ".", pass: onFeed >= WCAG.largeAA },
         { label: "Against dark mode", detail: onDarkFeed.toFixed(2) + " : 1 against near-black.", pass: onDarkFeed >= WCAG.largeAA },
-        { label: "Reads at thumbnail size", detail: hsl.s >= 30 ? "Saturated enough to register at sixty pixels." : "Nearly neutral — at thumbnail size it reads as grey. Raise saturation for social work.", pass: hsl.s >= 30 },
+        { label: "Reads at thumbnail size", detail: hsl.s >= 30 ? "High enough chroma to register at sixty pixels." : "Nearly neutral — at thumbnail size it reads as grey. Raise chroma for social work.", pass: hsl.s >= 30 },
         { label: "Caption-safe pairing", detail: inkFor(hex).toUpperCase() + " on the colour gives " + contrastHex(inkFor(hex), hex).toFixed(2) + " : 1 for overlay text.", pass: contrastHex(inkFor(hex), hex) >= WCAG.bodyAA },
       ] };
   }
@@ -1130,7 +1160,7 @@ function planBrief(id, hsl) {
         { label: "Hue as display type", detail: onPaper.toFixed(2) + " : 1 on paper — " + (onPaper >= WCAG.largeAA ? "fine for headings and folios" : "too light even for display; use the heading accent above") + ".", pass: onPaper >= WCAG.largeAA },
         { label: "Hue as body text", detail: onPaper.toFixed(2) + " : 1 — " + (onPaper >= WCAG.bodyAA ? "could carry a caption if it had to" : "never for running text; punctuation only") + ".", pass: onPaper >= WCAG.bodyAA },
         { label: "Print gamut caution",
-          detail: hsl.s > 85 && hsl.l > 45 ? "Very saturated — uncoated stock will dull it further. Proof early." : "Reproduces predictably in four-colour process.",
+          detail: hsl.s > 85 && hsl.l > 45 ? "Very high chroma — uncoated stock will dull it further. Proof early." : "Reproduces predictably in four-colour process.",
           pass: !(hsl.s > 85 && hsl.l > 45) },
       ] };
   }
@@ -1143,7 +1173,7 @@ function planBrief(id, hsl) {
       moves: [
         { title: "Keep one master value", detail: "Everything derives from " + hex.toUpperCase() + ". Never re-pick it by eye — every drifted copy weakens the identity." },
         { title: "Build one light and one dark pairing", detail: "A version that reads on white (" + (safeLight?.hex.toUpperCase() ?? hex.toUpperCase()) + ") and one that reads on near-black (" + (safeDark?.hex.toUpperCase() ?? hex.toUpperCase()) + ") cover almost every surface you'll meet." },
-        { title: "Keep a neutral in your pocket", detail: "A desaturated companion of the same hue gives the colour somewhere to rest without breaking temperature." },
+        { title: "Keep a neutral in your pocket", detail: "A low-chroma companion of the same hue gives the colour somewhere to rest without breaking temperature." },
         { title: "Test in situ", detail: "Screens, print, fabric, paint — each shifts the hue. Judge the colour in its destination, not on this page." },
       ],
       specs: [...baseSpecs(hex, hsl),
@@ -1180,7 +1210,7 @@ function planBrief(id, hsl) {
           detail: hsl.l > 20 && hsl.l < 85 ? "Mid value — reads well as a solid stamp or emboss." : "Very light or very dark; add a mid-value variant for one-colour work.",
           pass: hsl.l > 20 && hsl.l < 85 },
         { label: "Distinctiveness",
-          detail: hsl.s < 18 ? "Nearly neutral — hard to own as a brand colour. Consider raising saturation." : "Clearly a " + hue + "; easy to describe and recall.",
+          detail: hsl.s < 18 ? "Nearly neutral — hard to own as a brand colour. Consider raising chroma." : "Clearly a " + hue + "; easy to describe and recall.",
           pass: hsl.s >= 18 },
       ] };
   }
@@ -1201,13 +1231,13 @@ function planBrief(id, hsl) {
     checks: [
       { label: "Value separation from white ground", detail: onPaper.toFixed(2) + " : 1 — " + (onPaper >= 2 ? "reads as a distinct shape" : "very close in value; will melt into the ground") + ".", pass: onPaper >= 2 },
       { label: "Value separation from dark ground", detail: onInk.toFixed(2) + " : 1 against near-black.", pass: onInk >= 2 },
-      { label: "Saturation headroom", detail: hsl.s > 90 ? "At the edge of most pigment ranges — expect to approximate it in paint." : "Mixable with common pigments.", pass: hsl.s <= 90 },
+      { label: "Chroma headroom", detail: hsl.s > 90 ? "At the edge of most pigment ranges — expect to approximate it in paint." : "Mixable with common pigments.", pass: hsl.s <= 90 },
       { label: "Mid-value anchor", detail: hsl.l > 25 && hsl.l < 75 ? "Sits in the mid range — useful as the composition's anchor." : "An extreme value; pair it with a mid tone so the eye has somewhere to rest.", pass: hsl.l > 25 && hsl.l < 75 },
     ] };
 }
 
 /* ============ app state & rendering ============ */
-const SEEDS = ["#C8452B", "#1F5F5B", "#E4A11B", "#2E4A8A", "#7A2E4A", "#4F6B2A"];
+const SEEDS = ["#F2A900", "#F2CD00", "#C4D600", "#00BB31", "#279989", "#307FE2", "#654EA3", "#852779", "#A50050", "#CC0000", "#FA4616", "#F6780B"];
 let hex = "#C8452B";
 let plan = null;
 let themeTab = "light";
@@ -1256,7 +1286,7 @@ function setHex(next, opts = {}) {
 }
 
 function buildSliders() {
-  const defs = [["h", "Hue", 360], ["s", "Saturation", 100], ["l", "Lightness", 100]];
+  const defs = [["h", "Hue", 360], ["s", "Chroma", 100], ["l", "Lightness", 100]];
   $("sliders").innerHTML = defs.map(([key, label, max]) =>
     '<label class="slider-row">' +
     '<span class="label-caps slider-name">' + label + "</span>" +
@@ -1395,6 +1425,14 @@ function stripHtml(swatches, tall) {
       '<span class="sw-hex">' + s2.hex.replace("#", "") + "</span></button>").join("") +
     "</div>";
 }
+function gridStripHtml(swatches) {
+  return '<div class="strip-grid">' +
+    swatches.map((s2) =>
+      '<button type="button" data-copyhex="' + s2.hex + '" style="background-color:' + s2.hex + "; color:" + inkFor(s2.hex) + '" aria-label="Copy ' + s2.hex + '">' +
+      '<span class="sw-label">' + esc(s2.label) + "</span>" +
+      '<span class="sw-hex">' + s2.hex.replace("#", "") + "</span></button>").join("") +
+    "</div>";
+}
 function wireStrips(container) {
   container.querySelectorAll("[data-copyhex]").forEach((b) =>
     b.addEventListener("click", () => copyText(b.dataset.copyhex.toUpperCase())));
@@ -1409,7 +1447,7 @@ function renderSchemes() {
     '<article class="scheme">' +
     '<div class="scheme-head"><h3 class="h-sub">' + esc(scheme.name) + "</h3>" +
     '<span class="label-caps muted">' + scheme.swatches.length + " colours</span></div>" +
-    stripHtml(scheme.swatches, true) +
+    (scheme.layout === "grid4" ? gridStripHtml(scheme.swatches) : stripHtml(scheme.swatches, true)) +
     '<p class="blurb">' + esc(scheme.blurb) + "</p>" +
     '<p class="use"><span class="label-caps muted">Works for </span>' + esc(scheme.use) + "</p></article>").join("");
   wireStrips($("schemes"));
@@ -1419,11 +1457,11 @@ function renderSchemes() {
 /* ---------- 05 previews ---------- */
 function renderPreviews(schemes) {
   const pick = (id, index, fallback) => schemes.find((s2) => s2.id === id)?.swatches[index]?.hex ?? fallback;
-  const comp = pick("complementary", 2, hex);
+  const comp = pick("complementary", 4, hex);
   const analog = pick("analogous", 3, hex);
   const tri = pick("triadic", 1, hex);
   const light = pick("monochrome", 0, "#ffffff");
-  const deep = pick("monochrome", 4, "#111111");
+  const deep = pick("monochrome", 3, "#111111");
   $("previews").innerHTML =
     "<figure>" +
     '<div class="mock" style="display:flex; flex-direction:column; justify-content:space-between; padding:1.25rem; background-color:' + hex + "; color:" + inkFor(hex) + '">' +
@@ -1441,7 +1479,7 @@ function renderPreviews(schemes) {
     '<div style="height:.5rem; width:60%; border-radius:99px; opacity:.4; background-color:' + deep + '"></div>' +
     '<div style="height:.5rem; width:66%; border-radius:99px; opacity:.25; background-color:' + deep + '"></div>' +
     '<span class="chip" style="background-color:' + comp + "; color:" + inkFor(comp) + '">Get in touch</span></div></div>' +
-    '<figcaption class="label-caps">Website — tinted surface, saturated accents</figcaption></figure>' +
+    '<figcaption class="label-caps">Website — tinted surface, high-chroma accents</figcaption></figure>' +
     "<figure>" +
     '<div class="mock" style="position:relative; display:flex; flex-direction:column; justify-content:center; gap:.75rem; padding:1.25rem; background-color:' + deep + "; color:" + inkFor(deep) + '">' +
     '<div style="display:flex; gap:.4rem">' +
@@ -1700,8 +1738,8 @@ function analysePalette(hexes) {
       observations.push({
         colour: b.hex,
         statement: capFirst(hueName(a.hsl.h)) + " and " + hueName(b.hsl.h) + " are both demanding attention.",
-        detail: "Two saturated voices " + Math.round(hueDist(a.hsl.h, b.hsl.h)) + "° apart at nearly the same volume — the eye ping-pongs instead of landing.",
-        suggestion: "Reduce saturation of the " + hueName(b.hsl.h) + " by " + reduction + "%. It stays " + hueName(b.hsl.h) + " — it just stops shouting.",
+        detail: "Two high-chroma voices " + Math.round(hueDist(a.hsl.h, b.hsl.h)) + "° apart at nearly the same volume — the eye ping-pongs instead of landing.",
+        suggestion: "Reduce chroma of the " + hueName(b.hsl.h) + " by " + reduction + "%. It stays " + hueName(b.hsl.h) + " — it just stops shouting.",
       });
       addFix({ idx: b.i, from: b.hex, to, title: "Let the " + hueName(a.hsl.h) + " lead",
         reasons: ["Keeps the " + hueName(b.hsl.h) + "'s warmth and hue.", "One voice leads, one supports.", "Creates stronger hierarchy."] });
@@ -1714,8 +1752,8 @@ function analysePalette(hexes) {
       observations.push({
         colour: second.hex,
         statement: "No single colour is in charge.",
-        detail: "The " + hueName(lead.hsl.h) + " and the " + hueName(second.hsl.h) + " sit at almost identical saturation — a hierarchy needs a lead.",
-        suggestion: "Drop the " + hueName(second.hsl.h) + " to " + Math.round(newS) + "% saturation and let the " + hueName(lead.hsl.h) + " front the band.",
+        detail: "The " + hueName(lead.hsl.h) + " and the " + hueName(second.hsl.h) + " sit at almost identical chroma — a hierarchy needs a lead.",
+        suggestion: "Drop the " + hueName(second.hsl.h) + " to " + Math.round(newS) + "% chroma and let the " + hueName(lead.hsl.h) + " front the band.",
       });
       addFix({ idx: second.i, from: second.hex, to, title: "Give the " + hueName(lead.hsl.h) + " the lead",
         reasons: ["Keeps both hues.", "Second voice steps back.", "The lead reads as chosen, not loud."] });
@@ -1778,10 +1816,10 @@ function analysePalette(hexes) {
       colour: calmest.hex,
       statement: "No true neutral. Everything carries colour.",
       detail: "Every surface hums a little. That's exciting for a poster and tiring for anything read at length — the eye never gets to rest.",
-      suggestion: "Knock the " + hueName(calmest.hsl.h) + " back to " + Math.round(newS) + "% saturation. Same hue, same temperature — but now it's a resting place.",
+      suggestion: "Knock the " + hueName(calmest.hsl.h) + " back to " + Math.round(newS) + "% chroma. Same hue, same temperature — but now it's a resting place.",
     });
     addFix({ idx: calmest.i, from: calmest.hex, to: hslToHex({ ...calmest.hsl, s: newS }).toUpperCase(), title: "A living neutral from your own hue",
-      reasons: ["Keeps the hue and temperature.", "Rest for long reading.", "Makes the saturated colours feel louder by contrast."] });
+      reasons: ["Keeps the hue and temperature.", "Rest for long reading.", "Makes the high-chroma colours feel louder by contrast."] });
   }
 
   /* -- temperature (10) -- */
@@ -1795,7 +1833,7 @@ function analysePalette(hexes) {
     if (hasNeutral || saturated.length <= 2) { score += 8; checks.push(ok("Leans " + temp + " on purpose — reads as a deliberate cast")); }
     else {
       score += 4;
-      checks.push(warn("All-" + temp + ", all saturated — nowhere for the eye to cool off"));
+      checks.push(warn("All-" + temp + ", all high-chroma — nowhere for the eye to cool off"));
       observations.push({
         colour: saturated[0].hex,
         statement: "Everything leans " + temp + " at full volume.",
@@ -2148,7 +2186,7 @@ function computeMetrics(hexes, goal) {
 
   /* -- focal emphasis / focus visibility -- */
   const lead = R.accents[0];
-  if (!lead) put("focus", 30, "no saturated accent");
+  if (!lead) put("focus", 30, "no high-chroma accent");
   else {
     const lr = contrastHex(lead.hex, g);
     const ldom = lead.hsl.s - (R.accents[1]?.hsl.s ?? 0);
@@ -2831,7 +2869,7 @@ function renderImprove() {
     '<ul class="move-list">' +
     res.applied.map((f) => '<li><span class="mark" aria-hidden="true">✔</span><span>' + esc(f.title) + " — " + f.from + " → " + f.to + "</span></li>").join("") +
     "</ul>" +
-    '<p class="muted" style="font-size:.875rem; max-width:34rem; margin:1rem 0 0">Every hue is exactly where you left it — only saturation and lightness moved, and only as far as they had to.</p>' +
+    '<p class="muted" style="font-size:.875rem; max-width:34rem; margin:1rem 0 0">Every hue is exactly where you left it — only chroma and lightness moved, and only as far as they had to.</p>' +
     '<div style="display:flex; gap:.75rem; margin-top:1.25rem; flex-wrap:wrap">' +
     '<button type="button" class="btn" id="improveApply">Apply the moves</button>' +
     '<button type="button" class="btn" id="improveDismiss">Keep it as it was</button></div>';
