@@ -11,7 +11,7 @@ Pick a colour by picker, hex, RGB or HSL sliders and ChromaEngine hands back eve
 1. **Choose your colour** — picker, hex, RGB, and H/Chroma/L sliders, plus twelve studio-start swatches (Studio Artistry by Ray's own brand colours, used across the whole studio)
 2. **What's the plan for your palette?** — an opinionated brief tuned to the job: 🌐 Website/App, 🎨 Brand identity, 📱 Social media, 📦 Packaging, 📖 Book/Editorial, 🎭 Illustration/Fine art, or ➕ Other. Each brief gives a verdict, four moves, exact hand-off values (HEX / RGB / CMYK / HSL and more), and the tests the colour has to pass
 3. **Tints & shades** — a ten-step value ramp, evenly spaced from 95 down to 10
-4. **Colour families** — analogous (5), complementary (dark/base/light of both the colour and its opposite, 6), split-complementary and triadic (light/dark of each accent hue, 4 each), tetradic (light/base/dark of all four hues, 12, laid out as a compact 3×4 grid), and monochromatic (4 steps, 90 down to 20) — every swatch copy-on-tap
+4. **Colour families** — analogous (5), complementary (dark/base/light of both the colour and its opposite, 6), split-complementary and triadic (the base plus light/dark of each accent hue, 5 each), tetradic (light/base/dark of all four hues, 12, laid out as a compact 3×4 grid), and monochromatic (5 steps, 90 down to 20) — every swatch copy-on-tap
 5. **Put to work** — live poster, website and promo-tile mockups built from the current family
 6. **Contrast & legibility** — WCAG 2.x contrast ratios (AA/AAA, body/large/UI), nearest-passing colour fixes, and ready-made readable pairs
 7. **Accessible UI theme** — light and dark token sets derived from the colour, each token checked against its WCAG target, exportable as CSS variables

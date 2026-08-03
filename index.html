@@ -858,6 +858,7 @@ function buildSchemes(base) {
       blurb: "The complement, split 30° either side. Contrast without clash.",
       use: "Illustration, brand systems, packaging.",
       swatches: [
+        sw(base, "Base"),
         sw({ ...rotate(base, 150), l: DARK_L }, "+150° dark"), sw({ ...rotate(base, 150), l: LIGHT_L }, "+150° light"),
         sw({ ...rotate(base, 210), l: DARK_L }, "+210° dark"), sw({ ...rotate(base, 210), l: LIGHT_L }, "+210° light"),
       ] },
@@ -865,6 +866,7 @@ function buildSchemes(base) {
       blurb: "Three hues, evenly spaced 120°. Balanced and lively.",
       use: "Children's books, murals, playful advertising.",
       swatches: [
+        sw(base, "Base"),
         sw({ ...rotate(base, 120), l: DARK_L }, "+120° dark"), sw({ ...rotate(base, 120), l: LIGHT_L }, "+120° light"),
         sw({ ...rotate(base, 240), l: DARK_L }, "+240° dark"), sw({ ...rotate(base, 240), l: LIGHT_L }, "+240° light"),
       ] },
@@ -877,7 +879,7 @@ function buildSchemes(base) {
     { id: "monochrome", name: "Monochromatic",
       blurb: "One hue, stepped through value.",
       use: "Tonal studies, minimal interfaces, photography grades.",
-      swatches: [90, 66.67, 43.33, 20].map((l) => sw({ ...base, l: Math.round(l) }, "L " + Math.round(l))) },
+      swatches: [90, 72.5, 55, 37.5, 20].map((l) => sw({ ...base, l: Math.round(l) }, "L " + Math.round(l))) },
   ];
 }
 const TINT_SHADE_STOPS = Array.from({ length: 10 }, (_, i) => Math.round(95 - i * (85 / 9)));
@@ -1459,9 +1461,9 @@ function renderPreviews(schemes) {
   const pick = (id, index, fallback) => schemes.find((s2) => s2.id === id)?.swatches[index]?.hex ?? fallback;
   const comp = pick("complementary", 4, hex);
   const analog = pick("analogous", 3, hex);
-  const tri = pick("triadic", 1, hex);
+  const tri = pick("triadic", 2, hex);
   const light = pick("monochrome", 0, "#ffffff");
-  const deep = pick("monochrome", 3, "#111111");
+  const deep = pick("monochrome", 4, "#111111");
   $("previews").innerHTML =
     "<figure>" +
     '<div class="mock" style="display:flex; flex-direction:column; justify-content:space-between; padding:1.25rem; background-color:' + hex + "; color:" + inkFor(hex) + '">' +
