@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ChromaEngine — colour tool for artists with an intent-first Discover-a-palette wizard, Polychromos pencil matching, photo extraction, and a goal-weighted Palette Health Score.">
+<meta name="description" content="ChromaEngine — colour tool for artists with save/load palettes, an intent-first Discover wizard, Polychromos pencil matching, photo extraction, and a goal-weighted Palette Health Score.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 <title>ChromaEngine — colour families for artists</title>
 <style>
@@ -579,6 +579,15 @@
         <button type="button" class="btn" id="palExample">Load an example</button>
       </div>
       <div id="palStrip"></div>
+      <div class="pal-actions" style="margin-top:1.25rem; align-items:center">
+        <label class="label-caps muted" style="display:flex; align-items:center; gap:.5rem">
+          Name
+          <input class="text-field" id="paletteName" placeholder="e.g. Academy blue" style="width:11rem; text-transform:none; letter-spacing:0; font-family:inherit">
+        </label>
+        <button type="button" class="btn" id="paletteSaveBtn">💾 Save palette</button>
+        <button type="button" class="btn" id="paletteLoadBtn">📂 Load a palette</button>
+        <input type="file" id="paletteLoadInput" accept="application/json,.json" hidden aria-label="Load a saved palette">
+      </div>
     </section>
 
     <section class="step" id="s-health">
@@ -2701,6 +2710,41 @@ function downloadText(filename, text, mime) {
   document.body.removeChild(a);
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
+
+/* ---------- save / load a palette ---------- */
+/* The production theme is a pure function of the palette (plus which goal it's scored
+   against) — nothing else about it is hand-edited anywhere in the app. So saving the
+   palette and the goal is saving "all the theme data": reloading it reconstructs the
+   exact same theme, health score and fixes, byte-for-byte deterministic. */
+function savePaletteFile() {
+  const name = ($("paletteName").value || "").trim();
+  const data = { app: "ChromaEngine", version: 1, name: name || null, goal: analyseGoal, palette: palette.slice() };
+  const slug = name ? name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-+|-+$)/g, "") : "palette";
+  downloadText("chromaengine-" + (slug || "palette") + ".json", JSON.stringify(data, null, 2), "application/json");
+  toast("Saved" + (name ? " “" + name + "”" : " palette"));
+}
+function loadPaletteFile(file) {
+  const reader = new FileReader();
+  reader.onload = () => {
+    let data;
+    try { data = JSON.parse(String(reader.result)); } catch { toast("That doesn't look like a saved palette file"); return; }
+    const hexes = Array.isArray(data.palette) ? data.palette.map((h) => hexToRgb(h)).filter(Boolean).map(rgbToHex) : [];
+    if (hexes.length < 2) { toast("That file doesn't have a usable palette in it"); return; }
+    palette = hexes.slice(0, 8);
+    if (typeof data.goal === "string" && SCORECARDS[data.goal]) analyseGoal = data.goal;
+    if (typeof data.name === "string") $("paletteName").value = data.name;
+    renderPalRows();
+    renderAnalysis();
+    $("improveResult").innerHTML = "";
+    setMode("analyse");
+    toast("Loaded" + (data.name ? " “" + data.name + "”" : "") + " — " + palette.length + " colours");
+    const health = document.getElementById("s-health");
+    if (health) health.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+  };
+  reader.onerror = () => toast("Couldn't read that file");
+  reader.readAsText(file);
+}
+
 function renderAnalyseTheme() {
   const themes = buildThemesFromPalette(palette);
   const theme = themes.find((t) => t.id === analyseThemeTab) ?? themes[0];
@@ -2981,6 +3025,13 @@ $("palExample").addEventListener("click", () => {
   palette = [...EXAMPLE_PALETTE];
   renderPalRows(); renderAnalysis();
   $("improveResult").innerHTML = "";
+});
+$("paletteSaveBtn").addEventListener("click", savePaletteFile);
+$("paletteLoadBtn").addEventListener("click", () => $("paletteLoadInput").click());
+$("paletteLoadInput").addEventListener("change", (e) => {
+  const file = e.target.files && e.target.files[0];
+  if (file) loadPaletteFile(file);
+  e.target.value = "";
 });
 $("improveBtn").addEventListener("click", renderImprove);
 $("analyseThemeBtn").addEventListener("click", renderAnalyseTheme);
