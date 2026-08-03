@@ -2508,19 +2508,41 @@ function samplePixelAt(img, url, fracX, fracY) {
   const d = fullResCtx.getImageData(x, y, 1, 1).data;
   return rgbToHex({ r: d[0], g: d[1], b: d[2] });
 }
-/* Maps a click on the displayed (object-fit: contain) image back to a 0-1 fraction of
-   the source image, accounting for the letterboxing contain introduces. */
-function pickFractionFromEvent(e, imgEl) {
+/* object-fit: contain fits the image's real content inside the <img> box while keeping
+   its aspect ratio, which pillarboxes or letterboxes when the box's aspect ratio doesn't
+   match the photo's — e.g. a portrait photo inside a wide box gets empty margin on both
+   sides. Both reading a click AND drawing a dot need this same draw-rect math, otherwise
+   dots drift toward those empty margins instead of sitting on the actual photo. */
+function containRectFor(imgEl) {
   const rect = imgEl.getBoundingClientRect();
   const naturalW = imgEl.naturalWidth, naturalH = imgEl.naturalHeight;
   const imgAspect = naturalW / naturalH, boxAspect = rect.width / rect.height;
   let drawW, drawH, offX, offY;
   if (imgAspect > boxAspect) { drawW = rect.width; drawH = rect.width / imgAspect; offX = 0; offY = (rect.height - drawH) / 2; }
   else { drawH = rect.height; drawW = rect.height * imgAspect; offY = 0; offX = (rect.width - drawW) / 2; }
+  return { rect, drawW, drawH, offX, offY };
+}
+/* Maps a click on the displayed (object-fit: contain) image back to a 0-1 fraction of
+   the source image, accounting for the letterboxing contain introduces. */
+function pickFractionFromEvent(e, imgEl) {
+  const { rect, drawW, drawH, offX, offY } = containRectFor(imgEl);
   const fracX = (e.clientX - rect.left - offX) / drawW;
   const fracY = (e.clientY - rect.top - offY) / drawH;
   if (fracX < 0 || fracX > 1 || fracY < 0 || fracY > 1) return null;
   return { fracX, fracY };
+}
+/* Inverse of pickFractionFromEvent — places a dot at the screen position a 0-1 fraction
+   corresponds to, in percentage terms relative to the wrap element (which sizes itself
+   to the img box, since it's an inline-block with the img as its only child). */
+function placePickDot(wrap, imgEl, fracX, fracY, hex, isAuto) {
+  const { rect, drawW, drawH, offX, offY } = containRectFor(imgEl);
+  const dot = document.createElement("span");
+  dot.className = "photo-pick-dot" + (isAuto ? " auto" : "");
+  dot.style.left = ((offX + fracX * drawW) / rect.width) * 100 + "%";
+  dot.style.top = ((offY + fracY * drawH) / rect.height) * 100 + "%";
+  dot.style.backgroundColor = hex;
+  dot.setAttribute("aria-hidden", "true");
+  wrap.appendChild(dot);
 }
 function runPhotoExtraction(img, url) {
   $("photoResult").innerHTML = '<p class="label-caps muted" style="margin-top:1.25rem">Sampling your photo&hellip;</p>';
@@ -2613,24 +2635,8 @@ function renderPhotoResult(url) {
     renderPhotoResult(url);
     toast(hex.toUpperCase() + " sampled");
   });
-  autoSwatches.forEach((s) => {
-    const dot = document.createElement("span");
-    dot.className = "photo-pick-dot auto";
-    dot.style.left = s.fracX * 100 + "%";
-    dot.style.top = s.fracY * 100 + "%";
-    dot.style.backgroundColor = s.hex;
-    dot.setAttribute("aria-hidden", "true");
-    wrap.appendChild(dot);
-  });
-  manualSwatches.forEach((m) => {
-    const dot = document.createElement("span");
-    dot.className = "photo-pick-dot";
-    dot.style.left = m.fracX * 100 + "%";
-    dot.style.top = m.fracY * 100 + "%";
-    dot.style.backgroundColor = m.hex;
-    dot.setAttribute("aria-hidden", "true");
-    wrap.appendChild(dot);
-  });
+  autoSwatches.forEach((s) => placePickDot(wrap, img, s.fracX, s.fracY, s.hex, true));
+  manualSwatches.forEach((m) => placePickDot(wrap, img, m.fracX, m.fracY, m.hex, false));
 
   $("photoUseBtn").addEventListener("click", () => {
     palette = autoSwatches.map((s) => s.hex).concat(manualSwatches.map((m) => m.hex)).slice(0, 8);
