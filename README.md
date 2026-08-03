@@ -24,12 +24,15 @@ Already have a colour scheme? Add up to eight colours and ChromaEngine reads the
 2. **Observations, not errors** — plain-language notes on what's straining ("Teal and orange are both demanding attention"), each with a concrete suggestion in exact numbers
 3. **One-click fixes** — moves, not replacements: every suggestion keeps the hue exactly where you put it and only nudges saturation or lightness
 4. **Improve but keep my style** — applies all the moves at once and reports the result against the health score ("Overall palette quality improved by 31%"), with 🟢🟡🟠 per-dimension deltas, before/after strips, and an undo-friendly apply
-5. **Save / load a palette** — name it and save it as a small JSON file, or load one back in later. Since the production theme, health score and fixes are all pure functions of the palette (plus which goal it's scored against), saving those two things is saving the whole theme — reloading it reconstructs everything byte-for-byte identical, no drift between saves
 5. **Production-ready Theme** — once the palette is behaving, generate a light/dark UI token system mapped directly from your approved colours: ground → background, ink → body text, lead accent → button, next accent → link, a third accent or neutral → muted text. Nothing is resynthesized from a single hue — each token keeps the exact approved colour unless it fails its WCAG target, in which case it's nudged the minimum distance needed, exactly like the one-click fixes. Copy the CSS variables or save `theme.css` straight to disk
+6. **Save, load and a palette gallery** — name a palette and save it as a small portable JSON file, or save it straight into an in-browser library (no file dialog, no account, just this browser's local storage) that also keeps the reference photo if the palette came from one. Since the theme, health score and fixes are all pure functions of the palette plus which goal it's scored against, saving those two things is saving everything — reloading reconstructs it byte-for-byte identical
+7. **Print a swatch card** — generates a printable card (swatch, hex/RGB, nearest Polychromos pencil, and three blank rows to test the physical pencil against) for the current palette, plus the reference photo if there is one. Uses the browser's own print-to-PDF rather than a bundled library, so it stays part of the one dependency-free file
 
 ## Extract from a photo
 
 Its own tab alongside Build and Analyse. Drop in a reference image (nothing leaves your browser) and it's sampled with k-means clustering in OKLab, spread across the shadows, midtones and highlights rather than averaged into mud. Every swatch is a real pixel from the photo, never a synthetic blend. Choose 3–8 swatches, then "Use these colours" switches you straight into Analyse mode with them loaded, ready for scoring, fixing and theming.
+
+**Or click the photo to sample an exact point** — the eyedropper. Full-resolution pixel sampling (not the downscaled copy used for clustering), with a marker left on the photo for every point picked, each one individually removable and copy-able. Matches how a painter actually works from a reference: pick the spot, not an algorithm's average of the whole image. Manually sampled points combine with the auto-extracted swatches when you hand off to Analyse mode.
 
 ## Discover a palette
 
