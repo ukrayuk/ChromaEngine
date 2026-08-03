@@ -356,6 +356,7 @@
     position: absolute; width: 1.1rem; height: 1.1rem; border-radius: 50%; border: 2px solid #fff;
     box-shadow: 0 0 0 1px rgba(0,0,0,.5), 0 1px 4px rgba(0,0,0,.4); transform: translate(-50%, -50%); pointer-events: none;
   }
+  .photo-pick-dot.auto { border-radius: 3px; }
   .pick-swatch-row { display: flex; align-items: center; gap: .6rem; padding: .4rem 0; }
   .pick-swatch-row .p-sw { height: 2.25rem; width: 2.25rem; flex-shrink: 0; border: 1px solid var(--border); border-radius: var(--radius); }
   .pick-swatch-row .grow { min-width: 0; flex: 1; }
@@ -467,8 +468,7 @@
     body { background: #fff; color: #111; }
   }
 </style>
-</head>
-<body>
+
 <main>
   <header class="masthead">
     <div>
@@ -2458,7 +2458,7 @@ function kMeansOklab(points, k) {
       const d = distSq(m, centroids[c]);
       if (d < bestD) { bestD = d; best = m; }
     }
-    results.push({ hex: rgbToHex({ r: best.r, g: best.g, b: best.b }), count: members.length, L: centroids[c].L });
+    results.push({ hex: rgbToHex({ r: best.r, g: best.g, b: best.b }), count: members.length, L: centroids[c].L, fracX: best.fracX, fracY: best.fracY });
   }
   return results.sort((x, y) => x.L - y.L);
 }
@@ -2477,14 +2477,18 @@ function extractPaletteFromImage(img, k) {
     if (data[i + 3] < 200) continue;
     const r = data[i], g = data[i + 1], b = data[i + 2];
     const ok = rgbToOklab(r, g, b);
-    points.push({ r, g, b, L: ok.L, a: ok.a, b2: ok.b2 });
+    const pixelIndex = i / 4;
+    const x = pixelIndex % w;
+    const y = Math.floor(pixelIndex / w);
+    points.push({ r, g, b, L: ok.L, a: ok.a, b2: ok.b2, fracX: (x + 0.5) / w, fracY: (y + 0.5) / h });
   }
-  if (points.length <= k) return points.map((p) => ({ hex: rgbToHex({ r: p.r, g: p.g, b: p.b }), count: 1, L: p.L }));
+  if (points.length <= k) return points.map((p) => ({ hex: rgbToHex({ r: p.r, g: p.g, b: p.b }), count: 1, L: p.L, fracX: p.fracX, fracY: p.fracY }));
   return kMeansOklab(points, k);
 }
 let photoObjectUrl = null;
 let lastPhotoImg = null;
 let manualSwatches = [];
+let autoSwatches = [];
 let fullResCanvas = null, fullResCtx = null, fullResForUrl = null;
 /* Full-resolution sample, separate from the downscaled canvas used for clustering —
    an eyedropper pick should be the exact pixel, not an approximation from a shrunk copy. */
@@ -2521,14 +2525,13 @@ function pickFractionFromEvent(e, imgEl) {
 function runPhotoExtraction(img, url) {
   $("photoResult").innerHTML = '<p class="label-caps muted" style="margin-top:1.25rem">Sampling your photo&hellip;</p>';
   requestAnimationFrame(() => requestAnimationFrame(() => {
-    let swatches;
     try {
-      swatches = extractPaletteFromImage(img, Number($("photoCount").value || 5));
+      autoSwatches = extractPaletteFromImage(img, Number($("photoCount").value || 5));
     } catch (err) {
       $("photoResult").innerHTML = '<p class="label-caps muted" style="margin-top:1.25rem">Couldn&rsquo;t read that photo — try a different file.</p>';
       return;
     }
-    renderPhotoResult(url, swatches);
+    renderPhotoResult(url);
   }));
 }
 function handlePhotoFile(file) {
@@ -2537,6 +2540,7 @@ function handlePhotoFile(file) {
   photoObjectUrl = URL.createObjectURL(file);
   const url = photoObjectUrl;
   manualSwatches = [];
+  autoSwatches = [];
   const img = new Image();
   img.onload = () => {
     lastPhotoImg = img;
@@ -2548,30 +2552,27 @@ function handlePhotoFile(file) {
   };
   img.src = url;
 }
-let lastPhotoSwatches = [];
-function renderPhotoResult(url, swatches) {
-  lastPhotoSwatches = swatches;
+/* Auto-extracted and manually eyedropped swatches are both real, positioned pixels — they
+   share one removable list and one set of origin dots on the photo, so Ray can see at a
+   glance whether the sampling is spread across the image or clumped, and drop anything
+   unwanted (e.g. a background colour that snuck into the auto pick) in favour of a manual one. */
+function renderPhotoResult(url) {
   const out = $("photoResult");
-  const totalCount = swatches.length + manualSwatches.length;
+  const totalCount = autoSwatches.length + manualSwatches.length;
   out.innerHTML =
     '<div class="photo-grid">' +
     '<div class="photo-pick-wrap" id="photoPickWrap">' +
     '<img src="' + url + '" alt="Uploaded reference photo — click to sample an exact point" class="photo-pick-img" id="photoPickImg">' +
     "</div>" +
-    "<div>" + stripHtml(swatches.map((s, i) => {
-      const pencil = nearestPencils(s.hex, 1)[0];
-      return { hex: s.hex, label: "Swatch " + (i + 1) + (pencil ? " · " + pencil.name : "") };
-    }), true) + "</div>" +
+    '<div id="pickSwatchList"></div>' +
     "</div>" +
-    '<p class="label-caps muted" style="margin:1rem 0 0">Or click the photo above to sample an exact point, the way you actually pick a colour from a reference</p>' +
-    '<div id="manualSwatchList"></div>' +
+    '<p class="label-caps muted" style="margin:1rem 0 0">Dots on the photo show exactly where each swatch was taken from. Click the photo to sample an extra point, the way you actually pick a colour from a reference</p>' +
     '<div class="photo-actions">' +
     '<button type="button" class="btn" id="photoUseBtn">Use these ' + totalCount + " colour" + (totalCount === 1 ? "" : "s") + "</button>" +
     '<button type="button" class="btn" id="photoAnotherBtn">Try another photo</button>' +
     '<button type="button" class="btn" id="photoPrintBtn">🖨️ Print swatch card</button>' +
     "</div>";
-  wireStrips(out);
-  renderManualSwatchList();
+  renderPickSwatchList();
 
   const img = $("photoPickImg");
   const wrap = $("photoPickWrap");
@@ -2581,8 +2582,17 @@ function renderPhotoResult(url, swatches) {
     if (!frac) return;
     const hex = samplePixelAt(lastPhotoImg, url, frac.fracX, frac.fracY);
     manualSwatches.push({ hex, fracX: frac.fracX, fracY: frac.fracY });
-    renderPhotoResult(url, lastPhotoSwatches);
+    renderPhotoResult(url);
     toast(hex.toUpperCase() + " sampled");
+  });
+  autoSwatches.forEach((s) => {
+    const dot = document.createElement("span");
+    dot.className = "photo-pick-dot auto";
+    dot.style.left = s.fracX * 100 + "%";
+    dot.style.top = s.fracY * 100 + "%";
+    dot.style.backgroundColor = s.hex;
+    dot.setAttribute("aria-hidden", "true");
+    wrap.appendChild(dot);
   });
   manualSwatches.forEach((m) => {
     const dot = document.createElement("span");
@@ -2595,7 +2605,7 @@ function renderPhotoResult(url, swatches) {
   });
 
   $("photoUseBtn").addEventListener("click", () => {
-    palette = swatches.map((s) => s.hex).concat(manualSwatches.map((m) => m.hex)).slice(0, 8);
+    palette = autoSwatches.map((s) => s.hex).concat(manualSwatches.map((m) => m.hex)).slice(0, 8);
     paletteSourcePhoto = makeCompactPhotoDataUrl(lastPhotoImg);
     renderPalRows();
     renderAnalysis();
@@ -2607,29 +2617,33 @@ function renderPhotoResult(url, swatches) {
   });
   $("photoAnotherBtn").addEventListener("click", () => { $("photoInput").value = ""; $("photoInput").click(); });
   $("photoPrintBtn").addEventListener("click", () => {
-    const allHexes = swatches.map((s) => s.hex).concat(manualSwatches.map((m) => m.hex)).slice(0, 8);
+    const allHexes = autoSwatches.map((s) => s.hex).concat(manualSwatches.map((m) => m.hex)).slice(0, 8);
     printSwatchCard(allHexes, "Sampled from photo", makeCompactPhotoDataUrl(lastPhotoImg));
   });
 }
-function renderManualSwatchList() {
-  const el = $("manualSwatchList");
-  if (!manualSwatches.length) { el.innerHTML = ""; return; }
-  el.innerHTML = manualSwatches.map((m, i) => {
-    const pencil = nearestPencils(m.hex, 1)[0];
+function renderPickSwatchList() {
+  const el = $("pickSwatchList");
+  const rows = autoSwatches.map((s, i) => ({ hex: s.hex, key: "auto:" + i, label: "Swatch " + (i + 1) + " · auto" }))
+    .concat(manualSwatches.map((m, i) => ({ hex: m.hex, key: "manual:" + i, label: "Sampled point" })));
+  el.innerHTML = rows.map((row) => {
+    const pencil = nearestPencils(row.hex, 1)[0];
     return (
       '<div class="pick-swatch-row">' +
-      '<span class="p-sw" style="background-color:' + m.hex + '" aria-hidden="true"></span>' +
-      '<span class="grow"><span style="display:block; font-size:.875rem" class="mono">' + m.hex.toUpperCase() + "</span>" +
-      '<span class="label-caps muted">' + (pencil ? pencil.name : "") + "</span></span>" +
-      '<button type="button" class="btn small" data-copy="' + m.hex + '">Copy</button>' +
-      '<button type="button" class="btn small" data-remove-pick="' + i + '" aria-label="Remove this sampled point">Remove</button>' +
+      '<span class="p-sw" style="background-color:' + row.hex + '" aria-hidden="true"></span>' +
+      '<span class="grow"><span style="display:block; font-size:.875rem" class="mono">' + row.hex.toUpperCase() + "</span>" +
+      '<span class="label-caps muted">' + row.label + (pencil ? " · " + pencil.name : "") + "</span></span>" +
+      '<button type="button" class="btn small" data-copy="' + row.hex + '">Copy</button>' +
+      '<button type="button" class="btn small" data-remove-pick="' + row.key + '" aria-label="Remove this swatch">Remove</button>' +
       "</div>"
     );
   }).join("");
   el.querySelectorAll("[data-copy]").forEach((b) => b.addEventListener("click", () => copyText(b.dataset.copy)));
   el.querySelectorAll("[data-remove-pick]").forEach((b) => b.addEventListener("click", () => {
-    manualSwatches.splice(Number(b.dataset.removePick), 1);
-    renderPhotoResult(photoObjectUrl, lastPhotoSwatches);
+    if (autoSwatches.length + manualSwatches.length <= 1) { toast("A palette needs at least one colour"); return; }
+    const [kind, idxStr] = b.dataset.removePick.split(":");
+    const idx = Number(idxStr);
+    if (kind === "auto") autoSwatches.splice(idx, 1); else manualSwatches.splice(idx, 1);
+    renderPhotoResult(photoObjectUrl);
   }));
 }
 

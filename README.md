@@ -32,7 +32,9 @@ Already have a colour scheme? Add up to eight colours and ChromaEngine reads the
 
 Its own tab alongside Build and Analyse. Drop in a reference image (nothing leaves your browser) and it's sampled with k-means clustering in OKLab, spread across the shadows, midtones and highlights rather than averaged into mud. Every swatch is a real pixel from the photo, never a synthetic blend. Choose 3–8 swatches, then "Use these colours" switches you straight into Analyse mode with them loaded, ready for scoring, fixing and theming.
 
-**Or click the photo to sample an exact point** — the eyedropper. Full-resolution pixel sampling (not the downscaled copy used for clustering), with a marker left on the photo for every point picked, each one individually removable and copy-able. Matches how a painter actually works from a reference: pick the spot, not an algorithm's average of the whole image. Manually sampled points combine with the auto-extracted swatches when you hand off to Analyse mode.
+Every swatch — auto-extracted or manually picked — leaves a marker on the photo showing exactly where it was sampled from, so you can see at a glance whether the colours are spread across the image or clumped in one corner. Each swatch, auto or manual, is individually removable and copy-able: if the algorithm picks up something you don't want (a background colour, a stray reflection), drop it from the list and, if you like, replace it with an exact point of your own.
+
+**Or click the photo to sample an exact point** — the eyedropper. Full-resolution pixel sampling (not the downscaled copy used for clustering). Matches how a painter actually works from a reference: pick the spot, not an algorithm's average of the whole image. Manually sampled points combine with the auto-extracted swatches when you hand off to Analyse mode.
 
 ## Discover a palette
 
