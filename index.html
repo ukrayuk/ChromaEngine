@@ -2536,21 +2536,49 @@ function runPhotoExtraction(img, url) {
 }
 function handlePhotoFile(file) {
   if (!file || !file.type.startsWith("image/")) { toast("That doesn't look like an image"); return; }
-  if (photoObjectUrl) URL.revokeObjectURL(photoObjectUrl);
-  photoObjectUrl = URL.createObjectURL(file);
-  const url = photoObjectUrl;
-  manualSwatches = [];
-  autoSwatches = [];
-  const img = new Image();
-  img.onload = () => {
-    lastPhotoImg = img;
-    runPhotoExtraction(img, url);
+  const rawUrl = URL.createObjectURL(file);
+  const raw = new Image();
+  raw.onload = () => {
+    /* Draw the upload through one canvas ONCE, then use that canvas's own output as the
+       source for everything downstream — the displayed photo, the eyedropper's full-res
+       sample, and the k-means extraction canvas. Browsers don't always agree on whether
+       a photo's EXIF rotation (common on phone camera shots) applies to a displayed <img>
+       the same way it applies inside a canvas; routing everything through one canvas makes
+       "what you see" and "what gets sampled" the exact same pixels, so a tap always reads
+       the point actually under the dot. */
+    const canvas = document.createElement("canvas");
+    canvas.width = raw.naturalWidth;
+    canvas.height = raw.naturalHeight;
+    const ctx = canvas.getContext("2d", { willReadFrequently: true });
+    ctx.drawImage(raw, 0, 0);
+    URL.revokeObjectURL(rawUrl);
+    canvas.toBlob((blob) => {
+      if (!blob) { toast("Couldn't read that image"); return; }
+      if (photoObjectUrl) URL.revokeObjectURL(photoObjectUrl);
+      photoObjectUrl = URL.createObjectURL(blob);
+      const url = photoObjectUrl;
+      manualSwatches = [];
+      autoSwatches = [];
+      fullResCanvas = canvas;
+      fullResCtx = ctx;
+      fullResForUrl = url;
+      const img = new Image();
+      img.onload = () => {
+        lastPhotoImg = img;
+        runPhotoExtraction(img, url);
+      };
+      img.onerror = () => {
+        toast("Couldn't load that image");
+        $("photoResult").innerHTML = "";
+      };
+      img.src = url;
+    }, "image/png");
   };
-  img.onerror = () => {
+  raw.onerror = () => {
     toast("Couldn't load that image");
-    $("photoResult").innerHTML = "";
+    URL.revokeObjectURL(rawUrl);
   };
-  img.src = url;
+  raw.src = rawUrl;
 }
 /* Auto-extracted and manually eyedropped swatches are both real, positioned pixels — they
    share one removable list and one set of origin dots on the photo, so Ray can see at a
