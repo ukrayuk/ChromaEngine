@@ -1344,8 +1344,9 @@ function renderPencilPanel() {
   const blend = bestSingle && bestSingle.dist >= 0.05 ? bestPencilBlend(hex) : null;
   if (blend && blend.dist < bestSingle.dist - 0.01) {
     const pctA = Math.round((1 - blend.ratio) * 100), pctB = Math.round(blend.ratio * 100);
+    const matchPct = pencilMatchPct(blend.dist);
     blendEl.innerHTML =
-      '<div class="pencil-blend"><span class="label-caps muted">Closer by layering</span>' +
+      '<div class="pencil-blend"><span class="label-caps muted">Closer by layering &middot; ' + matchPct + '% match</span>' +
       '<p style="margin:.4rem 0 0; font-size:.875rem">' +
       '<span class="b-sw" style="background-color:' + blend.a.hex + '" aria-hidden="true"></span>' + esc(blend.a.name) + " " + pctA + "%" +
       ' <span class="muted">+</span> ' +
