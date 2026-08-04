@@ -1335,7 +1335,7 @@ function renderPencilPanel() {
     '<li class="pencil-row">' +
     '<span class="p-sw" style="background-color:' + p.hex + '" aria-hidden="true"></span>' +
     '<span class="grow"><span class="p-name">' + esc(p.name) + ' <span class="mono muted">(' + p.code + ')</span></span>' +
-    '<span class="label-caps muted p-meta">' + (p.pantone ? esc(p.pantone) + " · " : "") + pencilMatchWord(p.dist) + "</span></span>" +
+    '<span class="label-caps muted p-meta">' + (p.pantone ? esc(p.pantone) + " · " : "") + pencilMatchPct(p.dist) + "% match</span></span>" +
     '<button type="button" class="btn small" data-copy="' + p.hex + '" aria-label="Copy ' + p.hex + '">Copy</button></li>').join("");
   $("pencilList").querySelectorAll("[data-copy]").forEach((b) => b.addEventListener("click", () => copyText(b.dataset.copy)));
 
@@ -2086,11 +2086,12 @@ function nearestPencils(hex, n = 3) {
     .sort((a, b) => a.dist - b.dist)
     .slice(0, n);
 }
-function pencilMatchWord(dist) {
-  if (dist < 0.02) return "near-identical";
-  if (dist < 0.05) return "very close";
-  if (dist < 0.1) return "close, slight difference";
-  return "noticeably different";
+/* Converts OKLab distance to a 0-100% match, 100% being an exact match (dist 0).
+   0.5 is calibrated against the actual 120-pencil set: even the worst-case nearest
+   match for a fully random colour lands around dist 0.19 (~62%), so real matches use
+   the full range rather than piling up near either end. */
+function pencilMatchPct(dist) {
+  return Math.max(0, Math.min(100, Math.round(100 * (1 - dist / 0.5))));
 }
 /* Estimates a two-pencil layering that lands closer to the target than any
    single pencil can. Linear interpolation in OKLab between the two pencils —

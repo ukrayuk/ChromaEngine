@@ -49,7 +49,7 @@ Never asks "what's your favourite colour" — most people don't know that. What 
 
 Every colour in the app, in Build mode's colour picker, every swatch in an analysed palette, and every photo-extracted swatch, is matched against a real set of 120 Faber-Castell Polychromos pencils (mapped to Pantone and hand-calibrated to RGB by swatching, scanning and colour-picking). Matching runs in OKLab, so "closest" tracks how the eye reads difference, not raw RGB distance.
 
-- Build mode shows the three nearest pencils with a plain-language read on how close each one is (near-identical, very close, close, noticeably different)
+- Build mode shows the three nearest pencils with a match percentage (100% is an exact match), derived from OKLab distance against a calibrated reference so real matches use the full range rather than piling up near either end
 - If no single pencil is genuinely close, it suggests a two-pencil layering estimate (e.g. "cadmium yellow lemon 60% + leaf green 40%"), clearly flagged as an approximation, since real layering depends on pressure, paper and order, not a physical mixing model
 - Analyse mode and photo extraction tag each swatch with its nearest pencil name inline
 
