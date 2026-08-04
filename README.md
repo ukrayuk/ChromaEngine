@@ -8,7 +8,7 @@ Four modes: **build a palette from one colour**, **analyse a palette you already
 
 Pick a colour by picker, hex, RGB or HSL sliders and ChromaEngine hands back everything you need to put it to work:
 
-1. **Choose your colour** — picker, hex, RGB, and H/Chroma/L sliders, plus twelve studio-start swatches (Studio Artistry by Ray's own brand colours, used across the whole studio)
+1. **Choose your colour** — picker, hex, RGB, and H/Chroma/L sliders, twelve studio-start swatches (Studio Artistry by Ray's own brand colours, used across the whole studio), and an **I'm feeling lucky** button that generates a starting colour directly in OKLCH space rather than raw RGB — hue is unconstrained, but lightness and chroma are kept in a band realistic to build a palette around, with chroma taken as a fraction of what each hue can actually hold before clipping (so every hue comes out comparably vivid, not always-muted yellows next to always-maxed blues). It's offered as a place to begin, not an answer
 2. **What's the plan for your palette?** — an opinionated brief tuned to the job: 🌐 Website/App, 🎨 Brand identity, 📱 Social media, 📦 Packaging, 📖 Book/Editorial, 🎭 Illustration/Fine art, or ➕ Other. Each brief gives a verdict, four moves, exact hand-off values (HEX / RGB / CMYK / HSL and more), and the tests the colour has to pass
 3. **Tints & shades** — a ten-step value ramp, evenly spaced from 95 down to 10
 4. **Colour families** — analogous (5), complementary (dark/base/light of both the colour and its opposite, 6), split-complementary and triadic (the base plus light/dark of each accent hue, 5 each), tetradic (light/base/dark of all four hues, 12, laid out as a compact 3×4 grid), and monochromatic (5 steps, 90 down to 20) — every swatch copy-on-tap

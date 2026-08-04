@@ -532,6 +532,7 @@
           <span class="label-caps muted">Studio starts</span>
           <div class="seeds" id="seeds"></div>
         </div>
+        <button type="button" class="btn" id="luckyBtn">🍀 I&rsquo;m feeling lucky</button>
       </div>
     </div>
     <div class="pencil-panel">
@@ -1892,6 +1893,63 @@ function hexToOklab(hex) {
 }
 const dOk = (p, q) => Math.hypot(p.L - q.L, p.a - q.a, p.b2 - q.b2);
 const dOkAB = (p, q) => Math.hypot(p.a - q.a, p.b2 - q.b2);
+
+/* OKLab → sRGB, the inverse of rgbToOklab above (Björn Ottosson's published matrices),
+   used to generate colours directly in perceptual space rather than raw RGB. */
+function oklabToLinearRgb(L, a, b) {
+  const l_ = L + 0.3963377774 * a + 0.2158037573 * b;
+  const m_ = L - 0.1055613458 * a - 0.0638541728 * b;
+  const s_ = L - 0.0894841775 * a - 1.291485548 * b;
+  const l = l_ ** 3, m = m_ ** 3, s = s_ ** 3;
+  return {
+    r: 4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s,
+    g: -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s,
+    b: -0.0041960863 * l - 0.7034186147 * m + 1.707614701 * s,
+  };
+}
+function oklabInGamut(L, a, b) {
+  const { r, g, b: bl } = oklabToLinearRgb(L, a, b);
+  const eps = 0.0002;
+  return r >= -eps && r <= 1 + eps && g >= -eps && g <= 1 + eps && bl >= -eps && bl <= 1 + eps;
+}
+function oklabToHex(L, a, b) {
+  const { r, g, b: bl } = oklabToLinearRgb(L, a, b);
+  const toByte = (c) => {
+    const v = c <= 0.0031308 ? 12.92 * c : 1.055 * Math.pow(Math.max(c, 0), 1 / 2.4) - 0.055;
+    return Math.max(0, Math.min(255, Math.round(v * 255)));
+  };
+  return rgbToHex({ r: toByte(r), g: toByte(g), b: toByte(bl) });
+}
+/* Binary-searches the sRGB-gamut boundary for a given lightness/hue — OKLCH's max usable
+   chroma varies a lot by hue (blues and reds hold far more chroma than yellows before
+   clipping), so a flat chroma range would make some hues look muddy and others always
+   maxed out. Working as a fraction of each hue's own ceiling keeps every "lucky" colour
+   comparably vivid regardless of where the hue wheel lands. */
+function maxOklchChroma(L, hueDeg) {
+  const hr = (hueDeg * Math.PI) / 180;
+  let lo = 0, hi = 0.4;
+  for (let i = 0; i < 24; i++) {
+    const mid = (lo + hi) / 2;
+    if (oklabInGamut(L, mid * Math.cos(hr), mid * Math.sin(hr))) lo = mid; else hi = mid;
+  }
+  return lo;
+}
+function oklchToHex(L, C, hueDeg) {
+  const hr = (hueDeg * Math.PI) / 180;
+  return oklabToHex(L, C * Math.cos(hr), C * Math.sin(hr));
+}
+/* "I'm feeling lucky" — a random starting colour generated in OKLCH space with sensible
+   constraints, so it's always an interesting place to begin rather than the muddy or
+   painfully saturated results plain random RGB tends to produce. Hue is unconstrained;
+   lightness and chroma (the latter as a fraction of what that hue can actually hold before
+   clipping) are kept in a band that's realistic to build a palette around. */
+function randomLuckyHex() {
+  const hueDeg = Math.random() * 360;
+  const L = (30 + Math.random() * (75 - 30)) / 100;
+  const chromaFrac = (35 + Math.random() * (85 - 35)) / 100;
+  const C = chromaFrac * maxOklchChroma(L, hueDeg);
+  return oklchToHex(L, C, hueDeg);
+}
 
 /* ============ Polychromos pencil matching ============ */
 /* Ray's own pencil-to-Pantone-to-RGB mapping, swatched, scanned and colour-picked
@@ -3347,6 +3405,10 @@ function renderAll(opts = {}) {
 /* ---------- boot ---------- */
 buildSliders();
 buildSeeds();
+$("luckyBtn").addEventListener("click", () => {
+  setHex(randomLuckyHex());
+  toast("A place to begin, not an answer");
+});
 wireContrastInputs();
 wireThemeControls();
 $("picker").addEventListener("input", () => setHex($("picker").value));
