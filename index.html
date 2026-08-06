@@ -126,7 +126,14 @@
   .field-row label > span { display: block; margin-bottom: .25rem; color: var(--muted); }
   .slider-row { display: flex; align-items: center; gap: .75rem; }
   .slider-row > .slider-name { width: 5rem; color: var(--muted); flex-shrink: 0; }
-  .slider-row > .slider-val { width: 2.5rem; text-align: right; font-family: var(--font-mono); font-size: .75rem; }
+  .slider-row > .slider-val {
+    width: 3.25rem; text-align: right; font-family: var(--font-mono); font-size: .8125rem;
+    border: 1px solid var(--border); border-radius: var(--radius); background: var(--card);
+    color: inherit; padding: .3rem .4rem; outline: none;
+  }
+  .slider-row > .slider-val:focus { border-color: var(--ink); }
+  .slider-row > .slider-val::-webkit-outer-spin-button, .slider-row > .slider-val::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  .slider-row > .slider-val { -moz-appearance: textfield; }
   .seeds { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .5rem; }
 
   /* ---------- pencil matching ---------- */
@@ -1294,14 +1301,24 @@ function buildSliders() {
     '<label class="slider-row">' +
     '<span class="label-caps slider-name">' + label + "</span>" +
     '<input type="range" min="0" max="' + max + '" data-channel="' + key + '" aria-label="' + label + '">' +
-    '<span class="slider-val tnum" data-val="' + key + '"></span>' +
+    '<input type="number" class="slider-val tnum" data-val="' + key + '" min="0" max="' + max + '" step="1" inputmode="numeric" aria-label="' + label + ' value">' +
     "</label>").join("");
   $("sliders").querySelectorAll("input[type=range]").forEach((input) => {
     input.addEventListener("input", () => {
       const hsl = currentHsl();
       hsl[input.dataset.channel] = Number(input.value);
-      setHex(hslToHex(hsl), { fromSlider: input.dataset.channel });
+      setHex(hslToHex(hsl));
     });
+  });
+  $("sliders").querySelectorAll("input[type=number]").forEach((input) => {
+    const max = Number(input.max);
+    input.addEventListener("input", () => {
+      if (input.value === "") return;
+      const hsl = currentHsl();
+      hsl[input.dataset.val] = Math.max(0, Math.min(max, Number(input.value)));
+      setHex(hslToHex(hsl));
+    });
+    input.addEventListener("blur", () => { input.value = round(currentHsl()[input.dataset.val]); });
   });
 }
 function buildSeeds() {
@@ -1323,10 +1340,10 @@ function syncInputPanel(opts) {
   if (document.activeElement !== $("hexField")) $("hexField").value = hex.toUpperCase();
   if (document.activeElement !== $("rgbField")) $("rgbField").value = rgb.r + ", " + rgb.g + ", " + rgb.b;
   $("sliders").querySelectorAll("input[type=range]").forEach((input) => {
-    if (opts.fromSlider !== input.dataset.channel) input.value = round(hsl[input.dataset.channel]);
+    if (document.activeElement !== input) input.value = round(hsl[input.dataset.channel]);
   });
   $("sliders").querySelectorAll("[data-val]").forEach((el) => {
-    el.textContent = round(hsl[el.dataset.val]);
+    if (document.activeElement !== el) el.value = round(hsl[el.dataset.val]);
   });
 }
 function renderPencilPanel() {
