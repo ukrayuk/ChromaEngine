@@ -4,6 +4,8 @@ A colour harmony explorer for painters, printmakers, illustrators and designers 
 
 Four modes: **build a palette from one colour**, **analyse a palette you already have**, **extract one from a photo**, or **discover one from intent alone**.
 
+Built for and by Studio Artistry by Ray — the studio's logo sits in the header, embedded as a base64 PNG (its black background keyed out to a circular transparency) so the page stays a single dependency-free file with no separate image asset to host.
+
 ## Build from a colour
 
 Pick a colour by picker, hex, RGB or HSL sliders and ChromaEngine hands back everything you need to put it to work:
