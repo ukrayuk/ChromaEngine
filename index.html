@@ -471,20 +471,26 @@
   }
 
   /* ---------- printable swatch card ---------- */
+  /* Sized in physical units (mm), not rem, and pinned to a fixed 4-column grid — a
+     palette holds at most 8 swatches, so 4 columns always gives 2 rows or fewer,
+     and mm sizing keeps the whole card fitting one A4 page regardless of the
+     browser/OS's default root font-size or print scaling, which is what let an
+     8-swatch card spill an orphaned row onto a second page. */
+  @page { size: A4; margin: 12mm; }
   #printCard { display: none; }
-  .print-card { max-width: 46rem; margin: 0 auto; }
-  .print-head { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid #111; padding-bottom: .75rem; margin-bottom: 1.5rem; }
-  .print-head h1 { font-size: 2rem; margin: 0; }
+  .print-card { width: 100%; }
+  .print-head { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid #111; padding-bottom: 3mm; margin-bottom: 6mm; }
+  .print-head h1 { font-size: 1.6rem; margin: 0; }
   .print-head .p-meta { font-family: var(--font-mono); font-size: .75rem; text-align: right; }
-  .print-photo { width: 100%; max-height: 16rem; object-fit: cover; border: 1px solid #ccc; margin-bottom: 1.5rem; }
-  .print-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr)); gap: 1.5rem; }
+  .print-photo { width: 100%; height: 50mm; max-height: 50mm; object-fit: cover; border: 1px solid #ccc; margin-bottom: 6mm; }
+  .print-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5mm; }
   .print-swatch { break-inside: avoid; }
-  .print-swatch .p-block { height: 4.5rem; border: 1px solid #111; }
-  .print-swatch .p-hex { font-family: var(--font-mono); font-size: .8rem; margin: .4rem 0 0; }
-  .print-swatch .p-pencil { font-size: .75rem; margin: .1rem 0 0; }
-  .print-swatch .p-blank { height: 1.5rem; border: 1px solid #999; border-top: none; }
-  .print-swatch .p-blank:first-of-type { border-top: 1px solid #999; margin-top: .5rem; }
-  .print-foot { margin-top: 2rem; padding-top: .75rem; border-top: 1px solid #999; font-family: var(--font-mono); font-size: .6875rem; display: flex; justify-content: space-between; }
+  .print-swatch .p-block { height: 20mm; border: 1px solid #111; }
+  .print-swatch .p-hex { font-family: var(--font-mono); font-size: .7rem; margin: 2mm 0 0; }
+  .print-swatch .p-pencil { font-size: .65rem; line-height: 1.35; margin: .5mm 0 0; }
+  .print-swatch .p-blank { height: 6mm; border: 1px solid #999; border-top: none; }
+  .print-swatch .p-blank:first-of-type { border-top: 1px solid #999; margin-top: 2mm; }
+  .print-foot { margin-top: 6mm; padding-top: 3mm; border-top: 1px solid #999; font-family: var(--font-mono); font-size: .6875rem; display: flex; justify-content: space-between; }
   @media print {
     body > *:not(#printCard) { display: none !important; }
     #printCard { display: block !important; }
@@ -2660,6 +2666,47 @@ function placePickDot(wrap, imgEl, fracX, fracY, hex, isAuto) {
   dot.style.backgroundColor = hex;
   dot.setAttribute("aria-hidden", "true");
   wrap.appendChild(dot);
+  return dot;
+}
+/* Lets a manually-placed dot be dragged to fine-tune its position after the fact,
+   instead of removing and re-clicking. Moves the dot and live-samples the pixel under
+   it on every pointermove (cheap — a single-pixel read), but only commits into
+   manualSwatches and re-renders the swatch list once, on release, so the DOM node
+   being dragged never gets torn out from under an in-progress drag. */
+function makeDotDraggable(dot, imgEl, url, index) {
+  dot.style.pointerEvents = "auto";
+  dot.style.touchAction = "none";
+  dot.style.cursor = "grab";
+  dot.removeAttribute("aria-hidden");
+  dot.setAttribute("role", "button");
+  dot.setAttribute("aria-label", "Sampled point — drag to move");
+  dot.addEventListener("pointerdown", (e) => {
+    e.preventDefault();
+    dot.setPointerCapture(e.pointerId);
+    dot.style.cursor = "grabbing";
+    let pending = null;
+    const move = (ev) => {
+      const { rect, drawW, drawH, offX, offY } = containRectFor(imgEl);
+      const fracX = Math.max(0, Math.min(1, (ev.clientX - rect.left - offX) / drawW));
+      const fracY = Math.max(0, Math.min(1, (ev.clientY - rect.top - offY) / drawH));
+      dot.style.left = ((offX + fracX * drawW) / rect.width) * 100 + "%";
+      dot.style.top = ((offY + fracY * drawH) / rect.height) * 100 + "%";
+      const liveHex = samplePixelAt(lastPhotoImg, url, fracX, fracY);
+      dot.style.backgroundColor = liveHex;
+      pending = { fracX, fracY, hex: liveHex };
+    };
+    const up = () => {
+      dot.removeEventListener("pointermove", move);
+      dot.removeEventListener("pointerup", up);
+      if (pending) {
+        manualSwatches[index] = pending;
+        renderPhotoResult(url);
+        toast(pending.hex.toUpperCase() + " sampled");
+      }
+    };
+    dot.addEventListener("pointermove", move);
+    dot.addEventListener("pointerup", up);
+  });
 }
 function runPhotoExtraction(img, url) {
   $("photoResult").innerHTML = '<p class="label-caps muted" style="margin-top:1.25rem">Sampling your photo&hellip;</p>';
@@ -2753,7 +2800,7 @@ function renderPhotoResult(url) {
     toast(hex.toUpperCase() + " sampled");
   });
   autoSwatches.forEach((s) => placePickDot(wrap, img, s.fracX, s.fracY, s.hex, true));
-  manualSwatches.forEach((m) => placePickDot(wrap, img, m.fracX, m.fracY, m.hex, false));
+  manualSwatches.forEach((m, i) => makeDotDraggable(placePickDot(wrap, img, m.fracX, m.fracY, m.hex, false), img, url, i));
 
   $("photoUseBtn").addEventListener("click", () => {
     palette = autoSwatches.map((s) => s.hex).concat(manualSwatches.map((m) => m.hex)).slice(0, 8);
@@ -2782,7 +2829,7 @@ function renderPickSwatchList() {
       '<div class="pick-swatch-row">' +
       '<span class="p-sw" style="background-color:' + row.hex + '" aria-hidden="true"></span>' +
       '<span class="grow"><span style="display:block; font-size:.875rem" class="mono">' + row.hex.toUpperCase() + "</span>" +
-      '<span class="label-caps muted">' + row.label + (pencil ? " · " + pencil.name : "") + "</span></span>" +
+      '<span class="label-caps muted">' + row.label + (pencil ? " · " + pencil.name + " · " + pencilMatchPct(pencil.dist) + "% match" : "") + "</span></span>" +
       '<button type="button" class="btn small" data-copy="' + row.hex + '">Copy</button>' +
       '<button type="button" class="btn small" data-remove-pick="' + row.key + '" aria-label="Remove this swatch">Remove</button>' +
       "</div>"
@@ -2842,7 +2889,7 @@ function renderAnalysis() {
   $("palStrip").innerHTML = stripHtml(A.R.items.map((it) => {
     const role = A.R.role.get(it) ?? "";
     const pencil = nearestPencils(it.hex, 1)[0];
-    return { hex: it.hex, label: role + (pencil ? " · " + pencil.name : "") };
+    return { hex: it.hex, label: role + (pencil ? " · " + pencil.name + " · " + pencilMatchPct(pencil.dist) + "%" : "") };
   }), false);
   wireStrips($("palStrip"));
 
@@ -3146,7 +3193,7 @@ function printSwatchCard(hexes, title, photoDataUrl) {
       '<div class="print-swatch">' +
       '<div class="p-block" style="background-color:' + hex + '"></div>' +
       '<p class="p-hex">' + hex.toUpperCase() + " · " + rgb.r + ", " + rgb.g + ", " + rgb.b + "</p>" +
-      (pencil ? '<p class="p-pencil">' + esc(pencil.name) + " (" + pencil.code + ")" + (pencil.pantone ? " · " + esc(pencil.pantone) : "") + "</p>" : "") +
+      (pencil ? '<p class="p-pencil">' + esc(pencil.name) + " (" + pencil.code + ") · " + pencilMatchPct(pencil.dist) + "% match" + (pencil.pantone ? " · " + esc(pencil.pantone) : "") + "</p>" : "") +
       '<div class="p-blank"></div><div class="p-blank"></div><div class="p-blank"></div>' +
       "</div>"
     );

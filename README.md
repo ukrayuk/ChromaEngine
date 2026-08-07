@@ -26,7 +26,7 @@ Already have a colour scheme? Add up to eight colours and ChromaEngine reads the
 4. **Improve but keep my style** — applies all the moves at once and reports the result against the health score ("Overall palette quality improved by 31%"), with 🟢🟡🟠 per-dimension deltas, before/after strips, and an undo-friendly apply
 5. **Production-ready Theme** — once the palette is behaving, generate a light/dark UI token system mapped directly from your approved colours: ground → background, ink → body text, lead accent → button, next accent → link, a third accent or neutral → muted text. Nothing is resynthesized from a single hue — each token keeps the exact approved colour unless it fails its WCAG target, in which case it's nudged the minimum distance needed, exactly like the one-click fixes. Copy the CSS variables or save `theme.css` straight to disk
 6. **Save, load and a palette gallery** — name a palette and save it as a small portable JSON file, or save it straight into an in-browser library (no file dialog, no account, just this browser's local storage) that also keeps the reference photo if the palette came from one. Since the theme, health score and fixes are all pure functions of the palette plus which goal it's scored against, saving those two things is saving everything — reloading reconstructs it byte-for-byte identical
-7. **Print a swatch card** — generates a printable card (swatch, hex/RGB, nearest Polychromos pencil, and three blank rows to test the physical pencil against) for the current palette, plus the reference photo if there is one. Uses the browser's own print-to-PDF rather than a bundled library, so it stays part of the one dependency-free file
+7. **Print a swatch card** — generates a printable card (swatch, hex/RGB, nearest Polychromos pencil with its match percentage, and three blank rows to test the physical pencil against) for the current palette, plus the reference photo if there is one. Laid out in physical units on a fixed A4 page with a fixed 4-column grid, so up to the full 8-swatch palette plus photo reliably fits on one sheet rather than spilling a couple of orphaned swatches onto a second page. Uses the browser's own print-to-PDF rather than a bundled library, so it stays part of the one dependency-free file
 
 ## Extract from a photo
 
@@ -34,7 +34,7 @@ Its own tab alongside Build and Analyse. Drop in a reference image (nothing leav
 
 Every swatch — auto-extracted or manually picked — leaves a marker on the photo showing exactly where it was sampled from, so you can see at a glance whether the colours are spread across the image or clumped in one corner. Each swatch, auto or manual, is individually removable and copy-able: if the algorithm picks up something you don't want (a background colour, a stray reflection), drop it from the list and, if you like, replace it with an exact point of your own.
 
-**Or click the photo to sample an exact point** — the eyedropper. Full-resolution pixel sampling (not the downscaled copy used for clustering). Matches how a painter actually works from a reference: pick the spot, not an algorithm's average of the whole image. Manually sampled points combine with the auto-extracted swatches when you hand off to Analyse mode.
+**Or click the photo to sample an exact point** — the eyedropper. Full-resolution pixel sampling (not the downscaled copy used for clustering). Matches how a painter actually works from a reference: pick the spot, not an algorithm's average of the whole image. A manually sampled point can be dragged after placing to fine-tune it, re-sampling live as you move it, rather than removing and re-clicking. Manually sampled points combine with the auto-extracted swatches when you hand off to Analyse mode.
 
 ## Discover a palette
 
@@ -51,7 +51,8 @@ Every colour in the app, in Build mode's colour picker, every swatch in an analy
 
 - Build mode shows the three nearest pencils with a match percentage (100% is an exact match), derived from OKLab distance against a calibrated reference so real matches use the full range rather than piling up near either end
 - If no single pencil is genuinely close, it suggests a two-pencil layering estimate (e.g. "cadmium yellow lemon 60% + leaf green 40%") with its own match percentage, clearly flagged as an approximation, since real layering depends on pressure, paper and order, not a physical mixing model
-- Analyse mode and photo extraction tag each swatch with its nearest pencil name inline
+- Analyse mode and photo extraction tag each swatch with its nearest pencil name and the same match percentage inline
+- The printable swatch card carries the match percentage too
 
 ## Running it
 
