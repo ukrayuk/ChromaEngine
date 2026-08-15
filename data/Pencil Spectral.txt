@@ -1,0 +1,4303 @@
+118 Scarlet Red
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 55.78 a* 60 b* 42.25 –  D50  2°
+ L* 55.02 a* 58.85 b* 40.74 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 55.78 C* 73.38 h°* 35.15 –  D50  2°
+ L* 55.02 C* 71.58 h°* 34.7 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6348 a 0.1696 b 0.0921 C 0.193 h° 28.52 –  D65 ≈
+OK-Lrab
+Lr 0.576 a 0.170 b 0.092 C 0.193 h° 28.5 –  D65 ≈
+Munsell
+Munsell 7.17R 5.41/14.22 –  C ≈
+ISCC-NBS
+Name vivid reddish orange Numeric 34
+CIECAM02
+J 48.41 C 75.25 Q 210.43 h° 28.88 H 11.13 M 78.22 s 60.97 –  D50 ≈
+CIECAM16
+J 48.31 C 75.97 Q 210.21 h° 26.16 H R92Y8 M 78.97 s 61.29 –  D50 ≈
+CIECAM16 UCS
+J′ 61.37 C′ 45.17 h° 26.16 a′ 40.54 b′ 19.91 –  D50 ≈
+OSA-UCS
+L -0.24 j 5.12 g -10.83 –  D65 ≈
+OK-HSL
+H 28.5° S 88.4% L 57.6% –  D65 ≈
+OK-HSV
+H 28.5° S 80.2% V 91.6% –  D65 ≈
+DIN99o
+L₉₉ 59.03 a₉₉ 35.54 b₉₉ 23.29 C₉₉ 42.49 h°₉₉ 33.2 –  D65 ≈
+IPT
+I 0.496 P 0.452 T 0.289 C 0.537 h° 32.6 –  D65 ≈
+IGPGTG
+Ig 0.553 Pg 0.209 Tg 0.170 C 0.269 h° 39.2 –  D65 ≈
+sUCS
+I 55.67 a 40.83 b 20.88 C 45.86 h° 27.1 –  D65 ≈
+Coloroid
+A 30.5 T 69.3 V 47.9 –  D65 ≈
+sRGB
+ r 232 g 78 b 65 hex #e84e41
+P3 RGB
+ r 0.8423 g 0.3486 b 0.2866
+
+121 Pale Geranium Lake
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 53.11 a* 67.66 b* 41.53 –  D50  2°
+ L* 52.28 a* 66.87 b* 39.77 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 53.11 C* 79.39 h°* 31.54 –  D50  2°
+ L* 52.28 C* 77.8 h°* 30.74 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6145 a 0.194 b 0.0891 C 0.2135 h° 24.68 –  D65 ≈
+OK-Lrab
+Lr 0.553 a 0.194 b 0.089 C 0.214 h° 24.7 –  D65 ≈
+Munsell
+Munsell 6.11R 5.14/15.85 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 45.94 C 85.35 Q 204.99 h° 25.1 H 6.27 M 88.72 s 65.79 –  D50 ≈
+CIECAM16
+J 45.82 C 87.11 Q 204.73 h° 22.46 H R97Y3 M 90.55 s 66.51 –  D50 ≈
+CIECAM16 UCS
+J′ 58.98 C′ 49.12 h° 22.46 a′ 45.39 b′ 18.76 –  D50 ≈
+OSA-UCS
+L -0.46 j 4.74 g -12.77 –  D65 ≈
+OK-HSL
+H 24.7° S 92.5% L 55.3% –  D65 ≈
+OK-HSV
+H 24.7° S 89.4% V 91.9% –  D65 ≈
+DIN99o
+L₉₉ 56.35 a₉₉ 38.27 b₉₉ 22.04 C₉₉ 44.16 h°₉₉ 29.9 –  D65 ≈
+IPT
+I 0.472 P 0.517 T 0.284 C 0.590 h° 28.8 –  D65 ≈
+IGPGTG
+Ig 0.531 Pg 0.237 Tg 0.169 C 0.291 h° 35.6 –  D65 ≈
+sUCS
+I 53.34 a 44.77 b 19.36 C 48.78 h° 23.4 –  D65 ≈
+Coloroid
+A 31.3 T 71.3 V 45.2 –  D65 ≈
+sRGB
+ r 233 g 55 b 61 hex #e9373d
+P3 RGB
+ r 0.8419 g 0.2802 b 0.2694
+
+133 Magenta
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 36.46 a* 49.9 b* 9.96 –  D50  2°
+ L* 35.97 a* 49.89 b* 8.87 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 36.46 C* 50.88 h°* 11.29 –  D50  2°
+ L* 35.97 C* 50.67 h°* 10.08 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.4678 a 0.1518 b 0.0227 C 0.1535 h° 8.52 –  D65 ≈
+OK-Lrab
+Lr 0.384 a 0.152 b 0.023 C 0.153 h° 8.5 –  D65 ≈
+Munsell
+Munsell 0.99R 3.55/10.36 –  C ≈
+ISCC-NBS
+Name moderate purplish red Numeric 258
+CIECAM02
+J 29.22 C 60.37 Q 163.5 h° 9.64 H 389.35 M 62.76 s 61.96 –  D50 ≈
+CIECAM16
+J 29.16 C 63.62 Q 163.3 h° 8.51 H B12R88 M 66.14 s 63.64 –  D50 ≈
+CIECAM16 UCS
+J′ 41.16 C′ 40.33 h° 8.51 a′ 39.88 b′ 5.97 –  D50 ≈
+OSA-UCS
+L -3.63 j 0.35 g -9.65 –  D65 ≈
+OK-HSL
+H 8.5° S 77.8% L 38.4% –  D65 ≈
+OK-HSV
+H 8.5° S 86.1% V 62.3% –  D65 ≈
+DIN99o
+L₉₉ 39.87 a₉₉ 34.97 b₉₉ 7.87 C₉₉ 35.85 h°₉₉ 12.7 –  D65 ≈
+IPT
+I 0.352 P 0.349 T 0.079 C 0.358 h° 12.7 –  D65 ≈
+IGPGTG
+Ig 0.372 Pg 0.189 Tg 0.032 C 0.191 h° 9.8 –  D65 ≈
+sUCS
+I 37.49 a 36.28 b 5.53 C 36.70 h° 8.7 –  D65 ≈
+Coloroid
+A 33.4 T 60.2 V 30.0 –  D65 ≈
+sRGB
+ r 156 g 39 b 73 hex #9c2749
+P3 RGB
+ r 0.563 g 0.1918 b 0.2877
+
+110 Phthalo Blue
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 42.16 a* -3.3 b* -52.79 –  D50  2°
+ L* 43.03 a* 4.56 b* -51.58 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 42.16 C* 52.89 h°* 266.42 –  D50  2°
+ L* 43.03 C* 51.78 h°* 275.05 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5088 a -0.0615 b -0.1486 C 0.1608 h° 247.52 –  D65 ≈
+OK-Lrab
+Lr 0.431 a -0.061 b -0.149 C 0.161 h° 247.5 –  D65 ≈
+Munsell
+Munsell 4.72PB 4.24/12.65 –  C ≈
+ISCC-NBS
+Name strong blue Numeric 178
+CIECAM02
+J 31.69 C 60.73 Q 170.26 h° 244.98 H 303.54 M 63.13 s 60.89 –  D50 ≈
+CIECAM16
+J 31.95 C 55.75 Q 170.95 h° 254.72 H B92R8 M 57.96 s 58.23 –  D50 ≈
+CIECAM16 UCS
+J′ 44.39 C′ 36.94 h° 254.72 a′ -9.73 b′ -35.63 –  D50 ≈
+OSA-UCS
+L -2.32 j -9.10 g 4.14 –  D65 ≈
+OK-HSL
+H 251.7° S 100.0% L 43.9% –  D65 ≈
+OK-HSV
+H 251.7° S 100.0% V 74.4% –  D65 ≈
+DIN99o
+L₉₉ 47.11 a₉₉ 0.72 b₉₉ -33.60 C₉₉ 33.61 h°₉₉ 271.2 –  D65 ≈
+IPT
+I 0.472 P -0.173 T -0.359 C 0.399 h° 244.3 –  D65 ≈
+IGPGTG
+Ig 0.397 Pg -0.113 Tg -0.203 C 0.232 h° 241.0 –  D65 ≈
+sUCS
+I 40.76 a -17.64 b -31.61 C 36.20 h° 240.8 –  D65 ≈
+Coloroid
+A 52.2 T 66.5 V 36.3 –  D65 ≈
+sRGB Mapped
+ r 0 g 104 b 187 hex #0068bb
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 104 b 187 hex #0068bb
+ Out of sRGB gamut
+P3 RGB
+ r 0.0927 g 0.402 b 0.7114
+
+161 Phthalo Green
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 51.93 a* -53.84 b* 0.06 –  D50  2°
+ L* 52.21 a* -53.03 b* 0.74 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 51.93 C* 53.84 h°* 179.94 –  D50  2°
+ L* 52.21 C* 53.04 h°* 179.2 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5693 a -0.15 b 0.0011 C 0.15 h° 179.59 –  D65 ≈
+OK-Lrab
+Lr 0.501 a -0.150 b 0.001 C 0.150 h° 179.6 –  D65 ≈
+Munsell
+Munsell 1.71BG 5.11/10.0 –  C ≈
+ISCC-NBS
+Name strong bluish green Numeric 160
+CIECAM02
+J 39.81 C 53.53 Q 190.81 h° 181.85 H 227.49 M 55.64 s 54 –  D50 ≈
+CIECAM16
+J 39.82 C 56.67 Q 190.84 h° 181.64 H G73B27 M 58.91 s 55.56 –  D50 ≈
+CIECAM16 UCS
+J′ 52.93 C′ 37.34 h° 181.64 a′ -37.33 b′ -1.07 –  D50 ≈
+OSA-UCS
+L -1.45 j 0.29 g 7.71 –  D65 ≈
+OK-HSL
+H 177.6° S 100.0% L 51.1% –  D65 ≈
+OK-HSV
+H 177.6° S 100.0% V 58.4% –  D65 ≈
+DIN99o
+L₉₉ 56.28 a₉₉ -36.24 b₉₉ -2.06 C₉₉ 36.30 h°₉₉ 183.3 –  D65 ≈
+IPT
+I 0.496 P -0.272 T -0.019 C 0.273 h° 184.0 –  D65 ≈
+IGPGTG
+Ig 0.474 Pg -0.195 Tg 0.009 C 0.195 h° 177.4 –  D65 ≈
+sUCS
+I 48.54 a -30.86 b -0.58 C 30.86 h° 181.1 –  D65 ≈
+Coloroid
+A 62.7 T 37.2 V 45.1 –  D65 ≈
+sRGB Mapped
+ r 0 g 142 b 121 hex #008e79
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 146 b 122 hex #00927a
+ Out of sRGB gamut
+P3 RGB
+ r 0 g 0.5613 b 0.4803  Out of P3 gamut
+
+166 Grass Green
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 69.01 a* -56.66 b* 48.67 –  D50  2°
+ L* 68.97 a* -61.08 b* 49.7 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 69.01 C* 74.69 h°* 139.34 –  D50  2°
+ L* 68.97 C* 78.74 h°* 140.87 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.7123 a -0.165 b 0.1159 C 0.2016 h° 144.92 –  D65 ≈
+OK-Lrab
+Lr 0.666 a -0.165 b 0.116 C 0.202 h° 144.9 –  D65 ≈
+Munsell
+Munsell 0.35G 6.78/12.74 –  C ≈
+ISCC-NBS
+Name vivid yellowish green Numeric 129
+CIECAM02
+J 57.95 C 69.48 Q 230.23 h° 140.64 H 175.39 M 72.22 s 56.01 –  D50 ≈
+CIECAM16
+J 57.88 C 73.61 Q 230.08 h° 146.28 H Y18G82 M 76.52 s 57.67 –  D50 ≈
+CIECAM16 UCS
+J′ 70.02 C′ 44.28 h° 146.28 a′ -36.83 b′ 24.58 –  D50 ≈
+OSA-UCS
+L 1.49 j 7.54 g 8.57 –  D65 ≈
+OK-HSL
+H 144.9° S 96.1% L 66.6% –  D65 ≈
+OK-HSV
+H 144.9° S 87.3% V 77.6% –  D65 ≈
+DIN99o
+L₉₉ 72.34 a₉₉ -34.11 b₉₉ 23.72 C₉₉ 41.55 h°₉₉ 145.2 –  D65 ≈
+IPT
+I 0.607 P -0.299 T 0.303 C 0.426 h° 134.6 –  D65 ≈
+IGPGTG
+Ig 0.637 Pg -0.232 Tg 0.196 C 0.303 h° 139.8 –  D65 ≈
+sUCS
+I 64.98 a -30.06 b 26.93 C 40.36 h° 138.1 –  D65 ≈
+Coloroid
+A 70.9 T 54.3 V 62.7 –  D65 ≈
+sRGB
+ r 52 g 193 b 71 hex #34c147
+P3 RGB
+ r 0.3857 g 0.7461 b 0.3423
+
+085 Bordeaux Red
+Caran d'Ache Pablo 666
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 45.02 a* 44.8 b* 11.35 –  D50  2°
+ L* 44.58 a* 44.48 b* 10.4 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 45.02 C* 46.22 h°* 14.22 –  D50  2°
+ L* 44.58 C* 45.68 h°* 13.16 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5396 a 0.1348 b 0.0267 C 0.1374 h° 11.22 –  D65 ≈
+OK-Lrab
+Lr 0.466 a 0.135 b 0.027 C 0.137 h° 11.2 –  D65 ≈
+Munsell
+Munsell 1.3R 4.38/9.71 –  C ≈
+ISCC-NBS
+Name moderate red Numeric 15
+CIECAM02
+J 36.92 C 51.86 Q 183.76 h° 12.35 H 392.03 M 53.91 s 54.16 –  D50 ≈
+CIECAM16
+J 36.85 C 54.26 Q 183.6 h° 11.04 H B9R91 M 56.4 s 55.42 –  D50 ≈
+CIECAM16 UCS
+J′ 49.8 C′ 36.26 h° 11.04 a′ 35.59 b′ 6.94 –  D50 ≈
+OSA-UCS
+L -2.36 j 0.82 g -8.18 –  D65 ≈
+OK-HSL
+H 11.2° S 64.6% L 46.6% –  D65 ≈
+OK-HSV
+H 11.2° S 70.6% V 70.1% –  D65 ≈
+DIN99o
+L₉₉ 48.68 a₉₉ 32.85 b₉₉ 8.98 C₉₉ 34.06 h°₉₉ 15.3 –  D65 ≈
+IPT
+I 0.428 P 0.315 T 0.089 C 0.327 h° 15.7 –  D65 ≈
+IGPGTG
+Ig 0.446 Pg 0.174 Tg 0.038 C 0.179 h° 12.4 –  D65 ≈
+sUCS
+I 45.11 a 33.80 b 6.80 C 34.48 h° 11.4 –  D65 ≈
+Coloroid
+A 33.0 T 44.9 V 37.7 –  D65 ≈
+sRGB
+ r 175 g 70 b 90 hex #af465a
+P3 RGB
+ r 0.6365 g 0.301 b 0.3579
+
+140 Ultramarine
+Caran d'Ache Pablo 666
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 25.53 a* 22.29 b* -52.97 –  D50  2°
+ L* 26.38 a* 28.58 b* -51.81 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 25.53 C* 57.47 h°* 292.82 –  D50  2°
+ L* 26.38 C* 59.17 h°* 298.88 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.3768 a 0.009 b -0.1495 C 0.1497 h° 273.43 –  D65 ≈
+OK-Lrab
+Lr 0.282 a 0.009 b -0.149 C 0.150 h° 273.4 –  D65 ≈
+Munsell
+Munsell 7.43PB 2.64/12.53 –  C ≈
+ISCC-NBS
+Name vivid purplish blue Numeric 194
+CIECAM02
+J 18.81 C 53.09 Q 131.16 h° 267.86 H 315.26 M 55.19 s 64.87 –  D50 ≈
+CIECAM16
+J 19.02 C 52.06 Q 131.91 h° 284.04 H B76R24 M 54.11 s 64.05 –  D50 ≈
+CIECAM16 UCS
+J′ 28.54 C′ 35.25 h° 284.04 a′ 8.55 b′ -34.2 –  D50 ≈
+OSA-UCS
+L -5.14 j -9.44 g 0.48 –  D65 ≈
+OK-HSL
+H 273.4° S 81.1% L 28.2% –  D65 ≈
+OK-HSV
+H 273.4° S 79.9% V 56.1% –  D65 ≈
+DIN99o
+L₉₉ 29.74 a₉₉ 17.47 b₉₉ -30.91 C₉₉ 35.50 h°₉₉ 299.5 –  D65 ≈
+IPT
+I 0.327 P -0.051 T -0.324 C 0.328 h° 261.0 –  D65 ≈
+IGPGTG
+Ig 0.265 Pg -0.024 Tg -0.194 C 0.195 h° 263.0 –  D65 ≈
+sUCS
+I 27.12 a -5.21 b -31.02 C 31.46 h° 260.5 –  D65 ≈
+Coloroid
+A 50.8 T 71.1 V 22.1 –  D65 ≈
+sRGB
+ r 44 g 51 b 143 hex #2c338f
+P3 RGB
+ r 0.1776 g 0.1989 b 0.5396
+
+020 Golden Yellow
+Caran d'Ache Pablo 666
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 82.74 a* 16.35 b* 91.02 –  D50  2°
+ L* 82.11 a* 11.95 b* 91.5 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 82.74 C* 92.48 h°* 79.82 –  D50  2°
+ L* 82.11 C* 92.28 h°* 82.56 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.8502 a 0.02 b 0.1822 C 0.1833 h° 83.73 –  D65 ≈
+OK-Lrab
+Lr 0.826 a 0.020 b 0.182 C 0.183 h° 83.7 –  D65 ≈
+Munsell
+Munsell 1.34Y 8.16/13.97 –  C ≈
+ISCC-NBS
+Name vivid yellow Numeric 82
+CIECAM02
+J 77.6 C 72.9 Q 266.42 h° 82.93 H 88.61 M 75.78 s 53.33 –  D50 ≈
+CIECAM16
+J 77.54 C 64.11 Q 266.31 h° 83.82 H R10Y90 M 66.64 s 50.02 –  D50 ≈
+CIECAM16 UCS
+J′ 85.44 C′ 40.53 h° 83.82 a′ 4.36 b′ 40.29 –  D50 ≈
+OSA-UCS
+L 3.79 j 12.19 g -1.40 –  D65 ≈
+OK-HSL
+H 85.0° S 100.0% L 81.8% –  D65 ≈
+OK-HSV
+H 85.0° S 100.0% V 100.0% –  D65 ≈
+DIN99o
+L₉₉ 84.37 a₉₉ 9.78 b₉₉ 44.07 C₉₉ 45.14 h°₉₉ 77.5 –  D65 ≈
+IPT
+I 0.708 P 0.102 T 0.614 C 0.623 h° 80.5 –  D65 ≈
+IGPGTG
+Ig 0.801 Pg -0.018 Tg 0.369 C 0.369 h° 92.7 –  D65 ≈
+sUCS
+I 81.29 a 8.32 b 46.56 C 47.30 h° 79.9 –  D65 ≈
+Coloroid
+A 15.2 T 86.5 V 77.8 –  D65 ≈
+sRGB Mapped
+ r 255 g 193 b 0 hex #ffc100
+ Out of sRGB gamut
+sRGB Clipped
+ r 255 g 193 b 1 hex #ffc100
+ Out of sRGB gamut
+P3 RGB
+ r 0.9866 g 0.767 b 0.2131
+
+OP042 Carmine
+Holbein Artists' Colored Pencil
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 45.94 a* 67.5 b* 36.72 –  D50  2°
+ L* 45.13 a* 67.05 b* 34.92 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 45.94 C* 76.84 h°* 28.55 –  D50  2°
+ L* 45.13 C* 75.6 h°* 27.51 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5531 a 0.1959 b 0.0782 C 0.2109 h° 21.77 –  D65 ≈
+OK-Lrab
+Lr 0.482 a 0.196 b 0.078 C 0.211 h° 21.8 –  D65 ≈
+Munsell
+Munsell 5.44R 4.44/15.41 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 38.67 C 87.06 Q 188.08 h° 22.13 H 2.51 M 90.49 s 69.36 –  D50 ≈
+CIECAM16
+J 38.56 C 89.58 Q 187.8 h° 19.66 H B1R99 M 93.11 s 70.41 –  D50 ≈
+CIECAM16 UCS
+J′ 51.62 C′ 49.95 h° 19.66 a′ 47.04 b′ 16.8 –  D50 ≈
+OSA-UCS
+L -1.59 j 3.92 g -13.24 –  D65 ≈
+OK-HSL
+H 21.8° S 96.0% L 48.2% –  D65 ≈
+OK-HSV
+H 21.8° S 96.1% V 82.9% –  D65 ≈
+DIN99o
+L₉₉ 49.23 a₉₉ 38.78 b₉₉ 19.98 C₉₉ 43.62 h°₉₉ 27.3 –  D65 ≈
+IPT
+I 0.410 P 0.511 T 0.246 C 0.567 h° 25.7 –  D65 ≈
+IGPGTG
+Ig 0.465 Pg 0.233 Tg 0.148 C 0.276 h° 32.3 –  D65 ≈
+sUCS
+I 46.54 a 44.85 b 16.78 C 47.89 h° 20.5 –  D65 ≈
+Coloroid
+A 31.8 T 71.6 V 38.3 –  D65 ≈
+sRGB
+ r 210 g 26 b 53 hex #d21a35
+P3 RGB
+ r 0.7542 g 0.1941 b 0.2329
+
+OP326 Forget-me-not Blue
+Holbein Artists' Colored Pencil
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 71.36 a* -6.61 b* -33.37 –  D50  2°
+ L* 71.81 a* -2.59 b* -32.79 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 71.36 C* 34.02 h°* 258.8 –  D50  2°
+ L* 71.81 C* 32.89 h°* 265.49 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.7555 a -0.0319 b -0.0913 C 0.0967 h° 250.76 –  D65 ≈
+OK-Lrab
+Lr 0.716 a -0.032 b -0.091 C 0.097 h° 250.8 –  D65 ≈
+Munsell
+Munsell 4.04PB 7.11/8.36 –  C ≈
+ISCC-NBS
+Name light blue Numeric 181
+CIECAM02
+J 62.58 C 41.77 Q 239.26 h° 246.39 H 304.23 M 43.42 s 42.6 –  D50 ≈
+CIECAM16
+J 62.72 C 38.68 Q 239.51 h° 252.87 H B93R7 M 40.21 s 40.97 –  D50 ≈
+CIECAM16 UCS
+J′ 74.09 C′ 28.54 h° 252.87 a′ -8.41 b′ -27.27 –  D50 ≈
+OSA-UCS
+L 2.63 j -5.87 g 2.44 –  D65 ≈
+OK-HSL
+H 250.8° S 67.5% L 71.6% –  D65 ≈
+OK-HSV
+H 250.8° S 46.7% V 92.9% –  D65 ≈
+DIN99o
+L₉₉ 74.98 a₉₉ -4.31 b₉₉ -26.12 C₉₉ 26.47 h°₉₉ 260.6 –  D65 ≈
+IPT
+I 0.736 P -0.110 T -0.247 C 0.270 h° 245.9 –  D65 ≈
+IGPGTG
+Ig 0.673 Pg -0.055 Tg -0.145 C 0.155 h° 249.3 –  D65 ≈
+sUCS
+I 69.15 a -12.65 b -24.58 C 27.64 h° 242.8 –  D65 ≈
+Coloroid
+A 52.8 T 34.1 V 65.9 –  D65 ≈
+sRGB
+ r 129 g 180 b 235 hex #81b4eb
+P3 RGB
+ r 0.5474 g 0.7012 b 0.904
+
+PC1102 Blue Lake
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 60.36 a* -4.32 b* -40.5 –  D50  2°
+ L* 60.93 a* 0.83 b* -39.76 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 60.36 C* 40.73 h°* 263.91 –  D50  2°
+ L* 60.93 C* 39.77 h°* 271.19 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6628 a -0.0337 b -0.1121 C 0.117 h° 253.28 –  D65 ≈
+OK-Lrab
+Lr 0.608 a -0.034 b -0.112 C 0.117 h° 253.3 –  D65 ≈
+Munsell
+Munsell 4.82PB 6.0/10.12 –  C ≈
+ISCC-NBS
+Name brilliant blue Numeric 177
+CIECAM02
+J 50.15 C 48.33 Q 214.19 h° 248.84 H 305.43 M 50.24 s 48.43 –  D50 ≈
+CIECAM16
+J 50.33 C 44.79 Q 214.55 h° 256.85 H B91R9 M 46.55 s 46.58 –  D50 ≈
+CIECAM16 UCS
+J′ 63.27 C′ 31.73 h° 256.85 a′ -7.22 b′ -30.9 –  D50 ≈
+OSA-UCS
+L 0.74 j -7.08 g 2.57 –  D65 ≈
+OK-HSL
+H 253.3° S 65.0% L 60.8% –  D65 ≈
+OK-HSV
+H 253.3° S 60.9% V 86.1% –  D65 ≈
+DIN99o
+L₉₉ 64.74 a₉₉ -1.59 b₉₉ -29.22 C₉₉ 29.27 h°₉₉ 266.9 –  D65 ≈
+IPT
+I 0.633 P -0.119 T -0.290 C 0.314 h° 247.7 –  D65 ≈
+IGPGTG
+Ig 0.566 Pg -0.061 Tg -0.169 C 0.180 h° 250.1 –  D65 ≈
+sUCS
+I 58.14 a -13.05 b -27.73 C 30.65 h° 244.8 –  D65 ≈
+Coloroid
+A 52.4 T 44.0 V 54.0 –  D65 ≈
+sRGB
+ r 93 g 150 b 217 hex #5d96d9
+P3 RGB
+ r 0.4154 g 0.5829 b 0.8296
+
+PC103 Cerulean Blue
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 42.28 a* -12.89 b* -48.77 –  D50  2°
+ L* 43.11 a* -5 b* -47.58 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 42.28 C* 50.44 h°* 255.2 –  D50  2°
+ L* 43.11 C* 47.84 h°* 264.01 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5055 a -0.0857 b -0.1371 C 0.1617 h° 238 –  D65 ≈
+OK-Lrab
+Lr 0.427 a -0.086 b -0.137 C 0.162 h° 238.0 –  D65 ≈
+Munsell
+Munsell 2.29PB 4.24/11.78 –  C ≈
+ISCC-NBS
+Name strong blue Numeric 178
+CIECAM02
+J 31.48 C 61.21 Q 169.7 h° 237.29 H 299.73 M 63.63 s 61.23 –  D50 ≈
+CIECAM16
+J 31.73 C 55.97 Q 170.35 h° 244.46 H B97R3 M 58.18 s 58.44 –  D50 ≈
+CIECAM16 UCS
+J′ 44.13 C′ 37.04 h° 244.46 a′ -15.97 b′ -33.42 –  D50 ≈
+OSA-UCS
+L -2.36 j -8.31 g 5.27 –  D65 ≈
+OK-HSL
+H 243.8° S 100.0% L 43.7% –  D65 ≈
+OK-HSV
+H 243.8° S 100.0% V 67.7% –  D65 ≈
+DIN99o
+L₉₉ 47.20 a₉₉ -6.24 b₉₉ -32.18 C₉₉ 32.78 h°₉₉ 259.0 –  D65 ≈
+IPT
+I 0.467 P -0.206 T -0.335 C 0.393 h° 238.4 –  D65 ≈
+IGPGTG
+Ig 0.396 Pg -0.141 Tg -0.184 C 0.231 h° 232.6 –  D65 ≈
+sUCS
+I 40.57 a -21.17 b -29.27 C 36.13 h° 234.1 –  D65 ≈
+Coloroid
+A 52.8 T 67.1 V 36.4 –  D65 ≈
+sRGB Mapped
+ r 0 g 109 b 169 hex #006da9
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 109 b 181 hex #006db5
+ Out of sRGB gamut
+P3 RGB
+ r 0 g 0.4178 b 0.6867  Out of P3 gamut
+
+PC930 Magenta
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 48.45 a* 61.27 b* 10.58 –  D50  2°
+ L* 47.87 a* 61.32 b* 9.27 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 48.45 C* 62.18 h°* 9.8 –  D50  2°
+ L* 47.87 C* 62.02 h°* 8.59 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5749 a 0.1869 b 0.024 C 0.1884 h° 7.31 –  D65 ≈
+OK-Lrab
+Lr 0.507 a 0.187 b 0.024 C 0.188 h° 7.3 –  D65 ≈
+Munsell
+Munsell 9.9RP 4.71/13.65 –  C ≈
+ISCC-NBS
+Name vivid purplish red Numeric 254
+CIECAM02
+J 41.02 C 71.14 Q 193.7 h° 8.56 H 388.29 M 73.95 s 61.79 –  D50 ≈
+CIECAM16
+J 40.92 C 75.13 Q 193.48 h° 7.53 H B13R87 M 78.1 s 63.53 –  D50 ≈
+CIECAM16 UCS
+J′ 54.08 C′ 44.85 h° 7.53 a′ 44.47 b′ 5.88 –  D50 ≈
+OSA-UCS
+L -1.50 j 0.16 g -11.85 –  D65 ≈
+OK-HSL
+H 7.3° S 80.7% L 50.7% –  D65 ≈
+OK-HSV
+H 7.3° S 85.9% V 81.5% –  D65 ≈
+DIN99o
+L₉₉ 51.98 a₉₉ 38.76 b₉₉ 7.83 C₉₉ 39.55 h°₉₉ 11.4 –  D65 ≈
+IPT
+I 0.461 P 0.454 T 0.092 C 0.463 h° 11.5 –  D65 ≈
+IGPGTG
+Ig 0.485 Pg 0.247 Tg 0.035 C 0.249 h° 8.1 –  D65 ≈
+sUCS
+I 48.90 a 42.86 b 5.73 C 43.24 h° 7.6 –  D65 ≈
+Coloroid
+A 33.5 T 60.3 V 40.9 –  D65 ≈
+sRGB
+ r 205 g 55 b 101 hex #cd3765
+P3 RGB
+ r 0.7428 g 0.2646 b 0.3978
+
+PC1102 Blue Lake
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 60.36 a* -4.32 b* -40.5 –  D50  2°
+ L* 60.93 a* 0.83 b* -39.76 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 60.36 C* 40.73 h°* 263.91 –  D50  2°
+ L* 60.93 C* 39.77 h°* 271.19 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6628 a -0.0337 b -0.1121 C 0.117 h° 253.28 –  D65 ≈
+OK-Lrab
+Lr 0.608 a -0.034 b -0.112 C 0.117 h° 253.3 –  D65 ≈
+Munsell
+Munsell 4.82PB 6.0/10.12 –  C ≈
+ISCC-NBS
+Name brilliant blue Numeric 177
+CIECAM02
+J 50.15 C 48.33 Q 214.19 h° 248.84 H 305.43 M 50.24 s 48.43 –  D50 ≈
+CIECAM16
+J 50.33 C 44.79 Q 214.55 h° 256.85 H B91R9 M 46.55 s 46.58 –  D50 ≈
+CIECAM16 UCS
+J′ 63.27 C′ 31.73 h° 256.85 a′ -7.22 b′ -30.9 –  D50 ≈
+OSA-UCS
+L 0.74 j -7.08 g 2.57 –  D65 ≈
+OK-HSL
+H 253.3° S 65.0% L 60.8% –  D65 ≈
+OK-HSV
+H 253.3° S 60.9% V 86.1% –  D65 ≈
+DIN99o
+L₉₉ 64.74 a₉₉ -1.59 b₉₉ -29.22 C₉₉ 29.27 h°₉₉ 266.9 –  D65 ≈
+IPT
+I 0.633 P -0.119 T -0.290 C 0.314 h° 247.7 –  D65 ≈
+IGPGTG
+Ig 0.566 Pg -0.061 Tg -0.169 C 0.180 h° 250.1 –  D65 ≈
+sUCS
+I 58.14 a -13.05 b -27.73 C 30.65 h° 244.8 –  D65 ≈
+Coloroid
+A 52.4 T 44.0 V 54.0 –  D65 ≈
+sRGB
+ r 93 g 150 b 217 hex #5d96d9
+P3 RGB
+ r 0.4154 g 0.5829 b 0.8296
+
+PC1025 Periwinkle
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 55.87 a* -2.85 b* -23.99 –  D50  2°
+ L* 56.18 a* -0.1 b* -23.61 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 55.87 C* 24.16 h°* 263.23 –  D50  2°
+ L* 56.18 C* 23.61 h°* 269.76 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6219 a -0.0159 b -0.0654 C 0.0673 h° 256.33 –  D65 ≈
+OK-Lrab
+Lr 0.561 a -0.016 b -0.065 C 0.067 h° 256.3 –  D65 ≈
+Munsell
+Munsell 4.57PB 5.52/5.94 –  C ≈
+ISCC-NBS
+Name light blue Numeric 181
+CIECAM02
+J 45.63 C 30.89 Q 204.29 h° 251.28 H 306.64 M 32.11 s 39.64 –  D50 ≈
+CIECAM16
+J 45.71 C 28.72 Q 204.47 h° 258.45 H B90R10 M 29.85 s 38.21 –  D50 ≈
+CIECAM16 UCS
+J′ 58.87 C′ 22.77 h° 258.45 a′ -4.56 b′ -22.31 –  D50 ≈
+OSA-UCS
+L -0.57 j -4.09 g 1.35 –  D65 ≈
+OK-HSL
+H 256.3° S 35.2% L 56.1% –  D65 ≈
+OK-HSV
+H 256.3° S 37.6% V 70.8% –  D65 ≈
+DIN99o
+L₉₉ 60.16 a₉₉ -1.75 b₉₉ -21.30 C₉₉ 21.37 h°₉₉ 265.3 –  D65 ≈
+IPT
+I 0.568 P -0.061 T -0.166 C 0.177 h° 249.8 –  D65 ≈
+IGPGTG
+Ig 0.525 Pg -0.027 Tg -0.099 C 0.103 h° 255.0 –  D65 ≈
+sUCS
+I 53.85 a -7.75 b -18.46 C 20.02 h° 247.2 –  D65 ≈
+Coloroid
+A 52.5 T 29.2 V 49.1 –  D65 ≈
+sRGB
+ r 108 g 137 b 175 hex #6c89af
+P3 RGB
+ r 0.4468 g 0.5325 b 0.6746
+
+1210 Lapis Blue
+Derwent Chromaflow Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 39.62 a* 13.93 b* -62.93 –  D50  2°
+ L* 40.65 a* 22.33 b* -61.51 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 39.62 C* 64.45 h°* 282.48 –  D50  2°
+ L* 40.65 C* 65.43 h°* 289.95 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.496 a -0.0272 b -0.1776 C 0.1797 h° 261.31 –  D65 ≈
+OK-Lrab
+Lr 0.417 a -0.027 b -0.178 C 0.180 h° 261.3 –  D65 ≈
+Munsell
+Munsell 6.57PB 4.02/15.39 –  C ≈
+ISCC-NBS
+Name vivid blue Numeric 176
+CIECAM02
+J 29.91 C 64.18 Q 165.41 h° 256.72 H 309.39 M 66.72 s 63.51 –  D50 ≈
+CIECAM16
+J 30.23 C 60.39 Q 166.28 h° 270.73 H B83R17 M 62.78 s 61.44 –  D50 ≈
+CIECAM16 UCS
+J′ 42.41 C′ 38.97 h° 270.73 a′ 0.5 b′ -38.96 –  D50 ≈
+OSA-UCS
+L -2.59 j -11.05 g 2.60 –  D65 ≈
+OK-HSL
+H 261.3° S 90.5% L 41.7% –  D65 ≈
+OK-HSV
+H 261.3° S 88.6% V 78.2% –  D65 ≈
+DIN99o
+L₉₉ 44.68 a₉₉ 12.00 b₉₉ -35.40 C₉₉ 37.38 h°₉₉ 288.7 –  D65 ≈
+IPT
+I 0.464 P -0.130 T -0.422 C 0.441 h° 252.9 –  D65 ≈
+IGPGTG
+Ig 0.380 Pg -0.079 Tg -0.244 C 0.257 h° 252.0 –  D65 ≈
+sUCS
+I 38.97 a -12.58 b -36.25 C 38.37 h° 250.9 –  D65 ≈
+Coloroid
+A 51.3 T 70.3 V 34.1 –  D65 ≈
+sRGB
+ r 31 g 90 b 198 hex #1f5ac6
+P3 RGB
+ r 0.1873 g 0.3473 b 0.7494
+
+2900 Polar Ice
+Derwent Drawing Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 57.69 a* 0.92 b* -43.17 –  D50  2°
+ L* 58.28 a* 6.28 b* -42.42 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 57.69 C* 43.18 h°* 271.22 –  D50  2°
+ L* 58.28 C* 42.88 h°* 278.42 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6421 a -0.0208 b -0.1198 C 0.1216 h° 260.13 –  D65 ≈
+OK-Lrab
+Lr 0.584 a -0.021 b -0.120 C 0.122 h° 260.1 –  D65 ≈
+Munsell
+Munsell 5.88PB 5.74/10.68 –  C ≈
+ISCC-NBS
+Name brilliant blue Numeric 177
+CIECAM02
+J 47.5 C 49.1 Q 208.43 h° 254.92 H 308.47 M 51.04 s 49.49 –  D50 ≈
+CIECAM16
+J 47.68 C 45.89 Q 208.82 h° 264.57 H B87R13 M 47.7 s 47.79 –  D50 ≈
+CIECAM16 UCS
+J′ 60.77 C′ 32.28 h° 264.57 a′ -3.05 b′ -32.14 –  D50 ≈
+OSA-UCS
+L 0.23 j -7.54 g 1.89 –  D65 ≈
+OK-HSL
+H 260.1° S 64.1% L 58.4% –  D65 ≈
+OK-HSV
+H 260.1° S 57.3% V 85.0% –  D65 ≈
+DIN99o
+L₉₉ 62.19 a₉₉ 2.69 b₉₉ -30.10 C₉₉ 30.22 h°₉₉ 275.1 –  D65 ≈
+IPT
+I 0.611 P -0.097 T -0.305 C 0.320 h° 252.4 –  D65 ≈
+IGPGTG
+Ig 0.542 Pg -0.045 Tg -0.180 C 0.186 h° 256.1 –  D65 ≈
+sUCS
+I 55.71 a -10.47 b -29.15 C 30.97 h° 250.2 –  D65 ≈
+Coloroid
+A 51.9 T 45.6 V 51.2 –  D65 ≈
+sRGB
+ r 96 g 140 b 214 hex #608cd6
+P3 RGB
+ r 0.4147 g 0.5462 b 0.8181
+
+Mid Ultramarine
+Derwent Lightfast Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 68.01 a* -3.46 b* -34.27 –  D50  2°
+ L* 68.46 a* 0.62 b* -33.7 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 68.01 C* 34.44 h°* 264.23 –  D50  2°
+ L* 68.46 C* 33.71 h°* 271.05 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.7279 a -0.0234 b -0.094 C 0.0969 h° 256.04 –  D65 ≈
+OK-Lrab
+Lr 0.684 a -0.023 b -0.094 C 0.097 h° 256.0 –  D65 ≈
+Munsell
+Munsell 5.09PB 6.76/8.54 –  C ≈
+ISCC-NBS
+Name light blue Numeric 181
+CIECAM02
+J 58.83 C 41.45 Q 231.98 h° 251.05 H 306.52 M 43.08 s 43.09 –  D50 ≈
+CIECAM16
+J 58.97 C 38.52 Q 232.24 h° 258.69 H B90R10 M 40.04 s 41.52 –  D50 ≈
+CIECAM16 UCS
+J′ 70.96 C′ 28.45 h° 258.69 a′ -5.58 b′ -27.9 –  D50 ≈
+OSA-UCS
+L 2.04 j -6.05 g 1.97 –  D65 ≈
+OK-HSL
+H 256.0° S 61.6% L 68.4% –  D65 ≈
+OK-HSV
+H 256.0° S 45.5% V 90.1% –  D65 ≈
+DIN99o
+L₉₉ 71.87 a₉₉ -1.52 b₉₉ -26.56 C₉₉ 26.60 h°₉₉ 266.7 –  D65 ≈
+IPT
+I 0.703 P -0.093 T -0.250 C 0.266 h° 249.6 –  D65 ≈
+IGPGTG
+Ig 0.641 Pg -0.043 Tg -0.148 C 0.154 h° 253.9 –  D65 ≈
+sUCS
+I 65.85 a -10.66 b -25.09 C 27.26 h° 247.0 –  D65 ≈
+Coloroid
+A 52.4 T 34.8 V 62.1 –  D65 ≈
+sRGB
+ r 126 g 169 b 227 hex #7ea9e3
+P3 RGB
+ r 0.531 g 0.66 b 0.873
+
+105 Light Cadmium Yellow
+Faber-Castell Polychromos 9201
+urce
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 91.34 a* -5.32 b* 90.44 –  D50  2°
+ L* 90.83 a* -10.6 b* 91.31 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 91.34 C* 90.6 h°* 93.37 –  D50  2°
+ L* 90.83 C* 91.92 h°* 96.62 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.9174 a -0.0414 b 0.1898 C 0.1943 h° 102.32 –  D65 ≈
+OK-Lrab
+Lr 0.904 a -0.041 b 0.190 C 0.194 h° 102.3 –  D65 ≈
+Munsell
+Munsell 7.35Y 9.05/13.55 –  C ≈
+ISCC-NBS
+Name vivid greenish yellow Numeric 97
+CIECAM02
+J 87.68 C 73.19 Q 283.2 h° 98.38 H 115.38 M 76.08 s 51.83 –  D50 ≈
+CIECAM16
+J 87.61 C 66.85 Q 283.08 h° 102.71 H Y77G23 M 69.49 s 49.55 –  D50 ≈
+CIECAM16 UCS
+J′ 92.32 C′ 41.64 h° 102.71 a′ -9.16 b′ 40.62 –  D50 ≈
+OSA-UCS
+L 5.05 j 12.62 g 2.12 –  D65 ≈
+OK-HSL
+H 102.2° S 100.0% L 90.4% –  D65 ≈
+OK-HSV
+H 102.2° S 100.0% V 99.5% –  D65 ≈
+DIN99o
+L₉₉ 92.09 a₉₉ -2.34 b₉₉ 44.22 C₉₉ 44.28 h°₉₉ 93.0 –  D65 ≈
+IPT
+I 0.795 P -0.040 T 0.623 C 0.624 h° 93.6 –  D65 ≈
+IGPGTG
+Ig 0.882 Pg -0.098 Tg 0.373 C 0.385 h° 104.7 –  D65 ≈
+sUCS
+I 89.77 a -4.34 b 47.48 C 47.68 h° 95.2 –  D65 ≈
+Coloroid
+A 11.4 T 81.0 V 88.4 –  D65 ≈
+sRGB Mapped
+ r 254 g 231 b 0 hex #fee700
+ Out of sRGB gamut
+sRGB Clipped
+ r 254 g 231 b 1 hex #fee700
+ Out of sRGB gamut
+P3 RGB
+ r 0.9799 g 0.9089 b 0.2928
+
+226 Alizarin Crimson
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 44.42 a* 62.13 b* 24.41 –  D50  2°
+ L* 43.72 a* 61.83 b* 22.89 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 44.42 C* 66.75 h°* 21.45 –  D50  2°
+ L* 43.72 C* 65.93 h°* 20.31 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5391 a 0.1844 b 0.0548 C 0.1924 h° 16.54 –  D65 ≈
+OK-Lrab
+Lr 0.466 a 0.184 b 0.055 C 0.192 h° 16.5 –  D65 ≈
+Munsell
+Munsell 3.61R 4.31/13.81 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 37.03 C 76.92 Q 184.04 h° 16.91 H 396.64 M 79.96 s 65.91 –  D50 ≈
+CIECAM16
+J 36.93 C 79.97 Q 183.79 h° 15.06 H B5R95 M 83.12 s 67.25 –  D50 ≈
+CIECAM16 UCS
+J′ 49.88 C′ 46.63 h° 15.06 a′ 45.02 b′ 12.11 –  D50 ≈
+OSA-UCS
+L -2.04 j 2.27 g -12.16 –  D65 ≈
+OK-HSL
+H 16.5° S 89.0% L 46.6% –  D65 ≈
+OK-HSV
+H 16.5° S 91.9% V 78.1% –  D65 ≈
+DIN99o
+L₉₉ 47.81 a₉₉ 38.16 b₉₉ 14.86 C₉₉ 40.95 h°₉₉ 21.3 –  D65 ≈
+IPT
+I 0.409 P 0.463 T 0.173 C 0.495 h° 20.4 –  D65 ≈
+IGPGTG
+Ig 0.449 Pg 0.230 Tg 0.093 C 0.248 h° 22.1 –  D65 ≈
+sUCS
+I 45.04 a 42.87 b 11.99 C 44.51 h° 15.6 –  D65 ≈
+Coloroid
+A 32.4 T 64.5 V 36.9 –  D65 ≈
+sRGB
+ r 197 g 38 b 69 hex #c52645
+P3 RGB
+ r 0.7095 g 0.212 b 0.2836
+
+0405 Clementine
+Derwent Chromaflow Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 64.44 a* 51.21 b* 63.75 –  D50  2°
+ L* 63.67 a* 49.04 b* 62.59 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 64.44 C* 81.77 h°* 51.23 –  D50  2°
+ L* 63.67 C* 79.51 h°* 51.92 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.7052 a 0.1334 b 0.1311 C 0.1871 h° 44.51 –  D65 ≈
+OK-Lrab
+Lr 0.657 a 0.133 b 0.131 C 0.187 h° 44.5 –  D65 ≈
+Munsell
+Munsell 1.06YR 6.27/14.38 –  C ≈
+ISCC-NBS
+Name vivid reddish orange Numeric 34
+CIECAM02
+J 57.43 C 72.97 Q 229.19 h° 45.92 H 33.85 M 75.85 s 57.53 –  D50 ≈
+CIECAM16
+J 57.34 C 69.92 Q 229.02 h° 42.52 H R71Y29 M 72.68 s 56.33 –  D50 ≈
+CIECAM16 UCS
+J′ 69.56 C′ 42.86 h° 42.52 a′ 31.59 b′ 28.97 –  D50 ≈
+OSA-UCS
+L 1.32 j 8.39 g -8.53 –  D65 ≈
+OK-HSL
+H 44.5° S 96.6% L 65.7% –  D65 ≈
+OK-HSV
+H 44.5° S 92.0% V 98.5% –  D65 ≈
+DIN99o
+L₉₉ 67.35 a₉₉ 29.47 b₉₉ 32.69 C₉₉ 44.01 h°₉₉ 48.0 –  D65 ≈
+IPT
+I 0.557 P 0.375 T 0.425 C 0.567 h° 48.6 –  D65 ≈
+IGPGTG
+Ig 0.632 Pg 0.147 Tg 0.262 C 0.300 h° 60.7 –  D65 ≈
+sUCS
+I 63.79 a 33.47 b 31.69 C 46.09 h° 43.4 –  D65 ≈
+Coloroid
+A 25.2 T 81.2 V 56.9 –  D65 ≈
+sRGB
+ r 251 g 113 b 38 hex #fb7126
+P3 RGB
+ r 0.9169 g 0.4744 b 0.2381
+
+589 Crimson Alizarin (Hue)
+Caran d'Ache Luminance 6901
+Source
+Our handmade color_pencil sample, masstone 45°/0°
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 34.88 a* 59.02 b* 23.87 –  D50  2°
+ L* 34.21 a* 58.91 b* 22.35 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 34.88 C* 63.66 h°* 22.02 –  D50  2°
+ L* 34.21 C* 63.01 h°* 20.78 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.4561 a 0.1752 b 0.0522 C 0.1828 h° 16.58 –  D65 ≈
+OK-Lrab
+Lr 0.371 a 0.175 b 0.052 C 0.183 h° 16.6 –  D65 ≈
+Munsell
+Munsell 4.37R 3.39/12.49 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 28.14 C 77.22 Q 160.42 h° 16.85 H 396.58 M 80.27 s 70.74 –  D50 ≈
+CIECAM16
+J 28.04 C 80.41 Q 160.16 h° 14.91 H B5R95 M 83.58 s 72.24 –  D50 ≈
+CIECAM16 UCS
+J′ 39.85 C′ 46.78 h° 14.91 a′ 45.21 b′ 12.04 –  D50 ≈
+OSA-UCS
+L -3.58 j 2.12 g -11.99 –  D65 ≈
+OK-HSL
+H 16.6° S 100.0% L 37.1% –  D65 ≈
+OK-HSV
+H 16.6° S 100.0% V 65.1% –  D65 ≈
+DIN99o
+L₉₉ 38.03 a₉₉ 37.26 b₉₉ 14.80 C₉₉ 40.09 h°₉₉ 21.7 –  D65 ≈
+IPT
+I 0.324 P 0.429 T 0.159 C 0.458 h° 20.3 –  D65 ≈
+IGPGTG
+Ig 0.363 Pg 0.205 Tg 0.090 C 0.224 h° 23.6 –  D65 ≈
+sUCS
+I 36.26 a 40.93 b 11.35 C 42.47 h° 15.5 –  D65 ≈
+Coloroid
+A 32.6 T 74.2 V 28.5 –  D65 ≈
+sRGB Mapped
+ r 164 g 0 b 49 hex #a40031
+ Out of sRGB gamut
+sRGB Clipped
+ r 164 g 0 b 49 hex #a40031
+ Out of sRGB gamut
+P3 RGB
+ r 0.5888 g 0.1129 b 0.2029
+
+OP062 Crimson
+Holbein Artists' Colored Pencil
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 35.39 a* 42.77 b* 20.64 –  D50  2°
+ L* 34.89 a* 42.21 b* 19.62 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 35.39 C* 47.49 h°* 25.76 –  D50  2°
+ L* 34.89 C* 46.54 h°* 24.94 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.4551 a 0.1251 b 0.0472 C 0.1337 h° 20.68 –  D65 ≈
+OK-Lrab
+Lr 0.370 a 0.125 b 0.047 C 0.134 h° 20.7 –  D65 ≈
+Munsell
+Munsell 5.31R 3.45/8.92 –  C ≈
+ISCC-NBS
+Name dark red Numeric 16
+CIECAM02
+J 27.97 C 53.93 Q 159.96 h° 20.97 H 1.04 M 56.05 s 59.2 –  D50 ≈
+CIECAM16
+J 27.91 C 55.44 Q 159.78 h° 18.92 H B1R99 M 57.63 s 60.06 –  D50 ≈
+CIECAM16 UCS
+J′ 39.7 C′ 36.8 h° 18.92 a′ 34.81 b′ 11.93 –  D50 ≈
+OSA-UCS
+L -3.91 j 2.27 g -7.90 –  D65 ≈
+OK-HSL
+H 20.7° S 74.4% L 37.0% –  D65 ≈
+OK-HSV
+H 20.7° S 79.0% V 58.7% –  D65 ≈
+DIN99o
+L₉₉ 38.75 a₉₉ 31.26 b₉₉ 14.66 C₉₉ 34.53 h°₉₉ 25.1 –  D65 ≈
+IPT
+I 0.332 P 0.294 T 0.136 C 0.324 h° 24.8 –  D65 ≈
+IGPGTG
+Ig 0.360 Pg 0.148 Tg 0.074 C 0.166 h° 26.4 –  D65 ≈
+sUCS
+I 36.23 a 31.81 b 11.35 C 33.77 h° 19.6 –  D65 ≈
+Coloroid
+A 31.6 T 54.4 V 29.1 –  D65 ≈
+sRGB
+ r 147 g 47 b 53 hex #932f35
+P3 RGB
+ r 0.5305 g 0.2121 b 0.2199
+
+1400 Light Blue (maybe for 0095CB??)
+Derwent Chromaflow Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 55.64 a* -22.59 b* -40.44 –  D50  2°
+ L* 56.32 a* -16.27 b* -39.46 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 55.64 C* 46.32 h°* 240.81 –  D50  2°
+ L* 56.32 C* 42.68 h°* 247.59 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6158 a -0.093 b -0.1122 C 0.1458 h° 230.34 –  D65 ≈
+OK-Lrab
+Lr 0.554 a -0.093 b -0.112 C 0.146 h° 230.3 –  D65 ≈
+Munsell
+Munsell 9.55B 5.53/10.42 –  C ≈
+ISCC-NBS
+Name brilliant blue Numeric 177
+CIECAM02
+J 44.31 C 57.74 Q 201.32 h° 230.12 H 291.43 M 60.02 s 54.6 –  D50 ≈
+CIECAM16
+J 44.5 C 53.46 Q 201.75 h° 233.84 H G4B96 M 55.57 s 52.48 –  D50 ≈
+CIECAM16 UCS
+J′ 57.68 C′ 35.9 h° 233.84 a′ -21.18 b′ -28.98 –  D50 ≈
+OSA-UCS
+L -0.28 j -6.74 g 5.51 –  D65 ≈
+OK-HSL
+H 234.9° S 100.0% L 56.4% –  D65 ≈
+OK-HSV
+H 234.9° S 100.0% V 80.8% –  D65 ≈
+DIN99o
+L₉₉ 60.30 a₉₉ -14.71 b₉₉ -28.10 C₉₉ 31.72 h°₉₉ 242.4 –  D65 ≈
+IPT
+I 0.584 P -0.223 T -0.293 C 0.368 h° 232.7 –  D65 ≈
+IGPGTG
+Ig 0.515 Pg -0.144 Tg -0.160 C 0.215 h° 227.9 –  D65 ≈
+sUCS
+I 52.89 a -23.42 b -25.91 C 34.92 h° 227.9 –  D65 ≈
+Coloroid
+A 53.8 T 54.4 V 49.2 –  D65 ≈
+sRGB Mapped
+ r 0 g 146 b 203 hex #0092cb
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 146 b 203 hex #0092cb
+ Out of sRGB gamut
+P3 RGB
+ r 0.1551 g 0.5645 b 0.7765
+
+050 Flame Red
+Caran d'Ache Pablo 666
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 65.64 a* 51.97 b* 59.34 –  D50  2°
+ L* 64.87 a* 49.87 b* 58.13 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 65.64 C* 78.88 h°* 48.79 –  D50  2°
+ L* 64.87 C* 76.59 h°* 49.37 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.7159 a 0.1375 b 0.1253 C 0.186 h° 42.33 –  D65 ≈
+OK-Lrab
+Lr 0.670 a 0.138 b 0.125 C 0.186 h° 42.3 –  D65 ≈
+Munsell
+Munsell 0.47YR 6.39/13.97 –  C ≈
+ISCC-NBS
+Name vivid reddish orange Numeric 34
+CIECAM02
+J 58.87 C 71.22 Q 232.05 h° 43.22 H 30.15 M 74.04 s 56.48 –  D50 ≈
+CIECAM16
+J 58.78 C 68.89 Q 231.87 h° 40.06 H R74Y26 M 71.61 s 55.57 –  D50 ≈
+CIECAM16 UCS
+J′ 70.79 C′ 42.46 h° 40.06 a′ 32.49 b′ 27.32 –  D50 ≈
+OSA-UCS
+L 1.53 j 7.89 g -8.79 –  D65 ≈
+OK-HSL
+H 42.3° S 100.0% L 67.0% –  D65 ≈
+OK-HSV
+H 42.3° S 87.1% V 100.0% –  D65 ≈
+DIN99o
+L₉₉ 68.49 a₉₉ 30.29 b₉₉ 31.07 C₉₉ 43.39 h°₉₉ 45.7 –  D65 ≈
+IPT
+I 0.573 P 0.386 T 0.402 C 0.558 h° 46.2 –  D65 ≈
+IGPGTG
+Ig 0.644 Pg 0.160 Tg 0.244 C 0.292 h° 56.8 –  D65 ≈
+sUCS
+I 65.06 a 34.69 b 29.98 C 45.84 h° 40.8 –  D65 ≈
+Coloroid
+A 25.4 T 77.3 V 58.2 –  D65 ≈
+sRGB Mapped
+ r 255 g 115 b 53 hex #ff7335
+ Out of sRGB gamut
+sRGB Clipped
+ r 255 g 115 b 53 hex #ff7335
+ Out of sRGB gamut
+P3 RGB
+ r 0.933 g 0.4845 b 0.2749
+
+142 Madder
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 41.22 a* 50 b* 17.17 –  D50  2°
+ L* 40.68 a* 49.63 b* 16.03 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 41.22 C* 52.87 h°* 18.95 –  D50  2°
+ L* 40.68 C* 52.16 h°* 17.89 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5081 a 0.1492 b 0.0397 C 0.1544 h° 14.91 –  D65 ≈
+OK-Lrab
+Lr 0.430 a 0.149 b 0.040 C 0.154 h° 14.9 –  D65 ≈
+Munsell
+Munsell 2.98R 4.01/11.03 –  C ≈
+ISCC-NBS
+Name strong red Numeric 12
+CIECAM02
+J 33.52 C 60.47 Q 175.09 h° 15.54 H 395.24 M 62.86 s 59.92 –  D50 ≈
+CIECAM16
+J 33.44 C 62.93 Q 174.9 h° 13.91 H B6R94 M 65.42 s 61.16 –  D50 ≈
+CIECAM16 UCS
+J′ 46.07 C′ 40.04 h° 13.91 a′ 38.87 b′ 9.62 –  D50 ≈
+OSA-UCS
+L -2.85 j 1.55 g -9.42 –  D65 ≈
+OK-HSL
+H 14.9° S 75.4% L 43.0% –  D65 ≈
+OK-HSV
+H 14.9° S 81.3% V 68.5% –  D65 ≈
+DIN99o
+L₉₉ 44.72 a₉₉ 34.49 b₉₉ 12.05 C₉₉ 36.53 h°₉₉ 19.3 –  D65 ≈
+IPT
+I 0.387 P 0.356 T 0.123 C 0.377 h° 19.1 –  D65 ≈
+IGPGTG
+Ig 0.414 Pg 0.186 Tg 0.062 C 0.196 h° 18.3 –  D65 ≈
+sUCS
+I 41.74 a 36.48 b 9.37 C 37.66 h° 14.4 –  D65 ≈
+Coloroid
+A 32.5 T 53.6 V 34.2 –  D65 ≈
+sRGB
+ r 171 g 52 b 72 hex #ab3448
+P3 RGB
+ r 0.6205 g 0.2406 b 0.2915
+
+Cherry Red
+Derwent Lightfast Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 40.92 a* 54.51 b* 18.76 –  D50  2°
+ L* 40.33 a* 54.23 b* 17.48 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 40.92 C* 57.65 h°* 18.99 –  D50  2°
+ L* 40.33 C* 56.97 h°* 17.87 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5069 a 0.1628 b 0.0429 C 0.1684 h° 14.75 –  D65 ≈
+OK-Lrab
+Lr 0.429 a 0.163 b 0.043 C 0.168 h° 14.8 –  D65 ≈
+Munsell
+Munsell 3.02R 3.98/12.06 –  C ≈
+ISCC-NBS
+Name strong red Numeric 12
+CIECAM02
+J 33.42 C 66.79 Q 174.83 h° 15.3 H 395 M 69.43 s 63.02 –  D50 ≈
+CIECAM16
+J 33.34 C 69.61 Q 174.62 h° 13.64 H B7R93 M 72.36 s 64.37 –  D50 ≈
+CIECAM16 UCS
+J′ 45.95 C′ 42.74 h° 13.64 a′ 41.53 b′ 10.08 –  D50 ≈
+OSA-UCS
+L -2.79 j 1.64 g -10.50 –  D65 ≈
+OK-HSL
+H 14.8° S 81.5% L 42.9% –  D65 ≈
+OK-HSV
+H 14.8° S 87.1% V 70.2% –  D65 ≈
+DIN99o
+L₉₉ 44.36 a₉₉ 36.03 b₉₉ 12.57 C₉₉ 38.16 h°₉₉ 19.2 –  D65 ≈
+IPT
+I 0.383 P 0.394 T 0.134 C 0.416 h° 18.8 –  D65 ≈
+IGPGTG
+Ig 0.414 Pg 0.202 Tg 0.068 C 0.214 h° 18.7 –  D65 ≈
+sUCS
+I 41.60 a 38.91 b 9.80 C 40.13 h° 14.1 –  D65 ≈
+Coloroid
+A 32.6 T 59.6 V 33.8 –  D65 ≈
+sRGB
+ r 176 g 43 b 70 hex #b02b46
+P3 RGB
+ r 0.6362 g 0.2156 b 0.2811
+
+PC1079 Blue Violet Lake
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+ource
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 58.63 a* -0.82 b* -34.92 –  D50  2°
+ L* 59.09 a* 3.36 b* -34.35 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 58.63 C* 34.93 h°* 268.65 –  D50  2°
+ L* 59.09 C* 34.51 h°* 275.58 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6481 a -0.0175 b -0.0962 C 0.0978 h° 259.69 –  D65 ≈
+OK-Lrab
+Lr 0.591 a -0.018 b -0.096 C 0.098 h° 259.7 –  D65 ≈
+Munsell
+Munsell 5.54PB 5.81/8.72 –  C ≈
+ISCC-NBS
+Name light blue Numeric 181
+CIECAM02
+J 48.53 C 41.44 Q 210.68 h° 254.39 H 308.21 M 43.08 s 45.22 –  D50 ≈
+CIECAM16
+J 48.66 C 38.68 Q 210.97 h° 263.11 H B87R13 M 40.21 s 43.66 –  D50 ≈
+CIECAM16 UCS
+J′ 61.71 C′ 28.54 h° 263.11 a′ -3.42 b′ -28.33 –  D50 ≈
+OSA-UCS
+L 0.24 j -6.07 g 1.60 –  D65 ≈
+OK-HSL
+H 259.7° S 51.9% L 59.1% –  D65 ≈
+OK-HSV
+H 259.7° S 48.0% V 80.7% –  D65 ≈
+DIN99o
+L₉₉ 62.97 a₉₉ 0.86 b₉₉ -26.77 C₉₉ 26.79 h°₉₉ 271.8 –  D65 ≈
+IPT
+I 0.609 P -0.079 T -0.246 C 0.258 h° 252.1 –  D65 ≈
+IGPGTG
+Ig 0.551 Pg -0.034 Tg -0.146 C 0.150 h° 256.7 –  D65 ≈
+sUCS
+I 56.59 a -9.13 b -24.99 C 26.60 h° 249.9 –  D65 ≈
+Coloroid
+A 52.1 T 38.2 V 52.1 –  D65 ≈
+sRGB
+ r 107 g 143 b 202 hex #6b8fca
+P3 RGB
+ r 0.4485 g 0.558 b 0.7745
+
+PC1103 Caribbean Sea
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 64.76 a* -4.54 b* -32.25 –  D50  2°
+ L* 65.19 a* -0.68 b* -31.7 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 64.76 C* 32.57 h°* 261.99 –  D50  2°
+ L* 65.19 C* 31.71 h°* 268.78 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6992 a -0.0257 b -0.0884 C 0.0921 h° 253.79 –  D65 ≈
+OK-Lrab
+Lr 0.650 a -0.026 b -0.088 C 0.092 h° 253.8 –  D65 ≈
+Munsell
+Munsell 4.51PB 6.43/8.08 –  C ≈
+ISCC-NBS
+Name light blue Numeric 181
+CIECAM02
+J 55.11 C 39.96 Q 224.51 h° 249.08 H 305.55 M 41.54 s 43.01 –  D50 ≈
+CIECAM16
+J 55.23 C 37.07 Q 224.77 h° 256.25 H B91R9 M 38.54 s 41.41 –  D50 ≈
+CIECAM16 UCS
+J′ 67.72 C′ 27.66 h° 256.25 a′ -6.57 b′ -26.86 –  D50 ≈
+OSA-UCS
+L 1.41 j -5.66 g 2.05 –  D65 ≈
+OK-HSL
+H 253.8° S 53.8% L 65.0% –  D65 ≈
+OK-HSV
+H 253.8° S 46.3% V 85.3% –  D65 ≈
+DIN99o
+L₉₉ 68.79 a₉₉ -2.60 b₉₉ -25.62 C₉₉ 25.75 h°₉₉ 264.2 –  D65 ≈
+IPT
+I 0.667 P -0.094 T -0.233 C 0.251 h° 248.0 –  D65 ≈
+IGPGTG
+Ig 0.609 Pg -0.045 Tg -0.137 C 0.144 h° 251.9 –  D65 ≈
+sUCS
+I 62.54 a -10.97 b -23.72 C 26.13 h° 245.2 –  D65 ≈
+Coloroid
+A 52.6 T 34.7 V 58.6 –  D65 ≈
+sRGB
+ r 117 g 161 b 215 hex #75a1d7
+P3 RGB
+ r 0.4968 g 0.6278 b 0.8237
+
+OP349 Ultra Blue
+Holbein Artists' Colored Pencil
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 40.89 a* 14.94 b* -53.72 –  D50  2°
+ L* 41.67 a* 21.56 b* -52.7 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 40.89 C* 55.76 h°* 285.54 –  D50  2°
+ L* 41.67 C* 56.93 h°* 292.25 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5052 a -0.0003 b -0.151 C 0.151 h° 269.9 –  D65 ≈
+OK-Lrab
+Lr 0.427 a -0.000 b -0.151 C 0.151 h° 269.9 –  D65 ≈
+Munsell
+Munsell 7.33PB 4.11/13.26 –  C ≈
+ISCC-NBS
+Name vivid purplish blue Numeric 194
+CIECAM02
+J 31.33 C 55.67 Q 169.27 h° 264.22 H 313.31 M 57.87 s 58.47 –  D50 ≈
+CIECAM16
+J 31.55 C 53.46 Q 169.89 h° 277.83 H B79R21 M 55.57 s 57.19 –  D50 ≈
+CIECAM16 UCS
+J′ 43.94 C′ 35.9 h° 277.83 a′ 4.89 b′ -35.56 –  D50 ≈
+OSA-UCS
+L -2.53 j -9.46 g 0.94 –  D65 ≈
+OK-HSL
+H 269.9° S 71.2% L 42.7% –  D65 ≈
+OK-HSV
+H 269.9° S 67.4% V 73.8% –  D65 ≈
+DIN99o
+L₉₉ 45.73 a₉₉ 12.75 b₉₉ -32.40 C₉₉ 34.82 h°₉₉ 291.5 –  D65 ≈
+IPT
+I 0.464 P -0.069 T -0.356 C 0.362 h° 258.9 –  D65 ≈
+IGPGTG
+Ig 0.393 Pg -0.028 Tg -0.212 C 0.214 h° 262.4 –  D65 ≈
+sUCS
+I 40.28 a -7.00 b -32.91 C 33.65 h° 258.0 –  D65 ≈
+Coloroid
+A 51.1 T 60.6 V 35.1 –  D65 ≈
+sRGB
+ r 68 g 91 b 186 hex #445bba
+P3 RGB
+ r 0.2855 g 0.3552 b 0.7046
+
+120 Ultramarine
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 41.93 a* 11.89 b* -52.08 –  D50  2°
+ L* 42.69 a* 18.41 b* -51.09 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 41.93 C* 53.42 h°* 282.86 –  D50  2°
+ L* 42.69 C* 54.3 h°* 289.82 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5125 a -0.0069 b -0.1463 C 0.1464 h° 267.32 –  D65 ≈
+OK-Lrab
+Lr 0.435 a -0.007 b -0.146 C 0.146 h° 267.3 –  D65 ≈
+Munsell
+Munsell 7.02PB 4.21/12.73 –  C ≈
+ISCC-NBS
+Name strong purplish blue Numeric 196
+CIECAM02
+J 32.17 C 54.86 Q 171.55 h° 261.8 H 312.03 M 57.02 s 57.65 –  D50 ≈
+CIECAM16
+J 32.4 C 52.25 Q 172.14 h° 274.8 H B81R19 M 54.31 s 56.17 –  D50 ≈
+CIECAM16 UCS
+J′ 44.89 C′ 35.34 h° 274.8 a′ 2.96 b′ -35.22 –  D50 ≈
+OSA-UCS
+L -2.39 j -9.13 g 1.26 –  D65 ≈
+OK-HSL
+H 267.3° S 70.9% L 43.5% –  D65 ≈
+OK-HSV
+H 267.3° S 65.1% V 73.9% –  D65 ≈
+DIN99o
+L₉₉ 46.76 a₉₉ 10.83 b₉₉ -32.23 C₉₉ 34.00 h°₉₉ 288.6 –  D65 ≈
+IPT
+I 0.471 P -0.079 T -0.347 C 0.356 h° 257.2 –  D65 ≈
+IGPGTG
+Ig 0.401 Pg -0.036 Tg -0.206 C 0.209 h° 260.2 –  D65 ≈
+sUCS
+I 41.13 a -8.11 b -32.23 C 33.23 h° 255.9 –  D65 ≈
+Coloroid
+A 51.3 T 59.6 V 36.0 –  D65 ≈
+sRGB
+ r 66 g 95 b 186 hex #425fba
+P3 RGB
+ r 0.2822 g 0.3712 b 0.7052
+
+1130 Iris Purple
+Derwent Chromaflow Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 42.72 a* 14.14 b* -45.39 –  D50  2°
+ L* 43.31 a* 19.42 b* -44.66 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 42.72 C* 47.54 h°* 287.3 –  D50  2°
+ L* 43.31 C* 48.7 h°* 293.5 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5187 a 0.013 b -0.1269 C 0.1276 h° 275.85 –  D65 ≈
+OK-Lrab
+Lr 0.442 a 0.013 b -0.127 C 0.128 h° 275.9 –  D65 ≈
+Munsell
+Munsell 7.93PB 4.27/11.21 –  C ≈
+ISCC-NBS
+Name strong purplish blue Numeric 196
+CIECAM02
+J 33.13 C 48.4 Q 174.07 h° 269.82 H 316.33 M 50.31 s 53.76 –  D50 ≈
+CIECAM16
+J 33.29 C 47.08 Q 174.51 h° 282.68 H B76R24 M 48.94 s 52.95 –  D50 ≈
+CIECAM16 UCS
+J′ 45.9 C′ 32.87 h° 282.68 a′ 7.22 b′ -32.07 –  D50 ≈
+OSA-UCS
+L -2.37 j -8.00 g 0.07 –  D65 ≈
+OK-HSL
+H 275.9° S 59.0% L 44.2% –  D65 ≈
+OK-HSV
+H 275.9° S 60.3% V 70.5% –  D65 ≈
+DIN99o
+L₉₉ 47.40 a₉₉ 12.52 b₉₉ -29.51 C₉₉ 32.06 h°₉₉ 293.0 –  D65 ≈
+IPT
+I 0.471 P -0.033 T -0.299 C 0.300 h° 263.7 –  D65 ≈
+IGPGTG
+Ig 0.409 Pg -0.001 Tg -0.182 C 0.182 h° 269.6 –  D65 ≈
+sUCS
+I 41.99 a -3.31 b -29.40 C 29.59 h° 263.6 –  D65 ≈
+Coloroid
+A 50.9 T 51.5 V 36.6 –  D65 ≈
+sRGB
+ r 86 g 95 b 177 hex #565fb1
+P3 RGB
+ r 0.3428 g 0.3727 b 0.6716
+
+PC133 Cobalt Blue Hue
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 42.24 a* 12.38 b* -62.37 –  D50  2°
+ L* 43.24 a* 20.7 b* -61 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 42.24 C* 63.59 h°* 281.23 –  D50  2°
+ L* 43.24 C* 64.42 h°* 288.75 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5177 a -0.0275 b -0.1759 C 0.178 h° 261.11 –  D65 ≈
+OK-Lrab
+Lr 0.441 a -0.028 b -0.176 C 0.178 h° 261.1 –  D65 ≈
+Munsell
+Munsell 6.53PB 4.27/15.14 –  C ≈
+ISCC-NBS
+Name vivid blue Numeric 176
+CIECAM02
+J 32.25 C 64.1 Q 171.76 h° 256.45 H 309.26 M 66.63 s 62.28 –  D50 ≈
+CIECAM16
+J 32.57 C 60.24 Q 172.59 h° 269.97 H B84R16 M 62.62 s 60.24 –  D50 ≈
+CIECAM16 UCS
+J′ 45.08 C′ 38.9 h° 269.97 a′ -0.02 b′ -38.9 –  D50 ≈
+OSA-UCS
+L -2.16 j -10.93 g 2.59 –  D65 ≈
+OK-HSL
+H 261.1° S 88.6% L 44.1% –  D65 ≈
+OK-HSV
+H 261.1° S 86.2% V 80.8% –  D65 ≈
+DIN99o
+L₉₉ 47.32 a₉₉ 11.03 b₉₉ -35.43 C₉₉ 37.11 h°₉₉ 287.3 –  D65 ≈
+IPT
+I 0.487 P -0.131 T -0.422 C 0.442 h° 252.8 –  D65 ≈
+IGPGTG
+Ig 0.403 Pg -0.078 Tg -0.245 C 0.257 h° 252.4 –  D65 ≈
+sUCS
+I 41.32 a -12.66 b -36.27 C 38.42 h° 250.8 –  D65 ≈
+Coloroid
+A 51.4 T 68.2 V 36.5 –  D65 ≈
+sRGB
+ r 37 g 97 b 204 hex #2561cc
+P3 RGB
+ r 0.2114 g 0.3751 b 0.7743
+
+OP335 Cerulean Blue [hue]
+Holbein Artists' Colored Pencil
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 49.6 a* -19.14 b* -52.38 –  D50  2°
+ L* 50.51 a* -10.36 b* -51.07 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 49.6 C* 55.77 h°* 249.93 –  D50  2°
+ L* 50.51 C* 52.11 h°* 258.53 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5669 a -0.1067 b -0.1471 C 0.1817 h° 234.03 –  D65 ≈
+OK-Lrab
+Lr 0.498 a -0.107 b -0.147 C 0.182 h° 234.0 –  D65 ≈
+Munsell
+Munsell 1.45PB 4.96/12.98 –  C ≈
+ISCC-NBS
+Name strong blue Numeric 178
+CIECAM02
+J 38.11 C 67.31 Q 186.71 h° 234.02 H 295.98 M 69.97 s 61.22 –  D50 ≈
+CIECAM16
+J 38.39 C 61.63 Q 187.39 h° 240.07 H B99R1 M 64.07 s 58.47 –  D50 ≈
+CIECAM16 UCS
+J′ 51.44 C′ 39.49 h° 240.07 a′ -19.71 b′ -34.22 –  D50 ≈
+OSA-UCS
+L -1.06 j -8.88 g 6.39 –  D65 ≈
+OK-HSL
+H 239.2° S 100.0% L 50.8% –  D65 ≈
+OK-HSV
+H 239.2° S 100.0% V 75.4% –  D65 ≈
+DIN99o
+L₉₉ 54.60 a₉₉ -9.95 b₉₉ -33.14 C₉₉ 34.60 h°₉₉ 253.3 –  D65 ≈
+IPT
+I 0.540 P -0.253 T -0.373 C 0.451 h° 235.8 –  D65 ≈
+IGPGTG
+Ig 0.459 Pg -0.175 Tg -0.203 C 0.267 h° 229.2 –  D65 ≈
+sUCS
+I 47.12 a -24.77 b -30.92 C 39.62 h° 231.3 –  D65 ≈
+Coloroid
+A 53.1 T 67.0 V 43.4 –  D65 ≈
+sRGB Mapped
+ r 0 g 129 b 189 hex #0081bd
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 130 b 207 hex #0082cf
+ Out of sRGB gamut
+P3 RGB
+ r 0 g 0.4998 b 0.7868  Out of P3 gamut
+
+046 Sky Blue
+Castle Arts Premium Soft Touch Colored Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 45.44 a* -7.9 b* -55.19 –  D50  2°
+ L* 46.37 a* 0.69 b* -53.88 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 45.44 C* 55.75 h°* 261.85 –  D50  2°
+ L* 46.37 C* 53.88 h°* 270.73 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5357 a -0.0791 b -0.1554 C 0.1743 h° 243.02 –  D65 ≈
+OK-Lrab
+Lr 0.462 a -0.079 b -0.155 C 0.174 h° 243.0 –  D65 ≈
+Munsell
+Munsell 3.79PB 4.56/13.25 –  C ≈
+ISCC-NBS
+Name vivid blue Numeric 176
+CIECAM02
+J 34.51 C 64.88 Q 177.66 h° 241.36 H 301.81 M 67.44 s 61.61 –  D50 ≈
+CIECAM16
+J 34.79 C 59.34 Q 178.39 h° 250.09 H B94R6 M 61.69 s 58.8 –  D50 ≈
+CIECAM16 UCS
+J′ 47.56 C′ 38.52 h° 250.09 a′ -13.12 b′ -36.21 –  D50 ≈
+OSA-UCS
+L -1.72 j -9.47 g 5.08 –  D65 ≈
+OK-HSL
+H 248.4° S 100.0% L 47.2% –  D65 ≈
+OK-HSV
+H 248.4° S 100.0% V 76.6% –  D65 ≈
+DIN99o
+L₉₉ 50.48 a₉₉ -2.19 b₉₉ -34.45 C₉₉ 34.52 h°₉₉ 266.4 –  D65 ≈
+IPT
+I 0.506 P -0.208 T -0.383 C 0.436 h° 241.5 –  D65 ≈
+IGPGTG
+Ig 0.425 Pg -0.140 Tg -0.213 C 0.255 h° 236.8 –  D65 ≈
+sUCS
+I 43.59 a -20.57 b -32.53 C 38.49 h° 237.7 –  D65 ≈
+Coloroid
+A 52.4 T 67.8 V 39.4 –  D65 ≈
+sRGB Mapped
+ r 0 g 115 b 193 hex #0073c1
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 115 b 201 hex #0073c9
+ Out of sRGB gamut
+P3 RGB
+ r 0 g 0.4418 b 0.7618  Out of P3 gamut
+
+047 Cerulean Blue Light
+Castle Arts Premium Soft Touch Colored Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 50.2 a* -17.12 b* -52.15 –  D50  2°
+ L* 51.09 a* -8.61 b* -50.88 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 50.2 C* 54.89 h°* 251.83 –  D50  2°
+ L* 51.09 C* 51.6 h°* 260.39 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5728 a -0.0989 b -0.1464 C 0.1766 h° 235.96 –  D65 ≈
+OK-Lrab
+Lr 0.505 a -0.099 b -0.146 C 0.177 h° 236.0 –  D65 ≈
+Munsell
+Munsell 1.84PB 5.02/12.89 –  C ≈
+ISCC-NBS
+Name strong blue Numeric 178
+CIECAM02
+J 38.8 C 66.06 Q 188.39 h° 235.47 H 297.64 M 68.66 s 60.37 –  D50 ≈
+CIECAM16
+J 39.07 C 60.49 Q 189.04 h° 241.84 H B98R2 M 62.87 s 57.67 –  D50 ≈
+CIECAM16 UCS
+J′ 52.16 C′ 39.01 h° 241.84 a′ -18.41 b′ -34.39 –  D50 ≈
+OSA-UCS
+L -0.97 j -8.85 g 6.00 –  D65 ≈
+OK-HSL
+H 241.1° S 100.0% L 51.5% –  D65 ≈
+OK-HSV
+H 241.1° S 100.0% V 77.6% –  D65 ≈
+DIN99o
+L₉₉ 55.18 a₉₉ -8.76 b₉₉ -33.18 C₉₉ 34.32 h°₉₉ 255.2 –  D65 ≈
+IPT
+I 0.546 P -0.241 T -0.371 C 0.443 h° 237.0 –  D65 ≈
+IGPGTG
+Ig 0.465 Pg -0.163 Tg -0.203 C 0.261 h° 231.2 –  D65 ≈
+sUCS
+I 47.76 a -23.75 b -31.05 C 39.10 h° 232.6 –  D65 ≈
+Coloroid
+A 53.0 T 65.5 V 44.0 –  D65 ≈
+sRGB Mapped
+ r 0 g 130 b 195 hex #0082c3
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 131 b 209 hex #0083d1
+ Out of sRGB gamut
+P3 RGB
+ r 0 g 0.5027 b 0.7935  Out of P3 gamut
+
+1260 Brilliant Blue
+Derwent Chromaflow Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 41.85 a* -15.77 b* -43.8 –  D50  2°
+ L* 42.6 a* -8.64 b* -42.73 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 41.85 C* 46.55 h°* 250.2 –  D50  2°
+ L* 42.6 C* 43.6 h°* 258.57 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5 a -0.0856 b -0.1228 C 0.1496 h° 235.13 –  D65 ≈
+OK-Lrab
+Lr 0.421 a -0.086 b -0.123 C 0.150 h° 235.1 –  D65 ≈
+Munsell
+Munsell 1.27PB 4.19/10.68 –  C ≈
+ISCC-NBS
+Name strong blue Numeric 178
+CIECAM02
+J 31.08 C 57.88 Q 168.6 h° 234.78 H 296.85 M 60.16 s 59.73 –  D50 ≈
+CIECAM16
+J 31.28 C 53.07 Q 169.16 h° 240.75 H B98R2 M 55.16 s 57.11 –  D50 ≈
+CIECAM16 UCS
+J′ 43.63 C′ 35.72 h° 240.75 a′ -17.45 b′ -31.16 –  D50 ≈
+OSA-UCS
+L -2.51 j -7.41 g 5.16 –  D65 ≈
+OK-HSL
+H 241.0° S 100.0% L 43.1% –  D65 ≈
+OK-HSV
+H 241.0° S 100.0% V 65.1% –  D65 ≈
+DIN99o
+L₉₉ 46.67 a₉₉ -9.03 b₉₉ -30.15 C₉₉ 31.47 h°₉₉ 253.3 –  D65 ≈
+IPT
+I 0.457 P -0.199 T -0.300 C 0.360 h° 236.4 –  D65 ≈
+IGPGTG
+Ig 0.391 Pg -0.134 Tg -0.164 C 0.212 h° 230.7 –  D65 ≈
+sUCS
+I 40.13 a -21.07 b -26.90 C 34.17 h° 231.9 –  D65 ≈
+Coloroid
+A 53.1 T 64.3 V 35.9 –  D65 ≈
+sRGB Mapped
+ r 0 g 108 b 162 hex #006ca2
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 109 b 171 hex #006dab
+ Out of sRGB gamut
+P3 RGB
+ r 0 g 0.4172 b 0.6507  Out of P3 gamut
+
+152 Middle Phthalo Blue
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 51.82 a* -12.18 b* -51.22 –  D50  2°
+ L* 52.66 a* -4.38 b* -50.04 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 51.82 C* 52.65 h°* 256.62 –  D50  2°
+ L* 52.66 C* 50.24 h°* 265 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5884 a -0.0791 b -0.1435 C 0.1638 h° 241.14 –  D65 ≈
+OK-Lrab
+Lr 0.522 a -0.079 b -0.143 C 0.164 h° 241.1 –  D65 ≈
+Munsell
+Munsell 2.87PB 5.18/12.5 –  C ≈
+ISCC-NBS
+Name strong blue Numeric 178
+CIECAM02
+J 40.66 C 62.69 Q 192.85 h° 239.4 H 300.88 M 65.16 s 58.13 –  D50 ≈
+CIECAM16
+J 40.92 C 57.48 Q 193.45 h° 246.63 H B96R4 M 59.75 s 55.57 –  D50 ≈
+CIECAM16 UCS
+J′ 54.07 C′ 37.7 h° 246.63 a′ -14.95 b′ -34.61 –  D50 ≈
+OSA-UCS
+L -0.73 j -8.71 g 4.99 –  D65 ≈
+OK-HSL
+H 245.8° S 100.0% L 53.2% –  D65 ≈
+OK-HSV
+H 245.8° S 100.0% V 83.8% –  D65 ≈
+DIN99o
+L₉₉ 56.72 a₉₉ -5.77 b₉₉ -33.08 C₉₉ 33.58 h°₉₉ 260.1 –  D65 ≈
+IPT
+I 0.561 P -0.209 T -0.364 C 0.420 h° 240.1 –  D65 ≈
+IGPGTG
+Ig 0.482 Pg -0.135 Tg -0.203 C 0.244 h° 236.4 –  D65 ≈
+sUCS
+I 49.49 a -20.98 b -31.23 C 37.63 h° 236.1 –  D65 ≈
+Coloroid
+A 52.8 T 61.6 V 45.5 –  D65 ≈
+sRGB Mapped
+ r 0 g 133 b 212 hex #0085d4
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 133 b 212 hex #0085d4
+ Out of sRGB gamut
+P3 RGB
+ r 0.1279 g 0.5112 b 0.8055
+
+1300 Blue
+Derwent Chromaflow Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 47.94 a* -14.11 b* -48.46 –  D50  2°
+ L* 48.75 a* -6.5 b* -47.32 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 47.94 C* 50.47 h°* 253.77 –  D50  2°
+ L* 48.75 C* 47.76 h°* 262.18 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5538 a -0.0836 b -0.1358 C 0.1595 h° 238.37 –  D65 ≈
+OK-Lrab
+Lr 0.483 a -0.084 b -0.136 C 0.159 h° 238.4 –  D65 ≈
+Munsell
+Munsell 2.15PB 4.79/11.81 –  C ≈
+ISCC-NBS
+Name strong blue Numeric 178
+CIECAM02
+J 36.79 C 61.2 Q 183.44 h° 237.26 H 299.7 M 63.62 s 58.89 –  D50 ≈
+CIECAM16
+J 37.03 C 56.09 Q 184.03 h° 243.93 H B97R3 M 58.31 s 56.29 –  D50 ≈
+CIECAM16 UCS
+J′ 49.99 C′ 37.09 h° 243.93 a′ -16.3 b′ -33.31 –  D50 ≈
+OSA-UCS
+L -1.42 j -8.23 g 5.16 –  D65 ≈
+OK-HSL
+H 243.7° S 100.0% L 49.3% –  D65 ≈
+OK-HSV
+H 243.7° S 100.0% V 76.1% –  D65 ≈
+DIN99o
+L₉₉ 52.86 a₉₉ -7.34 b₉₉ -32.02 C₉₉ 32.85 h°₉₉ 257.1 –  D65 ≈
+IPT
+I 0.520 P -0.209 T -0.340 C 0.399 h° 238.4 –  D65 ≈
+IGPGTG
+Ig 0.446 Pg -0.138 Tg -0.188 C 0.233 h° 233.8 –  D65 ≈
+sUCS
+I 45.78 a -21.35 b -29.58 C 36.48 h° 234.2 –  D65 ≈
+Coloroid
+A 52.9 T 62.9 V 41.7 –  D65 ≈
+sRGB Mapped
+ r 0 g 123 b 191 hex #007bbf
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 123 b 196 hex #007bc4
+ Out of sRGB gamut
+P3 RGB
+ r 0.0242 g 0.4751 b 0.7454
+
+098 Primary Blue
+Castle Arts Premium Soft Touch Colored Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 48.63 a* -17.22 b* -53.1 –  D50  2°
+ L* 49.55 a* -8.4 b* -51.78 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 48.63 C* 55.82 h°* 252.03 –  D50  2°
+ L* 49.55 C* 52.46 h°* 260.79 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5594 a -0.1028 b -0.1492 C 0.1812 h° 235.43 –  D65 ≈
+OK-Lrab
+Lr 0.489 a -0.103 b -0.149 C 0.181 h° 235.4 –  D65 ≈
+Munsell
+Munsell 1.83PB 4.87/13.03 –  C ≈
+ISCC-NBS
+Name vivid blue Numeric 176
+CIECAM02
+J 37.23 C 67.09 Q 184.53 h° 235.19 H 297.33 M 69.74 s 61.48 –  D50 ≈
+CIECAM16
+J 37.51 C 61.37 Q 185.22 h° 241.7 H B98R2 M 63.79 s 58.69 –  D50 ≈
+CIECAM16 UCS
+J′ 50.5 C′ 39.38 h° 241.7 a′ -18.67 b′ -34.68 –  D50 ≈
+OSA-UCS
+L -1.21 j -9.03 g 6.22 –  D65 ≈
+OK-HSL
+H 240.7° S 100.0% L 49.9% –  D65 ≈
+OK-HSV
+H 240.7° S 100.0% V 75.0% –  D65 ≈
+DIN99o
+L₉₉ 53.65 a₉₉ -8.59 b₉₉ -33.50 C₉₉ 34.59 h°₉₉ 255.6 –  D65 ≈
+IPT
+I 0.532 P -0.247 T -0.376 C 0.450 h° 236.8 –  D65 ≈
+IGPGTG
+Ig 0.451 Pg -0.170 Tg -0.205 C 0.266 h° 230.3 –  D65 ≈
+sUCS
+I 46.26 a -24.15 b -31.28 C 39.52 h° 232.3 –  D65 ≈
+Coloroid
+A 53.0 T 67.5 V 42.5 –  D65 ≈
+sRGB Mapped
+ r 0 g 127 b 188 hex #007fbc
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 127 b 206 hex #007fce
+ Out of sRGB gamut
+P3 RGB
+ r 0 g 0.4873 b 0.7825  Out of P3 gamut
+
+098 Primary Blue
+Castle Arts Gold Coloured Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 49.99 a* -9.79 b* -54.51 –  D50  2°
+ L* 50.89 a* -1.43 b* -53.24 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 49.99 C* 55.38 h°* 259.82 –  D50  2°
+ L* 50.89 C* 53.26 h°* 268.46 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5741 a -0.0791 b -0.1531 C 0.1723 h° 242.67 –  D65 ≈
+OK-Lrab
+Lr 0.506 a -0.079 b -0.153 C 0.172 h° 242.7 –  D65 ≈
+Munsell
+Munsell 3.54PB 5.0/13.34 –  C ≈
+ISCC-NBS
+Name vivid blue Numeric 176
+CIECAM02
+J 38.86 C 64.82 Q 188.54 h° 240.84 H 301.56 M 67.38 s 59.78 –  D50 ≈
+CIECAM16
+J 39.14 C 59.36 Q 189.22 h° 248.94 H B95R5 M 61.71 s 57.11 –  D50 ≈
+CIECAM16 UCS
+J′ 52.23 C′ 38.52 h° 248.94 a′ -13.84 b′ -35.95 –  D50 ≈
+OSA-UCS
+L -0.97 j -9.32 g 5.06 –  D65 ≈
+OK-HSL
+H 247.7° S 100.0% L 51.6% –  D65 ≈
+OK-HSV
+H 247.7° S 100.0% V 83.0% –  D65 ≈
+DIN99o
+L₉₉ 54.98 a₉₉ -3.68 b₉₉ -34.24 C₉₉ 34.43 h°₉₉ 263.9 –  D65 ≈
+IPT
+I 0.548 P -0.212 T -0.385 C 0.440 h° 241.2 –  D65 ≈
+IGPGTG
+Ig 0.466 Pg -0.139 Tg -0.215 C 0.256 h° 237.2 –  D65 ≈
+sUCS
+I 47.80 a -20.89 b -32.57 C 38.70 h° 237.3 –  D65 ≈
+Coloroid
+A 52.6 T 64.6 V 43.8 –  D65 ≈
+sRGB Mapped
+ r 0 g 127 b 210 hex #007fd2
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 127 b 212 hex #007fd4
+ Out of sRGB gamut
+P3 RGB
+ r 0.0743 g 0.4895 b 0.807
+
+PC103 Cerulean Blue
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 42.28 a* -12.89 b* -48.77 –  D50  2°
+ L* 43.11 a* -5 b* -47.58 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 42.28 C* 50.44 h°* 255.2 –  D50  2°
+ L* 43.11 C* 47.84 h°* 264.01 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5055 a -0.0857 b -0.1371 C 0.1617 h° 238 –  D65 ≈
+OK-Lrab
+Lr 0.427 a -0.086 b -0.137 C 0.162 h° 238.0 –  D65 ≈
+Munsell
+Munsell 2.29PB 4.24/11.78 –  C ≈
+ISCC-NBS
+Name strong blue Numeric 178
+CIECAM02
+J 31.48 C 61.21 Q 169.7 h° 237.29 H 299.73 M 63.63 s 61.23 –  D50 ≈
+CIECAM16
+J 31.73 C 55.97 Q 170.35 h° 244.46 H B97R3 M 58.18 s 58.44 –  D50 ≈
+CIECAM16 UCS
+J′ 44.13 C′ 37.04 h° 244.46 a′ -15.97 b′ -33.42 –  D50 ≈
+OSA-UCS
+L -2.36 j -8.31 g 5.27 –  D65 ≈
+OK-HSL
+H 243.8° S 100.0% L 43.7% –  D65 ≈
+OK-HSV
+H 243.8° S 100.0% V 67.7% –  D65 ≈
+DIN99o
+L₉₉ 47.20 a₉₉ -6.24 b₉₉ -32.18 C₉₉ 32.78 h°₉₉ 259.0 –  D65 ≈
+IPT
+I 0.467 P -0.206 T -0.335 C 0.393 h° 238.4 –  D65 ≈
+IGPGTG
+Ig 0.396 Pg -0.141 Tg -0.184 C 0.231 h° 232.6 –  D65 ≈
+sUCS
+I 40.57 a -21.17 b -29.27 C 36.13 h° 234.1 –  D65 ≈
+Coloroid
+A 52.8 T 67.1 V 36.4 –  D65 ≈
+sRGB Mapped
+ r 0 g 109 b 169 hex #006da9
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 109 b 181 hex #006db5
+ Out of sRGB gamut
+P3 RGB
+ r 0 g 0.4178 b 0.6867  Out of P3 gamut
+
+PC903 True Blue
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 50.25 a* -17.01 b* -49.76 –  D50  2°
+ L* 51.09 a* -9.02 b* -48.56 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 50.25 C* 52.59 h°* 251.13 –  D50  2°
+ L* 51.09 C* 49.39 h°* 259.48 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5729 a -0.0937 b -0.1394 C 0.168 h° 236.09 –  D65 ≈
+OK-Lrab
+Lr 0.505 a -0.094 b -0.139 C 0.168 h° 236.1 –  D65 ≈
+Munsell
+Munsell 1.7PB 5.02/12.31 –  C ≈
+ISCC-NBS
+Name strong blue Numeric 178
+CIECAM02
+J 38.91 C 63.75 Q 188.64 h° 235.43 H 297.6 M 66.26 s 59.27 –  D50 ≈
+CIECAM16
+J 39.16 C 58.44 Q 189.25 h° 241.57 H B98R2 M 60.75 s 56.66 –  D50 ≈
+CIECAM16 UCS
+J′ 52.25 C′ 38.12 h° 241.57 a′ -18.15 b′ -33.53 –  D50 ≈
+OSA-UCS
+L -1.01 j -8.43 g 5.69 –  D65 ≈
+OK-HSL
+H 241.2° S 100.0% L 51.5% –  D65 ≈
+OK-HSV
+H 241.2° S 100.0% V 77.7% –  D65 ≈
+DIN99o
+L₉₉ 55.18 a₉₉ -9.11 b₉₉ -32.33 C₉₉ 33.59 h°₉₉ 254.3 –  D65 ≈
+IPT
+I 0.544 P -0.230 T -0.354 C 0.422 h° 237.0 –  D65 ≈
+IGPGTG
+Ig 0.466 Pg -0.153 Tg -0.194 C 0.247 h° 231.7 –  D65 ≈
+sUCS
+I 47.84 a -23.03 b -30.09 C 37.89 h° 232.6 –  D65 ≈
+Coloroid
+A 53.1 T 63.5 V 44.0 –  D65 ≈
+sRGB Mapped
+ r 0 g 130 b 195 hex #0082c3
+ Out of sRGB gamut
+sRGB Clipped
+ r 0 g 131 b 205 hex #0083cd
+ Out of sRGB gamut
+P3 RGB
+ r 0 g 0.5027 b 0.7785  Out of P3 gamut
+
+PC1103 Caribbean Sea
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 64.76 a* -4.54 b* -32.25 –  D50  2°
+ L* 65.19 a* -0.68 b* -31.7 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 64.76 C* 32.57 h°* 261.99 –  D50  2°
+ L* 65.19 C* 31.71 h°* 268.78 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6992 a -0.0257 b -0.0884 C 0.0921 h° 253.79 –  D65 ≈
+OK-Lrab
+Lr 0.650 a -0.026 b -0.088 C 0.092 h° 253.8 –  D65 ≈
+Munsell
+Munsell 4.51PB 6.43/8.08 –  C ≈
+ISCC-NBS
+Name light blue Numeric 181
+CIECAM02
+J 55.11 C 39.96 Q 224.51 h° 249.08 H 305.55 M 41.54 s 43.01 –  D50 ≈
+CIECAM16
+J 55.23 C 37.07 Q 224.77 h° 256.25 H B91R9 M 38.54 s 41.41 –  D50 ≈
+CIECAM16 UCS
+J′ 67.72 C′ 27.66 h° 256.25 a′ -6.57 b′ -26.86 –  D50 ≈
+OSA-UCS
+L 1.41 j -5.66 g 2.05 –  D65 ≈
+OK-HSL
+H 253.8° S 53.8% L 65.0% –  D65 ≈
+OK-HSV
+H 253.8° S 46.3% V 85.3% –  D65 ≈
+DIN99o
+L₉₉ 68.79 a₉₉ -2.60 b₉₉ -25.62 C₉₉ 25.75 h°₉₉ 264.2 –  D65 ≈
+IPT
+I 0.667 P -0.094 T -0.233 C 0.251 h° 248.0 –  D65 ≈
+IGPGTG
+Ig 0.609 Pg -0.045 Tg -0.137 C 0.144 h° 251.9 –  D65 ≈
+sUCS
+I 62.54 a -10.97 b -23.72 C 26.13 h° 245.2 –  D65 ≈
+Coloroid
+A 52.6 T 34.7 V 58.6 –  D65 ≈
+sRGB
+ r 117 g 161 b 215 hex #75a1d7
+P3 RGB
+ r 0.4968 g 0.6278 b 0.8237
+
+091 Purple Lake
+Castle Arts Gold Coloured Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 44.73 a* 21.87 b* -48.19 –  D50  2°
+ L* 45.32 a* 27.13 b* -47.5 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 44.73 C* 52.92 h°* 294.41 –  D50  2°
+ L* 45.32 C* 54.7 h°* 299.74 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5394 a 0.0364 b -0.1348 C 0.1396 h° 285.1 –  D65 ≈
+OK-Lrab
+Lr 0.466 a 0.036 b -0.135 C 0.140 h° 285.1 –  D65 ≈
+Munsell
+Munsell 9.24PB 4.47/12.41 –  C ≈
+ISCC-NBS
+Name strong violet Numeric 207
+CIECAM02
+J 35.33 C 50.47 Q 179.78 h° 279.32 H 321.65 M 52.46 s 54.02 –  D50 ≈
+CIECAM16
+J 35.5 C 50.63 Q 180.21 h° 292.48 H B71R29 M 52.63 s 54.04 –  D50 ≈
+CIECAM16 UCS
+J′ 48.34 C′ 34.58 h° 292.48 a′ 13.22 b′ -31.95 –  D50 ≈
+OSA-UCS
+L -1.98 j -8.60 g -1.18 –  D65 ≈
+OK-HSL
+H 285.1° S 61.2% L 46.6% –  D65 ≈
+OK-HSV
+H 285.1° S 63.2% V 74.6% –  D65 ≈
+DIN99o
+L₉₉ 49.42 a₉₉ 17.31 b₉₉ -29.39 C₉₉ 34.10 h°₉₉ 300.5 –  D65 ≈
+IPT
+I 0.494 P 0.008 T -0.317 C 0.317 h° 271.4 –  D65 ≈
+IGPGTG
+Ig 0.430 Pg 0.030 Tg -0.197 C 0.199 h° 278.7 –  D65 ≈
+sUCS
+I 44.13 a 1.41 b -30.87 C 30.90 h° 272.6 –  D65 ≈
+Coloroid
+A 50.4 T 50.5 V 38.4 –  D65 ≈
+sRGB
+ r 104 g 95 b 187 hex #685fbb
+P3 RGB
+ r 0.4024 g 0.3747 b 0.7112
+
+036 Lavender
+Castle Arts Gold Coloured Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 40.75 a* 39.93 b* -44.27 –  D50  2°
+ L* 41.13 a* 43.96 b* -43.97 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 40.75 C* 59.62 h°* 312.05 –  D50  2°
+ L* 41.13 C* 62.17 h°* 314.99 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5112 a 0.1021 b -0.1237 C 0.1604 h° 309.54 –  D65 ≈
+OK-Lrab
+Lr 0.434 a 0.102 b -0.124 C 0.160 h° 309.5 –  D65 ≈
+Munsell
+Munsell 3.45P 4.06/13.9 –  C ≈
+ISCC-NBS
+Name vivid purple Numeric 216
+CIECAM02
+J 32.51 C 53.09 Q 172.45 h° 307.77 H 339.28 M 55.18 s 56.57 –  D50 ≈
+CIECAM16
+J 32.61 C 57.72 Q 172.71 h° 317.53 H B54R46 M 60 s 58.94 –  D50 ≈
+CIECAM16 UCS
+J′ 45.14 C′ 37.81 h° 317.53 a′ 27.89 b′ -25.53 –  D50 ≈
+OSA-UCS
+L -2.67 j -8.32 g -5.13 –  D65 ≈
+OK-HSL
+H 309.5° S 67.3% L 43.4% –  D65 ≈
+OK-HSV
+H 309.5° S 73.5% V 68.0% –  D65 ≈
+DIN99o
+L₉₉ 45.18 a₉₉ 27.59 b₉₉ -24.39 C₉₉ 36.82 h°₉₉ 318.5 –  D65 ≈
+IPT
+I 0.454 P 0.148 T -0.276 C 0.313 h° 298.2 –  D65 ≈
+IGPGTG
+Ig 0.403 Pg 0.123 Tg -0.184 C 0.222 h° 303.8 –  D65 ≈
+sUCS
+I 41.20 a 16.96 b -27.08 C 31.95 h° 302.1 –  D65 ≈
+Coloroid
+A 45.8 T 58.1 V 34.6 –  D65 ≈
+sRGB
+ r 130 g 69 b 170 hex #8245aa
+P3 RGB
+ r 0.4773 g 0.2843 b 0.6455
+
+
+0510 Pure Red
+Derwent Chromaflow Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 50.61 a* 68.76 b* 45.63 –  D50  2°
+ L* 49.75 a* 68.02 b* 43.76 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 50.61 C* 82.52 h°* 33.57 –  D50  2°
+ L* 49.75 C* 80.88 h°* 32.75 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5932 a 0.1958 b 0.0948 C 0.2175 h° 25.84 –  D65 ≈
+OK-Lrab
+Lr 0.528 a 0.196 b 0.095 C 0.218 h° 25.8 –  D65 ≈
+Munsell
+Munsell 6.68R 4.89/16.24 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 43.37 C 89.3 Q 199.17 h° 26.54 H 8.11 M 92.82 s 68.27 –  D50 ≈
+CIECAM16
+J 43.26 C 90.88 Q 198.91 h° 23.61 H R96Y4 M 94.47 s 68.92 –  D50 ≈
+CIECAM16 UCS
+J′ 56.44 C′ 50.38 h° 23.61 a′ 46.16 b′ 20.18 –  D50 ≈
+OSA-UCS
+L -0.79 j 5.22 g -13.08 –  D65 ≈
+OK-HSL
+H 25.8° S 94.9% L 52.8% –  D65 ≈
+OK-HSV
+H 25.8° S 92.8% V 89.5% –  D65 ≈
+DIN99o
+L₉₉ 53.85 a₉₉ 38.24 b₉₉ 23.54 C₉₉ 44.91 h°₉₉ 31.6 –  D65 ≈
+IPT
+I 0.444 P 0.523 T 0.303 C 0.604 h° 30.1 –  D65 ≈
+IGPGTG
+Ig 0.508 Pg 0.229 Tg 0.188 C 0.297 h° 39.4 –  D65 ≈
+sUCS
+I 50.94 a 44.83 b 20.61 C 49.34 h° 24.7 –  D65 ≈
+Coloroid
+A 31.2 T 77.1 V 42.7 –  D65 ≈
+sRGB
+ r 227 g 43 b 48 hex #e32b30
+P3 RGB
+ r 0.818 g 0.2435 b 0.2262
+
+023 Vermilion
+Castle Arts Gold Coloured Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 49.87 a* 70.78 b* 45.71 –  D50  2°
+ L* 48.99 a* 70.14 b* 43.75 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 49.87 C* 84.26 h°* 32.85 –  D50  2°
+ L* 48.99 C* 82.67 h°* 31.96 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5875 a 0.2022 b 0.0943 C 0.2231 h° 25.01 –  D65 ≈
+OK-Lrab
+Lr 0.521 a 0.202 b 0.094 C 0.223 h° 25.0 –  D65 ≈
+Munsell
+Munsell 6.51R 4.82/16.65 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 42.7 C 92.38 Q 197.63 h° 25.72 H 7.07 M 96.03 s 69.71 –  D50 ≈
+CIECAM16
+J 42.58 C 94.24 Q 197.35 h° 22.81 H R97Y3 M 97.97 s 70.46 –  D50 ≈
+CIECAM16 UCS
+J′ 55.77 C′ 51.47 h° 22.81 a′ 47.45 b′ 19.95 –  D50 ≈
+OSA-UCS
+L -0.85 j 5.14 g -13.65 –  D65 ≈
+OK-HSL
+H 25.0° S 96.5% L 52.1% –  D65 ≈
+OK-HSV
+H 25.0° S 95.4% V 89.5% –  D65 ≈
+DIN99o
+L₉₉ 53.09 a₉₉ 38.89 b₉₉ 23.32 C₉₉ 45.35 h°₉₉ 30.9 –  D65 ≈
+IPT
+I 0.438 P 0.540 T 0.303 C 0.620 h° 29.3 –  D65 ≈
+IGPGTG
+Ig 0.503 Pg 0.235 Tg 0.190 C 0.303 h° 38.9 –  D65 ≈
+sUCS
+I 50.30 a 45.82 b 20.30 C 50.12 h° 23.9 –  D65 ≈
+Coloroid
+A 31.4 T 77.9 V 41.9 –  D65 ≈
+sRGB
+ r 227 g 33 b 47 hex #e3212f
+P3 RGB
+ r 0.8173 g 0.2208 b 0.2204
+
+022 Scarlet Red
+Castle Arts Premium Soft Touch Colored Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 51.45 a* 69.23 b* 43.51 –  D50  2°
+ L* 50.59 a* 68.52 b* 41.66 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 51.45 C* 81.77 h°* 32.15 –  D50  2°
+ L* 50.59 C* 80.18 h°* 31.3 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6007 a 0.1982 b 0.0917 C 0.2183 h° 24.83 –  D65 ≈
+OK-Lrab
+Lr 0.537 a 0.198 b 0.092 C 0.218 h° 24.8 –  D65 ≈
+Munsell
+Munsell 6.27R 4.98/16.31 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 44.27 C 88.78 Q 201.23 h° 25.38 H 6.62 M 92.28 s 67.72 –  D50 ≈
+CIECAM16
+J 44.15 C 90.61 Q 200.96 h° 22.61 H R97Y3 M 94.18 s 68.46 –  D50 ≈
+CIECAM16 UCS
+J′ 57.34 C′ 50.29 h° 22.61 a′ 46.42 b′ 19.33 –  D50 ≈
+OSA-UCS
+L -0.66 j 4.93 g -13.21 –  D65 ≈
+OK-HSL
+H 24.8° S 94.5% L 53.7% –  D65 ≈
+OK-HSV
+H 24.8° S 92.4% V 90.6% –  D65 ≈
+DIN99o
+L₉₉ 54.68 a₉₉ 38.60 b₉₉ 22.65 C₉₉ 44.75 h°₉₉ 30.4 –  D65 ≈
+IPT
+I 0.454 P 0.529 T 0.293 C 0.605 h° 29.0 –  D65 ≈
+IGPGTG
+Ig 0.517 Pg 0.237 Tg 0.179 C 0.297 h° 37.1 –  D65 ≈
+sUCS
+I 51.78 a 45.31 b 19.80 C 49.45 h° 23.6 –  D65 ≈
+Coloroid
+A 31.3 T 74.6 V 43.5 –  D65 ≈
+sRGB
+ r 230 g 45 b 54 hex #e62d36
+P3 RGB
+ r 0.8292 g 0.2509 b 0.2449
+
+Strawberry
+Derwent Lightfast Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 44.59 a* 45.98 b* 25.66 –  D50  2°
+ L* 44.04 a* 45.14 b* 24.57 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 44.59 C* 52.66 h°* 29.16 –  D50  2°
+ L* 44.04 C* 51.4 h°* 28.56 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5349 a 0.133 b 0.0588 C 0.1454 h° 23.86 –  D65 ≈
+OK-Lrab
+Lr 0.461 a 0.133 b 0.059 C 0.145 h° 23.9 –  D65 ≈
+Munsell
+Munsell 5.85R 4.33/10.23 –  C ≈
+ISCC-NBS
+Name moderate red Numeric 15
+CIECAM02
+J 36.5 C 56.75 Q 182.72 h° 24.06 H 4.95 M 58.99 s 56.82 –  D50 ≈
+CIECAM16
+J 36.43 C 57.89 Q 182.54 h° 21.86 H R98Y2 M 60.17 s 57.41 –  D50 ≈
+CIECAM16 UCS
+J′ 49.35 C′ 37.88 h° 21.86 a′ 35.16 b′ 14.1 –  D50 ≈
+OSA-UCS
+L -2.38 j 3.01 g -8.29 –  D65 ≈
+OK-HSL
+H 23.9° S 72.2% L 46.1% –  D65 ≈
+OK-HSV
+H 23.9° S 74.1% V 71.2% –  D65 ≈
+DIN99o
+L₉₉ 48.13 a₉₉ 32.03 b₉₉ 17.12 C₉₉ 36.31 h°₉₉ 28.1 –  D65 ≈
+IPT
+I 0.409 P 0.328 T 0.174 C 0.371 h° 28.0 –  D65 ≈
+IGPGTG
+Ig 0.443 Pg 0.164 Tg 0.096 C 0.190 h° 30.3 –  D65 ≈
+sUCS
+I 44.65 a 33.92 b 14.13 C 36.75 h° 22.6 –  D65 ≈
+Coloroid
+A 31.0 T 55.4 V 37.2 –  D65 ≈
+sRGB
+ r 178 g 67 b 66 hex #b24342
+P3 RGB
+ r 0.647 g 0.2911 b 0.2744
+
+Scarlet
+Derwent Lightfast Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 47.77 a* 62.5 b* 36.61 –  D50  2°
+ L* 47.01 a* 61.81 b* 34.99 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 47.77 C* 72.43 h°* 30.36 –  D50  2°
+ L* 47.01 C* 71.03 h°* 29.52 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5671 a 0.18 b 0.0792 C 0.1967 h° 23.75 –  D65 ≈
+OK-Lrab
+Lr 0.498 a 0.180 b 0.079 C 0.197 h° 23.8 –  D65 ≈
+Munsell
+Munsell 5.97R 4.62/14.34 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 40.27 C 79.48 Q 191.93 h° 24.1 H 4.99 M 82.62 s 65.61 –  D50 ≈
+CIECAM16
+J 40.17 C 81.31 Q 191.68 h° 21.56 H R98Y2 M 84.53 s 66.41 –  D50 ≈
+CIECAM16 UCS
+J′ 53.3 C′ 47.11 h° 21.56 a′ 43.81 b′ 17.31 –  D50 ≈
+OSA-UCS
+L -1.44 j 4.13 g -11.84 –  D65 ≈
+OK-HSL
+H 23.8° S 90.3% L 49.8% –  D65 ≈
+OK-HSV
+H 23.8° S 89.4% V 82.9% –  D65 ≈
+DIN99o
+L₉₉ 51.12 a₉₉ 37.11 b₉₉ 20.50 C₉₉ 42.40 h°₉₉ 28.9 –  D65 ≈
+IPT
+I 0.427 P 0.468 T 0.246 C 0.529 h° 27.8 –  D65 ≈
+IGPGTG
+Ig 0.479 Pg 0.217 Tg 0.145 C 0.261 h° 33.8 –  D65 ≈
+sUCS
+I 48.10 a 42.33 b 17.50 C 45.80 h° 22.5 –  D65 ≈
+Coloroid
+A 31.4 T 69.5 V 40.0 –  D65 ≈
+sRGB
+ r 209 g 48 b 57 hex #d13039
+P3 RGB
+ r 0.7557 g 0.2479 b 0.2476
+
+PC122 Permanent Red
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 53.59 a* 63.68 b* 36.46 –  D50  2°
+ L* 52.82 a* 62.85 b* 34.86 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 53.59 C* 73.38 h°* 29.79 –  D50  2°
+ L* 52.82 C* 71.87 h°* 29.01 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6176 a 0.1837 b 0.0805 C 0.2006 h° 23.65 –  D65 ≈
+OK-Lrab
+Lr 0.556 a 0.184 b 0.080 C 0.201 h° 23.7 –  D65 ≈
+Munsell
+Munsell 5.68R 5.19/14.79 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 46.29 C 78.58 Q 205.77 h° 23.94 H 4.79 M 81.68 s 63 –  D50 ≈
+CIECAM16
+J 46.18 C 80.35 Q 205.53 h° 21.52 H R98Y2 M 83.53 s 63.75 –  D50 ≈
+CIECAM16 UCS
+J′ 59.33 C′ 46.76 h° 21.52 a′ 43.5 b′ 17.16 –  D50 ≈
+OSA-UCS
+L -0.52 j 4.16 g -11.89 –  D65 ≈
+OK-HSL
+H 23.7° S 88.6% L 55.6% –  D65 ≈
+OK-HSV
+H 23.7° S 85.1% V 90.4% –  D65 ≈
+DIN99o
+L₉₉ 56.88 a₉₉ 37.46 b₉₉ 20.34 C₉₉ 42.63 h°₉₉ 28.5 –  D65 ≈
+IPT
+I 0.482 P 0.484 T 0.254 C 0.546 h° 27.7 –  D65 ≈
+IGPGTG
+Ig 0.534 Pg 0.230 Tg 0.146 C 0.272 h° 32.4 –  D65 ≈
+sUCS
+I 53.71 a 43.21 b 17.77 C 46.72 h° 22.3 –  D65 ≈
+Coloroid
+A 31.3 T 65.2 V 45.7 –  D65 ≈
+sRGB
+ r 229 g 65 b 70 hex #e54146
+P3 RGB
+ r 0.829 g 0.3074 b 0.3003
+
+Derwent Red
+Derwent Lightfast Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 45.01 a* 61.59 b* 35.86 –  D50  2°
+ L* 44.26 a* 60.97 b* 34.25 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 45.01 C* 71.27 h°* 30.21 –  D50  2°
+ L* 44.26 C* 69.94 h°* 29.32 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5432 a 0.1775 b 0.0771 C 0.1935 h° 23.47 –  D65 ≈
+OK-Lrab
+Lr 0.471 a 0.178 b 0.077 C 0.194 h° 23.5 –  D65 ≈
+Munsell
+Munsell 5.97R 4.36/14.09 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 37.52 C 79.29 Q 185.25 h° 23.83 H 4.65 M 82.42 s 66.7 –  D50 ≈
+CIECAM16
+J 37.42 C 81.19 Q 185 h° 21.28 H R99Y1 M 84.4 s 67.54 –  D50 ≈
+CIECAM16 UCS
+J′ 50.41 C′ 47.06 h° 21.28 a′ 43.85 b′ 17.08 –  D50 ≈
+OSA-UCS
+L -1.89 j 4.01 g -11.76 –  D65 ≈
+OK-HSL
+H 23.5° S 91.4% L 47.1% –  D65 ≈
+OK-HSV
+H 23.5° S 91.2% V 79.1% –  D65 ≈
+DIN99o
+L₉₉ 48.35 a₉₉ 36.91 b₉₉ 20.26 C₉₉ 42.10 h°₉₉ 28.8 –  D65 ≈
+IPT
+I 0.403 P 0.457 T 0.238 C 0.515 h° 27.5 –  D65 ≈
+IGPGTG
+Ig 0.454 Pg 0.211 Tg 0.142 C 0.254 h° 33.9 –  D65 ≈
+sUCS
+I 45.48 a 41.80 b 17.05 C 45.14 h° 22.2 –  D65 ≈
+Coloroid
+A 31.5 T 70.7 V 37.4 –  D65 ≈
+sRGB
+ r 200 g 41 b 52 hex #c82934
+P3 RGB
+ r 0.7196 g 0.2213 b 0.2275
+
+PC923 Scarlet Lake
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 46.95 a* 66.44 b* 39.05 –  D50  2°
+ L* 46.14 a* 65.87 b* 37.27 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 46.95 C* 77.07 h°* 30.44 –  D50  2°
+ L* 46.14 C* 75.68 h°* 29.5 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5613 a 0.1914 b 0.0827 C 0.2086 h° 23.38 –  D65 ≈
+OK-Lrab
+Lr 0.491 a 0.191 b 0.083 C 0.209 h° 23.4 –  D65 ≈
+Munsell
+Munsell 5.98R 4.54/15.29 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 39.61 C 85.85 Q 190.35 h° 23.82 H 4.64 M 89.23 s 68.47 –  D50 ≈
+CIECAM16
+J 39.5 C 87.96 Q 190.08 h° 21.19 H R99Y1 M 91.43 s 69.36 –  D50 ≈
+CIECAM16 UCS
+J′ 52.61 C′ 49.41 h° 21.19 a′ 46.07 b′ 17.86 –  D50 ≈
+OSA-UCS
+L -1.45 j 4.32 g -12.84 –  D65 ≈
+OK-HSL
+H 23.4° S 94.6% L 49.1% –  D65 ≈
+OK-HSV
+H 23.4° S 94.1% V 83.7% –  D65 ≈
+DIN99o
+L₉₉ 50.25 a₉₉ 38.20 b₉₉ 21.09 C₉₉ 43.63 h°₉₉ 28.9 –  D65 ≈
+IPT
+I 0.417 P 0.501 T 0.260 C 0.565 h° 27.4 –  D65 ≈
+IGPGTG
+Ig 0.474 Pg 0.227 Tg 0.158 C 0.276 h° 34.8 –  D65 ≈
+sUCS
+I 47.43 a 44.14 b 17.95 C 47.65 h° 22.1 –  D65 ≈
+Coloroid
+A 31.6 T 73.2 V 39.2 –  D65 ≈
+sRGB
+ r 212 g 35 b 51 hex #d42333
+P3 RGB
+ r 0.7628 g 0.214 b 0.2289
+
+023 Vermilion
+Castle Arts Premium Soft Touch Colored Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 50.23 a* 67.81 b* 39.32 –  D50  2°
+ L* 49.4 a* 67.17 b* 37.54 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 50.23 C* 78.39 h°* 30.11 –  D50  2°
+ L* 49.4 C* 76.95 h°* 29.2 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5899 a 0.1956 b 0.0842 C 0.2129 h° 23.31 –  D65 ≈
+OK-Lrab
+Lr 0.524 a 0.196 b 0.084 C 0.213 h° 23.3 –  D65 ≈
+Munsell
+Munsell 5.78R 4.86/15.72 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 42.98 C 86.14 Q 198.27 h° 23.7 H 4.49 M 89.54 s 67.2 –  D50 ≈
+CIECAM16
+J 42.86 C 88.26 Q 198 h° 21.14 H R99Y1 M 91.74 s 68.07 –  D50 ≈
+CIECAM16 UCS
+J′ 56.05 C′ 49.51 h° 21.14 a′ 46.17 b′ 17.85 –  D50 ≈
+OSA-UCS
+L -0.91 j 4.37 g -13.01 –  D65 ≈
+OK-HSL
+H 23.3° S 93.4% L 52.4% –  D65 ≈
+OK-HSV
+H 23.3° S 92.1% V 88.3% –  D65 ≈
+DIN99o
+L₉₉ 53.51 a₉₉ 38.57 b₉₉ 21.08 C₉₉ 43.96 h°₉₉ 28.7 –  D65 ≈
+IPT
+I 0.447 P 0.517 T 0.267 C 0.582 h° 27.3 –  D65 ≈
+IGPGTG
+Ig 0.504 Pg 0.237 Tg 0.159 C 0.286 h° 33.9 –  D65 ≈
+sUCS
+I 50.59 a 44.94 b 18.19 C 48.48 h° 22.0 –  D65 ≈
+Coloroid
+A 31.5 T 71.2 V 42.3 –  D65 ≈
+sRGB
+ r 224 g 44 b 58 hex #e02c3a
+P3 RGB
+ r 0.8073 g 0.2453 b 0.2562
+
+223 Deep Red
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 46.48 a* 63.18 b* 33.56 –  D50  2°
+ L* 45.72 a* 62.62 b* 31.94 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 46.48 C* 71.54 h°* 27.98 –  D50  2°
+ L* 45.72 C* 70.3 h°* 27.02 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5565 a 0.1836 b 0.0732 C 0.1976 h° 21.73 –  D65 ≈
+OK-Lrab
+Lr 0.486 a 0.184 b 0.073 C 0.198 h° 21.7 –  D65 ≈
+Munsell
+Munsell 5.28R 4.5/14.32 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 39.04 C 79.99 Q 188.96 h° 22.03 H 2.37 M 83.15 s 66.34 –  D50 ≈
+CIECAM16
+J 38.93 C 82.25 Q 188.71 h° 19.67 H R100Y0 M 85.5 s 67.31 –  D50 ≈
+CIECAM16 UCS
+J′ 52.01 C′ 47.44 h° 19.67 a′ 44.67 b′ 15.97 –  D50 ≈
+OSA-UCS
+L -1.64 j 3.64 g -12.14 –  D65 ≈
+OK-HSL
+H 21.7° S 90.9% L 48.6% –  D65 ≈
+OK-HSV
+H 21.7° S 91.2% V 81.5% –  D65 ≈
+DIN99o
+L₉₉ 49.83 a₉₉ 37.66 b₉₉ 19.06 C₉₉ 42.21 h°₉₉ 26.8 –  D65 ≈
+IPT
+I 0.418 P 0.473 T 0.228 C 0.525 h° 25.7 –  D65 ≈
+IGPGTG
+Ig 0.468 Pg 0.223 Tg 0.132 C 0.259 h° 30.7 –  D65 ≈
+sUCS
+I 46.93 a 42.89 b 16.02 C 45.79 h° 20.5 –  D65 ≈
+Coloroid
+A 31.7 T 67.1 V 38.8 –  D65 ≈
+sRGB
+ r 206 g 42 b 59 hex #ce2a3b
+P3 RGB
+ r 0.742 g 0.2292 b 0.2529
+
+219 Deep Scarlet Red
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 47.15 a* 63.74 b* 33.67 –  D50  2°
+ L* 46.39 a* 63.18 b* 32.03 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 47.15 C* 72.09 h°* 27.84 –  D50  2°
+ L* 46.39 C* 70.84 h°* 26.89 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5624 a 0.1853 b 0.0735 C 0.1993 h° 21.64 –  D65 ≈
+OK-Lrab
+Lr 0.493 a 0.185 b 0.074 C 0.199 h° 21.6 –  D65 ≈
+Munsell
+Munsell 5.23R 4.56/14.46 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 39.72 C 80.46 Q 190.62 h° 21.93 H 2.25 M 83.64 s 66.24 –  D50 ≈
+CIECAM16
+J 39.62 C 82.75 Q 190.36 h° 19.59 H B1R99 M 86.02 s 67.22 –  D50 ≈
+CIECAM16 UCS
+J′ 52.73 C′ 47.61 h° 19.59 a′ 44.86 b′ 15.96 –  D50 ≈
+OSA-UCS
+L -1.52 j 3.65 g -12.25 –  D65 ≈
+OK-HSL
+H 21.6° S 90.9% L 49.3% –  D65 ≈
+OK-HSV
+H 21.6° S 91.1% V 82.6% –  D65 ≈
+DIN99o
+L₉₉ 50.50 a₉₉ 37.83 b₉₉ 19.06 C₉₉ 42.36 h°₉₉ 26.7 –  D65 ≈
+IPT
+I 0.424 P 0.479 T 0.229 C 0.531 h° 25.6 –  D65 ≈
+IGPGTG
+Ig 0.474 Pg 0.226 Tg 0.133 C 0.262 h° 30.5 –  D65 ≈
+sUCS
+I 47.58 a 43.20 b 16.06 C 46.09 h° 20.4 –  D65 ≈
+Coloroid
+A 31.7 T 66.8 V 39.4 –  D65 ≈
+sRGB
+ r 208 g 43 b 60 hex #d02b3c
+P3 RGB
+ r 0.7522 g 0.2338 b 0.2583
+
+024 Cadmium Red
+Castle Arts Premium Soft Touch Colored Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 49.89 a* 68.35 b* 35.64 –  D50  2°
+ L* 49.08 a* 67.82 b* 33.87 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 49.89 C* 77.08 h°* 27.54 –  D50  2°
+ L* 49.08 C* 75.8 h°* 26.54 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5874 a 0.199 b 0.0774 C 0.2135 h° 21.27 –  D65 ≈
+OK-Lrab
+Lr 0.521 a 0.199 b 0.077 C 0.213 h° 21.3 –  D65 ≈
+Munsell
+Munsell 5.05R 4.83/15.67 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 42.67 C 85.87 Q 197.57 h° 21.58 H 1.8 M 89.26 s 67.22 –  D50 ≈
+CIECAM16
+J 42.56 C 88.42 Q 197.3 h° 19.23 H B1R99 M 91.91 s 68.25 –  D50 ≈
+CIECAM16 UCS
+J′ 55.74 C′ 49.56 h° 19.23 a′ 46.79 b′ 16.33 –  D50 ≈
+OSA-UCS
+L -0.98 j 3.81 g -13.25 –  D65 ≈
+OK-HSL
+H 21.3° S 93.4% L 52.1% –  D65 ≈
+OK-HSV
+H 21.3° S 92.8% V 88.0% –  D65 ≈
+DIN99o
+L₉₉ 53.18 a₉₉ 39.10 b₉₉ 19.45 C₉₉ 43.68 h°₉₉ 26.4 –  D65 ≈
+IPT
+I 0.448 P 0.523 T 0.246 C 0.578 h° 25.2 –  D65 ≈
+IGPGTG
+Ig 0.502 Pg 0.245 Tg 0.143 C 0.284 h° 30.3 –  D65 ≈
+sUCS
+I 50.31 a 45.51 b 16.59 C 48.44 h° 20.0 –  D65 ≈
+Coloroid
+A 31.8 T 67.6 V 42.0 –  D65 ≈
+sRGB
+ r 223 g 41 b 64 hex #df2940
+P3 RGB
+ r 0.8039 g 0.238 b 0.2732
+
+217 Middle Cadmium Red
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 40.77 a* 50.68 b* 22.65 –  D50  2°
+ L* 40.19 a* 50.16 b* 21.44 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 40.77 C* 55.51 h°* 24.08 –  D50  2°
+ L* 40.19 C* 54.55 h°* 23.14 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5039 a 0.149 b 0.0516 C 0.1577 h° 19.08 –  D65 ≈
+OK-Lrab
+Lr 0.426 a 0.149 b 0.052 C 0.158 h° 19.1 –  D65 ≈
+Munsell
+Munsell 4.38R 3.96/11.26 –  C ≈
+ISCC-NBS
+Name strong red Numeric 12
+CIECAM02
+J 33.11 C 62.85 Q 174.01 h° 19.42 H 399.24 M 65.34 s 61.27 –  D50 ≈
+CIECAM16
+J 33.03 C 64.89 Q 173.81 h° 17.44 H B3R97 M 67.45 s 62.3 –  D50 ≈
+CIECAM16 UCS
+J′ 45.61 C′ 40.85 h° 17.44 a′ 38.97 b′ 12.24 –  D50 ≈
+OSA-UCS
+L -2.88 j 2.37 g -9.53 –  D65 ≈
+OK-HSL
+H 19.1° S 79.0% L 42.6% –  D65 ≈
+OK-HSV
+H 19.1° S 83.1% V 68.6% –  D65 ≈
+DIN99o
+L₉₉ 44.22 a₉₉ 34.27 b₉₉ 14.99 C₉₉ 37.41 h°₉₉ 23.6 –  D65 ≈
+IPT
+I 0.377 P 0.362 T 0.155 C 0.394 h° 23.1 –  D65 ≈
+IGPGTG
+Ig 0.411 Pg 0.182 Tg 0.084 C 0.200 h° 24.6 –  D65 ≈
+sUCS
+I 41.31 a 36.60 b 11.97 C 38.51 h° 18.1 –  D65 ≈
+Coloroid
+A 31.9 T 55.0 V 33.7 –  D65 ≈
+sRGB
+ r 172 g 50 b 63 hex #ac323f
+P3 RGB
+ r 0.6217 g 0.2324 b 0.2579
+
+126 Permanent Carmine
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 46.37 a* 62.81 b* 28.87 –  D50  2°
+ L* 45.64 a* 62.36 b* 27.3 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 46.37 C* 69.13 h°* 24.69 –  D50  2°
+ L* 45.64 C* 68.07 h°* 23.64 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5558 a 0.1845 b 0.0641 C 0.1954 h° 19.17 –  D65 ≈
+OK-Lrab
+Lr 0.485 a 0.185 b 0.064 C 0.195 h° 19.2 –  D65 ≈
+Munsell
+Munsell 4.4R 4.49/14.08 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 38.94 C 78.18 Q 188.72 h° 19.46 H 399.29 M 81.27 s 65.62 –  D50 ≈
+CIECAM16
+J 38.83 C 80.83 Q 188.47 h° 17.37 H B3R97 M 84.02 s 66.77 –  D50 ≈
+CIECAM16 UCS
+J′ 51.91 C′ 46.93 h° 17.37 a′ 44.79 b′ 14.01 –  D50 ≈
+OSA-UCS
+L -1.70 j 2.95 g -12.15 –  D65 ≈
+OK-HSL
+H 19.2° S 89.2% L 48.5% –  D65 ≈
+OK-HSV
+H 19.2° S 90.7% V 81.0% –  D65 ≈
+DIN99o
+L₉₉ 49.75 a₉₉ 37.98 b₉₉ 16.94 C₉₉ 41.58 h°₉₉ 24.0 –  D65 ≈
+IPT
+I 0.422 P 0.471 T 0.201 C 0.512 h° 23.1 –  D65 ≈
+IGPGTG
+Ig 0.467 Pg 0.229 Tg 0.112 C 0.255 h° 26.1 –  D65 ≈
+sUCS
+I 46.85 a 43.04 b 14.03 C 45.27 h° 18.1 –  D65 ≈
+Coloroid
+A 32.1 T 62.6 V 38.7 –  D65 ≈
+sRGB
+ r 204 g 43 b 66 hex #cc2b42
+P3 RGB
+ r 0.7371 g 0.2305 b 0.277
+
+080 Grenadine
+Castle Arts Gold Coloured Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 53.75 a* 68.22 b* 28.65 –  D50  2°
+ L* 52.98 a* 67.74 b* 26.99 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 53.75 C* 73.99 h°* 22.78 –  D50  2°
+ L* 52.98 C* 72.92 h°* 21.72 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6211 a 0.2016 b 0.0645 C 0.2117 h° 17.75 –  D65 ≈
+OK-Lrab
+Lr 0.560 a 0.202 b 0.065 C 0.212 h° 17.7 –  D65 ≈
+Munsell
+Munsell 3.73R 5.21/15.56 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 46.71 C 82.05 Q 206.7 h° 18.12 H 397.89 M 85.29 s 64.23 –  D50 ≈
+CIECAM16
+J 46.59 C 85.04 Q 206.44 h° 16.18 H B4R96 M 88.4 s 65.44 –  D50 ≈
+CIECAM16 UCS
+J′ 59.73 C′ 48.41 h° 16.18 a′ 46.49 b′ 13.49 –  D50 ≈
+OSA-UCS
+L -0.44 j 2.83 g -13.14 –  D65 ≈
+OK-HSL
+H 17.7° S 90.1% L 56.0% –  D65 ≈
+OK-HSV
+H 17.7° S 88.7% V 92.2% –  D65 ≈
+DIN99o
+L₉₉ 57.03 a₉₉ 39.65 b₉₉ 16.38 C₉₉ 42.90 h°₉₉ 22.4 –  D65 ≈
+IPT
+I 0.491 P 0.526 T 0.209 C 0.566 h° 21.7 –  D65 ≈
+IGPGTG
+Ig 0.537 Pg 0.261 Tg 0.113 C 0.284 h° 23.5 –  D65 ≈
+sUCS
+I 54.08 a 46.06 b 13.90 C 48.11 h° 16.8 –  D65 ≈
+Coloroid
+A 32.2 T 60.6 V 45.9 –  D65 ≈
+sRGB
+ r 234 g 57 b 84 hex #ea3954
+P3 RGB
+ r 0.8456 g 0.2855 b 0.3466
+
+226 Alizarin Crimson
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 44.42 a* 62.13 b* 24.41 –  D50  2°
+ L* 43.72 a* 61.83 b* 22.89 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 44.42 C* 66.75 h°* 21.45 –  D50  2°
+ L* 43.72 C* 65.93 h°* 20.31 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5391 a 0.1844 b 0.0548 C 0.1924 h° 16.54 –  D65 ≈
+OK-Lrab
+Lr 0.466 a 0.184 b 0.055 C 0.192 h° 16.5 –  D65 ≈
+Munsell
+Munsell 3.61R 4.31/13.81 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 37.03 C 76.92 Q 184.04 h° 16.91 H 396.64 M 79.96 s 65.91 –  D50 ≈
+CIECAM16
+J 36.93 C 79.97 Q 183.79 h° 15.06 H B5R95 M 83.12 s 67.25 –  D50 ≈
+CIECAM16 UCS
+J′ 49.88 C′ 46.63 h° 15.06 a′ 45.02 b′ 12.11 –  D50 ≈
+OSA-UCS
+L -2.04 j 2.27 g -12.16 –  D65 ≈
+OK-HSL
+H 16.5° S 89.0% L 46.6% –  D65 ≈
+OK-HSV
+H 16.5° S 91.9% V 78.1% –  D65 ≈
+DIN99o
+L₉₉ 47.81 a₉₉ 38.16 b₉₉ 14.86 C₉₉ 40.95 h°₉₉ 21.3 –  D65 ≈
+IPT
+I 0.409 P 0.463 T 0.173 C 0.495 h° 20.4 –  D65 ≈
+IGPGTG
+Ig 0.449 Pg 0.230 Tg 0.093 C 0.248 h° 22.1 –  D65 ≈
+sUCS
+I 45.04 a 42.87 b 11.99 C 44.51 h° 15.6 –  D65 ≈
+Coloroid
+A 32.4 T 64.5 V 36.9 –  D65 ≈
+sRGB
+ r 197 g 38 b 69 hex #c52645
+P3 RGB
+ r 0.7095 g 0.212 b 0.2836
+
+142 Madder
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 41.22 a* 50 b* 17.17 –  D50  2°
+ L* 40.68 a* 49.63 b* 16.03 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 41.22 C* 52.87 h°* 18.95 –  D50  2°
+ L* 40.68 C* 52.16 h°* 17.89 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5081 a 0.1492 b 0.0397 C 0.1544 h° 14.91 –  D65 ≈
+OK-Lrab
+Lr 0.430 a 0.149 b 0.040 C 0.154 h° 14.9 –  D65 ≈
+Munsell
+Munsell 2.98R 4.01/11.03 –  C ≈
+ISCC-NBS
+Name strong red Numeric 12
+CIECAM02
+J 33.52 C 60.47 Q 175.09 h° 15.54 H 395.24 M 62.86 s 59.92 –  D50 ≈
+CIECAM16
+J 33.44 C 62.93 Q 174.9 h° 13.91 H B6R94 M 65.42 s 61.16 –  D50 ≈
+CIECAM16 UCS
+J′ 46.07 C′ 40.04 h° 13.91 a′ 38.87 b′ 9.62 –  D50 ≈
+OSA-UCS
+L -2.85 j 1.55 g -9.42 –  D65 ≈
+OK-HSL
+H 14.9° S 75.4% L 43.0% –  D65 ≈
+OK-HSV
+H 14.9° S 81.3% V 68.5% –  D65 ≈
+DIN99o
+L₉₉ 44.72 a₉₉ 34.49 b₉₉ 12.05 C₉₉ 36.53 h°₉₉ 19.3 –  D65 ≈
+IPT
+I 0.387 P 0.356 T 0.123 C 0.377 h° 19.1 –  D65 ≈
+IGPGTG
+Ig 0.414 Pg 0.186 Tg 0.062 C 0.196 h° 18.3 –  D65 ≈
+sUCS
+I 41.74 a 36.48 b 9.37 C 37.66 h° 14.4 –  D65 ≈
+Coloroid
+A 32.5 T 53.6 V 34.2 –  D65 ≈
+sRGB
+ r 171 g 52 b 72 hex #ab3448
+P3 RGB
+ r 0.6205 g 0.2406 b 0.2915
+
+032 Cherry Pink
+Castle Arts Gold Coloured Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 44.19 a* 71.11 b* 26.73 –  D50  2°
+ L* 43.39 a* 71.06 b* 24.91 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 44.19 C* 75.97 h°* 20.6 –  D50  2°
+ L* 43.39 C* 75.3 h°* 19.32 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5401 a 0.2121 b 0.0586 C 0.2201 h° 15.44 –  D65 ≈
+OK-Lrab
+Lr 0.467 a 0.212 b 0.059 C 0.220 h° 15.4 –  D65 ≈
+Munsell
+Munsell 3.46R 4.28/15.98 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 37.17 C 90.1 Q 184.4 h° 15.75 H 395.45 M 93.65 s 71.27 –  D50 ≈
+CIECAM16
+J 37.05 C 94.05 Q 184.09 h° 13.91 H B6R94 M 97.77 s 72.88 –  D50 ≈
+CIECAM16 UCS
+J′ 50.01 C′ 51.41 h° 13.91 a′ 49.9 b′ 12.36 –  D50 ≈
+OSA-UCS
+L -1.85 j 2.21 g -14.58 –  D65 ≈
+OK-HSL
+H 15.9° S 100.0% L 47.0% –  D65 ≈
+OK-HSV
+H 15.9° S 100.0% V 81.9% –  D65 ≈
+DIN99o
+L₉₉ 47.47 a₉₉ 40.76 b₉₉ 15.20 C₉₉ 43.51 h°₉₉ 20.4 –  D65 ≈
+IPT
+I 0.404 P 0.545 T 0.189 C 0.577 h° 19.1 –  D65 ≈
+IGPGTG
+Ig 0.451 Pg 0.262 Tg 0.105 C 0.282 h° 21.8 –  D65 ≈
+sUCS
+I 45.09 a 47.29 b 12.16 C 48.83 h° 14.4 –  D65 ≈
+Coloroid
+A 32.7 T 75.8 V 36.6 –  D65 ≈
+sRGB Mapped
+ r 207 g 0 b 66 hex #cf0042
+ Out of sRGB gamut
+sRGB Clipped
+ r 207 g 0 b 66 hex #cf0042
+ Out of sRGB gamut
+P3 RGB
+ r 0.7437 g 0.1401 b 0.2715
+
+032 Cherry Pink
+Castle Arts Premium Soft Touch Colored Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 51.83 a* 68.51 b* 21.08 –  D50  2°
+ L* 51.1 a* 68.32 b* 19.47 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 51.83 C* 71.68 h°* 17.1 –  D50  2°
+ L* 51.1 C* 71.04 h°* 15.91 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.6054 a 0.2058 b 0.048 C 0.2113 h° 13.12 –  D65 ≈
+OK-Lrab
+Lr 0.542 a 0.206 b 0.048 C 0.211 h° 13.1 –  D65 ≈
+Munsell
+Munsell 2.1R 5.03/15.61 –  C ≈
+ISCC-NBS
+Name vivid red Numeric 11
+CIECAM02
+J 44.75 C 81.35 Q 202.33 h° 13.75 H 393.43 M 84.57 s 64.65 –  D50 ≈
+CIECAM16
+J 44.64 C 85.1 Q 202.06 h° 12.21 H B8R92 M 88.46 s 66.17 –  D50 ≈
+CIECAM16 UCS
+J′ 57.82 C′ 48.43 h° 12.21 a′ 47.34 b′ 10.24 –  D50 ≈
+OSA-UCS
+L -0.77 j 1.61 g -13.41 –  D65 ≈
+OK-HSL
+H 13.1° S 89.3% L 54.2% –  D65 ≈
+OK-HSV
+H 13.1° S 90.4% V 89.6% –  D65 ≈
+DIN99o
+L₉₉ 55.19 a₉₉ 40.34 b₉₉ 12.80 C₉₉ 42.32 h°₉₉ 17.6 –  D65 ≈
+IPT
+I 0.482 P 0.526 T 0.162 C 0.550 h° 17.1 –  D65 ≈
+IGPGTG
+Ig 0.520 Pg 0.270 Tg 0.080 C 0.282 h° 16.6 –  D65 ≈
+sUCS
+I 52.29 a 46.46 b 10.39 C 47.61 h° 12.6 –  D65 ≈
+Coloroid
+A 32.9 T 63.6 V 44.0 –  D65 ≈
+sRGB
+ r 227 g 49 b 92 hex #e3315c
+P3 RGB
+ r 0.8196 g 0.2619 b 0.3715
+
+0900 Autumn Red
+Derwent Drawing Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 45.89 a* 38.81 b* 16.78 –  D50  2°
+ L* 45.46 a* 38.11 b* 15.92 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 45.89 C* 42.28 h°* 23.38 –  D50  2°
+ L* 45.46 C* 41.3 h°* 22.68 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.5445 a 0.1143 b 0.04 C 0.1211 h° 19.27 –  D65 ≈
+OK-Lrab
+Lr 0.472 a 0.114 b 0.040 C 0.121 h° 19.3 –  D65 ≈
+Munsell
+Munsell 4.11R 4.47/8.36 –  C ≈
+ISCC-NBS
+Name moderate red Numeric 15
+CIECAM02
+J 37.48 C 45.76 Q 185.17 h° 19.87 H 399.71 M 47.56 s 50.68 –  D50 ≈
+CIECAM16
+J 37.43 C 47.04 Q 185.02 h° 18.06 H B2R98 M 48.9 s 51.41 –  D50 ≈
+CIECAM16 UCS
+J′ 50.42 C′ 32.85 h° 18.06 a′ 31.23 b′ 10.19 –  D50 ≈
+OSA-UCS
+L -2.33 j 1.85 g -6.85 –  D65 ≈
+OK-HSL
+H 19.3° S 59.0% L 47.2% –  D65 ≈
+OK-HSV
+H 19.3° S 63.2% V 68.7% –  D65 ≈
+DIN99o
+L₉₉ 49.56 a₉₉ 29.78 b₉₉ 12.79 C₉₉ 32.41 h°₉₉ 23.2 –  D65 ≈
+IPT
+I 0.429 P 0.272 T 0.120 C 0.297 h° 23.8 –  D65 ≈
+IGPGTG
+Ig 0.451 Pg 0.146 Tg 0.060 C 0.158 h° 22.4 –  D65 ≈
+sUCS
+I 45.68 a 30.21 b 10.22 C 31.90 h° 18.7 –  D65 ≈
+Coloroid
+A 31.5 T 39.7 V 38.6 –  D65 ≈
+sRGB
+ r 171 g 79 b 83 hex #ab4f53
+P3 RGB
+ r 0.6254 g 0.3301 b 0.3342
+
+001 Lemon Yellow Light
+Castle Arts Premium Soft Touch Colored Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 93.51 a* -8.62 b* 47.34 –  D50  2°
+ L* 93.2 a* -12.24 b* 47.38 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 93.51 C* 48.12 h°* 100.32 –  D50  2°
+ L* 93.2 C* 48.94 h°* 104.49 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.9371 a -0.0341 b 0.1147 C 0.1196 h° 106.56 –  D65 ≈
+OK-Lrab
+Lr 0.927 a -0.034 b 0.115 C 0.120 h° 106.6 –  D65 ≈
+Munsell
+Munsell 0.16GY 9.3/8.87 –  C ≈
+ISCC-NBS
+Name brilliant greenish yellow Numeric 98
+CIECAM02
+J 90.64 C 38.81 Q 287.94 h° 101.12 H 120.1 M 40.34 s 37.43 –  D50 ≈
+CIECAM16
+J 90.56 C 37.93 Q 287.8 h° 107.77 H Y69G31 M 39.43 s 37.01 –  D50 ≈
+CIECAM16 UCS
+J′ 94.22 C′ 28.13 h° 107.77 a′ -8.58 b′ 26.79 –  D50 ≈
+OSA-UCS
+L 5.47 j 7.40 g 1.87 –  D65 ≈
+OK-HSL
+H 106.6° S 87.6% L 92.7% –  D65 ≈
+OK-HSV
+H 106.6° S 41.7% V 96.0% –  D65 ≈
+DIN99o
+L₉₉ 94.15 a₉₉ -6.83 b₉₉ 31.56 C₉₉ 32.29 h°₉₉ 102.2 –  D65 ≈
+IPT
+I 0.867 P -0.032 T 0.339 C 0.341 h° 95.4 –  D65 ≈
+IGPGTG
+Ig 0.903 Pg -0.058 Tg 0.205 C 0.214 h° 105.9 –  D65 ≈
+sUCS
+I 92.31 a -4.11 b 32.34 C 32.60 h° 97.2 –  D65 ≈
+Coloroid
+A 10.2 T 45.6 V 91.3 –  D65 ≈
+sRGB
+ r 244 g 240 b 143 hex Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 93.51 a* -8.62 b* 47.34 –  D50  2°
+ L* 93.2 a* -12.24 b* 47.38 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 93.51 C* 48.12 h°* 100.32 –  D50  2°
+ L* 93.2 C* 48.94 h°* 104.49 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.9371 a -0.0341 b 0.1147 C 0.1196 h° 106.56 –  D65 ≈
+OK-Lrab
+Lr 0.927 a -0.034 b 0.115 C 0.120 h° 106.6 –  D65 ≈
+Munsell
+Munsell 0.16GY 9.3/8.87 –  C ≈
+ISCC-NBS
+Name brilliant greenish yellow Numeric 98
+CIECAM02
+J 90.64 C 38.81 Q 287.94 h° 101.12 H 120.1 M 40.34 s 37.43 –  D50 ≈
+CIECAM16
+J 90.56 C 37.93 Q 287.8 h° 107.77 H Y69G31 M 39.43 s 37.01 –  D50 ≈
+CIECAM16 UCS
+J′ 94.22 C′ 28.13 h° 107.77 a′ -8.58 b′ 26.79 –  D50 ≈
+OSA-UCS
+L 5.47 j 7.40 g 1.87 –  D65 ≈
+OK-HSL
+H 106.6° S 87.6% L 92.7% –  D65 ≈
+OK-HSV
+H 106.6° S 41.7% V 96.0% –  D65 ≈
+DIN99o
+L₉₉ 94.15 a₉₉ -6.83 b₉₉ 31.56 C₉₉ 32.29 h°₉₉ 102.2 –  D65 ≈
+IPT
+I 0.867 P -0.032 T 0.339 C 0.341 h° 95.4 –  D65 ≈
+IGPGTG
+Ig 0.903 Pg -0.058 Tg 0.205 C 0.214 h° 105.9 –  D65 ≈
+sUCS
+I 92.31 a -4.11 b 32.34 C 32.60 h° 97.2 –  D65 ≈
+Coloroid
+A 10.2 T 45.6 V 91.3 –  D65 ≈
+sRGB
+ r 244 g 240 b 143 hex #f4f08f
+P3 RGB
+ r 0.953 g 0.9413 b 0.6072
+P3 RGB
+ r 0.953 g 0.9413 b 0.6072
+
+PC915 Lemon Yellow
+Newell Brands Prismacolor Premier Soft Core Colored Pencils
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 91.48 a* -10.15 b* 72.17 –  D50  2°
+ L* 91.06 a* -14.97 b* 72.59 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 91.48 C* 72.88 h°* 98.01 –  D50  2°
+ L* 91.06 C* 74.12 h°* 101.65 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.9178 a -0.0481 b 0.1624 C 0.1694 h° 106.5 –  D65 ≈
+OK-Lrab
+Lr 0.904 a -0.048 b 0.162 C 0.169 h° 106.5 –  D65 ≈
+Munsell
+Munsell 9.67Y 9.08/10.8 –  C ≈
+ISCC-NBS
+Name brilliant greenish yellow Numeric 98
+CIECAM02
+J 87.74 C 59.2 Q 283.29 h° 101.57 H 120.87 M 61.53 s 46.61 –  D50 ≈
+CIECAM16
+J 87.65 C 56.15 Q 283.14 h° 107.15 H Y70G30 M 58.37 s 45.4 –  D50 ≈
+CIECAM16 UCS
+J′ 92.34 C′ 37.11 h° 107.15 a′ -10.95 b′ 35.46 –  D50 ≈
+OSA-UCS
+L 5.04 j 10.67 g 2.53 –  D65 ≈
+OK-HSL
+H 106.5° S 93.9% L 90.4% –  D65 ≈
+OK-HSV
+H 106.5° S 75.3% V 95.5% –  D65 ≈
+DIN99o
+L₉₉ 92.29 a₉₉ -6.16 b₉₉ 39.44 C₉₉ 39.92 h°₉₉ 98.9 –  D65 ≈
+IPT
+I 0.816 P -0.055 T 0.504 C 0.507 h° 96.2 –  D65 ≈
+IGPGTG
+Ig 0.881 Pg -0.093 Tg 0.304 C 0.318 h° 106.9 –  D65 ≈
+sUCS
+I 89.88 a -5.98 b 41.77 C 42.20 h° 98.1 –  D65 ≈
+Coloroid
+A 10.4 T 67.9 V 88.7 –  D65 ≈
+sRGB
+ r 242 g 234 b 80 hex #f2ea50
+P3 RGB
+ r 0.9445 g 0.9206 b 0.4201
+
+1710 Olive Yellow
+Derwent Chromaflow Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 77.37 a* -7.78 b* 76.96 –  D50  2°
+ L* 76.95 a* -12.42 b* 77.73 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 77.37 C* 77.35 h°* 95.77 –  D50  2°
+ L* 76.95 C* 78.71 h°* 99.08 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.7971 a -0.0443 b 0.163 C 0.169 h° 105.2 –  D65 ≈
+OK-Lrab
+Lr 0.764 a -0.044 b 0.163 C 0.169 h° 105.2 –  D65 ≈
+Munsell
+Munsell 8.92Y 7.62/10.77 –  C ≈
+ISCC-NBS
+Name strong greenish yellow Numeric 99
+CIECAM02
+J 69.79 C 64.78 Q 252.66 h° 100.82 H 119.6 M 67.34 s 51.63 –  D50 ≈
+CIECAM16
+J 69.73 C 59.78 Q 252.55 h° 105.63 H Y72G28 M 62.14 s 49.6 –  D50 ≈
+CIECAM16 UCS
+J′ 79.66 C′ 38.7 h° 105.63 a′ -10.43 b′ 37.27 –  D50 ≈
+OSA-UCS
+L 2.61 j 10.77 g 2.29 –  D65 ≈
+OK-HSL
+H 105.2° S 99.4% L 76.4% –  D65 ≈
+OK-HSV
+H 105.2° S 99.6% V 82.3% –  D65 ≈
+DIN99o
+L₉₉ 79.70 a₉₉ -4.21 b₉₉ 40.95 C₉₉ 41.16 h°₉₉ 95.9 –  D65 ≈
+IPT
+I 0.665 P -0.052 T 0.509 C 0.511 h° 95.8 –  D65 ≈
+IGPGTG
+Ig 0.736 Pg -0.092 Tg 0.305 C 0.319 h° 106.7 –  D65 ≈
+sUCS
+I 74.90 a -5.68 b 42.04 C 42.42 h° 97.7 –  D65 ≈
+Coloroid
+A 10.8 T 79.6 V 71.7 –  D65 ≈
+sRGB
+ r 205 g 194 b 2 hex #cdc202
+P3 RGB
+ r 0.7974 g 0.7609 b 0.2478
+
+182 Tuscan Yellow
+Castle Arts Gold Coloured Pencils
+ource
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 92.94 a* -9.16 b* 74.06 –  D50  2°
+ L* 92.5 a* -14.05 b* 74.48 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 92.94 C* 74.62 h°* 97.05 –  D50  2°
+ L* 92.5 C* 75.79 h°* 100.68 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.9306 a -0.0459 b 0.1661 C 0.1723 h° 105.46 –  D65 ≈
+OK-Lrab
+Lr 0.919 a -0.046 b 0.166 C 0.172 h° 105.5 –  D65 ≈
+Munsell
+Munsell 9.21Y 9.22/13.86 –  C ≈
+ISCC-NBS
+Name vivid greenish yellow Numeric 97
+CIECAM02
+J 89.73 C 60.27 Q 286.48 h° 100.63 H 119.27 M 62.65 s 46.76 –  D50 ≈
+CIECAM16
+J 89.63 C 56.94 Q 286.33 h° 106.06 H Y72G28 M 59.19 s 45.47 –  D50 ≈
+CIECAM16 UCS
+J′ 93.63 C′ 37.47 h° 106.06 a′ -10.37 b′ 36 –  D50 ≈
+OSA-UCS
+L 5.30 j 10.92 g 2.40 –  D65 ≈
+OK-HSL
+H 105.5° S 96.5% L 91.9% –  D65 ≈
+OK-HSV
+H 105.5° S 76.7% V 97.8% –  D65 ≈
+DIN99o
+L₉₉ 93.55 a₉₉ -5.44 b₉₉ 40.01 C₉₉ 40.38 h°₉₉ 97.7 –  D65 ≈
+IPT
+I 0.830 P -0.049 T 0.519 C 0.521 h° 95.4 –  D65 ≈
+IGPGTG
+Ig 0.897 Pg -0.091 Tg 0.313 C 0.326 h° 106.2 –  D65 ≈
+sUCS
+I 91.50 a -5.38 b 42.56 C 42.90 h° 97.2 –  D65 ≈
+Coloroid
+A 10.6 T 68.7 V 90.5 –  D65 ≈
+sRGB
+ r 249 g 238 b 79 hex #f9ee4f
+P3 RGB
+ r 0.9683 g 0.935 b 0.4223
+
+0030 Lemon
+Derwent Chromaflow Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 90.9 a* -6.41 b* 68.91 –  D50  2°
+ L* 90.47 a* -11 b* 69.19 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 90.9 C* 69.21 h°* 95.31 –  D50  2°
+ L* 90.47 C* 70.06 h°* 99.03 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.9141 a -0.0363 b 0.1563 C 0.1604 h° 103.08 –  D65 ≈
+OK-Lrab
+Lr 0.900 a -0.036 b 0.156 C 0.160 h° 103.1 –  D65 ≈
+Munsell
+Munsell 7.91Y 9.02/9.6 –  C ≈
+ISCC-NBS
+Name brilliant greenish yellow Numeric 98
+CIECAM02
+J 87.18 C 55.64 Q 282.39 h° 98.3 H 115.23 M 57.84 s 45.26 –  D50 ≈
+CIECAM16
+J 87.09 C 52.51 Q 282.24 h° 103.61 H Y76G24 M 54.59 s 43.98 –  D50 ≈
+CIECAM16 UCS
+J′ 91.98 C′ 35.46 h° 103.61 a′ -8.35 b′ 34.46 –  D50 ≈
+OSA-UCS
+L 4.96 j 10.24 g 1.88 –  D65 ≈
+OK-HSL
+H 103.1° S 92.8% L 90.0% –  D65 ≈
+OK-HSV
+H 103.1° S 71.6% V 97.0% –  D65 ≈
+DIN99o
+L₉₉ 91.77 a₉₉ -3.95 b₉₉ 38.75 C₉₉ 38.95 h°₉₉ 95.8 –  D65 ≈
+IPT
+I 0.814 P -0.028 T 0.483 C 0.484 h° 93.3 –  D65 ≈
+IGPGTG
+Ig 0.876 Pg -0.074 Tg 0.291 C 0.300 h° 104.2 –  D65 ≈
+sUCS
+I 89.41 a -3.41 b 40.73 C 40.87 h° 94.8 –  D65 ≈
+Coloroid
+A 11.0 T 66.0 V 87.9 –  D65 ≈
+sRGB
+ r 246 g 231 b 87 hex #f6e757
+P3 RGB
+ r 0.9555 g 0.9068 b 0.4373
+
+250 Canary Yellow
+Caran d'Ache Pablo 666
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 90.43 a* -5.64 b* 79.05 –  D50  2°
+ L* 89.96 a* -10.57 b* 79.55 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 90.43 C* 79.25 h°* 94.08 –  D50  2°
+ L* 89.96 C* 80.25 h°* 97.57 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.9099 a -0.0382 b 0.1729 C 0.177 h° 102.45 –  D65 ≈
+OK-Lrab
+Lr 0.895 a -0.038 b 0.173 C 0.177 h° 102.5 –  D65 ≈
+Munsell
+Munsell 7.46Y 8.96/10.94 –  C ≈
+ISCC-NBS
+Name brilliant greenish yellow Numeric 98
+CIECAM02
+J 86.54 C 63.88 Q 281.34 h° 98.08 H 114.85 M 66.4 s 48.58 –  D50 ≈
+CIECAM16
+J 86.45 C 59.35 Q 281.2 h° 102.87 H Y77G23 M 61.69 s 46.84 –  D50 ≈
+CIECAM16 UCS
+J′ 91.56 C′ 38.52 h° 102.87 a′ -8.58 b′ 37.55 –  D50 ≈
+OSA-UCS
+L 4.88 j 11.41 g 1.95 –  D65 ≈
+OK-HSL
+H 102.5° S 96.7% L 89.5% –  D65 ≈
+OK-HSV
+H 102.5° S 86.6% V 97.7% –  D65 ≈
+DIN99o
+L₉₉ 91.32 a₉₉ -2.99 b₉₉ 41.49 C₉₉ 41.60 h°₉₉ 94.1 –  D65 ≈
+IPT
+I 0.798 P -0.031 T 0.548 C 0.549 h° 93.2 –  D65 ≈
+IGPGTG
+Ig 0.872 Pg -0.084 Tg 0.330 C 0.340 h° 104.3 –  D65 ≈
+sUCS
+I 88.86 a -3.65 b 44.03 C 44.18 h° 94.7 –  D65 ≈
+Coloroid
+A 11.2 T 74.0 V 87.3 –  D65 ≈
+sRGB
+ r 248 g 229 b 56 hex #f8e538
+P3 RGB
+ r 0.9611 g 0.8997 b 0.3641
+
+107 Cadmium Yellow
+Faber-Castell Polychromos 9201
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 89.17 a* 3.35 b* 95.17 –  D50  2°
+ L* 88.6 a* -1.73 b* 96.06 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 89.17 C* 95.23 h°* 87.98 –  D50  2°
+ L* 88.6 C* 96.08 h°* 91.03 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.9013 a -0.0186 b 0.1934 C 0.1943 h° 95.49 –  D65 ≈
+OK-Lrab
+Lr 0.885 a -0.019 b 0.193 C 0.194 h° 95.5 –  D65 ≈
+Munsell
+Munsell 4.52Y 8.83/13.64 –  C ≈
+ISCC-NBS
+Name vivid yellow Numeric 82
+CIECAM02
+J 85.23 C 75.91 Q 279.2 h° 92.82 H 105.33 M 78.91 s 53.16 –  D50 ≈
+CIECAM16
+J 85.16 C 67.66 Q 279.1 h° 95.81 H Y89G11 M 70.33 s 50.2 –  D50 ≈
+CIECAM16 UCS
+J′ 90.7 C′ 41.97 h° 95.81 a′ -4.25 b′ 41.75 –  D50 ≈
+OSA-UCS
+L 4.74 j 12.92 g 0.82 –  D65 ≈
+OK-HSL
+H 97.2° S 100.0% L 87.8% –  D65 ≈
+OK-HSV
+H 97.2° S 100.0% V 100.0% –  D65 ≈
+DIN99o
+L₉₉ 90.13 a₉₉ 2.61 b₉₉ 45.36 C₉₉ 45.43 h°₉₉ 86.7 –  D65 ≈
+IPT
+I 0.768 P 0.012 T 0.650 C 0.651 h° 88.9 –  D65 ≈
+IGPGTG
+Ig 0.862 Pg -0.072 Tg 0.388 C 0.395 h° 100.4 –  D65 ≈
+sUCS
+I 87.70 a 0.23 b 48.66 C 48.66 h° 89.7 –  D65 ≈
+Coloroid
+A 12.8 T 85.1 V 85.6 –  D65 ≈
+sRGB Mapped
+ r 255 g 219 b 0 hex #ffdb00
+ Out of sRGB gamut
+sRGB Clipped
+ r 255 g 219 b 1 hex #ffdb00
+ Out of sRGB gamut
+P3 RGB
+ r 1 g 0.8666 b 0.2403  Out of P3 gamut
+
+OP127 Cream
+Holbein Artists' Colored Pencil
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 91.06 a* 0.1 b* 56.03 –  D50  2°
+ L* 90.65 a* -3.79 b* 55.99 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 91.06 C* 56.03 h°* 89.9 –  D50  2°
+ L* 90.65 C* 56.12 h°* 93.87 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.9181 a -0.0127 b 0.1317 C 0.1323 h° 95.5 –  D65 ≈
+OK-Lrab
+Lr 0.905 a -0.013 b 0.132 C 0.132 h° 95.5 –  D65 ≈
+Munsell
+Munsell 4.74Y 9.04/7.96 –  C ≈
+ISCC-NBS
+Name light yellow Numeric 86
+CIECAM02
+J 87.8 C 44.2 Q 283.38 h° 90.73 H 101.4 M 45.94 s 40.26 –  D50 ≈
+CIECAM16
+J 87.7 C 41.55 Q 283.23 h° 95.67 H Y89G11 M 43.2 s 39.05 –  D50 ≈
+CIECAM16 UCS
+J′ 92.38 C′ 30.07 h° 95.67 a′ -2.97 b′ 29.92 –  D50 ≈
+OSA-UCS
+L 5.06 j 8.52 g 0.60 –  D65 ≈
+OK-HSL
+H 95.5° S 99.5% L 90.5% –  D65 ≈
+OK-HSV
+H 95.5° S 55.8% V 99.9% –  D65 ≈
+DIN99o
+L₉₉ 91.93 a₉₉ 0.06 b₉₉ 35.10 C₉₉ 35.10 h°₉₉ 89.9 –  D65 ≈
+IPT
+I 0.832 P 0.024 T 0.400 C 0.401 h° 86.6 –  D65 ≈
+IGPGTG
+Ig 0.881 Pg -0.032 Tg 0.240 C 0.242 h° 97.5 –  D65 ≈
+sUCS
+I 89.90 a 1.89 b 35.99 C 36.04 h° 87.0 –  D65 ≈
+Coloroid
+A 12.3 T 55.6 V 88.2 –  D65 ≈
+sRGB
+ r 255 g 227 b 118 hex #ffe376
+P3 RGB
+ r 0.9814 g 0.8957 b 0.5262
+
+810 Bismuth Yellow
+Caran d'Ache Luminance 6901
+Source
+Our handmade color_pencil sample, masstone 45°/0°
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 87.23 a* 2.64 b* 76.63 –  D50  2°
+ L* 86.72 a* -1.92 b* 76.92 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 87.23 C* 76.68 h°* 88.03 –  D50  2°
+ L* 86.72 C* 76.94 h°* 91.43 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.885 a -0.014 b 0.1669 C 0.1675 h° 94.79 –  D65 ≈
+OK-Lrab
+Lr 0.866 a -0.014 b 0.167 C 0.168 h° 94.8 –  D65 ≈
+Munsell
+Munsell 4.48Y 8.63/10.9 –  C ≈
+ISCC-NBS
+Name brilliant yellow Numeric 83
+CIECAM02
+J 82.78 C 60.91 Q 275.16 h° 91.16 H 102.22 M 63.32 s 47.97 –  D50 ≈
+CIECAM16
+J 82.69 C 55.73 Q 275.02 h° 94.87 H Y91G9 M 57.93 s 45.89 –  D50 ≈
+CIECAM16 UCS
+J′ 89.04 C′ 36.93 h° 94.87 a′ -3.14 b′ 36.79 –  D50 ≈
+OSA-UCS
+L 4.39 j 11.00 g 0.59 –  D65 ≈
+OK-HSL
+H 94.8° S 95.8% L 86.6% –  D65 ≈
+OK-HSV
+H 94.8° S 86.5% V 99.0% –  D65 ≈
+DIN99o
+L₉₉ 88.47 a₉₉ 2.04 b₉₉ 41.04 C₉₉ 41.09 h°₉₉ 87.2 –  D65 ≈
+IPT
+I 0.768 P 0.025 T 0.530 C 0.531 h° 87.3 –  D65 ≈
+IGPGTG
+Ig 0.842 Pg -0.049 Tg 0.318 C 0.322 h° 98.7 –  D65 ≈
+sUCS
+I 85.71 a 1.66 b 43.05 C 43.08 h° 87.8 –  D65 ≈
+Coloroid
+A 12.7 T 74.4 V 83.3 –  D65 ≈
+sRGB
+ r 252 g 215 b 56 hex #fcd738
+P3 RGB
+ r 0.9651 g 0.8472 b 0.3517
+
+Sun Yellow
+Derwent Lightfast Pencils
+Source
+Our handmade colored_pencil sample, masstone 45°/0°
+Paper
+Hahnemühle Skizze/Pastel 130gsm Natural White
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 87.04 a* 4.08 b* 91.85 –  D50  2°
+ L* 86.48 a* -0.84 b* 92.63 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 87.04 C* 91.94 h°* 87.46 –  D50  2°
+ L* 86.48 C* 92.64 h°* 90.52 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.8833 a -0.0155 b 0.1878 C 0.1884 h° 94.71 –  D65 ≈
+OK-Lrab
+Lr 0.864 a -0.015 b 0.188 C 0.188 h° 94.7 –  D65 ≈
+Munsell
+Munsell 4.37Y 8.61/13.22 –  C ≈
+ISCC-NBS
+Name vivid yellow Numeric 82
+CIECAM02
+J 82.5 C 73.4 Q 274.7 h° 92.05 H 103.9 M 76.3 s 52.7 –  D50 ≈
+CIECAM16
+J 82.43 C 65.52 Q 274.59 h° 94.98 H Y91G9 M 68.1 s 49.8 –  D50 ≈
+CIECAM16 UCS
+J′ 88.86 C′ 41.1 h° 94.98 a′ -3.57 b′ 40.95 –  D50 ≈
+OSA-UCS
+L 4.38 j 12.53 g 0.65 –  D65 ≈
+OK-HSL
+H 94.5° S 100.0% L 86.4% –  D65 ≈
+OK-HSV
+H 94.5° S 100.0% V 100.0% –  D65 ≈
+DIN99o
+L₉₉ 88.26 a₉₉ 3.01 b₉₉ 44.64 C₉₉ 44.74 h°₉₉ 86.1 –  D65 ≈
+IPT
+I 0.749 P 0.019 T 0.625 C 0.626 h° 88.2 –  D65 ≈
+IGPGTG
+Ig 0.840 Pg -0.065 Tg 0.374 C 0.379 h° 99.8 –  D65 ≈
+sUCS
+I 85.45 a 0.88 b 47.54 C 47.55 h° 88.9 –  D65 ≈
+Coloroid
+A 12.9 T 84.4 V 83.0 –  D65 ≈
+sRGB Mapped
+ r 255 g 213 b 0 hex #ffd500
+ Out of sRGB gamut
+sRGB Clipped
+ r 255 g 213 b 1 hex #ffd500
+ Out of sRGB gamut
+P3 RGB
+ r 0.9777 g 0.8416 b 0.2432
+
+OP145 Dandelion
+Holbein Artists' Colored Pencil
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 85.77 a* 10.06 b* 96.63 –  D50  2°
+ L* 85.17 a* 5.26 b* 97.5 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 85.77 C* 97.15 h°* 84.06 –  D50  2°
+ L* 85.17 C* 97.64 h°* 86.91 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.8741 a 0.0001 b 0.1916 C 0.1916 h° 89.97 –  D65 ≈
+OK-Lrab
+Lr 0.853 a 0.000 b 0.192 C 0.192 h° 90.0 –  D65 ≈
+Munsell
+Munsell 3.09Y 8.47/14.34 –  C ≈
+ISCC-NBS
+Name vivid yellow Numeric 82
+CIECAM02
+J 81.12 C 77.03 Q 272.4 h° 88.48 H 97.52 M 80.07 s 54.22 –  D50 ≈
+CIECAM16
+J 81.07 C 67.6 Q 272.31 h° 90.3 H Y99G1 M 70.27 s 50.8 –  D50 ≈
+CIECAM16 UCS
+J′ 87.92 C′ 41.94 h° 90.3 a′ -0.22 b′ 41.94 –  D50 ≈
+OSA-UCS
+L 4.24 j 12.85 g -0.25 –  D65 ≈
+OK-HSL
+H 91.1° S 100.0% L 84.6% –  D65 ≈
+OK-HSV
+H 91.1° S 100.0% V 100.0% –  D65 ≈
+DIN99o
+L₉₉ 87.09 a₉₉ 6.27 b₉₉ 45.56 C₉₉ 45.99 h°₉₉ 82.2 –  D65 ≈
+IPT
+I 0.732 P 0.054 T 0.653 C 0.656 h° 85.3 –  D65 ≈
+IGPGTG
+Ig 0.830 Pg -0.049 Tg 0.390 C 0.394 h° 97.1 –  D65 ≈
+sUCS
+I 84.26 a 3.86 b 48.63 C 48.79 h° 85.5 –  D65 ≈
+Coloroid
+A 14.1 T 87.7 V 81.4 –  D65 ≈
+sRGB Mapped
+ r 255 g 205 b 0 hex #ffcd00
+ Out of sRGB gamut
+sRGB Clipped
+ r 255 g 205 b 1 hex #ffcd00
+ Out of sRGB gamut
+P3 RGB
+ r 0.9942 g 0.8144 b 0.197
+
+523 Indian Yellow
+Caran d'Ache Luminance 6901
+Source
+Our handmade color_pencil sample, masstone 45°/0°
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+X-Rite i1Pro 3 (Spectral range 380-730 nm)
+Device Mode
+M1 (light source: D50 + controlled UV)
+CIE-L*a*b*
+ L* 80.84 a* 6.78 b* 81.55 –  D50  2°
+ L* 80.31 a* 2.36 b* 82 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 80.84 C* 81.83 h°* 85.25 –  D50  2°
+ L* 80.31 C* 82.03 h°* 88.35 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.8312 a -0.0044 b 0.1701 C 0.1702 h° 91.49 –  D65 ≈
+OK-Lrab
+Lr 0.804 a -0.004 b 0.170 C 0.170 h° 91.5 –  D65 ≈
+Munsell
+Munsell 3.68Y 7.97/11.88 –  C ≈
+ISCC-NBS
+Name vivid yellow Numeric 82
+CIECAM02
+J 74.78 C 65.52 Q 261.53 h° 88.89 H 98.19 M 68.11 s 51.03 –  D50 ≈
+CIECAM16
+J 74.71 C 58.76 Q 261.41 h° 91.56 H Y97G3 M 61.08 s 48.34 –  D50 ≈
+CIECAM16 UCS
+J′ 83.39 C′ 38.26 h° 91.56 a′ -1.04 b′ 38.25 –  D50 ≈
+OSA-UCS
+L 3.33 j 11.29 g 0.04 –  D65 ≈
+OK-HSL
+H 91.5° S 100.0% L 80.4% –  D65 ≈
+OK-HSV
+H 91.5° S 100.0% V 94.7% –  D65 ≈
+DIN99o
+L₉₉ 82.74 a₉₉ 4.63 b₉₉ 42.24 C₉₉ 42.49 h°₉₉ 83.7 –  D65 ≈
+IPT
+I 0.697 P 0.043 T 0.549 C 0.551 h° 85.5 –  D65 ≈
+IGPGTG
+Ig 0.777 Pg -0.041 Tg 0.329 C 0.332 h° 97.2 –  D65 ≈
+sUCS
+I 79.01 a 3.29 b 43.91 C 44.04 h° 85.7 –  D65 ≈
+Coloroid
+A 13.6 T 81.5 V 75.6 –  D65 ≈
+sRGB Mapped
+ r 240 g 194 b 0 hex #f0c200
+ Out of sRGB gamut
+sRGB Clipped
+ r 240 g 194 b 1 hex #f0c200
+ Out of sRGB gamut
+P3 RGB
+ r 0.9133 g 0.7685 b 0.2567
+
+OP198 Olive Yellow
+Holbein Artists' Colored Pencil
+Source
+Our handmade pencil sample, masstone
+Paper
+Daler Rowney Simply Drawing 120gsm
+Device
+Nix Spectro 2 (Spectral range 400-700 nm)
+Device Mode
+M2 (UV excluded)
+CIE-L*a*b*
+ L* 66.74 a* -5.97 b* 51 –  D50  2°
+ L* 66.42 a* -9.45 b* 51.19 –  D65  2°
+CIE-L*Ch°(ab)
+ L* 66.74 C* 51.35 h°* 96.68 –  D50  2°
+ L* 66.42 C* 52.06 h°* 100.46 –  D65  2°
+View in color converter →
+OK-Lab + Ch°
+ L 0.7073 a -0.03 b 0.1168 C 0.1206 h° 104.41 –  D65 ≈
+OK-Lrab
+Lr 0.660 a -0.030 b 0.117 C 0.121 h° 104.4 –  D65 ≈
+Munsell
+Munsell 8.96Y 6.54/7.04 –  C ≈
+ISCC-NBS
+Name moderate greenish yellow Numeric 102
+CIECAM02
+J 57.44 C 43.56 Q 229.22 h° 99.4 H 117.16 M 45.28 s 44.45 –  D50 ≈
+CIECAM16
+J 57.38 C 41.42 Q 229.09 h° 105.03 H Y73G27 M 43.06 s 43.35 –  D50 ≈
+CIECAM16 UCS
+J′ 69.59 C′ 30 h° 105.03 a′ -7.78 b′ 28.97 –  D50 ≈
+OSA-UCS
+L 0.70 j 7.52 g 1.55 –  D65 ≈
+OK-HSL
+H 104.4° S 72.8% L 66.0% –  D65 ≈
+OK-HSV
+H 104.4° S 67.3% V 70.4% –  D65 ≈
+DIN99o
+L₉₉ 69.95 a₉₉ -4.36 b₉₉ 33.21 C₉₉ 33.49 h°₉₉ 97.5 –  D65 ≈
+IPT
+I 0.587 P -0.025 T 0.332 C 0.333 h° 94.2 –  D65 ≈
+IGPGTG
+Ig 0.631 Pg -0.054 Tg 0.201 C 0.208 h° 105.1 –  D65 ≈
+sUCS
+I 64.23 a -3.30 b 31.88 C 32.05 h° 95.9 –  D65 ≈
+Coloroid
+A 10.7 T 63.4 V 59.9 –  D65 ≈
+sRGB
+ r 173 g 164 b 65 hex #ada441
+P3 RGB
+ r 0.6718 g 0.6452 b 0.3168
+
+
+
