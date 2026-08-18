@@ -28,11 +28,16 @@ function num(str) {
 }
 
 // Split the raw paste into individual pencil blocks.
-// Each block starts at a "name line" immediately followed (1-2 lines later)
-// by a line that is exactly "Source" — that anchor is far more reliable
-// than trying to detect the name/brand lines directly, since those vary in
-// shape (code + name on one line, name only, etc).
-function splitBlocks(raw) {
+//
+// Two source formats are supported:
+//  - Legacy manual paste: blocks anchored on a bare "Source" line, with the
+//    name + brand/range as the 1-2 lines immediately above it.
+//  - Tampermonkey scrape (ArtistPigments): explicit "PENCIL_ID:" / "PENCIL_NAME:"
+//    / "BRAND:" / "URL:" header lines, all section headers in caps (SOURCE,
+//    PAPER, CIE-L*A*B*, etc.), blocks separated by a line of "=" characters.
+// Detected automatically per file — a file is Tampermonkey-format if it
+// contains a "PENCIL_ID:" line anywhere.
+function splitBlocksLegacy(raw) {
   const lines = raw.split(/\r?\n/).map((l) => l.trim()).filter((l) => l.length > 0);
   const sourceIdx = [];
   lines.forEach((l, i) => { if (l === 'Source') sourceIdx.push(i); });
@@ -48,34 +53,90 @@ function splitBlocks(raw) {
   return blocks;
 }
 
+function splitBlocksTampermonkey(raw) {
+  const rawLines = raw.split(/\r?\n/);
+  const blocks = [];
+  let current = [];
+  for (const line of rawLines) {
+    const trimmed = line.trim();
+    // A separator line is "=" repeated, on its own line (blank lines around
+    // it are stripped along with all other blank lines below).
+    if (/^=+$/.test(trimmed) && trimmed.length >= 10) {
+      if (current.some((l) => l.length > 0)) blocks.push(current);
+      current = [];
+    } else {
+      current.push(trimmed);
+    }
+  }
+  if (current.some((l) => l.length > 0)) blocks.push(current);
+  return blocks.map((lines) => lines.filter((l) => l.length > 0));
+}
+
+function splitBlocks(raw) {
+  if (/^PENCIL_ID:/mi.test(raw)) return splitBlocksTampermonkey(raw);
+  return splitBlocksLegacy(raw);
+}
+
 function grabAfter(lines, label) {
   const i = lines.indexOf(label);
   return i >= 0 && i + 1 < lines.length ? lines[i + 1] : null;
 }
 
+// Case varies between the two source formats for section headers (e.g.
+// "Source" vs "SOURCE", "CIE-L*a*b*" vs "CIE-L*A*B*") but never for the data
+// rows underneath them, so lookups just need to try both exact spellings.
+function findIndexAny(lines, labels) {
+  for (const label of labels) {
+    const i = lines.indexOf(label);
+    if (i >= 0) return i;
+  }
+  return -1;
+}
+function grabAfterAny(lines, labels) {
+  const i = findIndexAny(lines, labels);
+  return i >= 0 && i + 1 < lines.length ? lines[i + 1] : null;
+}
+
 function parseBlock(lines) {
-  const srcI = lines.indexOf('Source');
-  if (srcI < 1) return null;
+  const idI = lines.findIndex((l) => /^PENCIL_ID:/i.test(l));
 
-  // Name + brand/range are the 1-2 lines immediately before "Source".
-  const nameLine = lines[srcI - 2] ?? lines[srcI - 1];
-  const brandLine = lines[srcI - 1] !== nameLine ? lines[srcI - 1] : null;
+  let colourName, productCode, brandLine, url = null;
 
-  // name line often looks like "142 Madder" or "091 Purple Lake" or just
-  // "Strawberry" / "Sun Yellow" (no leading code).
-  let productCode = null, colourName = nameLine;
-  const codeMatch = nameLine ? nameLine.match(/^([A-Za-z0-9]+)\s+(.+)$/) : null;
-  if (codeMatch && /\d/.test(codeMatch[1])) {
-    productCode = codeMatch[1];
-    colourName = codeMatch[2];
+  if (idI >= 0) {
+    // Tampermonkey format: explicit labeled header fields.
+    const grabField = (label) => {
+      const l = lines.find((x) => x.toUpperCase().startsWith(label + ':'));
+      return l ? l.slice(l.indexOf(':') + 1).trim() : null;
+    };
+    productCode = grabField('PENCIL_ID') || null;
+    colourName = grabField('PENCIL_NAME');
+    brandLine = grabField('BRAND');
+    url = grabField('URL');
+  } else {
+    // Legacy format: name + brand/range are the 1-2 lines immediately before "Source".
+    const srcI = lines.indexOf('Source');
+    if (srcI < 1) return null;
+    const nameLine = lines[srcI - 2] ?? lines[srcI - 1];
+    brandLine = lines[srcI - 1] !== nameLine ? lines[srcI - 1] : null;
+
+    // name line often looks like "142 Madder" or "091 Purple Lake" or just
+    // "Strawberry" / "Sun Yellow" (no leading code).
+    colourName = nameLine;
+    productCode = null;
+    const codeMatch = nameLine ? nameLine.match(/^([A-Za-z0-9]+)\s+(.+)$/) : null;
+    if (codeMatch && /\d/.test(codeMatch[1])) {
+      productCode = codeMatch[1];
+      colourName = codeMatch[2];
+    }
   }
 
   const record = {
     colour_name: colourName,
     product_code: productCode,
     brand_range: brandLine,
-    source: grabAfter(lines, 'Source'),
-    paper: grabAfter(lines, 'Paper'),
+    url,
+    source: grabAfterAny(lines, ['Source', 'SOURCE']),
+    paper: grabAfterAny(lines, ['Paper', 'PAPER']),
     device: null,
     device_spectral_range: null,
     device_mode: null,
@@ -94,17 +155,17 @@ function parseBlock(lines) {
     p3_gamut_status: 'in',
   };
 
-  const deviceLine = grabAfter(lines, 'Device');
+  const deviceLine = grabAfterAny(lines, ['Device', 'DEVICE']);
   if (deviceLine) {
     const m = deviceLine.match(/^(.*?)\s*\(Spectral range ([\d\-–]+ ?nm)\)/i);
     if (m) { record.device = m[1].trim(); record.device_spectral_range = m[2].trim(); }
     else record.device = deviceLine;
   }
-  const modeLine = grabAfter(lines, 'Device Mode');
+  const modeLine = grabAfterAny(lines, ['Device Mode', 'DEVICE MODE']);
   if (modeLine) record.device_mode = modeLine;
 
   // CIE-L*a*b* block: two lines, D50 then D65
-  const labI = lines.indexOf('CIE-L*a*b*');
+  const labI = findIndexAny(lines, ['CIE-L*a*b*', 'CIE-L*A*B*']);
   if (labI >= 0) {
     const l1 = lines[labI + 1], l2 = lines[labI + 2];
     const parseLab = (l) => {
@@ -119,7 +180,7 @@ function parseBlock(lines) {
   }
 
   // CIE-L*Ch°(ab): two lines, D50 then D65
-  const lchI = lines.indexOf('CIE-L*Ch°(ab)');
+  const lchI = findIndexAny(lines, ['CIE-L*Ch°(ab)', 'CIE-L*CH°(AB)']);
   if (lchI >= 0) {
     const l1 = lines[lchI + 1], l2 = lines[lchI + 2];
     const parseLch = (l) => {
@@ -134,14 +195,14 @@ function parseBlock(lines) {
   }
 
   // OK-Lab + Ch°  (D65 only, single line)
-  const okI = lines.indexOf('OK-Lab + Ch°');
+  const okI = findIndexAny(lines, ['OK-Lab + Ch°', 'OK-LAB + CH°']);
   if (okI >= 0 && lines[okI + 1]) {
     const m = lines[okI + 1].match(/L\s*([\d.\-]+)\s*a\s*([\d.\-]+)\s*b\s*([\d.\-]+)\s*C\s*([\d.\-]+)\s*h°\s*([\d.\-]+)/);
     if (m) record.oklab_d65 = { L: num(m[1]), a: num(m[2]), b: num(m[3]), C: num(m[4]), h: num(m[5]) };
   }
 
   // Munsell
-  const munI = lines.indexOf('Munsell');
+  const munI = findIndexAny(lines, ['Munsell', 'MUNSELL']);
   if (munI >= 0 && lines[munI + 1]) {
     const m = lines[munI + 1].match(/Munsell\s+(\S+\s+\S+)\s*–/);
     if (m) record.munsell = m[1].trim();
@@ -154,9 +215,9 @@ function parseBlock(lines) {
     if (m) { record.isccnbs_name = m[1]; record.isccnbs_numeric = num(m[2]); }
   }
 
-  // sRGB — may be "sRGB", "sRGB Mapped" + "sRGB Clipped" pair
-  let sI = lines.indexOf('sRGB');
-  if (sI < 0) sI = lines.indexOf('sRGB Mapped');
+  // sRGB — may be "sRGB"/"SRGB", or a "Mapped" + "Clipped" pair
+  let sI = findIndexAny(lines, ['sRGB', 'SRGB']);
+  if (sI < 0) sI = findIndexAny(lines, ['sRGB Mapped', 'SRGB MAPPED']);
   if (sI >= 0) {
     // walk forward collecting r/g/b + hex + optional "Out of sRGB gamut"
     for (let j = sI + 1; j < Math.min(sI + 4, lines.length); j++) {
@@ -165,10 +226,10 @@ function parseBlock(lines) {
         record.srgb_rgb = [num(m[1]), num(m[2]), num(m[3])];
         record.srgb_hex = m[4].startsWith('#') ? m[4].toLowerCase() : '#' + m[4].toLowerCase();
       }
-      if (/Out of sRGB gamut/i.test(lines[j])) record.srgb_gamut_status = lines[sI].includes('Mapped') ? 'mapped' : 'clipped';
+      if (/Out of sRGB gamut/i.test(lines[j])) record.srgb_gamut_status = /mapped/i.test(lines[sI]) ? 'mapped' : 'clipped';
     }
     // prefer the "Clipped" hex if both Mapped and Clipped blocks exist
-    const clippedI = lines.indexOf('sRGB Clipped');
+    const clippedI = findIndexAny(lines, ['sRGB Clipped', 'SRGB CLIPPED']);
     if (clippedI >= 0) {
       for (let j = clippedI + 1; j < Math.min(clippedI + 4, lines.length); j++) {
         const m = lines[j].match(/r\s*([\d.]+)\s*g\s*([\d.]+)\s*b\s*([\d.]+)\s*hex\s*(#?[0-9a-fA-F]{6})/);
@@ -234,9 +295,12 @@ function main() {
       report.push(`ADDED     ${rec.brand_range || '?'} — ${rec.product_code ? rec.product_code + ' ' : ''}${rec.colour_name} (${rec.srgb_hex})`);
     } else if (existing.srgb_hex === rec.srgb_hex) {
       exactDupes++;
-      report.push(`DUPLICATE ${rec.brand_range || '?'} — ${rec.product_code ? rec.product_code + ' ' : ''}${rec.colour_name} (${rec.srgb_hex}) — already in master, skipped`);
+      let note = '';
+      if (!existing.url && rec.url) { existing.url = rec.url; note = ' [url filled in]'; }
+      report.push(`DUPLICATE ${rec.brand_range || '?'} — ${rec.product_code ? rec.product_code + ' ' : ''}${rec.colour_name} (${rec.srgb_hex})${note} — already in master, skipped`);
     } else {
       conflicts++;
+      if (!existing.url && rec.url) existing.url = rec.url;
       report.push(`CONFLICT  ${rec.brand_range || '?'} — ${rec.product_code ? rec.product_code + ' ' : ''}${rec.colour_name} — master has ${existing.srgb_hex}, this paste has ${rec.srgb_hex}. NOT overwritten — resolve manually.`);
     }
   }
