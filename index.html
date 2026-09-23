@@ -1400,9 +1400,9 @@ function renderPencilPanel() {
     blendEl.innerHTML =
       '<div class="pencil-blend"><span class="label-caps muted">Closer by layering &middot; ' + matchPct + '% match</span>' +
       '<p style="margin:.4rem 0 0; font-size:.875rem">' +
-      '<span class="b-sw" style="background-color:' + blend.a.hex + '" aria-hidden="true"></span>' + esc(blend.a.name) + " " + pctA + "%" +
+      '<span class="b-sw" style="background-color:' + blend.a.hex + '" aria-hidden="true"></span>' + esc(blend.a.name) + ' <span class="muted">(' + esc(rangeLabel(blend.a.range)) + ')</span> ' + pctA + "%" +
       ' <span class="muted">+</span> ' +
-      '<span class="b-sw" style="background-color:' + blend.b.hex + '" aria-hidden="true"></span>' + esc(blend.b.name) + " " + pctB + "%" +
+      '<span class="b-sw" style="background-color:' + blend.b.hex + '" aria-hidden="true"></span>' + esc(blend.b.name) + ' <span class="muted">(' + esc(rangeLabel(blend.b.range)) + ')</span> ' + pctB + "%" +
       "</p>" +
       '<p class="muted" style="font-size:.8125rem; margin:.5rem 0 0">An estimate, not a physical mixing model, actual layering depends on pressure, paper and order. Worth a test swatch before committing.</p></div>';
   } else {
