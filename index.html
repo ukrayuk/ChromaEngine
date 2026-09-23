@@ -478,10 +478,10 @@
 
   /* ---------- printable swatch card ---------- */
   /* Sized in physical units (mm), not rem, and pinned to a fixed 4-column grid — a
-     palette holds at most 8 swatches, so 4 columns always gives 2 rows or fewer,
-     and mm sizing keeps the whole card fitting one A4 page regardless of the
-     browser/OS's default root font-size or print scaling, which is what let an
-     8-swatch card spill an orphaned row onto a second page. */
+     palette holds at most MAX_PALETTE (12) swatches, so 4 columns always gives 3
+     rows or fewer, and mm sizing keeps the whole card fitting one A4 page regardless
+     of the browser/OS's default root font-size or print scaling, which is what let
+     an early version's swatches spill an orphaned row onto a second page. */
   @page { size: A4; margin: 12mm; }
   #printCard { display: none; }
   .print-card { width: 100%; }
@@ -740,6 +740,10 @@
               <option value="6">6</option>
               <option value="7">7</option>
               <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
             </select>
           </label>
         </div>
@@ -1689,6 +1693,11 @@ function wireThemeControls() {
 }
 
 /* ============ palette analysis (Analyse mode) ============ */
+/* Ceiling on how many colours a palette can hold anywhere in the app — Analyse mode's
+   manual list, photo extraction's auto+manual swatches, saved-palette load, gallery
+   load. The printable swatch card's 4-column grid comfortably fits three rows (12)
+   on one A4 sheet alongside the reference photo, same as it did two rows (8). */
+const MAX_PALETTE = 12;
 const EXAMPLE_PALETTE = ["#C8452B", "#1F5F5B", "#E4A11B", "#F7F3EA", "#2A2118"];
 let palette = [...EXAMPLE_PALETTE];
 let analyseGoal = "general";
@@ -3632,9 +3641,14 @@ function generateCandidatePalette(nudges) {
   const tensionBias = clamp(nudges.tension, -1, 1);
   const accentBias = clamp(nudges.accents, -1, 1);
 
+  // Three warm sub-bands, sampled evenly, so red doesn't crowd out orange and true
+  // yellow (a plain 0-55/300-360 split used to stop short of 55deg, never reaching
+  // yellow at 60deg or yellow-green/lime through 90deg at all).
   let seedHue;
-  if (tempBias > 0.15) seedHue = Math.random() < 0.5 ? rand(0, 55) : rand(300, 360);
-  else if (tempBias < -0.15) seedHue = rand(150, 260);
+  if (tempBias > 0.15) {
+    const r = Math.random();
+    seedHue = r < 0.34 ? rand(0, 25) : r < 0.67 ? rand(25, 90) : rand(300, 360);
+  } else if (tempBias < -0.15) seedHue = rand(150, 260);
   else seedHue = rand(0, 360);
 
   const templatesLow = [[0, 30, -30], [0]];
@@ -3661,6 +3675,15 @@ function generateCandidatePalette(nudges) {
   }
   return [ground, ink, ...accents];
 }
+/* Picking straight off the top of one score-sorted list let a single hue family
+   (whichever scores best against the accessibility gate, typically red/pink over
+   orange/yellow against a light ground) dominate all four slots even when the
+   underlying pool had genuine variety. Instead: bucket every passing candidate by
+   its lead accent's hue family (30deg bins), take each family's best-scoring
+   candidate, then fill the four slots from as many DIFFERENT families as exist
+   before ever taking a second from the same family — so a genuinely different
+   direction (e.g. a citrus yellow/orange one) gets a real shot even if its raw
+   score trails the best red by a few points. */
 function generateDirections(nudges, useCase, trials = 500) {
   const candidates = [];
   for (let i = 0; i < trials; i++) {
@@ -3669,11 +3692,22 @@ function generateDirections(nudges, useCase, trials = 500) {
     candidates.push({ hexes, score: health.overall, rows: health.rows });
   }
   const passed = candidates.filter((c) => c.score >= 55);
-  const pool = (passed.length >= 20 ? passed : candidates).slice().sort((a, b) => b.score - a.score).slice(0, 80);
+  const pool = (passed.length >= 20 ? passed : candidates).slice().sort((a, b) => b.score - a.score);
+
+  const families = new Map();
+  for (const cand of pool) {
+    const hue = hexToHsl(cand.hexes[2]).h;
+    const bucket = Math.floor(((hue % 360) + 360) % 360 / 30);
+    const champion = families.get(bucket);
+    if (!champion || cand.score > champion.score) families.set(bucket, cand);
+  }
+  const familyChampions = [...families.values()].sort((a, b) => b.score - a.score);
+
   const chosen = [];
   const distinctEnough = (cand) => chosen.every((c) => dOk(hexToOklab(cand.hexes[2]), hexToOklab(c.hexes[2])) > 0.06);
-  for (const cand of pool) { if (chosen.length >= 4) break; if (distinctEnough(cand)) chosen.push(cand); }
-  for (const cand of pool) { if (chosen.length >= 4) break; if (!chosen.includes(cand)) chosen.push(cand); }
+  for (const cand of familyChampions) { if (chosen.length >= 4) break; if (distinctEnough(cand)) chosen.push(cand); }
+  for (const cand of pool.slice(0, 80)) { if (chosen.length >= 4) break; if (distinctEnough(cand) && !chosen.includes(cand)) chosen.push(cand); }
+  for (const cand of pool.slice(0, 80)) { if (chosen.length >= 4) break; if (!chosen.includes(cand)) chosen.push(cand); }
   return { chosen: chosen.slice(0, 4), totalGenerated: trials, totalPassed: passed.length };
 }
 
@@ -3963,7 +3997,7 @@ function renderPhotoResult(url) {
   const img = $("photoPickImg");
   const wrap = $("photoPickWrap");
   img.addEventListener("click", (e) => {
-    if (totalCount >= 8) { toast("Eight colours is the most a palette can hold — remove one first"); return; }
+    if (totalCount >= MAX_PALETTE) { toast(MAX_PALETTE + " colours is the most a palette can hold — remove one first"); return; }
     const frac = pickFractionFromEvent(e, img);
     if (!frac) return;
     const hex = samplePixelAt(lastPhotoImg, url, frac.fracX, frac.fracY);
@@ -3975,7 +4009,7 @@ function renderPhotoResult(url) {
   manualSwatches.forEach((m, i) => makeDotDraggable(placePickDot(wrap, img, m.fracX, m.fracY, m.hex, false), img, url, i));
 
   $("photoUseBtn").addEventListener("click", () => {
-    palette = autoSwatches.map((s) => s.hex).concat(manualSwatches.map((m) => m.hex)).slice(0, 8);
+    palette = autoSwatches.map((s) => s.hex).concat(manualSwatches.map((m) => m.hex)).slice(0, MAX_PALETTE);
     paletteSourcePhoto = makeCompactPhotoDataUrl(lastPhotoImg);
     renderPalRows();
     renderAnalysis();
@@ -3987,7 +4021,7 @@ function renderPhotoResult(url) {
   });
   $("photoAnotherBtn").addEventListener("click", () => { $("photoInput").value = ""; $("photoInput").click(); });
   $("photoPrintBtn").addEventListener("click", () => {
-    const allHexes = autoSwatches.map((s) => s.hex).concat(manualSwatches.map((m) => m.hex)).slice(0, 8);
+    const allHexes = autoSwatches.map((s) => s.hex).concat(manualSwatches.map((m) => m.hex)).slice(0, MAX_PALETTE);
     printSwatchCard(allHexes, "Sampled from photo", makeCompactPhotoDataUrl(lastPhotoImg));
   });
 }
@@ -4035,7 +4069,7 @@ function renderPalRows() {
     }));
   $("palRows").querySelectorAll("[data-rm]").forEach((b) =>
     b.addEventListener("click", () => { palette.splice(Number(b.dataset.rm), 1); renderPalRows(); renderAnalysis(); }));
-  $("palAdd").style.display = palette.length >= 8 ? "none" : "";
+  $("palAdd").style.display = palette.length >= MAX_PALETTE ? "none" : "";
 }
 function syncPalRow(i) {
   const pk = $("palRows").querySelector('[data-pk="' + i + '"]');
@@ -4269,7 +4303,7 @@ function loadPaletteFile(file) {
     try { data = JSON.parse(String(reader.result)); } catch { toast("That doesn't look like a saved palette file"); return; }
     const hexes = Array.isArray(data.palette) ? data.palette.map((h) => hexToRgb(h)).filter(Boolean).map(rgbToHex) : [];
     if (hexes.length < 2) { toast("That file doesn't have a usable palette in it"); return; }
-    palette = hexes.slice(0, 8);
+    palette = hexes.slice(0, MAX_PALETTE);
     if (typeof data.goal === "string" && SCORECARDS[data.goal]) analyseGoal = data.goal;
     if (typeof data.name === "string") $("paletteName").value = data.name;
     renderPalRows();
@@ -4308,7 +4342,7 @@ function saveToGallery() {
 function loadFromGallery(id) {
   const rec = loadSavedPalettes().find((r) => r.id === id);
   if (!rec) return;
-  palette = rec.palette.slice(0, 8);
+  palette = rec.palette.slice(0, MAX_PALETTE);
   if (rec.goal && SCORECARDS[rec.goal]) analyseGoal = rec.goal;
   $("paletteName").value = rec.name || "";
   paletteSourcePhoto = rec.photo || null;
@@ -4372,12 +4406,16 @@ function printSwatchCard(hexes, title, photoDataUrl) {
       "</div>"
     );
   }).join("");
+  // Up to 8 swatches keeps the calibrated 4-column/2-row layout unchanged; beyond
+  // that, widen to however many columns keeps it at 2 rows (5 for 9-10, 6 for
+  // 11-12) rather than letting a 3rd row push the card onto a second printed page.
+  const gridCols = hexes.length <= 8 ? 4 : Math.ceil(hexes.length / 2);
   card.innerHTML =
     '<div class="print-card">' +
     '<div class="print-head"><h1>' + esc(title || "Swatch card") + "</h1>" +
     '<span class="p-meta">ChromaEngine<br>' + today + "</span></div>" +
     (photoDataUrl ? '<img src="' + photoDataUrl + '" class="print-photo" alt="Reference photo">' : "") +
-    '<div class="print-grid">' + swatchHtml + "</div>" +
+    '<div class="print-grid" style="grid-template-columns: repeat(' + gridCols + ', 1fr)">' + swatchHtml + "</div>" +
     '<div class="print-foot"><span>' + hexes.length + " colour" + (hexes.length === 1 ? "" : "s") + "</span><span>Nearest match — test before committing</span></div>" +
     "</div>";
   window.print();
@@ -4660,7 +4698,7 @@ $("modeBtnAnalyse").addEventListener("click", () => setMode("analyse", { scrollT
 $("modeBtnPhoto").addEventListener("click", () => setMode("photo", { scrollTop: true }));
 $("modeBtnDiscover").addEventListener("click", () => setMode("discover", { scrollTop: true }));
 $("palAdd").addEventListener("click", () => {
-  if (palette.length >= 8) return;
+  if (palette.length >= MAX_PALETTE) return;
   palette.push("#8C8478");
   renderPalRows(); renderAnalysis();
 });
