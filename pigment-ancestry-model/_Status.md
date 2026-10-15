@@ -9,14 +9,17 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-15 (this session, after formalizing the never-fit
-taxonomy)
+**Last updated:** 2026-10-15 (this session, after refining the never-fit
+taxonomy's neutral bands)
 
 ## Current state
 - Anchors locked except **Cool Yellow**, which is actively under revision
   (see Open items #1).
 - Coverage: 67.0% book-scope (771/1150), 65.4% combined (846/1294), at
   ΔE≤15.3. Verified reproducible via `scripts/classify_coverage.cjs`.
+- **Book chapter order changed (2026-10-15):** Ch3 Hue, Ch4 Arcs, Ch5
+  Tints/Tones/Shades, Ch6 Value, Ch7 Chroma. Tints/Tones/Shades is now its
+  own chapter, separate from Arcs — relevant to Open items #2 below.
 - Two Claude sessions are active on this repo right now: one in the cloud
   (tag: `session_01X5dmXMWGXhLU1XoXY5WjKm`), one on Ray's own machine
   (tag: `session_015oNn7JJnmfrU2nTdNo75yn`, already made its first commit).
@@ -35,21 +38,31 @@ taxonomy)
    number can look fine while the colour is visibly wrong. **Next step is
    Ray testing candidate hexes against the live arc by eye**, not another
    coverage comparison table.
-2. **Never-fit taxonomy — formalized, reveals a real architecture gap.**
-   Ray sorted the never-fit pool by eye (spreadsheet, Caran d'Ache
-   Luminance shown) and flagged four categories; this session ran the real
-   classification against all 448 never-fit pencils
-   (`scripts/classify_never_fit_taxonomy.cjs` →
-   `data/never_fit_taxonomy.json`). It's **not an even four-way split**:
-   74.6% are **tint** (lighter than any nearby model point), only 8.0%
-   shade, 8.0% low chroma, 6.0% high-neon, 3.3% genuine hue gap. Cause:
-   Level 1/2/3 never blend toward white, so the palest reachable colour at
-   any hue is just the lighter of that arc's two anchors. **Open
-   architecture question for Ray: add a tint/shade "Level 4" (blend each
-   arc point toward white/black) to rescue most of this pool?** See
-   README §"Open items" #2 for the full writeup — flagged, not built,
-   pending Ray's call (same reasoning as the Cool Yellow item: check it
-   renders right, don't just ship the number).
+2. **Never-fit taxonomy — formalized and refined, reveals a real
+   architecture gap, now tied to the new Ch5 (Tints/Tones/Shades).**
+   Neutrals are pulled out FIRST via **Munsell chroma** (not Lab chroma —
+   Lab C alone is unreliable, e.g. "Rose Grey" is Lab C=39 despite the
+   name): True Achromatic (Munsell C 0–0.5, 24 pencils), Near-Neutral
+   (0.5–1.5, 70), Earth-Adjacent (1.5–2.0, 15) — 109/448 total (24.3%). An
+   initial cool/warm split of the neutral bands by hue family was tested
+   and dropped — the real data didn't back it up, so these are chroma-only
+   now. Of what's left: **tint still dominates at 53.6%** (240/448, pencil
+   lighter than any nearby model point), shade 7.6%, high-neon 6.0%, low
+   chroma 5.1%, genuine hue gap 3.3%. Ray independently hue-tested the tint
+   pool by eye; confirmed most are real lighter-versions of arc colours —
+   64.4% within 20° hue of their nearest arc point. Shades are cleaner
+   still: 80.6% within 15° hue — genuinely darker versions of existing arc
+   colours. **Asymmetry**: tints get less saturated as they lighten (a
+   "blend toward white" fix would work), but many shades get MORE
+   saturated as they darken (Cobalt Blue Deep, Ultramarine, Violet) — a
+   "blend toward black" wouldn't rescue those, the dark anchors themselves
+   would need more chroma. **Open architecture question for Ray: add a
+   tint-only "Level 4"?** Current thinking, given the chapter reorder: keep
+   it as a genuinely separate operation for the new Ch5 (arc colour +
+   white/grey/black ladder), not an extension of the Level 1/2/3 arc
+   geometry itself — so Ch4 (Arcs) stays purely about hue. See README
+   §"Open items" #2 for the full writeup — flagged, not built, still at
+   "confirm the concept" stage pending Ray's call on scope.
 3. **Chapter 5 — olive/dechroma demo.** Pure-dechroma-from-Level-1 framing
    fails geometrically (README §"Open items" #4). Resolution method found
    and proven on a different example (`#00bb00 → #497249` via Level 2
@@ -66,6 +79,17 @@ taxonomy)
 
 ## Recent activity (newest first)
 
+- **2026-10-15**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session): book
+  chapter reorder noted (Ch5 is now Tints/Tones/Shades, separate from
+  Arcs). Refined the never-fit neutral classification to use Munsell
+  chroma with three bands (True Achromatic / Near-Neutral / Earth-Adjacent,
+  dropped a cool/warm hue split that didn't hold up against real data),
+  re-ran the full taxonomy with neutrals pulled out first. Confirmed by
+  hue-match testing that both the tint and shade pools are genuinely
+  lighter/darker versions of real arc colours, not unrelated hues — and
+  found tints and shades likely need different fixes (white-blend works
+  for tints, but shades often need more saturated dark anchors, not a
+  black-blend).
 - **2026-10-15**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session): turned
   Ray's manual never-fit spreadsheet work into a real classifier —
   448 never-fit pencils matched to their nearest model point and

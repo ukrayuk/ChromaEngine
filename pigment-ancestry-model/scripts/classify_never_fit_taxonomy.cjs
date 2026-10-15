@@ -10,6 +10,24 @@ const L2 = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/level2_cross_rows.js
 function chroma(lab) { return Math.sqrt(lab[1] * lab[1] + lab[2] * lab[2]); }
 function hueDeg(lab) { let h = Math.atan2(lab[2], lab[1]) * 180 / Math.PI; if (h < 0) h += 360; return h; }
 function hueDiff(h1, h2) { const d = Math.abs(h1 - h2); return Math.min(d, 360 - d); }
+// Munsell chroma (the number after the '/' in "0.57PB 6.14/0.64") is a much
+// better basis for "is this neutral" than Lab C -- it already tracks how a
+// human reads near-achromatic pigments. Checked against real data (Ray,
+// 2026-10-15): Lab C alone is unreliable both ways (Rose Grey is Lab C=39
+// despite the name; Graphite/Ash/Moonstone are genuinely near-neutral at
+// Lab C=2-4 despite not being named "grey" at all). A cool/warm hue split
+// within the neutral bands was tested and didn't hold up against the real
+// hue-family distribution -- dropped, bands are chroma-only.
+function munsellChroma(m) { const parts = m.split('/'); return parseFloat(parts[parts.length - 1]); }
+const NEUTRAL_BANDS = [
+  { name: 'True Achromatic', lo: 0, hi: 0.5 },
+  { name: 'Near-Neutral', lo: 0.5, hi: 1.5 },
+  { name: 'Earth-Adjacent', lo: 1.5, hi: 2.0 },
+];
+function neutralBand(mc) {
+  for (const b of NEUTRAL_BANDS) if (mc > b.lo && mc <= b.hi) return b.name;
+  return null;
+}
 
 const modelPoints = [];
 for (const k of Object.keys(L1)) for (const p of L1[k].points) modelPoints.push(hexToLabD65(p.hex));
@@ -25,6 +43,18 @@ function nearest(lab) {
 const results = neverFit.map(p => {
   const lab = hexToLabD65(p.hex);
   const C = chroma(lab), H = hueDeg(lab);
+  const mc = munsellChroma(p.munsell);
+  const band = neutralBand(mc);
+
+  // Neutral check runs FIRST, on Munsell chroma, before any nearest-point
+  // comparison -- a pencil this close to achromatic shouldn't be judged by
+  // hue or Lab-C at all (both are unstable/misleading near the neutral
+  // axis, which is exactly why White/Black/Platinum/Storm Gray etc. were
+  // previously falling into "tint"/"shade"/"hue gap" by coincidence).
+  if (band) {
+    return { ...p, L: lab[0], C, H, munsellC: mc, category: 'neutral (' + band + ')' };
+  }
+
   const { pt } = nearest(lab);
   const dL = lab[0] - pt[0];
   const dC = C - pt.C;
@@ -41,7 +71,7 @@ const results = neverFit.map(p => {
   else if (Math.abs(dL) >= Math.abs(dC)) category = dL > 0 ? 'tint (too light)' : 'shade (too dark)';
   else category = dC > 0 ? 'high-neon chroma (too saturated)' : 'low chroma (too muted/grey)';
 
-  return { ...p, L: lab[0], C, H, nearestL: pt[0], nearestC: pt.C, nearestH: pt.H, dL, dC, dH, category };
+  return { ...p, L: lab[0], C, H, munsellC: mc, nearestL: pt[0], nearestC: pt.C, nearestH: pt.H, dL, dC, dH, category };
 });
 
 const counts = {};
@@ -56,7 +86,10 @@ console.log('=== Cross-check against Ray\'s Caran d\'Ache Luminance spreadsheet 
 const checkNames = ['Violet', 'Dark Sap Green', 'Sepia 10%', 'Payne\'s Grey 30%', 'French Grey 10%', 'Burnt Sienna 10%', 'Grass Green', 'Ice Blue'];
 for (const name of checkNames) {
   const r = results.find(x => x.range.includes('Luminance') && x.name === name);
-  if (r) console.log(' ', r.name.padEnd(20), r.hex, 'dE=' + r.minDist.toFixed(1), ' -> ', r.category, '  (dL=' + r.dL.toFixed(1) + ' dC=' + r.dC.toFixed(1) + ' dH=' + r.dH.toFixed(1) + ')');
+  if (r) {
+    const detail = r.dL !== undefined ? '  (dL=' + r.dL.toFixed(1) + ' dC=' + r.dC.toFixed(1) + ' dH=' + r.dH.toFixed(1) + ')' : '  (munsellC=' + r.munsellC.toFixed(2) + ')';
+    console.log(' ', r.name.padEnd(20), r.hex, 'dE=' + r.minDist.toFixed(1), ' -> ', r.category, detail);
+  }
 }
 
 fs.writeFileSync(path.join(ROOT, 'data/never_fit_taxonomy.json'), JSON.stringify(results, null, 2));

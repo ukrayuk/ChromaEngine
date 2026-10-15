@@ -207,36 +207,71 @@ Level 2 alongside Level 1 so muted colours have a place to visually land.
 don't fit either Level 1 or Level 2 — the pool in
 `data/never_fit_final_153.json` (448 pencils at the current ΔE≤15.3
 threshold, full 11-range set — the "153" in the filename is stale) — aren't
-failing randomly. Each was matched to its nearest Level 1/2 point and
-classified by which Lab axis dominates the gap
-(`scripts/classify_never_fit_taxonomy.cjs` →
-`data/never_fit_taxonomy.json`):
+failing randomly. Each is first checked for being **neutral** (Munsell
+chroma, not Lab chroma — Lab C alone is unreliable both ways: "Rose Grey"
+is Lab C=39 despite the name, while "Graphite"/"Ash"/"Moonstone" are
+genuinely near-achromatic at Lab C=2–4 despite not being named "grey" at
+all). Neutral bands (Ray, refined same day — an initial cool/warm split by
+hue family was tested and dropped, the real hue-family distribution didn't
+back it up, so these are chroma-only):
 
-| Category | Count | % |
+| Band | Munsell C | Count |
 |---|---|---|
-| **tint** (pencil lighter than any nearby model point) | 334 | 74.6% |
-| shade (pencil darker) | 36 | 8.0% |
-| low chroma (pencil more muted/grey) | 36 | 8.0% |
+| True Achromatic | 0–0.5 | 24 |
+| Near-Neutral | 0.5–1.5 | 70 |
+| Earth-Adjacent | 1.5–2.0 | 15 |
+| **Total neutral** | ≤2.0 | **109 (24.3%)** |
+
+Everything else is matched to its nearest Level 1/2 point and classified by
+which Lab axis dominates the gap
+(`scripts/classify_never_fit_taxonomy.cjs` → `data/never_fit_taxonomy.json`):
+
+| Category | Count | % of total 448 |
+|---|---|---|
+| **tint** (pencil lighter than any nearby model point) | 240 | 53.6% |
+| neutral (see bands above) | 109 | 24.3% |
+| shade (pencil darker) | 34 | 7.6% |
 | high-neon chroma (pencil more saturated than the model reaches) | 27 | 6.0% |
+| low chroma (pencil more muted/grey, but not neutral-band low) | 23 | 5.1% |
 | genuine hue gap (not a value/chroma issue at all) | 15 | 3.3% |
 
-**This is heavily one-sided, not an even four-way split** — nearly 3 in 4
-never-fit pencils fail because they're *lighter* than anything the model
-produces. Structural cause: Level 1/2/3 are built entirely from mixing
-between saturated primaries — there's no "toward white" dilution step
-anywhere in the pipeline, so the palest reachable colour at any hue is just
-the lighter of that arc's two anchors (~L 87–90 at best). Only 16/334 of
-the tint misses are literally manufacturer "X%"-dilution pencils — most are
-ordinary pencils whose natural pigment simply sits lighter than the arc
-reaches at that hue, so this isn't a naming-convention quirk, it's a real
-structural gap. **Worth considering: a tint/shade "Level 4" (each arc point
-blended toward white/black) would likely rescue most of the pool** — an
+**Tint still dominates even after pulling neutrals out** — over half the
+pool fails because it's lighter than anything the model produces.
+Structural cause: Level 1/2/3 are built entirely from mixing between
+saturated primaries — there's no "toward white" dilution step anywhere in
+the pipeline, so the palest reachable colour at any hue is just the
+lighter of that arc's two anchors (~L 87–90 at best). Ray independently
+hue-tested a sample of the tint pool by eye and confirmed most genuinely
+read as lighter versions of existing arc colours, not unrelated hues — of
+the 240, **64.4% are within 20° hue of their nearest arc point** (dropping
+to a stricter but still strong 53.9% within 15°). The shade side is even
+cleaner: **80.6%** of shade misses are within 15° hue of their nearest arc
+point — genuinely darker versions of existing arc colours (Phthalo Green,
+Ultramarine, Viridian, Royal Blue, Cornflower Blue). One asymmetry worth
+knowing: tints trend *less* saturated as they lighten (consistent with a
+"blend toward white" fix), but many shades are *more* saturated than their
+nearest arc point (Cobalt Blue Deep dC=+10.7, Ultramarine dC=+9.6, Violet
+dC=+11.7) — these are classic dark-and-vivid pigments (phthalos,
+ultramarines, cobalts) the model's dark end doesn't reach. A generic
+"blend toward black" wouldn't rescue these — it only desaturates further,
+moving away from the target. The dark anchors themselves may need more
+chroma, not a dilution layer.
+
+**Worth considering: a tint "Level 4" (each arc point blended toward
+white) would likely rescue most of the tint pool**, and is well-supported
+by both the structural cause and the hue-match evidence above. A matching
+fix for shades is a separate, harder problem (see asymmetry above). An
 earlier, now-abandoned pipeline (`test_bvr_split.cjs`'s `LADDER_SUPERSET`
-idea, not migrated into this handoff) tried something close to this but
-was never carried into the canonical model. Not actioned — this is an
-architecture decision, flagged for Ray's call before building it, same as
-the BvR-split lesson above: check the actual result renders right before
-committing to it.
+idea, not migrated into this handoff) tried something close to the tint
+fix but was never carried into the canonical model. **Book context
+(2026-10-15): the chapter order changed — Ch3 Hue, Ch4 Arcs, Ch5 Tints/
+Tones/Shades, Ch6 Value, Ch7 Chroma.** This makes Tints/Tones/Shades its
+own chapter, separate from Arcs — current thinking is this should stay a
+genuinely separate operation (take any arc colour, show the white/grey/
+black blend ladder) rather than extending the Level 1/2/3 arc geometry
+itself, so Ch4 stays purely about hue. Not actioned yet — still at the
+"confirm the concept, build book-ready material" stage, Ray's call on
+scope before anything gets built as an actual figure.
 
 ### 3. The Level 2 cross-arc "rescue" method — a reusable technique
 Worked example: target `#497249` (muted sage-green) doesn't fit the pure
