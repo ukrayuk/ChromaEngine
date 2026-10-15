@@ -203,12 +203,40 @@ will look like they "don't fit," which is exactly what's going on in item
 #1 above. Worth deciding whether a "colour lab"-style QA tool should show
 Level 2 alongside Level 1 so muted colours have a place to visually land.
 
-**Never-fit taxonomy (Ray, 2026-10-15):** pencils that don't fit either
-Level 1 or Level 2 — the pool in `data/never_fit_final_153.json` — aren't
-failing randomly. They fall into four categories the model doesn't reach
-at all: **tints**, **shades**, **low chroma**, or **high-neon chroma**.
-Worth checking any future "never fit" pencil against this list before
-treating it as a new, unexplained failure.
+**Never-fit taxonomy (Ray, 2026-10-15; formalized same day):** pencils that
+don't fit either Level 1 or Level 2 — the pool in
+`data/never_fit_final_153.json` (448 pencils at the current ΔE≤15.3
+threshold, full 11-range set — the "153" in the filename is stale) — aren't
+failing randomly. Each was matched to its nearest Level 1/2 point and
+classified by which Lab axis dominates the gap
+(`scripts/classify_never_fit_taxonomy.cjs` →
+`data/never_fit_taxonomy.json`):
+
+| Category | Count | % |
+|---|---|---|
+| **tint** (pencil lighter than any nearby model point) | 334 | 74.6% |
+| shade (pencil darker) | 36 | 8.0% |
+| low chroma (pencil more muted/grey) | 36 | 8.0% |
+| high-neon chroma (pencil more saturated than the model reaches) | 27 | 6.0% |
+| genuine hue gap (not a value/chroma issue at all) | 15 | 3.3% |
+
+**This is heavily one-sided, not an even four-way split** — nearly 3 in 4
+never-fit pencils fail because they're *lighter* than anything the model
+produces. Structural cause: Level 1/2/3 are built entirely from mixing
+between saturated primaries — there's no "toward white" dilution step
+anywhere in the pipeline, so the palest reachable colour at any hue is just
+the lighter of that arc's two anchors (~L 87–90 at best). Only 16/334 of
+the tint misses are literally manufacturer "X%"-dilution pencils — most are
+ordinary pencils whose natural pigment simply sits lighter than the arc
+reaches at that hue, so this isn't a naming-convention quirk, it's a real
+structural gap. **Worth considering: a tint/shade "Level 4" (each arc point
+blended toward white/black) would likely rescue most of the pool** — an
+earlier, now-abandoned pipeline (`test_bvr_split.cjs`'s `LADDER_SUPERSET`
+idea, not migrated into this handoff) tried something close to this but
+was never carried into the canonical model. Not actioned — this is an
+architecture decision, flagged for Ray's call before building it, same as
+the BvR-split lesson above: check the actual result renders right before
+committing to it.
 
 ### 3. The Level 2 cross-arc "rescue" method — a reusable technique
 Worked example: target `#497249` (muted sage-green) doesn't fit the pure

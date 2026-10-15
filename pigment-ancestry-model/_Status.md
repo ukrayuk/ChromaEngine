@@ -9,7 +9,8 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-15
+**Last updated:** 2026-10-15 (this session, after formalizing the never-fit
+taxonomy)
 
 ## Current state
 - Anchors locked except **Cool Yellow**, which is actively under revision
@@ -34,12 +35,21 @@ need to ask permission first.
    number can look fine while the colour is visibly wrong. **Next step is
    Ray testing candidate hexes against the live arc by eye**, not another
    coverage comparison table.
-2. **Never-fit taxonomy** (added 2026-10-15, Ray's machine): the 153-pencil
-   never-fit pool (`data/never_fit_final_153.json`) sorts into four
-   categories the model doesn't reach at all — tints, shades, low chroma,
-   high-neon chroma. Noted in README §"Open items" #2. Not yet turned into
-   actual categorised data or acted on — worth doing if it's going to be
-   checked against repeatedly.
+2. **Never-fit taxonomy — formalized, reveals a real architecture gap.**
+   Ray sorted the never-fit pool by eye (spreadsheet, Caran d'Ache
+   Luminance shown) and flagged four categories; this session ran the real
+   classification against all 448 never-fit pencils
+   (`scripts/classify_never_fit_taxonomy.cjs` →
+   `data/never_fit_taxonomy.json`). It's **not an even four-way split**:
+   74.6% are **tint** (lighter than any nearby model point), only 8.0%
+   shade, 8.0% low chroma, 6.0% high-neon, 3.3% genuine hue gap. Cause:
+   Level 1/2/3 never blend toward white, so the palest reachable colour at
+   any hue is just the lighter of that arc's two anchors. **Open
+   architecture question for Ray: add a tint/shade "Level 4" (blend each
+   arc point toward white/black) to rescue most of this pool?** See
+   README §"Open items" #2 for the full writeup — flagged, not built,
+   pending Ray's call (same reasoning as the Cool Yellow item: check it
+   renders right, don't just ship the number).
 3. **Chapter 5 — olive/dechroma demo.** Pure-dechroma-from-Level-1 framing
    fails geometrically (README §"Open items" #4). Resolution method found
    and proven on a different example (`#00bb00 → #497249` via Level 2
@@ -56,6 +66,13 @@ need to ask permission first.
 
 ## Recent activity (newest first)
 
+- **2026-10-15**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session): turned
+  Ray's manual never-fit spreadsheet work into a real classifier —
+  448 never-fit pencils matched to their nearest model point and
+  categorized by which axis dominates the gap. Corrected the "four even
+  categories" framing to the real result (74.6% tint-dominated) and
+  surfaced the structural cause (no white-blend dimension in L1/2/3).
+  Open question for Ray: worth adding a tint/shade Level 4?
 - **2026-10-15**, `session_015oNn7JJnmfrU2nTdNo75yn` (Ray's machine):
   added the never-fit taxonomy note to README (commit `6faeeee`).
 - **2026-10-15**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session):
