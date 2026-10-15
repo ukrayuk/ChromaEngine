@@ -29,9 +29,23 @@ const { mixSpectral } = require(path.join(__dirname, '../lib.cjs'));
 // Cadmium-Yellow territory, hue/value/chroma all close), so no diagram
 // re-render was needed for this correction -- only the underlying data and
 // classification numbers change.
+//
+// 2026-10-15: Cool Yellow swapped from Lemon Cadmium (#f6e83b, Derwent
+// Artists, H=99.4) to Cadmium Yellow Lemon, Faber-Castell Polychromos 9201
+// (#e7ed46, 1.54GY 9.04/10.85, H=105.7). Ray's by-eye finding: the old
+// anchor was too warm/indistinguishable from Warm Yellow. Searched real
+// pencils across H=99-111 (anchored on Ray's own picked marker #e7fa01 and
+// his test swatch #d5f129, which confirmed "lime" starts around H~108-111)
+// and landed just inside the yellow side of that boundary. Unlike every
+// other candidate tested (Lime Green, Lime, Lemon Lime, Luminance Lemon
+// Yellow -- all cost coverage, -10 to -36), this one is a net GAIN:
+// +11 book-scope (771->782, 67.0%->68.0%), +14 combined (846->860,
+// 65.4%->66.5%), no range lost ground anywhere. Diagrams need
+// re-rendering this time -- hue shift is large enough to be visible
+// (99.4 -> 105.7deg), unlike the near-identical ffd200->ffd800 correction.
 const ARCS = {
   'Red-Yellow (Orange)': { P1: { name: 'Vermilion — Warm Red', hex: '#e3212f' }, P2: { name: 'Medium Cadmium Yellow (Imit.), Caran d\'Ache Luminance 6901 — Warm Yellow', hex: '#ffd800' } },
-  'Yellow-Blue (Green)': { P1: { name: 'Lemon Cadmium — Cool Yellow', hex: '#f6e83b' }, P2: { name: 'Cerulean Blue — Cool Blue', hex: '#0082b5' } },
+  'Yellow-Blue (Green)': { P1: { name: 'Cadmium Yellow Lemon, Faber-Castell Polychromos 9201 — Cool Yellow', hex: '#e7ed46' }, P2: { name: 'Cerulean Blue — Cool Blue', hex: '#0082b5' } },
   'Blue-Red (Violet)':   { P1: { name: 'Warm Blue (synthetic) — 8PB 4.8/13', hex: '#5f6bca' }, P2: { name: 'Cool Red (synthetic) — 8.25RP 4.5/14', hex: '#c62d6a' } },
 };
 const MAXGEN = 8;

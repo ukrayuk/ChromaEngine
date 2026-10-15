@@ -56,7 +56,7 @@ before) since Arc1 was never contributing. Old 4-arc data backed up at
 |---|---|---|---|
 | Warm Red | `#e3212f` | Vermilion, Castle Arts Gold | — |
 | Warm Yellow | `#ffd800` | Medium Cadmium Yellow (Imit.), Caran d'Ache Luminance 6901 | 4.68Y 8.69/13.41 |
-| Cool Yellow | `#f6e83b` | Lemon Cadmium, Derwent Artists Pencils | — **SEE OPEN ITEMS: this is under active revision** |
+| Cool Yellow | `#e7ed46` | Cadmium Yellow Lemon, Faber-Castell Polychromos 9201 | 1.54GY 9.04/10.85 |
 | Cool Blue | `#0082b5` | Cerulean Blue, Castle Arts Gold | — |
 | Warm Blue | `#5f6bca` | synthetic (Munsell-derived) | 8PB 4.8/13 |
 | Cool Red | `#c62d6a` | synthetic (Munsell-derived) | 8.25RP 4.5/14 |
@@ -69,8 +69,12 @@ ones. See `data/history/` for the two earlier BvR approaches that were
 tried and abandoned before landing here (below).
 
 **Current coverage** (ΔE≤15.3, `scripts/classify_coverage.cjs`):
-- Book-scope (9 ranges, 1150 pencils): 771/1150 = **67.0%**
-- Combined (11 ranges, 1294 pencils): 846/1294 = **65.4%**
+- Book-scope (9 ranges, 1150 pencils): 782/1150 = **68.0%**
+- Combined (11 ranges, 1294 pencils): 860/1294 = **66.5%**
+
+**Status (2026-10-15): all six anchors now locked**, including Cool
+Yellow — see the "Cool Yellow correction" writeup below for the full
+cause/trade-off, same pattern as the two Warm Yellow corrections.
 
 ## Decision history (condensed)
 
@@ -126,9 +130,16 @@ data/
   chapter_*.json               worked-example data for the book's "how to
                                 use the navigator" demo (12 chapter colours
                                 vs the owned-pencil pool — see
-                                scripts/investigations/)
-  coolyellow_candidates/       test rows for 4 candidate Cool Yellow
-                                replacements (see Open items)
+                                scripts/investigations/). STALE as of
+                                2026-10-15: built against the pre-correction
+                                Cool Yellow anchor (#f6e83b), not yet
+                                regenerated against the current one
+                                (#e7ed46) — treat any t/generation/ΔE values
+                                here as needing a re-run before reuse.
+  coolyellow_candidates/       historical record of the 5 Cool Yellow
+                                candidates tested (4 rejected, 1 —
+                                cadmiumlemon, #e7ed46 — now canonical, see
+                                "Cool Yellow correction" above)
 scripts/
   gen_level1_pure_rows.cjs     THE canonical generator — edit ARCS here to
                                 change an anchor, then re-run this, then
@@ -177,36 +188,47 @@ node scripts/classify_coverage.cjs
 fresh clone, point scripts at wherever ChromaEngine's `data/master.json`
 actually lives.
 
+## Cool Yellow correction (2026-10-15) — RESOLVED, all six anchors now locked
+
+Previous: `#f6e83b` (Lemon Cadmium, Derwent Artists, H=99.4°). Ray's live
+judgement: **too warm**, close enough to Warm Yellow to be hard to
+distinguish. Same shape as the two Warm Yellow corrections before it —
+numbers alone got it wrong first, Ray's eye against a live arc rendering
+got it right.
+
+First pass (numbers-led, wrong): four candidates tested against `#e7fa01`
+(Ray's own colour-picker marker — later clarified as a *directional*
+marker, not a precise target) and ranked by coverage cost:
+
+| Candidate | Hex | Hue | Coverage delta |
+|---|---|---|---|
+| Lime Green, Derwent Coloursoft | `#d5e42e` | 107.8° | −13 book / −18 combined |
+| Lime, Derwent Procolour | `#d1e42f` | 109.0° | −14 / −19 |
+| Lemon Yellow, Caran d'Ache Luminance 6901 | `#f1ec29` | 101.8° | −10 / −14 |
+| Lemon Lime, Derwent Chromaflow | `#cbdd00` | 107.9° | −31 / −36 |
+
+Lime Green was recommended on these numbers. **Ray rejected it after
+testing real pencil swatches against a live rendering of the arc**
+("none look right on the arc") — repeat of the exact BvR six-sector
+lesson: the metric isn't the whole picture.
+
+Second pass (eye-led, correct): Ray tested a swatch at `#d5f129`
+(H=110.8°) and confirmed that reads as "lime" — too far toward green. So
+the real window is between the old anchor (99.4°) and that lime boundary.
+Searched real pencils across H=99–111°, named pattern made the boundary
+visible by itself ("Lemon/Citrus/Cadmium Yellow" up to ~105.7°, then
+"Lime/Chartreuse" from ~107.8° on). Tested **Cadmium Yellow Lemon,
+Faber-Castell Polychromos 9201 (`#e7ed46`, 1.54GY 9.04/10.85, H=105.7°)**
+— confirmed by eye ("greens... placed better... yellow anchor... shows to
+be different") and, unlike every candidate in the first pass, this one is
+a net **coverage gain**, not a cost: book-scope 771→**782** (+11,
+67.0%→68.0%), combined 846→**860** (+14, 65.4%→66.5%), no range lost
+ground anywhere. **Locked in as the new canonical Cool Yellow.**
+Old data backed up to `data/history/*_PRECOOLYELLOWFIX_backup.json`.
+
 ## Open items (read this part)
 
-### 1. Cool Yellow anchor — active, unresolved
-Current: `#f6e83b` (Lemon Cadmium, Derwent Artists). Ray's live judgement:
-**too warm**. He pushed a colour picker toward `#e7fa01` — **not a precise
-target, a directional marker** (push the hue further toward green/vivid
-chartreuse until it reads right by eye, don't try to numerically match that
-exact hex).
-
-Four candidates were tested (`data/coolyellow_candidates/`,
-`scripts/investigations/gen_coolyellow_test_set.cjs` +
-`compare_coolyellow_test.cjs`):
-
-| Candidate | Hex | Hue match to `#e7fa01` | Gamut | Coverage delta |
-|---|---|---|---|---|
-| Lime Green, Derwent Coloursoft | `#d5e42e` | ~exact (107.8° vs 107.6°) | clean | −13 book / −18 combined |
-| Lime, Derwent Procolour | `#d1e42f` | 109.0° | clean | −14 / −19 |
-| Lemon Yellow, Caran d'Ache Luminance 6901 | `#f1ec29` | 101.8° (only ~⅓ of the shift) | clean | −10 / −14 |
-| Lemon Lime, Derwent Chromaflow | `#cbdd00` | ~exact (107.9°) | sRGB-clipped | −31 / −36 |
-
-**Lime Green was recommended on these numbers — Ray rejected it after
-testing real pencil swatches against a live rendering of the arc** ("none
-look right on the arc, they really do not fit at all"). This is a repeat of
-the exact lesson from the BvR six-sector episode: the metric isn't the
-whole picture, the rendered result is. **Next step: Ray needs to be at his
-own machine, testing candidate hexes against the live arc rendering by eye
-— that's the actual bottleneck, not more numeric search.** Don't just
-re-run the coverage comparison and recommend a winner from the table again.
-
-### 2. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing
+### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing
 Tested all 273 real pencils in green-hue territory (H 100–190°, C>15)
 against the model: only **43.2%** fit on the pure YgB Level 1 arc alone,
 but **80.6%** fit once Level 2 is included. The worst-fitting ones on
@@ -222,17 +244,21 @@ will look like they "don't fit," which is exactly what's going on in item
 #1 above. Worth deciding whether a "colour lab"-style QA tool should show
 Level 2 alongside Level 1 so muted colours have a place to visually land.
 
-**Never-fit taxonomy (Ray, 2026-10-15; formalized and refined same day):**
-pencils that don't fit either Level 1 or Level 2 — the pool in
-`data/never_fit_final_153.json` (the "153" in the filename is stale).
-**Book-scope only, 379 pencils** — Derwent Drawing Pencils and Castle Arts
-Harmonious Collection are excluded (`scripts/classify_never_fit_taxonomy.cjs`
-drops them at the source, Ray's call: those two ranges were only ever added
-as a stress test, to check whether the model passed over the muted end of
-real pigments — it mostly did, question answered, they're not part of the
-book's 9 ranges and shouldn't be in this analysis). Dropping them lands
-exactly on 1150 − 771 = 379, confirming that's all they were contributing
-to this pool.
+**Never-fit taxonomy (Ray, 2026-10-15; formalized, refined, and
+regenerated after the Cool Yellow correction same day):** pencils that
+don't fit either Level 1 or Level 2 — the pool in
+`data/never_fit_final_153.json` (the "153" in the filename is stale; this
+file is regenerated by hand whenever the canonical anchors change — see
+the generation snippet in `scripts/classify_coverage.cjs`'s `classify()`
+pattern, same ΔE≤15.3 + L1/L2-then-L3 logic). **Book-scope only, 368
+pencils** — Derwent Drawing Pencils and Castle Arts Harmonious Collection
+are excluded (`scripts/classify_never_fit_taxonomy.cjs` drops them at the
+source, Ray's call: those two ranges were only ever added as a stress
+test, not part of the book's 9 ranges). The taxonomy's shape held up
+essentially unchanged across the Cool Yellow anchor swap (tint still
+dominant at a similar proportion, hue-match confidence nearly identical) —
+a good sign the taxonomy reflects something structural about the model,
+not an artifact of one specific anchor set.
 
 Each pencil is first checked for being **neutral** (Munsell chroma, not Lab
 chroma — Lab C alone is unreliable both ways: "Rose Grey" is Lab C=39
@@ -244,58 +270,70 @@ back it up, so these are chroma-only):
 
 | Band | Munsell C | Count |
 |---|---|---|
-| True Achromatic | 0–0.5 | 20 |
-| Near-Neutral | 0.5–1.5 | 54 |
+| True Achromatic | 0–0.5 | 19 |
+| Near-Neutral | 0.5–1.5 | 51 |
 | Earth-Adjacent | 1.5–2.0 | 12 |
-| **Total neutral** | ≤2.0 | **86 (22.7%)** |
+| **Total neutral** | ≤2.0 | **82 (22.3%)** |
 
 Everything else is matched to its nearest Level 1/2 point and classified by
 which Lab axis dominates the gap:
 
-| Category | Count | % of total 379 |
+| Category | Count | % of total 368 |
 |---|---|---|
-| **tint** (pencil lighter than any nearby model point) | 202 | 53.3% |
-| neutral (see bands above) | 86 | 22.7% |
-| shade (pencil darker) | 33 | 8.7% |
-| high-neon chroma (pencil more saturated than the model reaches) | 27 | 7.1% |
-| low chroma (pencil more muted/grey, but not neutral-band low) | 21 | 5.5% |
-| genuine hue gap (not a value/chroma issue at all) | 10 | 2.6% |
+| **tint** (pencil lighter than any nearby model point) | 191 | 51.9% |
+| neutral (see bands above) | 82 | 22.3% |
+| shade (pencil darker) | 39 | 10.6% |
+| high-neon chroma (pencil more saturated than the model reaches) | 26 | 7.1% |
+| low chroma (pencil more muted/grey, but not neutral-band low) | 22 | 6.0% |
+| genuine hue gap (not a value/chroma issue at all) | 8 | 2.2% |
 
-**Tint still dominates even after pulling neutrals out** — over half the
+**Tint still dominates even after pulling neutrals out** — about half the
 pool fails because it's lighter than anything the model produces.
 Structural cause: Level 1/2/3 are built entirely from mixing between
 saturated primaries — there's no "toward white" dilution step anywhere in
 the pipeline, so the palest reachable colour at any hue is just the
-lighter of that arc's two anchors (~L 87–90 at best). Ray independently
-hue-tested a sample of the tint pool by eye and confirmed most genuinely
-read as lighter versions of existing arc colours, not unrelated hues — of
-the 202, **78.2% are within 20° hue of their nearest arc point** (66.8%
-within a stricter 15°) — both noticeably stronger than the full 448-pencil
-figure, since the two dropped ranges were specifically chosen to probe the
-muted/unusual end and were dragging the confidence down. The shade side is
-even cleaner: **84.8%** of shade misses are within 15° hue of their
-nearest arc point — genuinely darker versions of existing arc colours
-(Phthalo Green, Ultramarine, Viridian, Royal Blue, Cornflower Blue). One
-asymmetry worth knowing: tints trend *less* saturated as they lighten
-(consistent with a "blend toward white" fix), but many shades are *more*
-saturated than their nearest arc point (Cobalt Blue Deep dC=+10.7,
-Ultramarine dC=+9.6, Violet dC=+11.7) — these are classic dark-and-vivid
-pigments (phthalos, ultramarines, cobalts) the model's dark end doesn't
-reach. A generic "blend toward black" wouldn't rescue these — it only
-desaturates further, moving away from the target. The dark anchors
-themselves may need more chroma, not a dilution layer.
+lighter of that arc's two anchors. Ray independently hue-tested a sample
+of the tint pool by eye and confirmed most genuinely read as lighter
+versions of existing arc colours, not unrelated hues — of the 191,
+**78.5% are within 20° hue of their nearest arc point** (66.5% within a
+stricter 15°). The shade side is even cleaner: **84.6%** of shade misses
+are within 15° hue of their nearest arc point — genuinely darker versions
+of existing arc colours (Phthalo Green, Ultramarine, Viridian, Royal Blue,
+Cornflower Blue). One asymmetry worth knowing: tints trend *less*
+saturated as they lighten (consistent with a "blend toward white" fix),
+but many shades are *more* saturated than their nearest arc point (Cobalt
+Blue Deep, Ultramarine, Violet) — classic dark-and-vivid pigments
+(phthalos, ultramarines, cobalts) the model's dark end doesn't reach. A
+generic "blend toward black" wouldn't rescue these — it only desaturates
+further, moving away from the target. The dark anchors themselves may
+need more chroma, not a dilution layer.
 
-Current open micro-questions, flagged for Ray's by-eye pass rather than
-decided here: (1) the Munsell-chroma band edges have real pencils sitting
-right on them (e.g. 13 different "White"-named pencils span Munsell C
-0.13–1.58 across all three bands — plausibly real formulation differences
-between ranges, not measurement noise, but worth confirming by eye); (2)
-~40 tint/shade pencils sit at dH 15–25°, the zone where "is this really a
-lighter/darker version of an arc colour" starts being a judgment call; (3)
-a handful of tint/shade/low-chroma/high-neon calls are coin-flips where
-|dL|≈|dC| (e.g. Viridian and Pthalo Turquoise, same pigment family
-different ranges, land in different categories on tiny measurement
-differences).
+**Tints are NOT mostly Level 1 — and they're geographically lopsided.**
+Of the 191 tint misses, only 44% (84) are nearest to a pure Level 1 arc
+point — the majority, 56% (107), are actually closer to a Level 2
+cross-mix point. And **zero tints land anywhere near RoY (orange) or
+RoY×YgB** — every one clusters in the green-through-violet half of the
+wheel (Yellow-Blue, Blue-Red, and the YgB×BvR seam between them). Tracks
+with real pencil sets: sky blues, pastel greens, lavenders are common
+named "light" pencils; light oranges/warm pastels much less so, and the
+RoY arc's own light end (Warm Yellow) is already high enough to cover
+most of what exists there. So a tint "Level 4" fix wouldn't need to touch
+the whole wheel evenly — it's specifically a green/violet problem, and
+over half of it would need to interact with Level 2's cross-mixing, not
+just extend the pure arcs.
+
+**How clean are these calls, honestly?** Checked every pencil against
+three boundary zones (Munsell band edges, weak-hue-match tint/shades at
+dH 15–25°, and tint/shade/low-chroma/high-neon coin-flips where
+|dL|≈|dC|): **74.5% (274/368) are clean**, don't touch any boundary zone.
+The other **25.5% (94/368)** sit on at least one — about 1 in 4 is a
+genuine judgment call, not a handful of arbitrary edge cases. Specific
+examples flagged for Ray's by-eye pass: 13 different "White"-named
+pencils span Munsell C 0.13–0.98 across both True Achromatic and
+Near-Neutral (plausibly real formulation differences between ranges, not
+measurement noise); Viridian and Pthalo Turquoise (same pigment family,
+different ranges) land in different categories on tiny measurement
+differences.
 
 **Worth considering: a tint "Level 4" (each arc point blended toward
 white) would likely rescue most of the tint pool**, and is well-supported
@@ -313,7 +351,7 @@ itself, so Ch4 stays purely about hue. Not actioned yet — still at the
 "confirm the concept, build book-ready material" stage, Ray's call on
 scope before anything gets built as an actual figure.
 
-### 3. The Level 2 cross-arc "rescue" method — a reusable technique
+### 2. The Level 2 cross-arc "rescue" method — a reusable technique
 Worked example: target `#497249` (muted sage-green) doesn't fit the pure
 YgB arc at all, but fits **ΔE 8.7** on the `YgB × BvR — like` Level 2
 dataset. Recipe: YgB arc point at t=0.430 (G7) = `#49c454` (a vivid green,
@@ -325,7 +363,7 @@ pattern. **Use this method whenever a muted/earthy target doesn't fit
 Level 1 — check Level 2 (adjacent-arc cross-mix) before reaching for any
 kind of "dechroma" transform.**
 
-### 4. Olive/dechroma dead end (book Chapter 5 pre-thinking)
+### 3. Olive/dechroma dead end (book Chapter 5 pre-thinking)
 Ray's plan for a Chapter 5 demo: pick a green via the arc, mix it
 (chapter-3 style), then "dechroma" (pure chroma reduction, value held) to a
 muted role colour like Olive. **Tested and failed as originally framed**:
@@ -334,7 +372,7 @@ blue-green as lightness drops), so no point on the arc combines a muted
 target's hue AND value at high chroma — the nearest-hue arc point to real
 "Olive" pencil (`#818659`, L=54.5 C=25.5 H=112.0) sits at L=87 (dL=−33,
 dC=−53 just to reach it). A pure value-held dechroma cannot work from a
-Level 1 starting point. **Resolution per item #3 above: use the Level 2
+Level 1 starting point. **Resolution per item #2 above: use the Level 2
 cross-arc method instead** (green × violet cross-mix), which is what
 actually nailed the `#00bb00 → #497249` example. Ray's note: *"Keep this as
 a method to come back to shortly"* — i.e. apply the Level 2 cross-mix
@@ -343,7 +381,7 @@ dechroma framing. See `scripts/investigations/build_olive_dechroma.cjs`
 (the failed attempt, kept for the record of why it fails) and
 `build_crossarc_demo.cjs` (the method that works).
 
-### 5. Not yet started
+### 4. Not yet started
 - Chapter 5's full chroma/value concept demo (4 axes: hue-only,
   value+chroma together, chroma-only, value-only — feasibility already
   probed in principle: hue-only layering works well from a mid-chroma base

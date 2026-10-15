@@ -1,1491 +1,379 @@
 [
   {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Violet",
-    "munsell": "0.58P 2.65/11.42",
-    "hex": "#4d2c81",
-    "minDist": 15.654955170387503
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Anthraquinoid Pink",
-    "munsell": "5.22R 6.6/11.74",
-    "hex": "#fd7b76",
-    "minDist": 15.900608117720846
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Dark Sap Green",
-    "munsell": "6.26BG 2.52/2.94",
-    "hex": "#1f4243",
-    "minDist": 15.948971646682944
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Bleu de Nîmes",
-    "munsell": "8.06PB 1.93/9.5",
-    "hex": "#292569",
-    "minDist": 17.000272390476255
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Ice Blue",
-    "munsell": "7.63B 3.17/8.29",
-    "hex": "#00557f",
-    "minDist": 17.084530190482106
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Dark Indigo",
-    "munsell": "5.96P 1.26/0.63",
-    "hex": "#242025",
-    "minDist": 17.50474221512418
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Perylene Brown",
-    "munsell": "5.58R 2.88/10.28",
-    "hex": "#891027",
-    "minDist": 17.656300209170244
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Light Malachite Green",
-    "munsell": "7.15BG 7.14/7.29",
-    "hex": "#44c3bf",
-    "minDist": 18.963690278790278
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Carmine Lake",
-    "munsell": "6.05R 2.06/4.66",
-    "hex": "#522428",
-    "minDist": 19.15503315016611
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Hibiscus Pink",
-    "munsell": "8.14RP 5.45/8.05",
-    "hex": "#bf6c80",
-    "minDist": 19.455281925427528
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Grass Green",
-    "munsell": "1.45G 4.44/11.82",
-    "hex": "#00812b",
-    "minDist": 19.6022923413466
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Indanthrone Blue",
-    "munsell": "8.33PB 1.13/4.16",
-    "hex": "#1d1b39",
-    "minDist": 20.00271097201198
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Ultramarine",
-    "munsell": "6.75PB 4.24/17.28",
-    "hex": "#1e5cda",
-    "minDist": 20.131419260843565
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Beryl Green",
-    "munsell": "2.96BG 5.09/11.09",
-    "hex": "#009380",
-    "minDist": 20.201882032107463
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Sepia 10%",
-    "munsell": "2.49R 6.04/1.27",
-    "hex": "#9f9191",
-    "minDist": 20.368692623503858
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Malachite Green",
-    "munsell": "1.86B 2.84/7.04",
-    "hex": "#004f63",
-    "minDist": 20.420850764406534
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Violet Pink",
-    "munsell": "0.51R 5.94/7.02",
-    "hex": "#c77d86",
-    "minDist": 20.91329245490933
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Payne’s Grey 30%",
-    "munsell": "3.01PB 6.0/2.83",
-    "hex": "#8695a5",
-    "minDist": 21.085487595197176
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Burnt Sienna 10%",
-    "munsell": "3.15R 6.6/4.43",
-    "hex": "#c79797",
-    "minDist": 22.179468079626147
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Chrysocolla Blue",
-    "munsell": "2.11B 6.6/10.42",
-    "hex": "#00b8d0",
-    "minDist": 23.355457993542377
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Ultramarine Violet",
-    "munsell": "0.21P 6.28/8.53",
-    "hex": "#9b93d1",
-    "minDist": 23.402984337391025
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Manganese Violet",
-    "munsell": "6.78P 5.97/8.89",
-    "hex": "#b381bb",
-    "minDist": 23.65512630340031
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "French Grey 10%",
-    "munsell": "5.32YR 6.99/1.01",
-    "hex": "#b6aba4",
-    "minDist": 23.768919004733686
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Violet Grey",
-    "munsell": "9.75P 5.73/2.3",
-    "hex": "#988894",
-    "minDist": 24.30210807926192
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Burnt Ochre 10%",
-    "munsell": "3.0YR 7.84/4.94",
-    "hex": "#eeb89b",
-    "minDist": 24.392902657529923
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Steel Grey",
-    "munsell": "9.67B 6.51/2.24",
-    "hex": "#92a3ad",
-    "minDist": 24.626572337627362
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Olive Brown 10%",
-    "munsell": "3.44Y 7.65/2.92",
-    "hex": "#cdbe98",
-    "minDist": 25.037883808370175
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Middle Verdigris",
-    "munsell": "1.36G 7.54/2.44",
-    "hex": "#a7c3aa",
-    "minDist": 25.175785321784296
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Butternut",
-    "munsell": "8.99YR 8.36/6.04",
-    "hex": "#f9ca8b",
-    "minDist": 25.373809320966878
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Raw Umber 10%",
-    "munsell": "0.14Y 7.65/1.97",
-    "hex": "#ccbca6",
-    "minDist": 25.936054436188115
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Brown Ochre 10%",
-    "munsell": "7.86YR 8.19/4.21",
-    "hex": "#ecc69f",
-    "minDist": 28.642367389562306
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Cobalt Blue 5%",
-    "munsell": "3.37PB 7.66/6.23",
-    "hex": "#9ac3eb",
-    "minDist": 28.79349622476861
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Ultramarine Pink",
-    "munsell": "0.63RP 6.69/10.34",
-    "hex": "#dc8ac4",
-    "minDist": 29.35339912111138
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Naples Ochre",
-    "munsell": "2.21Y 8.76/4.21",
-    "hex": "#f4daa3",
-    "minDist": 31.17431359986873
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Primrose",
-    "munsell": "6.02Y 9.18/3.22",
-    "hex": "#f2e9be",
-    "minDist": 35.203648115632255
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Silver Grey",
-    "munsell": "0.97PB 8.39/1.37",
-    "hex": "#cbd4d9",
-    "minDist": 39.40226719473257
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Buff Titanium",
-    "munsell": "0.01Y 9.14/1.36",
-    "hex": "#f0e5d6",
-    "minDist": 41.01022542281208
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
-    "name": "Pink White",
-    "munsell": "1.67YR 9.05/1.58",
-    "hex": "#f1e1db",
-    "minDist": 41.37299866313354
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Luminance 6901",
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
     "name": "White",
-    "munsell": "4.61Y 9.46/0.16",
-    "hex": "#f0f0ee",
-    "minDist": 46.63868185846035
+    "munsell": "4.51Y 9.55/0.68",
+    "hex": "#f4f2ed",
+    "minDist": 51.632028668119034
   },
   {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Blue",
-    "munsell": "5.18PB 3.51/11.34",
-    "hex": "#0054a1",
-    "minDist": 15.37523345040434
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Ivory",
+    "munsell": "3.42Y 9.32/3.33",
+    "hex": "#f8ebc9",
+    "minDist": 41.862896570463036
   },
   {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Turquoise Blue",
-    "munsell": "4.96B 6.49/8.38",
-    "hex": "#01afce",
-    "minDist": 15.540626876816578
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Golden Ochre",
-    "munsell": "9.32YR 7.01/9.99",
-    "hex": "#e3a138",
-    "minDist": 15.752026213267188
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Turquoise Green",
-    "munsell": "8.02BG 6.67/8.51",
-    "hex": "#00b9b9",
-    "minDist": 16.931717627021353
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Salmon",
-    "munsell": "0.3YR 7.65/8.36",
-    "hex": "#ffa784",
-    "minDist": 18.031359165877195
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Mauve",
-    "munsell": "7.97P 5.56/10.55",
-    "hex": "#b46fb3",
-    "minDist": 18.213955167151795
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Light Green",
-    "munsell": "8.19GY 8.26/6.97",
-    "hex": "#aade89",
-    "minDist": 18.730447509306423
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Jade Green",
-    "munsell": "8.83G 7.44/7.83",
-    "hex": "#54cdaa",
-    "minDist": 18.736456095350444
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Apricot",
-    "munsell": "6.53YR 8.06/7.98",
-    "hex": "#ffbb76",
-    "minDist": 18.917677205688776
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Ultramarine",
-    "munsell": "7.43PB 2.64/12.53",
-    "hex": "#2c338f",
-    "minDist": 19.254955285321817
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Beige",
-    "munsell": "6.75YR 6.36/0.74",
-    "hex": "#a49b96",
-    "minDist": 19.758161152983426
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Naples Yellow",
-    "munsell": "4.22Y 8.81/8.7",
-    "hex": "#fedc64",
-    "minDist": 20.732687542346003
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Lime Green",
-    "munsell": "4.24GY 8.98/5.95",
-    "hex": "#dceb90",
-    "minDist": 21.579213008720195
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Salmon Pink",
-    "munsell": "5.33R 7.51/8.37",
-    "hex": "#ffa199",
-    "minDist": 22.445958963364593
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Silver",
-    "munsell": "1.28PB 6.17/0.7",
-    "hex": "#94989c",
-    "minDist": 22.529241504499126
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Light Malachite Green",
-    "munsell": "8.39BG 7.46/7.6",
-    "hex": "#42cdcc",
-    "minDist": 22.66882280061009
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Rose Pink",
-    "munsell": "0.73R 6.4/11.45",
-    "hex": "#f27789",
-    "minDist": 23.278963676116792
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Light Purple",
-    "munsell": "4.79RP 6.52/12.15",
-    "hex": "#f07aab",
-    "minDist": 24.064719605519652
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Pink",
-    "munsell": "5.76RP 6.54/11.1",
-    "hex": "#ec7ea6",
-    "minDist": 25.82752813374458
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Pale Yellow",
-    "munsell": "9.13Y 9.1/5.17",
-    "hex": "#efe9a0",
-    "minDist": 26.168149385991057
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Steel Grey",
-    "munsell": "7.77B 6.82/1.52",
-    "hex": "#9dabb1",
-    "minDist": 27.11789812631429
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Light Beige",
-    "munsell": "8.0YR 7.4/0.57",
-    "hex": "#bdb7b2",
-    "minDist": 27.835805119789942
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Granite Rose",
-    "munsell": "2.17YR 8.33/3.79",
-    "hex": "#f4c8b3",
-    "minDist": 30.66790794070995
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Light Lemon Yellow",
-    "munsell": "0.23GY 9.29/4.81",
-    "hex": "#f0eeb5",
-    "minDist": 30.79487465115746
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Bluish Pale",
-    "munsell": "9.73B 8.04/4.69",
-    "hex": "#a2cfe7",
-    "minDist": 32.102835551966116
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Light Grey",
-    "munsell": "9.67B 7.62/1.35",
-    "hex": "#b5bfc5",
-    "minDist": 33.339133651916995
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Ash Grey",
-    "munsell": "7.94Y 8.43/0.81",
-    "hex": "#d6d4c7",
-    "minDist": 35.101155147854264
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "Silver Grey",
-    "munsell": "8.6B 8.27/0.93",
-    "hex": "#c9d0d4",
-    "minDist": 37.775122768352226
-  },
-  {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
     "name": "Cream",
-    "munsell": "3.55Y 9.16/2.27",
-    "hex": "#f2e7ca",
-    "minDist": 39.60706879862966
+    "munsell": "4.99Y 9.02/6.31",
+    "hex": "#f9e38a",
+    "minDist": 26.441769893967585
   },
   {
-    "maker": "Caran d'Ache",
-    "range": "Caran d'Ache Pablo 666",
-    "name": "White",
-    "munsell": "6.73Y 9.37/0.36",
-    "hex": "#eeede9",
-    "minDist": 45.304035164582466
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Rose Carmine",
+    "munsell": "1.76R 5.65/13.02",
+    "hex": "#e75970",
+    "minDist": 16.67112153176096
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Mauve Deep",
-    "munsell": "5.52P 4.87/13.34",
-    "hex": "#9f59b7",
-    "minDist": 15.590982853741263
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Light Magenta",
+    "munsell": "2.34RP 6.41/12.99",
+    "hex": "#e977bc",
+    "minDist": 46.12439436876685
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Cornflower Blue",
-    "munsell": "8.34PB 2.68/10.89",
-    "hex": "#3a3485",
-    "minDist": 15.64735531499504
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Pink Madder Lake",
+    "munsell": "7.01RP 5.95/13.46",
+    "hex": "#eb6292",
+    "minDist": 31.501973342280856
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Mint Green Light",
-    "munsell": "3.61G 7.02/13.08",
-    "hex": "#00cb77",
-    "minDist": 15.660705419872123
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Sky Blue",
+    "munsell": "5.4PB 6.58/9.87",
+    "hex": "#74a4e9",
+    "minDist": 45.35435613442084
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Blue Gray",
-    "munsell": "0.11Y 5.39/0.49",
-    "hex": "#87837e",
-    "minDist": 15.760075778735947
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Light Cobalt Turquoise",
+    "munsell": "2.66B 6.87/8.83",
+    "hex": "#00bcd2",
+    "minDist": 51.35521812361958
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Teal Green",
-    "munsell": "2.76B 5.69/9.77",
-    "hex": "#009eb9",
-    "minDist": 15.838157826023554
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Salmon",
+    "munsell": "3.43R 6.47/11.42",
+    "hex": "#f6797e",
+    "minDist": 16.572657133216772
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Coral Deep",
-    "munsell": "4.63R 6.61/12.84",
-    "hex": "#ff7676",
-    "minDist": 15.898733231866444
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Beige Red",
+    "munsell": "9.35R 7.74/5.94",
+    "hex": "#f5b19c",
+    "minDist": 30.31478597107666
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Walnut Brown Light",
-    "munsell": "0.49YR 3.09/3.34",
-    "hex": "#664038",
-    "minDist": 15.969195855024793
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Warm Grey III",
+    "munsell": "0.81Y 6.09/0.54",
+    "hex": "#9a958f",
+    "minDist": 22.837509953020525
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Terre Verde Deep",
-    "munsell": "3.53B 2.5/4.09",
-    "hex": "#004250",
-    "minDist": 16.25828121224959
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Warm Grey II",
+    "munsell": "0.62Y 7.29/1.08",
+    "hex": "#bdb4a8",
+    "minDist": 30.555958732407028
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Cobalt Purple",
-    "munsell": "7.17P 4.84/13.49",
-    "hex": "#a853af",
-    "minDist": 16.577732698851975
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Warm Grey I",
+    "munsell": "1.02Y 8.19/1.0",
+    "hex": "#d4ccc0",
+    "minDist": 38.4789150746224
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Purple Lake Deep",
-    "munsell": "9.75PB 2.32/9.74",
-    "hex": "#3e2a72",
-    "minDist": 16.623710579700077
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Cold Grey I",
+    "munsell": "9.58GY 8.3/0.09",
+    "hex": "#cfd0cf",
+    "minDist": 42.26931058227071
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Pthalo Turquoise",
-    "munsell": "1.52BG 5.18/10.69",
-    "hex": "#00957b",
-    "minDist": 16.63086536639426
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Cold Grey II",
+    "munsell": "6.86B 7.26/0.38",
+    "hex": "#b1b5b6",
+    "minDist": 34.61751757530111
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Viridian",
-    "munsell": "7.77G 3.32/6.22",
-    "hex": "#005c46",
-    "minDist": 16.738131889753834
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Cold Grey III",
+    "munsell": "1.13PB 5.91/0.93",
+    "hex": "#8c9296",
+    "minDist": 23.521022264941013
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Mulberry",
-    "munsell": "1.02P 2.27/9.75",
-    "hex": "#45256d",
-    "minDist": 16.84197292133829
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Silver",
+    "munsell": "2.03PB 6.14/0.73",
+    "hex": "#93979b",
+    "minDist": 25.369784579235752
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Brilliant Yellow",
-    "munsell": "6.93YR 7.69/15.6",
-    "hex": "#ffa700",
-    "minDist": 16.86704086737701
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Gold",
+    "munsell": "2.79Y 7.05/1.59",
+    "hex": "#b8ae9a",
+    "minDist": 26.73128004557158
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Mauve",
-    "munsell": "1.21P 5.98/10.39",
-    "hex": "#9b87d3",
-    "minDist": 17.183461983614595
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Copper",
+    "munsell": "4.37YR 6.62/2.26",
+    "hex": "#b79f91",
+    "minDist": 23.186172094219273
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Old Rose",
-    "munsell": "5.54R 5.66/2.98",
-    "hex": "#a48280",
-    "minDist": 17.213622217586106
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Fra Angelico Blue",
+    "munsell": "6.88PB 3.93/17.04",
+    "hex": "#2353ce",
+    "minDist": 60.79924959594689
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Ultramarine Light",
-    "munsell": "4.53PB 3.37/12.26",
-    "hex": "#0052a4",
-    "minDist": 17.570105715043567
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Arylide Yellow",
+    "munsell": "2.36GY 9.32/9.37",
+    "hex": "#ebf38f",
+    "minDist": 22.998164130355875
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Purple Light",
-    "munsell": "3.46RP 4.09/16.02",
-    "hex": "#b71282",
-    "minDist": 17.5982696973671
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Lizardlite Green",
+    "munsell": "5.67GY 9.04/7.31",
+    "hex": "#d2f088",
+    "minDist": 21.067156616596524
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Davy's Gray",
-    "munsell": "9.89RP 5.33/0.7",
-    "hex": "#878081",
-    "minDist": 17.9515195241581
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Thulite Reddish",
+    "munsell": "3.42YR 8.77/2.68",
+    "hex": "#f5d7c6",
+    "minDist": 40.64250865231879
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Azalea Pink",
-    "munsell": "9.73RP 6.05/14.23",
-    "hex": "#f75f84",
-    "minDist": 18.0029362177892
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Thulite Brown",
+    "munsell": "9.11YR 8.56/1.77",
+    "hex": "#e5d5c1",
+    "minDist": 38.90573371138214
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Cobalt Blue Deep",
-    "munsell": "6.36PB 3.4/14.98",
-    "hex": "#004ab5",
-    "minDist": 18.41958527646331
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Thulite Yellowish",
+    "munsell": "4.57YR 8.61/3.24",
+    "hex": "#f5d2ba",
+    "minDist": 36.78695068502496
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Cobalt Turquoise Green",
-    "munsell": "9.23BG 5.53/10.16",
-    "hex": "#009ca8",
-    "minDist": 18.52137371465514
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Zircon Red Bright",
+    "munsell": "8.31R 8.65/2.83",
+    "hex": "#f3d2cb",
+    "minDist": 42.62723861443584
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Cerulean Blue Middle",
-    "munsell": "8.03B 6.31/11.32",
-    "hex": "#00abe4",
-    "minDist": 18.927580038933076
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Serpentine Grey",
+    "munsell": "9.18BG 7.95/0.66",
+    "hex": "#bfc8c8",
+    "minDist": 40.05514781483242
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Graphite Light",
-    "munsell": "6.76BG 5.96/0.53",
-    "hex": "#8d9493",
-    "minDist": 19.845595041674112
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Slate Green",
+    "munsell": "7.02Y 7.67/1.36",
+    "hex": "#c4c0ab",
+    "minDist": 31.992847162072966
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Coral",
-    "munsell": "7.67R 7.43/7.16",
-    "hex": "#f6a494",
-    "minDist": 20.342926960891806
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Green Jasper",
+    "munsell": "9.59G 8.06/2.03",
+    "hex": "#b1d0c5",
+    "minDist": 39.2480240650654
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Juniper Green",
-    "munsell": "4.41G 3.39/7.21",
-    "hex": "#005f3d",
-    "minDist": 20.558400896394247
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Quinacridone Magenta",
+    "munsell": "2.94RP 5.81/14.31",
+    "hex": "#e05fab",
+    "minDist": 46.51218704224708
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Sepia Light",
-    "munsell": "5.98RP 5.37/6.25",
-    "hex": "#af7185",
-    "minDist": 21.46819017600289
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Amethyst Grey",
+    "munsell": "7.48PB 7.67/2.04",
+    "hex": "#bcbfca",
+    "minDist": 40.75309541775937
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Graphite",
-    "munsell": "0.57PB 6.14/0.64",
-    "hex": "#93979a",
-    "minDist": 22.2090712111933
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Tyrian Purple",
+    "munsell": "1.57P 6.32/7.55",
+    "hex": "#a293ca",
+    "minDist": 36.77828139753391
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Dove Gray",
-    "munsell": "6.5BG 6.4/0.45",
-    "hex": "#999f9e",
-    "minDist": 22.391883397792668
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Aquamarine Blue",
+    "munsell": "2.91PB 8.6/3.04",
+    "hex": "#c8daeb",
+    "minDist": 50.20506505349737
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Golden Yellow",
-    "munsell": "1.34Y 8.66/8.87",
-    "hex": "#ffd266",
-    "minDist": 23.231193479208507
+    "maker": "Faber-Castell",
+    "range": "Faber-Castell Polychromos 9201",
+    "name": "Bohemian Green Earth",
+    "munsell": "4.69GY 8.38/2.7",
+    "hex": "#ced6ad",
+    "minDist": 32.311865632963226
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Jade Green Light",
-    "munsell": "3.95BG 7.45/9.73",
-    "hex": "#00d2bc",
-    "minDist": 23.406108003076305
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Parmesan",
+    "munsell": "7.48Y 9.22/6.09",
+    "hex": "#f6eba1",
+    "minDist": 30.373900019646744
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Apricot Light",
-    "munsell": "7.77R 7.89/7.41",
-    "hex": "#ffaf9c",
-    "minDist": 23.482889182215775
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Dandelion",
+    "munsell": "1.74Y 7.87/9.4",
+    "hex": "#f1bd4c",
+    "minDist": 25.183745378140593
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Oyster",
-    "munsell": "6.3RP 6.5/1.84",
-    "hex": "#ad9ca0",
-    "minDist": 24.579691563554096
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Soft Yellow",
+    "munsell": "4.04Y 8.78/6.08",
+    "hex": "#f6dc88",
+    "minDist": 26.951816814452805
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Purple",
-    "munsell": "8.74P 4.26/15.93",
-    "hex": "#a931a3",
-    "minDist": 24.594389539871635
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Pineapple",
+    "munsell": "2.1Y 8.29/9.1",
+    "hex": "#fac959",
+    "minDist": 28.32825359862658
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Cobalt Turquoise",
-    "munsell": "6.04B 7.52/7.9",
-    "hex": "#50caea",
-    "minDist": 24.61577735820635
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Sandcastle",
+    "munsell": "1.0Y 7.25/8.58",
+    "hex": "#dfac4b",
+    "minDist": 17.213110025198972
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Yellow Ochre Light",
-    "munsell": "6.32YR 8.4/6.32",
-    "hex": "#ffc791",
-    "minDist": 25.833584464872505
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Butterscotch",
+    "munsell": "8.08YR 8.06/10.25",
+    "hex": "#ffba55",
+    "minDist": 19.765597137175213
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Almond",
-    "munsell": "0.08Y 7.77/2.89",
-    "hex": "#d5be9f",
-    "minDist": 25.85166026129846
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Salmon",
+    "munsell": "7.09R 7.77/4.87",
+    "hex": "#edb4aa",
+    "minDist": 32.77973932001769
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Pink Bloom",
-    "munsell": "3.71R 7.71/8.37",
-    "hex": "#ffa6a4",
-    "minDist": 26.050447072735473
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Ash Rose",
+    "munsell": "2.68R 7.18/4.11",
+    "hex": "#d4a7a8",
+    "minDist": 30.07064604504515
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Mint Green",
-    "munsell": "3.55G 8.28/6.84",
-    "hex": "#88e2ac",
-    "minDist": 26.129916842937337
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Orchid",
+    "munsell": "9.14P 5.96/12.86",
+    "hex": "#cd71c1",
+    "minDist": 48.313287605019255
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Argent Gray",
-    "munsell": "3.39YR 7.19/0.85",
-    "hex": "#bab1ac",
-    "minDist": 26.159584532179554
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Cadmium Orange Light",
-    "munsell": "3.98YR 8.26/6.24",
-    "hex": "#ffc196",
-    "minDist": 26.871583478028143
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Tangerine",
-    "munsell": "0.7YR 8.17/4.91",
-    "hex": "#f9c0aa",
-    "minDist": 28.05025530019453
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Warm Gray Light",
-    "munsell": "8.32YR 7.59/1.02",
-    "hex": "#c6bcb2",
-    "minDist": 28.120195217710403
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Primrose Yellow",
-    "munsell": "2.42Y 8.77/7.82",
-    "hex": "#ffd874",
-    "minDist": 28.238591358717517
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "French Rose",
-    "munsell": "1.09RP 4.8/17.84",
-    "hex": "#cb2ba9",
-    "minDist": 29.50530093630085
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Tuscan Yellow Light",
-    "munsell": "2.88Y 9.02/5.94",
-    "hex": "#ffe193",
-    "minDist": 30.316416821859477
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Naples Yellow Light",
-    "munsell": "3.58Y 9.12/5.15",
-    "hex": "#fce5a5",
-    "minDist": 30.94167334534663
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Gold Coloured Pencils",
-    "name": "Titanium White",
-    "munsell": "5.89Y 9.59/0.82",
-    "hex": "#f5f3ed",
-    "minDist": 46.956039183074935
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Seafoam Green",
-    "munsell": "9.91GY 6.23/1.57",
-    "hex": "#8f9d8d",
-    "minDist": 15.347060841078797
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Storm Gray",
-    "munsell": "5.37BG 2.13/2.07",
-    "hex": "#233737",
-    "minDist": 15.596671259889225
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Pewter",
-    "munsell": "8.24B 5.53/1.83",
-    "hex": "#7a8a91",
-    "minDist": 15.678381780681
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Wild Thyme",
-    "munsell": "9.84BG 5.62/0.9",
-    "hex": "#808c8c",
-    "minDist": 16.24044377622215
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Stone Gray",
-    "munsell": "1.15YR 5.46/0.69",
-    "hex": "#8c8481",
-    "minDist": 16.911867670604728
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Forget Ne Not",
-    "munsell": "5.67PB 6.3/9.13",
-    "hex": "#769cdb",
-    "minDist": 17.06740002073268
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Mellow Sage",
-    "munsell": "8.0GY 6.54/0.61",
-    "hex": "#9ea39b",
-    "minDist": 20.697956015262776
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Flint",
-    "munsell": "5.18P 5.15/4.6",
-    "hex": "#8a7695",
-    "minDist": 20.749306490845022
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Rosy Stone",
-    "munsell": "8.27RP 5.21/3.99",
-    "hex": "#9d747c",
-    "minDist": 21.091333999630116
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Pale Apple",
-    "munsell": "1.69G 7.17/2.6",
-    "hex": "#9cb9a1",
-    "minDist": 21.920326757482215
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "French Gray",
-    "munsell": "9.43YR 6.77/0.74",
-    "hex": "#ada69f",
-    "minDist": 22.135372264439212
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Mosaic Blue",
-    "munsell": "3.21B 7.14/4.55",
-    "hex": "#7dbbc6",
-    "minDist": 22.14762944023741
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Gossamer",
-    "munsell": "0.84Y 7.1/0.92",
-    "hex": "#b7afa5",
-    "minDist": 23.83387718647473
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Mink",
-    "munsell": "1.23RP 5.77/2.02",
-    "hex": "#988992",
-    "minDist": 23.928092093207443
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Pavillion Gray",
-    "munsell": "9.63RP 6.51/3.15",
-    "hex": "#b9999c",
-    "minDist": 24.0008276498748
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Pebble",
-    "munsell": "0.07PB 6.45/2.27",
-    "hex": "#91a2ac",
-    "minDist": 24.28279222201419
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Sweet Lilac",
-    "munsell": "1.13P 6.37/8.16",
-    "hex": "#a294d0",
-    "minDist": 25.119834222453072
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Cumulus",
-    "munsell": "4.15PB 7.25/6.72",
-    "hex": "#91b7e3",
-    "minDist": 25.495412967649184
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Dark Pearl",
-    "munsell": "2.39RP 6.36/2.02",
-    "hex": "#a899a0",
-    "minDist": 25.587814834151384
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Olive Gray",
-    "munsell": "8.81GY 7.78/2.44",
-    "hex": "#b3c9aa",
-    "minDist": 25.93652141421631
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Purple Dusk",
-    "munsell": "1.27P 6.57/8.32",
-    "hex": "#a899d7",
-    "minDist": 26.215047426199483
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Spring Heather",
-    "munsell": "3.72RP 6.42/4.08",
-    "hex": "#b895a3",
-    "minDist": 28.746661649462215
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Moss",
-    "munsell": "9.65B 7.03/1.67",
-    "hex": "#a4b0b7",
-    "minDist": 29.265206627953507
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Dusty Lavender",
-    "munsell": "5.73P 6.3/3.9",
-    "hex": "#a795ae",
-    "minDist": 29.3722055842809
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Pumice",
-    "munsell": "6.28RP 7.27/2.02",
-    "hex": "#c1b0b4",
-    "minDist": 29.55012958472751
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Duck Egg",
-    "munsell": "4.06B 7.95/4.17",
-    "hex": "#97d0db",
-    "minDist": 29.988937266313762
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Ash",
-    "munsell": "7.33BG 7.47/0.41",
-    "hex": "#b5bbba",
-    "minDist": 30.156275675147203
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Purple Rose",
-    "munsell": "4.71P 6.67/7.48",
-    "hex": "#b799cd",
-    "minDist": 30.98538135194702
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Misty Gray",
-    "munsell": "8.94YR 7.76/0.45",
-    "hex": "#c5c1bc",
-    "minDist": 31.030803803002783
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Dusty Rose",
-    "munsell": "5.71RP 7.12/5.37",
-    "hex": "#d7a3b2",
-    "minDist": 31.656001397545868
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Aloe Green",
-    "munsell": "8.61GY 8.62/2.19",
-    "hex": "#cadfc0",
-    "minDist": 32.5576226700575
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Calamine",
-    "munsell": "3.31R 8.25/4.83",
-    "hex": "#f8c1bf",
-    "minDist": 33.331905910017504
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Ammonite",
-    "munsell": "1.46Y 8.25/0.81",
-    "hex": "#d4cec4",
-    "minDist": 33.887329472840015
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Wheatgrass",
-    "munsell": "1.22YR 8.78/3.67",
-    "hex": "#ffd3c1",
-    "minDist": 35.168235706773736
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Wildberry",
-    "munsell": "6.12P 7.09/7.54",
-    "hex": "#c9a3d4",
-    "minDist": 35.4864094465009
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Cirrus",
-    "munsell": "3.05B 8.09/0.52",
-    "hex": "#c5cccc",
-    "minDist": 35.611817183733024
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Cornforth White",
-    "munsell": "0.52YR 8.66/0.98",
-    "hex": "#e2d8d4",
-    "minDist": 38.824432811990924
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Harmonious Collection",
-    "name": "Mulberry Mist",
-    "munsell": "5.66RP 8.72/2.1",
-    "hex": "#e7d7db",
-    "minDist": 40.738915400450736
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Walnut Brown",
-    "munsell": "1.09YR 1.95/2.15",
-    "hex": "#412a26",
-    "minDist": 15.450406390559209
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Grenadine",
-    "munsell": "1.77R 5.61/15.05",
-    "hex": "#f24a6c",
-    "minDist": 15.484900260778216
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Cobalt Turquoise Green",
-    "munsell": "0.32B 5.91/9.45",
-    "hex": "#00a5b3",
-    "minDist": 15.72903498213901
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Hooker's Green",
-    "munsell": "8.48G 2.45/2.85",
-    "hex": "#244038",
-    "minDist": 16.106455122300996
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Pthalo Turquoise",
-    "munsell": "2.6BG 4.94/10.3",
-    "hex": "#008e7a",
-    "minDist": 16.319974587038534
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Mauve Deep",
-    "munsell": "9.59PB 3.57/13.86",
-    "hex": "#5a42ab",
-    "minDist": 16.652963319795397
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Tangerine",
-    "munsell": "2.63YR 7.66/8.95",
-    "hex": "#ffa975",
-    "minDist": 16.865372333798113
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Pthalo Green Light",
-    "munsell": "1.12BG 4.07/9.24",
-    "hex": "#00755f",
-    "minDist": 17.092733615027914
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Cobalt Turquoise",
-    "munsell": "4.64B 6.37/9.47",
-    "hex": "#00aed0",
-    "minDist": 17.2841228142478
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Pthalo Green",
-    "munsell": "3.62BG 3.92/8.8",
-    "hex": "#007066",
-    "minDist": 17.464770252713315
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Cadmium Orange Light",
-    "munsell": "4.12YR 8.06/9.02",
-    "hex": "#ffb575",
-    "minDist": 17.480859623565703
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Teal Green",
-    "munsell": "9.34BG 3.94/9.06",
-    "hex": "#00707e",
-    "minDist": 18.62146845352079
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Mint Green Light",
-    "munsell": "5.14G 6.51/13.09",
-    "hex": "#00bd7b",
-    "minDist": 19.47730899392411
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Emerald Green",
-    "munsell": "2.98G 6.05/14.31",
-    "hex": "#00b157",
-    "minDist": 19.69801276448943
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Mint Green",
-    "munsell": "6.63G 6.63/12.74",
-    "hex": "#00c086",
-    "minDist": 20.092170451231972
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
     "name": "Rose Pink",
-    "munsell": "5.19RP 6.25/13.12",
-    "hex": "#ef6da3",
-    "minDist": 20.181571549170176
+    "munsell": "5.08RP 8.59/4.16",
+    "hex": "#f5cdd9",
+    "minDist": 45.16393793132201
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Opera Rose",
-    "munsell": "5.13RP 6.27/13.42",
-    "hex": "#f16ca5",
-    "minDist": 20.20498906816467
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Pink Heather",
+    "munsell": "9.86P 6.37/7.72",
+    "hex": "#c48bb6",
+    "minDist": 38.24601749772007
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Castle Green",
-    "munsell": "4.49G 5.04/12.97",
-    "hex": "#009455",
-    "minDist": 21.48070954504714
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Midnight Mauve",
+    "munsell": "3.2RP 2.55/7.13",
+    "hex": "#63264f",
+    "minDist": 19.27319876810431
   },
   {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Mauve",
-    "munsell": "9.77PB 6.3/9.25",
-    "hex": "#9993d8",
-    "minDist": 21.67317599191842
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Jade Green",
-    "munsell": "2.93BG 5.89/11.71",
-    "hex": "#00aa93",
-    "minDist": 21.799546731192546
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Naples Yellow",
-    "munsell": "8.57YR 8.38/8.74",
-    "hex": "#ffc66c",
-    "minDist": 22.582338410075405
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Grenadine Light",
-    "munsell": "9.91RP 6.46/12.56",
-    "hex": "#fb738e",
-    "minDist": 23.27521425902416
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Warm Gray Light",
-    "munsell": "0.51Y 7.01/0.76",
-    "hex": "#b3ada5",
-    "minDist": 23.745541994425317
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Bengal Rose Light",
-    "munsell": "2.7RP 6.2/14.62",
-    "hex": "#ec68b8",
-    "minDist": 23.977020783125013
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Lemon Yellow Light",
-    "munsell": "0.16GY 9.3/8.87",
-    "hex": "#f4f08f",
-    "minDist": 24.4892064110888
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Golden Yellow",
-    "munsell": "0.77Y 8.58/8.67",
-    "hex": "#ffcf69",
-    "minDist": 24.57385802602955
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Lavender Light",
-    "munsell": "6.35P 5.95/14.11",
-    "hex": "#c372d4",
-    "minDist": 25.395105871382153
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Azalea Pink",
-    "munsell": "7.89RP 6.75/11.52",
-    "hex": "#f981a1",
-    "minDist": 26.38691186451265
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Primrose Yellow",
-    "munsell": "2.33Y 8.88/6.36",
-    "hex": "#ffdc8a",
-    "minDist": 30.14291620669742
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Naples Yellow Light",
-    "munsell": "3.6Y 9.12/3.78",
-    "hex": "#f7e5b5",
-    "minDist": 33.854380910795946
-  },
-  {
-    "maker": "Castle Art Supplies",
-    "range": "Castle Arts Premium Soft Touch Colored Pencils",
-    "name": "Titanium White",
-    "munsell": "4.27Y 9.44/0.96",
-    "hex": "#f2efe6",
-    "minDist": 45.044856245227265
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Hollywood Pink",
+    "munsell": "1.18RP 3.97/16.45",
+    "hex": "#ac1590",
+    "minDist": 56.880216847481925
   },
   {
     "maker": "Derwent",
@@ -1493,15 +381,47 @@
     "name": "Wild Berry",
     "munsell": "3.86RP 2.9/13.08",
     "hex": "#8a0061",
-    "minDist": 15.405028027028528
+    "minDist": 46.18622731069703
   },
   {
     "maker": "Derwent",
     "range": "Derwent Chromaflow Pencils",
-    "name": "Biscotti",
-    "munsell": "1.65YR 5.53/1.24",
-    "hex": "#93847f",
-    "minDist": 15.572522396060664
+    "name": "Oyster",
+    "munsell": "1.81RP 8.74/1.78",
+    "hex": "#e4d9de",
+    "minDist": 46.908367519039935
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Light Mauve",
+    "munsell": "7.41P 8.09/5.29",
+    "hex": "#e0c0df",
+    "minDist": 47.22771824535215
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "French Mauve",
+    "munsell": "7.6P 6.31/8.0",
+    "hex": "#bd8bbd",
+    "minDist": 38.063217983203806
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Light Heather",
+    "munsell": "6.62P 6.61/10.19",
+    "hex": "#c98ed3",
+    "minDist": 45.38087515438198
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Dewberry",
+    "munsell": "1.18RP 5.74/7.99",
+    "hex": "#b878a3",
+    "minDist": 33.82371420382511
   },
   {
     "maker": "Derwent",
@@ -1514,78 +434,6 @@
   {
     "maker": "Derwent",
     "range": "Derwent Chromaflow Pencils",
-    "name": "Eucalyptus",
-    "munsell": "4.54BG 3.59/7.09",
-    "hex": "#006460",
-    "minDist": 15.908397924966348
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Raisin",
-    "munsell": "9.13R 2.96/4.33",
-    "hex": "#693932",
-    "minDist": 15.93298945793052
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Blush Pink",
-    "munsell": "5.64R 6.92/12.16",
-    "hex": "#ff827a",
-    "minDist": 16.12261203968089
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Turkish Delight",
-    "munsell": "6.2R 6.14/5.09",
-    "hex": "#c28982",
-    "minDist": 16.436164636412318
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Sea Blue",
-    "munsell": "1.56PB 2.1/5.76",
-    "hex": "#003658",
-    "minDist": 16.62820433013748
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Ice Blue",
-    "munsell": "0.11PB 5.61/2.13",
-    "hex": "#7b8c96",
-    "minDist": 16.655924281171945
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Sandcastle",
-    "munsell": "1.0Y 7.25/8.58",
-    "hex": "#dfac4b",
-    "minDist": 16.985885060246186
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Butterscotch",
-    "munsell": "8.08YR 8.06/10.25",
-    "hex": "#ffba55",
-    "minDist": 16.986430176327445
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Winter Lake",
-    "munsell": "9.77B 5.66/2.23",
-    "hex": "#7c8d98",
-    "minDist": 17.008430771258833
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
     "name": "Lagoon",
     "munsell": "8.03PB 1.4/3.72",
     "hex": "#22213d",
@@ -1594,66 +442,18 @@
   {
     "maker": "Derwent",
     "range": "Derwent Chromaflow Pencils",
-    "name": "Blue Orchid",
-    "munsell": "3.94PB 6.54/9.59",
-    "hex": "#66a6e5",
-    "minDist": 17.84198018923777
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Midnight Mauve",
-    "munsell": "3.2RP 2.55/7.13",
-    "hex": "#63264f",
-    "minDist": 17.980175691693063
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Jungle Green",
-    "munsell": "2.01G 4.16/10.45",
-    "hex": "#007834",
-    "minDist": 19.10119701405195
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Pebble",
-    "munsell": "0.56Y 6.69/1.28",
-    "hex": "#aea496",
-    "minDist": 19.225708504766644
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Dandelion",
-    "munsell": "1.74Y 7.87/9.4",
-    "hex": "#f1bd4c",
-    "minDist": 19.4542729640384
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
     "name": "Peacock Blue",
     "munsell": "7.58PB 1.49/6.09",
     "hex": "#1f214d",
-    "minDist": 19.643630647031888
+    "minDist": 22.37343115048745
   },
   {
     "maker": "Derwent",
     "range": "Derwent Chromaflow Pencils",
-    "name": "Mineral Blue",
-    "munsell": "2.63B 2.86/6.72",
-    "hex": "#004f64",
-    "minDist": 19.671719644837722
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Peach Sand",
-    "munsell": "6.18YR 7.73/6.48",
-    "hex": "#f1b580",
-    "minDist": 20.09212203683689
+    "name": "Blue Orchid",
+    "munsell": "3.94PB 6.54/9.59",
+    "hex": "#66a6e5",
+    "minDist": 45.08136472269185
   },
   {
     "maker": "Derwent",
@@ -1661,175 +461,7 @@
     "name": "Carolina Blue",
     "munsell": "2.83PB 6.51/5.83",
     "hex": "#7fa4c7",
-    "minDist": 20.12382729927364
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Almond Frost",
-    "munsell": "8.52RP 5.74/2.37",
-    "hex": "#9e878b",
-    "minDist": 21.21796664771548
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Pineapple",
-    "munsell": "2.1Y 8.29/9.1",
-    "hex": "#fac959",
-    "minDist": 21.22647507566985
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Silver",
-    "munsell": "0.4PB 6.13/0.58",
-    "hex": "#93979a",
-    "minDist": 22.139825749830173
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Turquoise Green",
-    "munsell": "5.42BG 7.34/9.34",
-    "hex": "#00cec0",
-    "minDist": 22.917863055295804
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Orchid",
-    "munsell": "9.14P 5.96/12.86",
-    "hex": "#cd71c1",
-    "minDist": 23.273495804727013
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Pastel Mint",
-    "munsell": "2.04G 7.49/3.07",
-    "hex": "#a0c3a7",
-    "minDist": 23.422266135476857
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Hollywood Pink",
-    "munsell": "1.18RP 3.97/16.45",
-    "hex": "#ac1590",
-    "minDist": 23.482341235229836
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Saffron Mango",
-    "munsell": "8.98YR 8.21/6.06",
-    "hex": "#f5c688",
-    "minDist": 24.06896979402636
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Dewberry",
-    "munsell": "1.18RP 5.74/7.99",
-    "hex": "#b878a3",
-    "minDist": 24.131222343847718
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Rose Quartz",
-    "munsell": "4.5P 5.96/2.36",
-    "hex": "#988f9f",
-    "minDist": 24.2836107521106
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Morning Mist",
-    "munsell": "6.07Y 7.29/0.87",
-    "hex": "#b8b5a9",
-    "minDist": 25.11317564294215
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Moon Rock",
-    "munsell": "1.64G 6.86/0.08",
-    "hex": "#a9aaa9",
-    "minDist": 25.483192844277852
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Red Storm",
-    "munsell": "4.59RP 6.62/1.67",
-    "hex": "#aea0a4",
-    "minDist": 25.539398751158352
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Ash Rose",
-    "munsell": "2.68R 7.18/4.11",
-    "hex": "#d4a7a8",
-    "minDist": 26.339504385754644
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Soft Yellow",
-    "munsell": "4.04Y 8.78/6.08",
-    "hex": "#f6dc88",
-    "minDist": 26.976573748097948
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Salmon",
-    "munsell": "7.09R 7.77/4.87",
-    "hex": "#edb4aa",
-    "minDist": 27.036261831968243
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Parmesan",
-    "munsell": "7.48Y 9.22/6.09",
-    "hex": "#f6eba1",
-    "minDist": 27.631958832068715
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Light Heather",
-    "munsell": "6.62P 6.61/10.19",
-    "hex": "#c98ed3",
-    "minDist": 28.10701849028188
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Oxford Grey",
-    "munsell": "4.94B 7.02/1.74",
-    "hex": "#9eb1b6",
-    "minDist": 28.128928625428177
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "French Mauve",
-    "munsell": "7.6P 6.31/8.0",
-    "hex": "#bd8bbd",
-    "minDist": 28.458109762278816
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Pink Heather",
-    "munsell": "9.86P 6.37/7.72",
-    "hex": "#c48bb6",
-    "minDist": 30.16202456963643
+    "minDist": 36.945262540429916
   },
   {
     "maker": "Derwent",
@@ -1837,7 +469,119 @@
     "name": "Glacier Blue",
     "munsell": "9.89B 7.95/5.28",
     "hex": "#9bcee9",
-    "minDist": 30.531357794837696
+    "minDist": 48.48554198069952
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Sea Blue",
+    "munsell": "1.56PB 2.1/5.76",
+    "hex": "#003658",
+    "minDist": 20.665399560277148
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Mineral Blue",
+    "munsell": "2.63B 2.86/6.72",
+    "hex": "#004f64",
+    "minDist": 30.22567295511518
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Turquoise Green",
+    "munsell": "5.42BG 7.34/9.34",
+    "hex": "#00cec0",
+    "minDist": 44.31211374141999
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Eucalyptus",
+    "munsell": "4.54BG 3.59/7.09",
+    "hex": "#006460",
+    "minDist": 33.55388876477238
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Pastel Mint",
+    "munsell": "2.04G 7.49/3.07",
+    "hex": "#a0c3a7",
+    "minDist": 30.61322204718405
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Jungle Green",
+    "munsell": "2.01G 4.16/10.45",
+    "hex": "#007834",
+    "minDist": 19.43703200772614
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Saffron Mango",
+    "munsell": "8.98YR 8.21/6.06",
+    "hex": "#f5c688",
+    "minDist": 23.56176416567983
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Peach Sand",
+    "munsell": "6.18YR 7.73/6.48",
+    "hex": "#f1b580",
+    "minDist": 19.40098689996158
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Raisin",
+    "munsell": "9.13R 2.96/4.33",
+    "hex": "#693932",
+    "minDist": 16.96227545013255
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Morning Mist",
+    "munsell": "6.07Y 7.29/0.87",
+    "hex": "#b8b5a9",
+    "minDist": 30.750326871843704
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Pebble",
+    "munsell": "0.56Y 6.69/1.28",
+    "hex": "#aea496",
+    "minDist": 24.78068915473924
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Almond Frost",
+    "munsell": "8.52RP 5.74/2.37",
+    "hex": "#9e878b",
+    "minDist": 22.376322398277544
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Red Storm",
+    "munsell": "4.59RP 6.62/1.67",
+    "hex": "#aea0a4",
+    "minDist": 29.41516123733113
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Rose Quartz",
+    "munsell": "4.5P 5.96/2.36",
+    "hex": "#988f9f",
+    "minDist": 26.705955075950218
   },
   {
     "maker": "Derwent",
@@ -1845,7 +589,31 @@
     "name": "Fell Mist",
     "munsell": "0.93GY 7.81/0.27",
     "hex": "#c3c3bf",
-    "minDist": 31.779535711255
+    "minDist": 37.359537187174396
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Moon Rock",
+    "munsell": "1.64G 6.86/0.08",
+    "hex": "#a9aaa9",
+    "minDist": 30.700461211772325
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Winter Lake",
+    "munsell": "9.77B 5.66/2.23",
+    "hex": "#7c8d98",
+    "minDist": 22.985443245408266
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Oxford Grey",
+    "munsell": "4.94B 7.02/1.74",
+    "hex": "#9eb1b6",
+    "minDist": 33.82361993532558
   },
   {
     "maker": "Derwent",
@@ -1853,31 +621,7 @@
     "name": "Platinum",
     "munsell": "9.86B 7.68/0.4",
     "hex": "#bdc0c1",
-    "minDist": 32.494620631442984
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Rose Pink",
-    "munsell": "5.08RP 8.59/4.16",
-    "hex": "#f5cdd9",
-    "minDist": 40.80230071892078
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Oyster",
-    "munsell": "1.81RP 8.74/1.78",
-    "hex": "#e4d9de",
-    "minDist": 41.53650400290919
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Chromaflow Pencils",
-    "name": "Light Mauve",
-    "munsell": "7.41P 8.09/5.29",
-    "hex": "#e0c0df",
-    "minDist": 44.71288897957932
+    "minDist": 38.039086095368326
   },
   {
     "maker": "Derwent",
@@ -1885,367 +629,23 @@
     "name": "White",
     "munsell": "3.85Y 9.54/0.62",
     "hex": "#f4f2ed",
-    "minDist": 46.62692819065167
+    "minDist": 51.62498676693507
   },
   {
     "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Granite",
-    "munsell": "0.59PB 5.38/0.88",
-    "hex": "#7e8489",
-    "minDist": 16.035368943826498
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Silver",
+    "munsell": "0.4PB 6.13/0.58",
+    "hex": "#93979a",
+    "minDist": 25.04360016813621
   },
   {
     "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Light Rust",
-    "munsell": "9.6R 6.96/6.28",
-    "hex": "#e19b86",
-    "minDist": 16.099696228255237
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Yellow Ochre",
-    "munsell": "9.89YR 7.65/6.95",
-    "hex": "#e7b66d",
-    "minDist": 17.740248961129915
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Gold",
-    "munsell": "0.88Y 7.1/9.77",
-    "hex": "#dfa736",
-    "minDist": 18.079227370422583
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Pale Cedar",
-    "munsell": "6.03Y 6.86/2.07",
-    "hex": "#b1aa8d",
-    "minDist": 18.12784373667672
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Warm Grey",
-    "munsell": "1.56Y 6.47/0.99",
-    "hex": "#a69f93",
-    "minDist": 18.46085152735142
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Dusky Pink",
-    "munsell": "5.98R 6.65/5.66",
-    "hex": "#d4948d",
-    "minDist": 18.93521712621596
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Mars Violet",
-    "munsell": "8.69RP 5.21/3.19",
-    "hex": "#97777c",
-    "minDist": 20.78537883990106
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Smoke Blue",
-    "munsell": "1.15B 6.44/2.33",
-    "hex": "#86a5a7",
-    "minDist": 21.75579093760444
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Taupe",
-    "munsell": "9.01RP 6.28/1.31",
-    "hex": "#a49799",
-    "minDist": 22.285599299582206
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Light Ochre",
-    "munsell": "9.06YR 7.89/5.16",
-    "hex": "#e7be8a",
-    "minDist": 23.421429528719724
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Ash Blue",
-    "munsell": "4.81B 6.57/2.05",
-    "hex": "#8fa6ac",
-    "minDist": 23.915425448120892
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Bistre",
-    "munsell": "2.03YR 7.5/3.18",
-    "hex": "#d7b3a4",
-    "minDist": 24.5260469140864
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Cool Grey",
-    "munsell": "8.96GY 6.94/0.26",
-    "hex": "#aaada9",
-    "minDist": 25.2615547355098
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Distant Green",
-    "munsell": "7.23G 7.53/3.75",
-    "hex": "#93c7b0",
-    "minDist": 25.38898081202337
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Fossil Grey",
-    "munsell": "3.62R 6.92/1.0",
-    "hex": "#b4a9a9",
-    "minDist": 25.593883827400578
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Heather",
-    "munsell": "2.65RP 5.62/7.1",
-    "hex": "#b47698",
-    "minDist": 25.914690045844196
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Light Sienna",
-    "munsell": "4.3YR 8.09/5.33",
-    "hex": "#f6bf9a",
-    "minDist": 26.205531546018687
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Violet Dusk",
-    "munsell": "2.11P 5.97/6.3",
-    "hex": "#9a8bb8",
-    "minDist": 26.542391746344006
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Ash Rose",
-    "munsell": "9.57RP 7.07/6.27",
-    "hex": "#e09ea6",
-    "minDist": 28.04089265031814
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Teal Blue",
-    "munsell": "7.86PB 6.96/6.2",
-    "hex": "#a2aad6",
-    "minDist": 28.389275027418947
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Mist",
-    "munsell": "7.73B 7.25/0.2",
-    "hex": "#b3b4b5",
-    "minDist": 28.942099691738623
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Platinum",
-    "munsell": "1.54PB 7.29/1.0",
-    "hex": "#b0b6bb",
-    "minDist": 30.59823159800259
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Wheat",
-    "munsell": "1.92Y 8.43/2.85",
-    "hex": "#e4d2ad",
-    "minDist": 32.33440905055097
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Champagne",
-    "munsell": "2.44Y 9.0/3.84",
-    "hex": "#f8e1ad",
-    "minDist": 32.891471239476374
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Slate Violet",
-    "munsell": "6.25P 6.83/3.82",
-    "hex": "#b5a3ba",
-    "minDist": 33.7331580423508
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Solway Blue",
-    "munsell": "0.16PB 7.79/1.01",
-    "hex": "#bcc3c8",
-    "minDist": 34.178486089111985
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Soft Violet",
-    "munsell": "3.34RP 7.61/4.54",
-    "hex": "#dab3c3",
-    "minDist": 35.69308984074607
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Oyster",
-    "munsell": "2.73RP 8.76/2.4",
-    "hex": "#e9d8df",
-    "minDist": 42.032413634777214
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Arctic",
-    "munsell": "8.84B 9.09/0.89",
-    "hex": "#e0e6e9",
-    "minDist": 44.571823619163446
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Drawing Pencils",
-    "name": "Chinese White",
-    "munsell": "7.21Y 9.52/0.54",
-    "hex": "#f2f2ed",
-    "minDist": 46.57257269137667
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Gold",
-    "munsell": "9.26YR 6.99/10.33",
-    "hex": "#e3a033",
-    "minDist": 15.665218548453415
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Dusky Pink",
-    "munsell": "7.01R 6.67/6.59",
-    "hex": "#dc9287",
-    "minDist": 16.682619797529863
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Granite",
-    "munsell": "1.62PB 5.45/0.9",
-    "hex": "#80868b",
-    "minDist": 16.702120349392334
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Mid Ultramarine",
-    "munsell": "5.09PB 6.76/8.54",
-    "hex": "#7ea9e3",
-    "minDist": 21.010440311373298
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Yellow Ochre",
-    "munsell": "0.72Y 7.95/7.09",
-    "hex": "#eec071",
-    "minDist": 21.044549998457764
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Turquoise Green",
-    "munsell": "6.44BG 7.52/8.09",
-    "hex": "#35d0c7",
-    "minDist": 22.894687881657614
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Wild Lavender",
-    "munsell": "6.18P 5.62/7.19",
-    "hex": "#a27cac",
-    "minDist": 23.641832171065303
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Fossil Grey",
-    "munsell": "3.67R 6.95/1.08",
-    "hex": "#b5aaa9",
-    "minDist": 25.72888201163668
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Cool Grey",
-    "munsell": "5.12Y 7.24/0.59",
-    "hex": "#b7b4ab",
-    "minDist": 25.86055908670309
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Moonstone",
-    "munsell": "6.92Y 7.29/0.51",
-    "hex": "#b7b5ae",
-    "minDist": 26.551166038329345
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Salmon",
-    "munsell": "8.45R 7.91/4.13",
-    "hex": "#ebbaaf",
-    "minDist": 28.215496313476137
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Heather",
-    "munsell": "9.92P 6.1/7.48",
-    "hex": "#bb85ae",
-    "minDist": 28.456389876196592
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Mist",
-    "munsell": "2.89GY 7.45/0.22",
-    "hex": "#b9b9b6",
-    "minDist": 29.122634128424018
-  },
-  {
-    "maker": "Derwent",
-    "range": "Derwent Lightfast Pencils",
-    "name": "Platinum",
-    "munsell": "0.99PB 7.25/1.04",
-    "hex": "#aeb5ba",
-    "minDist": 30.27668086541757
+    "range": "Derwent Chromaflow Pencils",
+    "name": "Ice Blue",
+    "munsell": "0.11PB 5.61/2.13",
+    "hex": "#7b8c96",
+    "minDist": 22.38954558499332
   },
   {
     "maker": "Derwent",
@@ -2253,7 +653,15 @@
     "name": "Champagne",
     "munsell": "2.74Y 8.92/4.38",
     "hex": "#f7dfa4",
-    "minDist": 30.969894230082367
+    "minDist": 33.27115222229612
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Gold",
+    "munsell": "9.26YR 6.99/10.33",
+    "hex": "#e3a033",
+    "minDist": 16.649926642088875
   },
   {
     "maker": "Derwent",
@@ -2261,15 +669,15 @@
     "name": "Pale Peach",
     "munsell": "5.79YR 8.64/3.1",
     "hex": "#f4d3b9",
-    "minDist": 33.69498234956823
+    "minDist": 36.602163564120026
   },
   {
     "maker": "Derwent",
     "range": "Derwent Lightfast Pencils",
-    "name": "Wheat",
-    "munsell": "2.37Y 8.58/2.87",
-    "hex": "#e8d6b0",
-    "minDist": 33.861216307772395
+    "name": "Salmon",
+    "munsell": "8.45R 7.91/4.13",
+    "hex": "#ebbaaf",
+    "minDist": 34.462570921525234
   },
   {
     "maker": "Derwent",
@@ -2277,15 +685,31 @@
     "name": "Oyster",
     "munsell": "7.46RP 8.8/2.18",
     "hex": "#ebd9dc",
-    "minDist": 41.17185535960081
+    "minDist": 46.46517534484138
   },
   {
     "maker": "Derwent",
     "range": "Derwent Lightfast Pencils",
-    "name": "Light Aqua",
-    "munsell": "4.55BG 9.02/2.17",
-    "hex": "#c8ebe3",
-    "minDist": 41.8611004656139
+    "name": "Heather",
+    "munsell": "9.92P 6.1/7.48",
+    "hex": "#bb85ae",
+    "minDist": 35.46616207941412
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Wild Lavender",
+    "munsell": "6.18P 5.62/7.19",
+    "hex": "#a27cac",
+    "minDist": 30.79528391176562
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Mid Ultramarine",
+    "munsell": "5.09PB 6.76/8.54",
+    "hex": "#7ea9e3",
+    "minDist": 43.78446761189653
   },
   {
     "maker": "Derwent",
@@ -2293,7 +717,95 @@
     "name": "Arctic",
     "munsell": "1.88G 9.09/0.36",
     "hex": "#e2e7e3",
-    "minDist": 43.0400303256399
+    "minDist": 48.50828089902044
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Light Aqua",
+    "munsell": "4.55BG 9.02/2.17",
+    "hex": "#c8ebe3",
+    "minDist": 48.404787303042454
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Turquoise Green",
+    "munsell": "6.44BG 7.52/8.09",
+    "hex": "#35d0c7",
+    "minDist": 44.46535613832119
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Vivid Green",
+    "munsell": "7.32G 3.48/5.86",
+    "hex": "#006049",
+    "minDist": 24.89323652314993
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Yellow Ochre",
+    "munsell": "0.72Y 7.95/7.09",
+    "hex": "#eec071",
+    "minDist": 20.716721168074958
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Wheat",
+    "munsell": "2.37Y 8.58/2.87",
+    "hex": "#e8d6b0",
+    "minDist": 34.20895866442315
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Fossil Grey",
+    "munsell": "3.67R 6.95/1.08",
+    "hex": "#b5aaa9",
+    "minDist": 30.658946826196058
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Moonstone",
+    "munsell": "6.92Y 7.29/0.51",
+    "hex": "#b7b5ae",
+    "minDist": 32.07845974250429
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Cool Grey",
+    "munsell": "5.12Y 7.24/0.59",
+    "hex": "#b7b4ab",
+    "minDist": 31.39973524141963
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Granite",
+    "munsell": "1.62PB 5.45/0.9",
+    "hex": "#80868b",
+    "minDist": 19.34610296310273
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Platinum",
+    "munsell": "0.99PB 7.25/1.04",
+    "hex": "#aeb5ba",
+    "minDist": 35.52148959157014
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Lightfast Pencils",
+    "name": "Mist",
+    "munsell": "2.89GY 7.45/0.22",
+    "hex": "#b9b9b6",
+    "minDist": 34.592779968441725
   },
   {
     "maker": "Derwent",
@@ -2301,783 +813,551 @@
     "name": "White",
     "munsell": "9.92YR 9.44/0.64",
     "hex": "#f2efea",
-    "minDist": 45.72966129879195
+    "minDist": 50.80673578742075
   },
   {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Pink Madder Lake",
-    "munsell": "7.01RP 5.95/13.46",
-    "hex": "#eb6292",
-    "minDist": 15.978407763293935
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Rose Carmine",
-    "munsell": "1.76R 5.65/13.02",
-    "hex": "#e75970",
-    "minDist": 17.12831808806913
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Copper",
-    "munsell": "4.37YR 6.62/2.26",
-    "hex": "#b79f91",
-    "minDist": 18.13653170911009
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Warm Grey III",
-    "munsell": "0.81Y 6.09/0.54",
-    "hex": "#9a958f",
-    "minDist": 18.214803106265165
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Salmon",
-    "munsell": "3.43R 6.47/11.42",
-    "hex": "#f6797e",
-    "minDist": 18.39874838607345
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Sky Blue",
-    "munsell": "5.4PB 6.58/9.87",
-    "hex": "#74a4e9",
-    "minDist": 18.67406961440067
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Light Cobalt Turquoise",
-    "munsell": "2.66B 6.87/8.83",
-    "hex": "#00bcd2",
-    "minDist": 20.019069642720993
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Quinacridone Magenta",
-    "munsell": "2.94RP 5.81/14.31",
-    "hex": "#e05fab",
-    "minDist": 20.116953488671363
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Cold Grey III",
-    "munsell": "1.13PB 5.91/0.93",
-    "hex": "#8c9296",
-    "minDist": 20.267697064469818
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Fra Angelico Blue",
-    "munsell": "6.88PB 3.93/17.04",
-    "hex": "#2353ce",
-    "minDist": 20.619976748790155
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Gold",
-    "munsell": "2.79Y 7.05/1.59",
-    "hex": "#b8ae9a",
-    "minDist": 21.013448380912855
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Lizardlite Green",
-    "munsell": "5.67GY 9.04/7.31",
-    "hex": "#d2f088",
-    "minDist": 21.66027724021243
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Silver",
-    "munsell": "2.03PB 6.14/0.73",
-    "hex": "#93979b",
-    "minDist": 22.361820886581636
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Arylide Yellow",
-    "munsell": "2.36GY 9.32/9.37",
-    "hex": "#ebf38f",
-    "minDist": 23.43574760741272
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Beige Red",
-    "munsell": "9.35R 7.74/5.94",
-    "hex": "#f5b19c",
-    "minDist": 23.474392208170016
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Warm Grey II",
-    "munsell": "0.62Y 7.29/1.08",
-    "hex": "#bdb4a8",
-    "minDist": 24.913022912868062
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Light Magenta",
-    "munsell": "2.34RP 6.41/12.99",
-    "hex": "#e977bc",
-    "minDist": 25.12482202529078
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Cream",
-    "munsell": "4.99Y 9.02/6.31",
-    "hex": "#f9e38a",
-    "minDist": 26.43165631165076
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Tyrian Purple",
-    "munsell": "1.57P 6.32/7.55",
-    "hex": "#a293ca",
-    "minDist": 26.555954037597665
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Slate Green",
-    "munsell": "7.02Y 7.67/1.36",
-    "hex": "#c4c0ab",
-    "minDist": 26.914395195411565
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Bohemian Green Earth",
-    "munsell": "4.69GY 8.38/2.7",
-    "hex": "#ced6ad",
-    "minDist": 27.964590751696075
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Cold Grey II",
-    "munsell": "6.86B 7.26/0.38",
-    "hex": "#b1b5b6",
-    "minDist": 29.157788202654476
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Green Jasper",
-    "munsell": "9.59G 8.06/2.03",
-    "hex": "#b1d0c5",
-    "minDist": 32.71679182332361
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Warm Grey I",
-    "munsell": "1.02Y 8.19/1.0",
-    "hex": "#d4ccc0",
-    "minDist": 32.91435915415097
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Thulite Yellowish",
-    "munsell": "4.57YR 8.61/3.24",
-    "hex": "#f5d2ba",
-    "minDist": 33.456074927675985
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Serpentine Grey",
-    "munsell": "9.18BG 7.95/0.66",
-    "hex": "#bfc8c8",
-    "minDist": 34.15923565914291
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Thulite Brown",
-    "munsell": "9.11YR 8.56/1.77",
-    "hex": "#e5d5c1",
-    "minDist": 34.8288532036551
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Amethyst Grey",
-    "munsell": "7.48PB 7.67/2.04",
-    "hex": "#bcbfca",
-    "minDist": 35.758916681543674
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Thulite Reddish",
-    "munsell": "3.42YR 8.77/2.68",
-    "hex": "#f5d7c6",
-    "minDist": 36.236902234480276
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Zircon Red Bright",
-    "munsell": "8.31R 8.65/2.83",
-    "hex": "#f3d2cb",
-    "minDist": 36.555290838402705
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Cold Grey I",
-    "munsell": "9.58GY 8.3/0.09",
-    "hex": "#cfd0cf",
-    "minDist": 36.65854668156408
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Ivory",
-    "munsell": "3.42Y 9.32/3.33",
-    "hex": "#f8ebc9",
-    "minDist": 39.26629848863595
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
-    "name": "Aquamarine Blue",
-    "munsell": "2.91PB 8.6/3.04",
-    "hex": "#c8daeb",
-    "minDist": 41.0377061679663
-  },
-  {
-    "maker": "Faber-Castell",
-    "range": "Faber-Castell Polychromos 9201",
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
     "name": "White",
-    "munsell": "4.51Y 9.55/0.68",
-    "hex": "#f4f2ed",
-    "minDist": 46.697841753895496
+    "munsell": "4.61Y 9.46/0.16",
+    "hex": "#f0f0ee",
+    "minDist": 52.05502108625157
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Peacock Blue",
-    "munsell": "1.52B 4.24/8.94",
-    "hex": "#00778e",
-    "minDist": 15.462310718416326
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Silver Grey",
+    "munsell": "0.97PB 8.39/1.37",
+    "hex": "#cbd4d9",
+    "minDist": 45.18614511826392
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Royal Blue",
-    "munsell": "6.11PB 3.4/13.41",
-    "hex": "#004cab",
-    "minDist": 15.539775371837926
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Steel Grey",
+    "munsell": "9.67B 6.51/2.24",
+    "hex": "#92a3ad",
+    "minDist": 30.38275157262106
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Pansy",
-    "munsell": "8.89PB 2.81/11.83",
-    "hex": "#42348c",
-    "minDist": 15.59544676433633
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Ultramarine Pink",
+    "munsell": "0.63RP 6.69/10.34",
+    "hex": "#dc8ac4",
+    "minDist": 44.75108434370493
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Luminous Orange",
-    "munsell": "0.74YR 7.93/14.35",
-    "hex": "#ff9b54",
-    "minDist": 15.685900114677626
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Violet Grey",
+    "munsell": "9.75P 5.73/2.3",
+    "hex": "#988894",
+    "minDist": 24.25481474015201
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Holly Green",
-    "munsell": "3.0G 4.22/6.5",
-    "hex": "#1f744c",
-    "minDist": 15.69914594141166
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Manganese Violet",
+    "munsell": "6.78P 5.97/8.89",
+    "hex": "#b381bb",
+    "minDist": 36.968076539673234
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Black",
-    "munsell": "8.47PB 1.5/0.28",
-    "hex": "#262628",
-    "minDist": 16.097547515021084
-  },
-  {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Luminous Green",
-    "munsell": "9.09GY 8.95/13.32",
-    "hex": "#86fd5c",
-    "minDist": 16.171125975530064
-  },
-  {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Pale Gold",
-    "munsell": "4.03Y 6.7/3.37",
-    "hex": "#b5a57a",
-    "minDist": 16.37520091757915
-  },
-  {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Mustard",
-    "munsell": "2.58Y 6.94/10.18",
-    "hex": "#d5a51e",
-    "minDist": 16.56424751027846
-  },
-  {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Wisteria",
-    "munsell": "0.2P 6.05/10.66",
-    "hex": "#968ad9",
-    "minDist": 16.725169997972472
-  },
-  {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
     "name": "Violet",
-    "munsell": "1.32P 2.69/12.18",
-    "hex": "#542884",
-    "minDist": 17.057667723667745
+    "munsell": "0.58P 2.65/11.42",
+    "hex": "#4d2c81",
+    "minDist": 38.915126089397695
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Emerald Green",
-    "munsell": "4.69G 6.93/12.63",
-    "hex": "#00c882",
-    "minDist": 17.22920341461114
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Malachite Green",
+    "munsell": "1.86B 2.84/7.04",
+    "hex": "#004f63",
+    "minDist": 32.09172446404104
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Cool Grey #4",
-    "munsell": "4.17PB 5.5/1.46",
-    "hex": "#818790",
-    "minDist": 17.264587419013132
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Light Malachite Green",
+    "munsell": "7.15BG 7.14/7.29",
+    "hex": "#44c3bf",
+    "minDist": 42.053184326716995
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Mint Green",
-    "munsell": "1.32G 7.16/4.4",
-    "hex": "#8fbd94",
-    "minDist": 17.331649651362426
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Ice Blue",
+    "munsell": "7.63B 3.17/8.29",
+    "hex": "#00557f",
+    "minDist": 32.02481020573252
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Marigold",
-    "munsell": "6.97YR 7.7/15.71",
-    "hex": "#ffa800",
-    "minDist": 17.66818430673268
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Beryl Green",
+    "munsell": "2.96BG 5.09/11.09",
+    "hex": "#009380",
+    "minDist": 40.6119584226043
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Peacock Green",
-    "munsell": "6.6BG 4.34/9.44",
-    "hex": "#007c7e",
-    "minDist": 17.881770033335215
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Grass Green",
+    "munsell": "1.45G 4.44/11.82",
+    "hex": "#00812b",
+    "minDist": 19.79374197937437
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Sky Mist",
-    "munsell": "2.19B 6.33/3.62",
-    "hex": "#73a4ab",
-    "minDist": 18.121440289836418
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Primrose",
+    "munsell": "6.02Y 9.18/3.22",
+    "hex": "#f2e9be",
+    "minDist": 39.04863727632399
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Coral",
-    "munsell": "5.44R 7.22/10.5",
-    "hex": "#ff9189",
-    "minDist": 18.41568443005157
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Payne’s Grey 30%",
+    "munsell": "3.01PB 6.0/2.83",
+    "hex": "#8695a5",
+    "minDist": 27.063276870893514
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Surf Green",
-    "munsell": "6.32G 6.76/4.22",
-    "hex": "#7bb39a",
-    "minDist": 18.45231922381512
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Perylene Brown",
+    "munsell": "5.58R 2.88/10.28",
+    "hex": "#891027",
+    "minDist": 22.90442734275713
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Antique Silver",
-    "munsell": "2.86PB 5.62/0.32",
-    "hex": "#888a8b",
-    "minDist": 18.663362332613463
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Ultramarine Violet",
+    "munsell": "0.21P 6.28/8.53",
+    "hex": "#9b93d1",
+    "minDist": 38.4576050302322
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Celadon",
-    "munsell": "0.26BG 6.77/4.53",
-    "hex": "#73b4a1",
-    "minDist": 18.917696217576644
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Cobalt Blue 5%",
+    "munsell": "3.37PB 7.66/6.23",
+    "hex": "#9ac3eb",
+    "minDist": 47.85346926193466
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Jade Green",
-    "munsell": "1.66BG 7.15/9.74",
-    "hex": "#00caab",
-    "minDist": 19.057872420255975
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Dark English Green",
+    "munsell": "2.89BG 3.65/6.72",
+    "hex": "#00655b",
+    "minDist": 31.64683102058117
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Warm Grey #3",
-    "munsell": "0.99Y 6.41/0.77",
-    "hex": "#a49d95",
-    "minDist": 19.10980320404859
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Olive Brown 10%",
+    "munsell": "3.44Y 7.65/2.92",
+    "hex": "#cdbe98",
+    "minDist": 26.323632966339147
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Misty Green",
-    "munsell": "7.38GY 7.43/3.29",
-    "hex": "#aac097",
-    "minDist": 19.622568356291715
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Dark Sap Green",
+    "munsell": "6.26BG 2.52/2.94",
+    "hex": "#1f4243",
+    "minDist": 15.829209178794878
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Opal Green",
-    "munsell": "5.69GY 8.11/4.05",
-    "hex": "#c1d299",
-    "minDist": 20.25506484533262
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Buff Titanium",
+    "munsell": "0.01Y 9.14/1.36",
+    "hex": "#f0e5d6",
+    "minDist": 45.14351725310058
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Rose Grey",
-    "munsell": "0.22RP 5.63/9.12",
-    "hex": "#b872a7",
-    "minDist": 20.43784105418288
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "French Grey 10%",
+    "munsell": "5.32YR 6.99/1.01",
+    "hex": "#b6aba4",
+    "minDist": 29.118136109786146
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Summer Green",
-    "munsell": "4.6G 6.01/13.74",
-    "hex": "#00b06a",
-    "minDist": 20.546440148794876
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Naples Ochre",
+    "munsell": "2.21Y 8.76/4.21",
+    "hex": "#f4daa3",
+    "minDist": 32.12462716103976
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Viridian",
-    "munsell": "1.88BG 5.17/11.48",
-    "hex": "#00967c",
-    "minDist": 21.15708246816611
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Brown Ochre 10%",
+    "munsell": "7.86YR 8.19/4.21",
+    "hex": "#ecc69f",
+    "minDist": 28.71040786184402
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Cosmos",
-    "munsell": "4.76RP 6.31/13.12",
-    "hex": "#f070a8",
-    "minDist": 21.175082111666196
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Raw Umber 10%",
+    "munsell": "0.14Y 7.65/1.97",
+    "hex": "#ccbca6",
+    "minDist": 30.914555715648483
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Cobalt Green [hue]",
-    "munsell": "4.95G 7.96/8.33",
-    "hex": "#65dda8",
-    "minDist": 21.36446690858828
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Burnt Sienna 10%",
+    "munsell": "3.15R 6.6/4.43",
+    "hex": "#c79797",
+    "minDist": 24.6326050897913
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Cork",
-    "munsell": "4.59YR 7.42/3.84",
-    "hex": "#d9b197",
-    "minDist": 21.678730089151546
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Burnt Ochre 10%",
+    "munsell": "3.0YR 7.84/4.94",
+    "hex": "#eeb89b",
+    "minDist": 28.163920914421578
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Aqua",
-    "munsell": "8.35B 7.08/9.75",
-    "hex": "#1ebdef",
-    "minDist": 21.767059768750627
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Sepia 10%",
+    "munsell": "2.49R 6.04/1.27",
+    "hex": "#9f9191",
+    "minDist": 23.96043766059735
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Porcelain Blue",
-    "munsell": "3.47B 7.08/8.95",
-    "hex": "#00c2db",
-    "minDist": 21.981785262457358
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Hibiscus Pink",
+    "munsell": "8.14RP 5.45/8.05",
+    "hex": "#bf6c80",
+    "minDist": 20.842148016093553
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Lettuce Green",
-    "munsell": "7.6GY 8.68/7.51",
-    "hex": "#b7ea88",
-    "minDist": 22.077091378882145
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Bleu de Nîmes",
+    "munsell": "8.06PB 1.93/9.5",
+    "hex": "#292569",
+    "minDist": 32.01639313164111
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Forget-me-not Blue",
-    "munsell": "4.04PB 7.11/8.36",
-    "hex": "#81b4eb",
-    "minDist": 22.545194415256706
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Ultramarine",
+    "munsell": "6.75PB 4.24/17.28",
+    "hex": "#1e5cda",
+    "minDist": 62.05472570725024
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Cool Grey #3",
-    "munsell": "4.72PB 6.19/1.75",
-    "hex": "#9299a3",
-    "minDist": 23.275730840990626
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Butternut",
+    "munsell": "8.99YR 8.36/6.04",
+    "hex": "#f9ca8b",
+    "minDist": 24.86874015852592
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Luminous Red",
-    "munsell": "1.44R 6.55/16.87",
-    "hex": "#ff5980",
-    "minDist": 23.379644167932856
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Carmine Lake",
+    "munsell": "6.05R 2.06/4.66",
+    "hex": "#522428",
+    "minDist": 20.958353963844896
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Silver",
-    "munsell": "3.88PB 6.24/1.07",
-    "hex": "#969aa0",
-    "minDist": 23.414505647004653
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Pink White",
+    "munsell": "1.67YR 9.05/1.58",
+    "hex": "#f1e1db",
+    "minDist": 46.72347233266104
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Sky Blue",
-    "munsell": "9.88B 7.42/8.28",
-    "hex": "#65c3f1",
-    "minDist": 23.61463147002163
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Violet Pink",
+    "munsell": "0.51R 5.94/7.02",
+    "hex": "#c77d86",
+    "minDist": 19.584797711394213
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Willow Green",
-    "munsell": "1.33GY 7.49/2.65",
-    "hex": "#bcbd96",
-    "minDist": 23.84931062743182
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Dark Indigo",
+    "munsell": "5.96P 1.26/0.63",
+    "hex": "#242025",
+    "minDist": 19.27930309967325
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Pink",
-    "munsell": "3.25R 7.34/9.67",
-    "hex": "#ff9799",
-    "minDist": 23.859814763827217
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Indanthrone Blue",
+    "munsell": "8.33PB 1.13/4.16",
+    "hex": "#1d1b39",
+    "minDist": 20.00271097201198
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Lavender Blue",
-    "munsell": "5.02PB 7.15/8.13",
-    "hex": "#8ab4eb",
-    "minDist": 23.982372053988012
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Chrysocolla Blue",
+    "munsell": "2.11B 6.6/10.42",
+    "hex": "#00b8d0",
+    "minDist": 56.37908329824775
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Cream",
-    "munsell": "4.74Y 9.04/7.96",
-    "hex": "#ffe376",
-    "minDist": 24.08820577876302
+    "maker": "Caran",
+    "range": "Caran d'Ache Luminance 6901",
+    "name": "Middle Verdigris",
+    "munsell": "1.36G 7.54/2.44",
+    "hex": "#a7c3aa",
+    "minDist": 31.44169940053913
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Beige",
-    "munsell": "8.97YR 7.68/3.44",
-    "hex": "#d8bb99",
-    "minDist": 24.411541244138853
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "White",
+    "munsell": "6.73Y 9.37/0.36",
+    "hex": "#eeede9",
+    "minDist": 50.57243697986991
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Ash Rose",
-    "munsell": "3.56R 6.99/4.24",
-    "hex": "#d0a2a1",
-    "minDist": 24.41659309613625
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Silver Grey",
+    "munsell": "8.6B 8.27/0.93",
+    "hex": "#c9d0d4",
+    "minDist": 43.531826953050526
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Smoke Blue",
-    "munsell": "5.79PB 6.26/3.81",
-    "hex": "#8f9ab3",
-    "minDist": 24.619572668248605
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Light Grey",
+    "munsell": "9.67B 7.62/1.35",
+    "hex": "#b5bfc5",
+    "minDist": 38.804028419638755
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Peach",
-    "munsell": "1.25YR 8.04/5.49",
-    "hex": "#f9bba1",
-    "minDist": 25.78421746933758
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Steel Grey",
+    "munsell": "7.77B 6.82/1.52",
+    "hex": "#9dabb1",
+    "minDist": 32.05577892829032
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Sand",
-    "munsell": "2.63Y 7.75/3.41",
-    "hex": "#d3bf95",
-    "minDist": 26.015764098752552
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Pale Yellow",
+    "munsell": "9.13Y 9.1/5.17",
+    "hex": "#efe9a0",
+    "minDist": 29.669276507666318
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Jaune Brillant",
-    "munsell": "7.13YR 8.46/5.36",
-    "hex": "#fdcb9a",
-    "minDist": 28.36059279409507
-  },
-  {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Mauve",
-    "munsell": "0.41RP 6.65/12.28",
-    "hex": "#e483cb",
-    "minDist": 28.53974362925761
-  },
-  {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
     "name": "Naples Yellow",
-    "munsell": "1.24Y 8.82/7.95",
-    "hex": "#ffd776",
-    "minDist": 29.013832512113673
+    "munsell": "4.22Y 8.81/8.7",
+    "hex": "#fedc64",
+    "minDist": 24.667953179916907
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Ice Green",
-    "munsell": "6.75BG 8.24/6.58",
-    "hex": "#6fe1d9",
-    "minDist": 29.147026229835816
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Golden Ochre",
+    "munsell": "9.32YR 7.01/9.99",
+    "hex": "#e3a138",
+    "minDist": 15.806518734391847
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Warm Grey #2",
-    "munsell": "9.92YR 7.73/0.83",
-    "hex": "#c7c0b6",
-    "minDist": 29.49914259960865
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Apricot",
+    "munsell": "6.53YR 8.06/7.98",
+    "hex": "#ffbb76",
+    "minDist": 18.279212075711
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Light Sand",
-    "munsell": "0.22Y 8.7/4.7",
-    "hex": "#f9d69f",
-    "minDist": 30.96664444984915
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Salmon",
+    "munsell": "0.3YR 7.65/8.36",
+    "hex": "#ffa784",
+    "minDist": 22.624275555377277
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Fuchsia",
-    "munsell": "1.22RP 7.0/12.05",
-    "hex": "#f08cce",
-    "minDist": 31.45430503949982
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Salmon Pink",
+    "munsell": "5.33R 7.51/8.37",
+    "hex": "#ffa199",
+    "minDist": 27.113857185285084
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Luminous Opera",
-    "munsell": "4.42RP 6.24/19.7",
-    "hex": "#ff3fb3",
-    "minDist": 31.65783516256889
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Pink",
+    "munsell": "5.76RP 6.54/11.1",
+    "hex": "#ec7ea6",
+    "minDist": 32.69064942088828
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Cool Grey #2",
-    "munsell": "5.54PB 7.44/1.28",
-    "hex": "#b5b9c0",
-    "minDist": 32.46481745817224
-  },
-  {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Sea Fog",
-    "munsell": "1.18RP 6.93/4.16",
-    "hex": "#c2a3b5",
-    "minDist": 33.15355944474118
-  },
-  {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
     "name": "Rose Pink",
-    "munsell": "7.6RP 7.21/9.98",
-    "hex": "#fc94ae",
-    "minDist": 33.98924920092189
+    "munsell": "0.73R 6.4/11.45",
+    "hex": "#f27789",
+    "minDist": 21.41714341540484
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Luminous Rose",
-    "munsell": "2.26RP 5.71/19.2",
-    "hex": "#f23cbb",
-    "minDist": 34.18501777304796
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Light Purple",
+    "munsell": "4.79RP 6.52/12.15",
+    "hex": "#f07aab",
+    "minDist": 36.533776588127914
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Lilac",
-    "munsell": "3.36P 7.12/6.24",
-    "hex": "#bba8d4",
-    "minDist": 35.611729468536375
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Mauve",
+    "munsell": "7.97P 5.56/10.55",
+    "hex": "#b46fb3",
+    "minDist": 38.967718327361816
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Shell Pink",
-    "munsell": "0.98YR 8.87/3.4",
-    "hex": "#ffd7c7",
-    "minDist": 36.5680068640421
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Ultramarine",
+    "munsell": "7.43PB 2.64/12.53",
+    "hex": "#2c338f",
+    "minDist": 44.17926605886315
   },
   {
-    "maker": "Holbein",
-    "range": "Holbein Artists' Colored Pencil",
-    "name": "Horizon Blue",
-    "munsell": "5.19B 8.57/3.47",
-    "hex": "#b1dfea",
-    "minDist": 36.781757190411035
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Light Malachite Green",
+    "munsell": "8.39BG 7.46/7.6",
+    "hex": "#42cdcc",
+    "minDist": 46.160372244566375
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Turquoise Green",
+    "munsell": "8.02BG 6.67/8.51",
+    "hex": "#00b9b9",
+    "minDist": 44.556203870284364
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Jade Green",
+    "munsell": "8.83G 7.44/7.83",
+    "hex": "#54cdaa",
+    "minDist": 32.791826711973044
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Light Green",
+    "munsell": "8.19GY 8.26/6.97",
+    "hex": "#aade89",
+    "minDist": 24.775124669292996
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Lime Green",
+    "munsell": "4.24GY 8.98/5.95",
+    "hex": "#dceb90",
+    "minDist": 22.807377354613237
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Light Lemon Yellow",
+    "munsell": "0.23GY 9.29/4.81",
+    "hex": "#f0eeb5",
+    "minDist": 35.60854223185225
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Blue",
+    "munsell": "5.18PB 3.51/11.34",
+    "hex": "#0054a1",
+    "minDist": 36.88471134557097
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Bluish Pale",
+    "munsell": "9.73B 8.04/4.69",
+    "hex": "#a2cfe7",
+    "minDist": 48.025022693415835
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Ash Grey",
+    "munsell": "7.94Y 8.43/0.81",
+    "hex": "#d6d4c7",
+    "minDist": 40.29778036715609
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Light Beige",
+    "munsell": "8.0YR 7.4/0.57",
+    "hex": "#bdb7b2",
+    "minDist": 33.370906459579295
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Beige",
+    "munsell": "6.75YR 6.36/0.74",
+    "hex": "#a49b96",
+    "minDist": 24.71714264138765
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Cream",
+    "munsell": "3.55Y 9.16/2.27",
+    "hex": "#f2e7ca",
+    "minDist": 41.88839240736863
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Granite Rose",
+    "munsell": "2.17YR 8.33/3.79",
+    "hex": "#f4c8b3",
+    "minDist": 35.32499996063775
+  },
+  {
+    "maker": "Caran",
+    "range": "Caran d'Ache Pablo 666",
+    "name": "Silver",
+    "munsell": "1.28PB 6.17/0.7",
+    "hex": "#94989c",
+    "minDist": 25.59478270464694
   },
   {
     "maker": "Holbein",
@@ -3085,15 +1365,39 @@
     "name": "Cherry Blossom",
     "munsell": "1.64R 8.61/4.78",
     "hex": "#ffcbcc",
-    "minDist": 37.21488183441324
+    "minDist": 42.28542734462801
   },
   {
     "maker": "Holbein",
     "range": "Holbein Artists' Colored Pencil",
-    "name": "Warm Grey #1",
-    "munsell": "9.34YR 8.88/0.6",
-    "hex": "#e5dfd8",
-    "minDist": 40.20796312248829
+    "name": "Shell Pink",
+    "munsell": "0.98YR 8.87/3.4",
+    "hex": "#ffd7c7",
+    "minDist": 41.01357087459574
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Pink",
+    "munsell": "3.25R 7.34/9.67",
+    "hex": "#ff9799",
+    "minDist": 25.55408813813242
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Coral",
+    "munsell": "5.44R 7.22/10.5",
+    "hex": "#ff9189",
+    "minDist": 21.66543390651123
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Ash Rose",
+    "munsell": "3.56R 6.99/4.24",
+    "hex": "#d0a2a1",
+    "minDist": 27.949877841905717
   },
   {
     "maker": "Holbein",
@@ -3101,15 +1405,367 @@
     "name": "Ivory",
     "munsell": "3.48Y 9.43/3.51",
     "hex": "#faeed0",
-    "minDist": 41.087418456062466
+    "minDist": 43.793548835712166
   },
   {
     "maker": "Holbein",
     "range": "Holbein Artists' Colored Pencil",
-    "name": "Cool Grey #1",
-    "munsell": "3.38GY 8.87/0.14",
-    "hex": "#dfe0dd",
-    "minDist": 41.199986345732675
+    "name": "Peach",
+    "munsell": "1.25YR 8.04/5.49",
+    "hex": "#f9bba1",
+    "minDist": 30.329875634039745
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Jaune Brillant",
+    "munsell": "7.13YR 8.46/5.36",
+    "hex": "#fdcb9a",
+    "minDist": 27.832399424086162
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Light Sand",
+    "munsell": "0.22Y 8.7/4.7",
+    "hex": "#f9d69f",
+    "minDist": 30.42187302946643
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Cream",
+    "munsell": "4.74Y 9.04/7.96",
+    "hex": "#ffe376",
+    "minDist": 24.466294778203427
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Naples Yellow",
+    "munsell": "1.24Y 8.82/7.95",
+    "hex": "#ffd776",
+    "minDist": 29.702534721665796
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Marigold",
+    "munsell": "6.97YR 7.7/15.71",
+    "hex": "#ffa800",
+    "minDist": 39.611523873819316
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Mustard",
+    "munsell": "2.58Y 6.94/10.18",
+    "hex": "#d5a51e",
+    "minDist": 26.207493906149196
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Cork",
+    "munsell": "4.59YR 7.42/3.84",
+    "hex": "#d9b197",
+    "minDist": 26.96632951277979
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Beige",
+    "munsell": "8.97YR 7.68/3.44",
+    "hex": "#d8bb99",
+    "minDist": 26.69677438341322
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Sand",
+    "munsell": "2.63Y 7.75/3.41",
+    "hex": "#d3bf95",
+    "minDist": 25.816170460221336
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Lettuce Green",
+    "munsell": "7.6GY 8.68/7.51",
+    "hex": "#b7ea88",
+    "minDist": 23.81630376586063
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Cobalt Green [hue]",
+    "munsell": "4.95G 7.96/8.33",
+    "hex": "#65dda8",
+    "minDist": 30.726949409257465
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Jade Green",
+    "munsell": "1.66BG 7.15/9.74",
+    "hex": "#00caab",
+    "minDist": 36.91161799040321
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Ice Green",
+    "munsell": "6.75BG 8.24/6.58",
+    "hex": "#6fe1d9",
+    "minDist": 47.08302663623502
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Emerald Green",
+    "munsell": "4.69G 6.93/12.63",
+    "hex": "#00c882",
+    "minDist": 27.3455813482917
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Summer Green",
+    "munsell": "4.6G 6.01/13.74",
+    "hex": "#00b06a",
+    "minDist": 29.45405608679011
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Viridian",
+    "munsell": "1.88BG 5.17/11.48",
+    "hex": "#00967c",
+    "minDist": 39.505544961053104
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Peacock Green",
+    "munsell": "6.6BG 4.34/9.44",
+    "hex": "#007c7e",
+    "minDist": 45.032438789594366
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Holly Green",
+    "munsell": "3.0G 4.22/6.5",
+    "hex": "#1f744c",
+    "minDist": 15.763890510614237
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Willow Green",
+    "munsell": "1.33GY 7.49/2.65",
+    "hex": "#bcbd96",
+    "minDist": 25.487433898498676
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Opal Green",
+    "munsell": "5.69GY 8.11/4.05",
+    "hex": "#c1d299",
+    "minDist": 26.24888151272026
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Misty Green",
+    "munsell": "7.38GY 7.43/3.29",
+    "hex": "#aac097",
+    "minDist": 25.518194263475113
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Mint Green",
+    "munsell": "1.32G 7.16/4.4",
+    "hex": "#8fbd94",
+    "minDist": 25.176110266577084
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Surf Green",
+    "munsell": "6.32G 6.76/4.22",
+    "hex": "#7bb39a",
+    "minDist": 26.697593324488547
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Celadon",
+    "munsell": "0.26BG 6.77/4.53",
+    "hex": "#73b4a1",
+    "minDist": 29.574115381486855
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Horizon Blue",
+    "munsell": "5.19B 8.57/3.47",
+    "hex": "#b1dfea",
+    "minDist": 49.8402543099401
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Porcelain Blue",
+    "munsell": "3.47B 7.08/8.95",
+    "hex": "#00c2db",
+    "minDist": 52.91955168077027
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Aqua",
+    "munsell": "8.35B 7.08/9.75",
+    "hex": "#1ebdef",
+    "minDist": 53.87593735659624
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Sky Blue",
+    "munsell": "9.88B 7.42/8.28",
+    "hex": "#65c3f1",
+    "minDist": 51.674708887511166
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Forget-me-not Blue",
+    "munsell": "4.04PB 7.11/8.36",
+    "hex": "#81b4eb",
+    "minDist": 46.67168490018492
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Lavender Blue",
+    "munsell": "5.02PB 7.15/8.13",
+    "hex": "#8ab4eb",
+    "minDist": 46.254073695989895
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Peacock Blue",
+    "munsell": "1.52B 4.24/8.94",
+    "hex": "#00778e",
+    "minDist": 42.682313766467786
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Royal Blue",
+    "munsell": "6.11PB 3.4/13.41",
+    "hex": "#004cab",
+    "minDist": 45.84282929674021
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Sky Mist",
+    "munsell": "2.19B 6.33/3.62",
+    "hex": "#73a4ab",
+    "minDist": 31.237408936793155
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Smoke Blue",
+    "munsell": "5.79PB 6.26/3.81",
+    "hex": "#8f9ab3",
+    "minDist": 30.99800835797297
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Lilac",
+    "munsell": "3.36P 7.12/6.24",
+    "hex": "#bba8d4",
+    "minDist": 41.77638883281252
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Rose Pink",
+    "munsell": "7.6RP 7.21/9.98",
+    "hex": "#fc94ae",
+    "minDist": 32.137505280093386
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Wisteria",
+    "munsell": "0.2P 6.05/10.66",
+    "hex": "#968ad9",
+    "minDist": 42.39780572464176
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Mauve",
+    "munsell": "0.41RP 6.65/12.28",
+    "hex": "#e483cb",
+    "minDist": 50.0503772655617
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Fuchsia",
+    "munsell": "1.22RP 7.0/12.05",
+    "hex": "#f08cce",
+    "minDist": 48.66757682044589
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Cosmos",
+    "munsell": "4.76RP 6.31/13.12",
+    "hex": "#f070a8",
+    "minDist": 37.87230413305152
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Pansy",
+    "munsell": "8.89PB 2.81/11.83",
+    "hex": "#42348c",
+    "minDist": 40.66351636135487
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Violet",
+    "munsell": "1.32P 2.69/12.18",
+    "hex": "#542884",
+    "minDist": 42.070449231943954
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Sea Fog",
+    "munsell": "1.18RP 6.93/4.16",
+    "hex": "#c2a3b5",
+    "minDist": 34.97756098779352
+  },
+  {
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Rose Grey",
+    "munsell": "0.22RP 5.63/9.12",
+    "hex": "#b872a7",
+    "minDist": 35.481086546607266
   },
   {
     "maker": "Holbein",
@@ -3117,7 +1773,7 @@
     "name": "White",
     "munsell": "6.48RP 9.54/0.35",
     "hex": "#f3f2f2",
-    "minDist": 47.66539434396059
+    "minDist": 53.16552543567677
   },
   {
     "maker": "Holbein",
@@ -3125,462 +1781,1694 @@
     "name": "Soft White",
     "munsell": "9.9P 9.58/0.38",
     "hex": "#f4f3f3",
-    "minDist": 48.112736259321245
+    "minDist": 53.60633054543719
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Ultramarine",
-    "munsell": "7.51PB 3.34/13.43",
-    "hex": "#3844a8",
-    "minDist": 15.350795731382693
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Black",
+    "munsell": "8.47PB 1.5/0.28",
+    "hex": "#262628",
+    "minDist": 18.053982987821428
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "50% French Grey",
-    "munsell": "7.34YR 5.48/0.66",
-    "hex": "#8c8580",
-    "minDist": 15.705598162523842
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Warm Grey #1",
+    "munsell": "9.34YR 8.88/0.6",
+    "hex": "#e5dfd8",
+    "minDist": 45.63878869008165
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Light Cerulean Blue",
-    "munsell": "3.34PB 6.4/9.62",
-    "hex": "#5da3e1",
-    "minDist": 15.858071225710775
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Warm Grey #2",
+    "munsell": "9.92YR 7.73/0.83",
+    "hex": "#c7c0b6",
+    "minDist": 35.1438139022525
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Violet Blue",
-    "munsell": "7.54PB 2.66/11.01",
-    "hex": "#2f3687",
-    "minDist": 15.984718512661656
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Warm Grey #3",
+    "munsell": "0.99Y 6.41/0.77",
+    "hex": "#a49d95",
+    "minDist": 24.315014779670662
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Nectar",
-    "munsell": "6.08R 6.27/6.24",
-    "hex": "#ce8881",
-    "minDist": 16.15427956296518
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Cool Grey #1",
+    "munsell": "3.38GY 8.87/0.14",
+    "hex": "#dfe0dd",
+    "minDist": 46.880066315038256
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Yellow Ochre",
-    "munsell": "9.58YR 7.35/9.5",
-    "hex": "#eaab46",
-    "minDist": 16.89721385822634
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Cool Grey #2",
+    "munsell": "5.54PB 7.44/1.28",
+    "hex": "#b5b9c0",
+    "minDist": 37.720277078972835
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Non- Photo Blue",
-    "munsell": "8.91B 6.61/10.15",
-    "hex": "#00b0e6",
-    "minDist": 17.76533854872698
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Cool Grey #3",
+    "munsell": "4.72PB 6.19/1.75",
+    "hex": "#9299a3",
+    "minDist": 27.26333815227812
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Caribbean Sea",
-    "munsell": "4.51PB 6.43/8.08",
-    "hex": "#75a1d7",
-    "minDist": 17.867657516963693
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Cool Grey #4",
+    "munsell": "4.17PB 5.5/1.46",
+    "hex": "#818790",
+    "minDist": 20.690405907169104
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Celadon Green",
-    "munsell": "6.45G 6.51/2.08",
-    "hex": "#8ba799",
-    "minDist": 18.6020878237289
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Pale Gold",
+    "munsell": "4.03Y 6.7/3.37",
+    "hex": "#b5a57a",
+    "minDist": 16.95449177687707
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "50% Cool Grey",
-    "munsell": "9.66B 5.85/1.69",
-    "hex": "#849199",
-    "minDist": 18.960812533266623
-  },
-  {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Salmon Pink",
-    "munsell": "0.42YR 7.79/8.58",
-    "hex": "#ffaa85",
-    "minDist": 19.049257461442462
-  },
-  {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Light Aqua",
-    "munsell": "8.42BG 6.86/8.89",
-    "hex": "#00bec0",
-    "minDist": 19.39958050149373
-  },
-  {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Neon Yellow",
-    "munsell": "4.41GY 9.78/5.28",
-    "hex": "#edff28",
-    "minDist": 19.595044207972055
-  },
-  {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Deco Yellow",
-    "munsell": "7.38Y 9.05/8.26",
-    "hex": "#f7e771",
-    "minDist": 19.86195553979368
-  },
-  {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Electric Blue",
-    "munsell": "8.16B 7.06/8.78",
-    "hex": "#43bce7",
-    "minDist": 20.320124018482435
-  },
-  {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Blue Slate",
-    "munsell": "4.34PB 6.85/8.83",
-    "hex": "#79ade8",
-    "minDist": 20.613205504034383
-  },
-  {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Peach",
-    "munsell": "9.73R 7.52/6.09",
-    "hex": "#f0ab94",
-    "minDist": 21.039399302327247
-  },
-  {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Orchid",
-    "munsell": "6.79P 5.93/10.99",
-    "hex": "#ba7ac3",
-    "minDist": 21.528053730042963
-  },
-  {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Sand",
-    "munsell": "0.73Y 7.96/8.24",
-    "hex": "#f3bf62",
-    "minDist": 21.74487835892846
-  },
-  {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Amethyst",
-    "munsell": "3.82P 6.28/10.68",
-    "hex": "#b289d7",
-    "minDist": 22.101507059640305
-  },
-  {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Jade Green",
-    "munsell": "6.04BG 6.63/1.92",
-    "hex": "#8da9a6",
-    "minDist": 22.273088998917608
-  },
-  {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
     "name": "Silver",
-    "munsell": "8.81B 6.38/0.41",
-    "hex": "#9a9e9f",
-    "minDist": 23.258903833091914
+    "munsell": "3.88PB 6.24/1.07",
+    "hex": "#969aa0",
+    "minDist": 26.78105645281192
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Pink",
-    "munsell": "7.92RP 6.55/12.19",
-    "hex": "#f8789c",
-    "minDist": 23.329378106988255
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Antique Silver",
+    "munsell": "2.86PB 5.62/0.32",
+    "hex": "#888a8b",
+    "minDist": 20.309511876472484
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Hot Pink",
-    "munsell": "4.08RP 6.48/13.38",
-    "hex": "#f473b1",
-    "minDist": 23.375395006252944
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Luminous Red",
+    "munsell": "1.44R 6.55/16.87",
+    "hex": "#ff5980",
+    "minDist": 25.62905249353548
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "30% Warm Grey",
-    "munsell": "1.08RP 6.41/0.56",
-    "hex": "#a19d9f",
-    "minDist": 23.743293609068537
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Luminous Rose",
+    "munsell": "2.26RP 5.71/19.2",
+    "hex": "#f23cbb",
+    "minDist": 64.14112107556986
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Light Green",
-    "munsell": "4.09G 8.08/7.15",
-    "hex": "#7edea9",
-    "minDist": 23.978591046779645
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Luminous Opera",
+    "munsell": "4.42RP 6.24/19.7",
+    "hex": "#ff3fb3",
+    "minDist": 56.53688475286294
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Ginger Root",
-    "munsell": "8.6Y 8.1/3.5",
-    "hex": "#d2cd99",
-    "minDist": 24.499934413369374
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Luminous Orange",
+    "munsell": "0.74YR 7.93/14.35",
+    "hex": "#ff9b54",
+    "minDist": 24.149679979691715
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Clay Rose",
-    "munsell": "4.32RP 5.83/3.46",
-    "hex": "#a68792",
-    "minDist": 25.393350655766756
+    "maker": "Holbein",
+    "range": "Holbein Artists' Colored Pencil",
+    "name": "Luminous Green",
+    "munsell": "9.09GY 8.95/13.32",
+    "hex": "#86fd5c",
+    "minDist": 41.43392585707444
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Seashell Pink",
-    "munsell": "0.28Y 7.76/2.91",
-    "hex": "#d5be9e",
-    "minDist": 25.79398768014476
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Naples Yellow Light",
+    "munsell": "3.58Y 9.12/5.15",
+    "hex": "#fce5a5",
+    "minDist": 33.93902712583213
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Pale Sage",
-    "munsell": "6.03GY 8.26/2.98",
-    "hex": "#c6d5aa",
-    "minDist": 26.188040535222793
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Almond",
+    "munsell": "0.08Y 7.77/2.89",
+    "hex": "#d5be9f",
+    "minDist": 28.658442145679185
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "30% French Grey",
-    "munsell": "5.06YR 7.24/0.81",
-    "hex": "#bbb2ac",
-    "minDist": 26.291283145592626
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Tuscan Yellow Light",
+    "munsell": "2.88Y 9.02/5.94",
+    "hex": "#ffe193",
+    "minDist": 30.927639913838306
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Jasmine",
-    "munsell": "2.15Y 8.4/7.35",
-    "hex": "#f7ce73",
-    "minDist": 26.534128287848112
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Primrose Yellow",
+    "munsell": "2.42Y 8.77/7.82",
+    "hex": "#ffd874",
+    "minDist": 28.671962074997314
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "20% Warm Grey",
-    "munsell": "6.09P 6.86/0.37",
-    "hex": "#aba9ab",
-    "minDist": 26.55127500740112
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Golden Yellow",
+    "munsell": "1.34Y 8.66/8.87",
+    "hex": "#ffd266",
+    "minDist": 29.572423878906605
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Rosy Beige",
-    "munsell": "0.74R 7.15/2.95",
-    "hex": "#c8aaac",
-    "minDist": 27.369803770805262
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Brilliant Yellow",
+    "munsell": "6.93YR 7.69/15.6",
+    "hex": "#ffa700",
+    "minDist": 38.69961577753767
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Putty Beige",
-    "munsell": "2.72Y 7.81/1.35",
-    "hex": "#cbc2b0",
-    "minDist": 28.426771279436494
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Yellow Ochre Light",
+    "munsell": "6.32YR 8.4/6.32",
+    "hex": "#ffc791",
+    "minDist": 25.089366743274102
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Peach Beige",
-    "munsell": "4.03Y 8.04/2.78",
-    "hex": "#d6c9a3",
-    "minDist": 28.943671077187773
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Cadmium Orange Light",
+    "munsell": "3.98YR 8.26/6.24",
+    "hex": "#ffc196",
+    "minDist": 26.108581982613085
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Blush Pink",
-    "munsell": "0.75R 7.64/7.84",
-    "hex": "#fea6ae",
-    "minDist": 29.895212362761715
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Tangerine",
+    "munsell": "0.7YR 8.17/4.91",
+    "hex": "#f9c0aa",
+    "minDist": 33.0529112640842
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "20% French Grey",
-    "munsell": "7.6YR 7.67/0.57",
-    "hex": "#c4beb9",
-    "minDist": 30.140321013626647
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Coral",
+    "munsell": "7.67R 7.43/7.16",
+    "hex": "#f6a494",
+    "minDist": 27.328400283632025
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Beige",
-    "munsell": "7.18YR 8.42/4.31",
-    "hex": "#f5cca4",
-    "minDist": 30.609442136718787
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Cobalt Purple",
+    "munsell": "7.17P 4.84/13.49",
+    "hex": "#a853af",
+    "minDist": 46.12719775006908
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Eggshell",
-    "munsell": "0.41Y 8.61/4.51",
-    "hex": "#f5d49f",
-    "minDist": 30.661679841464764
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Purple",
+    "munsell": "8.74P 4.26/15.93",
+    "hex": "#a931a3",
+    "minDist": 55.49956136901967
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "30% Cool Grey",
-    "munsell": "9.06B 7.43/1.05",
-    "hex": "#b2babe",
-    "minDist": 31.464478369472342
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Purple Light",
+    "munsell": "3.46RP 4.09/16.02",
+    "hex": "#b71282",
+    "minDist": 52.89566930594603
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Neon Pink",
-    "munsell": "4.22RP 6.84/18.58",
-    "hex": "#ff5dc3",
-    "minDist": 32.683806396388995
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Azalea Pink",
+    "munsell": "9.73RP 6.05/14.23",
+    "hex": "#f75f84",
+    "minDist": 24.15753222756398
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Light Peach",
-    "munsell": "9.52R 8.39/3.59",
-    "hex": "#f4c9bc",
-    "minDist": 32.69440920690417
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Sepia Light",
+    "munsell": "5.98RP 5.37/6.25",
+    "hex": "#af7185",
+    "minDist": 23.27568207790454
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Greyed Lavender",
-    "munsell": "5.68P 6.77/3.91",
-    "hex": "#b3a1ba",
-    "minDist": 33.114508733543225
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "French Rose",
+    "munsell": "1.09RP 4.8/17.84",
+    "hex": "#cb2ba9",
+    "minDist": 63.93593838267461
   },
   {
-    "maker": "Prismacolor",
-    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Pink Rose",
-    "munsell": "6.61RP 7.62/5.27",
-    "hex": "#e4b0bc",
-    "minDist": 33.59177679675715
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Pink Bloom",
+    "munsell": "3.71R 7.71/8.37",
+    "hex": "#ffa6a4",
+    "minDist": 29.787527164504418
   },
   {
-    "maker": "Prismacolor",
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Apricot Light",
+    "munsell": "7.77R 7.89/7.41",
+    "hex": "#ffaf9c",
+    "minDist": 31.25411626776067
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Oyster",
+    "munsell": "6.3RP 6.5/1.84",
+    "hex": "#ad9ca0",
+    "minDist": 28.097468939130792
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Graphite",
+    "munsell": "0.57PB 6.14/0.64",
+    "hex": "#93979a",
+    "minDist": 25.19112117990677
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Mauve",
+    "munsell": "1.21P 5.98/10.39",
+    "hex": "#9b87d3",
+    "minDist": 41.222344046266464
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Purple Lake Deep",
+    "munsell": "9.75PB 2.32/9.74",
+    "hex": "#3e2a72",
+    "minDist": 32.29590421009694
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Mauve Deep",
+    "munsell": "5.52P 4.87/13.34",
+    "hex": "#9f59b7",
+    "minDist": 45.58811783509723
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Mulberry",
+    "munsell": "1.02P 2.27/9.75",
+    "hex": "#45256d",
+    "minDist": 31.859480249715904
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Cornflower Blue",
+    "munsell": "8.34PB 2.68/10.89",
+    "hex": "#3a3485",
+    "minDist": 36.95050531914671
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Cobalt Blue Deep",
+    "munsell": "6.36PB 3.4/14.98",
+    "hex": "#004ab5",
+    "minDist": 53.236539984386425
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Ultramarine Light",
+    "munsell": "4.53PB 3.37/12.26",
+    "hex": "#0052a4",
+    "minDist": 40.83552861548207
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Cerulean Blue Middle",
+    "munsell": "8.03B 6.31/11.32",
+    "hex": "#00abe4",
+    "minDist": 53.72117617785891
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Cobalt Turquoise",
+    "munsell": "6.04B 7.52/7.9",
+    "hex": "#50caea",
+    "minDist": 52.53254086614636
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Cobalt Turquoise Green",
+    "munsell": "9.23BG 5.53/10.16",
+    "hex": "#009ca8",
+    "minDist": 50.40595563361202
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Jade Green Light",
+    "munsell": "3.95BG 7.45/9.73",
+    "hex": "#00d2bc",
+    "minDist": 42.506343097666836
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Teal Green",
+    "munsell": "2.76B 5.69/9.77",
+    "hex": "#009eb9",
+    "minDist": 49.272711241909846
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Pthalo Turquoise",
+    "munsell": "1.52BG 5.18/10.69",
+    "hex": "#00957b",
+    "minDist": 36.126617105475084
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Mint Green",
+    "munsell": "3.55G 8.28/6.84",
+    "hex": "#88e2ac",
+    "minDist": 32.400254006893725
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Juniper Green",
+    "munsell": "4.41G 3.39/7.21",
+    "hex": "#005f3d",
+    "minDist": 24.029203939073135
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Viridian",
+    "munsell": "7.77G 3.32/6.22",
+    "hex": "#005c46",
+    "minDist": 26.75857275636371
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Terre Verde Deep",
+    "munsell": "3.53B 2.5/4.09",
+    "hex": "#004250",
+    "minDist": 19.247445716235244
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Walnut Brown Light",
+    "munsell": "0.49YR 3.09/3.34",
+    "hex": "#664038",
+    "minDist": 16.22600162638254
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Warm Gray Light",
+    "munsell": "8.32YR 7.59/1.02",
+    "hex": "#c6bcb2",
+    "minDist": 33.760882385978476
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Argent Gray",
+    "munsell": "3.39YR 7.19/0.85",
+    "hex": "#bab1ac",
+    "minDist": 31.540930883246798
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Dove Gray",
+    "munsell": "6.5BG 6.4/0.45",
+    "hex": "#999f9e",
+    "minDist": 26.841853798989987
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Graphite Light",
+    "munsell": "6.76BG 5.96/0.53",
+    "hex": "#8d9493",
+    "minDist": 22.854628831536875
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "name": "Titanium White",
+    "munsell": "5.89Y 9.59/0.82",
+    "hex": "#f5f3ed",
+    "minDist": 51.769052192238966
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Naples Yellow Light",
+    "munsell": "3.6Y 9.12/3.78",
+    "hex": "#f7e5b5",
+    "minDist": 37.21781509514163
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Lemon Yellow Light",
+    "munsell": "0.16GY 9.3/8.87",
+    "hex": "#f4f08f",
+    "minDist": 24.165395300452555
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Primrose Yellow",
+    "munsell": "2.33Y 8.88/6.36",
+    "hex": "#ffdc8a",
+    "minDist": 30.267840924177918
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Golden Yellow",
+    "munsell": "0.77Y 8.58/8.67",
+    "hex": "#ffcf69",
+    "minDist": 27.552558053335435
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Naples Yellow",
+    "munsell": "8.57YR 8.38/8.74",
+    "hex": "#ffc66c",
+    "minDist": 22.122544605289626
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Cadmium Orange Light",
+    "munsell": "4.12YR 8.06/9.02",
+    "hex": "#ffb575",
+    "minDist": 16.779553029691016
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Tangerine",
+    "munsell": "2.63YR 7.66/8.95",
+    "hex": "#ffa975",
+    "minDist": 16.254482875401568
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Azalea Pink",
+    "munsell": "7.89RP 6.75/11.52",
+    "hex": "#f981a1",
+    "minDist": 29.59725305155994
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Grenadine Light",
+    "munsell": "9.91RP 6.46/12.56",
+    "hex": "#fb738e",
+    "minDist": 23.982541201428152
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Grenadine",
+    "munsell": "1.77R 5.61/15.05",
+    "hex": "#f24a6c",
+    "minDist": 19.63906668404023
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Opera Rose",
+    "munsell": "5.13RP 6.27/13.42",
+    "hex": "#f16ca5",
+    "minDist": 37.273782588753406
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Rose Pink",
+    "munsell": "5.19RP 6.25/13.12",
+    "hex": "#ef6da3",
+    "minDist": 36.34978076563622
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Bengal Rose Light",
+    "munsell": "2.7RP 6.2/14.62",
+    "hex": "#ec68b8",
+    "minDist": 48.565243459442804
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Lavender Light",
+    "munsell": "6.35P 5.95/14.11",
+    "hex": "#c372d4",
+    "minDist": 52.60309284558055
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Mauve",
+    "munsell": "9.77PB 6.3/9.25",
+    "hex": "#9993d8",
+    "minDist": 40.40980206074982
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Mauve Deep",
+    "munsell": "9.59PB 3.57/13.86",
+    "hex": "#5a42ab",
+    "minDist": 48.860992786951535
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Cobalt Turquoise",
+    "munsell": "4.64B 6.37/9.47",
+    "hex": "#00aed0",
+    "minDist": 50.31466490068184
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Cobalt Turquoise Green",
+    "munsell": "0.32B 5.91/9.45",
+    "hex": "#00a5b3",
+    "minDist": 49.20976826028044
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Teal Green",
+    "munsell": "9.34BG 3.94/9.06",
+    "hex": "#00707e",
+    "minDist": 43.77101412427872
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Pthalo Green Light",
+    "munsell": "1.12BG 4.07/9.24",
+    "hex": "#00755f",
+    "minDist": 34.5767853128063
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Pthalo Green",
+    "munsell": "3.62BG 3.92/8.8",
+    "hex": "#007066",
+    "minDist": 38.51950815498343
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Pthalo Turquoise",
+    "munsell": "2.6BG 4.94/10.3",
+    "hex": "#008e7a",
+    "minDist": 37.54526269475749
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Jade Green",
+    "munsell": "2.93BG 5.89/11.71",
+    "hex": "#00aa93",
+    "minDist": 41.44912913909054
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Mint Green Light",
+    "munsell": "5.14G 6.51/13.09",
+    "hex": "#00bd7b",
+    "minDist": 29.649770165853102
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Mint Green",
+    "munsell": "6.63G 6.63/12.74",
+    "hex": "#00c086",
+    "minDist": 31.567652599441036
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Emerald Green",
+    "munsell": "2.98G 6.05/14.31",
+    "hex": "#00b157",
+    "minDist": 26.90610520198802
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Castle Green",
+    "munsell": "4.49G 5.04/12.97",
+    "hex": "#009455",
+    "minDist": 29.571652877465905
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Hooker's Green",
+    "munsell": "8.48G 2.45/2.85",
+    "hex": "#244038",
+    "minDist": 16.079045892627917
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Walnut Brown",
+    "munsell": "1.09YR 1.95/2.15",
+    "hex": "#412a26",
+    "minDist": 16.488339465834308
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Warm Gray Light",
+    "munsell": "0.51Y 7.01/0.76",
+    "hex": "#b3ada5",
+    "minDist": 29.252311162806176
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "name": "Titanium White",
+    "munsell": "4.27Y 9.44/0.96",
+    "hex": "#f2efe6",
+    "minDist": 49.67815510641326
+  },
+  {
+    "maker": "Newell",
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
     "name": "Cream",
     "munsell": "4.66Y 9.13/3.58",
     "hex": "#f4e6b7",
-    "minDist": 33.626303971701816
+    "minDist": 37.379908609053686
   },
   {
-    "maker": "Prismacolor",
+    "maker": "Newell",
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Powder Blue",
-    "munsell": "3.91PB 8.1/5.22",
-    "hex": "#afcdef",
-    "minDist": 33.95548550839185
+    "name": "Eggshell",
+    "munsell": "0.41Y 8.61/4.51",
+    "hex": "#f5d49f",
+    "minDist": 30.084970111524594
   },
   {
-    "maker": "Prismacolor",
+    "maker": "Newell",
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Deco Peach",
-    "munsell": "4.76R 8.42/4.46",
-    "hex": "#fbc7c2",
-    "minDist": 34.088494189300846
+    "name": "Ginger Root",
+    "munsell": "8.6Y 8.1/3.5",
+    "hex": "#d2cd99",
+    "minDist": 27.274087873688742
   },
   {
-    "maker": "Prismacolor",
+    "maker": "Newell",
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "20% Cool Grey",
-    "munsell": "9.66B 7.87/0.95",
-    "hex": "#bec5c9",
-    "minDist": 34.63555693911139
+    "name": "Deco Yellow",
+    "munsell": "7.38Y 9.05/8.26",
+    "hex": "#f7e771",
+    "minDist": 21.0033005290941
   },
   {
-    "maker": "Prismacolor",
+    "maker": "Newell",
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "10% Warm Grey",
-    "munsell": "8.11YR 8.26/0.08",
-    "hex": "#cfcfce",
-    "minDist": 36.320505048963796
+    "name": "Jasmine",
+    "munsell": "2.15Y 8.4/7.35",
+    "hex": "#f7ce73",
+    "minDist": 26.493899834676697
   },
   {
-    "maker": "Prismacolor",
+    "maker": "Newell",
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "Sky Blue Light",
-    "munsell": "9.79B 8.53/3.85",
-    "hex": "#b6dcef",
-    "minDist": 37.40866294149035
+    "name": "Yellow Ochre",
+    "munsell": "9.58YR 7.35/9.5",
+    "hex": "#eaab46",
+    "minDist": 16.87835914449839
   },
   {
-    "maker": "Prismacolor",
+    "maker": "Newell",
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "10% Cool Grey",
-    "munsell": "9.66B 8.35/0.65",
-    "hex": "#cdd2d5",
-    "minDist": 38.17537698231784
+    "name": "Sand",
+    "munsell": "0.73Y 7.96/8.24",
+    "hex": "#f3bf62",
+    "minDist": 21.538341785719403
   },
   {
-    "maker": "Prismacolor",
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Hot Pink",
+    "munsell": "4.08RP 6.48/13.38",
+    "hex": "#f473b1",
+    "minDist": 41.275056212355324
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Pink",
+    "munsell": "7.92RP 6.55/12.19",
+    "hex": "#f8789c",
+    "minDist": 29.358355834572695
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Blush Pink",
+    "munsell": "0.75R 7.64/7.84",
+    "hex": "#fea6ae",
+    "minDist": 32.03026595778875
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Pink Rose",
+    "munsell": "6.61RP 7.62/5.27",
+    "hex": "#e4b0bc",
+    "minDist": 36.039408162161536
+  },
+  {
+    "maker": "Newell",
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
     "name": "Deco Pink",
     "munsell": "6.42RP 8.37/4.95",
     "hex": "#f7c5d1",
-    "minDist": 38.71886222362351
+    "minDist": 42.431389230208744
   },
   {
-    "maker": "Prismacolor",
+    "maker": "Newell",
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
-    "name": "10% French Grey",
-    "munsell": "6.13YR 8.71/0.69",
-    "hex": "#e1dad4",
-    "minDist": 38.883794112169255
+    "name": "Deco Peach",
+    "munsell": "4.76R 8.42/4.46",
+    "hex": "#fbc7c2",
+    "minDist": 39.82528683734369
   },
   {
-    "maker": "Prismacolor",
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Light Peach",
+    "munsell": "9.52R 8.39/3.59",
+    "hex": "#f4c9bc",
+    "minDist": 38.583441859015274
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Peach Beige",
+    "munsell": "4.03Y 8.04/2.78",
+    "hex": "#d6c9a3",
+    "minDist": 29.962712160565
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Seashell Pink",
+    "munsell": "0.28Y 7.76/2.91",
+    "hex": "#d5be9e",
+    "minDist": 28.44778074399131
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Salmon Pink",
+    "munsell": "0.42YR 7.79/8.58",
+    "hex": "#ffaa85",
+    "minDist": 22.630994928487155
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Beige",
+    "munsell": "7.18YR 8.42/4.31",
+    "hex": "#f5cca4",
+    "minDist": 30.419204854653394
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Peach",
+    "munsell": "9.73R 7.52/6.09",
+    "hex": "#f0ab94",
+    "minDist": 28.24317355521468
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Rosy Beige",
+    "munsell": "0.74R 7.15/2.95",
+    "hex": "#c8aaac",
+    "minDist": 31.371274727927222
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Clay Rose",
+    "munsell": "4.32RP 5.83/3.46",
+    "hex": "#a68792",
+    "minDist": 25.317599353915085
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Violet Blue",
+    "munsell": "7.54PB 2.66/11.01",
+    "hex": "#2f3687",
+    "minDist": 37.59493306396842
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Ultramarine",
+    "munsell": "7.51PB 3.34/13.43",
+    "hex": "#3844a8",
+    "minDist": 47.03771705641092
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Greyed Lavender",
+    "munsell": "5.68P 6.77/3.91",
+    "hex": "#b3a1ba",
+    "minDist": 36.1235582227356
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Powder Blue",
+    "munsell": "3.91PB 8.1/5.22",
+    "hex": "#afcdef",
+    "minDist": 49.75439637571164
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Caribbean Sea",
+    "munsell": "4.51PB 6.43/8.08",
+    "hex": "#75a1d7",
+    "minDist": 40.223319288049034
+  },
+  {
+    "maker": "Newell",
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
     "name": "Cloud Blue",
     "munsell": "5.49PB 8.31/3.58",
     "hex": "#c3d1e8",
-    "minDist": 39.18838085385289
+    "minDist": 48.773932327798256
   },
   {
-    "maker": "Prismacolor",
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Blue Slate",
+    "munsell": "4.34PB 6.85/8.83",
+    "hex": "#79ade8",
+    "minDist": 45.46823901865535
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Electric Blue",
+    "munsell": "8.16B 7.06/8.78",
+    "hex": "#43bce7",
+    "minDist": 50.64383339616499
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Non- Photo Blue",
+    "munsell": "8.91B 6.61/10.15",
+    "hex": "#00b0e6",
+    "minDist": 51.08927584542791
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Light Aqua",
+    "munsell": "8.42BG 6.86/8.89",
+    "hex": "#00bec0",
+    "minDist": 46.706833441061285
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Sky Blue Light",
+    "munsell": "9.79B 8.53/3.85",
+    "hex": "#b6dcef",
+    "minDist": 50.883645717244974
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Light Cerulean Blue",
+    "munsell": "3.34PB 6.4/9.62",
+    "hex": "#5da3e1",
+    "minDist": 44.355461931481145
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Light Green",
+    "munsell": "4.09G 8.08/7.15",
+    "hex": "#7edea9",
+    "minDist": 31.349694834682573
+  },
+  {
+    "maker": "Newell",
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
     "name": "Grey Green Light",
     "munsell": "7.26GY 9.0/0.82",
     "hex": "#dfe5d8",
-    "minDist": 40.76333916112046
+    "minDist": 45.347762427777354
   },
   {
-    "maker": "Prismacolor",
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Pale Sage",
+    "munsell": "6.03GY 8.26/2.98",
+    "hex": "#c6d5aa",
+    "minDist": 31.28063032790175
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Celadon Green",
+    "munsell": "6.45G 6.51/2.08",
+    "hex": "#8ba799",
+    "minDist": 25.851174018927455
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Jade Green",
+    "munsell": "6.04BG 6.63/1.92",
+    "hex": "#8da9a6",
+    "minDist": 29.282722295194493
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Putty Beige",
+    "munsell": "2.72Y 7.81/1.35",
+    "hex": "#cbc2b0",
+    "minDist": 33.725116004629626
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "10% Warm Grey",
+    "munsell": "8.11YR 8.26/0.08",
+    "hex": "#cfcfce",
+    "minDist": 41.91662051183014
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "20% Warm Grey",
+    "munsell": "6.09P 6.86/0.37",
+    "hex": "#aba9ab",
+    "minDist": 31.56384521620193
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "30% Warm Grey",
+    "munsell": "1.08RP 6.41/0.56",
+    "hex": "#a19d9f",
+    "minDist": 27.7800410390252
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "10% Cool Grey",
+    "munsell": "9.66B 8.35/0.65",
+    "hex": "#cdd2d5",
+    "minDist": 43.811942302865134
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "20% Cool Grey",
+    "munsell": "9.66B 7.87/0.95",
+    "hex": "#bec5c9",
+    "minDist": 40.3704161092453
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "30% Cool Grey",
+    "munsell": "9.06B 7.43/1.05",
+    "hex": "#b2babe",
+    "minDist": 36.87635730132557
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "50% Cool Grey",
+    "munsell": "9.66B 5.85/1.69",
+    "hex": "#849199",
+    "minDist": 23.820692458451056
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "10% French Grey",
+    "munsell": "6.13YR 8.71/0.69",
+    "hex": "#e1dad4",
+    "minDist": 44.572363227657384
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "20% French Grey",
+    "munsell": "7.6YR 7.67/0.57",
+    "hex": "#c4beb9",
+    "minDist": 35.731333241111656
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "30% French Grey",
+    "munsell": "5.06YR 7.24/0.81",
+    "hex": "#bbb2ac",
+    "minDist": 31.735172453785268
+  },
+  {
+    "maker": "Newell",
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
     "name": "White",
     "munsell": "0.34BG 9.48/0.13",
     "hex": "#eff0f0",
-    "minDist": 47.05243770747199
+    "minDist": 52.528824894784755
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Silver",
+    "munsell": "8.81B 6.38/0.41",
+    "hex": "#9a9e9f",
+    "minDist": 27.12826350593849
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Neon Yellow",
+    "munsell": "4.41GY 9.78/5.28",
+    "hex": "#edff28",
+    "minDist": 41.67513675296485
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Neon Pink",
+    "munsell": "4.22RP 6.84/18.58",
+    "hex": "#ff5dc3",
+    "minDist": 55.141882468051726
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Orchid",
+    "munsell": "6.79P 5.93/10.99",
+    "hex": "#ba7ac3",
+    "minDist": 42.22683738493587
+  },
+  {
+    "maker": "Newell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "name": "Amethyst",
+    "munsell": "3.82P 6.28/10.68",
+    "hex": "#b289d7",
+    "minDist": 44.57330947893969
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Champagne",
+    "munsell": "2.44Y 9.0/3.84",
+    "hex": "#f8e1ad",
+    "minDist": 34.986120245678435
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Gold",
+    "munsell": "0.88Y 7.1/9.77",
+    "hex": "#dfa736",
+    "minDist": 20.062156302282148
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Light Sienna",
+    "munsell": "4.3YR 8.09/5.33",
+    "hex": "#f6bf9a",
+    "minDist": 27.434064299758212
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Dusky Pink",
+    "munsell": "5.98R 6.65/5.66",
+    "hex": "#d4948d",
+    "minDist": 22.13856024895471
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Bistre",
+    "munsell": "2.03YR 7.5/3.18",
+    "hex": "#d7b3a4",
+    "minDist": 30.721446521558157
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Ash Rose",
+    "munsell": "9.57RP 7.07/6.27",
+    "hex": "#e09ea6",
+    "minDist": 29.29526037674558
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Soft Violet",
+    "munsell": "3.34RP 7.61/4.54",
+    "hex": "#dab3c3",
+    "minDist": 38.46538136557092
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Heather",
+    "munsell": "2.65RP 5.62/7.1",
+    "hex": "#b47698",
+    "minDist": 31.243551188296895
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Violet Dusk",
+    "munsell": "2.11P 5.97/6.3",
+    "hex": "#9a8bb8",
+    "minDist": 31.472225352004745
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Slate Violet",
+    "munsell": "6.25P 6.83/3.82",
+    "hex": "#b5a3ba",
+    "minDist": 36.5284810535112
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Teal Blue",
+    "munsell": "7.86PB 6.96/6.2",
+    "hex": "#a2aad6",
+    "minDist": 40.59982164367774
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Solway Blue",
+    "munsell": "0.16PB 7.79/1.01",
+    "hex": "#bcc3c8",
+    "minDist": 39.84795527226857
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Ash Blue",
+    "munsell": "4.81B 6.57/2.05",
+    "hex": "#8fa6ac",
+    "minDist": 30.24931859170723
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Smoke Blue",
+    "munsell": "1.15B 6.44/2.33",
+    "hex": "#86a5a7",
+    "minDist": 29.2909370911421
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Distant Green",
+    "munsell": "7.23G 7.53/3.75",
+    "hex": "#93c7b0",
+    "minDist": 33.16231804031856
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Pale Cedar",
+    "munsell": "6.03Y 6.86/2.07",
+    "hex": "#b1aa8d",
+    "minDist": 22.785439114699813
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Green Earth",
+    "munsell": "8.29Y 6.55/2.56",
+    "hex": "#a8a37f",
+    "minDist": 18.23089587037848
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Wheat",
+    "munsell": "1.92Y 8.43/2.85",
+    "hex": "#e4d2ad",
+    "minDist": 33.15845941897137
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Light Ochre",
+    "munsell": "9.06YR 7.89/5.16",
+    "hex": "#e7be8a",
+    "minDist": 22.849194277227113
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Yellow Ochre",
+    "munsell": "9.89YR 7.65/6.95",
+    "hex": "#e7b66d",
+    "minDist": 17.29846280433605
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Mars Violet",
+    "munsell": "8.69RP 5.21/3.19",
+    "hex": "#97777c",
+    "minDist": 19.245676081418008
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Mist",
+    "munsell": "7.73B 7.25/0.2",
+    "hex": "#b3b4b5",
+    "minDist": 34.38517063328515
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Platinum",
+    "munsell": "1.54PB 7.29/1.0",
+    "hex": "#b0b6bb",
+    "minDist": 35.87895858184354
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Warm Grey",
+    "munsell": "1.56Y 6.47/0.99",
+    "hex": "#a69f93",
+    "minDist": 23.845238374098713
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Cool Grey",
+    "munsell": "8.96GY 6.94/0.26",
+    "hex": "#aaada9",
+    "minDist": 30.754530176846036
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Taupe",
+    "munsell": "9.01RP 6.28/1.31",
+    "hex": "#a49799",
+    "minDist": 26.158174454662042
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Fossil Grey",
+    "munsell": "3.62R 6.92/1.0",
+    "hex": "#b4a9a9",
+    "minDist": 30.579977696671385
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Arctic",
+    "munsell": "8.84B 9.09/0.89",
+    "hex": "#e0e6e9",
+    "minDist": 50.223544642081535
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Oyster",
+    "munsell": "2.73RP 8.76/2.4",
+    "hex": "#e9d8df",
+    "minDist": 47.085775160379306
+  },
+  {
+    "maker": "Derwent",
+    "range": "Derwent Drawing Pencils",
+    "name": "Chinese White",
+    "munsell": "7.21Y 9.52/0.54",
+    "hex": "#f2f2ed",
+    "minDist": 51.60595793382805
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Cornforth White",
+    "munsell": "0.52YR 8.66/0.98",
+    "hex": "#e2d8d4",
+    "minDist": 44.53368198103996
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Ammonite",
+    "munsell": "1.46Y 8.25/0.81",
+    "hex": "#d4cec4",
+    "minDist": 39.58718301687542
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Mulberry Mist",
+    "munsell": "5.66RP 8.72/2.1",
+    "hex": "#e7d7db",
+    "minDist": 46.01240745673509
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Wheatgrass",
+    "munsell": "1.22YR 8.78/3.67",
+    "hex": "#ffd3c1",
+    "minDist": 39.48711515524253
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Calamine",
+    "munsell": "3.31R 8.25/4.83",
+    "hex": "#f8c1bf",
+    "minDist": 38.43252105164424
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Dusty Rose",
+    "munsell": "5.71RP 7.12/5.37",
+    "hex": "#d7a3b2",
+    "minDist": 32.89290754849327
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Pavillion Gray",
+    "munsell": "9.63RP 6.51/3.15",
+    "hex": "#b9999c",
+    "minDist": 26.52871325568957
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Spring Heather",
+    "munsell": "3.72RP 6.42/4.08",
+    "hex": "#b895a3",
+    "minDist": 29.60063260898435
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Pumice",
+    "munsell": "6.28RP 7.27/2.02",
+    "hex": "#c1b0b4",
+    "minDist": 33.84997247783755
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Misty Gray",
+    "munsell": "8.94YR 7.76/0.45",
+    "hex": "#c5c1bc",
+    "minDist": 36.61589011581883
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Gossamer",
+    "munsell": "0.84Y 7.1/0.92",
+    "hex": "#b7afa5",
+    "minDist": 29.418468533186115
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "French Gray",
+    "munsell": "9.43YR 6.77/0.74",
+    "hex": "#ada69f",
+    "minDist": 27.509114736227254
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Sweet Lilac",
+    "munsell": "1.13P 6.37/8.16",
+    "hex": "#a294d0",
+    "minDist": 38.453241870586716
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Purple Dusk",
+    "munsell": "1.27P 6.57/8.32",
+    "hex": "#a899d7",
+    "minDist": 40.487423367698874
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Wildberry",
+    "munsell": "6.12P 7.09/7.54",
+    "hex": "#c9a3d4",
+    "minDist": 43.48616679067245
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Dusty Lavender",
+    "munsell": "5.73P 6.3/3.9",
+    "hex": "#a795ae",
+    "minDist": 31.970715660299213
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Purple Rose",
+    "munsell": "4.71P 6.67/7.48",
+    "hex": "#b799cd",
+    "minDist": 39.66149483740549
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Dark Pearl",
+    "munsell": "2.39RP 6.36/2.02",
+    "hex": "#a899a0",
+    "minDist": 28.651458234568633
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Flint",
+    "munsell": "5.18P 5.15/4.6",
+    "hex": "#8a7695",
+    "minDist": 21.784945286784993
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Mink",
+    "munsell": "1.23RP 5.77/2.02",
+    "hex": "#988992",
+    "minDist": 23.853392285311003
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Forget Ne Not",
+    "munsell": "5.67PB 6.3/9.13",
+    "hex": "#769cdb",
+    "minDist": 40.902913883887294
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Mosaic Blue",
+    "munsell": "3.21B 7.14/4.55",
+    "hex": "#7dbbc6",
+    "minDist": 40.037684541113855
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Duck Egg",
+    "munsell": "4.06B 7.95/4.17",
+    "hex": "#97d0db",
+    "minDist": 45.89195055872397
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Cumulus",
+    "munsell": "4.15PB 7.25/6.72",
+    "hex": "#91b7e3",
+    "minDist": 44.69401132277595
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Aloe Green",
+    "munsell": "8.61GY 8.62/2.19",
+    "hex": "#cadfc0",
+    "minDist": 38.050408977017554
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Pale Apple",
+    "munsell": "1.69G 7.17/2.6",
+    "hex": "#9cb9a1",
+    "minDist": 28.382752975369844
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Mellow Sage",
+    "munsell": "8.0GY 6.54/0.61",
+    "hex": "#9ea39b",
+    "minDist": 26.14393431505439
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Moss",
+    "munsell": "9.65B 7.03/1.67",
+    "hex": "#a4b0b7",
+    "minDist": 34.137439799879814
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Olive Gray",
+    "munsell": "8.81GY 7.78/2.44",
+    "hex": "#b3c9aa",
+    "minDist": 31.35923157056794
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Cirrus",
+    "munsell": "3.05B 8.09/0.52",
+    "hex": "#c5cccc",
+    "minDist": 41.337551205828106
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Ash",
+    "munsell": "7.33BG 7.47/0.41",
+    "hex": "#b5bbba",
+    "minDist": 35.88043391487072
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Pebble",
+    "munsell": "0.07PB 6.45/2.27",
+    "hex": "#91a2ac",
+    "minDist": 30.004411281713363
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Wild Thyme",
+    "munsell": "9.84BG 5.62/0.9",
+    "hex": "#808c8c",
+    "minDist": 20.076304595745448
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Storm Gray",
+    "munsell": "5.37BG 2.13/2.07",
+    "hex": "#233737",
+    "minDist": 15.719829493555492
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Seaweed",
+    "munsell": "3.12B 1.73/0.91",
+    "hex": "#252c2f",
+    "minDist": 16.87343702266393
+  },
+  {
+    "maker": "Castle",
+    "range": "Castle Arts Harmonious Collection",
+    "name": "Rosy Stone",
+    "munsell": "8.27RP 5.21/3.99",
+    "hex": "#9d747c",
+    "minDist": 19.284714404204575
   }
 ]

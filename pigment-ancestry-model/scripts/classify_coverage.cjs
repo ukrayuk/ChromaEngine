@@ -49,7 +49,7 @@ const canonical = loadModel(
 );
 const canonicalBook = classify(canonical, BOOK_RANGES);
 const canonicalAll = classify(canonical, allRanges);
-console.log('=== Canonical (Cool Yellow = Lemon Cadmium #f6e83b) ===');
+console.log('=== Canonical (current data/level*_*.json) ===');
 console.log('Book-scope:', canonicalBook.fit, '/', canonicalBook.total, '(' + (100*canonicalBook.fit/canonicalBook.total).toFixed(1) + '%)');
 console.log('Combined  :', canonicalAll.fit, '/', canonicalAll.total, '(' + (100*canonicalAll.fit/canonicalAll.total).toFixed(1) + '%)');
 
