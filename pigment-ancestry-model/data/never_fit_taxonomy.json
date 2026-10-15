@@ -2093,7 +2093,7 @@
     "dL": -3.142220470906153,
     "dC": 7.9047917692768905,
     "dH": 16.27618523593941,
-    "category": "high-neon chroma (too saturated)"
+    "category": "oversaturated (moderate pencil, anchor nearby is even less saturated)"
   },
   {
     "maker": "Caran",
@@ -3703,7 +3703,7 @@
     "dL": -1.4654876208938177,
     "dC": 4.491077291868084,
     "dH": 0.883865287385845,
-    "category": "high-neon chroma (too saturated)"
+    "category": "oversaturated (moderate pencil, anchor nearby is even less saturated)"
   },
   {
     "maker": "Holbein",
@@ -3724,7 +3724,7 @@
     "dL": -9.387843359964592,
     "dC": 13.425697149337825,
     "dH": 7.798760517613914,
-    "category": "high-neon chroma (too saturated)"
+    "category": "oversaturated (moderate pencil, anchor nearby is even less saturated)"
   },
   {
     "maker": "Holbein",
@@ -5819,7 +5819,7 @@
     "dL": -5.231973122443883,
     "dC": 10.180211268540926,
     "dH": 6.81415351417786,
-    "category": "high-neon chroma (too saturated)"
+    "category": "oversaturated (moderate pencil, anchor nearby is even less saturated)"
   },
   {
     "maker": "Castle",

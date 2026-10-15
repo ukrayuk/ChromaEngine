@@ -49,18 +49,26 @@ Yellow anchor correction)
    Cool Yellow correction). Neutrals pulled out first via **Munsell
    chroma**: True Achromatic (19), Near-Neutral (51), Earth-Adjacent (12) —
    82/368 (22.3%). Of what's left: tint 51.9% (191), shade 9.5% (35),
-   high-neon 6.5% (24), undersaturated 3.8% (14, new category — see
-   below), low chroma 2.2% (8), hue gap 2.2% (8) + hue gap (unreliable
-   match) 1.6% (6). **Two classifier fixes from Ray's by-eye review of the
-   xlsx tables, both the same root pattern**: don't trust dL/dC/dH against
-   an extreme matched point. Fix #1: Dark Sap Green/Walnut Brown Light
-   (+4 more) were mislabeled "too saturated" when their matched point was
-   actually near-grey (chroma 2.2–11.4) — now "hue gap (unreliable
-   match)". Fix #2 (mirror image): Golden Yellow/Mustard/Butterscotch
-   (+11 more, all real pencil chroma 48.8–68.9, genuinely vivid) were
+   high-neon 5.4% (20), undersaturated 3.8% (14), low chroma 2.2% (8),
+   hue gap 2.2% (8), hue gap (unreliable match) 1.6% (6), oversaturated
+   1.1% (4, newest category — see below). **Three classifier fixes from
+   Ray's by-eye review of the xlsx tables, all the same root pattern**:
+   don't trust dL/dC/dH against an extreme matched point. Fix #1: Dark Sap
+   Green/Walnut Brown Light (+4 more) mislabeled "too saturated" when
+   their matched point was actually near-grey (chroma 2.2–11.4) — now
+   "hue gap (unreliable match)". Fix #2: Golden Yellow/Mustard/
+   Butterscotch (+11 more, real pencil chroma 48.8–68.9, genuinely vivid)
    mislabeled "too muted/grey" because their matched point was *even more*
-   vivid (chroma 68–82, the Cadmium Yellow anchor region) — now a new
-   "undersaturated" category. Hue-match testing confirms tints/shades
+   vivid (chroma 68–82, the Cadmium Yellow anchor region) — now
+   "undersaturated". Fix #3: Holly Green/Ice Blue/Pthalo Green Light/
+   Peacock Green (Munsell C 6.5–9.44, only moderately saturated) mislabeled
+   "too saturated" because their matched point was even LESS saturated —
+   now "oversaturated". Also found: Lab chroma runs ~4–6× Munsell chroma
+   for ordinary vivid pigments; Neon Yellow is the one genuine outlier at
+   17.6×, likely because fluorescent pigments break standard Munsell
+   conversion — its Lab chroma (92.7, exceeds the model's own max of 87.3)
+   is the number to trust, not its Munsell reading. Hue-match testing
+   confirms tints/shades
    are genuinely lighter/darker versions of real arc colours (78.5%/94.3%
    within 20°/15° hue). Tints are NOT mostly Level 1
    — 56% are nearer a Level 2 cross-mix, and zero land near RoY/orange, all

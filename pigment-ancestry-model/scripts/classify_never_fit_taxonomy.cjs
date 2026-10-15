@@ -103,6 +103,19 @@ const results = neverFit.map(p => {
   // false positives start at C=48.8 -- no ambiguous middle ground, so C=35
   // is a safe line between them.
   else if (dC < 0 && C >= 35) category = 'undersaturated (vivid pencil, anchor nearby is more vivid still)';
+  // Found 2026-10-15 (Ray): the mirror of the fix above, on the high-chroma
+  // side. Holly Green, Ice Blue, Pthalo Green Light, Peacock Green (Munsell
+  // C 6.5-9.44, Lab C 29-38) were landing in "high-neon chroma" purely
+  // because their matched point was even LESS saturated -- but by Munsell
+  // terms (the scale that's tracked "does this look vivid" reliably all
+  // along) they're only moderately saturated, not genuinely high/neon
+  // chroma. Clean gap in the real data: 9.44 (Peacock Green) to 10.28
+  // (Perylene Brown), so Munsell C<10 is the line. Gated on Lab C<50 too,
+  // so this doesn't catch Neon Yellow (Munsell C=5.28, but Lab C=92.7 --
+  // its own Munsell reading is separately known to be broken, likely from
+  // fluorescence, and its Lab chroma genuinely exceeds the model's own
+  // maximum of 87.3, so it stays correctly "too saturated" regardless).
+  else if (dC > 0 && mc < 10 && C < 50) category = 'oversaturated (moderate pencil, anchor nearby is even less saturated)';
   else category = dC > 0 ? 'high-neon chroma (too saturated)' : 'low chroma (too muted/grey)';
 
   return { ...p, L: lab[0], C, H, munsellC: mc, nearestL: pt[0], nearestC: pt.C, nearestH: pt.H, nearestLevel: pt.level, nearestArc: pt.arc, dL, dC, dH, category };

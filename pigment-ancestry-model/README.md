@@ -283,11 +283,12 @@ which Lab axis dominates the gap:
 | **tint** (pencil lighter than any nearby model point) | 191 | 51.9% |
 | neutral (see bands above) | 82 | 22.3% |
 | shade (pencil darker) | 35 | 9.5% |
-| high-neon chroma (pencil more saturated than the model reaches) | 24 | 6.5% |
+| high-neon chroma (pencil more saturated than the model reaches) | 20 | 5.4% |
 | undersaturated (vivid pencil, nearby anchor is more vivid still — see note below) | 14 | 3.8% |
 | low chroma (pencil genuinely muted/grey, but not neutral-band low) | 8 | 2.2% |
 | genuine hue gap (not a value/chroma issue at all) | 8 | 2.2% |
 | hue gap — unreliable match (see note below) | 6 | 1.6% |
+| oversaturated (moderate pencil, anchor nearby is even less saturated — see note below) | 4 | 1.1% |
 
 **Classifier fix #1 (Ray, 2026-10-15):** found 6 entries (Dark Sap Green,
 Walnut Brown Light, Lagoon, Indanthrone Blue, Hooker's Green, Walnut
@@ -320,6 +321,36 @@ muted in any absolute sense. Split out into a new **"undersaturated"**
 category. Clean break in the real data: genuinely muted pencils top out
 at Lab chroma 27.3; the false positives start at 48.8 — no ambiguous
 middle ground, so C=35 is a safe dividing line.
+
+**Classifier fix #3 (Ray, 2026-10-15):** mirror of fix #2, found by Ray
+spot-checking the xlsx tables directly against Munsell values. Holly
+Green, Ice Blue, Pthalo Green Light, Peacock Green (Munsell C 6.5–9.44,
+Lab C 29.1–38.2) were landing in "high-neon chroma" — but by Munsell
+terms (the scale that's tracked "does this read as vivid" reliably
+throughout this whole taxonomy) they're only moderately saturated, not
+genuinely high/neon chroma. They only looked "too saturated" because
+their matched point was even *less* saturated. Clean gap in the real
+data: 9.44 (Peacock Green) to 10.28 (Perylene Brown), so Munsell C<10 is
+the line. Split out into **"oversaturated"** — gated on Lab C<50 too, so
+it doesn't also catch Neon Yellow: Neon Yellow's own Munsell chroma is
+even lower (5.28) but its Lab chroma (92.7) genuinely exceeds the
+model's own maximum anywhere (87.3, the Warm Yellow anchor) — a real
+"too saturated" case, not a mislabeling, and its Munsell reading is
+separately known to be unreliable (likely fluorescence-related, see
+below).
+
+**Calibration note, useful for any future by-eye pass:** across the 24
+original "high-neon chroma" entries, Lab chroma runs roughly **4–6×**
+Munsell chroma for ordinary pigments (e.g. Holly Green 5.9×, Mauve Deep
+4.4×, French Rose 4.4×) — so a vivid pigment reading Munsell C 10–20 is
+normal, not suspiciously low. **Neon Yellow is the one genuine outlier**
+at 17.6× (next highest is Luminous Green at 6.7×) — consistent with it
+being a literal fluorescent/"Neon"-branded, sRGB+P3-gamut-clipped
+pigment. Fluorescent pigments emit at different wavelengths than they
+absorb, which breaks the assumptions standard Munsell-renotation
+conversion relies on, so its Munsell chroma (5.28) likely just doesn't
+mean what it means for every other pencil here — trust its Lab chroma
+(92.7, the actual spectrophotometer measurement) instead.
 
 **Tint still dominates even after pulling neutrals out** — about half the
 pool fails because it's lighter than anything the model produces.
