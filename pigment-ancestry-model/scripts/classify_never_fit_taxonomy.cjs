@@ -3,7 +3,16 @@ const path = require('path');
 const { hexToLabD65, labDist } = require(require('path').join(__dirname, '../lib.cjs'));
 
 const ROOT = require('path').join(__dirname, '..');
-const neverFit = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/never_fit_final_153.json')));
+// Derwent Drawing Pencils and Castle Arts Harmonious Collection were only
+// ever added as a stress test, to see whether the model passed over the
+// muted end of real pigments (it mostly did) -- not part of the book's 9
+// ranges, and Ray's call (2026-10-15): drop them from this analysis.
+// Dropping them lands exactly on the book-scope never-fit count (379 =
+// 1150 book-scope total - 771 book-scope fit), confirming that's all they
+// were contributing here.
+const DROPPED_RANGES = ['Derwent Drawing Pencils', 'Castle Arts Harmonious Collection'];
+const neverFit = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/never_fit_final_153.json')))
+  .filter(p => !DROPPED_RANGES.includes(p.range));
 const L1 = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/level1_pure_rows.json')));
 const L2 = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/level2_cross_rows.json')));
 

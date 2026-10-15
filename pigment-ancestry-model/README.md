@@ -203,37 +203,44 @@ will look like they "don't fit," which is exactly what's going on in item
 #1 above. Worth deciding whether a "colour lab"-style QA tool should show
 Level 2 alongside Level 1 so muted colours have a place to visually land.
 
-**Never-fit taxonomy (Ray, 2026-10-15; formalized same day):** pencils that
-don't fit either Level 1 or Level 2 — the pool in
-`data/never_fit_final_153.json` (448 pencils at the current ΔE≤15.3
-threshold, full 11-range set — the "153" in the filename is stale) — aren't
-failing randomly. Each is first checked for being **neutral** (Munsell
-chroma, not Lab chroma — Lab C alone is unreliable both ways: "Rose Grey"
-is Lab C=39 despite the name, while "Graphite"/"Ash"/"Moonstone" are
-genuinely near-achromatic at Lab C=2–4 despite not being named "grey" at
-all). Neutral bands (Ray, refined same day — an initial cool/warm split by
-hue family was tested and dropped, the real hue-family distribution didn't
+**Never-fit taxonomy (Ray, 2026-10-15; formalized and refined same day):**
+pencils that don't fit either Level 1 or Level 2 — the pool in
+`data/never_fit_final_153.json` (the "153" in the filename is stale).
+**Book-scope only, 379 pencils** — Derwent Drawing Pencils and Castle Arts
+Harmonious Collection are excluded (`scripts/classify_never_fit_taxonomy.cjs`
+drops them at the source, Ray's call: those two ranges were only ever added
+as a stress test, to check whether the model passed over the muted end of
+real pigments — it mostly did, question answered, they're not part of the
+book's 9 ranges and shouldn't be in this analysis). Dropping them lands
+exactly on 1150 − 771 = 379, confirming that's all they were contributing
+to this pool.
+
+Each pencil is first checked for being **neutral** (Munsell chroma, not Lab
+chroma — Lab C alone is unreliable both ways: "Rose Grey" is Lab C=39
+despite the name, while "Graphite"/"Ash"/"Moonstone" are genuinely
+near-achromatic at Lab C=2–4 despite not being named "grey" at all).
+Neutral bands (Ray, refined same day — an initial cool/warm split by hue
+family was tested and dropped, the real hue-family distribution didn't
 back it up, so these are chroma-only):
 
 | Band | Munsell C | Count |
 |---|---|---|
-| True Achromatic | 0–0.5 | 24 |
-| Near-Neutral | 0.5–1.5 | 70 |
-| Earth-Adjacent | 1.5–2.0 | 15 |
-| **Total neutral** | ≤2.0 | **109 (24.3%)** |
+| True Achromatic | 0–0.5 | 20 |
+| Near-Neutral | 0.5–1.5 | 54 |
+| Earth-Adjacent | 1.5–2.0 | 12 |
+| **Total neutral** | ≤2.0 | **86 (22.7%)** |
 
 Everything else is matched to its nearest Level 1/2 point and classified by
-which Lab axis dominates the gap
-(`scripts/classify_never_fit_taxonomy.cjs` → `data/never_fit_taxonomy.json`):
+which Lab axis dominates the gap:
 
-| Category | Count | % of total 448 |
+| Category | Count | % of total 379 |
 |---|---|---|
-| **tint** (pencil lighter than any nearby model point) | 240 | 53.6% |
-| neutral (see bands above) | 109 | 24.3% |
-| shade (pencil darker) | 34 | 7.6% |
-| high-neon chroma (pencil more saturated than the model reaches) | 27 | 6.0% |
-| low chroma (pencil more muted/grey, but not neutral-band low) | 23 | 5.1% |
-| genuine hue gap (not a value/chroma issue at all) | 15 | 3.3% |
+| **tint** (pencil lighter than any nearby model point) | 202 | 53.3% |
+| neutral (see bands above) | 86 | 22.7% |
+| shade (pencil darker) | 33 | 8.7% |
+| high-neon chroma (pencil more saturated than the model reaches) | 27 | 7.1% |
+| low chroma (pencil more muted/grey, but not neutral-band low) | 21 | 5.5% |
+| genuine hue gap (not a value/chroma issue at all) | 10 | 2.6% |
 
 **Tint still dominates even after pulling neutrals out** — over half the
 pool fails because it's lighter than anything the model produces.
@@ -243,19 +250,33 @@ the pipeline, so the palest reachable colour at any hue is just the
 lighter of that arc's two anchors (~L 87–90 at best). Ray independently
 hue-tested a sample of the tint pool by eye and confirmed most genuinely
 read as lighter versions of existing arc colours, not unrelated hues — of
-the 240, **64.4% are within 20° hue of their nearest arc point** (dropping
-to a stricter but still strong 53.9% within 15°). The shade side is even
-cleaner: **80.6%** of shade misses are within 15° hue of their nearest arc
-point — genuinely darker versions of existing arc colours (Phthalo Green,
-Ultramarine, Viridian, Royal Blue, Cornflower Blue). One asymmetry worth
-knowing: tints trend *less* saturated as they lighten (consistent with a
-"blend toward white" fix), but many shades are *more* saturated than their
-nearest arc point (Cobalt Blue Deep dC=+10.7, Ultramarine dC=+9.6, Violet
-dC=+11.7) — these are classic dark-and-vivid pigments (phthalos,
-ultramarines, cobalts) the model's dark end doesn't reach. A generic
-"blend toward black" wouldn't rescue these — it only desaturates further,
-moving away from the target. The dark anchors themselves may need more
-chroma, not a dilution layer.
+the 202, **78.2% are within 20° hue of their nearest arc point** (66.8%
+within a stricter 15°) — both noticeably stronger than the full 448-pencil
+figure, since the two dropped ranges were specifically chosen to probe the
+muted/unusual end and were dragging the confidence down. The shade side is
+even cleaner: **84.8%** of shade misses are within 15° hue of their
+nearest arc point — genuinely darker versions of existing arc colours
+(Phthalo Green, Ultramarine, Viridian, Royal Blue, Cornflower Blue). One
+asymmetry worth knowing: tints trend *less* saturated as they lighten
+(consistent with a "blend toward white" fix), but many shades are *more*
+saturated than their nearest arc point (Cobalt Blue Deep dC=+10.7,
+Ultramarine dC=+9.6, Violet dC=+11.7) — these are classic dark-and-vivid
+pigments (phthalos, ultramarines, cobalts) the model's dark end doesn't
+reach. A generic "blend toward black" wouldn't rescue these — it only
+desaturates further, moving away from the target. The dark anchors
+themselves may need more chroma, not a dilution layer.
+
+Current open micro-questions, flagged for Ray's by-eye pass rather than
+decided here: (1) the Munsell-chroma band edges have real pencils sitting
+right on them (e.g. 13 different "White"-named pencils span Munsell C
+0.13–1.58 across all three bands — plausibly real formulation differences
+between ranges, not measurement noise, but worth confirming by eye); (2)
+~40 tint/shade pencils sit at dH 15–25°, the zone where "is this really a
+lighter/darker version of an arc colour" starts being a judgment call; (3)
+a handful of tint/shade/low-chroma/high-neon calls are coin-flips where
+|dL|≈|dC| (e.g. Viridian and Pthalo Turquoise, same pigment family
+different ranges, land in different categories on tiny measurement
+differences).
 
 **Worth considering: a tint "Level 4" (each arc point blended toward
 white) would likely rescue most of the tint pool**, and is well-supported
