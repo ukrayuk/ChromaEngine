@@ -282,10 +282,30 @@ which Lab axis dominates the gap:
 |---|---|---|
 | **tint** (pencil lighter than any nearby model point) | 191 | 51.9% |
 | neutral (see bands above) | 82 | 22.3% |
-| shade (pencil darker) | 39 | 10.6% |
-| high-neon chroma (pencil more saturated than the model reaches) | 26 | 7.1% |
+| shade (pencil darker) | 35 | 9.5% |
+| high-neon chroma (pencil more saturated than the model reaches) | 24 | 6.5% |
 | low chroma (pencil more muted/grey, but not neutral-band low) | 22 | 6.0% |
 | genuine hue gap (not a value/chroma issue at all) | 8 | 2.2% |
+| hue gap — unreliable match (see note below) | 6 | 1.6% |
+
+**Classifier fix (Ray, 2026-10-15):** found 6 entries (Dark Sap Green,
+Walnut Brown Light, Lagoon, Indanthrone Blue, Hooker's Green, Walnut
+Brown) where the *matched* model point itself was near-grey (matched
+chroma 2.2–11.4) — not the pencil. Comparing dL/dC/dH against a
+near-achromatic anchor is unreliable for every axis, not just hue (the
+earlier hue-instability fix only protected the "hue gap" label, leaving
+tint/shade/chroma exposed to the same bad anchor). These were landing in
+"shade" or "high-neon chroma" purely because of which axis happened to
+dominate against a near-meaningless baseline — e.g. Dark Sap Green
+(pencil chroma 13.1) was labeled "too saturated" against a matched point
+at chroma 2.2 and 179° away in hue, essentially the opposite colour.
+Fixed: when the matched point's own chroma is too low to be a trustworthy
+comparison baseline, classify as **"hue gap (unreliable match)"** instead
+of making a directional claim that isn't really about the pencil.
+Confirmed genuine by checking all 26 original "high-neon chroma" entries'
+matched-point chroma — only these had a near-grey anchor (2.2–11.4);
+everything else compares against a matched point with real chroma (22+)
+and is a legitimate "needs more saturation than anything nearby" call.
 
 **Tint still dominates even after pulling neutrals out** — about half the
 pool fails because it's lighter than anything the model produces.
@@ -296,7 +316,7 @@ lighter of that arc's two anchors. Ray independently hue-tested a sample
 of the tint pool by eye and confirmed most genuinely read as lighter
 versions of existing arc colours, not unrelated hues — of the 191,
 **78.5% are within 20° hue of their nearest arc point** (66.5% within a
-stricter 15°). The shade side is even cleaner: **84.6%** of shade misses
+stricter 15°). The shade side is even cleaner: **94.3%** of shade misses
 are within 15° hue of their nearest arc point — genuinely darker versions
 of existing arc colours (Phthalo Green, Ultramarine, Viridian, Royal Blue,
 Cornflower Blue). One asymmetry worth knowing: tints trend *less*

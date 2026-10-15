@@ -48,10 +48,15 @@ Yellow anchor correction)
    tied to the new Ch5 (Tints/Tones/Shades).** 368 book-scope pencils (post
    Cool Yellow correction). Neutrals pulled out first via **Munsell
    chroma**: True Achromatic (19), Near-Neutral (51), Earth-Adjacent (12) —
-   82/368 (22.3%). Of what's left: tint 51.9% (191), shade 10.6%,
-   high-neon 7.1%, low chroma 6.0%, hue gap 2.2%. Hue-match testing
-   confirms tints/shades are genuinely lighter/darker versions of real arc
-   colours (78.5%/84.6% within 20°/15° hue). Tints are NOT mostly Level 1
+   82/368 (22.3%). Of what's left: tint 51.9% (191), shade 9.5% (35),
+   high-neon 6.5% (24), low chroma 6.0%, hue gap 2.2% + a new "hue gap
+   (unreliable match)" 1.6% (6) — a classifier fix (Ray caught Dark Sap
+   Green/Walnut Brown Light mislabeled "too saturated" when the real issue
+   was their MATCHED point being near-grey, making any dL/dC/dH comparison
+   untrustworthy, not just hue). Hue-match testing confirms tints/shades
+   are genuinely lighter/darker versions of real arc colours (78.5%/94.3%
+   within 20°/15° hue — shade number improved after the classifier fix
+   removed its 4 bad matches). Tints are NOT mostly Level 1
    — 56% are nearer a Level 2 cross-mix, and zero land near RoY/orange, all
    cluster in green-violet territory. Asymmetry: tints desaturate as they
    lighten (a white-blend fix would work), shades often saturate further

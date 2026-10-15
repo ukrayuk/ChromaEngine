@@ -75,6 +75,19 @@ const results = neverFit.map(p => {
   // trust "hue gap" as a category when BOTH the pencil and its nearest
   // point actually have enough chroma for hue to mean anything.
   const hueIsMeaningful = C > 12 && pt.C > 12;
+  // Found 2026-10-15 (Ray): a couple of entries (Dark Sap Green, Walnut
+  // Brown Light) were landing in "high-neon chroma" purely because their
+  // NEAREST MATCH happened to be a near-grey point (nearestC < 12) -- not
+  // because the pencil itself reads as vivid at all. Comparing dL/dC/dH
+  // against a near-achromatic anchor is unreliable for ANY axis, not just
+  // hue (the earlier fix only protected the "hue gap" label, leaving the
+  // tint/shade/chroma fallback exposed to the same bad anchor). If the
+  // matched point itself is too close to neutral to be a trustworthy
+  // comparison baseline, call it a hue gap outright rather than make a
+  // directional claim that isn't really about the pencil's own chroma.
+  if (!hueIsMeaningful && pt.C <= 12) {
+    return { ...p, L: lab[0], C, H, munsellC: mc, nearestL: pt[0], nearestC: pt.C, nearestH: pt.H, nearestLevel: pt.level, nearestArc: pt.arc, dL, dC, dH, category: 'hue gap (unreliable match)' };
+  }
   let category;
   if (hueIsMeaningful && dH > 20 && Math.abs(dL) < 15 && Math.abs(dC) < 20) category = 'hue gap';
   else if (Math.abs(dL) >= Math.abs(dC)) category = dL > 0 ? 'tint (too light)' : 'shade (too dark)';

@@ -1048,7 +1048,7 @@
     "dL": -14.83307857803214,
     "dC": 8.532178328156329,
     "dH": 26.932121396174637,
-    "category": "shade (too dark)"
+    "category": "hue gap (unreliable match)"
   },
   {
     "maker": "Derwent",
@@ -2303,7 +2303,7 @@
     "dL": -7.246686117617074,
     "dC": 10.914078495960437,
     "dH": 179.3908958873266,
-    "category": "high-neon chroma (too saturated)"
+    "category": "hue gap (unreliable match)"
   },
   {
     "maker": "Caran",
@@ -2612,7 +2612,7 @@
     "dL": -17.477999779471638,
     "dC": 10.429914144604792,
     "dH": 25.173148599049114,
-    "category": "shade (too dark)"
+    "category": "hue gap (unreliable match)"
   },
   {
     "maker": "Caran",
@@ -5334,7 +5334,7 @@
     "dL": -1.590784221423334,
     "dC": 16.81873035644482,
     "dH": 17.44847526909742,
-    "category": "high-neon chroma (too saturated)"
+    "category": "hue gap (unreliable match)"
   },
   {
     "maker": "Castle",
@@ -5987,7 +5987,7 @@
     "dL": -10.132544531476647,
     "dC": 8.503516053614874,
     "dH": 75.13236862266501,
-    "category": "shade (too dark)"
+    "category": "hue gap (unreliable match)"
   },
   {
     "maker": "Castle",
@@ -6008,7 +6008,7 @@
     "dL": -10.257538669561903,
     "dC": 3.479507784228831,
     "dH": 66.99819226044917,
-    "category": "shade (too dark)"
+    "category": "hue gap (unreliable match)"
   },
   {
     "maker": "Castle",
