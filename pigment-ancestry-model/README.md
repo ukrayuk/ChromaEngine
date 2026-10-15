@@ -203,6 +203,13 @@ will look like they "don't fit," which is exactly what's going on in item
 #1 above. Worth deciding whether a "colour lab"-style QA tool should show
 Level 2 alongside Level 1 so muted colours have a place to visually land.
 
+**Never-fit taxonomy (Ray, 2026-10-15):** pencils that don't fit either
+Level 1 or Level 2 — the pool in `data/never_fit_final_153.json` — aren't
+failing randomly. They fall into four categories the model doesn't reach
+at all: **tints**, **shades**, **low chroma**, or **high-neon chroma**.
+Worth checking any future "never fit" pencil against this list before
+treating it as a new, unexplained failure.
+
 ### 3. The Level 2 cross-arc "rescue" method — a reusable technique
 Worked example: target `#497249` (muted sage-green) doesn't fit the pure
 YgB arc at all, but fits **ΔE 8.7** on the `YgB × BvR — like` Level 2
