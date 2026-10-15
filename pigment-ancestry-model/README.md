@@ -292,12 +292,12 @@ which Lab axis dominates the gap:
 |---|---|---|
 | **tint** (pencil lighter than any nearby model point) | 170 | 46.2% |
 | neutral (see bands above) | 111 | 30.2% |
-| shade (pencil darker) | 35 | 9.5% |
+| shade (pencil darker) | 39 | 10.6% |
 | high-neon chroma (pencil more saturated than the model reaches) | 20 | 5.4% |
-| undersaturated (vivid pencil, nearby anchor is more vivid still — see note below) | 14 | 3.8% |
+| **tone** (same value as the matched point, just lower chroma — see note below) | 7 | 1.9% |
 | genuine hue gap (not a value/chroma issue at all) | 7 | 1.9% |
+| undersaturated (vivid pencil, nearby anchor is more vivid still — see note below) | 7 | 1.9% |
 | low chroma (pencil genuinely muted/grey, but not neutral-band low) | 4 | 1.1% |
-| oversaturated (moderate pencil, anchor nearby is even less saturated — see note below) | 4 | 1.1% |
 | hue gap — unreliable match (see note below) | 3 | 0.8% |
 
 **Classifier fix #1 (Ray, 2026-10-15):** found 6 entries (Dark Sap Green,
@@ -349,6 +349,38 @@ model's own maximum anywhere (87.3, the Warm Yellow anchor) — a real
 separately known to be unreliable (likely fluorescence-related, see
 below).
 
+**Classifier fix #4 (Ray, 2026-10-15), same day — "oversaturated" is now
+empty, folded into shade.** Ray's follow-up: aren't the 4 "oversaturated"
+entries actually shades, since they're all darker than their match
+(dL<0)? Checked against the genuinely-vivid "high-neon chroma" entries
+that are *also* dark by Munsell Value (Fra Angelico Blue, Perylene
+Brown, Ultramarine, Mauve Deep, Violet Blue — Munsell Value 2.66–4.24,
+same range) — darkness alone isn't the signal, since those stay
+correctly "too saturated" (Lab C 52–75, genuinely vivid). But *within*
+the already-narrow oversaturated group (Lab C 29–38, moderate), all 4
+real members are also darker than their match — and that specific
+combination (moderate-but-more-saturated-than-match, and darker) matches
+the already-documented shade asymmetry exactly (some shades need more
+saturation at the dark end, not less darkness). Reclassified: when a
+pencil meets the oversaturated conditions AND is darker than its match,
+call it shade instead. Net effect: **shade grows from 35 to 39**, the
+"oversaturated" category currently has zero members (logic kept in the
+script for any future pencil that fits the gate without also being
+darker — just hasn't occurred yet in this dataset).
+
+**New category added: "tone" (Ray, 2026-10-15), matching the book's own
+Ch5 structure directly.** Ray caught that the taxonomy was missing the
+classic third colour-theory case — tint = lighter, shade = darker,
+**tone = same value, lower chroma**. 7 of the 14 "undersaturated" entries
+have |dL|<5 (essentially the same lightness as their matched point) with
+substantial negative dC (e.g. Dandelion dL=0.0 dC=−18.8, Pineapple
+dL=3.5 dC=−20.4) — genuine tones of the Cadmium Yellow anchor family,
+not tints. Split out into its own **"tone"** category; the remaining 7
+"undersaturated" entries have larger |dL| and are correctly more
+tint-like. This makes the taxonomy's top-level shape line up exactly
+with the chapter: **tint (170), tone (7), shade (39)**, plus neutral and
+the smaller diagnostic categories.
+
 **Calibration note, useful for any future by-eye pass:** across the 24
 original "high-neon chroma" entries, Lab chroma runs roughly **4–6×**
 Munsell chroma for ordinary pigments (e.g. Holly Green 5.9×, Mauve Deep
@@ -373,7 +405,7 @@ versions of existing arc colours, not unrelated hues — of the 170,
 **82.9% are within 20° hue of their nearest arc point** (70.6% within a
 stricter 15°) — both improved further after the neutral-ceiling fix
 pulled 21 ambiguous entries out of this pool. The shade side is even
-cleaner: **94.3%** of shade misses
+cleaner: **92.3%** of shade misses
 are within 15° hue of their nearest arc point — genuinely darker versions
 of existing arc colours (Phthalo Green, Ultramarine, Viridian, Royal Blue,
 Cornflower Blue). One asymmetry worth knowing: tints trend *less*
@@ -404,8 +436,8 @@ just extend the pure arcs.
 **How clean are these calls, honestly?** Checked every pencil against
 three boundary zones (Munsell band edges, weak-hue-match tint/shades at
 dH 15–25°, and tint/shade/low-chroma/high-neon coin-flips where
-|dL|≈|dC|): **77.4% (285/368) are clean**, don't touch any boundary zone.
-The other **22.6% (83/368)** sit on at least one — down from 1 in 4
+|dL|≈|dC|): **77.2% (284/368) are clean**, don't touch any boundary zone.
+The other **22.8% (84/368)** sit on at least one — down from 1 in 4
 before the neutral-ceiling fix, but still a real fraction worth working
 through by eye, not a handful of arbitrary edge cases. Specific examples
 flagged for Ray's by-eye pass: 13 different "White"-named pencils span

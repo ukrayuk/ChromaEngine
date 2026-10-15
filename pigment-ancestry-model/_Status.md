@@ -44,48 +44,48 @@ Yellow anchor correction)
 
 ## Open items (priority order)
 
-1. **Never-fit taxonomy — formalized, reveals a real architecture gap, now
-   tied to the new Ch5 (Tints/Tones/Shades).** 368 book-scope pencils (post
-   Cool Yellow correction). Neutrals pulled out first via **Munsell
-   chroma**, ceiling raised 2.0→3.0 (Ray, by-eye: several mc 2-3 pencils
-   genuinely read grey, not pastel): True Achromatic 0-1 (54), Near-Neutral
-   1-2 (28), Earth-Adjacent 2-3 (29) — **111/368 (30.2%)**. Checked whether
-   2.5 would be cleaner than 3.0 — it's worse (would exclude Payne's Grey,
-   wouldn't catch the Ivory/Raisin outliers above 3.0 either way). Of
-   what's left: tint 46.2% (170), shade 9.5% (35), high-neon 5.4% (20),
-   undersaturated 3.8% (14), hue gap 1.9% (7), low chroma 1.1% (4),
-   oversaturated 1.1% (4), hue gap (unreliable match) 0.8% (3). **Three
-   classifier fixes from Ray's by-eye review of the xlsx tables, all the
-   same root pattern**:
-   don't trust dL/dC/dH against an extreme matched point. Fix #1: Dark Sap
-   Green/Walnut Brown Light (+4 more) mislabeled "too saturated" when
-   their matched point was actually near-grey (chroma 2.2–11.4) — now
-   "hue gap (unreliable match)". Fix #2: Golden Yellow/Mustard/
-   Butterscotch (+11 more, real pencil chroma 48.8–68.9, genuinely vivid)
-   mislabeled "too muted/grey" because their matched point was *even more*
-   vivid (chroma 68–82, the Cadmium Yellow anchor region) — now
-   "undersaturated". Fix #3: Holly Green/Ice Blue/Pthalo Green Light/
-   Peacock Green (Munsell C 6.5–9.44, only moderately saturated) mislabeled
-   "too saturated" because their matched point was even LESS saturated —
-   now "oversaturated". Also found: Lab chroma runs ~4–6× Munsell chroma
-   for ordinary vivid pigments; Neon Yellow is the one genuine outlier at
-   17.6×, likely because fluorescent pigments break standard Munsell
-   conversion — its Lab chroma (92.7, exceeds the model's own max of 87.3)
-   is the number to trust, not its Munsell reading. Hue-match testing
-   confirms tints/shades
-   are genuinely lighter/darker versions of real arc colours (82.9%/94.3%
-   within 20°/15° hue for tints/shades respectively). Tints are now close
-   to an even split between Level 1 and Level 2 (49%/51%, was 44%/56%
-   before the neutral-ceiling fix) — zero land near RoY/orange, all
-   cluster in green-violet territory. Asymmetry: tints desaturate as they
-   lighten (a white-blend fix would work), shades often saturate further
-   as they darken (wouldn't be rescued by a black-blend). **Open
-   architecture question for Ray: add a tint-only "Level 4"?** Current
-   thinking: keep as a separate Ch5 operation (arc colour + white/grey/
-   black ladder), not an extension of Level 1/2/3 geometry — so Ch4 stays
-   pure hue. ~25% of taxonomy calls are boundary/judgment cases (see
-   README for the three specific zones) — still at "confirm the concept"
-   stage pending Ray's call.
+1. **Never-fit taxonomy — now lines up exactly with the book's own Ch5
+   structure (Tints/Tones/Shades).** 368 book-scope pencils (post Cool
+   Yellow correction). Neutrals pulled out first via **Munsell chroma**,
+   ceiling raised 2.0→3.0 (Ray, by-eye: several mc 2-3 pencils genuinely
+   read grey, not pastel — checked 2.5 instead, it's worse): True
+   Achromatic 0-1 (54), Near-Neutral 1-2 (28), Earth-Adjacent 2-3 (29) —
+   **111/368 (30.2%)**. Of what's left: **tint 46.2% (170)**, shade 10.6%
+   (39), high-neon 5.4% (20), **tone 1.9% (7, new)**, hue gap 1.9% (7),
+   undersaturated 1.9% (7), low chroma 1.1% (4), hue gap (unreliable
+   match) 0.8% (3).
+   **Five classifier fixes total, all from Ray's by-eye review of the
+   xlsx tables**: #1 Dark Sap Green etc. mislabeled "too saturated" when
+   their matched point was near-grey → "hue gap (unreliable match)". #2
+   Golden Yellow/Mustard etc. (genuinely vivid, chroma 49-69) mislabeled
+   "too muted" because their match was *even more* vivid → "undersaturated".
+   #3 Holly Green etc. (Munsell C 6.5-9.44, only moderate) mislabeled "too
+   saturated" because their match was even less saturated → "oversaturated".
+   #4 those same 4 are ALSO darker than their match → reclassified again,
+   this time to "shade" (oversaturated now empty, logic kept for future
+   cases). #5 (Ray's own catch): "tone" was missing entirely — same value
+   as the match, just lower chroma, the classic third colour-theory case.
+   7 of the 14 "undersaturated" entries have |dL|<5 (Dandelion dL=0.0,
+   Pineapple dL=3.5) — genuine tones, not tints. Split into their own
+   category. Also found: Lab chroma runs ~4-6x Munsell chroma for ordinary
+   vivid pigments; Neon Yellow is the one outlier at 17.6x (fluorescent
+   pigments break standard Munsell conversion) — trust its Lab chroma
+   (92.7, exceeds the model's own max of 87.3), not its Munsell reading.
+   Hue-match testing confirms tints/shades are genuinely lighter/darker
+   versions of real arc colours (82.9%/92.3% within 20°/15° hue). Tints
+   split close to evenly between Level 1 and Level 2 (49%/51%) — zero land
+   near RoY/orange, all cluster in green-violet territory. Asymmetry:
+   tints desaturate as they lighten (a white-blend fix would work), shades
+   often saturate further as they darken (wouldn't be rescued by a
+   black-blend). **Open architecture question for Ray: add a tint-only
+   "Level 4"?** Current thinking: keep as a separate Ch5 operation (arc
+   colour + white/grey/black ladder), not an extension of Level 1/2/3
+   geometry — so Ch4 stays pure hue. 77.2% of taxonomy calls are clean,
+   22.8% are boundary/judgment cases (see README for the three specific
+   zones) — still at "confirm the concept" stage pending Ray's call. This
+   is an actively self-correcting process via the xlsx review, not a
+   one-shot classification — expect more refinements as Ray works through
+   the remaining tabs.
 2. **Chapter 5 — olive/dechroma demo.** Pure-dechroma-from-Level-1 framing
    fails geometrically (README "Open items" #3). Resolution method found
    and proven on a different example (`#00bb00 → #497249` via Level 2

@@ -609,7 +609,7 @@
     "dL": 0.0204166837639832,
     "dC": -18.828735498890367,
     "dH": 3.2147349838047177,
-    "category": "undersaturated (vivid pencil, anchor nearby is more vivid still)"
+    "category": "tone (same value, lower chroma than the pure arc colour)"
   },
   {
     "maker": "Derwent",
@@ -651,7 +651,7 @@
     "dL": 3.4968903761659504,
     "dC": -20.4234807039838,
     "dH": 3.926134168521358,
-    "category": "undersaturated (vivid pencil, anchor nearby is more vivid still)"
+    "category": "tone (same value, lower chroma than the pure arc colour)"
   },
   {
     "maker": "Derwent",
@@ -693,7 +693,7 @@
     "dL": 4.087612855541991,
     "dC": -18.48977790254328,
     "dH": 1.198348937121125,
-    "category": "undersaturated (vivid pencil, anchor nearby is more vivid still)"
+    "category": "tone (same value, lower chroma than the pure arc colour)"
   },
   {
     "maker": "Derwent",
@@ -1484,7 +1484,7 @@
     "dL": -4.98317396805507,
     "dC": -14.810248142030105,
     "dH": 2.493912168799767,
-    "category": "undersaturated (vivid pencil, anchor nearby is more vivid still)"
+    "category": "tone (same value, lower chroma than the pure arc colour)"
   },
   {
     "maker": "Derwent",
@@ -1973,7 +1973,7 @@
     "dL": -3.142220470906153,
     "dC": 7.9047917692768905,
     "dH": 16.27618523593941,
-    "category": "oversaturated (moderate pencil, anchor nearby is even less saturated)"
+    "category": "shade (too dark)"
   },
   {
     "maker": "Caran",
@@ -2596,7 +2596,7 @@
     "dL": 4.61894052572751,
     "dC": -16.59696220619525,
     "dH": 11.83875967838759,
-    "category": "undersaturated (vivid pencil, anchor nearby is more vivid still)"
+    "category": "tone (same value, lower chroma than the pure arc colour)"
   },
   {
     "maker": "Caran",
@@ -2617,7 +2617,7 @@
     "dL": -4.710719201024233,
     "dC": -16.510872046276745,
     "dH": 2.424010018970037,
-    "category": "undersaturated (vivid pencil, anchor nearby is more vivid still)"
+    "category": "tone (same value, lower chroma than the pure arc colour)"
   },
   {
     "maker": "Caran",
@@ -3543,7 +3543,7 @@
     "dL": -1.4654876208938177,
     "dC": 4.491077291868084,
     "dH": 0.883865287385845,
-    "category": "oversaturated (moderate pencil, anchor nearby is even less saturated)"
+    "category": "shade (too dark)"
   },
   {
     "maker": "Holbein",
@@ -3564,7 +3564,7 @@
     "dL": -9.387843359964592,
     "dC": 13.425697149337825,
     "dH": 7.798760517613914,
-    "category": "oversaturated (moderate pencil, anchor nearby is even less saturated)"
+    "category": "shade (too dark)"
   },
   {
     "maker": "Holbein",
@@ -5643,7 +5643,7 @@
     "dL": -5.231973122443883,
     "dC": 10.180211268540926,
     "dH": 6.81415351417786,
-    "category": "oversaturated (moderate pencil, anchor nearby is even less saturated)"
+    "category": "shade (too dark)"
   },
   {
     "maker": "Castle",
@@ -5968,7 +5968,7 @@
     "dL": -1.4264199795994728,
     "dC": -19.096745974227154,
     "dH": 3.4697772720040234,
-    "category": "undersaturated (vivid pencil, anchor nearby is more vivid still)"
+    "category": "tone (same value, lower chroma than the pure arc colour)"
   },
   {
     "maker": "Newell",

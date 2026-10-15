@@ -103,6 +103,16 @@ const results = neverFit.map(p => {
   let category;
   if (hueIsMeaningful && dH > 20 && Math.abs(dL) < 15 && Math.abs(dC) < 20) category = 'hue gap';
   else if (Math.abs(dL) >= Math.abs(dC)) category = dL > 0 ? 'tint (too light)' : 'shade (too dark)';
+  // Found 2026-10-15 (Ray): the project's own chapter structure is Tints,
+  // Tones, Shades -- "tone" was missing from the taxonomy entirely. A tone
+  // is the classic colour-theory third case: roughly the SAME value as
+  // the matched colour, just lower chroma (distinct from tint = lighter,
+  // shade = darker). Checked the real data: 7 of the 14 "undersaturated"
+  // entries have |dL|<5 (same value) with substantial negative dC (e.g.
+  // Dandelion dL=0.0 dC=-18.8, Pineapple dL=3.5 dC=-20.4) -- genuine tones
+  // of the Cadmium Yellow anchor family. The other 7 "undersaturated"
+  // entries have larger |dL| and are more tint-like, correctly left there.
+  else if (dC < -5 && Math.abs(dL) < 5) category = 'tone (same value, lower chroma than the pure arc colour)';
   // Found 2026-10-15 (Ray): the mirror-image of the hue-gap-unreliable-match
   // bug. A pencil with real, substantial chroma (Golden Yellow, Mustard,
   // Butterscotch -- C 49-69) was landing in "low chroma (too muted/grey)"
@@ -127,6 +137,19 @@ const results = neverFit.map(p => {
   // its own Munsell reading is separately known to be broken, likely from
   // fluorescence, and its Lab chroma genuinely exceeds the model's own
   // maximum of 87.3, so it stays correctly "too saturated" regardless).
+  // Found 2026-10-15 (Ray): within that same group, all 4 real members
+  // (Holly Green, Ice Blue, Pthalo Green Light, Peacock Green) are ALSO
+  // darker than their matched point (dL<0). Checked whether Munsell Value
+  // alone could explain this instead -- it can't: the legitimately vivid
+  // "high-neon chroma" entries (Fra Angelico Blue, Perylene Brown,
+  // Ultramarine, Mauve Deep, Violet Blue) are JUST as dark by Munsell
+  // Value (2.66-4.24, same range) but genuinely vivid (Lab C 52-75, vs
+  // 29-38 here) -- so darkness alone isn't the signal, it only matters
+  // within this already-narrow moderate-chroma group. When a pencil here
+  // is also darker than its match, "shade" is the more honest read than
+  // "oversaturated" -- matches the documented shade asymmetry (some
+  // shades need more saturation at the dark end, not less darkness).
+  else if (dC > 0 && mc < 10 && C < 50 && dL < 0) category = 'shade (too dark)';
   else if (dC > 0 && mc < 10 && C < 50) category = 'oversaturated (moderate pencil, anchor nearby is even less saturated)';
   else category = dC > 0 ? 'high-neon chroma (too saturated)' : 'low chroma (too muted/grey)';
 
