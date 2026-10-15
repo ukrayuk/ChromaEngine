@@ -49,14 +49,20 @@ Yellow anchor correction)
    Cool Yellow correction). Neutrals pulled out first via **Munsell
    chroma**: True Achromatic (19), Near-Neutral (51), Earth-Adjacent (12) —
    82/368 (22.3%). Of what's left: tint 51.9% (191), shade 9.5% (35),
-   high-neon 6.5% (24), low chroma 6.0%, hue gap 2.2% + a new "hue gap
-   (unreliable match)" 1.6% (6) — a classifier fix (Ray caught Dark Sap
-   Green/Walnut Brown Light mislabeled "too saturated" when the real issue
-   was their MATCHED point being near-grey, making any dL/dC/dH comparison
-   untrustworthy, not just hue). Hue-match testing confirms tints/shades
+   high-neon 6.5% (24), undersaturated 3.8% (14, new category — see
+   below), low chroma 2.2% (8), hue gap 2.2% (8) + hue gap (unreliable
+   match) 1.6% (6). **Two classifier fixes from Ray's by-eye review of the
+   xlsx tables, both the same root pattern**: don't trust dL/dC/dH against
+   an extreme matched point. Fix #1: Dark Sap Green/Walnut Brown Light
+   (+4 more) were mislabeled "too saturated" when their matched point was
+   actually near-grey (chroma 2.2–11.4) — now "hue gap (unreliable
+   match)". Fix #2 (mirror image): Golden Yellow/Mustard/Butterscotch
+   (+11 more, all real pencil chroma 48.8–68.9, genuinely vivid) were
+   mislabeled "too muted/grey" because their matched point was *even more*
+   vivid (chroma 68–82, the Cadmium Yellow anchor region) — now a new
+   "undersaturated" category. Hue-match testing confirms tints/shades
    are genuinely lighter/darker versions of real arc colours (78.5%/94.3%
-   within 20°/15° hue — shade number improved after the classifier fix
-   removed its 4 bad matches). Tints are NOT mostly Level 1
+   within 20°/15° hue). Tints are NOT mostly Level 1
    — 56% are nearer a Level 2 cross-mix, and zero land near RoY/orange, all
    cluster in green-violet territory. Asymmetry: tints desaturate as they
    lighten (a white-blend fix would work), shades often saturate further

@@ -91,6 +91,18 @@ const results = neverFit.map(p => {
   let category;
   if (hueIsMeaningful && dH > 20 && Math.abs(dL) < 15 && Math.abs(dC) < 20) category = 'hue gap';
   else if (Math.abs(dL) >= Math.abs(dC)) category = dL > 0 ? 'tint (too light)' : 'shade (too dark)';
+  // Found 2026-10-15 (Ray): the mirror-image of the hue-gap-unreliable-match
+  // bug. A pencil with real, substantial chroma (Golden Yellow, Mustard,
+  // Butterscotch -- C 49-69) was landing in "low chroma (too muted/grey)"
+  // purely because its nearest match was an even MORE vivid anchor point
+  // (C 68-82, right where the Cadmium Yellow anchors sit). "Too muted/grey"
+  // is a visually false description of a saturated gold/ochre pencil --
+  // it's relatively less saturated than an extreme anchor, not muted in
+  // any absolute sense. Clean split in the real data: genuinely muted
+  // pencils (Violet Grey, Wheat, Ivory, Raisin...) top out at C=27.3; the
+  // false positives start at C=48.8 -- no ambiguous middle ground, so C=35
+  // is a safe line between them.
+  else if (dC < 0 && C >= 35) category = 'undersaturated (vivid pencil, anchor nearby is more vivid still)';
   else category = dC > 0 ? 'high-neon chroma (too saturated)' : 'low chroma (too muted/grey)';
 
   return { ...p, L: lab[0], C, H, munsellC: mc, nearestL: pt[0], nearestC: pt.C, nearestH: pt.H, nearestLevel: pt.level, nearestArc: pt.arc, dL, dC, dH, category };

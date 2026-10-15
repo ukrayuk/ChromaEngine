@@ -284,11 +284,12 @@ which Lab axis dominates the gap:
 | neutral (see bands above) | 82 | 22.3% |
 | shade (pencil darker) | 35 | 9.5% |
 | high-neon chroma (pencil more saturated than the model reaches) | 24 | 6.5% |
-| low chroma (pencil more muted/grey, but not neutral-band low) | 22 | 6.0% |
+| undersaturated (vivid pencil, nearby anchor is more vivid still — see note below) | 14 | 3.8% |
+| low chroma (pencil genuinely muted/grey, but not neutral-band low) | 8 | 2.2% |
 | genuine hue gap (not a value/chroma issue at all) | 8 | 2.2% |
 | hue gap — unreliable match (see note below) | 6 | 1.6% |
 
-**Classifier fix (Ray, 2026-10-15):** found 6 entries (Dark Sap Green,
+**Classifier fix #1 (Ray, 2026-10-15):** found 6 entries (Dark Sap Green,
 Walnut Brown Light, Lagoon, Indanthrone Blue, Hooker's Green, Walnut
 Brown) where the *matched* model point itself was near-grey (matched
 chroma 2.2–11.4) — not the pencil. Comparing dL/dC/dH against a
@@ -306,6 +307,19 @@ Confirmed genuine by checking all 26 original "high-neon chroma" entries'
 matched-point chroma — only these had a near-grey anchor (2.2–11.4);
 everything else compares against a matched point with real chroma (22+)
 and is a legitimate "needs more saturation than anything nearby" call.
+
+**Classifier fix #2 (Ray, 2026-10-15):** mirror image of fix #1. 14
+entries — Golden Yellow, Mustard, Butterscotch, Pineapple, Dandelion,
+Naples Yellow, Yellow Ochre and others, all real pencil chroma 48.8–68.9
+— were landing in "low chroma (too muted/grey)", which is visually
+false: these are vivid golds and ochres, not muted. They only looked
+"low chroma" because their matched point was an *even more* vivid
+anchor (chroma 68–82, right where the Cadmium Yellow anchors sit) —
+relatively less saturated than an extreme anchor isn't the same as
+muted in any absolute sense. Split out into a new **"undersaturated"**
+category. Clean break in the real data: genuinely muted pencils top out
+at Lab chroma 27.3; the false positives start at 48.8 — no ambiguous
+middle ground, so C=35 is a safe dividing line.
 
 **Tint still dominates even after pulling neutrals out** — about half the
 pool fails because it's lighter than anything the model produces.
