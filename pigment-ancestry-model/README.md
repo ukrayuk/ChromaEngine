@@ -266,29 +266,39 @@ despite the name, while "Graphite"/"Ash"/"Moonstone" are genuinely
 near-achromatic at Lab C=2–4 despite not being named "grey" at all).
 Neutral bands (Ray, refined same day — an initial cool/warm split by hue
 family was tested and dropped, the real hue-family distribution didn't
-back it up, so these are chroma-only):
+back it up, so these are chroma-only). **Ceiling raised 2.0→3.0** (Ray,
+by-eye review of the xlsx tables): several Munsell C 2–3 pencils
+genuinely read as grey, not pastel (Steel Grey, Ice Blue, Winter Lake,
+Amethyst Grey, Payne's Grey 30%). Checked whether 2.5 would be a
+cleaner line instead — it's worse: the rest of the 2.5–3.0 slice is real
+pastel (Seashell Pink, Zircon Red Bright, Peach Beige...), and 2.5 would
+wrongly exclude Payne's Grey (mc=2.83) while the handful of grey-reading
+outliers above 3.0 (Ivory mc=3.33/3.51, Raisin mc=4.33) sit out of reach
+of either line anyway — those need a hue-based check, not a tighter
+chroma cutoff, left as a future refinement. Bands simplified to round
+0–1/1–2/2–3 at the same time (previously 0–0.5/0.5–1.5/1.5–2.0):
 
 | Band | Munsell C | Count |
 |---|---|---|
-| True Achromatic | 0–0.5 | 19 |
-| Near-Neutral | 0.5–1.5 | 51 |
-| Earth-Adjacent | 1.5–2.0 | 12 |
-| **Total neutral** | ≤2.0 | **82 (22.3%)** |
+| True Achromatic | 0–1 | 54 |
+| Near-Neutral | 1–2 | 28 |
+| Earth-Adjacent | 2–3 | 29 |
+| **Total neutral** | ≤3.0 | **111 (30.2%)** |
 
 Everything else is matched to its nearest Level 1/2 point and classified by
 which Lab axis dominates the gap:
 
 | Category | Count | % of total 368 |
 |---|---|---|
-| **tint** (pencil lighter than any nearby model point) | 191 | 51.9% |
-| neutral (see bands above) | 82 | 22.3% |
+| **tint** (pencil lighter than any nearby model point) | 170 | 46.2% |
+| neutral (see bands above) | 111 | 30.2% |
 | shade (pencil darker) | 35 | 9.5% |
 | high-neon chroma (pencil more saturated than the model reaches) | 20 | 5.4% |
 | undersaturated (vivid pencil, nearby anchor is more vivid still — see note below) | 14 | 3.8% |
-| low chroma (pencil genuinely muted/grey, but not neutral-band low) | 8 | 2.2% |
-| genuine hue gap (not a value/chroma issue at all) | 8 | 2.2% |
-| hue gap — unreliable match (see note below) | 6 | 1.6% |
+| genuine hue gap (not a value/chroma issue at all) | 7 | 1.9% |
+| low chroma (pencil genuinely muted/grey, but not neutral-band low) | 4 | 1.1% |
 | oversaturated (moderate pencil, anchor nearby is even less saturated — see note below) | 4 | 1.1% |
+| hue gap — unreliable match (see note below) | 3 | 0.8% |
 
 **Classifier fix #1 (Ray, 2026-10-15):** found 6 entries (Dark Sap Green,
 Walnut Brown Light, Lagoon, Indanthrone Blue, Hooker's Green, Walnut
@@ -359,9 +369,11 @@ saturated primaries — there's no "toward white" dilution step anywhere in
 the pipeline, so the palest reachable colour at any hue is just the
 lighter of that arc's two anchors. Ray independently hue-tested a sample
 of the tint pool by eye and confirmed most genuinely read as lighter
-versions of existing arc colours, not unrelated hues — of the 191,
-**78.5% are within 20° hue of their nearest arc point** (66.5% within a
-stricter 15°). The shade side is even cleaner: **94.3%** of shade misses
+versions of existing arc colours, not unrelated hues — of the 170,
+**82.9% are within 20° hue of their nearest arc point** (70.6% within a
+stricter 15°) — both improved further after the neutral-ceiling fix
+pulled 21 ambiguous entries out of this pool. The shade side is even
+cleaner: **94.3%** of shade misses
 are within 15° hue of their nearest arc point — genuinely darker versions
 of existing arc colours (Phthalo Green, Ultramarine, Viridian, Royal Blue,
 Cornflower Blue). One asymmetry worth knowing: tints trend *less*
@@ -373,10 +385,12 @@ generic "blend toward black" wouldn't rescue these — it only desaturates
 further, moving away from the target. The dark anchors themselves may
 need more chroma, not a dilution layer.
 
-**Tints are NOT mostly Level 1 — and they're geographically lopsided.**
-Of the 191 tint misses, only 44% (84) are nearest to a pure Level 1 arc
-point — the majority, 56% (107), are actually closer to a Level 2
-cross-mix point. And **zero tints land anywhere near RoY (orange) or
+**Tints are close to an even split between Level 1 and Level 2 — and
+they're geographically lopsided.** Of the 170 tint misses, 49% (84) are
+nearest to a pure Level 1 arc point and 51% (86) are nearest to a Level 2
+cross-mix point — near-even now that the neutral-ceiling fix pulled out
+the ambiguous low-chroma entries (was a clearer 44/56 split before). And
+**zero tints land anywhere near RoY (orange) or
 RoY×YgB** — every one clusters in the green-through-violet half of the
 wheel (Yellow-Blue, Blue-Red, and the YgB×BvR seam between them). Tracks
 with real pencil sets: sky blues, pastel greens, lavenders are common
@@ -390,15 +404,18 @@ just extend the pure arcs.
 **How clean are these calls, honestly?** Checked every pencil against
 three boundary zones (Munsell band edges, weak-hue-match tint/shades at
 dH 15–25°, and tint/shade/low-chroma/high-neon coin-flips where
-|dL|≈|dC|): **74.5% (274/368) are clean**, don't touch any boundary zone.
-The other **25.5% (94/368)** sit on at least one — about 1 in 4 is a
-genuine judgment call, not a handful of arbitrary edge cases. Specific
-examples flagged for Ray's by-eye pass: 13 different "White"-named
-pencils span Munsell C 0.13–0.98 across both True Achromatic and
-Near-Neutral (plausibly real formulation differences between ranges, not
-measurement noise); Viridian and Pthalo Turquoise (same pigment family,
-different ranges) land in different categories on tiny measurement
-differences.
+|dL|≈|dC|): **77.4% (285/368) are clean**, don't touch any boundary zone.
+The other **22.6% (83/368)** sit on at least one — down from 1 in 4
+before the neutral-ceiling fix, but still a real fraction worth working
+through by eye, not a handful of arbitrary edge cases. Specific examples
+flagged for Ray's by-eye pass: 13 different "White"-named pencils span
+Munsell C 0.13–0.98 across both True Achromatic and Near-Neutral
+(plausibly real formulation differences between ranges, not measurement
+noise); Viridian and Pthalo Turquoise (same pigment family, different
+ranges) land in different categories on tiny measurement differences.
+Ray's by-eye pass through the xlsx tables has already found and fixed
+three classifier bugs and this neutral-ceiling issue — this is an
+actively self-correcting process, not a one-shot classification.
 
 **Worth considering: a tint "Level 4" (each arc point blended toward
 white) would likely rescue most of the tint pool**, and is well-supported

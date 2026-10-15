@@ -27,11 +27,23 @@ function hueDiff(h1, h2) { const d = Math.abs(h1 - h2); return Math.min(d, 360 -
 // Lab C=2-4 despite not being named "grey" at all). A cool/warm hue split
 // within the neutral bands was tested and didn't hold up against the real
 // hue-family distribution -- dropped, bands are chroma-only.
+//
+// Ceiling raised from 2.0 to 3.0 (Ray, 2026-10-15, by-eye review of the
+// xlsx "Tints" table): several pencils in Munsell C 2-3 genuinely read as
+// grey, not light/pastel (Steel Grey, Ice Blue, Winter Lake, Amethyst
+// Grey, Payne's Grey 30%). Checked whether 2.5 would be a cleaner line
+// than 3.0 instead -- it's worse: everything else in the 2.5-3.0 slice is
+// real pastel (Seashell Pink, Zircon Red Bright, Peach Beige...), and a
+// 2.5 ceiling would wrongly exclude Payne's Grey (mc=2.83) while still not
+// catching the handful of grey-reading outliers that sit above 3.0 anyway
+// (Ivory mc=3.33/3.51, Raisin mc=4.33) -- those need a hue-based check,
+// not a tighter chroma line, left as a future refinement. Bands simplified
+// to round 0-1/1-2/2-3 at the same time (previously 0-0.5/0.5-1.5/1.5-2.0).
 function munsellChroma(m) { const parts = m.split('/'); return parseFloat(parts[parts.length - 1]); }
 const NEUTRAL_BANDS = [
-  { name: 'True Achromatic', lo: 0, hi: 0.5 },
-  { name: 'Near-Neutral', lo: 0.5, hi: 1.5 },
-  { name: 'Earth-Adjacent', lo: 1.5, hi: 2.0 },
+  { name: 'True Achromatic', lo: 0, hi: 1 },
+  { name: 'Near-Neutral', lo: 1, hi: 2 },
+  { name: 'Earth-Adjacent', lo: 2, hi: 3 },
 ];
 function neutralBand(mc) {
   for (const b of NEUTRAL_BANDS) if (mc > b.lo && mc <= b.hi) return b.name;

@@ -47,12 +47,16 @@ Yellow anchor correction)
 1. **Never-fit taxonomy — formalized, reveals a real architecture gap, now
    tied to the new Ch5 (Tints/Tones/Shades).** 368 book-scope pencils (post
    Cool Yellow correction). Neutrals pulled out first via **Munsell
-   chroma**: True Achromatic (19), Near-Neutral (51), Earth-Adjacent (12) —
-   82/368 (22.3%). Of what's left: tint 51.9% (191), shade 9.5% (35),
-   high-neon 5.4% (20), undersaturated 3.8% (14), low chroma 2.2% (8),
-   hue gap 2.2% (8), hue gap (unreliable match) 1.6% (6), oversaturated
-   1.1% (4, newest category — see below). **Three classifier fixes from
-   Ray's by-eye review of the xlsx tables, all the same root pattern**:
+   chroma**, ceiling raised 2.0→3.0 (Ray, by-eye: several mc 2-3 pencils
+   genuinely read grey, not pastel): True Achromatic 0-1 (54), Near-Neutral
+   1-2 (28), Earth-Adjacent 2-3 (29) — **111/368 (30.2%)**. Checked whether
+   2.5 would be cleaner than 3.0 — it's worse (would exclude Payne's Grey,
+   wouldn't catch the Ivory/Raisin outliers above 3.0 either way). Of
+   what's left: tint 46.2% (170), shade 9.5% (35), high-neon 5.4% (20),
+   undersaturated 3.8% (14), hue gap 1.9% (7), low chroma 1.1% (4),
+   oversaturated 1.1% (4), hue gap (unreliable match) 0.8% (3). **Three
+   classifier fixes from Ray's by-eye review of the xlsx tables, all the
+   same root pattern**:
    don't trust dL/dC/dH against an extreme matched point. Fix #1: Dark Sap
    Green/Walnut Brown Light (+4 more) mislabeled "too saturated" when
    their matched point was actually near-grey (chroma 2.2–11.4) — now
@@ -69,9 +73,10 @@ Yellow anchor correction)
    conversion — its Lab chroma (92.7, exceeds the model's own max of 87.3)
    is the number to trust, not its Munsell reading. Hue-match testing
    confirms tints/shades
-   are genuinely lighter/darker versions of real arc colours (78.5%/94.3%
-   within 20°/15° hue). Tints are NOT mostly Level 1
-   — 56% are nearer a Level 2 cross-mix, and zero land near RoY/orange, all
+   are genuinely lighter/darker versions of real arc colours (82.9%/94.3%
+   within 20°/15° hue for tints/shades respectively). Tints are now close
+   to an even split between Level 1 and Level 2 (49%/51%, was 44%/56%
+   before the neutral-ceiling fix) — zero land near RoY/orange, all
    cluster in green-violet territory. Asymmetry: tints desaturate as they
    lighten (a white-blend fix would work), shades often saturate further
    as they darken (wouldn't be rescued by a black-blend). **Open

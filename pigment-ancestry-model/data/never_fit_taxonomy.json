@@ -10,7 +10,7 @@
     "C": 2.636900994752165,
     "H": 94.47842407748794,
     "munsellC": 0.68,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Faber-Castell",
@@ -212,7 +212,7 @@
     "C": 3.872681780782415,
     "H": 79.30710991131305,
     "munsellC": 0.54,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Faber-Castell",
@@ -238,7 +238,7 @@
     "C": 6.984399387275257,
     "H": 84.23806168063625,
     "munsellC": 1,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Faber-Castell",
@@ -277,7 +277,7 @@
     "C": 3.182344090101358,
     "H": 244.64892744969984,
     "munsellC": 0.93,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Faber-Castell",
@@ -290,7 +290,7 @@
     "C": 2.690703112993977,
     "H": 256.0706956520869,
     "munsellC": 0.73,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Faber-Castell",
@@ -303,7 +303,7 @@
     "C": 11.547763229721365,
     "H": 89.11082838071701,
     "munsellC": 1.59,
-    "category": "neutral (Earth-Adjacent)"
+    "category": "neutral (Near-Neutral)"
   },
   {
     "maker": "Faber-Castell",
@@ -316,15 +316,7 @@
     "C": 12.409041829669107,
     "H": 58.17172970183794,
     "munsellC": 2.26,
-    "nearestL": 52.8501048733347,
-    "nearestC": 19.190266022129947,
-    "nearestH": 68.16598104657784,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 14.358169935644597,
-    "dC": -6.78122419246084,
-    "dH": 9.9942513447399,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Faber-Castell",
@@ -400,15 +392,7 @@
     "C": 14.46388726882371,
     "H": 57.49582651250852,
     "munsellC": 2.68,
-    "nearestL": 53.67477672477091,
-    "nearestC": 22.220292075496964,
-    "nearestH": 62.150366809897726,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 34.33787118908066,
-    "dC": -7.756404806673254,
-    "dH": 4.654540297389204,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Faber-Castell",
@@ -421,7 +405,7 @@
     "C": 12.079948234892155,
     "H": 79.1846146034153,
     "munsellC": 1.77,
-    "category": "neutral (Earth-Adjacent)"
+    "category": "neutral (Near-Neutral)"
   },
   {
     "maker": "Faber-Castell",
@@ -455,15 +439,7 @@
     "C": 12.950391342448777,
     "H": 36.52709222346166,
     "munsellC": 2.83,
-    "nearestL": 53.67477672477091,
-    "nearestC": 22.220292075496964,
-    "nearestH": 62.150366809897726,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 33.05689394085044,
-    "dC": -9.269900733048187,
-    "dH": 25.623274586436068,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Faber-Castell",
@@ -476,7 +452,7 @@
     "C": 3.2598700730974928,
     "H": 199.3424422356064,
     "munsellC": 0.66,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Faber-Castell",
@@ -502,15 +478,7 @@
     "C": 12.634704000490588,
     "H": 170.94386882913216,
     "munsellC": 2.03,
-    "nearestL": 53.05240436878647,
-    "nearestC": 24.46689068048833,
-    "nearestH": 148.40351383226852,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 27.957710611215205,
-    "dC": -11.832186679997742,
-    "dH": 22.54035499686364,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Faber-Castell",
@@ -544,15 +512,7 @@
     "C": 5.984864888829214,
     "H": 280.3136052068088,
     "munsellC": 2.04,
-    "nearestL": 51.213915353823126,
-    "nearestC": 14.454317308741668,
-    "nearestH": 111.7141485035931,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 26.19656581706414,
-    "dC": -8.469452419912454,
-    "dH": 168.5994567032157,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Faber-Castell",
@@ -607,15 +567,7 @@
     "C": 21.646722843801196,
     "H": 116.50459919741105,
     "munsellC": 2.7,
-    "nearestL": 65.63321331694326,
-    "nearestC": 39.62296559375574,
-    "nearestH": 123.99680479538507,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 18.45323194298423,
-    "dC": -17.97624274995454,
-    "dH": 7.492205597974021,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Derwent",
@@ -922,7 +874,7 @@
     "C": 4.764030337319919,
     "H": 346.433163121727,
     "munsellC": 1.78,
-    "category": "neutral (Earth-Adjacent)"
+    "category": "neutral (Near-Neutral)"
   },
   {
     "maker": "Derwent",
@@ -1334,7 +1286,7 @@
     "C": 6.566189083315455,
     "H": 99.52538204505572,
     "munsellC": 0.87,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Derwent",
@@ -1360,15 +1312,7 @@
     "C": 9.453422088143611,
     "H": 6.571329685296356,
     "munsellC": 2.37,
-    "nearestL": 52.44170000675109,
-    "nearestC": 18.034857941563693,
-    "nearestH": 72.39808554731019,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 6.030838817162845,
-    "dC": -8.581435853420082,
-    "dH": 65.82675586201383,
-    "category": "low chroma (too muted/grey)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Derwent",
@@ -1381,7 +1325,7 @@
     "C": 5.81018572500127,
     "H": 357.6063232002608,
     "munsellC": 1.67,
-    "category": "neutral (Earth-Adjacent)"
+    "category": "neutral (Near-Neutral)"
   },
   {
     "maker": "Derwent",
@@ -1394,15 +1338,7 @@
     "C": 9.689039204462354,
     "H": 311.59582763060536,
     "munsellC": 2.36,
-    "nearestL": 41.09283433613197,
-    "nearestC": 13.159288934679674,
-    "nearestH": 238.9514922371393,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 19.532816657846837,
-    "dC": -3.4702497302173203,
-    "dH": 72.64433539346606,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Derwent",
@@ -1441,15 +1377,7 @@
     "C": 8.705594340649132,
     "H": 245.19486073782588,
     "munsellC": 2.23,
-    "nearestL": 43.00808048887395,
-    "nearestC": 12.490628090880776,
-    "nearestH": 215.031028084933,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 14.648812872823193,
-    "dC": -3.7850337502316442,
-    "dH": 30.163832652892864,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Derwent",
@@ -1462,7 +1390,7 @@
     "C": 7.307265921524023,
     "H": 220.9668689083902,
     "munsellC": 1.74,
-    "category": "neutral (Earth-Adjacent)"
+    "category": "neutral (Near-Neutral)"
   },
   {
     "maker": "Derwent",
@@ -1488,7 +1416,7 @@
     "C": 2.636900994752165,
     "H": 94.47842407748794,
     "munsellC": 0.62,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Derwent",
@@ -1501,7 +1429,7 @@
     "C": 2.253838308542263,
     "H": 247.87134689563806,
     "munsellC": 0.58,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Derwent",
@@ -1514,15 +1442,7 @@
     "C": 8.34287270464459,
     "H": 242.26204299843482,
     "munsellC": 2.13,
-    "nearestL": 43.3458541631358,
-    "nearestC": 12.344311628003332,
-    "nearestH": 209.37726575718386,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 13.89371096442656,
-    "dC": -4.001438923358743,
-    "dH": 32.88477724125096,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Derwent",
@@ -1619,15 +1539,7 @@
     "C": 6.728060745582948,
     "H": 6.41597116528862,
     "munsellC": 2.18,
-    "nearestL": 52.8501048733347,
-    "nearestC": 19.190266022129947,
-    "nearestH": 68.16598104657784,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 35.337369068183065,
-    "dC": -12.462205276547,
-    "dH": 61.75000988128922,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Derwent",
@@ -1716,15 +1628,7 @@
     "C": 12.91150505138395,
     "H": 179.77926597437062,
     "munsellC": 2.17,
-    "nearestL": 56.72537065113836,
-    "nearestC": 29.486677137500443,
-    "nearestH": 139.61120344049755,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 33.70711432405541,
-    "dC": -16.575172086116496,
-    "dH": 40.16806253387307,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Derwent",
@@ -1800,15 +1704,7 @@
     "C": 21.044636611077852,
     "H": 89.00463855452664,
     "munsellC": 2.87,
-    "nearestL": 68.87940436205815,
-    "nearestC": 43.53185118372767,
-    "nearestH": 118.73549158344476,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 17.318813738322703,
-    "dC": -22.487214572649815,
-    "dH": 29.73085302891812,
-    "category": "low chroma (too muted/grey)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Derwent",
@@ -1834,7 +1730,7 @@
     "C": 3.841793181362431,
     "H": 98.53331991832353,
     "munsellC": 0.51,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Derwent",
@@ -1847,7 +1743,7 @@
     "C": 4.981600737174853,
     "H": 96.50969294318419,
     "munsellC": 0.59,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Derwent",
@@ -1860,7 +1756,7 @@
     "C": 3.64594046866123,
     "H": 251.29963035520865,
     "munsellC": 0.9,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Derwent",
@@ -1899,7 +1795,7 @@
     "C": 2.756889602536582,
     "H": 87.27270729562987,
     "munsellC": 0.64,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Caran",
@@ -1938,15 +1834,7 @@
     "C": 8.158594948911485,
     "H": 241.98486834899614,
     "munsellC": 2.24,
-    "nearestL": 44.99114819934676,
-    "nearestC": 13.556711547404113,
-    "nearestH": 192.79751289975857,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 21.007572665030303,
-    "dC": -5.398116598492628,
-    "dH": 49.18735544923757,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Caran",
@@ -1980,15 +1868,7 @@
     "C": 9.246076365567873,
     "H": 332.95103727070983,
     "munsellC": 2.3,
-    "nearestL": 52.44170000675109,
-    "nearestC": 18.034857941563693,
-    "nearestH": 72.39808554731019,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 5.993820913663711,
-    "dC": -8.78878157599582,
-    "dH": 99.44704827660036,
-    "category": "low chroma (too muted/grey)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Caran",
@@ -2169,15 +2049,7 @@
     "C": 10.368763422468458,
     "H": 259.7757416672563,
     "munsellC": 2.83,
-    "nearestL": 42.67137077539395,
-    "nearestC": 12.74720465762276,
-    "nearestH": 220.53627243119305,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 18.356174017762527,
-    "dC": -2.378441235154302,
-    "dH": 39.23946923606323,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Caran",
@@ -2274,15 +2146,7 @@
     "C": 21.14447993388303,
     "H": 91.75430734388854,
     "munsellC": 2.92,
-    "nearestL": 52.39390582460341,
-    "nearestC": 17.99261018151767,
-    "nearestH": 78.84277300675762,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 24.930904313016228,
-    "dC": 3.1518697523653607,
-    "dH": 12.911534337130917,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Caran",
@@ -2295,15 +2159,7 @@
     "C": 13.106680057137405,
     "H": 200.22222050103665,
     "munsellC": 2.94,
-    "nearestL": 32.78841430188019,
-    "nearestC": 2.1926015611769683,
-    "nearestH": 19.613116388363242,
-    "nearestLevel": "L2",
-    "nearestArc": "RoY × YgB — flipped",
-    "dL": -7.246686117617074,
-    "dC": 10.914078495960437,
-    "dH": 179.3908958873266,
-    "category": "hue gap (unreliable match)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Caran",
@@ -2384,7 +2240,7 @@
     "C": 13.335842811171117,
     "H": 81.08046900566957,
     "munsellC": 1.97,
-    "category": "neutral (Earth-Adjacent)"
+    "category": "neutral (Near-Neutral)"
   },
   {
     "maker": "Caran",
@@ -2557,7 +2413,7 @@
     "C": 6.603082096668388,
     "H": 47.64761109246474,
     "munsellC": 1.58,
-    "category": "neutral (Earth-Adjacent)"
+    "category": "neutral (Near-Neutral)"
   },
   {
     "maker": "Caran",
@@ -2591,7 +2447,7 @@
     "C": 4.105892664999972,
     "H": 319.22664736703064,
     "munsellC": 0.63,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Caran",
@@ -2646,15 +2502,7 @@
     "C": 17.10574229707062,
     "H": 146.61063323124955,
     "munsellC": 2.44,
-    "nearestL": 56.72537065113836,
-    "nearestC": 29.486677137500443,
-    "nearestH": 139.61120344049755,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 19.43431906061241,
-    "dC": -12.380934840429823,
-    "dH": 6.9994297907520036,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Caran",
@@ -2680,7 +2528,7 @@
     "C": 3.2536828717369994,
     "H": 240.02581351755646,
     "munsellC": 0.93,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Caran",
@@ -2706,7 +2554,7 @@
     "C": 6.005946663620706,
     "H": 232.46786552995462,
     "munsellC": 1.52,
-    "category": "neutral (Earth-Adjacent)"
+    "category": "neutral (Near-Neutral)"
   },
   {
     "maker": "Caran",
@@ -3118,7 +2966,7 @@
     "C": 6.844602792963023,
     "H": 103.42604504309001,
     "munsellC": 0.81,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Caran",
@@ -3131,7 +2979,7 @@
     "C": 3.4963113134629276,
     "H": 69.65192304283221,
     "munsellC": 0.57,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Caran",
@@ -3144,7 +2992,7 @@
     "C": 4.467041887230123,
     "H": 57.87043525142598,
     "munsellC": 0.74,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Caran",
@@ -3157,15 +3005,7 @@
     "C": 15.485300853694323,
     "H": 93.50585200900612,
     "munsellC": 2.27,
-    "nearestL": 66.47150932911423,
-    "nearestC": 40.76609430757527,
-    "nearestH": 122.21110394723938,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 25.345036267964204,
-    "dC": -25.28079345388095,
-    "dH": 28.70525193823326,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Caran",
@@ -3199,7 +3039,7 @@
     "C": 2.6876164086651633,
     "H": 256.0669157088342,
     "munsellC": 0.7,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Holbein",
@@ -3737,15 +3577,7 @@
     "C": 20.823160337425577,
     "H": 109.30876733953565,
     "munsellC": 2.65,
-    "nearestL": 62.08065371430709,
-    "nearestC": 35.792874363943604,
-    "nearestH": 129.67177706898377,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 13.549927945826212,
-    "dC": -14.969714026518027,
-    "dH": 20.363009729448123,
-    "category": "hue gap"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Holbein",
@@ -4322,7 +4154,7 @@
     "C": 4.214875395299002,
     "H": 78.75858965720207,
     "munsellC": 0.6,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Holbein",
@@ -4335,7 +4167,7 @@
     "C": 5.9353741223726075,
     "H": 83.26850219107598,
     "munsellC": 0.83,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Holbein",
@@ -4348,7 +4180,7 @@
     "C": 5.194432996189766,
     "H": 77.82272077211353,
     "munsellC": 0.77,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Holbein",
@@ -4387,7 +4219,7 @@
     "C": 6.118355724366333,
     "H": 265.7053742097517,
     "munsellC": 1.75,
-    "category": "neutral (Earth-Adjacent)"
+    "category": "neutral (Near-Neutral)"
   },
   {
     "maker": "Holbein",
@@ -4586,15 +4418,7 @@
     "C": 18.95112093184494,
     "H": 79.71686065686441,
     "munsellC": 2.89,
-    "nearestL": 53.353774932826255,
-    "nearestC": 21.217083844502486,
-    "nearestH": 64.55505844759489,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 24.801987847409237,
-    "dC": -2.265962912657546,
-    "dH": 15.161802209269524,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Castle",
@@ -4943,7 +4767,7 @@
     "C": 6.933414821275563,
     "H": 1.4387713350464548,
     "munsellC": 1.84,
-    "category": "neutral (Earth-Adjacent)"
+    "category": "neutral (Near-Neutral)"
   },
   {
     "maker": "Castle",
@@ -4956,7 +4780,7 @@
     "C": 2.253838308542263,
     "H": 247.87134689563806,
     "munsellC": 0.64,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Castle",
@@ -5360,7 +5184,7 @@
     "C": 4.349556870708085,
     "H": 57.9446326906023,
     "munsellC": 0.85,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Castle",
@@ -5386,7 +5210,7 @@
     "C": 2.7530462006273955,
     "H": 187.51072759877022,
     "munsellC": 0.53,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Castle",
@@ -5399,7 +5223,7 @@
     "C": 3.131211120510162,
     "H": 96.92322167045265,
     "munsellC": 0.82,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Castle",
@@ -5979,15 +5803,7 @@
     "C": 12.938217138026676,
     "H": 173.06712525180353,
     "munsellC": 2.85,
-    "nearestL": 34.85766352977306,
-    "nearestC": 4.434701084411802,
-    "nearestH": 97.93475662913852,
-    "nearestLevel": "L2",
-    "nearestArc": "RoY × YgB — flipped",
-    "dL": -10.132544531476647,
-    "dC": 8.503516053614874,
-    "dH": 75.13236862266501,
-    "category": "hue gap (unreliable match)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Castle",
@@ -6000,15 +5816,7 @@
     "C": 12.25284479510593,
     "H": 34.520691106646154,
     "munsellC": 2.15,
-    "nearestL": 29.977361644108136,
-    "nearestC": 8.773337010877098,
-    "nearestH": 327.522498846197,
-    "nearestLevel": "L2",
-    "nearestArc": "RoY × YgB — flipped",
-    "dL": -10.257538669561903,
-    "dC": 3.479507784228831,
-    "dH": 66.99819226044917,
-    "category": "hue gap (unreliable match)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Castle",
@@ -6021,7 +5829,7 @@
     "C": 4.9059106025104375,
     "H": 81.7718096286861,
     "munsellC": 0.76,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Castle",
@@ -6034,7 +5842,7 @@
     "C": 4.719763897068766,
     "H": 96.69768047042484,
     "munsellC": 0.96,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Newell",
@@ -6341,15 +6149,7 @@
     "C": 20.703758898296034,
     "H": 94.02678349447012,
     "munsellC": 2.78,
-    "nearestL": 65.63321331694326,
-    "nearestC": 39.62296559375574,
-    "nearestH": 123.99680479538507,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 15.50107964821963,
-    "dC": -18.919206695459703,
-    "dH": 29.97002130091495,
-    "category": "low chroma (too muted/grey)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Newell",
@@ -6362,15 +6162,7 @@
     "C": 19.42658440848034,
     "H": 80.38699373169455,
     "munsellC": 2.91,
-    "nearestL": 53.353774932826255,
-    "nearestC": 21.217083844502486,
-    "nearestH": 64.55505844759489,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 24.781690205117314,
-    "dC": -1.7904994360221451,
-    "dH": 15.831935284099657,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Newell",
@@ -6446,15 +6238,7 @@
     "C": 11.613252252825143,
     "H": 15.064164088997508,
     "munsellC": 2.95,
-    "nearestL": 52.8501048733347,
-    "nearestC": 19.190266022129947,
-    "nearestH": 68.16598104657784,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 19.383769469817523,
-    "dC": -7.577013769304804,
-    "dH": 53.10181695758033,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Newell",
@@ -6761,7 +6545,7 @@
     "C": 7.089263093900649,
     "H": 127.53148993267588,
     "munsellC": 0.82,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Newell",
@@ -6774,15 +6558,7 @@
     "C": 23.249449643647893,
     "H": 122.55855040094742,
     "munsellC": 2.98,
-    "nearestL": 65.63321331694326,
-    "nearestC": 39.62296559375574,
-    "nearestH": 123.99680479538507,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 17.54346377509148,
-    "dC": -16.373515950107844,
-    "dH": 1.4382543944376494,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Newell",
@@ -6795,15 +6571,7 @@
     "C": 13.1723784499924,
     "H": 162.26610528346856,
     "munsellC": 2.08,
-    "nearestL": 50.1845134397242,
-    "nearestC": 16.930918368890524,
-    "nearestH": 148.5979132625442,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 15.894373325279687,
-    "dC": -3.758539918898123,
-    "dH": 13.668192020924351,
-    "category": "tint (too light)"
+    "category": "neutral (Earth-Adjacent)"
   },
   {
     "maker": "Newell",
@@ -6816,7 +6584,7 @@
     "C": 10.3841595857309,
     "H": 189.34538676667145,
     "munsellC": 1.92,
-    "category": "neutral (Earth-Adjacent)"
+    "category": "neutral (Near-Neutral)"
   },
   {
     "maker": "Newell",
@@ -6868,7 +6636,7 @@
     "C": 1.8998443513464076,
     "H": 343.54919341591216,
     "munsellC": 0.56,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Newell",
@@ -6881,7 +6649,7 @@
     "C": 2.3788398362333356,
     "H": 241.31698074493497,
     "munsellC": 0.65,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Newell",
@@ -6894,7 +6662,7 @@
     "C": 3.284479554777177,
     "H": 240.04900151044072,
     "munsellC": 0.95,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Newell",
@@ -6920,7 +6688,7 @@
     "C": 6.537648876837012,
     "H": 243.0837690416745,
     "munsellC": 1.69,
-    "category": "neutral (Earth-Adjacent)"
+    "category": "neutral (Near-Neutral)"
   },
   {
     "maker": "Newell",
@@ -6933,7 +6701,7 @@
     "C": 4.0146891917604846,
     "H": 70.44532555881224,
     "munsellC": 0.69,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Newell",
@@ -6946,7 +6714,7 @@
     "C": 3.470575170834314,
     "H": 69.67293956310102,
     "munsellC": 0.57,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Newell",
@@ -6959,7 +6727,7 @@
     "C": 4.703870600947689,
     "H": 63.054147289782776,
     "munsellC": 0.81,
-    "category": "neutral (Near-Neutral)"
+    "category": "neutral (True Achromatic)"
   },
   {
     "maker": "Newell",
