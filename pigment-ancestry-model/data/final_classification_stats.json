@@ -1,0 +1,23 @@
+{
+  "stats": {
+    "level1": {
+      "comfortable": 331,
+      "loose": 276
+    },
+    "level2": {
+      "comfortable": 355,
+      "loose": 141
+    },
+    "level3": {
+      "comfortable": 1,
+      "loose": 10
+    },
+    "ladder": {
+      "comfortable": 332,
+      "loose": 210
+    },
+    "finalPool": 169
+  },
+  "total": 1825,
+  "totalPlaced": 1656
+}

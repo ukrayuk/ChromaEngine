@@ -1,0 +1,1352 @@
+[
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc921",
+    "name": "Pale Vermilion",
+    "hex": "#fa6242",
+    "dist": 0.944011289519342,
+    "angleDeg": 5.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc950",
+    "name": "Metallic Gold",
+    "hex": "#977d5c",
+    "dist": 1.433006789445275,
+    "angleDeg": 223.3203125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc922",
+    "name": "Poppy Red",
+    "hex": "#ed3b2e",
+    "dist": 1.6913145122641216,
+    "angleDeg": -28.359375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1022",
+    "name": "Mediterranean Blue",
+    "hex": "#2274a5",
+    "dist": 1.9675328268998045,
+    "angleDeg": 183.36328125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc118",
+    "name": "Cadmium Orange Hue",
+    "hex": "#e96546",
+    "dist": 2.03556114519378,
+    "angleDeg": 6.7421875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc948",
+    "name": "Sepia",
+    "hex": "#5b534c",
+    "dist": 2.0989407057987783,
+    "angleDeg": 105.18359375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc988",
+    "name": "Marine Green",
+    "hex": "#5d6540",
+    "dist": 2.222226739057108,
+    "angleDeg": 95.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1076",
+    "name": "90% French Grey",
+    "hex": "#595452",
+    "dist": 2.492000981527425,
+    "angleDeg": 106.01171875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1099",
+    "name": "Espresso",
+    "hex": "#514844",
+    "dist": 2.7871208308662236,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1096",
+    "name": "Kelly Green",
+    "hex": "#5c8059",
+    "dist": 2.833717222752906,
+    "angleDeg": 148.06640625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1090",
+    "name": "Kelp Green",
+    "hex": "#5d6c3e",
+    "dist": 3.2289280704638306,
+    "angleDeg": 92.76171875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc944",
+    "name": "Terra Cotta",
+    "hex": "#96493d",
+    "dist": 3.3433852903430212,
+    "angleDeg": 282.3515625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1002",
+    "name": "Yellowed Orange",
+    "hex": "#ff9f2c",
+    "dist": 3.772866118997377,
+    "angleDeg": 31.3671875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc924",
+    "name": "Crimson Red",
+    "hex": "#c82736",
+    "dist": 3.9433371956010164,
+    "angleDeg": 304.8125,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc943",
+    "name": "Burnt Ochre",
+    "hex": "#b26249",
+    "dist": 4.004495200868212,
+    "angleDeg": 13.57421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc913",
+    "name": "Spring Green",
+    "hex": "#80cf41",
+    "dist": 4.059129065782072,
+    "angleDeg": 86.9140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc917",
+    "name": "Sunburst Yellow",
+    "hex": "#ffb80a",
+    "dist": 4.156108591316409,
+    "angleDeg": 43.828125,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1031",
+    "name": "Henna",
+    "hex": "#9f4c51",
+    "dist": 4.3501921285596055,
+    "angleDeg": 287.734375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1058",
+    "name": "90% Warm Grey",
+    "hex": "#484b52",
+    "dist": 4.495669272893451,
+    "angleDeg": 109.53125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc916",
+    "name": "Canary Yellow",
+    "hex": "#fcdb00",
+    "dist": 4.827232236711234,
+    "angleDeg": 55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1032",
+    "name": "Pumpkin Orange",
+    "hex": "#c85335",
+    "dist": 4.845233206820768,
+    "angleDeg": 8.19140625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1005",
+    "name": "Lime Peel",
+    "hex": "#acac46",
+    "dist": 5.167066680513222,
+    "angleDeg": 352.22265625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1091",
+    "name": "Green Ochre",
+    "hex": "#665d46",
+    "dist": 5.194232584841956,
+    "angleDeg": 100.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1097",
+    "name": "Moss Green",
+    "hex": "#646339",
+    "dist": 5.521513555764891,
+    "angleDeg": 94.625,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1007",
+    "name": "Imperial Violet",
+    "hex": "#5251a7",
+    "dist": 5.611802896281749,
+    "angleDeg": 203.4765625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc937",
+    "name": "Tuscan Red",
+    "hex": "#7c3840",
+    "dist": 5.700113784099609,
+    "angleDeg": 294.359375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc996",
+    "name": "Black Grape",
+    "hex": "#4f435b",
+    "dist": 5.77244644737117,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc915",
+    "name": "Lemon Yellow",
+    "hex": "#f2ea50",
+    "dist": 5.834403646779412,
+    "angleDeg": 65.4296875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1004",
+    "name": "Yellow Chartreuse",
+    "hex": "#deea53",
+    "dist": 6.064293225174638,
+    "angleDeg": 67.1484375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc941",
+    "name": "Light Umber",
+    "hex": "#886b51",
+    "dist": 6.146778876301026,
+    "angleDeg": 223.11328125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1098",
+    "name": "Artichoke",
+    "hex": "#917435",
+    "dist": 6.220264065918308,
+    "angleDeg": 341.87109375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc932",
+    "name": "Violet",
+    "hex": "#5d408e",
+    "dist": 6.626247989538172,
+    "angleDeg": 221.5234375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1065",
+    "name": "70% Cool Grey",
+    "hex": "#5e6d77",
+    "dist": 6.627546763414491,
+    "angleDeg": 164.0078125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc109",
+    "name": "Prussian Green",
+    "hex": "#4b6854",
+    "dist": 6.6318658475832475,
+    "angleDeg": 155.3125,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1094",
+    "name": "Sandbar Brown",
+    "hex": "#7b694e",
+    "dist": 6.700553484464525,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1056",
+    "name": "70% Warm Grey",
+    "hex": "#55565f",
+    "dist": 6.728853161102617,
+    "angleDeg": 109.53125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc947",
+    "name": "Dark Umber",
+    "hex": "#513f3d",
+    "dist": 6.806568341265092,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1028",
+    "name": "Bronze",
+    "hex": "#9f804d",
+    "dist": 6.89519772100023,
+    "angleDeg": 22.4765625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc918",
+    "name": "Orange",
+    "hex": "#ff7e3c",
+    "dist": 6.899798200501081,
+    "angleDeg": 12.890625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1033",
+    "name": "Mineral Orange",
+    "hex": "#d97d4c",
+    "dist": 6.928784735526396,
+    "angleDeg": 233.05078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc925",
+    "name": "Crimson Lake",
+    "hex": "#ac2335",
+    "dist": 7.145388157178573,
+    "angleDeg": 313.71484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc923",
+    "name": "Scarlet Lake",
+    "hex": "#d42333",
+    "dist": 7.1464827799695,
+    "angleDeg": 301.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1008",
+    "name": "Parma Violet",
+    "hex": "#8266b7",
+    "dist": 7.170230568978879,
+    "angleDeg": 209.0625,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc995",
+    "name": "Mulberry",
+    "hex": "#aa3883",
+    "dist": 7.2251456210340415,
+    "angleDeg": 265.78125,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc930",
+    "name": "Magenta",
+    "hex": "#cd3765",
+    "dist": 7.253965729989238,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc132",
+    "name": "Dioxazine Purple Hue",
+    "hex": "#473c73",
+    "dist": 7.523636300664399,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc946",
+    "name": "Dark Brown",
+    "hex": "#67524a",
+    "dist": 8.07827813103432,
+    "angleDeg": 105.18359375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc122",
+    "name": "Permanent Red",
+    "hex": "#e54146",
+    "dist": 8.16282551301518,
+    "angleDeg": 301.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc912",
+    "name": "Apple Green",
+    "hex": "#70a847",
+    "dist": 8.176536598703093,
+    "angleDeg": 45.45703125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc989",
+    "name": "Chartreuse",
+    "hex": "#b9d215",
+    "dist": 8.213812289935296,
+    "angleDeg": 68.4375,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc935",
+    "name": "Black",
+    "hex": "#373b3f",
+    "dist": 8.248700202567942,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1003",
+    "name": "Spanish Orange",
+    "hex": "#ffba00",
+    "dist": 8.32578604664817,
+    "angleDeg": 44.6875,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc103",
+    "name": "Cerulean Blue",
+    "hex": "#006db5",
+    "dist": 8.622258632331146,
+    "angleDeg": 181.70703125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1067",
+    "name": "90% Cool Grey",
+    "hex": "#353c42",
+    "dist": 8.730736583336405,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1027",
+    "name": "Peacock Blue",
+    "hex": "#006896",
+    "dist": 9.07888681198087,
+    "angleDeg": 183.77734375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc945",
+    "name": "Sienna Brown",
+    "hex": "#945e49",
+    "dist": 9.57763180272786,
+    "angleDeg": 17.71484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1029",
+    "name": "Mahogany Red",
+    "hex": "#9f3a54",
+    "dist": 9.63718570561214,
+    "angleDeg": 295.39453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc911",
+    "name": "Olive Green",
+    "hex": "#4b6a44",
+    "dist": 9.947877721743533,
+    "angleDeg": 94.2109375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1030",
+    "name": "Raspberry",
+    "hex": "#9b344b",
+    "dist": 9.94809225682179,
+    "angleDeg": 294.98046875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc195",
+    "name": "Pomegranate",
+    "hex": "#b52050",
+    "dist": 10.191844649399933,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc905",
+    "name": "Aquamarine",
+    "hex": "#0090a0",
+    "dist": 10.415562613649382,
+    "angleDeg": 169.4140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc208",
+    "name": "Indanthrone Blue",
+    "hex": "#28356a",
+    "dist": 10.42644987529399,
+    "angleDeg": 177.87890625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1082",
+    "name": "Chocolate",
+    "hex": "#634c3d",
+    "dist": 10.429775088571523,
+    "angleDeg": 104.35546875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc903",
+    "name": "True Blue",
+    "hex": "#0083cd",
+    "dist": 10.611304910460946,
+    "angleDeg": 181.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1074",
+    "name": "70% French Grey",
+    "hex": "#706b68",
+    "dist": 10.79677156804839,
+    "angleDeg": 103.52734375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1095",
+    "name": "Black Rashberry",
+    "hex": "#5d3f3f",
+    "dist": 11.135323405928473,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1054",
+    "name": "50% Warm Grey",
+    "hex": "#6a6b71",
+    "dist": 11.24193417259076,
+    "angleDeg": 164.0078125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc994",
+    "name": "Process Red",
+    "hex": "#d63586",
+    "dist": 11.344576820770332,
+    "angleDeg": 291.5625,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc133",
+    "name": "Cobalt Blue Hue",
+    "hex": "#2561cc",
+    "dist": 11.45356822447717,
+    "angleDeg": 185,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc926",
+    "name": "Carmine Red",
+    "hex": "#f14e60",
+    "dist": 11.524206239017934,
+    "angleDeg": 302.328125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc901",
+    "name": "Indigo Blue",
+    "hex": "#1e3861",
+    "dist": 12.002419069608292,
+    "angleDeg": 174.359375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc907",
+    "name": "Peacock Green",
+    "hex": "#005f5b",
+    "dist": 12.213982712443237,
+    "angleDeg": 194.75,
+    "radiusPx": 577,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc910",
+    "name": "True Green",
+    "hex": "#06cc86",
+    "dist": 12.56468758159744,
+    "angleDeg": 135.8984375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc936",
+    "name": "Slate Grey",
+    "hex": "#5f8195",
+    "dist": 12.601140342667016,
+    "angleDeg": 165.25,
+    "radiusPx": 577,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc120",
+    "name": "Sap Green Light",
+    "hex": "#8cab83",
+    "dist": 12.602857766087268,
+    "angleDeg": 142.0625,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1102",
+    "name": "Blue Lake",
+    "hex": "#5d96d9",
+    "dist": 12.698808732728589,
+    "angleDeg": 181.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1080",
+    "name": "Beige Sienna",
+    "hex": "#ac9881",
+    "dist": 13.076525657295695,
+    "angleDeg": 222.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1079",
+    "name": "Blue Violet Lake",
+    "hex": "#6b8fca",
+    "dist": 13.48771641583046,
+    "angleDeg": 182.12109375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1009",
+    "name": "Dahlia Purple",
+    "hex": "#6b3461",
+    "dist": 13.537796786085774,
+    "angleDeg": 248.1640625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc105",
+    "name": "Cobalt Turquoise",
+    "hex": "#00646f",
+    "dist": 13.623987725845698,
+    "angleDeg": 190.40234375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc909",
+    "name": "Grass Green",
+    "hex": "#007f56",
+    "dist": 13.683027548218751,
+    "angleDeg": 153.515625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc908",
+    "name": "Dark Green",
+    "hex": "#2c5643",
+    "dist": 13.740320978211935,
+    "angleDeg": 156.76171875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1036",
+    "name": "Neon Orange",
+    "hex": "#ff9c4f",
+    "dist": 13.743995851193676,
+    "angleDeg": 20.1953125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1088",
+    "name": "Muted Turquoise",
+    "hex": "#639fae",
+    "dist": 14.018768784828087,
+    "angleDeg": 171.1328125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1101",
+    "name": "Denim Blue",
+    "hex": "#004991",
+    "dist": 14.037335921872764,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc906",
+    "name": "Copenhagen Blue",
+    "hex": "#00549b",
+    "dist": 14.402352725044166,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1081",
+    "name": "Chestnut",
+    "hex": "#7a5857",
+    "dist": 14.551637701135428,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1006",
+    "name": "Parrot Green",
+    "hex": "#009a88",
+    "dist": 14.55634302740336,
+    "angleDeg": 159.53125,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc931",
+    "name": "Dark Purple",
+    "hex": "#5e3757",
+    "dist": 14.598341823164562,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1025",
+    "name": "Periwinkle",
+    "hex": "#6c89af",
+    "dist": 14.731194619515625,
+    "angleDeg": 183.77734375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1100",
+    "name": "China Blue",
+    "hex": "#0055b7",
+    "dist": 14.919660588384259,
+    "angleDeg": 185,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc902",
+    "name": "Ultramarine",
+    "hex": "#3844a8",
+    "dist": 15.350795731382693,
+    "angleDeg": 203.4765625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1078",
+    "name": "Black Cherry",
+    "hex": "#562a41",
+    "dist": 15.545940295793775,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1072",
+    "name": "50% French Grey",
+    "hex": "#8c8580",
+    "dist": 15.705598162523842,
+    "angleDeg": 219.80078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc904",
+    "name": "Light Cerulean Blue",
+    "hex": "#5da3e1",
+    "dist": 15.858071225710775,
+    "angleDeg": 175,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc933",
+    "name": "Violet Blue",
+    "hex": "#2f3687",
+    "dist": 15.984718512661656,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1092",
+    "name": "Nectar",
+    "hex": "#ce8881",
+    "dist": 16.15427956296518,
+    "angleDeg": 229.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc919",
+    "name": "Non- Photo Blue",
+    "hex": "#00b0e6",
+    "dist": 17.76533854872698,
+    "angleDeg": 174.140625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1103",
+    "name": "Caribbean Sea",
+    "hex": "#75a1d7",
+    "dist": 17.867657516963693,
+    "angleDeg": 175,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1034",
+    "name": "Goldenrod",
+    "hex": "#d98f43",
+    "dist": 18.50635293246204,
+    "angleDeg": 339.59375,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1020",
+    "name": "Celadon Green",
+    "hex": "#8ba799",
+    "dist": 18.6020878237289,
+    "angleDeg": 211.3125,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1063",
+    "name": "50% Cool Grey",
+    "hex": "#849199",
+    "dist": 18.960812533266623,
+    "angleDeg": 161.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1001",
+    "name": "Salmon Pink",
+    "hex": "#ffaa85",
+    "dist": 19.049257461442462,
+    "angleDeg": 233.05078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc992",
+    "name": "Light Aqua",
+    "hex": "#00bec0",
+    "dist": 19.39958050149373,
+    "angleDeg": 165.1171875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1035",
+    "name": "Neon Yellow",
+    "hex": "#edff28",
+    "dist": 19.595044207972055,
+    "angleDeg": 67.578125,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc942",
+    "name": "Yellow Ochre",
+    "hex": "#eaab46",
+    "dist": 19.635326380855275,
+    "angleDeg": 39.1015625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1011",
+    "name": "Deco Yellow",
+    "hex": "#f7e771",
+    "dist": 19.86195553979368,
+    "angleDeg": 66.67578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1040",
+    "name": "Electric Blue",
+    "hex": "#43bce7",
+    "dist": 20.320124018482435,
+    "angleDeg": 173.7109375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1024",
+    "name": "Blue Slate",
+    "hex": "#79ade8",
+    "dist": 20.613205504034383,
+    "angleDeg": 175,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc939",
+    "name": "Peach",
+    "hex": "#f0ab94",
+    "dist": 21.039399302327247,
+    "angleDeg": 230.359375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1105",
+    "name": "Orchid",
+    "hex": "#ba7ac3",
+    "dist": 21.528053730042963,
+    "angleDeg": 236.5625,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1104",
+    "name": "Amethyst",
+    "hex": "#b289d7",
+    "dist": 22.101507059640305,
+    "angleDeg": 199.609375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1021",
+    "name": "Jade Green",
+    "hex": "#8da9a6",
+    "dist": 22.273088998917608,
+    "angleDeg": 154.484375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc949",
+    "name": "Silver",
+    "hex": "#9a9e9f",
+    "dist": 23.258903833091914,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc929",
+    "name": "Pink",
+    "hex": "#f8789c",
+    "dist": 23.329378106988255,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc993",
+    "name": "Hot Pink",
+    "hex": "#f473b1",
+    "dist": 23.375395006252944,
+    "angleDeg": 288.125,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1052",
+    "name": "30% Warm Grey",
+    "hex": "#a19d9f",
+    "dist": 23.743293609068537,
+    "angleDeg": 219.80078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc920",
+    "name": "Light Green",
+    "hex": "#7edea9",
+    "dist": 23.978591046779645,
+    "angleDeg": 148.359375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1084",
+    "name": "Ginger Root",
+    "hex": "#d2cd99",
+    "dist": 24.499934413369374,
+    "angleDeg": 129.01953125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1017",
+    "name": "Clay Rose",
+    "hex": "#a68792",
+    "dist": 25.393350655766756,
+    "angleDeg": 223.94140625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc940",
+    "name": "Sand",
+    "hex": "#f3bf62",
+    "dist": 25.685432781169816,
+    "angleDeg": 347.875,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1093",
+    "name": "Seashell Pink",
+    "hex": "#d5be9e",
+    "dist": 25.79398768014476,
+    "angleDeg": 224.1484375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1089",
+    "name": "Pale Sage",
+    "hex": "#c6d5aa",
+    "dist": 26.188040535222793,
+    "angleDeg": 132.74609375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1070",
+    "name": "30% French Grey",
+    "hex": "#bbb2ac",
+    "dist": 26.291283145592626,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1012",
+    "name": "Jasmine",
+    "hex": "#f7ce73",
+    "dist": 26.534128287848112,
+    "angleDeg": 347.875,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1051",
+    "name": "20% Warm Grey",
+    "hex": "#aba9ab",
+    "dist": 26.55127500740112,
+    "angleDeg": 219.80078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1019",
+    "name": "Rosy Beige",
+    "hex": "#c8aaac",
+    "dist": 27.369803770805262,
+    "angleDeg": 224.1484375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1083",
+    "name": "Putty Beige",
+    "hex": "#cbc2b0",
+    "dist": 28.426771279436494,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1085",
+    "name": "Peach Beige",
+    "hex": "#d6c9a3",
+    "dist": 28.943671077187773,
+    "angleDeg": 222.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc928",
+    "name": "Blush Pink",
+    "hex": "#fea6ae",
+    "dist": 29.895212362761715,
+    "angleDeg": 230.98046875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1069",
+    "name": "20% French Grey",
+    "hex": "#c4beb9",
+    "dist": 30.140321013626647,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc997",
+    "name": "Beige",
+    "hex": "#f5cca4",
+    "dist": 30.609442136718787,
+    "angleDeg": 227.66796875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1061",
+    "name": "30% Cool Grey",
+    "hex": "#b2babe",
+    "dist": 31.464478369472342,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc140",
+    "name": "Eggshell",
+    "hex": "#f5d49f",
+    "dist": 32.389074724791854,
+    "angleDeg": 345.59765625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1038",
+    "name": "Neon Pink",
+    "hex": "#ff5dc3",
+    "dist": 32.683806396388995,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc927",
+    "name": "Light Peach",
+    "hex": "#f4c9bc",
+    "dist": 32.69440920690417,
+    "angleDeg": 227.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1026",
+    "name": "Greyed Lavender",
+    "hex": "#b3a1ba",
+    "dist": 33.114508733543225,
+    "angleDeg": 165.6640625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1018",
+    "name": "Pink Rose",
+    "hex": "#e4b0bc",
+    "dist": 33.59177679675715,
+    "angleDeg": 227.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc914",
+    "name": "Cream",
+    "hex": "#f4e6b7",
+    "dist": 33.626303971701816,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1087",
+    "name": "Powder Blue",
+    "hex": "#afcdef",
+    "dist": 33.95548550839185,
+    "angleDeg": 173.7109375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1013",
+    "name": "Deco Peach",
+    "hex": "#fbc7c2",
+    "dist": 34.088494189300846,
+    "angleDeg": 227.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1060",
+    "name": "20% Cool Grey",
+    "hex": "#bec5c9",
+    "dist": 34.63555693911139,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1050",
+    "name": "10% Warm Grey",
+    "hex": "#cfcfce",
+    "dist": 36.320505048963796,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1086",
+    "name": "Sky Blue Light",
+    "hex": "#b6dcef",
+    "dist": 37.40866294149035,
+    "angleDeg": 171.9921875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1059",
+    "name": "10% Cool Grey",
+    "hex": "#cdd2d5",
+    "dist": 38.17537698231784,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1014",
+    "name": "Deco Pink",
+    "hex": "#f7c5d1",
+    "dist": 38.71886222362351,
+    "angleDeg": 227.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1068",
+    "name": "10% French Grey",
+    "hex": "#e1dad4",
+    "dist": 38.883794112169255,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc1023",
+    "name": "Cloud Blue",
+    "hex": "#c3d1e8",
+    "dist": 39.18838085385289,
+    "angleDeg": 172.8515625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc289",
+    "name": "Grey Green Light",
+    "hex": "#dfe5d8",
+    "dist": 40.76333916112046,
+    "angleDeg": 218.765625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "newell brands prismacolor premier soft core colored pencils::pc938",
+    "name": "White",
+    "hex": "#eff0f0",
+    "dist": 47.05243770747199,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  }
+]

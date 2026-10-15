@@ -1,0 +1,1352 @@
+[
+  {
+    "key": "derwent chromaflow pencils::0010",
+    "name": "Citrus Yellow",
+    "hex": "#e9e940",
+    "dist": 0.7512243949613567,
+    "angleDeg": 65.859375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0440",
+    "name": "Carrot",
+    "hex": "#e17552",
+    "dist": 0.7568135432633523,
+    "angleDeg": 233.87890625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2600",
+    "name": "Gold",
+    "hex": "#987c5e",
+    "dist": 1.635845775934025,
+    "angleDeg": 223.734375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1830",
+    "name": "Pickle",
+    "hex": "#7a8060",
+    "dist": 1.69152047073334,
+    "angleDeg": 216.90234375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1120",
+    "name": "Violet Blue",
+    "hex": "#424785",
+    "dist": 1.73716614353439,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0405",
+    "name": "Clementine",
+    "hex": "#fb7126",
+    "dist": 1.8424958423920825,
+    "angleDeg": 12.890625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0985",
+    "name": "Amethyst",
+    "hex": "#754288",
+    "dist": 1.8780324109481354,
+    "angleDeg": 234.4140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0510",
+    "name": "Pure Red",
+    "hex": "#e32b30",
+    "dist": 2.0360264447673577,
+    "angleDeg": -51.5625,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0450",
+    "name": "Cardinal Red",
+    "hex": "#b84637",
+    "dist": 2.3551511652020363,
+    "angleDeg": 321.7890625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1900",
+    "name": "Burnt Sienna",
+    "hex": "#bf6e4e",
+    "dist": 2.6883325780871274,
+    "angleDeg": 231.39453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1800",
+    "name": "Grass Green",
+    "hex": "#39af2f",
+    "dist": 3.12361879091501,
+    "angleDeg": 57.671875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1535",
+    "name": "Field Grey",
+    "hex": "#4e6b60",
+    "dist": 3.313540678215535,
+    "angleDeg": 158.2109375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0430",
+    "name": "Red Orange",
+    "hex": "#fa5931",
+    "dist": 3.3415279980722583,
+    "angleDeg": -5.5859375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1920",
+    "name": "Redwood",
+    "hex": "#9f5143",
+    "dist": 3.4072741933193766,
+    "angleDeg": 279.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1550",
+    "name": "Pine Green",
+    "hex": "#39836d",
+    "dist": 3.5777218324319,
+    "angleDeg": 200.75390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0305",
+    "name": "Sienna Gold",
+    "hex": "#e0652e",
+    "dist": 3.8006770633981777,
+    "angleDeg": 248.3984375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0600",
+    "name": "Strawberry",
+    "hex": "#ad3934",
+    "dist": 3.9407649729933008,
+    "angleDeg": 319.92578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1130",
+    "name": "Iris Purple",
+    "hex": "#565fb1",
+    "dist": 3.9785898898226697,
+    "angleDeg": 196.171875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0200",
+    "name": "Amber Gold",
+    "hex": "#ffab2c",
+    "dist": 4.0527289074305,
+    "angleDeg": 37.3828125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0420",
+    "name": "Autumn Blaze",
+    "hex": "#ea5b33",
+    "dist": 4.999979661467882,
+    "angleDeg": 5.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1010",
+    "name": "Aztec Purple",
+    "hex": "#7f5dac",
+    "dist": 5.324343962622634,
+    "angleDeg": 215.9375,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1530",
+    "name": "Cactus",
+    "hex": "#698a73",
+    "dist": 5.611598570022497,
+    "angleDeg": 152,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1110",
+    "name": "Midnight Purple",
+    "hex": "#40374a",
+    "dist": 5.706058733934929,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0310",
+    "name": "Mango",
+    "hex": "#ff9c17",
+    "dist": 6.180669153004622,
+    "angleDeg": 30.9375,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::2010",
+    "name": "Coffee Bean",
+    "hex": "#4d3f3c",
+    "dist": 6.3665764755990635,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1845",
+    "name": "Oak",
+    "hex": "#4b4638",
+    "dist": 6.369863206595717,
+    "angleDeg": 104.9765625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1825",
+    "name": "Chai",
+    "hex": "#7f6e31",
+    "dist": 6.521440684788827,
+    "angleDeg": 25.16796875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0820",
+    "name": "Cerise Pink",
+    "hex": "#d42570",
+    "dist": 6.632704325347441,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0620",
+    "name": "Sangria",
+    "hex": "#892e38",
+    "dist": 6.797595976792158,
+    "angleDeg": 289.18359375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1710",
+    "name": "Olive Yellow",
+    "hex": "#cdc202",
+    "dist": 7.073078715764273,
+    "angleDeg": 64.19140625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0110",
+    "name": "Sunflower",
+    "hex": "#ffca00",
+    "dist": 7.260862903077754,
+    "angleDeg": 51.1328125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0900",
+    "name": "Magenta",
+    "hex": "#a52158",
+    "dist": 7.446043777462867,
+    "angleDeg": 285.1171875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::2170",
+    "name": "Slate Grey",
+    "hex": "#424f5e",
+    "dist": 7.526004082910559,
+    "angleDeg": 167.3203125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1300",
+    "name": "Blue",
+    "hex": "#007bc4",
+    "dist": 7.707700505460179,
+    "angleDeg": 181.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2300",
+    "name": "Black",
+    "hex": "#393c3e",
+    "dist": 7.876374660560158,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1910",
+    "name": "Spice",
+    "hex": "#c87644",
+    "dist": 7.928081564499948,
+    "angleDeg": 232.22265625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1832",
+    "name": "Lincoln Green",
+    "hex": "#8c895b",
+    "dist": 7.958600939368841,
+    "angleDeg": 28.48046875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2100",
+    "name": "Natural Brown",
+    "hex": "#59443f",
+    "dist": 8.07062457068793,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1700",
+    "name": "Foliage",
+    "hex": "#597942",
+    "dist": 8.085131581753691,
+    "angleDeg": 35.10546875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1501",
+    "name": "Caribbean Green",
+    "hex": "#009387",
+    "dist": 8.137811538430219,
+    "angleDeg": 163.3984375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1260",
+    "name": "Brilliant Blue",
+    "hex": "#006dab",
+    "dist": 8.538658918661346,
+    "angleDeg": 182.53515625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0500",
+    "name": "Scarlet",
+    "hex": "#e03a3b",
+    "dist": 8.603301043833172,
+    "angleDeg": -55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1400",
+    "name": "Light Blue",
+    "hex": "#0092cb",
+    "dist": 8.61037012550885,
+    "angleDeg": 175,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1305",
+    "name": "Blue Yonder",
+    "hex": "#5281a1",
+    "dist": 8.765346065252583,
+    "angleDeg": 185.01953125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0400",
+    "name": "Flame",
+    "hex": "#ff7a41",
+    "dist": 8.86015704908337,
+    "angleDeg": 9.8828125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1000",
+    "name": "Lilac",
+    "hex": "#624198",
+    "dist": 8.868588457565437,
+    "angleDeg": 221.5234375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::2002",
+    "name": "Nutshell",
+    "hex": "#826d5b",
+    "dist": 8.981737960362484,
+    "angleDeg": 222.28515625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0720",
+    "name": "Deep Vermilion",
+    "hex": "#fa6e5c",
+    "dist": 9.022601179086841,
+    "angleDeg": 6.53515625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1801",
+    "name": "Olivine",
+    "hex": "#517a45",
+    "dist": 9.27095074220514,
+    "angleDeg": 144.1328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1411",
+    "name": "Orient",
+    "hex": "#008199",
+    "dist": 9.34974558090699,
+    "angleDeg": 171.1328125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0905",
+    "name": "Jazzberry",
+    "hex": "#ab0060",
+    "dist": 9.492358773276056,
+    "angleDeg": 285.546875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1720",
+    "name": "Key Lime",
+    "hex": "#add005",
+    "dist": 9.614650491948431,
+    "angleDeg": 70.15625,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1410",
+    "name": "Bondi Blue",
+    "hex": "#008cb4",
+    "dist": 9.637282423448463,
+    "angleDeg": 173.28125,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1540",
+    "name": "Obsidian Green",
+    "hex": "#364341",
+    "dist": 9.7988608404063,
+    "angleDeg": 106.21875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2004",
+    "name": "Liquorice",
+    "hex": "#3a3433",
+    "dist": 9.859138760961919,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1600",
+    "name": "Basil",
+    "hex": "#2f6250",
+    "dist": 9.988314159967281,
+    "angleDeg": 156.76171875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1810",
+    "name": "Pear",
+    "hex": "#cbcf57",
+    "dist": 10.09851242066882,
+    "angleDeg": 69.57421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2220",
+    "name": "Neutral Grey",
+    "hex": "#333437",
+    "dist": 10.119204664028764,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1730",
+    "name": "Spring Bud",
+    "hex": "#50ae1c",
+    "dist": 10.243239412701305,
+    "angleDeg": 57.671875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0415",
+    "name": "Orange Crush",
+    "hex": "#ff8246",
+    "dist": 10.252427134809926,
+    "angleDeg": 12.890625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0935",
+    "name": "Dusky Purple",
+    "hex": "#373133",
+    "dist": 10.261852395481139,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0030",
+    "name": "Lemon",
+    "hex": "#f6e757",
+    "dist": 10.275418147044748,
+    "angleDeg": 65,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0100",
+    "name": "Sun Yellow",
+    "hex": "#ffdb00",
+    "dist": 10.431781011810967,
+    "angleDeg": 55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1320",
+    "name": "Deep Sea",
+    "hex": "#313a4a",
+    "dist": 10.458620965354985,
+    "angleDeg": 114.0859375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1200",
+    "name": "Denim",
+    "hex": "#2c3a5f",
+    "dist": 10.628974194352852,
+    "angleDeg": 173.73828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1230",
+    "name": "Periwinkle",
+    "hex": "#5a7ca9",
+    "dist": 10.724408260729144,
+    "angleDeg": 183.15625,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1840",
+    "name": "Mocha",
+    "hex": "#7c695a",
+    "dist": 10.833947351158853,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1112",
+    "name": "Egyptian Blue",
+    "hex": "#302e41",
+    "dist": 10.846176017163662,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1831",
+    "name": "Leaf Green",
+    "hex": "#384233",
+    "dist": 11.024652017336406,
+    "angleDeg": 104.5625,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2140",
+    "name": "Carbon Grey",
+    "hex": "#67696c",
+    "dist": 11.077803490691656,
+    "angleDeg": 164.0078125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2210",
+    "name": "Charcoal Grey",
+    "hex": "#313536",
+    "dist": 11.101252547937701,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1802",
+    "name": "Light Olive",
+    "hex": "#374c39",
+    "dist": 11.488384145160243,
+    "angleDeg": 101.25,
+    "radiusPx": 577,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1610",
+    "name": "Green Meadow",
+    "hex": "#56d380",
+    "dist": 11.79279320303094,
+    "angleDeg": 128.59375,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1420",
+    "name": "Teal",
+    "hex": "#008d9e",
+    "dist": 11.877259266564824,
+    "angleDeg": 169.4140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0610",
+    "name": "Pompeian Red",
+    "hex": "#a63544",
+    "dist": 11.939790653093002,
+    "angleDeg": 284.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0960",
+    "name": "Mardi Gras",
+    "hex": "#892a82",
+    "dist": 11.953421034410242,
+    "angleDeg": 247.3046875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0945",
+    "name": "Deep Rose",
+    "hex": "#6f2042",
+    "dist": 11.973871903968476,
+    "angleDeg": 298.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2130",
+    "name": "Basalt Grey",
+    "hex": "#70706d",
+    "dist": 12.040806019996882,
+    "angleDeg": 102.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1105",
+    "name": "Dark Purple",
+    "hex": "#2f2d31",
+    "dist": 12.305965651554004,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1100",
+    "name": "Violet",
+    "hex": "#4b326e",
+    "dist": 12.33226903963599,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2001",
+    "name": "Bourbon",
+    "hex": "#805c4a",
+    "dist": 13.012399611335654,
+    "angleDeg": 224.76953125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1620",
+    "name": "Tropical Rain",
+    "hex": "#007558",
+    "dist": 13.070750257606381,
+    "angleDeg": 158.671875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1210",
+    "name": "Lapis Blue",
+    "hex": "#1f5ac6",
+    "dist": 13.149774817384657,
+    "angleDeg": 185,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1860",
+    "name": "Brown Sugar",
+    "hex": "#d19055",
+    "dist": 13.295323370910163,
+    "angleDeg": 339.59375,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1605",
+    "name": "Mint Leaf",
+    "hex": "#00a067",
+    "dist": 13.331153302264438,
+    "angleDeg": 145.3515625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0300",
+    "name": "Golden Sun",
+    "hex": "#c57732",
+    "dist": 13.595425865731727,
+    "angleDeg": 260.40625,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1820",
+    "name": "Lemon Lime",
+    "hex": "#cbdd00",
+    "dist": 13.677066893917104,
+    "angleDeg": 66.71875,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1250",
+    "name": "Santorini",
+    "hex": "#005fb2",
+    "dist": 13.71722535042442,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0990",
+    "name": "Mauve",
+    "hex": "#3e243f",
+    "dist": 14.321138523153685,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1123",
+    "name": "Mariner",
+    "hex": "#2a45a1",
+    "dist": 14.51221384615419,
+    "angleDeg": 203.4765625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1140",
+    "name": "Glaucous Blue",
+    "hex": "#667aa8",
+    "dist": 14.526548536363308,
+    "angleDeg": 182.94921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1502",
+    "name": "Laurel Green",
+    "hex": "#919a8a",
+    "dist": 14.656497181119427,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0630",
+    "name": "Shiraz",
+    "hex": "#492c2c",
+    "dist": 14.72999877392676,
+    "angleDeg": 113.671875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0810",
+    "name": "Hot Pink",
+    "hex": "#e94869",
+    "dist": 14.74170523178782,
+    "angleDeg": 306.26171875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0910",
+    "name": "Ultra Pink",
+    "hex": "#be308d",
+    "dist": 15.054620544910232,
+    "angleDeg": 276.09375,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::2700",
+    "name": "Silver Mint",
+    "hex": "#8a8e86",
+    "dist": 15.14492910165434,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2160",
+    "name": "Lavender Ash",
+    "hex": "#79737e",
+    "dist": 15.288869595329622,
+    "angleDeg": 165.45703125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2003",
+    "name": "Willow",
+    "hex": "#713c2c",
+    "dist": 15.392608308495664,
+    "angleDeg": 285.6640625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0955",
+    "name": "Wild Berry",
+    "hex": "#8a0061",
+    "dist": 15.405028027028528,
+    "angleDeg": 271.3671875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::2105",
+    "name": "Biscotti",
+    "hex": "#93847f",
+    "dist": 15.572522396060664,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1510",
+    "name": "Eucalyptus",
+    "hex": "#006460",
+    "dist": 15.908397924966348,
+    "angleDeg": 194.3359375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2000",
+    "name": "Raisin",
+    "hex": "#693932",
+    "dist": 15.93298945793052,
+    "angleDeg": 290.6328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0800",
+    "name": "Blush Pink",
+    "hex": "#ff827a",
+    "dist": 16.12261203968089,
+    "angleDeg": 234.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0640",
+    "name": "Turkish Delight",
+    "hex": "#c28982",
+    "dist": 16.436164636412318,
+    "angleDeg": 227.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1850",
+    "name": "Dijon",
+    "hex": "#d1ac6a",
+    "dist": 16.53756702082115,
+    "angleDeg": 344.5625,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1405",
+    "name": "Sea Blue",
+    "hex": "#003658",
+    "dist": 16.62820433013748,
+    "angleDeg": 172.08203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2800",
+    "name": "Ice Blue",
+    "hex": "#7b8c96",
+    "dist": 16.655924281171945,
+    "angleDeg": 163.1796875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0320",
+    "name": "Butterscotch",
+    "hex": "#ffba55",
+    "dist": 16.986430176327445,
+    "angleDeg": 39.1015625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::2180",
+    "name": "Winter Lake",
+    "hex": "#7c8d98",
+    "dist": 17.008430771258833,
+    "angleDeg": 163.1796875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1111",
+    "name": "Picotee Blue",
+    "hex": "#2b2a4d",
+    "dist": 17.378582662887077,
+    "angleDeg": 175.39453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1220",
+    "name": "Blue Orchid",
+    "hex": "#66a6e5",
+    "dist": 17.84198018923777,
+    "angleDeg": 175,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0940",
+    "name": "Midnight Mauve",
+    "hex": "#63264f",
+    "dist": 17.980175691693063,
+    "angleDeg": 252.4609375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1121",
+    "name": "Lagoon",
+    "hex": "#22213d",
+    "dist": 18.34767402782929,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1740",
+    "name": "Jungle Green",
+    "hex": "#007834",
+    "dist": 19.10119701405195,
+    "angleDeg": 145.3515625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::2120",
+    "name": "Pebble",
+    "hex": "#aea496",
+    "dist": 19.225708504766644,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0120",
+    "name": "Dandelion",
+    "hex": "#f1bd4c",
+    "dist": 19.4542729640384,
+    "angleDeg": 45.1171875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1122",
+    "name": "Peacock Blue",
+    "hex": "#1f214d",
+    "dist": 19.643630647031888,
+    "angleDeg": 176.63671875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1412",
+    "name": "Mineral Blue",
+    "hex": "#004f64",
+    "dist": 19.671719644837722,
+    "angleDeg": 187.296875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1240",
+    "name": "Carolina Blue",
+    "hex": "#7fa4c7",
+    "dist": 20.12382729927364,
+    "angleDeg": 174.140625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::2145",
+    "name": "Almond Frost",
+    "hex": "#9e878b",
+    "dist": 21.21796664771548,
+    "angleDeg": 222.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0140",
+    "name": "Pineapple",
+    "hex": "#fac959",
+    "dist": 21.22647507566985,
+    "angleDeg": 46.8359375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0150",
+    "name": "Sandcastle",
+    "hex": "#dfac4b",
+    "dist": 21.34435126167532,
+    "angleDeg": 345.59765625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0410",
+    "name": "Melon",
+    "hex": "#ffac6c",
+    "dist": 21.722901038015525,
+    "angleDeg": 234.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2500",
+    "name": "Silver",
+    "hex": "#93979a",
+    "dist": 22.139825749830173,
+    "angleDeg": 159.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1500",
+    "name": "Turquoise Green",
+    "hex": "#00cec0",
+    "dist": 22.917863055295804,
+    "angleDeg": 160.8203125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0920",
+    "name": "Orchid",
+    "hex": "#cd71c1",
+    "dist": 23.273495804727013,
+    "angleDeg": 255.46875,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1520",
+    "name": "Pastel Mint",
+    "hex": "#a0c3a7",
+    "dist": 23.422266135476857,
+    "angleDeg": 143.09765625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1870",
+    "name": "Peach Sand",
+    "hex": "#f1b580",
+    "dist": 23.439551959246728,
+    "angleDeg": 229.53125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0950",
+    "name": "Hollywood Pink",
+    "hex": "#ac1590",
+    "dist": 23.482341235229836,
+    "angleDeg": 265.78125,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0995",
+    "name": "Dewberry",
+    "hex": "#b878a3",
+    "dist": 24.131222343847718,
+    "angleDeg": 253.75,
+    "radiusPx": 195,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::2161",
+    "name": "Rose Quartz",
+    "hex": "#988f9f",
+    "dist": 24.2836107521106,
+    "angleDeg": 165.6640625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2110",
+    "name": "Morning Mist",
+    "hex": "#b8b5a9",
+    "dist": 25.11317564294215,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2163",
+    "name": "Moon Rock",
+    "hex": "#a9aaa9",
+    "dist": 25.483192844277852,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2150",
+    "name": "Red Storm",
+    "hex": "#aea0a4",
+    "dist": 25.539398751158352,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0710",
+    "name": "Ash Rose",
+    "hex": "#d4a7a8",
+    "dist": 26.339504385754644,
+    "angleDeg": 225.59765625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0700",
+    "name": "Salmon",
+    "hex": "#edb4aa",
+    "dist": 27.036261831968243,
+    "angleDeg": 228.703125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0130",
+    "name": "Soft Yellow",
+    "hex": "#f6dc88",
+    "dist": 27.08120200085194,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::1855",
+    "name": "Saffron Mango",
+    "hex": "#f5c688",
+    "dist": 27.531236133536797,
+    "angleDeg": 343.734375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0020",
+    "name": "Parmesan",
+    "hex": "#f6eba1",
+    "dist": 27.631958832068715,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0980",
+    "name": "Light Heather",
+    "hex": "#c98ed3",
+    "dist": 28.10701849028188,
+    "angleDeg": 226.25,
+    "radiusPx": 195,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::2190",
+    "name": "Oxford Grey",
+    "hex": "#9eb1b6",
+    "dist": 28.128928625428177,
+    "angleDeg": 157.17578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0975",
+    "name": "French Mauve",
+    "hex": "#bd8bbd",
+    "dist": 28.458109762278816,
+    "angleDeg": 238.28125,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::0930",
+    "name": "Pink Heather",
+    "hex": "#c48bb6",
+    "dist": 30.16202456963643,
+    "angleDeg": 245.15625,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::1310",
+    "name": "Glacier Blue",
+    "hex": "#9bcee9",
+    "dist": 30.531357794837696,
+    "angleDeg": 172.8515625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent chromaflow pencils::2162",
+    "name": "Fell Mist",
+    "hex": "#c3c3bf",
+    "dist": 31.779535711255,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2200",
+    "name": "Platinum",
+    "hex": "#bdc0c1",
+    "dist": 32.494620631442984,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0925",
+    "name": "Rose Pink",
+    "hex": "#f5cdd9",
+    "dist": 40.80230071892078,
+    "angleDeg": 225.8046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0965",
+    "name": "Oyster",
+    "hex": "#e4d9de",
+    "dist": 41.53650400290919,
+    "angleDeg": 222.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::0970",
+    "name": "Light Mauve",
+    "hex": "#e0c0df",
+    "dist": 44.71288897957932,
+    "angleDeg": 224.1484375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent chromaflow pencils::2400",
+    "name": "White",
+    "hex": "#f4f2ed",
+    "dist": 46.62692819065167,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  }
+]

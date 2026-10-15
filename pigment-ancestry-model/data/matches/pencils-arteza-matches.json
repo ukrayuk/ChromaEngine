@@ -1,0 +1,1202 @@
+[
+  {
+    "key": "arteza expert 120::A016",
+    "name": "Sunflower Yellow",
+    "hex": "#ffc800",
+    "dist": 0.6517994267271464,
+    "l3dist": 37.63147312700045,
+    "best": 0.6517994267271464,
+    "angleDeg": 52.421875,
+    "radiusPx": 379
+  },
+  {
+    "key": "arteza expert 120::A041",
+    "name": "Emerald Green",
+    "hex": "#00a86b",
+    "dist": 1.2746110341872021,
+    "l3dist": 16.716095024008517,
+    "best": 1.2746110341872021,
+    "angleDeg": 145.3515625,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A105",
+    "name": "Jade",
+    "hex": "#00a86b",
+    "dist": 1.2746110341872021,
+    "l3dist": 16.716095024008517,
+    "best": 1.2746110341872021,
+    "angleDeg": 145.3515625,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A106",
+    "name": "Viridian",
+    "hex": "#40826d",
+    "dist": 1.8030834212833475,
+    "l3dist": 20.252452617574463,
+    "best": 1.8030834212833475,
+    "angleDeg": 200.75390625,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A056",
+    "name": "Cerulean Blue",
+    "hex": "#007ba7",
+    "dist": 2.100312278846123,
+    "l3dist": 32.90183792254853,
+    "best": 2.100312278846123,
+    "angleDeg": 183.984375,
+    "radiusPx": 713
+  },
+  {
+    "key": "arteza expert 120::A033",
+    "name": "Plum",
+    "hex": "#8e4585",
+    "dist": 2.741845517093799,
+    "l3dist": 30.682026775801404,
+    "best": 2.741845517093799,
+    "angleDeg": 248.59375,
+    "radiusPx": 333
+  },
+  {
+    "key": "arteza expert 120::A081",
+    "name": "Gold",
+    "hex": "#ffd700",
+    "dist": 2.9604022434838426,
+    "l3dist": 36.23003935375953,
+    "best": 2.9604022434838426,
+    "angleDeg": 55,
+    "radiusPx": 103
+  },
+  {
+    "key": "arteza expert 120::A100",
+    "name": "Gold Yellow",
+    "hex": "#ffd700",
+    "dist": 2.9604022434838426,
+    "l3dist": 36.23003935375953,
+    "best": 2.9604022434838426,
+    "angleDeg": 55,
+    "radiusPx": 103
+  },
+  {
+    "key": "arteza expert 120::A011",
+    "name": "Scarlet Red",
+    "hex": "#e32636",
+    "dist": 3.5659155655127193,
+    "l3dist": 13.430375062537783,
+    "best": 3.5659155655127193,
+    "angleDeg": -55,
+    "radiusPx": 103
+  },
+  {
+    "key": "arteza expert 120::A119",
+    "name": "Payne's Grey",
+    "hex": "#536878",
+    "dist": 3.5982870149392,
+    "l3dist": 13.085075371819995,
+    "best": 3.5982870149392,
+    "angleDeg": 165.6640625,
+    "radiusPx": 747
+  },
+  {
+    "key": "arteza expert 120::A084",
+    "name": "Bronze",
+    "hex": "#cd7f32",
+    "dist": 16.77127995534756,
+    "l3dist": 3.922973894865336,
+    "best": 3.922973894865336,
+    "angleDeg": 255.4375,
+    "radiusPx": 645
+  },
+  {
+    "key": "arteza expert 120::A061",
+    "name": "Chestnut",
+    "hex": "#954535",
+    "dist": 4.279393445316564,
+    "l3dist": 8.122199351772592,
+    "best": 4.279393445316564,
+    "angleDeg": 279.453125,
+    "radiusPx": 713
+  },
+  {
+    "key": "arteza expert 120::A008",
+    "name": "Mandarin",
+    "hex": "#ff8800",
+    "dist": 4.606686493031421,
+    "l3dist": 19.64347245014025,
+    "best": 4.606686493031421,
+    "angleDeg": 29.21875,
+    "radiusPx": 333
+  },
+  {
+    "key": "arteza expert 120::A051",
+    "name": "Teal",
+    "hex": "#008080",
+    "dist": 4.886234182474061,
+    "l3dist": 30.581327600347905,
+    "best": 4.886234182474061,
+    "angleDeg": 193.30078125,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A005",
+    "name": "Raw Sienna",
+    "hex": "#966a38",
+    "dist": 5.105859013379065,
+    "l3dist": 10.569480953146652,
+    "best": 5.105859013379065,
+    "angleDeg": 19.9921875,
+    "radiusPx": 747
+  },
+  {
+    "key": "arteza expert 120::A063",
+    "name": "Umber",
+    "hex": "#635147",
+    "dist": 6.8008218936541045,
+    "l3dist": 5.156243666890388,
+    "best": 5.156243666890388,
+    "angleDeg": 105.18359375,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A002",
+    "name": "Cadmium Yellow",
+    "hex": "#ffdf00",
+    "dist": 5.328842665840768,
+    "l3dist": 36.42946991120246,
+    "best": 5.328842665840768,
+    "angleDeg": 61.5,
+    "radiusPx": 543
+  },
+  {
+    "key": "arteza expert 120::A010",
+    "name": "Terracotta",
+    "hex": "#c35237",
+    "dist": 5.3559258931040565,
+    "l3dist": 6.692660084072355,
+    "best": 5.3559258931040565,
+    "angleDeg": 9.01953125,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A086",
+    "name": "Metallic Blue",
+    "hex": "#4682b4",
+    "dist": 5.746343094999812,
+    "l3dist": 31.98614744497052,
+    "best": 5.746343094999812,
+    "angleDeg": 183.15625,
+    "radiusPx": 679
+  },
+  {
+    "key": "arteza expert 120::A111",
+    "name": "Steel Blue",
+    "hex": "#4682b4",
+    "dist": 5.746343094999812,
+    "l3dist": 31.98614744497052,
+    "best": 5.746343094999812,
+    "angleDeg": 183.15625,
+    "radiusPx": 679
+  },
+  {
+    "key": "arteza expert 120::A103",
+    "name": "Khaki Green",
+    "hex": "#8a9a5b",
+    "dist": 6.456889300020642,
+    "l3dist": 8.7014026682923,
+    "best": 6.456889300020642,
+    "angleDeg": 134.609375,
+    "radiusPx": 713
+  },
+  {
+    "key": "arteza expert 120::A032",
+    "name": "Royal Purple",
+    "hex": "#7851a9",
+    "dist": 6.572487412600911,
+    "l3dist": 39.68413127612171,
+    "best": 6.572487412600911,
+    "angleDeg": 214.6484375,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A014",
+    "name": "Crimson",
+    "hex": "#dc143c",
+    "dist": 6.731406334620791,
+    "l3dist": 17.337025791839768,
+    "best": 6.731406334620791,
+    "angleDeg": 301.5,
+    "radiusPx": 543
+  },
+  {
+    "key": "arteza expert 120::A022",
+    "name": "Crimson Red",
+    "hex": "#dc143c",
+    "dist": 6.731406334620791,
+    "l3dist": 17.337025791839768,
+    "best": 6.731406334620791,
+    "angleDeg": 301.5,
+    "radiusPx": 543
+  },
+  {
+    "key": "arteza expert 120::A064",
+    "name": "Vandyke Brown",
+    "hex": "#58463e",
+    "dist": 7.459500962999654,
+    "l3dist": 6.789418747280722,
+    "best": 6.789418747280722,
+    "angleDeg": 105.18359375,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A083",
+    "name": "Copper",
+    "hex": "#b87333",
+    "dist": 9.210945141543553,
+    "l3dist": 7.375885626670637,
+    "best": 7.375885626670637,
+    "angleDeg": 337.109375,
+    "radiusPx": 713
+  },
+  {
+    "key": "arteza expert 120::A079",
+    "name": "Charcoal",
+    "hex": "#36454f",
+    "dist": 9.794898388853897,
+    "l3dist": 8.134870547178206,
+    "best": 8.134870547178206,
+    "angleDeg": 111.1875,
+    "radiusPx": 645
+  },
+  {
+    "key": "arteza expert 120::A085",
+    "name": "Brass",
+    "hex": "#b5a642",
+    "dist": 8.150505247060076,
+    "l3dist": 9.948689723770888,
+    "best": 8.150505247060076,
+    "angleDeg": 350.7734375,
+    "radiusPx": 747
+  },
+  {
+    "key": "arteza expert 120::A117",
+    "name": "Warm Grey",
+    "hex": "#b5a642",
+    "dist": 8.150505247060076,
+    "l3dist": 9.948689723770888,
+    "best": 8.150505247060076,
+    "angleDeg": 350.7734375,
+    "radiusPx": 747
+  },
+  {
+    "key": "arteza expert 120::A095",
+    "name": "Wine Red",
+    "hex": "#722f37",
+    "dist": 8.154002452393813,
+    "l3dist": 22.73190043537028,
+    "best": 8.154002452393813,
+    "angleDeg": 296.63671875,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A060",
+    "name": "Cocoa Brown",
+    "hex": "#d2691e",
+    "dist": 8.394739811852094,
+    "l3dist": 11.459229724370456,
+    "best": 8.394739811852094,
+    "angleDeg": 249.43359375,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A019",
+    "name": "Coral",
+    "hex": "#ff7f50",
+    "dist": 8.565664671549818,
+    "l3dist": 14.17533423562088,
+    "best": 8.565664671549818,
+    "angleDeg": 245.9140625,
+    "radiusPx": 747
+  },
+  {
+    "key": "arteza expert 120::A007",
+    "name": "Orange",
+    "hex": "#ff6600",
+    "dist": 8.623293594436438,
+    "l3dist": 26.448928374234903,
+    "best": 8.623293594436438,
+    "angleDeg": 13.3203125,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A052",
+    "name": "Pumpkin Orange",
+    "hex": "#ff6600",
+    "dist": 8.623293594436438,
+    "l3dist": 26.448928374234903,
+    "best": 8.623293594436438,
+    "angleDeg": 13.3203125,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A038",
+    "name": "Smalt Blue",
+    "hex": "#518dc9",
+    "dist": 9.23524717173405,
+    "l3dist": 37.39869514336891,
+    "best": 9.23524717173405,
+    "angleDeg": 182.328125,
+    "radiusPx": 713
+  },
+  {
+    "key": "arteza expert 120::A050",
+    "name": "Forest Green",
+    "hex": "#228b22",
+    "dist": 9.271586595322148,
+    "l3dist": 10.43270701188898,
+    "best": 9.271586595322148,
+    "angleDeg": 50.21875,
+    "radiusPx": 679
+  },
+  {
+    "key": "arteza expert 120::A067",
+    "name": "Taupe",
+    "hex": "#483c32",
+    "dist": 9.273324299849513,
+    "l3dist": 10.112017279248414,
+    "best": 9.273324299849513,
+    "angleDeg": 106.6328125,
+    "radiusPx": 747
+  },
+  {
+    "key": "arteza expert 120::A097",
+    "name": "Brick Red",
+    "hex": "#cb4154",
+    "dist": 9.326464996424752,
+    "l3dist": 15.282334526255191,
+    "best": 9.326464996424752,
+    "angleDeg": 310.40234375,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A094",
+    "name": "Mulberry",
+    "hex": "#c54b8c",
+    "dist": 9.820803996999087,
+    "l3dist": 42.43886204860022,
+    "best": 9.820803996999087,
+    "angleDeg": 277.8125,
+    "radiusPx": 287
+  },
+  {
+    "key": "arteza expert 120::A009",
+    "name": "Burnt Sienna",
+    "hex": "#8a3324",
+    "dist": 9.85519167191121,
+    "l3dist": 14.742600124583342,
+    "best": 9.85519167191121,
+    "angleDeg": 279.24609375,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A054",
+    "name": "Sea Green",
+    "hex": "#2e8b57",
+    "dist": 10.802680342076359,
+    "l3dist": 11.83580328361678,
+    "best": 10.802680342076359,
+    "angleDeg": 152.65625,
+    "radiusPx": 333
+  },
+  {
+    "key": "arteza expert 120::A109",
+    "name": "Peacock Blue",
+    "hex": "#006060",
+    "dist": 11.483666015129081,
+    "l3dist": 23.292894384861853,
+    "best": 11.483666015129081,
+    "angleDeg": 192.88671875,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A018",
+    "name": "Salmon",
+    "hex": "#fa8072",
+    "dist": 12.122423058662074,
+    "l3dist": 15.699130460353153,
+    "best": 12.122423058662074,
+    "angleDeg": 233.87890625,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A099",
+    "name": "Burnt Orange",
+    "hex": "#cc5500",
+    "dist": 12.563475506222527,
+    "l3dist": 19.658078139847042,
+    "best": 12.563475506222527,
+    "angleDeg": 245.9140625,
+    "radiusPx": 747
+  },
+  {
+    "key": "arteza expert 120::A046",
+    "name": "Olive Green",
+    "hex": "#808000",
+    "dist": 12.74257813364965,
+    "l3dist": 15.025753100144623,
+    "best": 12.74257813364965,
+    "angleDeg": 350.56640625,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A102",
+    "name": "Olive",
+    "hex": "#808000",
+    "dist": 12.74257813364965,
+    "l3dist": 15.025753100144623,
+    "best": 12.74257813364965,
+    "angleDeg": 350.56640625,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A080",
+    "name": "Slate",
+    "hex": "#708090",
+    "dist": 13.356897176488458,
+    "l3dist": 20.347257286799287,
+    "best": 13.356897176488458,
+    "angleDeg": 165.25,
+    "radiusPx": 577
+  },
+  {
+    "key": "arteza expert 120::A001",
+    "name": "Lemon Yellow",
+    "hex": "#fff200",
+    "dist": 13.359918982144215,
+    "l3dist": 39.380217441257734,
+    "best": 13.359918982144215,
+    "angleDeg": 65,
+    "radiusPx": 103
+  },
+  {
+    "key": "arteza expert 120::A070",
+    "name": "Camel",
+    "hex": "#c19a6b",
+    "dist": 13.966342524596733,
+    "l3dist": 13.401767538436765,
+    "best": 13.401767538436765,
+    "angleDeg": 225.8046875,
+    "radiusPx": 747
+  },
+  {
+    "key": "arteza expert 120::A098",
+    "name": "Rust",
+    "hex": "#b7410e",
+    "dist": 13.767143024188657,
+    "l3dist": 19.220093216802276,
+    "best": 13.767143024188657,
+    "angleDeg": 255.23046875,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A043",
+    "name": "Lime Green",
+    "hex": "#32cd32",
+    "dist": 14.169426404578681,
+    "l3dist": 32.3246156381607,
+    "best": 14.169426404578681,
+    "angleDeg": 96.796875,
+    "radiusPx": 379
+  },
+  {
+    "key": "arteza expert 120::A013",
+    "name": "Carmine Red",
+    "hex": "#960018",
+    "dist": 14.441535492431969,
+    "l3dist": 22.368102117765286,
+    "best": 14.441535492431969,
+    "angleDeg": 314.12890625,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A004",
+    "name": "Yellow Ochre",
+    "hex": "#cb9c37",
+    "dist": 17.686222225827983,
+    "l3dist": 15.485249465238454,
+    "best": 15.485249465238454,
+    "angleDeg": 345.390625,
+    "radiusPx": 713
+  },
+  {
+    "key": "arteza expert 120::A112",
+    "name": "Slate Blue",
+    "hex": "#6a5acd",
+    "dist": 15.588156531797624,
+    "l3dist": 54.83800733694089,
+    "best": 15.588156531797624,
+    "angleDeg": 185,
+    "radiusPx": 103
+  },
+  {
+    "key": "arteza expert 120::A045",
+    "name": "Sage Green",
+    "hex": "#8fbc8f",
+    "dist": 15.684853832333944,
+    "l3dist": 24.394591659207293,
+    "best": 15.684853832333944,
+    "angleDeg": 137.921875,
+    "radiusPx": 713
+  },
+  {
+    "key": "arteza expert 120::A088",
+    "name": "Metallic Purple",
+    "hex": "#9370db",
+    "dist": 15.81593869815501,
+    "l3dist": 52.61019409563421,
+    "best": 15.81593869815501,
+    "angleDeg": 185,
+    "radiusPx": 103
+  },
+  {
+    "key": "arteza expert 120::A049",
+    "name": "Apple Green",
+    "hex": "#8db600",
+    "dist": 15.941656568558757,
+    "l3dist": 18.415747240146807,
+    "best": 15.941656568558757,
+    "angleDeg": 73.1640625,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A062",
+    "name": "Mahogany",
+    "hex": "#c04000",
+    "dist": 16.21261738520937,
+    "l3dist": 21.64354981286518,
+    "best": 16.21261738520937,
+    "angleDeg": 248.60546875,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A077",
+    "name": "Medium Grey",
+    "hex": "#808080",
+    "dist": 16.361571069307615,
+    "l3dist": 17.11881020313869,
+    "best": 16.361571069307615,
+    "angleDeg": 160.48828125,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A003",
+    "name": "Dandelion",
+    "hex": "#fdf06f",
+    "dist": 16.656754715986654,
+    "l3dist": 22.63498775528219,
+    "best": 16.656754715986654,
+    "angleDeg": 65.4296875,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A065",
+    "name": "Sepia",
+    "hex": "#704214",
+    "dist": 17.151092273484096,
+    "l3dist": 18.043519161897187,
+    "best": 17.151092273484096,
+    "angleDeg": 19.37109375,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A114",
+    "name": "Amethyst",
+    "hex": "#9966cc",
+    "dist": 17.375424445724164,
+    "l3dist": 49.67384851079338,
+    "best": 17.375424445724164,
+    "angleDeg": 214.6484375,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A037",
+    "name": "Cobalt Blue",
+    "hex": "#0047ab",
+    "dist": 17.409585346087294,
+    "l3dist": 48.85045530263549,
+    "best": 17.409585346087294,
+    "angleDeg": 185,
+    "radiusPx": 103
+  },
+  {
+    "key": "arteza expert 120::A057",
+    "name": "Prussian Blue",
+    "hex": "#003153",
+    "dist": 17.520981704258705,
+    "l3dist": 20.149882399702506,
+    "best": 17.520981704258705,
+    "angleDeg": 172.08203125,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A059",
+    "name": "Chocolate Brown",
+    "hex": "#7b3f00",
+    "dist": 18.141854066428184,
+    "l3dist": 24.088712072515687,
+    "best": 18.141854066428184,
+    "angleDeg": 334.00390625,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A015",
+    "name": "Burgundy",
+    "hex": "#800020",
+    "dist": 19.709251456311442,
+    "l3dist": 26.384326270012167,
+    "best": 19.709251456311442,
+    "angleDeg": 285.87109375,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A068",
+    "name": "Khaki",
+    "hex": "#c3b091",
+    "dist": 20.4788749477449,
+    "l3dist": 24.93921040176233,
+    "best": 20.4788749477449,
+    "angleDeg": 222.69921875,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A042",
+    "name": "Light Green",
+    "hex": "#90ee90",
+    "dist": 20.701192278297327,
+    "l3dist": 27.425654346872133,
+    "best": 20.701192278297327,
+    "angleDeg": 113.125,
+    "radiusPx": 241
+  },
+  {
+    "key": "arteza expert 120::A096",
+    "name": "Maroon",
+    "hex": "#800000",
+    "dist": 21.161136635564898,
+    "l3dist": 26.631186359248616,
+    "best": 21.161136635564898,
+    "angleDeg": 320.75390625,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A108",
+    "name": "Ocean Blue",
+    "hex": "#4f42b5",
+    "dist": 21.603827487990433,
+    "l3dist": 55.023563067827176,
+    "best": 21.603827487990433,
+    "angleDeg": 203.4765625,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A044",
+    "name": "Mint Green",
+    "hex": "#98ff98",
+    "dist": 22.037859553876615,
+    "l3dist": 32.70094748834194,
+    "best": 22.037859553876615,
+    "angleDeg": 101.09375,
+    "radiusPx": 333
+  },
+  {
+    "key": "arteza expert 120::A012",
+    "name": "Black",
+    "hex": "#1a1a1a",
+    "dist": 22.0790105696012,
+    "l3dist": 23.901874382750897,
+    "best": 22.0790105696012,
+    "angleDeg": 112.63671875,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A066",
+    "name": "Bistre",
+    "hex": "#3d2314",
+    "dist": 22.481115694213383,
+    "l3dist": 23.25230607029823,
+    "best": 22.481115694213383,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A118",
+    "name": "Cool Grey",
+    "hex": "#8c92ac",
+    "dist": 22.99327981728199,
+    "l3dist": 28.97815655136331,
+    "best": 22.99327981728199,
+    "angleDeg": 165.6640625,
+    "radiusPx": 747
+  },
+  {
+    "key": "arteza expert 120::A026",
+    "name": "Rose",
+    "hex": "#ff007f",
+    "dist": 23.71014906373439,
+    "l3dist": 43.98232728341599,
+    "best": 23.71014906373439,
+    "angleDeg": 295,
+    "radiusPx": 103
+  },
+  {
+    "key": "arteza expert 120::A069",
+    "name": "Buff",
+    "hex": "#f0dc82",
+    "dist": 24.96898173428702,
+    "l3dist": 23.75245313618756,
+    "best": 23.75245313618756,
+    "angleDeg": 125.5,
+    "radiusPx": 543
+  },
+  {
+    "key": "arteza expert 120::A031",
+    "name": "Purple",
+    "hex": "#800080",
+    "dist": 23.77862528453894,
+    "l3dist": 51.96511006141565,
+    "best": 23.77862528453894,
+    "angleDeg": 247.3046875,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A089",
+    "name": "Metallic Pink",
+    "hex": "#ff69b4",
+    "dist": 23.894569570248965,
+    "l3dist": 48.29504511905999,
+    "best": 23.894569570248965,
+    "angleDeg": 291.5625,
+    "radiusPx": 287
+  },
+  {
+    "key": "arteza expert 120::A087",
+    "name": "Metallic Green",
+    "hex": "#00fa9a",
+    "dist": 25.103087999554667,
+    "l3dist": 36.51710466142284,
+    "best": 25.103087999554667,
+    "angleDeg": 117.8515625,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A047",
+    "name": "Moss Green",
+    "hex": "#addfad",
+    "dist": 25.276444911970902,
+    "l3dist": 35.0820598139654,
+    "best": 25.276444911970902,
+    "angleDeg": 134.1953125,
+    "radiusPx": 747
+  },
+  {
+    "key": "arteza expert 120::A078",
+    "name": "Dark Grey",
+    "hex": "#a9a9a9",
+    "dist": 25.641502647676504,
+    "l3dist": 31.260373344773733,
+    "best": 25.641502647676504,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A104",
+    "name": "Celadon",
+    "hex": "#ace1af",
+    "dist": 26.00034262902504,
+    "l3dist": 35.54839510082375,
+    "best": 26.00034262902504,
+    "angleDeg": 134.1953125,
+    "radiusPx": 747
+  },
+  {
+    "key": "arteza expert 120::A053",
+    "name": "Turquoise",
+    "hex": "#40e0d0",
+    "dist": 27.615594491784428,
+    "l3dist": 46.20700111475956,
+    "best": 27.615594491784428,
+    "angleDeg": 160.8203125,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A113",
+    "name": "Midnight Blue",
+    "hex": "#191970",
+    "dist": 27.669693520417987,
+    "l3dist": 45.22853018731459,
+    "best": 27.669693520417987,
+    "angleDeg": 221.5234375,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A030",
+    "name": "Grape",
+    "hex": "#6f2da8",
+    "dist": 27.82829558633926,
+    "l3dist": 57.83139984950532,
+    "best": 27.82829558633926,
+    "angleDeg": 228.3984375,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A035",
+    "name": "Sky Blue",
+    "hex": "#87ceeb",
+    "dist": 28.227245844750932,
+    "l3dist": 50.558247211801984,
+    "best": 28.227245844750932,
+    "angleDeg": 172.8515625,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A006",
+    "name": "Apricot",
+    "hex": "#ffcd9a",
+    "dist": 31.532047851985947,
+    "l3dist": 28.734903630600012,
+    "best": 28.734903630600012,
+    "angleDeg": 229.53125,
+    "radiusPx": 679
+  },
+  {
+    "key": "arteza expert 120::A034",
+    "name": "Ultramarine Blue",
+    "hex": "#0033aa",
+    "dist": 29.332012120586253,
+    "l3dist": 60.3970199882822,
+    "best": 29.332012120586253,
+    "angleDeg": 185,
+    "radiusPx": 103
+  },
+  {
+    "key": "arteza expert 120::A092",
+    "name": "Orchid",
+    "hex": "#da70d6",
+    "dist": 30.70206144788966,
+    "l3dist": 58.299500874659614,
+    "best": 30.70206144788966,
+    "angleDeg": 247.3046875,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A048",
+    "name": "Grass Green",
+    "hex": "#7cfc00",
+    "dist": 30.96725953326357,
+    "l3dist": 56.881154079176426,
+    "best": 30.96725953326357,
+    "angleDeg": 82.6171875,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A101",
+    "name": "Chartreuse",
+    "hex": "#7fff00",
+    "dist": 31.970836047656814,
+    "l3dist": 57.724775923374295,
+    "best": 31.970836047656814,
+    "angleDeg": 82.6171875,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A076",
+    "name": "Silver Grey",
+    "hex": "#c0c0c0",
+    "dist": 32.15095920470332,
+    "l3dist": 38.194706410962254,
+    "best": 32.15095920470332,
+    "angleDeg": 220.421875,
+    "radiusPx": 713
+  },
+  {
+    "key": "arteza expert 120::A082",
+    "name": "Silver",
+    "hex": "#c0c0c0",
+    "dist": 32.15095920470332,
+    "l3dist": 38.194706410962254,
+    "best": 32.15095920470332,
+    "angleDeg": 220.421875,
+    "radiusPx": 713
+  },
+  {
+    "key": "arteza expert 120::A115",
+    "name": "Wisteria",
+    "hex": "#c9a0dc",
+    "dist": 32.547995590318706,
+    "l3dist": 45.429395010913744,
+    "best": 32.547995590318706,
+    "angleDeg": 199.609375,
+    "radiusPx": 379
+  },
+  {
+    "key": "arteza expert 120::A058",
+    "name": "Indigo",
+    "hex": "#4b0082",
+    "dist": 32.812940368938676,
+    "l3dist": 57.92449747857538,
+    "best": 32.812940368938676,
+    "angleDeg": 228.3984375,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A107",
+    "name": "Aquamarine",
+    "hex": "#7fffd4",
+    "dist": 34.15205629622973,
+    "l3dist": 43.92285262023745,
+    "best": 34.15205629622973,
+    "angleDeg": 148.359375,
+    "radiusPx": 379
+  },
+  {
+    "key": "arteza expert 120::A025",
+    "name": "Light Pink",
+    "hex": "#ffb6c1",
+    "dist": 34.900260746471815,
+    "l3dist": 37.61127592895988,
+    "best": 34.900260746471815,
+    "angleDeg": 229.32421875,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A036",
+    "name": "Light Blue",
+    "hex": "#add8e6",
+    "dist": 35.15848482485521,
+    "l3dist": 49.12763966061818,
+    "best": 35.15848482485521,
+    "angleDeg": 170.703125,
+    "radiusPx": 379
+  },
+  {
+    "key": "arteza expert 120::A017",
+    "name": "Peach",
+    "hex": "#ffe5b4",
+    "dist": 35.465456312132545,
+    "l3dist": 37.51642292793008,
+    "best": 35.465456312132545,
+    "angleDeg": 125.5,
+    "radiusPx": 543
+  },
+  {
+    "key": "arteza expert 120::A093",
+    "name": "Plum Purple",
+    "hex": "#dd66dd",
+    "dist": 35.82873443144125,
+    "l3dist": 65.04871664872229,
+    "best": 35.82873443144125,
+    "angleDeg": 247.3046875,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A091",
+    "name": "Mauve",
+    "hex": "#e0b0ff",
+    "dist": 36.066161389329615,
+    "l3dist": 56.36510623093552,
+    "best": 36.066161389329615,
+    "angleDeg": 190.15625,
+    "radiusPx": 333
+  },
+  {
+    "key": "arteza expert 120::A023",
+    "name": "Pink",
+    "hex": "#ffc0cb",
+    "dist": 37.36263999564176,
+    "l3dist": 40.94613737141897,
+    "best": 37.36263999564176,
+    "angleDeg": 229.32421875,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A029",
+    "name": "Violet",
+    "hex": "#ee82ee",
+    "dist": 37.671692480381445,
+    "l3dist": 64.18292169916292,
+    "best": 37.671692480381445,
+    "angleDeg": 243.8671875,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A075",
+    "name": "Light Grey",
+    "hex": "#d3d3d3",
+    "dist": 37.9153031879877,
+    "l3dist": 43.963254453949716,
+    "best": 37.9153031879877,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A028",
+    "name": "Lilac",
+    "hex": "#c8a2c8",
+    "dist": 38.499653580647596,
+    "l3dist": 41.42133017090492,
+    "best": 38.499653580647596,
+    "angleDeg": 219.375,
+    "radiusPx": 241
+  },
+  {
+    "key": "arteza expert 120::A110",
+    "name": "Electric Blue",
+    "hex": "#7df9ff",
+    "dist": 38.58254130179228,
+    "l3dist": 58.60250574756313,
+    "best": 38.58254130179228,
+    "angleDeg": 166.8359375,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A074",
+    "name": "Cream",
+    "hex": "#fffdd0",
+    "dist": 38.58853086618505,
+    "l3dist": 44.06021815453966,
+    "best": 38.58853086618505,
+    "angleDeg": 125.5,
+    "radiusPx": 543
+  },
+  {
+    "key": "arteza expert 120::A090",
+    "name": "Periwinkle",
+    "hex": "#ccccff",
+    "dist": 40.21739345071957,
+    "l3dist": 53.7346367821831,
+    "best": 40.21739345071957,
+    "angleDeg": 175,
+    "radiusPx": 103
+  },
+  {
+    "key": "arteza expert 120::A055",
+    "name": "Cyan",
+    "hex": "#00ffff",
+    "dist": 40.742726368645656,
+    "l3dist": 60.63100559576516,
+    "best": 40.742726368645656,
+    "angleDeg": 162.5390625,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A073",
+    "name": "Eggshell",
+    "hex": "#f0ead6",
+    "dist": 41.77999589335722,
+    "l3dist": 45.856969443641745,
+    "best": 41.77999589335722,
+    "angleDeg": 221.04296875,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A116",
+    "name": "Thistle",
+    "hex": "#d8bfd8",
+    "dist": 41.81199813939779,
+    "l3dist": 45.61668551847685,
+    "best": 41.81199813939779,
+    "angleDeg": 224.1484375,
+    "radiusPx": 747
+  },
+  {
+    "key": "arteza expert 120::A040",
+    "name": "Navy Blue",
+    "hex": "#000080",
+    "dist": 42.56814028272989,
+    "l3dist": 66.0507842984071,
+    "best": 42.56814028272989,
+    "angleDeg": 214.6484375,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A071",
+    "name": "Beige",
+    "hex": "#f5f5dc",
+    "dist": 42.96871529043421,
+    "l3dist": 47.600498827115814,
+    "best": 42.96871529043421,
+    "angleDeg": 129.01953125,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A039",
+    "name": "Deep Blue",
+    "hex": "#00008b",
+    "dist": 45.30447112247047,
+    "l3dist": 70.43568148960195,
+    "best": 45.30447112247047,
+    "angleDeg": 214.6484375,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A120",
+    "name": "Zaffre",
+    "hex": "#0014a8",
+    "dist": 47.098406008359184,
+    "l3dist": 76.03327317378033,
+    "best": 47.098406008359184,
+    "angleDeg": 185,
+    "radiusPx": 103
+  },
+  {
+    "key": "arteza expert 120::A027",
+    "name": "Lavender",
+    "hex": "#e6e6fa",
+    "dist": 48.790955655697196,
+    "l3dist": 55.11372042172664,
+    "best": 48.790955655697196,
+    "angleDeg": 172.8515625,
+    "radiusPx": 425
+  },
+  {
+    "key": "arteza expert 120::A072",
+    "name": "Ivory",
+    "hex": "#fffff0",
+    "dist": 49.11761619668497,
+    "l3dist": 53.45140507399934,
+    "best": 49.11761619668497,
+    "angleDeg": 129.01953125,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A024",
+    "name": "White Quartz",
+    "hex": "#fdfdfd",
+    "dist": 51.223137066613255,
+    "l3dist": 57.00638718342326,
+    "best": 51.223137066613255,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781
+  },
+  {
+    "key": "arteza expert 120::A020",
+    "name": "Magenta",
+    "hex": "#ff00ff",
+    "dist": 71.24681884523905,
+    "l3dist": 102.95385605876913,
+    "best": 71.24681884523905,
+    "angleDeg": 265.78125,
+    "radiusPx": 333
+  },
+  {
+    "key": "arteza expert 120::A021",
+    "name": "Fuchsia",
+    "hex": "#ff00ff",
+    "dist": 71.24681884523905,
+    "l3dist": 102.95385605876913,
+    "best": 71.24681884523905,
+    "angleDeg": 265.78125,
+    "radiusPx": 333
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "target": "#cc0000",
+    "arcKey": "RoY",
+    "p1": {
+      "name": "Vermilion",
+      "range": "Castle Arts Gold",
+      "hex": "#e3212f"
+    },
+    "p2": {
+      "name": "Light Chrome Yellow",
+      "range": "Polychromos",
+      "hex": "#fedd29"
+    },
+    "mixHex": "#E4222F",
+    "t": 0.015625,
+    "gen": 6,
+    "de": 14.694416491519139,
+    "accuracy": 71
+  },
+  {
+    "target": "#e33a0b",
+    "arcKey": "RoY",
+    "p1": {
+      "name": "Vermilion",
+      "range": "Castle Arts Gold",
+      "hex": "#e3212f"
+    },
+    "p2": {
+      "name": "Light Chrome Yellow",
+      "range": "Polychromos",
+      "hex": "#fedd29"
+    },
+    "mixHex": "#F95336",
+    "t": 0.453125,
+    "gen": 6,
+    "de": 12.076103263596705,
+    "accuracy": 76
+  },
+  {
+    "target": "#fa7516",
+    "arcKey": "RoY",
+    "p1": {
+      "name": "Vermilion",
+      "range": "Castle Arts Gold",
+      "hex": "#e3212f"
+    },
+    "p2": {
+      "name": "Light Chrome Yellow",
+      "range": "Polychromos",
+      "hex": "#fedd29"
+    },
+    "mixHex": "#FE7E35",
+    "t": 0.6796875,
+    "gen": 7,
+    "de": 9.062188253655822,
+    "accuracy": 82
+  },
+  {
+    "target": "#fda10b",
+    "arcKey": "RoY",
+    "p1": {
+      "name": "Vermilion",
+      "range": "Castle Arts Gold",
+      "hex": "#e3212f"
+    },
+    "p2": {
+      "name": "Light Chrome Yellow",
+      "range": "Polychromos",
+      "hex": "#fedd29"
+    },
+    "mixHex": "#FFA832",
+    "t": 0.84765625,
+    "gen": 8,
+    "de": 8.227099692840726,
+    "accuracy": 84
+  },
+  {
+    "target": "#ffcc00",
+    "arcKey": "RoY",
+    "p1": {
+      "name": "Vermilion",
+      "range": "Castle Arts Gold",
+      "hex": "#e3212f"
+    },
+    "p2": {
+      "name": "Light Chrome Yellow",
+      "range": "Polychromos",
+      "hex": "#fedd29"
+    },
+    "mixHex": "#FFD02C",
+    "t": 0.96875,
+    "gen": 5,
+    "de": 6.326591778518528,
+    "accuracy": 87
+  },
+  {
+    "target": "#80c300",
+    "arcKey": "YgB",
+    "p1": {
+      "name": "Canary Yellow",
+      "range": "Pablo",
+      "hex": "#f8e538"
+    },
+    "p2": {
+      "name": "Blue Jeans",
+      "range": "Pablo",
+      "hex": "#427caa"
+    },
+    "mixHex": "#A0CD49",
+    "t": 0.2890625,
+    "gen": 7,
+    "de": 17.566007217326547,
+    "accuracy": 65
+  },
+  {
+    "target": "#00bb00",
+    "arcKey": "YgB",
+    "p1": {
+      "name": "Canary Yellow",
+      "range": "Pablo",
+      "hex": "#f8e538"
+    },
+    "p2": {
+      "name": "Blue Jeans",
+      "range": "Pablo",
+      "hex": "#427caa"
+    },
+    "mixHex": "#94C74C",
+    "t": 0.3515625,
+    "gen": 7,
+    "de": 35.32213756360668,
+    "accuracy": 29
+  },
+  {
+    "target": "#189371",
+    "arcKey": "YgB",
+    "p1": {
+      "name": "Canary Yellow",
+      "range": "Pablo",
+      "hex": "#f8e538"
+    },
+    "p2": {
+      "name": "Blue Jeans",
+      "range": "Pablo",
+      "hex": "#427caa"
+    },
+    "mixHex": "#519570",
+    "t": 0.83203125,
+    "gen": 8,
+    "de": 10.803449755616123,
+    "accuracy": 78
+  },
+  {
+    "target": "#306be2",
+    "arcKey": "BvR",
+    "p1": {
+      "name": "Purple Lake",
+      "range": "Castle Arts Gold",
+      "hex": "#685fbb"
+    },
+    "p2": {
+      "name": "Fuchsia",
+      "range": "Polychromos",
+      "hex": "#d83a70"
+    },
+    "mixHex": "#685fbb",
+    "t": 0,
+    "gen": 0,
+    "de": 18.948865255672946,
+    "accuracy": 62
+  },
+  {
+    "target": "#4d5dc3",
+    "arcKey": "BvR",
+    "p1": {
+      "name": "Purple Lake",
+      "range": "Castle Arts Gold",
+      "hex": "#685fbb"
+    },
+    "p2": {
+      "name": "Fuchsia",
+      "range": "Polychromos",
+      "hex": "#d83a70"
+    },
+    "mixHex": "#685fbb",
+    "t": 0,
+    "gen": 0,
+    "de": 8.375712494614001,
+    "accuracy": 83
+  },
+  {
+    "target": "#6a4ea3",
+    "arcKey": "BvR",
+    "p1": {
+      "name": "Purple Lake",
+      "range": "Castle Arts Gold",
+      "hex": "#685fbb"
+    },
+    "p2": {
+      "name": "Fuchsia",
+      "range": "Polychromos",
+      "hex": "#d83a70"
+    },
+    "mixHex": "#7057A7",
+    "t": 0.14453125,
+    "gen": 8,
+    "de": 4.712126487771951,
+    "accuracy": 91
+  },
+  {
+    "target": "#9b2752",
+    "arcKey": "BvR",
+    "p1": {
+      "name": "Purple Lake",
+      "range": "Castle Arts Gold",
+      "hex": "#685fbb"
+    },
+    "p2": {
+      "name": "Fuchsia",
+      "range": "Polychromos",
+      "hex": "#d83a70"
+    },
+    "mixHex": "#B63F75",
+    "t": 0.81640625,
+    "gen": 8,
+    "de": 12.362428627837035,
+    "accuracy": 75
+  }
+]

@@ -1,0 +1,650 @@
+[
+  {
+    "key": "derwent drawing pencils::5095",
+    "name": "Fresh Green",
+    "hex": "#9da439",
+    "dist": 1.4451957489702552,
+    "angleDeg": 352.84375,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::0600",
+    "name": "Autumn Leaf",
+    "hex": "#ce5f43",
+    "dist": 1.5756948528579156,
+    "angleDeg": 9.01953125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::1000",
+    "name": "Rioja",
+    "hex": "#8b414b",
+    "dist": 1.942643072445563,
+    "angleDeg": 294.359375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::0200",
+    "name": "Sunflower",
+    "hex": "#ffc91d",
+    "dist": 2.151128606477525,
+    "angleDeg": 49.4140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent drawing pencils::2100",
+    "name": "Grape",
+    "hex": "#494151",
+    "dist": 2.353334656636812,
+    "angleDeg": 114.0859375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6210",
+    "name": "Mars Orange",
+    "hex": "#bd7154",
+    "dist": 2.49194694864727,
+    "angleDeg": 230.56640625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6600",
+    "name": "Chocolate",
+    "hex": "#514746",
+    "dist": 2.5542212859620785,
+    "angleDeg": 108.08203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::5650",
+    "name": "Dark Brown",
+    "hex": "#625b51",
+    "dist": 3.832329957692015,
+    "angleDeg": 103.52734375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::5550",
+    "name": "Warm Earth",
+    "hex": "#8c7359",
+    "dist": 3.9271112160917956,
+    "angleDeg": 223.11328125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::4000",
+    "name": "Spruce Green",
+    "hex": "#455e61",
+    "dist": 4.382492690128824,
+    "angleDeg": 162.765625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::5100",
+    "name": "Moss Green",
+    "hex": "#608043",
+    "dist": 4.38488082902132,
+    "angleDeg": 35.10546875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::0800",
+    "name": "Strawberry",
+    "hex": "#b64544",
+    "dist": 4.926040665397705,
+    "angleDeg": 320.75390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::5160",
+    "name": "Olive Earth",
+    "hex": "#6a6d57",
+    "dist": 5.450439697167761,
+    "angleDeg": 98.765625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::2600",
+    "name": "Delft Blue",
+    "hex": "#3a436f",
+    "dist": 5.600471734438236,
+    "angleDeg": 175.39453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6710",
+    "name": "Midnight",
+    "hex": "#3d3e43",
+    "dist": 5.9912265892594405,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6700",
+    "name": "Ivory Black",
+    "hex": "#3e4143",
+    "dist": 6.104905125047501,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::0900",
+    "name": "Autumn Red",
+    "hex": "#ab4f53",
+    "dist": 6.580599963495399,
+    "angleDeg": 284.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6220",
+    "name": "Sanguine",
+    "hex": "#a85c49",
+    "dist": 6.604387473159346,
+    "angleDeg": 278.625,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6720",
+    "name": "Forest",
+    "hex": "#3d4445",
+    "dist": 7.113320756507704,
+    "angleDeg": 108.2890625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::0700",
+    "name": "Rust",
+    "hex": "#cc5b50",
+    "dist": 7.197562848858743,
+    "angleDeg": 322.6171875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::3900",
+    "name": "Fir Green",
+    "hex": "#5b7c81",
+    "dist": 7.490275529606177,
+    "angleDeg": 161.5234375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::0300",
+    "name": "Mustard",
+    "hex": "#f2b527",
+    "dist": 7.827920699506534,
+    "angleDeg": 45.1171875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent drawing pencils::5130",
+    "name": "Rainforest",
+    "hex": "#345f56",
+    "dist": 8.01750612905132,
+    "angleDeg": 159.0390625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::5140",
+    "name": "Sage Leaf",
+    "hex": "#6b8479",
+    "dist": 8.365257953951373,
+    "angleDeg": 155.3125,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6400",
+    "name": "Terracotta",
+    "hex": "#9a574d",
+    "dist": 8.76247675577375,
+    "angleDeg": 285.6640625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::3720",
+    "name": "Ink Blue",
+    "hex": "#364b59",
+    "dist": 8.768716104485588,
+    "angleDeg": 167.11328125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::0500",
+    "name": "Apricot",
+    "hex": "#c3713e",
+    "dist": 8.952026828482872,
+    "angleDeg": 332.96875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::3000",
+    "name": "Deep Atlantic",
+    "hex": "#195278",
+    "dist": 9.109491634067235,
+    "angleDeg": 171.66796875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::5600",
+    "name": "Woodland",
+    "hex": "#746054",
+    "dist": 10.193937636441845,
+    "angleDeg": 102.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6510",
+    "name": "Ruby Earth",
+    "hex": "#8d5255",
+    "dist": 10.636337105040571,
+    "angleDeg": 290.6328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::2700",
+    "name": "Royal Blue",
+    "hex": "#5a6ab0",
+    "dist": 10.70034311554085,
+    "angleDeg": 196.171875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "derwent drawing pencils::5700",
+    "name": "Brown Ochre",
+    "hex": "#b48c5b",
+    "dist": 10.777957163213571,
+    "angleDeg": 227.66796875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::2900",
+    "name": "Polar Ice",
+    "hex": "#608cd6",
+    "dist": 11.250133495553914,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6750",
+    "name": "Carbon Grey",
+    "hex": "#686a6b",
+    "dist": 11.285142155050334,
+    "angleDeg": 105.390625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::5090",
+    "name": "Crag Green",
+    "hex": "#9f9b80",
+    "dist": 12.642568578223736,
+    "angleDeg": 220.0078125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::4135",
+    "name": "Green Shadow",
+    "hex": "#868d81",
+    "dist": 13.078324131744877,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::2000",
+    "name": "Burnt Rose",
+    "hex": "#955c66",
+    "dist": 13.872422321216389,
+    "angleDeg": 294.359375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::5110",
+    "name": "Light Moss",
+    "hex": "#96ba8c",
+    "dist": 14.710601216971112,
+    "angleDeg": 137.921875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6300",
+    "name": "Venetian Red",
+    "hex": "#87554b",
+    "dist": 15.00160564904419,
+    "angleDeg": 288.5625,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::5120",
+    "name": "Green Earth",
+    "hex": "#a8a37f",
+    "dist": 15.062965300885308,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6110",
+    "name": "Sepia Red",
+    "hex": "#765448",
+    "dist": 15.348544969604088,
+    "angleDeg": 104.35546875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::7125",
+    "name": "Granite",
+    "hex": "#7e8489",
+    "dist": 16.035368943826498,
+    "angleDeg": 162.14453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::1650",
+    "name": "Light Rust",
+    "hex": "#e19b86",
+    "dist": 16.099696228255237,
+    "angleDeg": 230.15234375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::0400",
+    "name": "Gold",
+    "hex": "#dfa736",
+    "dist": 18.079227370422583,
+    "angleDeg": 42.5390625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent drawing pencils::4125",
+    "name": "Pale Cedar",
+    "hex": "#b1aa8d",
+    "dist": 18.12784373667672,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::7010",
+    "name": "Warm Grey",
+    "hex": "#a69f93",
+    "dist": 18.46085152735142,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::1700",
+    "name": "Dusky Pink",
+    "hex": "#d4948d",
+    "dist": 18.93521712621596,
+    "angleDeg": 228.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6470",
+    "name": "Mars Violet",
+    "hex": "#97777c",
+    "dist": 21.13778999316859,
+    "angleDeg": 223.94140625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::5720",
+    "name": "Yellow Ochre",
+    "hex": "#e7b66d",
+    "dist": 21.60325985047373,
+    "angleDeg": 344.5625,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::3810",
+    "name": "Smoke Blue",
+    "hex": "#86a5a7",
+    "dist": 21.75579093760444,
+    "angleDeg": 157.17578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::7130",
+    "name": "Taupe",
+    "hex": "#a49799",
+    "dist": 22.285599299582206,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::3740",
+    "name": "Ash Blue",
+    "hex": "#8fa6ac",
+    "dist": 23.915425448120892,
+    "angleDeg": 159.453125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::1800",
+    "name": "Bistre",
+    "hex": "#d7b3a4",
+    "dist": 24.5260469140864,
+    "angleDeg": 225.8046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::7120",
+    "name": "Cool Grey",
+    "hex": "#aaada9",
+    "dist": 25.2615547355098,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::4100",
+    "name": "Distant Green",
+    "hex": "#93c7b0",
+    "dist": 25.38898081202337,
+    "angleDeg": 144.546875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::7140",
+    "name": "Fossil Grey",
+    "hex": "#b4a9a9",
+    "dist": 25.593883827400578,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::2300",
+    "name": "Heather",
+    "hex": "#b47698",
+    "dist": 25.914690045844196,
+    "angleDeg": 253.75,
+    "radiusPx": 195,
+    "level": 1
+  },
+  {
+    "key": "derwent drawing pencils::5717",
+    "name": "Light Ochre",
+    "hex": "#e7be8a",
+    "dist": 26.16590355518247,
+    "angleDeg": 342.90625,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::1610",
+    "name": "Light Sienna",
+    "hex": "#f6bf9a",
+    "dist": 26.205531546018687,
+    "angleDeg": 229.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::2400",
+    "name": "Violet Dusk",
+    "hex": "#9a8bb8",
+    "dist": 26.542391746344006,
+    "angleDeg": 173.1171875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::1900",
+    "name": "Ash Rose",
+    "hex": "#e09ea6",
+    "dist": 28.04089265031814,
+    "angleDeg": 228.08203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::2800",
+    "name": "Teal Blue",
+    "hex": "#a2aad6",
+    "dist": 28.389275027418947,
+    "angleDeg": 182.94921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6730",
+    "name": "Mist",
+    "hex": "#b3b4b5",
+    "dist": 28.942099691738623,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::6740",
+    "name": "Platinum",
+    "hex": "#b0b6bb",
+    "dist": 30.59823159800259,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::5715",
+    "name": "Wheat",
+    "hex": "#e4d2ad",
+    "dist": 32.33440905055097,
+    "angleDeg": 222.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::0100",
+    "name": "Champagne",
+    "hex": "#f8e1ad",
+    "dist": 32.891471239476374,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::2500",
+    "name": "Slate Violet",
+    "hex": "#b5a3ba",
+    "dist": 33.7331580423508,
+    "angleDeg": 165.6640625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::3615",
+    "name": "Solway Blue",
+    "hex": "#bcc3c8",
+    "dist": 34.178486089111985,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::2200",
+    "name": "Soft Violet",
+    "hex": "#dab3c3",
+    "dist": 35.69308984074607,
+    "angleDeg": 225.59765625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::7155",
+    "name": "Oyster",
+    "hex": "#e9d8df",
+    "dist": 42.032413634777214,
+    "angleDeg": 222.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::7145",
+    "name": "Arctic",
+    "hex": "#e0e6e9",
+    "dist": 44.571823619163446,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent drawing pencils::7200",
+    "name": "Chinese White",
+    "hex": "#f2f2ed",
+    "dist": 46.57257269137667,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  }
+]

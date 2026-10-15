@@ -1,0 +1,1262 @@
+[
+  {
+    "key": "faber-castell polychromos 9201::286",
+    "name": "Red Jasper",
+    "hex": "#d25f3f",
+    "dist": 0.9771739256384405,
+    "angleDeg": 8.3984375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::126",
+    "name": "Permanent Carmine",
+    "hex": "#cc2b42",
+    "dist": 1.446514295329248,
+    "angleDeg": 306.26171875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::182",
+    "name": "Brown Ochre",
+    "hex": "#956740",
+    "dist": 1.6930106241721818,
+    "angleDeg": 19.37109375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::205",
+    "name": "Cadmium Yellow Lemon",
+    "hex": "#e7ed46",
+    "dist": 1.9617940040107653,
+    "angleDeg": 66.2890625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::188",
+    "name": "Sanguine",
+    "hex": "#b85c41",
+    "dist": 2.2573301873198033,
+    "angleDeg": 271.171875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::219",
+    "name": "Deep Scarlet Red",
+    "hex": "#d02b3c",
+    "dist": 2.4883487542844773,
+    "angleDeg": 302.328125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::350",
+    "name": "Dark Ultramarine Violet",
+    "hex": "#6062b3",
+    "dist": 2.631138681559105,
+    "angleDeg": 199.609375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::223",
+    "name": "Deep Red",
+    "hex": "#ce2a3b",
+    "dist": 2.634950529198263,
+    "angleDeg": 304.8125,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::115",
+    "name": "Dark Cadmium Orange",
+    "hex": "#ff5f30",
+    "dist": 2.8082721193240974,
+    "angleDeg": -0.859375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::117",
+    "name": "Light Cadmium Red",
+    "hex": "#f94f32",
+    "dist": 2.8413872782330616,
+    "angleDeg": -14.609375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::138",
+    "name": "Violet",
+    "hex": "#7c5197",
+    "dist": 3.0177285040832267,
+    "angleDeg": 226.25,
+    "radiusPx": 195,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::136",
+    "name": "Purple Violet",
+    "hex": "#69478d",
+    "dist": 3.2005054701625855,
+    "angleDeg": 224.1015625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::235",
+    "name": "Cold Grey VI",
+    "hex": "#4b4d50",
+    "dist": 3.5990569129462213,
+    "angleDeg": 108.2890625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::106",
+    "name": "Light Chrome Yellow",
+    "hex": "#fedd29",
+    "dist": 3.6551757462499226,
+    "angleDeg": 61.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::173",
+    "name": "Olive Green Yellowish",
+    "hex": "#53563e",
+    "dist": 3.698380671480661,
+    "angleDeg": 100.0078125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::125",
+    "name": "Middle Purple Pink",
+    "hex": "#c13074",
+    "dist": 3.7112503617275427,
+    "angleDeg": 288.125,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::171",
+    "name": "Light Green",
+    "hex": "#6fdd57",
+    "dist": 3.892123672993431,
+    "angleDeg": 95.078125,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::170",
+    "name": "May Green",
+    "hex": "#96ab4d",
+    "dist": 4.052333120627583,
+    "angleDeg": 125.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::176",
+    "name": "Van Dyck Brown",
+    "hex": "#564943",
+    "dist": 4.294877418861586,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::160",
+    "name": "Manganese Violet",
+    "hex": "#7b4784",
+    "dist": 4.33433084498388,
+    "angleDeg": 237.8515625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::210",
+    "name": "Perinone Orange",
+    "hex": "#ff6827",
+    "dist": 4.402279708140243,
+    "angleDeg": 6.875,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::180",
+    "name": "Raw Umber",
+    "hex": "#89643e",
+    "dist": 4.417177292408078,
+    "angleDeg": 20.40625,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::192",
+    "name": "Indian Red",
+    "hex": "#904947",
+    "dist": 4.527226247836412,
+    "angleDeg": 288.5625,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::187",
+    "name": "Burnt Ochre",
+    "hex": "#b87146",
+    "dist": 4.65437368962008,
+    "angleDeg": 334.41796875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::193",
+    "name": "Burnt Carmine",
+    "hex": "#86434e",
+    "dist": 4.777712281516169,
+    "angleDeg": 296.84375,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::109",
+    "name": "Dark Chrome Yellow",
+    "hex": "#ffa42d",
+    "dist": 4.8170314814934425,
+    "angleDeg": 32.65625,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::177",
+    "name": "Walnut Brown",
+    "hex": "#5e4f4b",
+    "dist": 4.8528406452607715,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::166",
+    "name": "Grass Green",
+    "hex": "#34c147",
+    "dist": 5.381935334980281,
+    "angleDeg": 58.0859375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::186",
+    "name": "Terracotta",
+    "hex": "#d17242",
+    "dist": 5.3875985016204515,
+    "angleDeg": 260.40625,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::174",
+    "name": "Chromium Green Opaque",
+    "hex": "#4f5e48",
+    "dist": 5.42441367525292,
+    "angleDeg": 99.1796875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::275",
+    "name": "Warm Grey VI",
+    "hex": "#404244",
+    "dist": 5.438943045313409,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::247",
+    "name": "Indanthrene Blue",
+    "hex": "#39456e",
+    "dist": 5.499478545061693,
+    "angleDeg": 174.359375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::181",
+    "name": "Payne's Grey",
+    "hex": "#42464c",
+    "dist": 5.5373052203466235,
+    "angleDeg": 109.53125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::168",
+    "name": "Earth Green Yellowish",
+    "hex": "#759243",
+    "dist": 5.8243267092037385,
+    "angleDeg": 36.96875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::226",
+    "name": "Alizarin Crimson",
+    "hex": "#c52645",
+    "dist": 5.868213465859861,
+    "angleDeg": 306.26171875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::274",
+    "name": "Warm Grey V",
+    "hex": "#5b5b5c",
+    "dist": 6.006153377220034,
+    "angleDeg": 106.21875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::121",
+    "name": "Pale Geranium Lake",
+    "hex": "#e9373d",
+    "dist": 6.029947332991709,
+    "angleDeg": -55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::141",
+    "name": "Delft Blue",
+    "hex": "#433c77",
+    "dist": 6.03250143202417,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::175",
+    "name": "Dark Sepia",
+    "hex": "#403f3f",
+    "dist": 6.055087620307065,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::111",
+    "name": "Cadmium Orange",
+    "hex": "#ff951e",
+    "dist": 6.266279098065332,
+    "angleDeg": 27.5,
+    "radiusPx": 149,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::134",
+    "name": "Crimson",
+    "hex": "#a24b89",
+    "dist": 6.327792187586161,
+    "angleDeg": 260.625,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::120",
+    "name": "Ultramarine",
+    "hex": "#425fba",
+    "dist": 6.409940318238903,
+    "angleDeg": 188.0078125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::280",
+    "name": "Burnt Umber",
+    "hex": "#5c4b41",
+    "dist": 6.60488816113904,
+    "angleDeg": 105.18359375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::123",
+    "name": "Fuchsia",
+    "hex": "#d83a70",
+    "dist": 6.607541442561031,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::113",
+    "name": "Orange Glaze",
+    "hex": "#ff7b1e",
+    "dist": 6.84655786773858,
+    "angleDeg": 17.1875,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::137",
+    "name": "Blue Violet",
+    "hex": "#4c3f80",
+    "dist": 7.008002277650115,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::172",
+    "name": "Earth Green",
+    "hex": "#748a75",
+    "dist": 7.215404783264218,
+    "angleDeg": 211.3125,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::190",
+    "name": "Venetian Red",
+    "hex": "#bb5f53",
+    "dist": 7.3172205023593575,
+    "angleDeg": 276.96875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::118",
+    "name": "Scarlet Red",
+    "hex": "#e84e41",
+    "dist": 7.320426036531667,
+    "angleDeg": 6.12109375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::234",
+    "name": "Cold Grey V",
+    "hex": "#575b5f",
+    "dist": 7.355347747479557,
+    "angleDeg": 107.875,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::191",
+    "name": "Pompeian Red",
+    "hex": "#cd5651",
+    "dist": 7.404750291269797,
+    "angleDeg": 318.890625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::151",
+    "name": "Helioblue-Reddish",
+    "hex": "#264a87",
+    "dist": 7.478765103347425,
+    "angleDeg": 178.0859375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::104",
+    "name": "Light Yellow Glaze",
+    "hex": "#f4f35b",
+    "dist": 7.713575677435752,
+    "angleDeg": 65.859375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::246",
+    "name": "Prussian Blue",
+    "hex": "#294768",
+    "dist": 7.83457905103599,
+    "angleDeg": 172.08203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::105",
+    "name": "Light Cadmium Yellow",
+    "hex": "#fee700",
+    "dist": 8.058615296433647,
+    "angleDeg": 61.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::157",
+    "name": "Dark Indigo",
+    "hex": "#3e4756",
+    "dist": 8.429193276467968,
+    "angleDeg": 111.6015625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::153",
+    "name": "Cobalt Turquoise",
+    "hex": "#00698c",
+    "dist": 8.497383240866045,
+    "angleDeg": 185.640625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::211",
+    "name": "Pyrrole Red",
+    "hex": "#eb3445",
+    "dist": 8.652851356527961,
+    "angleDeg": 301.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::152",
+    "name": "Middle Phthalo Blue",
+    "hex": "#0085d4",
+    "dist": 8.873080471307311,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::107",
+    "name": "Cadmium Yellow",
+    "hex": "#ffdb00",
+    "dist": 8.89555081149551,
+    "angleDeg": 55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::217",
+    "name": "Middle Cadmium Red",
+    "hex": "#ac323f",
+    "dist": 9.027743981155837,
+    "angleDeg": 317.02734375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::199",
+    "name": "Black",
+    "hex": "#363839",
+    "dist": 9.150764919591404,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::249",
+    "name": "Mauve",
+    "hex": "#46386c",
+    "dist": 9.52518925050692,
+    "angleDeg": 177.87890625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::112",
+    "name": "Leaf Green",
+    "hex": "#00a744",
+    "dist": 9.574507549906128,
+    "angleDeg": 126.4453125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::158",
+    "name": "Deep Cobalt Green",
+    "hex": "#26545a",
+    "dist": 9.733289137073609,
+    "angleDeg": 163.59375,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::276",
+    "name": "Chrome Oxide Green Fiery",
+    "hex": "#007f72",
+    "dist": 9.903531450308607,
+    "angleDeg": 162.96875,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::110",
+    "name": "Phthalo Blue",
+    "hex": "#0068bb",
+    "dist": 9.969145552756713,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::278",
+    "name": "Chrome Oxide Green",
+    "hex": "#3a4d46",
+    "dist": 10.018034044423963,
+    "angleDeg": 106.21875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::156",
+    "name": "Cobalt Green",
+    "hex": "#00a0aa",
+    "dist": 10.1532127653199,
+    "angleDeg": 168.5546875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::127",
+    "name": "Pink Carmine",
+    "hex": "#d43457",
+    "dist": 10.172670142528679,
+    "angleDeg": 306.26171875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::179",
+    "name": "Bistre",
+    "hex": "#7c5f48",
+    "dist": 10.507580287726894,
+    "angleDeg": 223.11328125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::189",
+    "name": "Cinnamon",
+    "hex": "#d28674",
+    "dist": 10.629534539294527,
+    "angleDeg": 230.56640625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::268",
+    "name": "Green Gold",
+    "hex": "#b78c32",
+    "dist": 10.834260062473124,
+    "angleDeg": 343.734375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::144",
+    "name": "Cobalt Blue-Greenish",
+    "hex": "#195095",
+    "dist": 10.916899734953216,
+    "angleDeg": 178.0859375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::165",
+    "name": "Juniper Green",
+    "hex": "#34544a",
+    "dist": 11.187679785844447,
+    "angleDeg": 160.90234375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::167",
+    "name": "Permanent Green Olive",
+    "hex": "#3e6843",
+    "dist": 11.33535546187333,
+    "angleDeg": 150.7578125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::155",
+    "name": "Helio Turquoise",
+    "hex": "#005f71",
+    "dist": 11.511025510592697,
+    "angleDeg": 187.296875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::185",
+    "name": "Naples Yellow",
+    "hex": "#fac23d",
+    "dist": 11.578553220142823,
+    "angleDeg": 46.8359375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::285",
+    "name": "Golden Ochre",
+    "hex": "#efa034",
+    "dist": 11.982025399633756,
+    "angleDeg": 35.6640625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::178",
+    "name": "Nougat",
+    "hex": "#7c6557",
+    "dist": 12.163630061966241,
+    "angleDeg": 222.28515625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::128",
+    "name": "Light Purple Pink",
+    "hex": "#ec5080",
+    "dist": 12.377353434668391,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::149",
+    "name": "Bluish Turquoise",
+    "hex": "#005286",
+    "dist": 12.381362322756816,
+    "angleDeg": 174.7734375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::264",
+    "name": "Dark Phthalo Green",
+    "hex": "#00725f",
+    "dist": 12.734118245465318,
+    "angleDeg": 162.109375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::163",
+    "name": "Emerald Green",
+    "hex": "#009864",
+    "dist": 12.739344207371177,
+    "angleDeg": 147.0703125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::194",
+    "name": "Red-Violet",
+    "hex": "#6d3a4d",
+    "dist": 12.773548422018582,
+    "angleDeg": 298.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::225",
+    "name": "Dark Red",
+    "hex": "#a02e40",
+    "dist": 12.999597323551589,
+    "angleDeg": 287.3203125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::145",
+    "name": "Light Phthalo Blue",
+    "hex": "#0097dd",
+    "dist": 13.236488301475632,
+    "angleDeg": 175,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::143",
+    "name": "Cobalt Blue",
+    "hex": "#005bb5",
+    "dist": 13.290016980303063,
+    "angleDeg": 187.1484375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::161",
+    "name": "Phthalo Green",
+    "hex": "#00927a",
+    "dist": 13.34809478177865,
+    "angleDeg": 158.2421875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::135",
+    "name": "Light Red-Violet",
+    "hex": "#8b4a73",
+    "dist": 13.431730923778433,
+    "angleDeg": 252.4609375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::108",
+    "name": "Dark Cadmium Yellow",
+    "hex": "#ffc000",
+    "dist": 13.470694865871355,
+    "angleDeg": 47.265625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::142",
+    "name": "Madder",
+    "hex": "#ab3448",
+    "dist": 13.784599447681147,
+    "angleDeg": 313.71484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::263",
+    "name": "Caput Mortuum Violet",
+    "hex": "#6d474a",
+    "dist": 13.885881918890782,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::162",
+    "name": "Light Phthalo Green",
+    "hex": "#00b87b",
+    "dist": 13.887888934494823,
+    "angleDeg": 142.7734375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::273",
+    "name": "Warm Grey IV",
+    "hex": "#747372",
+    "dist": 13.895833785227568,
+    "angleDeg": 102.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::140",
+    "name": "Light Ultramarine",
+    "hex": "#5589e4",
+    "dist": 14.42472746639087,
+    "angleDeg": 185.859375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::267",
+    "name": "Pine Green",
+    "hex": "#2d4d40",
+    "dist": 14.526378953624814,
+    "angleDeg": 102.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::159",
+    "name": "Hooker’s Green",
+    "hex": "#0e584f",
+    "dist": 14.639529237199467,
+    "angleDeg": 159.0390625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::233",
+    "name": "Cold Grey IV",
+    "hex": "#7a7c7e",
+    "dist": 14.670328434447056,
+    "angleDeg": 162.14453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::133",
+    "name": "Magenta",
+    "hex": "#9c2749",
+    "dist": 14.772753210621133,
+    "angleDeg": 295.39453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::184",
+    "name": "Dark Naples Ochre",
+    "hex": "#f3ae41",
+    "dist": 15.017336852155244,
+    "angleDeg": 39.1015625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::169",
+    "name": "Caput Mortuum",
+    "hex": "#774947",
+    "dist": 15.135815984806612,
+    "angleDeg": 290.6328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::283",
+    "name": "Burnt Siena",
+    "hex": "#7e513f",
+    "dist": 15.354986137257262,
+    "angleDeg": 17.71484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::129",
+    "name": "Pink Madder Lake",
+    "hex": "#eb6292",
+    "dist": 15.978407763293935,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::124",
+    "name": "Rose Carmine",
+    "hex": "#e75970",
+    "dist": 17.12831808806913,
+    "angleDeg": 310.40234375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::131",
+    "name": "Coral",
+    "hex": "#ec7374",
+    "dist": 17.343281995248827,
+    "angleDeg": 233.87890625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::252",
+    "name": "Copper",
+    "hex": "#b79f91",
+    "dist": 18.13653170911009,
+    "angleDeg": 223.734375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::272",
+    "name": "Warm Grey III",
+    "hex": "#9a958f",
+    "dist": 18.214803106265165,
+    "angleDeg": 219.80078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::146",
+    "name": "Sky Blue",
+    "hex": "#74a4e9",
+    "dist": 18.67406961440067,
+    "angleDeg": 181.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::266",
+    "name": "Permanent Green",
+    "hex": "#127237",
+    "dist": 18.72765143692059,
+    "angleDeg": 40.6953125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::154",
+    "name": "Light Cobalt Turquoise",
+    "hex": "#00bcd2",
+    "dist": 20.019069642720993,
+    "angleDeg": 170.2734375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::325",
+    "name": "Quinacridone Magenta",
+    "hex": "#e05fab",
+    "dist": 20.116953488671363,
+    "angleDeg": 281.25,
+    "radiusPx": 195,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::232",
+    "name": "Cold Grey III",
+    "hex": "#8c9296",
+    "dist": 20.267697064469818,
+    "angleDeg": 159.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::130",
+    "name": "Salmon",
+    "hex": "#f6797e",
+    "dist": 20.30570207355201,
+    "angleDeg": 233.87890625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::183",
+    "name": "Light Yellow Ochre",
+    "hex": "#da9537",
+    "dist": 20.543007347363123,
+    "angleDeg": 35.6640625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::150",
+    "name": "Fra Angelico Blue",
+    "hex": "#2353ce",
+    "dist": 20.619976748790155,
+    "angleDeg": 185,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::250",
+    "name": "Gold",
+    "hex": "#b8ae9a",
+    "dist": 21.013448380912855,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::251",
+    "name": "Silver",
+    "hex": "#93979b",
+    "dist": 22.361820886581636,
+    "angleDeg": 159.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::204",
+    "name": "Lizardlite Green",
+    "hex": "#d2f088",
+    "dist": 23.265952948002138,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::132",
+    "name": "Beige Red",
+    "hex": "#f5b19c",
+    "dist": 23.474392208170016,
+    "angleDeg": 229.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::271",
+    "name": "Warm Grey II",
+    "hex": "#bdb4a8",
+    "dist": 24.913022912868062,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::119",
+    "name": "Light Magenta",
+    "hex": "#e977bc",
+    "dist": 25.12482202529078,
+    "angleDeg": 274.375,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::202",
+    "name": "Arylide Yellow",
+    "hex": "#ebf38f",
+    "dist": 25.58522000465291,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::339",
+    "name": "Tyrian Purple",
+    "hex": "#a293ca",
+    "dist": 26.555954037597665,
+    "angleDeg": 199.609375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::238",
+    "name": "Slate Green",
+    "hex": "#c4c0ab",
+    "dist": 26.914395195411565,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::102",
+    "name": "Cream",
+    "hex": "#f9e38a",
+    "dist": 27.45869414216377,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::372",
+    "name": "Bohemian Green Earth",
+    "hex": "#ced6ad",
+    "dist": 27.964590751696075,
+    "angleDeg": 129.01953125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::231",
+    "name": "Cold Grey II",
+    "hex": "#b1b5b6",
+    "dist": 29.157788202654476,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::261",
+    "name": "Green Jasper",
+    "hex": "#b1d0c5",
+    "dist": 32.71679182332361,
+    "angleDeg": 148.6875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::270",
+    "name": "Warm Grey I",
+    "hex": "#d4ccc0",
+    "dist": 32.91435915415097,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::215",
+    "name": "Thulite Yellowish",
+    "hex": "#f5d2ba",
+    "dist": 33.456074927675985,
+    "angleDeg": 225.8046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::237",
+    "name": "Serpentine Grey",
+    "hex": "#bfc8c8",
+    "dist": 34.15923565914291,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::214",
+    "name": "Thulite Brown",
+    "hex": "#e5d5c1",
+    "dist": 34.8288532036551,
+    "angleDeg": 222.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::337",
+    "name": "Amethyst Grey",
+    "hex": "#bcbfca",
+    "dist": 35.758916681543674,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::213",
+    "name": "Thulite Reddish",
+    "hex": "#f5d7c6",
+    "dist": 36.236902234480276,
+    "angleDeg": 225.8046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::216",
+    "name": "Zircon Red Bright",
+    "hex": "#f3d2cb",
+    "dist": 36.555290838402705,
+    "angleDeg": 225.8046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::230",
+    "name": "Cold Grey I",
+    "hex": "#cfd0cf",
+    "dist": 36.65854668156408,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::103",
+    "name": "Ivory",
+    "hex": "#f8ebc9",
+    "dist": 39.26629848863595,
+    "angleDeg": 129.01953125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "faber-castell polychromos 9201::348",
+    "name": "Aquamarine Blue",
+    "hex": "#c8daeb",
+    "dist": 41.0377061679663,
+    "angleDeg": 171.9921875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "faber-castell polychromos 9201::101",
+    "name": "White",
+    "hex": "#f4f2ed",
+    "dist": 46.697841753895496,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  }
+]

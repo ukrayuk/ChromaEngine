@@ -1,0 +1,1082 @@
+[
+  {
+    "key": "castle arts premium soft touch colored pencils::016",
+    "name": "Orange Lake",
+    "hex": "#f85628",
+    "dist": 0.868964855942656,
+    "angleDeg": -3.4375,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::013",
+    "name": "Terracotta",
+    "hex": "#d96344",
+    "dist": 1.0622679509371766,
+    "angleDeg": 7.984375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::077",
+    "name": "Yellow Ochre",
+    "hex": "#a27336",
+    "dist": 1.3727924508345748,
+    "angleDeg": 339.80078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::012",
+    "name": "Cinnamon",
+    "hex": "#bd7251",
+    "dist": 1.6426063845566752,
+    "angleDeg": 230.56640625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::026",
+    "name": "Chinese Orange",
+    "hex": "#b24a3e",
+    "dist": 2.269651553022375,
+    "angleDeg": 324.06640625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::017",
+    "name": "Cadmium Orange",
+    "hex": "#ff7125",
+    "dist": 2.6948313438095197,
+    "angleDeg": 11.171875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::078",
+    "name": "Marigold",
+    "hex": "#ff8b2c",
+    "dist": 2.9064560862588427,
+    "angleDeg": 23.6328125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::022",
+    "name": "Scarlet Red",
+    "hex": "#e62d36",
+    "dist": 3.0079014274479405,
+    "angleDeg": -55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::059",
+    "name": "Castle Green Light",
+    "hex": "#30bc3f",
+    "dist": 4.1610779358177306,
+    "angleDeg": 58.0859375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::014",
+    "name": "Burnt Ochre",
+    "hex": "#f55232",
+    "dist": 4.297607434557935,
+    "angleDeg": -9.0234375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::004",
+    "name": "Cadmium Yellow Light",
+    "hex": "#ffd02a",
+    "dist": 4.328843089258247,
+    "angleDeg": 50.703125,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::065",
+    "name": "Cool Gray",
+    "hex": "#4b4e51",
+    "dist": 4.335972832245856,
+    "angleDeg": 108.2890625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::076",
+    "name": "Green Gold",
+    "hex": "#a88935",
+    "dist": 4.45282745150613,
+    "angleDeg": 344.5625,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::062",
+    "name": "Cadmium Green",
+    "hex": "#586a3d",
+    "dist": 4.893567579183527,
+    "angleDeg": 92.76171875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::024",
+    "name": "Cadmium Red",
+    "hex": "#df2940",
+    "dist": 5.224866189906876,
+    "angleDeg": 301.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::112",
+    "name": "Cadmium Green Pale",
+    "hex": "#789438",
+    "dist": 5.612162324782941,
+    "angleDeg": 80.75390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::007",
+    "name": "Cadmium Yellow",
+    "hex": "#f5b322",
+    "dist": 5.936430346827607,
+    "angleDeg": 44.2578125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::064",
+    "name": "Terre Verde",
+    "hex": "#556661",
+    "dist": 6.097071594224719,
+    "angleDeg": 160.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::113",
+    "name": "Sap Green",
+    "hex": "#51643e",
+    "dist": 6.144828220816506,
+    "angleDeg": 94.83203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::066",
+    "name": "Cool Gray Deep",
+    "hex": "#4d5458",
+    "dist": 6.2368586059853515,
+    "angleDeg": 108.2890625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::029",
+    "name": "Purple",
+    "hex": "#a52371",
+    "dist": 6.370070614893898,
+    "angleDeg": 275.234375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::118",
+    "name": "Charcoal Gray",
+    "hex": "#625f5d",
+    "dist": 6.376087171455886,
+    "angleDeg": 105.390625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::079",
+    "name": "Cadmium Orange Deep",
+    "hex": "#fe5f11",
+    "dist": 6.405059400047774,
+    "angleDeg": 6.875,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::018",
+    "name": "Peach",
+    "hex": "#ff6b54",
+    "dist": 6.557241694745072,
+    "angleDeg": 5.70703125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::015",
+    "name": "Red Ochre",
+    "hex": "#ef463b",
+    "dist": 6.677685908981083,
+    "angleDeg": -30.078125,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::061",
+    "name": "Leaf Green Light",
+    "hex": "#b0ea5c",
+    "dist": 6.701764095284261,
+    "angleDeg": 77.4609375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::089",
+    "name": "Purple Deep",
+    "hex": "#892064",
+    "dist": 6.741601721336288,
+    "angleDeg": 264.4921875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::023",
+    "name": "Vermilion",
+    "hex": "#e02c3a",
+    "dist": 6.819338539666234,
+    "angleDeg": -55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::025",
+    "name": "Spice Red",
+    "hex": "#76333b",
+    "dist": 6.920653829322458,
+    "angleDeg": 296.84375,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::042",
+    "name": "Prussian Blue",
+    "hex": "#2f3c73",
+    "dist": 7.295512454419028,
+    "angleDeg": 177.87890625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::091",
+    "name": "Purple Lake",
+    "hex": "#68398a",
+    "dist": 7.305130822488564,
+    "angleDeg": 228.3984375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::114",
+    "name": "Burnt Sienna",
+    "hex": "#90432b",
+    "dist": 7.544941697927251,
+    "angleDeg": 278.625,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::075",
+    "name": "Cadmium Yellow Deep",
+    "hex": "#ffa939",
+    "dist": 7.590814379954157,
+    "angleDeg": 35.6640625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::068",
+    "name": "Burnt Umber",
+    "hex": "#4c3d38",
+    "dist": 7.789916447166046,
+    "angleDeg": 107.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::110",
+    "name": "Permanent Green",
+    "hex": "#2c8f22",
+    "dist": 7.976500124415233,
+    "angleDeg": 50.21875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::037",
+    "name": "Heather Purple",
+    "hex": "#574aa4",
+    "dist": 8.133157179030245,
+    "angleDeg": 206.9140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::119",
+    "name": "Payne's Gray",
+    "hex": "#575e62",
+    "dist": 8.189825474893498,
+    "angleDeg": 164.0078125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::094",
+    "name": "Cobalt Blue Light",
+    "hex": "#3065c8",
+    "dist": 8.516808929873369,
+    "angleDeg": 185,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::069",
+    "name": "Van Dyck Brown",
+    "hex": "#624a45",
+    "dist": 8.709774643235136,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::036",
+    "name": "Lavender",
+    "hex": "#8662ba",
+    "dist": 8.817995066656666,
+    "angleDeg": 211.2109375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::087",
+    "name": "Alizarin Crimson",
+    "hex": "#b90032",
+    "dist": 8.988823279731367,
+    "angleDeg": 303.77734375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::009",
+    "name": "Brilliant Yellow",
+    "hex": "#ffbc3d",
+    "dist": 9.324781388987255,
+    "angleDeg": 42.5390625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::011",
+    "name": "Terracotta Light",
+    "hex": "#cc804c",
+    "dist": 9.581078686000216,
+    "angleDeg": 231.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::046",
+    "name": "Sky Blue",
+    "hex": "#0073c9",
+    "dist": 9.964256533776311,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::043",
+    "name": "Ultramarine",
+    "hex": "#183b77",
+    "dist": 10.170921741279125,
+    "angleDeg": 178.0859375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::038",
+    "name": "Purple Lake Deep",
+    "hex": "#56367a",
+    "dist": 10.26953493130942,
+    "angleDeg": 229.2578125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::006",
+    "name": "Golden Yellow Deep",
+    "hex": "#ffda00",
+    "dist": 10.2784842083305,
+    "angleDeg": 55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::019",
+    "name": "Coral",
+    "hex": "#ff8e71",
+    "dist": 10.334231172055512,
+    "angleDeg": 234.29296875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::005",
+    "name": "Lemon Yellow",
+    "hex": "#fce555",
+    "dist": 10.50519295003225,
+    "angleDeg": 65,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::021",
+    "name": "Venetian Red",
+    "hex": "#fa5852",
+    "dist": 10.608485182868595,
+    "angleDeg": 5.70703125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::115",
+    "name": "Brown Ochre",
+    "hex": "#83483d",
+    "dist": 10.817181249494835,
+    "angleDeg": 285.6640625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::071",
+    "name": "Ivory Black",
+    "hex": "#323335",
+    "dist": 10.845725679821339,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::096",
+    "name": "Cobalt Blue",
+    "hex": "#1a69ce",
+    "dist": 10.875809656850208,
+    "angleDeg": 185,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::104",
+    "name": "Terre Verde Deep",
+    "hex": "#32444c",
+    "dist": 10.950476392245157,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::060",
+    "name": "Leaf Green Middle",
+    "hex": "#25d351",
+    "dist": 10.974872309580618,
+    "angleDeg": 104.1015625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::092",
+    "name": "Cornflower Blue",
+    "hex": "#4b4aa9",
+    "dist": 11.011381499791597,
+    "angleDeg": 203.4765625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::097",
+    "name": "Intense Blue",
+    "hex": "#0076ad",
+    "dist": 11.333812978801756,
+    "angleDeg": 175,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::040",
+    "name": "Ultramarine Violet",
+    "hex": "#32357b",
+    "dist": 11.397375998299152,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::041",
+    "name": "Delft Blue",
+    "hex": "#334391",
+    "dist": 11.644364320058589,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::030",
+    "name": "Purple Light",
+    "hex": "#b91877",
+    "dist": 11.659197251394577,
+    "angleDeg": 284.2578125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::055",
+    "name": "Prussian Green",
+    "hex": "#21644b",
+    "dist": 11.682254500908115,
+    "angleDeg": 201.58203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::111",
+    "name": "Leaf Green",
+    "hex": "#5ac61d",
+    "dist": 11.789410431802716,
+    "angleDeg": 89.921875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::103",
+    "name": "Cypress Green",
+    "hex": "#005d7f",
+    "dist": 11.81276246406973,
+    "angleDeg": 185.640625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::085",
+    "name": "Bengal Rose Deep",
+    "hex": "#d33788",
+    "dist": 11.84925107181474,
+    "angleDeg": 288.125,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::056",
+    "name": "Juniper Green",
+    "hex": "#1a674d",
+    "dist": 11.859107055079129,
+    "angleDeg": 200.75390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::032",
+    "name": "Cherry Pink",
+    "hex": "#e3315c",
+    "dist": 11.878726804065602,
+    "angleDeg": 302.12109375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::047",
+    "name": "Cerulean Blue Light",
+    "hex": "#0083d1",
+    "dist": 11.883231412397844,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::045",
+    "name": "Indigo Light",
+    "hex": "#2e3c55",
+    "dist": 12.016502128090004,
+    "angleDeg": 170.42578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::098",
+    "name": "Primary Blue",
+    "hex": "#007fce",
+    "dist": 12.033163449563817,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::053",
+    "name": "Chrome Green",
+    "hex": "#334940",
+    "dist": 12.177154484057539,
+    "angleDeg": 104.5625,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::088",
+    "name": "Cobalt Purple",
+    "hex": "#8e358f",
+    "dist": 12.58689178472798,
+    "angleDeg": 247.3046875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::063",
+    "name": "Oxide of Chrome",
+    "hex": "#2f4137",
+    "dist": 12.727698698581401,
+    "angleDeg": 106.21875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::027",
+    "name": "Cherry",
+    "hex": "#891e45",
+    "dist": 13.09015793259383,
+    "angleDeg": 296.22265625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::031",
+    "name": "Jaipur Pink",
+    "hex": "#e84171",
+    "dist": 13.137516389598591,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::057",
+    "name": "Castle Green Deep",
+    "hex": "#00824b",
+    "dist": 13.202130952000923,
+    "angleDeg": 147.9296875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::039",
+    "name": "Mulberry",
+    "hex": "#3f3557",
+    "dist": 13.313875540064656,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::052",
+    "name": "Viridian",
+    "hex": "#293b3b",
+    "dist": 13.76539015755201,
+    "angleDeg": 108.2890625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::049",
+    "name": "Teal Green Light",
+    "hex": "#007e88",
+    "dist": 13.813694520536007,
+    "angleDeg": 168.125,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::044",
+    "name": "Ultramarine Light",
+    "hex": "#004f98",
+    "dist": 13.822609491820952,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::028",
+    "name": "Aubergine",
+    "hex": "#7d4169",
+    "dist": 14.027899452358081,
+    "angleDeg": 252.4609375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::084",
+    "name": "Bengal Rose",
+    "hex": "#db5198",
+    "dist": 14.385233766990615,
+    "angleDeg": 284.6875,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::100",
+    "name": "Cerulean Blue",
+    "hex": "#0088d6",
+    "dist": 14.877107911200051,
+    "angleDeg": 181.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::095",
+    "name": "Cobalt Blue Deep",
+    "hex": "#184aa8",
+    "dist": 14.995433939437811,
+    "angleDeg": 191.4453125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::086",
+    "name": "Magenta",
+    "hex": "#8d1939",
+    "dist": 15.006988561660144,
+    "angleDeg": 295.39453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::067",
+    "name": "Davy's Gray",
+    "hex": "#7c7874",
+    "dist": 15.10759617683567,
+    "angleDeg": 102.4921875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::116",
+    "name": "Raw Umber",
+    "hex": "#7d5341",
+    "dist": 15.119199450580139,
+    "angleDeg": 20.19921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::099",
+    "name": "Cerulean Blue Middle",
+    "hex": "#0096da",
+    "dist": 15.180028706134909,
+    "angleDeg": 175,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::117",
+    "name": "Walnut Brown",
+    "hex": "#412a26",
+    "dist": 15.450406390559209,
+    "angleDeg": 110.98046875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::080",
+    "name": "Grenadine",
+    "hex": "#f24a6c",
+    "dist": 15.484900260778216,
+    "angleDeg": 302.94921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::101",
+    "name": "Cobalt Turquoise Green",
+    "hex": "#00a5b3",
+    "dist": 15.72903498213901,
+    "angleDeg": 168.5546875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::102",
+    "name": "Pthalo Turquoise",
+    "hex": "#008e7a",
+    "dist": 16.319974587038534,
+    "angleDeg": 159.1015625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::054",
+    "name": "Hooker's Green",
+    "hex": "#244038",
+    "dist": 16.448864406598556,
+    "angleDeg": 106.21875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::070",
+    "name": "Sepia",
+    "hex": "#734741",
+    "dist": 16.496940663421075,
+    "angleDeg": 290.6328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::090",
+    "name": "Mauve Deep",
+    "hex": "#5a42ab",
+    "dist": 16.652963319795397,
+    "angleDeg": 206.9140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::051",
+    "name": "Pthalo Green Light",
+    "hex": "#00755f",
+    "dist": 17.092733615027914,
+    "angleDeg": 160.390625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::048",
+    "name": "Cobalt Turquoise",
+    "hex": "#00aed0",
+    "dist": 17.2841228142478,
+    "angleDeg": 171.9921875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::050",
+    "name": "Pthalo Green",
+    "hex": "#007066",
+    "dist": 17.464770252713315,
+    "angleDeg": 162.96875,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::105",
+    "name": "Teal Green",
+    "hex": "#00707e",
+    "dist": 18.62146845352079,
+    "angleDeg": 168.984375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::020",
+    "name": "Tangerine",
+    "hex": "#ffa975",
+    "dist": 18.920267827097184,
+    "angleDeg": 233.05078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::108",
+    "name": "Mint Green Light",
+    "hex": "#00bd7b",
+    "dist": 19.47730899392411,
+    "angleDeg": 138.4765625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::109",
+    "name": "Emerald Green",
+    "hex": "#00b157",
+    "dist": 19.69801276448943,
+    "angleDeg": 128.1640625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::107",
+    "name": "Mint Green",
+    "hex": "#00c086",
+    "dist": 20.092170451231972,
+    "angleDeg": 141.9140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::034",
+    "name": "Rose Pink",
+    "hex": "#ef6da3",
+    "dist": 20.181571549170176,
+    "angleDeg": 288.125,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::081",
+    "name": "Opera Rose",
+    "hex": "#f16ca5",
+    "dist": 20.20498906816467,
+    "angleDeg": 291.5625,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::058",
+    "name": "Castle Green",
+    "hex": "#009455",
+    "dist": 21.48070954504714,
+    "angleDeg": 141.9140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::010",
+    "name": "Yellow Ochre Light",
+    "hex": "#e19945",
+    "dist": 21.637208681522537,
+    "angleDeg": 340.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::093",
+    "name": "Mauve",
+    "hex": "#9993d8",
+    "dist": 21.67317599191842,
+    "angleDeg": 196.171875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::106",
+    "name": "Jade Green",
+    "hex": "#00aa93",
+    "dist": 21.799546731192546,
+    "angleDeg": 156.5234375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::033",
+    "name": "Grenadine Light",
+    "hex": "#fb738e",
+    "dist": 23.27521425902416,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::120",
+    "name": "Warm Gray Light",
+    "hex": "#b3ada5",
+    "dist": 23.745541994425317,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::083",
+    "name": "Bengal Rose Light",
+    "hex": "#ec68b8",
+    "dist": 23.977020783125013,
+    "angleDeg": 281.25,
+    "radiusPx": 195,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::003",
+    "name": "Golden Yellow",
+    "hex": "#ffcf69",
+    "dist": 24.57385802602955,
+    "angleDeg": 45.1171875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::074",
+    "name": "Cadmium Orange Light",
+    "hex": "#ffb575",
+    "dist": 24.860530439862206,
+    "angleDeg": 233.05078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::035",
+    "name": "Lavender Light",
+    "hex": "#c372d4",
+    "dist": 25.395105871382153,
+    "angleDeg": 233.5546875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::008",
+    "name": "Naples Yellow",
+    "hex": "#ffc66c",
+    "dist": 25.699279277540356,
+    "angleDeg": 39.1015625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::082",
+    "name": "Azalea Pink",
+    "hex": "#f981a1",
+    "dist": 26.38691186451265,
+    "angleDeg": 293.28125,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::001",
+    "name": "Lemon Yellow Light",
+    "hex": "#f4f08f",
+    "dist": 26.48437304895944,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::002",
+    "name": "Primrose Yellow",
+    "hex": "#ffdc8a",
+    "dist": 30.279693532154386,
+    "angleDeg": 347.875,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::073",
+    "name": "Naples Yellow Light",
+    "hex": "#f7e5b5",
+    "dist": 33.854380910795946,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts premium soft touch colored pencils::072",
+    "name": "Titanium White",
+    "hex": "#f2efe6",
+    "dist": 45.044856245227265,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  }
+]

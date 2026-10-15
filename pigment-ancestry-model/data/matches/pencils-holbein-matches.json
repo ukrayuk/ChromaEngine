@@ -1,0 +1,1352 @@
+[
+  {
+    "key": "holbein artists' colored pencil::op097",
+    "name": "Brick",
+    "hex": "#b14d39",
+    "dist": 0.8038093054143373,
+    "angleDeg": 325.1015625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op044",
+    "name": "Scarlet",
+    "hex": "#eb372b",
+    "dist": 0.9580781765429918,
+    "angleDeg": -28.359375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op526",
+    "name": "Warm Grey #6",
+    "hex": "#504d48",
+    "dist": 1.1734085169912718,
+    "angleDeg": 106.42578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op052",
+    "name": "Madder Red",
+    "hex": "#cd3441",
+    "dist": 1.4497564986209095,
+    "angleDeg": 308.125,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op262",
+    "name": "Sap Green",
+    "hex": "#5d853a",
+    "dist": 1.8258095612270733,
+    "angleDeg": 38.41796875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op184",
+    "name": "Raw Umber",
+    "hex": "#8c7353",
+    "dist": 2.033681552724416,
+    "angleDeg": 223.11328125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op149",
+    "name": "Lemon",
+    "hex": "#f1ee42",
+    "dist": 2.2404065646715527,
+    "angleDeg": 65.4296875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op290",
+    "name": "Moss Green",
+    "hex": "#7e854b",
+    "dist": 3.118803997795063,
+    "angleDeg": 30.96484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op057",
+    "name": "Burnt Sienna",
+    "hex": "#be5a42",
+    "dist": 3.4488282753300368,
+    "angleDeg": 326.34375,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op291",
+    "name": "Leaf Green",
+    "hex": "#88a13f",
+    "dist": 3.463407623962287,
+    "angleDeg": 78.68359375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op047",
+    "name": "Tiger Lily",
+    "hex": "#fe5b1f",
+    "dist": 3.632778511188207,
+    "angleDeg": 1.71875,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op242",
+    "name": "Spring Green",
+    "hex": "#b0eb53",
+    "dist": 3.656901070203851,
+    "angleDeg": 75.7421875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op059",
+    "name": "Autumn Leaf",
+    "hex": "#d87349",
+    "dist": 3.9234700860775003,
+    "angleDeg": 233.671875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op240",
+    "name": "Chartreuse Green",
+    "hex": "#d8f24d",
+    "dist": 4.257297489506042,
+    "angleDeg": 68.8671875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op098",
+    "name": "Cocoa",
+    "hex": "#9a4b36",
+    "dist": 4.399787645061167,
+    "angleDeg": 278.625,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op046",
+    "name": "Vermilion",
+    "hex": "#f94123",
+    "dist": 4.523529659370034,
+    "angleDeg": -13.75,
+    "radiusPx": 195,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op449",
+    "name": "Magenta",
+    "hex": "#c62061",
+    "dist": 4.537330116611552,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op093",
+    "name": "Mahogany",
+    "hex": "#8f3837",
+    "dist": 4.658822883365518,
+    "angleDeg": 285.87109375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op043",
+    "name": "Signal Red",
+    "hex": "#df2436",
+    "dist": 4.732234779879835,
+    "angleDeg": -55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op192",
+    "name": "Tan",
+    "hex": "#b37b49",
+    "dist": 4.907510601880741,
+    "angleDeg": 337.73046875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op189",
+    "name": "Olive Green",
+    "hex": "#5a6137",
+    "dist": 4.95904338073348,
+    "angleDeg": 94.83203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op042",
+    "name": "Carmine",
+    "hex": "#d21a35",
+    "dist": 5.3088104036754755,
+    "angleDeg": 301.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op198",
+    "name": "Olive Yellow",
+    "hex": "#ada441",
+    "dist": 5.385036171100456,
+    "angleDeg": 349.9453125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op536",
+    "name": "Cool Grey #6",
+    "hex": "#464b53",
+    "dist": 5.652454861648983,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op048",
+    "name": "Orange",
+    "hex": "#ff7116",
+    "dist": 5.692147731982434,
+    "angleDeg": 13.3203125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op195",
+    "name": "Olive Brown",
+    "hex": "#9b8343",
+    "dist": 5.830451709748994,
+    "angleDeg": 343.94140625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op486",
+    "name": "Raisin",
+    "hex": "#4f3748",
+    "dist": 5.857170201817479,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op254",
+    "name": "Evergreen",
+    "hex": "#42a94b",
+    "dist": 6.310499244904166,
+    "angleDeg": 49.8046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op292",
+    "name": "Cactus Green",
+    "hex": "#5b7b4d",
+    "dist": 6.368801581382148,
+    "angleDeg": 146.41015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op054",
+    "name": "Light Red",
+    "hex": "#c9443a",
+    "dist": 6.385742388310293,
+    "angleDeg": 316.40625,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op187",
+    "name": "Olive Drab",
+    "hex": "#6f664e",
+    "dist": 6.544081879623619,
+    "angleDeg": 98.3515625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op099",
+    "name": "Brown",
+    "hex": "#9a5335",
+    "dist": 6.579990154104342,
+    "angleDeg": 330.69140625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op349",
+    "name": "Ultra Blue",
+    "hex": "#445bba",
+    "dist": 6.891058583821631,
+    "angleDeg": 188.0078125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op182",
+    "name": "Sepia",
+    "hex": "#50433a",
+    "dist": 7.012027792534214,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op535",
+    "name": "Cool Grey #5",
+    "hex": "#5b626d",
+    "dist": 7.165595100505319,
+    "angleDeg": 165.45703125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op147",
+    "name": "Canary Yellow",
+    "hex": "#fedf00",
+    "dist": 7.392957530144946,
+    "angleDeg": 55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op080",
+    "name": "Burgundy",
+    "hex": "#73313b",
+    "dist": 7.451553481977519,
+    "angleDeg": 297.05078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op294",
+    "name": "Jasper Green",
+    "hex": "#407051",
+    "dist": 7.6360191540758295,
+    "angleDeg": 205.72265625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op243",
+    "name": "Fresh Green",
+    "hex": "#68df4b",
+    "dist": 7.759268778265838,
+    "angleDeg": 93.359375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op481",
+    "name": "Grape",
+    "hex": "#403a52",
+    "dist": 7.7610461310668795,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op194",
+    "name": "Kahki",
+    "hex": "#b59153",
+    "dist": 8.033111719414359,
+    "angleDeg": 342.90625,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op630",
+    "name": "Copper",
+    "hex": "#a76450",
+    "dist": 8.13246135675156,
+    "angleDeg": 16.265625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op525",
+    "name": "Warm Grey #5",
+    "hex": "#6c6760",
+    "dist": 8.141077397793575,
+    "angleDeg": 102.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op446",
+    "name": "Amethyst",
+    "hex": "#a52a7b",
+    "dist": 8.661490626360035,
+    "angleDeg": 270.9375,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op368",
+    "name": "Prussian Blue",
+    "hex": "#1c4776",
+    "dist": 8.710189648837526,
+    "angleDeg": 174.7734375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op062",
+    "name": "Crimson",
+    "hex": "#932f35",
+    "dist": 8.89771954827443,
+    "angleDeg": 284.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op251",
+    "name": "Apple Green",
+    "hex": "#a8c41e",
+    "dist": 9.487373793419781,
+    "angleDeg": 68.125,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op086",
+    "name": "Chocolate",
+    "hex": "#5c433f",
+    "dist": 9.498738115065017,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op296",
+    "name": "Bottle Green",
+    "hex": "#2b6355",
+    "dist": 9.824388614392708,
+    "angleDeg": 156.76171875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op060",
+    "name": "Wine Red",
+    "hex": "#902943",
+    "dist": 9.947600759737824,
+    "angleDeg": 295.39453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op339",
+    "name": "Smalt Blue",
+    "hex": "#7081d6",
+    "dist": 10.059718297289876,
+    "angleDeg": 189.296875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op443",
+    "name": "Iris",
+    "hex": "#652a73",
+    "dist": 10.305654058515158,
+    "angleDeg": 236.9921875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op511",
+    "name": "Lamp Black",
+    "hex": "#323335",
+    "dist": 10.678209463049878,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op600",
+    "name": "Gold",
+    "hex": "#bb9060",
+    "dist": 10.852599292929298,
+    "angleDeg": 227.66796875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op096",
+    "name": "Cinnamon",
+    "hex": "#b96b5e",
+    "dist": 10.953943095175866,
+    "angleDeg": 230.359375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op460",
+    "name": "Indigo",
+    "hex": "#363b5c",
+    "dist": 10.997750641209171,
+    "angleDeg": 173.73828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op448",
+    "name": "Azalea",
+    "hex": "#ce237c",
+    "dist": 11.10924720783657,
+    "angleDeg": 291.5625,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op040",
+    "name": "Rose",
+    "hex": "#d32553",
+    "dist": 11.118461812893916,
+    "angleDeg": 303.77734375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op051",
+    "name": "Strawberry",
+    "hex": "#cc1b4e",
+    "dist": 11.234389435115748,
+    "angleDeg": 303.77734375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op395",
+    "name": "Saxe Blue",
+    "hex": "#5a97be",
+    "dist": 11.279882936400316,
+    "angleDeg": 174.140625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op267",
+    "name": "Forest Green",
+    "hex": "#1e5c54",
+    "dist": 11.739852234901093,
+    "angleDeg": 159.0390625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op180",
+    "name": "Burnt Umber",
+    "hex": "#553d33",
+    "dist": 11.960505943786789,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op365",
+    "name": "Navy Blue",
+    "hex": "#0c4067",
+    "dist": 12.040031651994362,
+    "angleDeg": 172.703125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op269",
+    "name": "Triton Green",
+    "hex": "#006264",
+    "dist": 12.108747033885564,
+    "angleDeg": 192.05859375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op343",
+    "name": "Turquoise Blue",
+    "hex": "#0075a8",
+    "dist": 12.161711595084558,
+    "angleDeg": 174.5703125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op145",
+    "name": "Dandelion",
+    "hex": "#ffcd00",
+    "dist": 12.466152316653938,
+    "angleDeg": 53.7109375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op140",
+    "name": "Tangerine",
+    "hex": "#ff9b00",
+    "dist": 12.915585602121398,
+    "angleDeg": 32.65625,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op524",
+    "name": "Warm Grey #4",
+    "hex": "#898279",
+    "dist": 12.936470065916438,
+    "angleDeg": 219.80078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op335",
+    "name": "Cerulean Blue [hue]",
+    "hex": "#0082cf",
+    "dist": 13.201080870498682,
+    "angleDeg": 181.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op255",
+    "name": "Malachite Green",
+    "hex": "#008651",
+    "dist": 13.221450412460767,
+    "angleDeg": 147.9296875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op345",
+    "name": "Spectrum Blue",
+    "hex": "#0069b2",
+    "dist": 13.445886869717134,
+    "angleDeg": 181.70703125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op031",
+    "name": "Carnation",
+    "hex": "#e95566",
+    "dist": 13.481927350325687,
+    "angleDeg": 309.98828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op028",
+    "name": "Salmon Pink",
+    "hex": "#ff9a77",
+    "dist": 13.56905340713925,
+    "angleDeg": 234.29296875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op288",
+    "name": "Fir Green",
+    "hex": "#2c4946",
+    "dist": 13.816007015077949,
+    "angleDeg": 162.14453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op469",
+    "name": "Bordeaux Red",
+    "hex": "#932047",
+    "dist": 14.60410248933504,
+    "angleDeg": 296.22265625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op740",
+    "name": "Luminous Lemon",
+    "hex": "#edff4f",
+    "dist": 14.630938464442405,
+    "angleDeg": 68.0078125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op620",
+    "name": "Bronze",
+    "hex": "#a19b88",
+    "dist": 14.866732435437847,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op143",
+    "name": "Sunflower",
+    "hex": "#ffbf00",
+    "dist": 14.901625799703668,
+    "angleDeg": 48.984375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op347",
+    "name": "Cobalt Blue [hue]",
+    "hex": "#0062bc",
+    "dist": 15.252029768102414,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op340",
+    "name": "Peacock Blue",
+    "hex": "#00778e",
+    "dist": 15.462310718416326,
+    "angleDeg": 170.703125,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op348",
+    "name": "Royal Blue",
+    "hex": "#004cab",
+    "dist": 15.539775371837926,
+    "angleDeg": 188.0078125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op440",
+    "name": "Pansy",
+    "hex": "#42348c",
+    "dist": 15.59544676433633,
+    "angleDeg": 214.6484375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op730",
+    "name": "Luminous Orange",
+    "hex": "#ff9b54",
+    "dist": 15.685900114677626,
+    "angleDeg": 17.1875,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op264",
+    "name": "Holly Green",
+    "hex": "#1f744c",
+    "dist": 15.69914594141166,
+    "angleDeg": 204.06640625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op510",
+    "name": "Black",
+    "hex": "#262628",
+    "dist": 16.097547515021084,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op750",
+    "name": "Luminous Green",
+    "hex": "#86fd5c",
+    "dist": 16.171125975530064,
+    "angleDeg": 84.765625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op610",
+    "name": "Pale Gold",
+    "hex": "#b5a57a",
+    "dist": 16.37520091757915,
+    "angleDeg": 222.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op165",
+    "name": "Mustard",
+    "hex": "#d5a51e",
+    "dist": 16.56424751027846,
+    "angleDeg": 45.1171875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op430",
+    "name": "Wisteria",
+    "hex": "#968ad9",
+    "dist": 16.725169997972472,
+    "angleDeg": 196.171875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op441",
+    "name": "Violet",
+    "hex": "#542884",
+    "dist": 17.057667723667745,
+    "angleDeg": 228.3984375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op235",
+    "name": "Emerald Green",
+    "hex": "#00c882",
+    "dist": 17.22920341461114,
+    "angleDeg": 135.0390625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op534",
+    "name": "Cool Grey #4",
+    "hex": "#818790",
+    "dist": 17.264587419013132,
+    "angleDeg": 163.1796875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op274",
+    "name": "Mint Green",
+    "hex": "#8fbd94",
+    "dist": 17.331649651362426,
+    "angleDeg": 139.9921875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op142",
+    "name": "Marigold",
+    "hex": "#ffa800",
+    "dist": 17.66818430673268,
+    "angleDeg": 40.390625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op248",
+    "name": "Peacock Green",
+    "hex": "#007c7e",
+    "dist": 17.881770033335215,
+    "angleDeg": 165.546875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op371",
+    "name": "Sky Mist",
+    "hex": "#73a4ab",
+    "dist": 18.121440289836418,
+    "angleDeg": 170.2734375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op024",
+    "name": "Coral",
+    "hex": "#ff9189",
+    "dist": 18.41568443005157,
+    "angleDeg": 233.87890625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op275",
+    "name": "Surf Green",
+    "hex": "#7bb39a",
+    "dist": 18.45231922381512,
+    "angleDeg": 147.03125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op153",
+    "name": "Yellow Ochre",
+    "hex": "#e9a642",
+    "dist": 18.568911335383937,
+    "angleDeg": 39.1015625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op650",
+    "name": "Antique Silver",
+    "hex": "#888a8b",
+    "dist": 18.663362332613463,
+    "angleDeg": 159.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op277",
+    "name": "Celadon",
+    "hex": "#73b4a1",
+    "dist": 18.917696217576644,
+    "angleDeg": 163.3984375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op227",
+    "name": "Jade Green",
+    "hex": "#00caab",
+    "dist": 19.057872420255975,
+    "angleDeg": 154.8046875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op523",
+    "name": "Warm Grey #3",
+    "hex": "#a49d95",
+    "dist": 19.10980320404859,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op272",
+    "name": "Misty Green",
+    "hex": "#aac097",
+    "dist": 19.622568356291715,
+    "angleDeg": 137.921875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op271",
+    "name": "Opal Green",
+    "hex": "#c1d299",
+    "dist": 20.25506484533262,
+    "angleDeg": 129.01953125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op495",
+    "name": "Rose Grey",
+    "hex": "#b872a7",
+    "dist": 20.43784105418288,
+    "angleDeg": 253.75,
+    "radiusPx": 195,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op245",
+    "name": "Summer Green",
+    "hex": "#00b06a",
+    "dist": 20.546440148794876,
+    "angleDeg": 138.4765625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op247",
+    "name": "Viridian",
+    "hex": "#00967c",
+    "dist": 21.15708246816611,
+    "angleDeg": 156.5234375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op437",
+    "name": "Cosmos",
+    "hex": "#f070a8",
+    "dist": 21.175082111666196,
+    "angleDeg": 288.125,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op131",
+    "name": "Apricot",
+    "hex": "#ffb264",
+    "dist": 21.20177095287874,
+    "angleDeg": 30.5078125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op225",
+    "name": "Cobalt Green [hue]",
+    "hex": "#65dda8",
+    "dist": 21.36446690858828,
+    "angleDeg": 144.0625,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op171",
+    "name": "Cork",
+    "hex": "#d9b197",
+    "dist": 21.678730089151546,
+    "angleDeg": 225.8046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op323",
+    "name": "Aqua",
+    "hex": "#1ebdef",
+    "dist": 21.767059768750627,
+    "angleDeg": 173.7109375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op321",
+    "name": "Porcelain Blue",
+    "hex": "#00c2db",
+    "dist": 21.981785262457358,
+    "angleDeg": 170.2734375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op222",
+    "name": "Lettuce Green",
+    "hex": "#b7ea88",
+    "dist": 22.077091378882145,
+    "angleDeg": 125.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op326",
+    "name": "Forget-me-not Blue",
+    "hex": "#81b4eb",
+    "dist": 22.545194415256706,
+    "angleDeg": 175,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op533",
+    "name": "Cool Grey #3",
+    "hex": "#9299a3",
+    "dist": 23.275730840990626,
+    "angleDeg": 162.14453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op700",
+    "name": "Luminous Red",
+    "hex": "#ff5980",
+    "dist": 23.379644167932856,
+    "angleDeg": 301.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op640",
+    "name": "Silver",
+    "hex": "#969aa0",
+    "dist": 23.414505647004653,
+    "angleDeg": 159.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op324",
+    "name": "Sky Blue",
+    "hex": "#65c3f1",
+    "dist": 23.61463147002163,
+    "angleDeg": 174.140625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op270",
+    "name": "Willow Green",
+    "hex": "#bcbd96",
+    "dist": 23.84931062743182,
+    "angleDeg": 137.921875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op022",
+    "name": "Pink",
+    "hex": "#ff9799",
+    "dist": 23.859814763827217,
+    "angleDeg": 232.63671875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op328",
+    "name": "Lavender Blue",
+    "hex": "#8ab4eb",
+    "dist": 23.982372053988012,
+    "angleDeg": 175,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op127",
+    "name": "Cream",
+    "hex": "#ffe376",
+    "dist": 24.213857892869328,
+    "angleDeg": 67.08984375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op173",
+    "name": "Beige",
+    "hex": "#d8bb99",
+    "dist": 24.411541244138853,
+    "angleDeg": 225.8046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op076",
+    "name": "Ash Rose",
+    "hex": "#d0a2a1",
+    "dist": 24.41659309613625,
+    "angleDeg": 226.42578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op379",
+    "name": "Smoke Blue",
+    "hex": "#8f9ab3",
+    "dist": 24.619572668248605,
+    "angleDeg": 185.43359375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op120",
+    "name": "Peach",
+    "hex": "#f9bba1",
+    "dist": 25.78421746933758,
+    "angleDeg": 229.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op175",
+    "name": "Sand",
+    "hex": "#d3bf95",
+    "dist": 26.015764098752552,
+    "angleDeg": 222.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op434",
+    "name": "Mauve",
+    "hex": "#e483cb",
+    "dist": 28.53974362925761,
+    "angleDeg": 260.625,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op134",
+    "name": "Naples Yellow",
+    "hex": "#ffd776",
+    "dist": 29.013832512113673,
+    "angleDeg": 45.1171875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op228",
+    "name": "Ice Green",
+    "hex": "#6fe1d9",
+    "dist": 29.147026229835816,
+    "angleDeg": 163.3984375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op522",
+    "name": "Warm Grey #2",
+    "hex": "#c7c0b6",
+    "dist": 29.49914259960865,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op122",
+    "name": "Jaune Brillant",
+    "hex": "#fdcb9a",
+    "dist": 30.753134818279594,
+    "angleDeg": 229.53125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op436",
+    "name": "Fuchsia",
+    "hex": "#f08cce",
+    "dist": 31.45430503949982,
+    "angleDeg": 267.5,
+    "radiusPx": 149,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op720",
+    "name": "Luminous Opera",
+    "hex": "#ff3fb3",
+    "dist": 31.65783516256889,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op532",
+    "name": "Cool Grey #2",
+    "hex": "#b5b9c0",
+    "dist": 32.46481745817224,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op123",
+    "name": "Light Sand",
+    "hex": "#f9d69f",
+    "dist": 32.75326699125225,
+    "angleDeg": 345.59765625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op476",
+    "name": "Sea Fog",
+    "hex": "#c2a3b5",
+    "dist": 33.15355944474118,
+    "angleDeg": 224.1484375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op429",
+    "name": "Rose Pink",
+    "hex": "#fc94ae",
+    "dist": 33.98924920092189,
+    "angleDeg": 293.28125,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op710",
+    "name": "Luminous Rose",
+    "hex": "#f23cbb",
+    "dist": 34.18501777304796,
+    "angleDeg": 288.125,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op422",
+    "name": "Lilac",
+    "hex": "#bba8d4",
+    "dist": 35.611729468536375,
+    "angleDeg": 182.7421875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op019",
+    "name": "Shell Pink",
+    "hex": "#ffd7c7",
+    "dist": 36.5680068640421,
+    "angleDeg": 227.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op312",
+    "name": "Horizon Blue",
+    "hex": "#b1dfea",
+    "dist": 36.781757190411035,
+    "angleDeg": 170.2734375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "holbein artists' colored pencil::op011",
+    "name": "Cherry Blossom",
+    "hex": "#ffcbcc",
+    "dist": 37.21488183441324,
+    "angleDeg": 227.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op521",
+    "name": "Warm Grey #1",
+    "hex": "#e5dfd8",
+    "dist": 40.20796312248829,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op116",
+    "name": "Ivory",
+    "hex": "#faeed0",
+    "dist": 41.087418456062466,
+    "angleDeg": 129.01953125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op531",
+    "name": "Cool Grey #1",
+    "hex": "#dfe0dd",
+    "dist": 41.199986345732675,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op500",
+    "name": "White",
+    "hex": "#f3f2f2",
+    "dist": 47.66539434396059,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "holbein artists' colored pencil::op501",
+    "name": "Soft White",
+    "hex": "#f4f3f3",
+    "dist": 48.112736259321245,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  }
+]

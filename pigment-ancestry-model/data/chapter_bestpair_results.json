@@ -1,0 +1,338 @@
+[
+  {
+    "target": "#cc0000",
+    "de": 7.846059044518104,
+    "p1": {
+      "name": "Cadmium Orange Deep",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "hex": "#ff6400",
+      "lab": [
+        63.46,
+        59.19,
+        74.17
+      ],
+      "d": 28.504512857000407
+    },
+    "p2": {
+      "name": "Alizarin Crimson",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "hex": "#b90032",
+      "lab": [
+        37.85,
+        66.95,
+        26.8
+      ],
+      "d": 30.369132458368263
+    },
+    "t": 0.44140625,
+    "mixHex": "#E02A1D"
+  },
+  {
+    "target": "#e33a0b",
+    "de": 4.131361938533138,
+    "p1": {
+      "name": "Cadmium Orange Deep",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "hex": "#ff6400",
+      "lab": [
+        63.46,
+        59.19,
+        74.17
+      ],
+      "d": 18.8567119450897
+    },
+    "p2": {
+      "name": "Vermilion",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "hex": "#e02c3a",
+      "lab": [
+        49.4,
+        67.17,
+        37.54
+      ],
+      "d": 23.31433560799882
+    },
+    "t": 0.44140625,
+    "mixHex": "#EF471B"
+  },
+  {
+    "target": "#fa7516",
+    "de": 0,
+    "p1": {
+      "name": "Cadmium Orange Deep",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "hex": "#ff6400",
+      "lab": [
+        63.46,
+        59.19,
+        74.17
+      ],
+      "d": 14.142850446397984
+    },
+    "p2": {
+      "name": "Dark Naples Ochre",
+      "range": "Faber-Castell Polychromos 9201",
+      "hex": "#f3ae41",
+      "lab": [
+        76.03,
+        15.63,
+        63.05
+      ],
+      "d": 33.38594751733978
+    },
+    "t": 0.296875,
+    "mixHex": "#FA7516"
+  },
+  {
+    "target": "#fda10b",
+    "de": 0.4598274950705483,
+    "p1": {
+      "name": "Fast Orange",
+      "range": "Caran d'Ache Pablo 666",
+      "hex": "#ffa102",
+      "lab": [
+        75.05,
+        29.61,
+        79.27
+      ],
+      "d": 5.147725227993528
+    },
+    "p2": {
+      "name": "Golden Ochre",
+      "range": "Faber-Castell Polychromos 9201",
+      "hex": "#efa034",
+      "lab": [
+        72.11,
+        20.84,
+        64.36
+      ],
+      "d": 13.320169638437788
+    },
+    "t": 0.09375,
+    "mixHex": "#FCA109"
+  },
+  {
+    "target": "#ffcc00",
+    "de": 0.09049211863427149,
+    "p1": {
+      "name": "Yellow",
+      "range": "Caran d'Ache Pablo 666",
+      "hex": "#ffd300",
+      "lab": [
+        85.87,
+        0.13,
+        94.93
+      ],
+      "d": 10.473755996066208
+    },
+    "p2": {
+      "name": "Golden Yellow",
+      "range": "Caran d'Ache Pablo 666",
+      "hex": "#ffc100",
+      "lab": [
+        82.11,
+        11.95,
+        91.5
+      ],
+      "d": 10.601525734917123
+    },
+    "t": 0.31640625,
+    "mixHex": "#FFCC01"
+  },
+  {
+    "target": "#80c300",
+    "de": 1.5465280000972543,
+    "p1": {
+      "name": "Leaf Green Light",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "hex": "#9acd06",
+      "lab": [
+        76.39,
+        -39.27,
+        75.31
+      ],
+      "d": 7.918145648689651
+    },
+    "p2": {
+      "name": "Permanent Green",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "hex": "#2c8f22",
+      "lab": [
+        52.29,
+        -49.11,
+        46.62
+      ],
+      "d": 32.28471465404916
+    },
+    "t": 0.12890625,
+    "mixHex": "#84C710"
+  },
+  {
+    "target": "#00bb00",
+    "de": 6.367769811559197,
+    "p1": {
+      "name": "Leaf Green",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "hex": "#5ac61d",
+      "lab": [
+        71.25,
+        -57.55,
+        66.34
+      ],
+      "d": 11.867350928069898
+    },
+    "p2": {
+      "name": "Castle Green Light",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "hex": "#00c752",
+      "lab": [
+        70.47,
+        -66.84,
+        46.23
+      ],
+      "d": 20.170683912581385
+    },
+    "t": 0.33203125,
+    "mixHex": "#37C728"
+  },
+  {
+    "target": "#189371",
+    "de": 0.3754765420866039,
+    "p1": {
+      "name": "Greyish Green",
+      "range": "Caran d'Ache Pablo 666",
+      "hex": "#009f76",
+      "lab": [
+        57.77,
+        -47.89,
+        11.29
+      ],
+      "d": 8.676155338321525
+    },
+    "p2": {
+      "name": "Chrome Green",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "hex": "#36755f",
+      "lab": [
+        44.71,
+        -26.07,
+        6.25
+      ],
+      "d": 17.352241914860546
+    },
+    "t": 0.3515625,
+    "mixHex": "#179270"
+  },
+  {
+    "target": "#306be2",
+    "de": 2.9938064776313604,
+    "p1": {
+      "name": "Fra Angelico Blue",
+      "range": "Faber-Castell Polychromos 9201",
+      "hex": "#2353ce",
+      "lab": [
+        39.67,
+        30.14,
+        -67.91
+      ],
+      "d": 10.731824060714658
+    },
+    "p2": {
+      "name": "Light Ultramarine",
+      "range": "Faber-Castell Polychromos 9201",
+      "hex": "#5589e4",
+      "lab": [
+        57.43,
+        10.56,
+        -51.26
+      ],
+      "d": 21.754112024523476
+    },
+    "t": 0.28515625,
+    "mixHex": "#2E65D8"
+  },
+  {
+    "target": "#4d5dc3",
+    "de": 1.5662241122877045,
+    "p1": {
+      "name": "Violet Deep",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "hex": "#795cb9",
+      "lab": [
+        45.99,
+        32.64,
+        -44.82
+      ],
+      "d": 13.233290212760268
+    },
+    "p2": {
+      "name": "Fra Angelico Blue",
+      "range": "Faber-Castell Polychromos 9201",
+      "hex": "#2353ce",
+      "lab": [
+        39.67,
+        30.14,
+        -67.91
+      ],
+      "d": 13.886861132033381
+    },
+    "t": 0.375,
+    "mixHex": "#4A5ABE"
+  },
+  {
+    "target": "#6a4ea3",
+    "de": 0.40687559234625426,
+    "p1": {
+      "name": "Periwinkle Blue",
+      "range": "Caran d'Ache Pablo 666",
+      "hex": "#7252a0",
+      "lab": [
+        41.46,
+        30.36,
+        -37.66
+      ],
+      "d": 4.710990432218722
+    },
+    "p2": {
+      "name": "Mauve Deep",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "hex": "#5a42ab",
+      "lab": [
+        35.92,
+        36.75,
+        -52.93
+      ],
+      "d": 12.879819820989757
+    },
+    "t": 0.31640625,
+    "mixHex": "#694DA2"
+  },
+  {
+    "target": "#9b2752",
+    "de": 0,
+    "p1": {
+      "name": "Cherry",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "hex": "#891e45",
+      "lab": [
+        30.98,
+        47.02,
+        3.54
+      ],
+      "d": 6.1178351784123945
+    },
+    "p2": {
+      "name": "Light Purple Pink",
+      "range": "Faber-Castell Polychromos 9201",
+      "hex": "#ec5080",
+      "lab": [
+        57.18,
+        63.27,
+        6.71
+      ],
+      "d": 25.030810214235345
+    },
+    "t": 0.1484375,
+    "mixHex": "#9B2752"
+  }
+]

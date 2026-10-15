@@ -1,0 +1,1082 @@
+[
+  {
+    "key": "caran d'ache pablo 666::039",
+    "name": "Olive Brown",
+    "hex": "#837141",
+    "dist": 1.0422440668082444,
+    "angleDeg": 24.9609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::131",
+    "name": "Periwinkle Blue",
+    "hex": "#7252a0",
+    "dist": 1.2006107737362637,
+    "angleDeg": 218.0859375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::407",
+    "name": "Sepia",
+    "hex": "#564e49",
+    "dist": 1.8757215389999211,
+    "angleDeg": 106.83984375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::018",
+    "name": "Olive Grey",
+    "hex": "#696d45",
+    "dist": 2.2423715004456826,
+    "angleDeg": 94.625,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::065",
+    "name": "Russet",
+    "hex": "#ad5434",
+    "dist": 2.3195945613437563,
+    "angleDeg": 271.5859375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::350",
+    "name": "Purplish Red",
+    "hex": "#b23374",
+    "dist": 2.358761406948189,
+    "angleDeg": 280.390625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::019",
+    "name": "Olive Black",
+    "hex": "#6a6d4c",
+    "dist": 2.576649710069918,
+    "angleDeg": 95.24609375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::250",
+    "name": "Canary Yellow",
+    "hex": "#f8e538",
+    "dist": 2.6216799903326504,
+    "angleDeg": 65,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::063",
+    "name": "English Red",
+    "hex": "#b85343",
+    "dist": 2.6269950347382314,
+    "angleDeg": 324.48046875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::215",
+    "name": "Greyish Green",
+    "hex": "#009f76",
+    "dist": 2.924070866962536,
+    "angleDeg": 153.515625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::062",
+    "name": "Venetian Red",
+    "hex": "#cd6a4c",
+    "dist": 3.3009388827716832,
+    "angleDeg": 10.46875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::055",
+    "name": "Cinnamon",
+    "hex": "#976040",
+    "dist": 3.858916304733275,
+    "angleDeg": 17.71484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::110",
+    "name": "Lilac",
+    "hex": "#874b8a",
+    "dist": 3.954148374572519,
+    "angleDeg": 241.71875,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::060",
+    "name": "Vermilion",
+    "hex": "#f75333",
+    "dist": 4.126349214143206,
+    "angleDeg": -9.0234375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::240",
+    "name": "Lemon Yellow",
+    "hex": "#f0ed4c",
+    "dist": 4.152646830240399,
+    "angleDeg": 65.859375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::089",
+    "name": "Dark Carmine",
+    "hex": "#973e4d",
+    "dist": 4.169405066352405,
+    "angleDeg": 291.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::100",
+    "name": "Purple Violet",
+    "hex": "#a7427d",
+    "dist": 4.268531232792424,
+    "angleDeg": 267.5,
+    "radiusPx": 149,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::280",
+    "name": "Ruby Red",
+    "hex": "#df344c",
+    "dist": 4.342324603680357,
+    "angleDeg": 301.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::053",
+    "name": "Hazel",
+    "hex": "#b77146",
+    "dist": 4.424926878276704,
+    "angleDeg": 335.0390625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::049",
+    "name": "Raw Umber",
+    "hex": "#4c473e",
+    "dist": 4.550308907020776,
+    "angleDeg": 105.18359375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::497",
+    "name": "Bronze",
+    "hex": "#a4765f",
+    "dist": 4.658289355047896,
+    "angleDeg": 226.42578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::409",
+    "name": "Charcoal Grey",
+    "hex": "#434344",
+    "dist": 4.742752333351875,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::009",
+    "name": "Black",
+    "hex": "#434547",
+    "dist": 4.786290698761542,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::047",
+    "name": "Bistre",
+    "hex": "#615452",
+    "dist": 4.964647168674918,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::155",
+    "name": "Blue Jeans",
+    "hex": "#427caa",
+    "dist": 4.9936362066908835,
+    "angleDeg": 183.36328125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::030",
+    "name": "Orange",
+    "hex": "#ff8e08",
+    "dist": 5.290222283149305,
+    "angleDeg": 27.5,
+    "radiusPx": 149,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::016",
+    "name": "Khaki Green",
+    "hex": "#9e9d4a",
+    "dist": 5.373785242011982,
+    "angleDeg": 348.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::230",
+    "name": "Yellow Green",
+    "hex": "#91df59",
+    "dist": 5.37873092399378,
+    "angleDeg": 86.9140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::300",
+    "name": "Fast Orange",
+    "hex": "#ffa102",
+    "dist": 5.5276380274694805,
+    "angleDeg": 35.234375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::050",
+    "name": "Flame Red",
+    "hex": "#ff7335",
+    "dist": 5.569645867619464,
+    "angleDeg": 9.8828125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::040",
+    "name": "Reddish Orange",
+    "hex": "#fe7433",
+    "dist": 5.707493225046503,
+    "angleDeg": 9.8828125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::495",
+    "name": "Slate Grey",
+    "hex": "#515559",
+    "dist": 5.7194309992941355,
+    "angleDeg": 108.2890625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::470",
+    "name": "Spring Green",
+    "hex": "#cae550",
+    "dist": 5.862903643356413,
+    "angleDeg": 68.8671875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::245",
+    "name": "Light Olive",
+    "hex": "#adb44d",
+    "dist": 5.891404997482036,
+    "angleDeg": 352.84375,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::075",
+    "name": "Indian Red",
+    "hex": "#b73542",
+    "dist": 6.090377366370201,
+    "angleDeg": 313.71484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::025",
+    "name": "Green Ochre",
+    "hex": "#a5862e",
+    "dist": 6.129883423205154,
+    "angleDeg": 344.5625,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::220",
+    "name": "Grass Green",
+    "hex": "#009660",
+    "dist": 6.3377802907573395,
+    "angleDeg": 147.9296875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::149",
+    "name": "Night Blue",
+    "hex": "#294881",
+    "dist": 6.378148300448378,
+    "angleDeg": 177.46484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::037",
+    "name": "Brown Ochre",
+    "hex": "#896748",
+    "dist": 6.538222985746996,
+    "angleDeg": 21.234375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::159",
+    "name": "Prussian Blue",
+    "hex": "#294874",
+    "dist": 6.594861959244278,
+    "angleDeg": 174.359375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::225",
+    "name": "Moss Green",
+    "hex": "#627d48",
+    "dist": 6.886996451639636,
+    "angleDeg": 90.69140625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::008",
+    "name": "Greyish Black",
+    "hex": "#505962",
+    "dist": 7.140719747567755,
+    "angleDeg": 165.45703125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::249",
+    "name": "Olive",
+    "hex": "#818659",
+    "dist": 7.452955184139299,
+    "angleDeg": 218.3515625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::035",
+    "name": "Ochre",
+    "hex": "#b9833d",
+    "dist": 7.475988038864473,
+    "angleDeg": 340.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::070",
+    "name": "Scarlet",
+    "hex": "#d93034",
+    "dist": 7.487935996868338,
+    "angleDeg": -55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::151",
+    "name": "Pastel Blue",
+    "hex": "#3e8ccc",
+    "dist": 7.733076985979605,
+    "angleDeg": 181.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::090",
+    "name": "Purple",
+    "hex": "#b74888",
+    "dist": 7.740792839986199,
+    "angleDeg": 274.375,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::010",
+    "name": "Yellow",
+    "hex": "#ffd300",
+    "dist": 8.14972504481262,
+    "angleDeg": 55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::045",
+    "name": "Vandycke Brown",
+    "hex": "#6b5752",
+    "dist": 8.156232513664833,
+    "angleDeg": 105.390625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::067",
+    "name": "Mahogany",
+    "hex": "#98554a",
+    "dist": 8.18130281087973,
+    "angleDeg": 282.765625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::007",
+    "name": "Dark Grey",
+    "hex": "#64717a",
+    "dist": 8.261470527534131,
+    "angleDeg": 164.0078125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::139",
+    "name": "Indigo Blue",
+    "hex": "#404165",
+    "dist": 8.472691805711463,
+    "angleDeg": 173.73828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::130",
+    "name": "Royal Blue",
+    "hex": "#49458e",
+    "dist": 8.492853634287501,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::370",
+    "name": "Gentian Blue",
+    "hex": "#006fbf",
+    "dist": 8.643475439580143,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::239",
+    "name": "Spruce Green",
+    "hex": "#316f52",
+    "dist": 8.9556518012244,
+    "angleDeg": 204.06640625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::015",
+    "name": "Olive Yellow",
+    "hex": "#c4c048",
+    "dist": 9.004635329734926,
+    "angleDeg": 70.1953125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::499",
+    "name": "Gold",
+    "hex": "#998e55",
+    "dist": 9.18938734556911,
+    "angleDeg": 27.65234375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::195",
+    "name": "Opaline Green",
+    "hex": "#008c8e",
+    "dist": 9.25875824551083,
+    "angleDeg": 166.8359375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::460",
+    "name": "Peacock Green",
+    "hex": "#00af7b",
+    "dist": 9.438347664670331,
+    "angleDeg": 148.7890625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::020",
+    "name": "Golden Yellow",
+    "hex": "#ffc100",
+    "dist": 9.623727192134666,
+    "angleDeg": 48.984375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::405",
+    "name": "Cocoa",
+    "hex": "#706463",
+    "dist": 9.797267327386008,
+    "angleDeg": 105.390625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::170",
+    "name": "Azurite Blue",
+    "hex": "#00839a",
+    "dist": 9.802572793975811,
+    "angleDeg": 170.703125,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::160",
+    "name": "Cobalt Blue [hue]",
+    "hex": "#00689c",
+    "dist": 9.977338914212403,
+    "angleDeg": 183.36328125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::496",
+    "name": "Ivory Black",
+    "hex": "#343536",
+    "dist": 10.214864543856535,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::210",
+    "name": "Emerald Green",
+    "hex": "#008561",
+    "dist": 10.23523053707263,
+    "angleDeg": 156.5234375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::141",
+    "name": "Sky Blue",
+    "hex": "#5b8ed0",
+    "dist": 10.618622614248654,
+    "angleDeg": 181.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::120",
+    "name": "Violet",
+    "hex": "#50397b",
+    "dist": 10.643369297841213,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::180",
+    "name": "Malachite Green",
+    "hex": "#006d87",
+    "dist": 10.663237096969405,
+    "angleDeg": 187.08984375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::190",
+    "name": "Greenish Blue",
+    "hex": "#00787b",
+    "dist": 10.781704099312838,
+    "angleDeg": 167.265625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::201",
+    "name": "Veronese Green",
+    "hex": "#00b07f",
+    "dist": 10.858759611574621,
+    "angleDeg": 148.7890625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::043",
+    "name": "Brownish Orange",
+    "hex": "#9d7265",
+    "dist": 10.977514685703373,
+    "angleDeg": 225.59765625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::169",
+    "name": "Marine Blue",
+    "hex": "#005d91",
+    "dist": 11.076551658762899,
+    "angleDeg": 182.53515625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::145",
+    "name": "Bluish Grey",
+    "hex": "#4263a6",
+    "dist": 11.302786787417956,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::080",
+    "name": "Carmine",
+    "hex": "#ca2857",
+    "dist": 11.336073271000021,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::290",
+    "name": "Empire Green",
+    "hex": "#007f5d",
+    "dist": 11.44116210064581,
+    "angleDeg": 156.953125,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::099",
+    "name": "Aubergine",
+    "hex": "#694d68",
+    "dist": 11.847866687926519,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::085",
+    "name": "Bordeaux Red",
+    "hex": "#af465a",
+    "dist": 11.91988046516726,
+    "angleDeg": 289.18359375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::150",
+    "name": "Sapphire Blue",
+    "hex": "#005dac",
+    "dist": 12.092812675611357,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::200",
+    "name": "Bluish Green",
+    "hex": "#007a5f",
+    "dist": 12.49516770222148,
+    "angleDeg": 158.671875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::006",
+    "name": "Mouse Grey",
+    "hex": "#70818c",
+    "dist": 12.69855686780655,
+    "angleDeg": 163.1796875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::057",
+    "name": "Chestnut",
+    "hex": "#885543",
+    "dist": 12.770989196975703,
+    "angleDeg": 17.71484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::229",
+    "name": "Dark Green",
+    "hex": "#0f5f4d",
+    "dist": 12.918671963259964,
+    "angleDeg": 200.1328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::031",
+    "name": "Orangish Yellow",
+    "hex": "#ffba47",
+    "dist": 12.951253752864325,
+    "angleDeg": 41.6796875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::161",
+    "name": "Light Blue",
+    "hex": "#0f9adf",
+    "dist": 13.242530997916884,
+    "angleDeg": 175,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::069",
+    "name": "Burnt Siena",
+    "hex": "#7f4e47",
+    "dist": 14.001025503622932,
+    "angleDeg": 290.6328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::270",
+    "name": "Raspberry Red",
+    "hex": "#f75a68",
+    "dist": 14.6836857799383,
+    "angleDeg": 304.8125,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::005",
+    "name": "Grey",
+    "hex": "#738794",
+    "dist": 14.76390124657443,
+    "angleDeg": 163.1796875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::404",
+    "name": "Brownish Beige",
+    "hex": "#9a8981",
+    "dist": 14.928838425202942,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::260",
+    "name": "Blue",
+    "hex": "#0054a1",
+    "dist": 15.37523345040434,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::171",
+    "name": "Turquoise Blue",
+    "hex": "#01afce",
+    "dist": 15.540626876816578,
+    "angleDeg": 171.9921875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::191",
+    "name": "Turquoise Green",
+    "hex": "#00b9b9",
+    "dist": 16.931717627021353,
+    "angleDeg": 165.1171875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::059",
+    "name": "Brown",
+    "hex": "#74483b",
+    "dist": 17.34742484725973,
+    "angleDeg": 290.6328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::033",
+    "name": "Golden Ochre",
+    "hex": "#e3a138",
+    "dist": 17.44767181112298,
+    "angleDeg": 39.1015625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::051",
+    "name": "Salmon",
+    "hex": "#ffa784",
+    "dist": 18.031359165877195,
+    "angleDeg": 233.05078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::111",
+    "name": "Mauve",
+    "hex": "#b46fb3",
+    "dist": 18.213955167151795,
+    "angleDeg": 243.4375,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::221",
+    "name": "Light Green",
+    "hex": "#aade89",
+    "dist": 18.730447509306423,
+    "angleDeg": 125.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::211",
+    "name": "Jade Green",
+    "hex": "#54cdaa",
+    "dist": 18.736456095350444,
+    "angleDeg": 154.375,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::140",
+    "name": "Ultramarine",
+    "hex": "#2c338f",
+    "dist": 19.254955285321817,
+    "angleDeg": 206.9140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::032",
+    "name": "Light Ochre",
+    "hex": "#e1a857",
+    "dist": 19.713480682920984,
+    "angleDeg": 342.90625,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::403",
+    "name": "Beige",
+    "hex": "#a49b96",
+    "dist": 19.758161152983426,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::021",
+    "name": "Naples Yellow",
+    "hex": "#fedc64",
+    "dist": 20.732687542346003,
+    "angleDeg": 65,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::231",
+    "name": "Lime Green",
+    "hex": "#dceb90",
+    "dist": 21.579213008720195,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::071",
+    "name": "Salmon Pink",
+    "hex": "#ffa199",
+    "dist": 22.445958963364593,
+    "angleDeg": 232.63671875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::498",
+    "name": "Silver",
+    "hex": "#94989c",
+    "dist": 22.529241504499126,
+    "angleDeg": 159.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::181",
+    "name": "Light Malachite Green",
+    "hex": "#42cdcc",
+    "dist": 22.66882280061009,
+    "angleDeg": 165.9765625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::091",
+    "name": "Light Purple",
+    "hex": "#f07aab",
+    "dist": 24.064719605519652,
+    "angleDeg": 288.125,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::082",
+    "name": "Rose Pink",
+    "hex": "#f27789",
+    "dist": 25.6129073762834,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::081",
+    "name": "Pink",
+    "hex": "#ec7ea6",
+    "dist": 25.82752813374458,
+    "angleDeg": 288.125,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::011",
+    "name": "Pale Yellow",
+    "hex": "#efe9a0",
+    "dist": 26.168149385991057,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::004",
+    "name": "Steel Grey",
+    "hex": "#9dabb1",
+    "dist": 27.11789812631429,
+    "angleDeg": 159.453125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::402",
+    "name": "Light Beige",
+    "hex": "#bdb7b2",
+    "dist": 27.835805119789942,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::041",
+    "name": "Apricot",
+    "hex": "#ffbb76",
+    "dist": 28.329753766183877,
+    "angleDeg": 232.22265625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::493",
+    "name": "Granite Rose",
+    "hex": "#f4c8b3",
+    "dist": 30.66790794070995,
+    "angleDeg": 227.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::241",
+    "name": "Light Lemon Yellow",
+    "hex": "#f0eeb5",
+    "dist": 30.79487465115746,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::371",
+    "name": "Bluish Pale",
+    "hex": "#a2cfe7",
+    "dist": 32.102835551966116,
+    "angleDeg": 172.8515625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache pablo 666::003",
+    "name": "Light Grey",
+    "hex": "#b5bfc5",
+    "dist": 33.339133651916995,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::401",
+    "name": "Ash Grey",
+    "hex": "#d6d4c7",
+    "dist": 35.101155147854264,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::002",
+    "name": "Silver Grey",
+    "hex": "#c9d0d4",
+    "dist": 37.775122768352226,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::491",
+    "name": "Cream",
+    "hex": "#f2e7ca",
+    "dist": 39.60706879862966,
+    "angleDeg": 129.01953125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache pablo 666::001",
+    "name": "White",
+    "hex": "#eeede9",
+    "dist": 45.304035164582466,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  }
+]

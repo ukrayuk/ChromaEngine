@@ -1,0 +1,902 @@
+[
+  {
+    "key": "derwent lightfast pencils::dark honey",
+    "name": "Dark Honey",
+    "hex": "#ad643a",
+    "dist": 0.7437510061469261,
+    "angleDeg": 333.58984375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::persian orange",
+    "name": "Persian Orange",
+    "hex": "#a24f3d",
+    "dist": 1.2519601175048658,
+    "angleDeg": 278.625,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::yellow",
+    "name": "Yellow",
+    "hex": "#fab503",
+    "dist": 1.5139831540166404,
+    "angleDeg": 45.546875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::flame",
+    "name": "Flame",
+    "hex": "#ff682a",
+    "dist": 1.9459695608638805,
+    "angleDeg": 6.015625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::magenta",
+    "name": "Magenta",
+    "hex": "#813545",
+    "dist": 2.2728295762638195,
+    "angleDeg": 297.05078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::seaweed",
+    "name": "Seaweed",
+    "hex": "#585951",
+    "dist": 2.676747221677846,
+    "angleDeg": 104.5625,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::ivy",
+    "name": "Ivy",
+    "hex": "#4c4f45",
+    "dist": 3.0461426032018366,
+    "angleDeg": 104.5625,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::burnt sienna",
+    "name": "Burnt Sienna",
+    "hex": "#bd6f52",
+    "dist": 3.1795700584786095,
+    "angleDeg": 230.98046875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::chocolate",
+    "name": "Chocolate",
+    "hex": "#514544",
+    "dist": 3.2963542937406602,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::autumn brown",
+    "name": "Autumn Brown",
+    "hex": "#4c4842",
+    "dist": 3.3268291708943125,
+    "angleDeg": 106.42578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::amber gold",
+    "name": "Amber Gold",
+    "hex": "#ffa01c",
+    "dist": 3.5656874861289443,
+    "angleDeg": 33.515625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::nightshade",
+    "name": "Nightshade",
+    "hex": "#423e45",
+    "dist": 4.173893603297474,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::purple",
+    "name": "Purple",
+    "hex": "#463643",
+    "dist": 4.5453809246433226,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::sandstone",
+    "name": "Sandstone",
+    "hex": "#c97d53",
+    "dist": 4.684327133801932,
+    "angleDeg": 231.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::lichen green",
+    "name": "Lichen Green",
+    "hex": "#83735c",
+    "dist": 5.161815828720794,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::green earth",
+    "name": "Green Earth",
+    "hex": "#618375",
+    "dist": 5.38313448251272,
+    "angleDeg": 155.3125,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::derwent red",
+    "name": "Derwent Red",
+    "hex": "#c82934",
+    "dist": 5.42434812636569,
+    "angleDeg": 304.8125,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::olive earth",
+    "name": "Olive Earth",
+    "hex": "#636858",
+    "dist": 5.456722984919415,
+    "angleDeg": 101.25,
+    "radiusPx": 577,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::chestnut",
+    "name": "Chestnut",
+    "hex": "#544144",
+    "dist": 5.462073469115517,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::mars orange",
+    "name": "Mars Orange",
+    "hex": "#a86149",
+    "dist": 5.464522805936881,
+    "angleDeg": 14.40234375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::strawberry",
+    "name": "Strawberry",
+    "hex": "#b24342",
+    "dist": 5.5555526153611865,
+    "angleDeg": 320.75390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::sun yellow",
+    "name": "Sun Yellow",
+    "hex": "#ffd500",
+    "dist": 5.601433173730975,
+    "angleDeg": 55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::scarlet",
+    "name": "Scarlet",
+    "hex": "#d13039",
+    "dist": 5.755561180898671,
+    "angleDeg": 302.328125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::sapphire",
+    "name": "Sapphire",
+    "hex": "#2a497e",
+    "dist": 6.161184623327408,
+    "angleDeg": 176.015625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::midnight black",
+    "name": "Midnight Black",
+    "hex": "#3d3c41",
+    "dist": 6.203316200356317,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::black",
+    "name": "Black",
+    "hex": "#3e4042",
+    "dist": 6.246091329310501,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::blue violet",
+    "name": "Blue Violet",
+    "hex": "#3d3c4b",
+    "dist": 6.314540372067876,
+    "angleDeg": 113.671875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::banana",
+    "name": "Banana",
+    "hex": "#f2c91b",
+    "dist": 6.32498319944613,
+    "angleDeg": 51.9921875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::dark orange",
+    "name": "Dark Orange",
+    "hex": "#8c382e",
+    "dist": 6.821124664392845,
+    "angleDeg": 280.90234375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::mars black",
+    "name": "Mars Black",
+    "hex": "#3e3c3b",
+    "dist": 7.015118709734236,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::mustard",
+    "name": "Mustard",
+    "hex": "#f3af26",
+    "dist": 7.114042551293641,
+    "angleDeg": 42.5390625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::apricot",
+    "name": "Apricot",
+    "hex": "#c16c38",
+    "dist": 7.1283456986958935,
+    "angleDeg": 262.26953125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::midnight blue",
+    "name": "Midnight Blue",
+    "hex": "#314c61",
+    "dist": 7.178600332360078,
+    "angleDeg": 168.76953125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::ocean blue (dark)",
+    "name": "Ocean Blue (Dark)",
+    "hex": "#3e484e",
+    "dist": 7.219067713447461,
+    "angleDeg": 109.53125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::autumn red",
+    "name": "Autumn Red",
+    "hex": "#a9434a",
+    "dist": 7.3521463001727,
+    "angleDeg": 284.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::foliage",
+    "name": "Foliage",
+    "hex": "#597541",
+    "dist": 7.692220892549059,
+    "angleDeg": 90.69140625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::grass green (70%)",
+    "name": "Grass Green (70%)",
+    "hex": "#2d9e42",
+    "dist": 7.742411557633801,
+    "angleDeg": 49.8046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::natural brown",
+    "name": "Natural Brown",
+    "hex": "#58433f",
+    "dist": 7.851714891758235,
+    "angleDeg": 108.08203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::ocean blue",
+    "name": "Ocean Blue",
+    "hex": "#3e4f5b",
+    "dist": 7.941867760277603,
+    "angleDeg": 166.28515625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::dark indigo",
+    "name": "Dark Indigo",
+    "hex": "#373640",
+    "dist": 8.060520293101183,
+    "angleDeg": 112.84375,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::bordeaux",
+    "name": "Bordeaux",
+    "hex": "#733648",
+    "dist": 8.066312178796778,
+    "angleDeg": 298.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::deep blue",
+    "name": "Deep Blue",
+    "hex": "#373f65",
+    "dist": 8.269007369456544,
+    "angleDeg": 173.73828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::spruce green",
+    "name": "Spruce Green",
+    "hex": "#455654",
+    "dist": 8.283734505657003,
+    "angleDeg": 106.21875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::sienna",
+    "name": "Sienna",
+    "hex": "#aa6f5f",
+    "dist": 8.295231586792962,
+    "angleDeg": 228.08203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::light bronze",
+    "name": "Light Bronze",
+    "hex": "#a1885b",
+    "dist": 8.403565391974412,
+    "angleDeg": 223.52734375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::forest",
+    "name": "Forest",
+    "hex": "#383e3f",
+    "dist": 8.434252769782923,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::basil",
+    "name": "Basil",
+    "hex": "#395a52",
+    "dist": 8.49263657404121,
+    "angleDeg": 160.90234375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::warm earth",
+    "name": "Warm Earth",
+    "hex": "#7f6854",
+    "dist": 9.021159350364172,
+    "angleDeg": 222.28515625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::dark cyan",
+    "name": "Dark Cyan",
+    "hex": "#3d4a58",
+    "dist": 9.208483748658896,
+    "angleDeg": 167.11328125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::brown ochre",
+    "name": "Brown Ochre",
+    "hex": "#b38b5d",
+    "dist": 9.652646450633107,
+    "angleDeg": 226.6328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::dark turquoise",
+    "name": "Dark Turquoise",
+    "hex": "#18556c",
+    "dist": 9.695943516974262,
+    "angleDeg": 167.734375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::taupe",
+    "name": "Taupe",
+    "hex": "#705d5d",
+    "dist": 9.775976880821387,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::midnight blue (70%)",
+    "name": "Midnight Blue (70%)",
+    "hex": "#1d5d7e",
+    "dist": 9.838918871643335,
+    "angleDeg": 169.8046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::racing green",
+    "name": "Racing Green",
+    "hex": "#354243",
+    "dist": 9.848935235069549,
+    "angleDeg": 108.2890625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::mid blue (70%)",
+    "name": "Mid Blue (70%)",
+    "hex": "#0f4d75",
+    "dist": 10.190497460024064,
+    "angleDeg": 172.2890625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::deep rose",
+    "name": "Deep Rose",
+    "hex": "#753350",
+    "dist": 10.198400844458503,
+    "angleDeg": 298.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::denim",
+    "name": "Denim",
+    "hex": "#363e55",
+    "dist": 10.32602895342151,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::mid blue",
+    "name": "Mid Blue",
+    "hex": "#354457",
+    "dist": 10.351848170526564,
+    "angleDeg": 168.76953125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::pine",
+    "name": "Pine",
+    "hex": "#394c4d",
+    "dist": 10.455088069025939,
+    "angleDeg": 106.21875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::van dyke brown",
+    "name": "Van Dyke Brown",
+    "hex": "#776559",
+    "dist": 10.471155354974504,
+    "angleDeg": 102.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::mountain green",
+    "name": "Mountain Green",
+    "hex": "#265e51",
+    "dist": 11.329101292101855,
+    "angleDeg": 158.2109375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::golden sun",
+    "name": "Golden Sun",
+    "hex": "#dc8242",
+    "dist": 11.685643044395794,
+    "angleDeg": 256.05859375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::merlot",
+    "name": "Merlot",
+    "hex": "#603f42",
+    "dist": 11.781237089916807,
+    "angleDeg": 111.39453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::cherry red",
+    "name": "Cherry Red",
+    "hex": "#b02b46",
+    "dist": 11.785597881400317,
+    "angleDeg": 313.71484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::mallard green",
+    "name": "Mallard Green",
+    "hex": "#1b5356",
+    "dist": 11.942356153773467,
+    "angleDeg": 162.765625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::pacific blue",
+    "name": "Pacific Blue",
+    "hex": "#00546c",
+    "dist": 12.661980323098684,
+    "angleDeg": 167.734375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::sepia (red)",
+    "name": "Sepia (Red)",
+    "hex": "#74554e",
+    "dist": 12.878088709030038,
+    "angleDeg": 105.18359375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::ruby earth",
+    "name": "Ruby Earth",
+    "hex": "#885359",
+    "dist": 12.892310869146234,
+    "angleDeg": 294.359375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::raisin",
+    "name": "Raisin",
+    "hex": "#5c4035",
+    "dist": 12.914805792478603,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::violet",
+    "name": "Violet",
+    "hex": "#48375f",
+    "dist": 13.369635799139628,
+    "angleDeg": 175.39453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::peridot (blue)",
+    "name": "Peridot (Blue)",
+    "hex": "#00836f",
+    "dist": 13.590970822785124,
+    "angleDeg": 160.390625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::peridot (yellow)",
+    "name": "Peridot (Yellow)",
+    "hex": "#00824e",
+    "dist": 13.830580186754114,
+    "angleDeg": 149.6484375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::cinnamon",
+    "name": "Cinnamon",
+    "hex": "#e39780",
+    "dist": 14.120079770724848,
+    "angleDeg": 230.7734375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::cloud grey",
+    "name": "Cloud Grey",
+    "hex": "#787a7a",
+    "dist": 14.39022086780675,
+    "angleDeg": 160.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::grass green",
+    "name": "Grass Green",
+    "hex": "#007e43",
+    "dist": 14.627559262482613,
+    "angleDeg": 147.5,
+    "radiusPx": 149,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::warm grey",
+    "name": "Warm Grey",
+    "hex": "#a09386",
+    "dist": 14.659125570112836,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::vivid green",
+    "name": "Vivid Green",
+    "hex": "#006049",
+    "dist": 14.763667088154929,
+    "angleDeg": 200.1328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::venetian red",
+    "name": "Venetian Red",
+    "hex": "#855449",
+    "dist": 15.344780706429644,
+    "angleDeg": 285.6640625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::gold",
+    "name": "Gold",
+    "hex": "#e3a033",
+    "dist": 15.665218548453415,
+    "angleDeg": 39.1015625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::mars violet",
+    "name": "Mars Violet",
+    "hex": "#80666f",
+    "dist": 16.151481882000333,
+    "angleDeg": 108.08203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::dusky pink",
+    "name": "Dusky Pink",
+    "hex": "#dc9287",
+    "dist": 16.682619797529863,
+    "angleDeg": 230.15234375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::granite",
+    "name": "Granite",
+    "hex": "#80868b",
+    "dist": 16.702120349392334,
+    "angleDeg": 162.14453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::mid ultramarine",
+    "name": "Mid Ultramarine",
+    "hex": "#7ea9e3",
+    "dist": 21.010440311373298,
+    "angleDeg": 175,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::turquoise green",
+    "name": "Turquoise Green",
+    "hex": "#35d0c7",
+    "dist": 22.894687881657614,
+    "angleDeg": 163.3984375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::wild lavender",
+    "name": "Wild Lavender",
+    "hex": "#a27cac",
+    "dist": 23.641832171065303,
+    "angleDeg": 224.53125,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::yellow ochre",
+    "name": "Yellow Ochre",
+    "hex": "#eec071",
+    "dist": 23.757375581334788,
+    "angleDeg": 345.59765625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::fossil grey",
+    "name": "Fossil Grey",
+    "hex": "#b5aaa9",
+    "dist": 25.72888201163668,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::cool grey",
+    "name": "Cool Grey",
+    "hex": "#b7b4ab",
+    "dist": 25.86055908670309,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::moonstone",
+    "name": "Moonstone",
+    "hex": "#b7b5ae",
+    "dist": 26.551166038329345,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::salmon",
+    "name": "Salmon",
+    "hex": "#ebbaaf",
+    "dist": 28.215496313476137,
+    "angleDeg": 227.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::heather",
+    "name": "Heather",
+    "hex": "#bb85ae",
+    "dist": 28.456389876196592,
+    "angleDeg": 245.15625,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "derwent lightfast pencils::mist",
+    "name": "Mist",
+    "hex": "#b9b9b6",
+    "dist": 29.122634128424018,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::platinum",
+    "name": "Platinum",
+    "hex": "#aeb5ba",
+    "dist": 30.27668086541757,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::champagne",
+    "name": "Champagne",
+    "hex": "#f7dfa4",
+    "dist": 30.969894230082367,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::pale peach",
+    "name": "Pale Peach",
+    "hex": "#f4d3b9",
+    "dist": 33.69498234956823,
+    "angleDeg": 225.8046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::wheat",
+    "name": "Wheat",
+    "hex": "#e8d6b0",
+    "dist": 33.861216307772395,
+    "angleDeg": 222.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::oyster",
+    "name": "Oyster",
+    "hex": "#ebd9dc",
+    "dist": 41.17185535960081,
+    "angleDeg": 222.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::light aqua",
+    "name": "Light Aqua",
+    "hex": "#c8ebe3",
+    "dist": 41.8611004656139,
+    "angleDeg": 147.03125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::arctic",
+    "name": "Arctic",
+    "hex": "#e2e7e3",
+    "dist": 43.0400303256399,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "derwent lightfast pencils::white",
+    "name": "White",
+    "hex": "#f2efea",
+    "dist": 45.72966129879195,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  }
+]

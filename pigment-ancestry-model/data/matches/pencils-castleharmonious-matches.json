@@ -1,0 +1,650 @@
+[
+  {
+    "key": "castle arts harmonious collection::016ha",
+    "name": "Beaver Gray",
+    "hex": "#544c54",
+    "dist": 2.4138487778340574,
+    "angleDeg": 110.56640625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::039ha",
+    "name": "Dark Iris",
+    "hex": "#4e5678",
+    "dist": 3.1214417646071757,
+    "angleDeg": 172.08203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::045ha",
+    "name": "Ocean Sapphire",
+    "hex": "#3f627a",
+    "dist": 3.3211332058032665,
+    "angleDeg": 167.734375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::019ha",
+    "name": "Black Olive",
+    "hex": "#565657",
+    "dist": 4.483312701868122,
+    "angleDeg": 106.42578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::018ha",
+    "name": "Porpoise",
+    "hex": "#514c5a",
+    "dist": 4.5005512104557175,
+    "angleDeg": 111.6015625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::065ha",
+    "name": "Bayleaf",
+    "hex": "#55626c",
+    "dist": 5.517669127906585,
+    "angleDeg": 165.45703125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::020ha",
+    "name": "Moonstone",
+    "hex": "#5c5a5b",
+    "dist": 5.774136381310589,
+    "angleDeg": 106.42578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::046ha",
+    "name": "Petrel Blue",
+    "hex": "#2f5c74",
+    "dist": 5.891275859234337,
+    "angleDeg": 167.734375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::038ha",
+    "name": "Deep Aegean",
+    "hex": "#51516e",
+    "dist": 6.83636096101302,
+    "angleDeg": 172.08203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::042ha",
+    "name": "Blueberry",
+    "hex": "#423975",
+    "dist": 7.490860023860888,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::063ha",
+    "name": "Pine Green",
+    "hex": "#485a57",
+    "dist": 7.9581942841255024,
+    "angleDeg": 162.14453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::022ha",
+    "name": "Mocha",
+    "hex": "#4e3a3a",
+    "dist": 8.185608956402442,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::040ha",
+    "name": "Harbour Blue",
+    "hex": "#413f58",
+    "dist": 8.32290451778398,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::047ha",
+    "name": "Gentian Blue",
+    "hex": "#4c91b2",
+    "dist": 8.545476643728048,
+    "angleDeg": 173.7109375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts harmonious collection::013ha",
+    "name": "Driftwood",
+    "hex": "#676564",
+    "dist": 8.78250984942475,
+    "angleDeg": 105.390625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::023ha",
+    "name": "Cocoa",
+    "hex": "#443734",
+    "dist": 9.0968421104692,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::037ha",
+    "name": "Tempest",
+    "hex": "#554e6a",
+    "dist": 9.509448511435947,
+    "angleDeg": 172.08203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::021ha",
+    "name": "Oak",
+    "hex": "#463633",
+    "dist": 9.60099820079332,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::024ha",
+    "name": "Dark Chocolate",
+    "hex": "#373130",
+    "dist": 11.260837768459364,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::071ha",
+    "name": "Amaretto",
+    "hex": "#7a4447",
+    "dist": 11.273434219887429,
+    "angleDeg": 294.359375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::014ha",
+    "name": "Moss Gray",
+    "hex": "#726e6a",
+    "dist": 11.604127557122375,
+    "angleDeg": 102.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::036ha",
+    "name": "Eggplant",
+    "hex": "#552e78",
+    "dist": 11.93447012041816,
+    "angleDeg": 228.3984375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts harmonious collection::067ha",
+    "name": "Opera Mauve",
+    "hex": "#5e496a",
+    "dist": 11.96974368326685,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::043ha",
+    "name": "Topaz",
+    "hex": "#223167",
+    "dist": 12.066095454446062,
+    "angleDeg": 177.87890625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::069ha",
+    "name": "Plum",
+    "hex": "#80436c",
+    "dist": 13.34575919639188,
+    "angleDeg": 252.4609375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts harmonious collection::044ha",
+    "name": "Night Blue",
+    "hex": "#29354d",
+    "dist": 13.681684770984509,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::034ha",
+    "name": "Nightshade",
+    "hex": "#73698b",
+    "dist": 13.924032854374362,
+    "angleDeg": 171.66796875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::068ha",
+    "name": "Sour Berry",
+    "hex": "#633853",
+    "dist": 14.211542583691445,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::070ha",
+    "name": "Beetroot",
+    "hex": "#6e325d",
+    "dist": 14.298678612759327,
+    "angleDeg": 249.0234375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts harmonious collection::017ha",
+    "name": "Vintage Grape",
+    "hex": "#8c7e78",
+    "dist": 14.632620893859341,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::066ha",
+    "name": "Seaweed",
+    "hex": "#252c2f",
+    "dist": 15.105007577173621,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::041ha",
+    "name": "Inky Blue",
+    "hex": "#372e50",
+    "dist": 15.11264109361175,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::054ha",
+    "name": "Seafoam Green",
+    "hex": "#8f9d8d",
+    "dist": 15.347060841078797,
+    "angleDeg": 215.453125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::064ha",
+    "name": "Storm Gray",
+    "hex": "#233737",
+    "dist": 15.596671259889225,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::061ha",
+    "name": "Pewter",
+    "hex": "#7a8a91",
+    "dist": 15.678381780681,
+    "angleDeg": 161.9375,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::035ha",
+    "name": "Antique Violet",
+    "hex": "#5d3e67",
+    "dist": 16.048273607774348,
+    "angleDeg": 176.63671875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::062ha",
+    "name": "Wild Thyme",
+    "hex": "#808c8c",
+    "dist": 16.24044377622215,
+    "angleDeg": 159.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::015ha",
+    "name": "Stone Gray",
+    "hex": "#8c8481",
+    "dist": 16.911867670604728,
+    "angleDeg": 219.80078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::032ha",
+    "name": "Brassica",
+    "hex": "#785f7c",
+    "dist": 16.989553260215832,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::048ha",
+    "name": "Forget Ne Not",
+    "hex": "#769cdb",
+    "dist": 17.06740002073268,
+    "angleDeg": 181.9140625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::055ha",
+    "name": "Mellow Sage",
+    "hex": "#9ea39b",
+    "dist": 20.697956015262776,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::031ha",
+    "name": "Flint",
+    "hex": "#8a7695",
+    "dist": 20.749306490845022,
+    "angleDeg": 170.21875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::053ha",
+    "name": "Pale Apple",
+    "hex": "#9cb9a1",
+    "dist": 21.920326757482215,
+    "angleDeg": 147.03125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::012ha",
+    "name": "French Gray",
+    "hex": "#ada69f",
+    "dist": 22.135372264439212,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::049ha",
+    "name": "Mosaic Blue",
+    "hex": "#7dbbc6",
+    "dist": 22.14762944023741,
+    "angleDeg": 170.2734375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts harmonious collection::072ha",
+    "name": "Rosy Stone",
+    "hex": "#9d747c",
+    "dist": 22.34980518400114,
+    "angleDeg": 224.9765625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::011ha",
+    "name": "Gossamer",
+    "hex": "#b7afa5",
+    "dist": 23.83387718647473,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::033ha",
+    "name": "Mink",
+    "hex": "#988992",
+    "dist": 23.928092093207443,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::007ha",
+    "name": "Pavillion Gray",
+    "hex": "#b9999c",
+    "dist": 24.0008276498748,
+    "angleDeg": 224.1484375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::060ha",
+    "name": "Pebble",
+    "hex": "#91a2ac",
+    "dist": 24.28279222201419,
+    "angleDeg": 159.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::025ha",
+    "name": "Sweet Lilac",
+    "hex": "#a294d0",
+    "dist": 25.119834222453072,
+    "angleDeg": 199.609375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts harmonious collection::051ha",
+    "name": "Cumulus",
+    "hex": "#91b7e3",
+    "dist": 25.495412967649184,
+    "angleDeg": 174.5703125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts harmonious collection::030ha",
+    "name": "Dark Pearl",
+    "hex": "#a899a0",
+    "dist": 25.587814834151384,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::057ha",
+    "name": "Olive Gray",
+    "hex": "#b3c9aa",
+    "dist": 25.93652141421631,
+    "angleDeg": 137.921875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::026ha",
+    "name": "Purple Dusk",
+    "hex": "#a899d7",
+    "dist": 26.215047426199483,
+    "angleDeg": 196.171875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts harmonious collection::008ha",
+    "name": "Spring Heather",
+    "hex": "#b895a3",
+    "dist": 28.746661649462215,
+    "angleDeg": 224.1484375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::056ha",
+    "name": "Moss",
+    "hex": "#a4b0b7",
+    "dist": 29.265206627953507,
+    "angleDeg": 159.453125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::028ha",
+    "name": "Dusty Lavender",
+    "hex": "#a795ae",
+    "dist": 29.3722055842809,
+    "angleDeg": 167.3203125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::009ha",
+    "name": "Pumice",
+    "hex": "#c1b0b4",
+    "dist": 29.55012958472751,
+    "angleDeg": 222.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::050ha",
+    "name": "Duck Egg",
+    "hex": "#97d0db",
+    "dist": 29.988937266313762,
+    "angleDeg": 170.2734375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts harmonious collection::059ha",
+    "name": "Ash",
+    "hex": "#b5bbba",
+    "dist": 30.156275675147203,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::029ha",
+    "name": "Purple Rose",
+    "hex": "#b799cd",
+    "dist": 30.98538135194702,
+    "angleDeg": 199.609375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts harmonious collection::010ha",
+    "name": "Misty Gray",
+    "hex": "#c5c1bc",
+    "dist": 31.030803803002783,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::006ha",
+    "name": "Dusty Rose",
+    "hex": "#d7a3b2",
+    "dist": 31.656001397545868,
+    "angleDeg": 227.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::052ha",
+    "name": "Aloe Green",
+    "hex": "#cadfc0",
+    "dist": 32.5576226700575,
+    "angleDeg": 137.921875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::005ha",
+    "name": "Calamine",
+    "hex": "#f8c1bf",
+    "dist": 33.331905910017504,
+    "angleDeg": 227.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::002ha",
+    "name": "Ammonite",
+    "hex": "#d4cec4",
+    "dist": 33.887329472840015,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::004ha",
+    "name": "Wheatgrass",
+    "hex": "#ffd3c1",
+    "dist": 35.168235706773736,
+    "angleDeg": 227.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::027ha",
+    "name": "Wildberry",
+    "hex": "#c9a3d4",
+    "dist": 35.4864094465009,
+    "angleDeg": 219.375,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "castle arts harmonious collection::058ha",
+    "name": "Cirrus",
+    "hex": "#c5cccc",
+    "dist": 35.611817183733024,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::001ha",
+    "name": "Cornforth White",
+    "hex": "#e2d8d4",
+    "dist": 38.824432811990924,
+    "angleDeg": 222.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts harmonious collection::003ha",
+    "name": "Mulberry Mist",
+    "hex": "#e7d7db",
+    "dist": 40.738915400450736,
+    "angleDeg": 222.078125,
+    "radiusPx": 713,
+    "level": 2
+  }
+]

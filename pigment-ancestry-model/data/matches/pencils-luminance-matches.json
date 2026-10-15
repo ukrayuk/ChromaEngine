@@ -1,0 +1,902 @@
+[
+  {
+    "key": "caran d'ache luminance 6901::044",
+    "name": "Terracotta",
+    "hex": "#ca5f42",
+    "dist": 1.0201021513285922,
+    "angleDeg": 9.43359375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::077",
+    "name": "Burnt Ochre",
+    "hex": "#aa5737",
+    "dist": 1.4091545803521623,
+    "angleDeg": 330.27734375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::755",
+    "name": "Grey Blue",
+    "hex": "#1976a4",
+    "dist": 1.5897076172585092,
+    "angleDeg": 183.77734375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::876",
+    "name": "Burnt Ochre 50%",
+    "hex": "#cf7e5d",
+    "dist": 3.336568380637435,
+    "angleDeg": 231.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::850",
+    "name": "Cornelian",
+    "hex": "#f05612",
+    "dist": 4.485902290734875,
+    "angleDeg": 3.0078125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::523",
+    "name": "Indian Yellow",
+    "hex": "#f0c200",
+    "dist": 4.652389783295801,
+    "angleDeg": 51.1328125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::350",
+    "name": "Purplish Red",
+    "hex": "#ba175e",
+    "dist": 4.695257273881347,
+    "angleDeg": 294.140625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::507",
+    "name": "Payne’s Grey 60%",
+    "hex": "#4d5969",
+    "dist": 4.794086254755943,
+    "angleDeg": 167.11328125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::906",
+    "name": "Sepia 50%",
+    "hex": "#605353",
+    "dist": 4.842480278467398,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::037",
+    "name": "Brown Ochre",
+    "hex": "#b87743",
+    "dist": 5.033374381609808,
+    "angleDeg": 337.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::061",
+    "name": "Permanent Red",
+    "hex": "#e2271b",
+    "dist": 5.346065026568623,
+    "angleDeg": -28.7890625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::070",
+    "name": "Scarlet",
+    "hex": "#d72230",
+    "dist": 5.359221630878695,
+    "angleDeg": -55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::066",
+    "name": "Natural Russet",
+    "hex": "#924838",
+    "dist": 5.404310137938998,
+    "angleDeg": 280.28125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::212",
+    "name": "Chromium Oxyde Green",
+    "hex": "#537d52",
+    "dist": 5.442286670963448,
+    "angleDeg": 146.6171875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::846",
+    "name": "Raw Umber 50%",
+    "hex": "#90816b",
+    "dist": 5.947899640675845,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::495",
+    "name": "Slate Grey",
+    "hex": "#3e434a",
+    "dist": 6.130977420040544,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::820",
+    "name": "Golden Bismuth Yellow",
+    "hex": "#ffc630",
+    "dist": 6.145211617127054,
+    "angleDeg": 47.6953125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::808",
+    "name": "French Grey",
+    "hex": "#685c57",
+    "dist": 6.358675000627302,
+    "angleDeg": 105.390625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::240",
+    "name": "Lemon Yellow",
+    "hex": "#f1ec29",
+    "dist": 6.38212587170677,
+    "angleDeg": 65.4296875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::046",
+    "name": "Cassel Earth",
+    "hex": "#614e46",
+    "dist": 6.870094923249011,
+    "angleDeg": 105.18359375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::736",
+    "name": "Olive Brown 50%",
+    "hex": "#99895f",
+    "dist": 7.011075304351878,
+    "angleDeg": 222.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::520",
+    "name": "Medium Cadmium Yellow (Imit.)",
+    "hex": "#ffd800",
+    "dist": 7.255992143622062,
+    "angleDeg": 55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::533",
+    "name": "Dark Cadmium Orange (Imit.)",
+    "hex": "#ff661c",
+    "dist": 7.26337192964035,
+    "angleDeg": 6.875,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::039",
+    "name": "Olive Brown",
+    "hex": "#74643d",
+    "dist": 7.65533235956181,
+    "angleDeg": 24.9609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::748",
+    "name": "Warm Earth 70%",
+    "hex": "#4e3d39",
+    "dist": 7.8308471264157085,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::225",
+    "name": "Moss Green",
+    "hex": "#4e673e",
+    "dist": 7.8978022392682465,
+    "angleDeg": 94.2109375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::580",
+    "name": "Anthraquinone Carmine",
+    "hex": "#bc0034",
+    "dist": 8.154654378453436,
+    "angleDeg": 302.12109375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::745",
+    "name": "Warm Earth 40%",
+    "hex": "#b3856f",
+    "dist": 8.26783620529831,
+    "angleDeg": 226.42578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::508",
+    "name": "Payne’s Grey",
+    "hex": "#39434f",
+    "dist": 8.479890696765464,
+    "angleDeg": 111.6015625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::015",
+    "name": "Olive Yellow",
+    "hex": "#c0b627",
+    "dist": 8.995395277304437,
+    "angleDeg": 68.33203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::470",
+    "name": "Spring Green",
+    "hex": "#abde1d",
+    "dist": 9.061185547159289,
+    "angleDeg": 72.734375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::025",
+    "name": "Green Ochre",
+    "hex": "#9f7a1f",
+    "dist": 9.304330998034118,
+    "angleDeg": 343.734375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::810",
+    "name": "Bismuth Yellow",
+    "hex": "#fcd738",
+    "dist": 9.393043229624022,
+    "angleDeg": 52.8515625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::065",
+    "name": "Russet",
+    "hex": "#c03e2c",
+    "dist": 9.517929242168016,
+    "angleDeg": 319.3046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::548",
+    "name": "Raw Umber",
+    "hex": "#69563d",
+    "dist": 10.01626869301219,
+    "angleDeg": 100.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::407",
+    "name": "Sepia",
+    "hex": "#443631",
+    "dist": 10.18326108730117,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::034",
+    "name": "Yellow Ochre",
+    "hex": "#e7a621",
+    "dist": 10.461815300259376,
+    "angleDeg": 42.109375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::599",
+    "name": "Crimson Aubergine",
+    "hex": "#801e39",
+    "dist": 10.61383729809027,
+    "angleDeg": 295.39453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::115",
+    "name": "Quinacridone Purple",
+    "hex": "#8b2b81",
+    "dist": 10.795653686432154,
+    "angleDeg": 252.03125,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::159",
+    "name": "Prussian Blue",
+    "hex": "#0e3f71",
+    "dist": 10.836672030096087,
+    "angleDeg": 176.015625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::662",
+    "name": "Cobalt Blue 10%",
+    "hex": "#4992e0",
+    "dist": 10.983027842337599,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::836",
+    "name": "Brown Ochre 50%",
+    "hex": "#c99162",
+    "dist": 11.346769326736679,
+    "angleDeg": 229.53125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::030",
+    "name": "Orange",
+    "hex": "#ff8f00",
+    "dist": 11.515500057375256,
+    "angleDeg": 28.359375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::741",
+    "name": "Warm Earth 5%",
+    "hex": "#c3907a",
+    "dist": 11.582141390434332,
+    "angleDeg": 227.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::182",
+    "name": "Cobalt Green",
+    "hex": "#56ae86",
+    "dist": 11.668572015192627,
+    "angleDeg": 156.09375,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::161",
+    "name": "Light Blue",
+    "hex": "#00a1d3",
+    "dist": 11.935929617630284,
+    "angleDeg": 174.140625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::589",
+    "name": "Crimson Alizarin (Hue)",
+    "hex": "#a40031",
+    "dist": 12.02670021178597,
+    "angleDeg": 310.40234375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::719",
+    "name": "Dark Phthalocyanine Green",
+    "hex": "#2f433d",
+    "dist": 12.288556478739347,
+    "angleDeg": 106.21875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::171",
+    "name": "Turquoise Blue",
+    "hex": "#00aac5",
+    "dist": 13.625653683313296,
+    "angleDeg": 171.1328125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::866",
+    "name": "Burnt Sienna 50%",
+    "hex": "#8f5a57",
+    "dist": 13.771602637562653,
+    "angleDeg": 290.6328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::068",
+    "name": "Herculanum Red",
+    "hex": "#e9947f",
+    "dist": 13.983977851464823,
+    "angleDeg": 230.98046875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::162",
+    "name": "Phthalocyanine Blue",
+    "hex": "#005bab",
+    "dist": 14.067924958137718,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::729",
+    "name": "Dark English Green",
+    "hex": "#00655b",
+    "dist": 14.50390380669374,
+    "angleDeg": 195.9921875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::009",
+    "name": "Black",
+    "hex": "#292a2c",
+    "dist": 14.507919008112388,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::069",
+    "name": "Burnt Sienna",
+    "hex": "#6e3a31",
+    "dist": 14.511189724287092,
+    "angleDeg": 290.6328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::803",
+    "name": "French Grey 30%",
+    "hex": "#8a7e78",
+    "dist": 14.641011446278965,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::660",
+    "name": "Middle Cobalt Blue (Hue)",
+    "hex": "#0060c5",
+    "dist": 15.191018091327853,
+    "angleDeg": 185,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::129",
+    "name": "Violet Brown",
+    "hex": "#694a72",
+    "dist": 15.587893618220114,
+    "angleDeg": 175.39453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::120",
+    "name": "Violet",
+    "hex": "#4d2c81",
+    "dist": 15.654955170387503,
+    "angleDeg": 221.5234375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::095",
+    "name": "Light Aubergine",
+    "hex": "#7a4e5c",
+    "dist": 15.871641564720083,
+    "angleDeg": 298.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::571",
+    "name": "Anthraquinoid Pink",
+    "hex": "#fd7b76",
+    "dist": 16.155538177815846,
+    "angleDeg": 234.29296875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::739",
+    "name": "Dark Sap Green",
+    "hex": "#1f4243",
+    "dist": 16.565873040830855,
+    "angleDeg": 164.0078125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::135",
+    "name": "Bleu de Nîmes",
+    "hex": "#292569",
+    "dist": 17.000272390476255,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::185",
+    "name": "Ice Blue",
+    "hex": "#00557f",
+    "dist": 17.084530190482106,
+    "angleDeg": 184.3984375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::041",
+    "name": "Apricot",
+    "hex": "#ff9f52",
+    "dist": 17.19214453669934,
+    "angleDeg": 27.0703125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::639",
+    "name": "Dark Indigo",
+    "hex": "#242025",
+    "dist": 17.50474221512418,
+    "angleDeg": 113.671875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::585",
+    "name": "Perylene Brown",
+    "hex": "#891027",
+    "dist": 17.656300209170244,
+    "angleDeg": 287.3203125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::181",
+    "name": "Light Malachite Green",
+    "hex": "#44c3bf",
+    "dist": 18.963690278790278,
+    "angleDeg": 165.1171875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::036",
+    "name": "Raw Sienna",
+    "hex": "#dd9836",
+    "dist": 19.15432028864913,
+    "angleDeg": 35.6640625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::575",
+    "name": "Carmine Lake",
+    "hex": "#522428",
+    "dist": 19.15503315016611,
+    "angleDeg": 297.05078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::094",
+    "name": "Hibiscus Pink",
+    "hex": "#bf6c80",
+    "dist": 19.455281925427528,
+    "angleDeg": 293.53125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::140",
+    "name": "Ultramarine",
+    "hex": "#1e5cda",
+    "dist": 20.131419260843565,
+    "angleDeg": 185,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::220",
+    "name": "Grass Green",
+    "hex": "#00812b",
+    "dist": 20.140656668500988,
+    "angleDeg": 135.0390625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::214",
+    "name": "Beryl Green",
+    "hex": "#009380",
+    "dist": 20.201882032107463,
+    "angleDeg": 158.2421875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::902",
+    "name": "Sepia 10%",
+    "hex": "#9f9191",
+    "dist": 20.368692623503858,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::180",
+    "name": "Malachite Green",
+    "hex": "#004f63",
+    "dist": 20.420850764406534,
+    "angleDeg": 188.125,
+    "radiusPx": 611,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::504",
+    "name": "Payne’s Grey 30%",
+    "hex": "#8695a5",
+    "dist": 21.085487595197176,
+    "angleDeg": 163.1796875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::649",
+    "name": "Indanthrone Blue",
+    "hex": "#1d1b39",
+    "dist": 21.354668326781233,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::862",
+    "name": "Burnt Sienna 10%",
+    "hex": "#c79797",
+    "dist": 22.179468079626147,
+    "angleDeg": 226.42578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::583",
+    "name": "Violet Pink",
+    "hex": "#c77d86",
+    "dist": 23.16475720173982,
+    "angleDeg": 229.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::671",
+    "name": "Chrysocolla Blue",
+    "hex": "#00b8d0",
+    "dist": 23.355457993542377,
+    "angleDeg": 169.4140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::630",
+    "name": "Ultramarine Violet",
+    "hex": "#9b93d1",
+    "dist": 23.402984337391025,
+    "angleDeg": 196.171875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::112",
+    "name": "Manganese Violet",
+    "hex": "#b381bb",
+    "dist": 23.65512630340031,
+    "angleDeg": 236.5625,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::802",
+    "name": "French Grey 10%",
+    "hex": "#b6aba4",
+    "dist": 23.768919004733686,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::093",
+    "name": "Violet Grey",
+    "hex": "#988894",
+    "dist": 24.30210807926192,
+    "angleDeg": 164.0078125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::872",
+    "name": "Burnt Ochre 10%",
+    "hex": "#eeb89b",
+    "dist": 24.392902657529923,
+    "angleDeg": 228.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::004",
+    "name": "Steel Grey",
+    "hex": "#92a3ad",
+    "dist": 24.626572337627362,
+    "angleDeg": 159.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::732",
+    "name": "Olive Brown 10%",
+    "hex": "#cdbe98",
+    "dist": 25.037883808370175,
+    "angleDeg": 222.69921875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::713",
+    "name": "Middle Verdigris",
+    "hex": "#a7c3aa",
+    "dist": 25.175785321784296,
+    "angleDeg": 144.9609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::842",
+    "name": "Raw Umber 10%",
+    "hex": "#ccbca6",
+    "dist": 25.936054436188115,
+    "angleDeg": 222.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::832",
+    "name": "Brown Ochre 10%",
+    "hex": "#ecc69f",
+    "dist": 28.642367389562306,
+    "angleDeg": 225.8046875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::542",
+    "name": "Butternut",
+    "hex": "#f9ca8b",
+    "dist": 28.776628597372653,
+    "angleDeg": 344.5625,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::661",
+    "name": "Cobalt Blue 5%",
+    "hex": "#9ac3eb",
+    "dist": 28.79349622476861,
+    "angleDeg": 174.140625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::083",
+    "name": "Ultramarine Pink",
+    "hex": "#dc8ac4",
+    "dist": 29.35339912111138,
+    "angleDeg": 260.625,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "caran d'ache luminance 6901::821",
+    "name": "Naples Ochre",
+    "hex": "#f4daa3",
+    "dist": 31.17431359986873,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::242",
+    "name": "Primrose",
+    "hex": "#f2e9be",
+    "dist": 35.203648115632255,
+    "angleDeg": 126.12109375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::002",
+    "name": "Silver Grey",
+    "hex": "#cbd4d9",
+    "dist": 39.40226719473257,
+    "angleDeg": 217.109375,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::801",
+    "name": "Buff Titanium",
+    "hex": "#f0e5d6",
+    "dist": 41.01022542281208,
+    "angleDeg": 222.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::581",
+    "name": "Pink White",
+    "hex": "#f1e1db",
+    "dist": 41.37299866313354,
+    "angleDeg": 222.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "caran d'ache luminance 6901::001",
+    "name": "White",
+    "hex": "#f0f0ee",
+    "dist": 46.63868185846035,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  }
+]

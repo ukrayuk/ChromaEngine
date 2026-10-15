@@ -1,0 +1,1570 @@
+[
+  {
+    "target": "#cc0000",
+    "arcKey": "RoY",
+    "setLabel": "Castle Arts Gold",
+    "nCandidates": 38,
+    "pairDE": 9.732772519441994,
+    "de": 9.705792185575332,
+    "trio": [
+      {
+        "name": "Vermilion",
+        "hex": "#e3212f",
+        "lab": [
+          48.99,
+          70.14,
+          43.75
+        ],
+        "arc": "RoY",
+        "d": 14.768499004557915
+      },
+      {
+        "name": "Cadmium Orange Deep",
+        "hex": "#ff6400",
+        "lab": [
+          63.46,
+          59.19,
+          74.17
+        ],
+        "arc": "RoY",
+        "d": 28.504512857000407
+      },
+      {
+        "name": "Terracotta Light",
+        "hex": "#c16c22",
+        "lab": [
+          54.16,
+          28.95,
+          52.84
+        ],
+        "arc": "RoY",
+        "d": 40.64620297380228
+      }
+    ],
+    "weights": [
+      0.5,
+      0.35,
+      0.15
+    ],
+    "mixHex": "#E83421"
+  },
+  {
+    "target": "#cc0000",
+    "arcKey": "RoY",
+    "setLabel": "Castle Arts Soft Touch",
+    "nCandidates": 35,
+    "pairDE": 15.390784286826564,
+    "de": 15.616122447693991,
+    "trio": [
+      {
+        "name": "Burnt Ochre",
+        "hex": "#f55232",
+        "lab": [
+          57.73,
+          60.92,
+          51.67
+        ],
+        "arc": "RoY",
+        "d": 17.420934354695362
+      },
+      {
+        "name": "Red Ochre",
+        "hex": "#ef463b",
+        "lab": [
+          55.05,
+          63.77,
+          44.39
+        ],
+        "arc": "RoY",
+        "d": 18.064907627129084
+      },
+      {
+        "name": "Cadmium Orange Deep",
+        "hex": "#fe5f11",
+        "lab": [
+          61.2,
+          57.76,
+          67.47
+        ],
+        "arc": "RoY",
+        "d": 23.6948226849074
+      }
+    ],
+    "weights": [
+      0.1,
+      0.55,
+      0.35
+    ],
+    "mixHex": "#F34D2C"
+  },
+  {
+    "target": "#cc0000",
+    "arcKey": "RoY",
+    "setLabel": "Pablo",
+    "nCandidates": 33,
+    "pairDE": 17.50632257423377,
+    "de": 17.73195894740576,
+    "trio": [
+      {
+        "name": "Vermilion",
+        "hex": "#f75333",
+        "lab": [
+          58.18,
+          60.93,
+          51.93
+        ],
+        "arc": "RoY",
+        "d": 17.73823971793551
+      },
+      {
+        "name": "Flame Red",
+        "hex": "#ff7335",
+        "lab": [
+          64.87,
+          49.87,
+          58.13
+        ],
+        "arc": "RoY",
+        "d": 28.61639883085908
+      },
+      {
+        "name": "Reddish Orange",
+        "hex": "#fe7433",
+        "lab": [
+          64.71,
+          49.01,
+          58.4
+        ],
+        "arc": "RoY",
+        "d": 29.050955916204046
+      }
+    ],
+    "weights": [
+      0.85,
+      0.05,
+      0.1
+    ],
+    "mixHex": "#F75333"
+  },
+  {
+    "target": "#cc0000",
+    "arcKey": "RoY",
+    "setLabel": "Polychromos",
+    "nCandidates": 40,
+    "pairDE": 16.6091287426556,
+    "de": 16.71895226337994,
+    "trio": [
+      {
+        "name": "Light Cadmium Red",
+        "hex": "#f94f32",
+        "lab": [
+          57.96,
+          63.34,
+          52.44
+        ],
+        "arc": "RoY",
+        "d": 16.62260737462572
+      },
+      {
+        "name": "Dark Cadmium Orange",
+        "hex": "#ff5f30",
+        "lab": [
+          61.39,
+          58.54,
+          56.7
+        ],
+        "arc": "RoY",
+        "d": 20.97198395818817
+      },
+      {
+        "name": "Scarlet Red",
+        "hex": "#e84e41",
+        "lab": [
+          55.02,
+          58.85,
+          40.74
+        ],
+        "arc": "RoY",
+        "d": 22.18778833445903
+      }
+    ],
+    "weights": [
+      0.75,
+      0.1,
+      0.15
+    ],
+    "mixHex": "#F84F32"
+  },
+  {
+    "target": "#e33a0b",
+    "arcKey": "RoY",
+    "setLabel": "Castle Arts Gold",
+    "nCandidates": 38,
+    "pairDE": 4.147296251723483,
+    "de": 3.3878173593982055,
+    "trio": [
+      {
+        "name": "Red Ochre",
+        "hex": "#ee3022",
+        "lab": [
+          52.28,
+          69.42,
+          54.11
+        ],
+        "arc": "RoY",
+        "d": 9.10291529632511
+      },
+      {
+        "name": "Cadmium Orange Deep",
+        "hex": "#ff6400",
+        "lab": [
+          63.46,
+          59.19,
+          74.17
+        ],
+        "arc": "RoY",
+        "d": 18.8567119450897
+      },
+      {
+        "name": "Cinnamon",
+        "hex": "#b05a43",
+        "lab": [
+          48.16,
+          32.98,
+          29.11
+        ],
+        "arc": "RoY",
+        "d": 43.425877173036234
+      }
+    ],
+    "weights": [
+      0.45,
+      0.4,
+      0.15
+    ],
+    "mixHex": "#ED4419"
+  },
+  {
+    "target": "#e33a0b",
+    "arcKey": "RoY",
+    "setLabel": "Castle Arts Soft Touch",
+    "nCandidates": 35,
+    "pairDE": 7.14979830040719,
+    "de": 7.3662247087753885,
+    "trio": [
+      {
+        "name": "Orange Lake",
+        "hex": "#f85628",
+        "lab": [
+          58.64,
+          59.95,
+          57.4
+        ],
+        "arc": "RoY",
+        "d": 8.620723133510918
+      },
+      {
+        "name": "Cadmium Orange Deep",
+        "hex": "#fe5f11",
+        "lab": [
+          61.2,
+          57.76,
+          67.47
+        ],
+        "arc": "RoY",
+        "d": 13.3471754995212
+      },
+      {
+        "name": "Red Ochre",
+        "hex": "#ef463b",
+        "lab": [
+          55.05,
+          63.77,
+          44.39
+        ],
+        "arc": "RoY",
+        "d": 16.505020571419248
+      }
+    ],
+    "weights": [
+      0.1,
+      0.45,
+      0.45
+    ],
+    "mixHex": "#F55224"
+  },
+  {
+    "target": "#e33a0b",
+    "arcKey": "RoY",
+    "setLabel": "Pablo",
+    "nCandidates": 33,
+    "pairDE": 9.796750313354377,
+    "de": 10.111693501164762,
+    "trio": [
+      {
+        "name": "Vermilion",
+        "hex": "#f75333",
+        "lab": [
+          58.18,
+          60.93,
+          51.93
+        ],
+        "arc": "RoY",
+        "d": 11.201913702374307
+      },
+      {
+        "name": "Flame Red",
+        "hex": "#ff7335",
+        "lab": [
+          64.87,
+          49.87,
+          58.13
+        ],
+        "arc": "RoY",
+        "d": 19.098385844463976
+      },
+      {
+        "name": "Orange",
+        "hex": "#ff8e08",
+        "lab": [
+          70.8,
+          38.51,
+          75.68
+        ],
+        "arc": "RoY",
+        "d": 34.8874543516143
+      }
+    ],
+    "weights": [
+      0.75,
+      0.05,
+      0.2
+    ],
+    "mixHex": "#F8562F"
+  },
+  {
+    "target": "#e33a0b",
+    "arcKey": "RoY",
+    "setLabel": "Polychromos",
+    "nCandidates": 40,
+    "pairDE": 9.376911608346774,
+    "de": 9.58527112682403,
+    "trio": [
+      {
+        "name": "Light Cadmium Red",
+        "hex": "#f94f32",
+        "lab": [
+          57.96,
+          63.34,
+          52.44
+        ],
+        "arc": "RoY",
+        "d": 10.495540957879813
+      },
+      {
+        "name": "Perinone Orange",
+        "hex": "#ff6827",
+        "lab": [
+          64.27,
+          57.81,
+          63.55
+        ],
+        "arc": "RoY",
+        "d": 14.450597352222099
+      },
+      {
+        "name": "Orange Glaze",
+        "hex": "#ff7b1e",
+        "lab": [
+          68.41,
+          51.1,
+          70.4
+        ],
+        "arc": "RoY",
+        "d": 23.20948740995983
+      }
+    ],
+    "weights": [
+      0.6,
+      0.15,
+      0.25
+    ],
+    "mixHex": "#FA552E"
+  },
+  {
+    "target": "#fa7516",
+    "arcKey": "RoY",
+    "setLabel": "Castle Arts Gold",
+    "nCandidates": 38,
+    "pairDE": 0.9014369999848945,
+    "de": 0.5332180790262482,
+    "trio": [
+      {
+        "name": "Cadmium Yellow",
+        "hex": "#e6951d",
+        "lab": [
+          68.31,
+          22.17,
+          68.08
+        ],
+        "arc": "RoY",
+        "d": 24.632841473828368
+      },
+      {
+        "name": "Red Ochre",
+        "hex": "#ee3022",
+        "lab": [
+          52.28,
+          69.42,
+          54.11
+        ],
+        "arc": "RoY",
+        "d": 29.400389430618475
+      },
+      {
+        "name": "Brilliant Yellow",
+        "hex": "#ffa700",
+        "lab": [
+          77.57,
+          29.73,
+          91.63
+        ],
+        "arc": "RoY",
+        "d": 31.838731942246838
+      }
+    ],
+    "weights": [
+      0.2,
+      0.3,
+      0.5
+    ],
+    "mixHex": "#FA7616"
+  },
+  {
+    "target": "#fa7516",
+    "arcKey": "RoY",
+    "setLabel": "Castle Arts Soft Touch",
+    "nCandidates": 35,
+    "pairDE": 0.8132999442731054,
+    "de": 2.61219823337246,
+    "trio": [
+      {
+        "name": "Marigold",
+        "hex": "#ff8b2c",
+        "lab": [
+          70.28,
+          40.72,
+          66.9
+        ],
+        "arc": "RoY",
+        "d": 8.409103053982577
+      },
+      {
+        "name": "Cadmium Orange Deep",
+        "hex": "#fe5f11",
+        "lab": [
+          61.2,
+          57.76,
+          67.47
+        ],
+        "arc": "RoY",
+        "d": 11.712685895357918
+      },
+      {
+        "name": "Cadmium Yellow Deep",
+        "hex": "#ffa939",
+        "lab": [
+          76.72,
+          25.2,
+          67.77
+        ],
+        "arc": "RoY",
+        "d": 24.654681110187443
+      }
+    ],
+    "weights": [
+      0.2,
+      0.45,
+      0.35
+    ],
+    "mixHex": "#FF7822"
+  },
+  {
+    "target": "#fa7516",
+    "arcKey": "RoY",
+    "setLabel": "Pablo",
+    "nCandidates": 33,
+    "pairDE": 0.7194511362972958,
+    "de": 0.8132999442731054,
+    "trio": [
+      {
+        "name": "Orange",
+        "hex": "#ff8e08",
+        "lab": [
+          70.8,
+          38.51,
+          75.68
+        ],
+        "arc": "RoY",
+        "d": 12.824977418984943
+      },
+      {
+        "name": "Vermilion",
+        "hex": "#f75333",
+        "lab": [
+          58.18,
+          60.93,
+          51.93
+        ],
+        "arc": "RoY",
+        "d": 22.490074042350994
+      },
+      {
+        "name": "Russet",
+        "hex": "#ad5434",
+        "lab": [
+          46.19,
+          33.8,
+          35.17
+        ],
+        "arc": "RoY",
+        "d": 39.59063140768461
+      }
+    ],
+    "weights": [
+      0.55,
+      0.4,
+      0.05
+    ],
+    "mixHex": "#FB761A"
+  },
+  {
+    "target": "#fa7516",
+    "arcKey": "RoY",
+    "setLabel": "Polychromos",
+    "nCandidates": 40,
+    "pairDE": 1.857540251978105,
+    "de": 1.857540251978105,
+    "trio": [
+      {
+        "name": "Orange Glaze",
+        "hex": "#ff7b1e",
+        "lab": [
+          68.41,
+          51.1,
+          70.4
+        ],
+        "arc": "RoY",
+        "d": 6.658508095945565
+      },
+      {
+        "name": "Perinone Orange",
+        "hex": "#ff6827",
+        "lab": [
+          64.27,
+          57.81,
+          63.55
+        ],
+        "arc": "RoY",
+        "d": 12.203309302688725
+      },
+      {
+        "name": "Cadmium Orange",
+        "hex": "#ff951e",
+        "lab": [
+          73.71,
+          39.9,
+          74.43
+        ],
+        "arc": "RoY",
+        "d": 13.167264538376333
+      }
+    ],
+    "weights": [
+      0.6,
+      0.25,
+      0.15
+    ],
+    "mixHex": "#FF791F"
+  },
+  {
+    "target": "#fda10b",
+    "arcKey": "RoY",
+    "setLabel": "Castle Arts Gold",
+    "nCandidates": 38,
+    "pairDE": 0.7101172421871578,
+    "de": 0.500338102570966,
+    "trio": [
+      {
+        "name": "Cadmium Yellow",
+        "hex": "#e6951d",
+        "lab": [
+          68.31,
+          22.17,
+          68.08
+        ],
+        "arc": "RoY",
+        "d": 10.768317523216504
+      },
+      {
+        "name": "Brilliant Yellow",
+        "hex": "#ffa700",
+        "lab": [
+          77.57,
+          29.73,
+          91.63
+        ],
+        "arc": "RoY",
+        "d": 15.930479992786061
+      },
+      {
+        "name": "Peach",
+        "hex": "#ff6f4f",
+        "lab": [
+          65.4,
+          54.97,
+          46.17
+        ],
+        "arc": "RoY",
+        "d": 43.495777879179506
+      }
+    ],
+    "weights": [
+      0.15,
+      0.65,
+      0.2
+    ],
+    "mixHex": "#FCA10C"
+  },
+  {
+    "target": "#fda10b",
+    "arcKey": "RoY",
+    "setLabel": "Castle Arts Soft Touch",
+    "nCandidates": 35,
+    "pairDE": 0.6428977673379029,
+    "de": 6.1939137993135,
+    "trio": [
+      {
+        "name": "Cadmium Yellow",
+        "hex": "#f5b322",
+        "lab": [
+          77.13,
+          12.77,
+          74.49
+        ],
+        "arc": "RoY",
+        "d": 13.13508132202814
+      },
+      {
+        "name": "Cadmium Yellow Light",
+        "hex": "#ffd02a",
+        "lab": [
+          85.9,
+          4.3,
+          80.35
+        ],
+        "arc": "RoY",
+        "d": 24.460559138959727
+      },
+      {
+        "name": "Cadmium Orange",
+        "hex": "#ff7125",
+        "lab": [
+          65.25,
+          52.88,
+          64.91
+        ],
+        "arc": "RoY",
+        "d": 31.26402868567816
+      }
+    ],
+    "weights": [
+      0.2,
+      0.45,
+      0.35
+    ],
+    "mixHex": "#FFA52B"
+  },
+  {
+    "target": "#fda10b",
+    "arcKey": "RoY",
+    "setLabel": "Pablo",
+    "nCandidates": 33,
+    "pairDE": 0.5833023352379927,
+    "de": 0.39756615473555135,
+    "trio": [
+      {
+        "name": "Fast Orange",
+        "hex": "#ffa102",
+        "lab": [
+          75.05,
+          29.61,
+          79.27
+        ],
+        "arc": "RoY",
+        "d": 5.147725227993528
+      },
+      {
+        "name": "Golden Ochre",
+        "hex": "#e3a138",
+        "lab": [
+          71.04,
+          15.09,
+          61.29
+        ],
+        "arc": "RoY",
+        "d": 18.761506737187485
+      },
+      {
+        "name": "Reddish Orange",
+        "hex": "#fe7433",
+        "lab": [
+          64.71,
+          49.01,
+          58.4
+        ],
+        "arc": "RoY",
+        "d": 31.392772302805344
+      }
+    ],
+    "weights": [
+      0.75,
+      0.15,
+      0.1
+    ],
+    "mixHex": "#FCA007"
+  },
+  {
+    "target": "#fda10b",
+    "arcKey": "RoY",
+    "setLabel": "Polychromos",
+    "nCandidates": 40,
+    "pairDE": 0.6428977673379029,
+    "de": 0.7217815534487401,
+    "trio": [
+      {
+        "name": "Dark Cadmium Yellow",
+        "hex": "#ffc000",
+        "lab": [
+          83.1,
+          16.95,
+          93.34
+        ],
+        "arc": "RoY",
+        "d": 20.70721633620198
+      },
+      {
+        "name": "Orange Glaze",
+        "hex": "#ff7b1e",
+        "lab": [
+          68.41,
+          51.1,
+          70.4
+        ],
+        "arc": "RoY",
+        "d": 27.160663029314826
+      },
+      {
+        "name": "Cadmium Yellow",
+        "hex": "#ffdb00",
+        "lab": [
+          88.6,
+          -1.73,
+          96.06
+        ],
+        "arc": "RoY",
+        "d": 36.306396838893725
+      }
+    ],
+    "weights": [
+      0.5,
+      0.4,
+      0.1
+    ],
+    "mixHex": "#FFA211"
+  },
+  {
+    "target": "#ffcc00",
+    "arcKey": "RoY",
+    "setLabel": "Castle Arts Gold",
+    "nCandidates": 38,
+    "pairDE": 7.861701864284338,
+    "de": 7.861701864284338,
+    "trio": [
+      {
+        "name": "Cadmium Yellow Light",
+        "hex": "#ffb900",
+        "lab": [
+          81.39,
+          20.22,
+          93.17
+        ],
+        "arc": "RoY",
+        "d": 18.57476269313253
+      },
+      {
+        "name": "Golden Yellow",
+        "hex": "#ffd266",
+        "lab": [
+          86.95,
+          7.08,
+          59.25
+        ],
+        "arc": "RoY",
+        "d": 26.33277277246334
+      },
+      {
+        "name": "Tuscan Yellow Light",
+        "hex": "#ffe193",
+        "lab": [
+          90.42,
+          0.59,
+          41.97
+        ],
+        "arc": "RoY",
+        "d": 43.79956043954463
+      }
+    ],
+    "weights": [
+      0.55,
+      0.05,
+      0.4
+    ],
+    "mixHex": "#FFC627"
+  },
+  {
+    "target": "#ffcc00",
+    "arcKey": "RoY",
+    "setLabel": "Castle Arts Soft Touch",
+    "nCandidates": 35,
+    "pairDE": 0.6294372195831063,
+    "de": 1.1131990197521913,
+    "trio": [
+      {
+        "name": "Cadmium Yellow Light",
+        "hex": "#ffd02a",
+        "lab": [
+          85.9,
+          4.3,
+          80.35
+        ],
+        "arc": "RoY",
+        "d": 5.192989647784137
+      },
+      {
+        "name": "Golden Yellow Deep",
+        "hex": "#ffda00",
+        "lab": [
+          87.89,
+          -2.29,
+          97.56
+        ],
+        "arc": "RoY",
+        "d": 14.196563415995627
+      },
+      {
+        "name": "Marigold",
+        "hex": "#ff8b2c",
+        "lab": [
+          70.28,
+          40.72,
+          66.9
+        ],
+        "arc": "RoY",
+        "d": 43.60973589649535
+      }
+    ],
+    "weights": [
+      0.05,
+      0.7,
+      0.25
+    ],
+    "mixHex": "#FFCD0D"
+  },
+  {
+    "target": "#ffcc00",
+    "arcKey": "RoY",
+    "setLabel": "Pablo",
+    "nCandidates": 33,
+    "pairDE": 0.09049211863427149,
+    "de": 0.09049211863427149,
+    "trio": [
+      {
+        "name": "Yellow",
+        "hex": "#ffd300",
+        "lab": [
+          85.87,
+          0.13,
+          94.93
+        ],
+        "arc": "RoY",
+        "d": 10.473755996066208
+      },
+      {
+        "name": "Golden Yellow",
+        "hex": "#ffc100",
+        "lab": [
+          82.11,
+          11.95,
+          91.5
+        ],
+        "arc": "RoY",
+        "d": 10.601525734917123
+      },
+      {
+        "name": "Orangish Yellow",
+        "hex": "#ffba47",
+        "lab": [
+          80.41,
+          16,
+          65.84
+        ],
+        "arc": "RoY",
+        "d": 23.276054496819025
+      }
+    ],
+    "weights": [
+      0.55,
+      0.4,
+      0.05
+    ],
+    "mixHex": "#FFCC01"
+  },
+  {
+    "target": "#ffcc00",
+    "arcKey": "RoY",
+    "setLabel": "Polychromos",
+    "nCandidates": 40,
+    "pairDE": 0.18079173171101204,
+    "de": 0.36081746687195887,
+    "trio": [
+      {
+        "name": "Cadmium Yellow",
+        "hex": "#ffdb00",
+        "lab": [
+          88.6,
+          -1.73,
+          96.06
+        ],
+        "arc": "RoY",
+        "d": 12.889655462283251
+      },
+      {
+        "name": "Dark Cadmium Yellow",
+        "hex": "#ffc000",
+        "lab": [
+          83.1,
+          16.95,
+          93.34
+        ],
+        "arc": "RoY",
+        "d": 15.605699625926544
+      },
+      {
+        "name": "Naples Yellow",
+        "hex": "#fac23d",
+        "lab": [
+          81.36,
+          7.88,
+          70.22
+        ],
+        "arc": "RoY",
+        "d": 15.83177156705165
+      }
+    ],
+    "weights": [
+      0.45,
+      0.45,
+      0.1
+    ],
+    "mixHex": "#FFCC04"
+  },
+  {
+    "target": "#80c300",
+    "arcKey": "YgB",
+    "setLabel": "Castle Arts Gold",
+    "nCandidates": 36,
+    "pairDE": 1.791688934433496,
+    "de": 1.880083563401832,
+    "trio": [
+      {
+        "name": "Leaf Green Light",
+        "hex": "#9acd06",
+        "lab": [
+          76.39,
+          -39.27,
+          75.31
+        ],
+        "arc": "YgB",
+        "d": 7.918145648689651
+      },
+      {
+        "name": "Leaf Green Deep",
+        "hex": "#4a7536",
+        "lab": [
+          44.76,
+          -27.16,
+          29.51
+        ],
+        "arc": "YgB",
+        "d": 53.357095349746466
+      },
+      {
+        "name": "Prussian Green",
+        "hex": "#00773c",
+        "lab": [
+          43.37,
+          -45.73,
+          24.12
+        ],
+        "arc": "YgB",
+        "d": 55.65567948921212
+      }
+    ],
+    "weights": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "mixHex": "#81C711"
+  },
+  {
+    "target": "#80c300",
+    "arcKey": "YgB",
+    "setLabel": "Castle Arts Soft Touch",
+    "nCandidates": 36,
+    "pairDE": 10.422247037079488,
+    "de": 9.752407773050711,
+    "trio": [
+      {
+        "name": "Leaf Green",
+        "hex": "#5ac61d",
+        "lab": [
+          71.25,
+          -57.55,
+          66.34
+        ],
+        "arc": "YgB",
+        "d": 13.855360671785451
+      },
+      {
+        "name": "Leaf Green Light",
+        "hex": "#b0ea5c",
+        "lab": [
+          86.31,
+          -39.53,
+          61.1
+        ],
+        "arc": "YgB",
+        "d": 18.69890229202527
+      },
+      {
+        "name": "Cadmium Green Pale",
+        "hex": "#789438",
+        "lab": [
+          57.63,
+          -24.4,
+          44.15
+        ],
+        "arc": "YgB",
+        "d": 37.30865643529765
+      }
+    ],
+    "weights": [
+      0.4,
+      0.35,
+      0.25
+    ],
+    "mixHex": "#79C933"
+  },
+  {
+    "target": "#80c300",
+    "arcKey": "YgB",
+    "setLabel": "Pablo",
+    "nCandidates": 42,
+    "pairDE": 15.440694267195175,
+    "de": 15.170027316235242,
+    "trio": [
+      {
+        "name": "Lemon Yellow",
+        "hex": "#f0ed4c",
+        "lab": [
+          91.57,
+          -17.12,
+          74.23
+        ],
+        "arc": "YgB",
+        "d": 34.04724179595968
+      },
+      {
+        "name": "Olive Yellow",
+        "hex": "#c4c048",
+        "lab": [
+          76.1,
+          -13.49,
+          58.91
+        ],
+        "arc": "YgB",
+        "d": 34.18651122318443
+      },
+      {
+        "name": "Grass Green",
+        "hex": "#009660",
+        "lab": [
+          54.13,
+          -52.6,
+          18.15
+        ],
+        "arc": "YgB",
+        "d": 57.118729614705614
+      }
+    ],
+    "weights": [
+      0.65,
+      0.15,
+      0.2
+    ],
+    "mixHex": "#9DE452"
+  },
+  {
+    "target": "#80c300",
+    "arcKey": "YgB",
+    "setLabel": "Polychromos",
+    "nCandidates": 36,
+    "pairDE": 13.569547042299368,
+    "de": 13.4690119295911,
+    "trio": [
+      {
+        "name": "Grass Green",
+        "hex": "#34c147",
+        "lab": [
+          68.97,
+          -61.08,
+          49.7
+        ],
+        "arc": "YgB",
+        "d": 27.621749275985817
+      },
+      {
+        "name": "Cadmium Yellow Lemon",
+        "hex": "#e7ed46",
+        "lab": [
+          90.7,
+          -21.04,
+          75.27
+        ],
+        "arc": "YgB",
+        "d": 30.492215344393177
+      },
+      {
+        "name": "Earth Green Yellowish",
+        "hex": "#759243",
+        "lab": [
+          56.8,
+          -23.33,
+          38.07
+        ],
+        "arc": "YgB",
+        "d": 42.839574670927455
+      }
+    ],
+    "weights": [
+      0.3,
+      0.6,
+      0.1
+    ],
+    "mixHex": "#98E24B"
+  },
+  {
+    "target": "#00bb00",
+    "arcKey": "YgB",
+    "setLabel": "Castle Arts Gold",
+    "nCandidates": 36,
+    "pairDE": 6.550505647523215,
+    "de": 6.758498162695813,
+    "trio": [
+      {
+        "name": "Castle Green Light",
+        "hex": "#00c752",
+        "lab": [
+          70.47,
+          -66.84,
+          46.23
+        ],
+        "arc": "YgB",
+        "d": 20.170683912581385
+      },
+      {
+        "name": "Leaf Green Light",
+        "hex": "#9acd06",
+        "lab": [
+          76.39,
+          -39.27,
+          75.31
+        ],
+        "arc": "YgB",
+        "d": 32.15575713803827
+      },
+      {
+        "name": "Prussian Green",
+        "hex": "#00773c",
+        "lab": [
+          43.37,
+          -45.73,
+          24.12
+        ],
+        "arc": "YgB",
+        "d": 52.647167790026124
+      }
+    ],
+    "weights": [
+      0.5,
+      0.45,
+      0.05
+    ],
+    "mixHex": "#39CA2A"
+  },
+  {
+    "target": "#00bb00",
+    "arcKey": "YgB",
+    "setLabel": "Castle Arts Soft Touch",
+    "nCandidates": 36,
+    "pairDE": 6.772793782988228,
+    "de": 7.207329341260112,
+    "trio": [
+      {
+        "name": "Leaf Green",
+        "hex": "#5ac61d",
+        "lab": [
+          71.25,
+          -57.55,
+          66.34
+        ],
+        "arc": "YgB",
+        "d": 11.867350928069898
+      },
+      {
+        "name": "Castle Green Light",
+        "hex": "#30bc3f",
+        "lab": [
+          67.11,
+          -60.8,
+          50.95
+        ],
+        "arc": "YgB",
+        "d": 16.72250085314114
+      },
+      {
+        "name": "Mint Green",
+        "hex": "#00c086",
+        "lab": [
+          67.43,
+          -68.86,
+          15.68
+        ],
+        "arc": "YgB",
+        "d": 50.224148284689974
+      }
+    ],
+    "weights": [
+      0.6,
+      0.05,
+      0.35
+    ],
+    "mixHex": "#39C52A"
+  },
+  {
+    "target": "#00bb00",
+    "arcKey": "YgB",
+    "setLabel": "Pablo",
+    "nCandidates": 42,
+    "pairDE": 20.70593623548809,
+    "de": 20.810984158029285,
+    "trio": [
+      {
+        "name": "Spring Green",
+        "hex": "#cae550",
+        "lab": [
+          86.6,
+          -28.3,
+          66.91
+        ],
+        "arc": "YgB",
+        "d": 44.89635163316904
+      },
+      {
+        "name": "Peacock Green",
+        "hex": "#00af7b",
+        "lab": [
+          62.48,
+          -56.76,
+          14.55
+        ],
+        "arc": "YgB",
+        "d": 52.73683777870724
+      },
+      {
+        "name": "Lemon Yellow",
+        "hex": "#f0ed4c",
+        "lab": [
+          91.57,
+          -17.12,
+          74.23
+        ],
+        "arc": "YgB",
+        "d": 57.7119312727252
+      }
+    ],
+    "weights": [
+      0.1,
+      0.35,
+      0.55
+    ],
+    "mixHex": "#69DD59"
+  },
+  {
+    "target": "#00bb00",
+    "arcKey": "YgB",
+    "setLabel": "Polychromos",
+    "nCandidates": 36,
+    "pairDE": 16.24373641407091,
+    "de": 16.609605495204693,
+    "trio": [
+      {
+        "name": "Grass Green",
+        "hex": "#34c147",
+        "lab": [
+          68.97,
+          -61.08,
+          49.7
+        ],
+        "arc": "YgB",
+        "d": 17.927923258037943
+      },
+      {
+        "name": "Leaf Green",
+        "hex": "#00a744",
+        "lab": [
+          59.27,
+          -62.35,
+          39.36
+        ],
+        "arc": "YgB",
+        "d": 28.037283754006335
+      },
+      {
+        "name": "Cadmium Yellow Lemon",
+        "hex": "#e7ed46",
+        "lab": [
+          90.7,
+          -21.04,
+          75.27
+        ],
+        "arc": "YgB",
+        "d": 54.03759275403679
+      }
+    ],
+    "weights": [
+      0.55,
+      0.1,
+      0.35
+    ],
+    "mixHex": "#50CE4A"
+  },
+  {
+    "target": "#189371",
+    "arcKey": "YgB",
+    "setLabel": "Castle Arts Gold",
+    "nCandidates": 36,
+    "pairDE": 0.594433371094259,
+    "de": 0.9617184372653657,
+    "trio": [
+      {
+        "name": "Prussian Green",
+        "hex": "#00773c",
+        "lab": [
+          43.37,
+          -45.73,
+          24.12
+        ],
+        "arc": "YgB",
+        "d": 19.392319285524145
+      },
+      {
+        "name": "Viridian",
+        "hex": "#005c46",
+        "lab": [
+          33.83,
+          -32.98,
+          5.45
+        ],
+        "arc": "YgB",
+        "d": 22.01847516974762
+      },
+      {
+        "name": "Mint Green",
+        "hex": "#88e2ac",
+        "lab": [
+          83.33,
+          -38.69,
+          18.3
+        ],
+        "arc": "YgB",
+        "d": 30.51080756930396
+      }
+    ],
+    "weights": [
+      0.15,
+      0.5,
+      0.35
+    ],
+    "mixHex": "#1F9572"
+  },
+  {
+    "target": "#189371",
+    "arcKey": "YgB",
+    "setLabel": "Castle Arts Soft Touch",
+    "nCandidates": 36,
+    "pairDE": 0.5822383372055142,
+    "de": 0.7360784359862877,
+    "trio": [
+      {
+        "name": "Jade Green",
+        "hex": "#00aa93",
+        "lab": [
+          60.04,
+          -61.36,
+          -2.24
+        ],
+        "arc": "YgB",
+        "d": 24.615768973302554
+      },
+      {
+        "name": "Teal Green Light",
+        "hex": "#007e88",
+        "lab": [
+          45.67,
+          -39.73,
+          -17.21
+        ],
+        "arc": "YgB",
+        "d": 27.65472976665806
+      },
+      {
+        "name": "Sap Green",
+        "hex": "#51643e",
+        "lab": [
+          39.87,
+          -14.7,
+          19.23
+        ],
+        "arc": "YgB",
+        "d": 31.060852199156987
+      }
+    ],
+    "weights": [
+      0.5,
+      0.15,
+      0.35
+    ],
+    "mixHex": "#1F9472"
+  },
+  {
+    "target": "#189371",
+    "arcKey": "YgB",
+    "setLabel": "Pablo",
+    "nCandidates": 42,
+    "pairDE": 0.5281832846973917,
+    "de": 0.668833365441566,
+    "trio": [
+      {
+        "name": "Empire Green",
+        "hex": "#007f5d",
+        "lab": [
+          45.8,
+          -47.68,
+          8.27
+        ],
+        "arc": "YgB",
+        "d": 11.306634693509919
+      },
+      {
+        "name": "Spruce Green",
+        "hex": "#316f52",
+        "lab": [
+          42.3,
+          -27.82,
+          10.44
+        ],
+        "arc": "YgB",
+        "d": 17.335222965582602
+      },
+      {
+        "name": "Jade Green",
+        "hex": "#54cdaa",
+        "lab": [
+          75.23,
+          -42.45,
+          7.73
+        ],
+        "arc": "YgB",
+        "d": 21.091976187922267
+      }
+    ],
+    "weights": [
+      0.45,
+      0.25,
+      0.3
+    ],
+    "mixHex": "#1C9471"
+  },
+  {
+    "target": "#189371",
+    "arcKey": "YgB",
+    "setLabel": "Polychromos",
+    "nCandidates": 36,
+    "pairDE": 0.7723573125256716,
+    "de": 0.606831207256711,
+    "trio": [
+      {
+        "name": "Dark Phthalo Green",
+        "hex": "#00725f",
+        "lab": [
+          41.86,
+          -38.88,
+          1.94
+        ],
+        "arc": "YgB",
+        "d": 14.39487883535597
+      },
+      {
+        "name": "Light Phthalo Green",
+        "hex": "#00b87b",
+        "lab": [
+          65.11,
+          -63.7,
+          18.28
+        ],
+        "arc": "YgB",
+        "d": 27.41234730470682
+      },
+      {
+        "name": "Hooker’s Green",
+        "hex": "#0e584f",
+        "lab": [
+          33.16,
+          -23.79,
+          -0.92
+        ],
+        "arc": "YgB",
+        "d": 28.592139547235792
+      }
+    ],
+    "weights": [
+      0.15,
+      0.45,
+      0.4
+    ],
+    "mixHex": "#119270"
+  }
+]

@@ -1,0 +1,1082 @@
+[
+  {
+    "key": "castle arts gold coloured pencils::023",
+    "name": "Vermilion",
+    "hex": "#e3212f",
+    "dist": 0.09303729835841014,
+    "angleDeg": -55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::130",
+    "name": "Olive Green",
+    "hex": "#6a7249",
+    "dist": 1.4889549390551005,
+    "angleDeg": 93.17578125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::012",
+    "name": "Cinnamon",
+    "hex": "#b05a43",
+    "dist": 2.757247106155799,
+    "angleDeg": 274.69140625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::112",
+    "name": "Cadmium Green Pale",
+    "hex": "#528a35",
+    "dist": 2.8087645204325518,
+    "angleDeg": 41.9375,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::001",
+    "name": "Lemon Yellow Light",
+    "hex": "#f5f041",
+    "dist": 3.2090623838348127,
+    "angleDeg": 65.4296875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::091",
+    "name": "Purple Lake",
+    "hex": "#685fbb",
+    "dist": 3.9955129275534915,
+    "angleDeg": 198.3203125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::015",
+    "name": "Red Ochre",
+    "hex": "#ee3022",
+    "dist": 4.10327346962989,
+    "angleDeg": -21.9140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::022",
+    "name": "Scarlet Red",
+    "hex": "#d80029",
+    "dist": 4.226736225184477,
+    "angleDeg": -55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::053",
+    "name": "Chrome Green",
+    "hex": "#36755f",
+    "dist": 4.506080672313383,
+    "angleDeg": 201.58203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::013",
+    "name": "Terracotta",
+    "hex": "#b84b34",
+    "dist": 4.528616383087792,
+    "angleDeg": 324.6875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::182",
+    "name": "Tuscan Yellow",
+    "hex": "#f9ee4f",
+    "dist": 5.174526511529283,
+    "angleDeg": 65.4296875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::191",
+    "name": "Venetian Blue",
+    "hex": "#575f80",
+    "dist": 5.384554512976708,
+    "angleDeg": 171.046875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::018",
+    "name": "Peach",
+    "hex": "#ff6f4f",
+    "dist": 5.6602981994100015,
+    "angleDeg": 5.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::064",
+    "name": "Terre Verde",
+    "hex": "#485e5b",
+    "dist": 6.082811400069956,
+    "angleDeg": 162.14453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::161",
+    "name": "Warm Gray",
+    "hex": "#655e5a",
+    "dist": 6.13610735257865,
+    "angleDeg": 105.390625,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::087",
+    "name": "Alizarin Crimson",
+    "hex": "#d30038",
+    "dist": 6.6044690197190805,
+    "angleDeg": 301.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::026",
+    "name": "Chinese Orange",
+    "hex": "#803a38",
+    "dist": 6.642240148933586,
+    "angleDeg": 289.59765625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::077",
+    "name": "Yellow Ochre",
+    "hex": "#905b31",
+    "dist": 6.668096372588354,
+    "angleDeg": 18.54296875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::085",
+    "name": "Bengal Rose Deep",
+    "hex": "#cb166a",
+    "dist": 6.7166919058069885,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::200",
+    "name": "Slate Gray",
+    "hex": "#493e39",
+    "dist": 6.83741398381297,
+    "angleDeg": 107.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::118",
+    "name": "Charcoal Gray",
+    "hex": "#5b5d5e",
+    "dist": 6.897402106885721,
+    "angleDeg": 106.21875,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::008",
+    "name": "Naples Yellow",
+    "hex": "#ffae35",
+    "dist": 6.910581368743331,
+    "angleDeg": 39.1015625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::113",
+    "name": "Sap Green",
+    "hex": "#516235",
+    "dist": 7.087853561759772,
+    "angleDeg": 94.2109375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::076",
+    "name": "Green Gold",
+    "hex": "#9d8452",
+    "dist": 7.313698384895938,
+    "angleDeg": 24.33984375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::159",
+    "name": "Permanent Brown",
+    "hex": "#4a393a",
+    "dist": 7.595507461565623,
+    "angleDeg": 110.98046875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::080",
+    "name": "Grenadine",
+    "hex": "#ea3954",
+    "dist": 7.637941071236615,
+    "angleDeg": 301.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::127",
+    "name": "Violet Deep",
+    "hex": "#795cb9",
+    "dist": 7.709757541381212,
+    "angleDeg": 206.9140625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::063",
+    "name": "Oxide of Chrome",
+    "hex": "#494e34",
+    "dist": 7.874936680782213,
+    "angleDeg": 100.0078125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::197",
+    "name": "Redwood",
+    "hex": "#884335",
+    "dist": 8.058324588452283,
+    "angleDeg": 282.3515625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::021",
+    "name": "Venetian Red",
+    "hex": "#ff6254",
+    "dist": 8.240033353268904,
+    "angleDeg": 5.70703125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::032",
+    "name": "Cherry Pink",
+    "hex": "#cf0042",
+    "dist": 8.4552153816139,
+    "angleDeg": 302.12109375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::198",
+    "name": "Henna Brown",
+    "hex": "#7a2b30",
+    "dist": 8.678933927610302,
+    "angleDeg": 289.59765625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::043",
+    "name": "Ultramarine",
+    "hex": "#1f407a",
+    "dist": 8.697428437543598,
+    "angleDeg": 177.87890625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::027",
+    "name": "Cherry",
+    "hex": "#7c2341",
+    "dist": 8.723088978840565,
+    "angleDeg": 298.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::025",
+    "name": "Spice Red",
+    "hex": "#7f2536",
+    "dist": 8.800920722650536,
+    "angleDeg": 295.39453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::066",
+    "name": "Cool Gray Deep",
+    "hex": "#353b40",
+    "dist": 8.979945755440475,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::119",
+    "name": "Payne's Gray",
+    "hex": "#656f73",
+    "dist": 8.992585837513328,
+    "angleDeg": 162.14453125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::169",
+    "name": "Leaf Green Deep",
+    "hex": "#4a7536",
+    "dist": 9.182133213121618,
+    "angleDeg": 36.76171875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::045",
+    "name": "Indigo Light",
+    "hex": "#274163",
+    "dist": 9.393933306435988,
+    "angleDeg": 172.08203125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::098",
+    "name": "Primary Blue",
+    "hex": "#007fd4",
+    "dist": 9.643741597979128,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::007",
+    "name": "Cadmium Yellow",
+    "hex": "#e6951d",
+    "dist": 9.733125781026908,
+    "angleDeg": 35.6640625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::121",
+    "name": "Walnut Brown",
+    "hex": "#3e3432",
+    "dist": 9.813057898091223,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::059",
+    "name": "Castle Green Light",
+    "hex": "#00c752",
+    "dist": 9.828690298777127,
+    "angleDeg": 110.9765625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::061",
+    "name": "Leaf Green Light",
+    "hex": "#9acd06",
+    "dist": 10.308363501731183,
+    "angleDeg": 73.59375,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::071",
+    "name": "Ivory Black",
+    "hex": "#333335",
+    "dist": 10.412739115615391,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::115",
+    "name": "Brown Ochre",
+    "hex": "#814437",
+    "dist": 10.460261112569224,
+    "angleDeg": 285.6640625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::190",
+    "name": "Venetian Blue",
+    "hex": "#686287",
+    "dist": 10.480976909493696,
+    "angleDeg": 172.703125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::156",
+    "name": "Mars Black",
+    "hex": "#332f35",
+    "dist": 10.595557297701356,
+    "angleDeg": 112.84375,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::078",
+    "name": "Marigold",
+    "hex": "#ff7b00",
+    "dist": 10.630305163726703,
+    "angleDeg": 18.90625,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::199",
+    "name": "Mahogany",
+    "hex": "#6d1f30",
+    "dist": 10.682829129136787,
+    "angleDeg": 297.05078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::065",
+    "name": "Cool Gray",
+    "hex": "#313436",
+    "dist": 10.858300291965245,
+    "angleDeg": 111.1875,
+    "radiusPx": 645,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::068",
+    "name": "Burnt Umber",
+    "hex": "#3c332f",
+    "dist": 10.870142928987514,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::028",
+    "name": "Aubergine",
+    "hex": "#583752",
+    "dist": 10.988417104259607,
+    "angleDeg": 114.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::011",
+    "name": "Terracotta Light",
+    "hex": "#c16c22",
+    "dist": 11.612588639896563,
+    "angleDeg": 256.05859375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::037",
+    "name": "Heather Purple",
+    "hex": "#483e93",
+    "dist": 11.786391590036077,
+    "angleDeg": 214.6484375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::110",
+    "name": "Permanent Green",
+    "hex": "#009231",
+    "dist": 11.819133931829645,
+    "angleDeg": 51.4609375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::069",
+    "name": "Van Dyck Brown",
+    "hex": "#4d3432",
+    "dist": 11.927003616091833,
+    "angleDeg": 108.91015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::160",
+    "name": "Permanent Brown Deep",
+    "hex": "#38302c",
+    "dist": 12.045005399946255,
+    "angleDeg": 109.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::070",
+    "name": "Sepia",
+    "hex": "#7b4237",
+    "dist": 12.204792580441373,
+    "angleDeg": 285.6640625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::054",
+    "name": "Hooker's Green",
+    "hex": "#354f3f",
+    "dist": 12.215079040312807,
+    "angleDeg": 102.078125,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::089",
+    "name": "Purple Deep",
+    "hex": "#672541",
+    "dist": 12.562188221523845,
+    "angleDeg": 298.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::079",
+    "name": "Cadmium Orange Deep",
+    "hex": "#ff6400",
+    "dist": 12.8910623889946,
+    "angleDeg": 10.3125,
+    "radiusPx": 287,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::201",
+    "name": "Earth Green",
+    "hex": "#58462c",
+    "dist": 12.985885736264288,
+    "angleDeg": 101.04296875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::050",
+    "name": "Pthalo Green",
+    "hex": "#065a5d",
+    "dist": 13.00174588631937,
+    "angleDeg": 161.5234375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::100",
+    "name": "Cerulean Blue",
+    "hex": "#0082b5",
+    "dist": 13.221622421842754,
+    "angleDeg": 174.140625,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::086",
+    "name": "Magenta",
+    "hex": "#972337",
+    "dist": 14.310691658235308,
+    "angleDeg": 287.3203125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::062",
+    "name": "Cadmium Green",
+    "hex": "#33553d",
+    "dist": 14.345920409420312,
+    "angleDeg": 99.1796875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::004",
+    "name": "Cadmium Yellow Light",
+    "hex": "#ffb900",
+    "dist": 14.51469571174356,
+    "angleDeg": 45.546875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::005",
+    "name": "Lemon Yellow",
+    "hex": "#ffe000",
+    "dist": 14.77169975705147,
+    "angleDeg": 55,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::036",
+    "name": "Lavender",
+    "hex": "#8245aa",
+    "dist": 15.042085909228152,
+    "angleDeg": 228.3984375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::188",
+    "name": "Light Peach",
+    "hex": "#ff9f7d",
+    "dist": 15.257274245579598,
+    "angleDeg": 233.87890625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::090",
+    "name": "Mauve Deep",
+    "hex": "#9f59b7",
+    "dist": 15.590982853741263,
+    "angleDeg": 228.3984375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::092",
+    "name": "Cornflower Blue",
+    "hex": "#3a3485",
+    "dist": 15.64735531499504,
+    "angleDeg": 214.6484375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::108",
+    "name": "Mint Green Light",
+    "hex": "#00cb77",
+    "dist": 15.660705419872123,
+    "angleDeg": 129.0234375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::192",
+    "name": "Blue Gray",
+    "hex": "#87837e",
+    "dist": 15.760075778735947,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::105",
+    "name": "Teal Green",
+    "hex": "#009eb9",
+    "dist": 15.838157826023554,
+    "angleDeg": 170.703125,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::104",
+    "name": "Terre Verde Deep",
+    "hex": "#004250",
+    "dist": 16.25828121224959,
+    "angleDeg": 166.28515625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::088",
+    "name": "Cobalt Purple",
+    "hex": "#a853af",
+    "dist": 16.577732698851975,
+    "angleDeg": 240.4296875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::038",
+    "name": "Purple Lake Deep",
+    "hex": "#3e2a72",
+    "dist": 16.623710579700077,
+    "angleDeg": 178.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::102",
+    "name": "Pthalo Turquoise",
+    "hex": "#00957b",
+    "dist": 16.63086536639426,
+    "angleDeg": 156.5234375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::052",
+    "name": "Viridian",
+    "hex": "#005c46",
+    "dist": 16.738131889753834,
+    "angleDeg": 200.1328125,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::117",
+    "name": "Walnut Brown Light",
+    "hex": "#664038",
+    "dist": 16.786371683476386,
+    "angleDeg": 107.25390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::039",
+    "name": "Mulberry",
+    "hex": "#45256d",
+    "dist": 16.84197292133829,
+    "angleDeg": 228.3984375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::009",
+    "name": "Brilliant Yellow",
+    "hex": "#ffa700",
+    "dist": 16.86704086737701,
+    "angleDeg": 39.53125,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::055",
+    "name": "Prussian Green",
+    "hex": "#00773c",
+    "dist": 16.938337000014,
+    "angleDeg": 147.5,
+    "radiusPx": 149,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::093",
+    "name": "Mauve",
+    "hex": "#9b87d3",
+    "dist": 17.183461983614595,
+    "angleDeg": 196.171875,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::194",
+    "name": "Old Rose",
+    "hex": "#a48280",
+    "dist": 17.213622217586106,
+    "angleDeg": 224.1484375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::044",
+    "name": "Ultramarine Light",
+    "hex": "#0052a4",
+    "dist": 17.570105715043567,
+    "angleDeg": 181.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::030",
+    "name": "Purple Light",
+    "hex": "#b71282",
+    "dist": 17.5982696973671,
+    "angleDeg": 276.09375,
+    "radiusPx": 333,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::082",
+    "name": "Azalea Pink",
+    "hex": "#f75f84",
+    "dist": 18.0029362177892,
+    "angleDeg": 295,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::095",
+    "name": "Cobalt Blue Deep",
+    "hex": "#004ab5",
+    "dist": 18.41958527646331,
+    "angleDeg": 185,
+    "radiusPx": 103,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::067",
+    "name": "Davy's Gray",
+    "hex": "#878081",
+    "dist": 18.510625732916004,
+    "angleDeg": 219.80078125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::101",
+    "name": "Cobalt Turquoise Green",
+    "hex": "#009ca8",
+    "dist": 18.52137371465514,
+    "angleDeg": 166.8359375,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::175",
+    "name": "Coral Deep",
+    "hex": "#ff7676",
+    "dist": 18.832311467598476,
+    "angleDeg": 234.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::099",
+    "name": "Cerulean Blue Middle",
+    "hex": "#00abe4",
+    "dist": 18.927580038933076,
+    "angleDeg": 174.5703125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::162",
+    "name": "Graphite Light",
+    "hex": "#8d9493",
+    "dist": 19.845595041674112,
+    "angleDeg": 159.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::019",
+    "name": "Coral",
+    "hex": "#f6a494",
+    "dist": 20.342926960891806,
+    "angleDeg": 230.98046875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::056",
+    "name": "Juniper Green",
+    "hex": "#005f3d",
+    "dist": 20.558400896394247,
+    "angleDeg": 200.75390625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::158",
+    "name": "Sepia Light",
+    "hex": "#af7185",
+    "dist": 21.46819017600289,
+    "angleDeg": 295.6015625,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::164",
+    "name": "Graphite",
+    "hex": "#93979a",
+    "dist": 22.2090712111933,
+    "angleDeg": 159.66015625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::163",
+    "name": "Dove Gray",
+    "hex": "#999f9e",
+    "dist": 22.391883397792668,
+    "angleDeg": 216.48828125,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::003",
+    "name": "Golden Yellow",
+    "hex": "#ffd266",
+    "dist": 23.231193479208507,
+    "angleDeg": 45.9765625,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::185",
+    "name": "Jade Green Light",
+    "hex": "#00d2bc",
+    "dist": 23.406108003076305,
+    "angleDeg": 157.3828125,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::184",
+    "name": "Apricot Light",
+    "hex": "#ffaf9c",
+    "dist": 23.482889182215775,
+    "angleDeg": 232.22265625,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::193",
+    "name": "Oyster",
+    "hex": "#ad9ca0",
+    "dist": 24.579691563554096,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::029",
+    "name": "Purple",
+    "hex": "#a931a3",
+    "dist": 24.594389539871635,
+    "angleDeg": 247.3046875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::048",
+    "name": "Cobalt Turquoise",
+    "hex": "#50caea",
+    "dist": 24.61577735820635,
+    "angleDeg": 171.9921875,
+    "radiusPx": 425,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::196",
+    "name": "Almond",
+    "hex": "#d5be9f",
+    "dist": 25.85166026129846,
+    "angleDeg": 224.1484375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::186",
+    "name": "Pink Bloom",
+    "hex": "#ffa6a4",
+    "dist": 26.050447072735473,
+    "angleDeg": 232.4296875,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::107",
+    "name": "Mint Green",
+    "hex": "#88e2ac",
+    "dist": 26.129916842937337,
+    "angleDeg": 148.359375,
+    "radiusPx": 379,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::195",
+    "name": "Argent Gray",
+    "hex": "#bab1ac",
+    "dist": 26.159584532179554,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::074",
+    "name": "Cadmium Orange Light",
+    "hex": "#ffc196",
+    "dist": 27.132464431668428,
+    "angleDeg": 230.7734375,
+    "radiusPx": 747,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::020",
+    "name": "Tangerine",
+    "hex": "#f9c0aa",
+    "dist": 28.05025530019453,
+    "angleDeg": 229.32421875,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::120",
+    "name": "Warm Gray Light",
+    "hex": "#c6bcb2",
+    "dist": 28.120195217710403,
+    "angleDeg": 220.421875,
+    "radiusPx": 713,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::002",
+    "name": "Primrose Yellow",
+    "hex": "#ffd874",
+    "dist": 29.037114803858778,
+    "angleDeg": 67.08984375,
+    "radiusPx": 781,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::189",
+    "name": "French Rose",
+    "hex": "#cb2ba9",
+    "dist": 29.50530093630085,
+    "angleDeg": 274.375,
+    "radiusPx": 241,
+    "level": 1
+  },
+  {
+    "key": "castle arts gold coloured pencils::010",
+    "name": "Yellow Ochre Light",
+    "hex": "#ffc791",
+    "dist": 29.762167527906858,
+    "angleDeg": 229.53125,
+    "radiusPx": 679,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::183",
+    "name": "Tuscan Yellow Light",
+    "hex": "#ffe193",
+    "dist": 30.316416821859477,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::073",
+    "name": "Naples Yellow Light",
+    "hex": "#fce5a5",
+    "dist": 30.94167334534663,
+    "angleDeg": 125.5,
+    "radiusPx": 543,
+    "level": 2
+  },
+  {
+    "key": "castle arts gold coloured pencils::072",
+    "name": "Titanium White",
+    "hex": "#f5f3ed",
+    "dist": 46.956039183074935,
+    "angleDeg": 220.21484375,
+    "radiusPx": 781,
+    "level": 2
+  }
+]
