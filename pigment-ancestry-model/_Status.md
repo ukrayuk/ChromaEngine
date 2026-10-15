@@ -9,14 +9,19 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-15 (this session, after dropping Derwent Drawing/
-Castle Arts Harmonious from the never-fit taxonomy)
+**Last updated:** 2026-10-15 (this session, after dropping "Arc1 — aligned"
+from Level 3)
 
 ## Current state
 - Anchors locked except **Cool Yellow**, which is actively under revision
   (see Open items #1).
 - Coverage: 67.0% book-scope (771/1150), 65.4% combined (846/1294), at
   ΔE≤15.3. Verified reproducible via `scripts/classify_coverage.cjs`.
+- **Level 3 is now 3 arcs, not 4** — "Arc1 — aligned" dropped (Ray's call):
+  it always mixed a blend of warm and cool anchors (never settling toward
+  either side), stayed permanently medium-muted, and rescued zero
+  book-scope pencils. Coverage unchanged by the drop, confirmed before
+  committing it. Old 4-arc data backed up in `data/history/`.
 - **Book chapter order changed (2026-10-15):** Ch3 Hue, Ch4 Arcs, Ch5
   Tints/Tones/Shades, Ch6 Value, Ch7 Chroma. Tints/Tones/Shades is now its
   own chapter, separate from Arcs — relevant to Open items #2 below.

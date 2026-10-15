@@ -17,6 +17,18 @@ const N = RoY.length; // 257, verified identical t/gen grid across all three arc
 // arcs read in reverse. Plain spectral.js equal-weight mixN confirmed
 // against physically-swatched layered pencils; the sequential light-to-dark
 // layering experiment was tried and reverted.
+//
+// "Arc1 -- aligned" (no flips) dropped 2026-10-15 (Ray's call). Each anchor
+// role is warm-or-cool within its hue family (Warm/Cool Red, Warm/Cool
+// Yellow, Warm/Cool Blue), and each arc pairs one anchor from two different
+// families -- so "aligned" always combines a mix of warm and cool sides
+// (2 warm + 1 cool at t=0, 1 warm + 2 cool at t=1, blended through the
+// middle), never settling toward either a clean warm or cool combination.
+// That keeps it permanently moderate -- measured avg chroma 28.7, range
+// only 22.2-41.0 across all 257 points, vs. 0.4-70.3 for the three flipped
+// arcs -- too muted to catch any vivid pencil, never muted enough to catch
+// a true neutral. It rescued zero book-scope pencils (vs. 10/8/4 for
+// Arc4/Arc2/Arc3), confirmed before dropping it.
 function crossArc3(flipRoY, flipYgB, flipBvR) {
   const out = [];
   for (let i = 0; i < N; i++) {
@@ -29,7 +41,6 @@ function crossArc3(flipRoY, flipYgB, flipBvR) {
 }
 
 const out = {
-  'Arc1 — aligned': { p1Name: 'RoY + YgB + BvR, all forward', points: crossArc3(false, false, false) },
   'Arc2 — BvR flipped': { p1Name: 'RoY + YgB forward, BvR reversed', points: crossArc3(false, false, true) },
   'Arc3 — RoY flipped': { p1Name: 'YgB + BvR forward, RoY reversed', points: crossArc3(true, false, false) },
   'Arc4 — YgB flipped': { p1Name: 'RoY + BvR forward, YgB reversed', points: crossArc3(false, true, false) },

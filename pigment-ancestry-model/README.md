@@ -28,10 +28,27 @@ pair 50:50 via spectral.js (Kubelka-Munk pigment mixing, not RGB blending).
 
 **Level 2** cross-mixes two adjacent Level 1 arcs point-for-point at the same
 t/generation (both "like" — position i↔i — and "flipped" — position
-i↔N-1-i). **Level 3** does the same three-way across all three arcs. A
-pencil is classified as "fit" if its measured colour is within **ΔE ≤ 15.3**
-(CIE76, D65) of *any* point in Level 1 ∪ Level 2 (checked first) or Level 3
-(checked only if L1/L2 misses).
+i↔N-1-i). **Level 3** does the same three-way across all three arcs — three
+datasets, not four (see note below). A pencil is classified as "fit" if its
+measured colour is within **ΔE ≤ 15.3** (CIE76, D65) of *any* point in
+Level 1 ∪ Level 2 (checked first) or Level 3 (checked only if L1/L2 misses).
+
+**Level 3 only has three arcs, not four (Ray's call, 2026-10-15):** the
+original four were "Arc1 — aligned" (all three Level 1 arcs forward, no
+flip) plus one flipped-arc variant each (Arc2/3/4). Arc1 was dropped —
+each anchor role is warm-or-cool within its hue family, and every Level 1
+arc pairs an anchor from two *different* families, so "aligned" always
+combines a mix of warm and cool sides (2 warm + 1 cool at t=0, 1 warm + 2
+cool at t=1, blended through the middle) and never settles toward a clean
+warm or cool combination. That keeps it permanently medium-muted — average
+chroma 28.7, range only 22.2–41.0 across all 257 points, versus 0.4–70.3
+for the three flipped arcs, which actually swing from near-neutral to
+vivid. Too muted to ever catch a vivid pencil, never muted enough to catch
+a true neutral — it rescued **zero** book-scope pencils (versus 10/8/4 for
+Arc4/Arc2/Arc3) before being dropped. Verified the drop doesn't change
+coverage at all (771/1150 book-scope, 846/1294 combined, identical to
+before) since Arc1 was never contributing. Old 4-arc data backed up at
+`data/history/level3_cross_rows_PREARC1DROP_backup.json`.
 
 ## Current canonical anchors (as of this handoff)
 
@@ -100,7 +117,9 @@ package.json                   spectral.js ^3.0.0 — run `npm install`
 data/
   level1_pure_rows.json        canonical Level 1 (3 arcs × 257 points)
   level2_cross_rows.json       canonical Level 2 (6 cross-arc datasets)
-  level3_cross_rows.json       canonical Level 3 (4 three-way datasets)
+  level3_cross_rows.json       canonical Level 3 (3 three-way datasets —
+                                "Arc1 — aligned" dropped 2026-10-15, see
+                                below)
   never_fit_final_153.json     most recent full "pool" (never-fit) pencil list
   matches/                     per-range nearest-match results
   history/                     anchor-change audit trail (see above)

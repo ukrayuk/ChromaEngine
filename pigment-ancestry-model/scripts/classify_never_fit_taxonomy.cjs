@@ -39,8 +39,8 @@ function neutralBand(mc) {
 }
 
 const modelPoints = [];
-for (const k of Object.keys(L1)) for (const p of L1[k].points) modelPoints.push(hexToLabD65(p.hex));
-for (const k of Object.keys(L2)) for (const p of L2[k].points) modelPoints.push(hexToLabD65(p.hex));
+for (const k of Object.keys(L1)) for (const p of L1[k].points) { const lab = hexToLabD65(p.hex); modelPoints.push(Object.assign(lab, { level: 'L1', arc: k })); }
+for (const k of Object.keys(L2)) for (const p of L2[k].points) { const lab = hexToLabD65(p.hex); modelPoints.push(Object.assign(lab, { level: 'L2', arc: k })); }
 for (const p of modelPoints) { p.C = chroma(p); p.H = hueDeg(p); }
 
 function nearest(lab) {
@@ -80,7 +80,7 @@ const results = neverFit.map(p => {
   else if (Math.abs(dL) >= Math.abs(dC)) category = dL > 0 ? 'tint (too light)' : 'shade (too dark)';
   else category = dC > 0 ? 'high-neon chroma (too saturated)' : 'low chroma (too muted/grey)';
 
-  return { ...p, L: lab[0], C, H, munsellC: mc, nearestL: pt[0], nearestC: pt.C, nearestH: pt.H, dL, dC, dH, category };
+  return { ...p, L: lab[0], C, H, munsellC: mc, nearestL: pt[0], nearestC: pt.C, nearestH: pt.H, nearestLevel: pt.level, nearestArc: pt.arc, dL, dC, dH, category };
 });
 
 const counts = {};
