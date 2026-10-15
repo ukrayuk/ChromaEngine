@@ -124,6 +124,18 @@ const results = neverFit.map(p => {
   // pencils (Violet Grey, Wheat, Ivory, Raisin...) top out at C=27.3; the
   // false positives start at C=48.8 -- no ambiguous middle ground, so C=35
   // is a safe line between them.
+  // Found 2026-10-15 (Ray): exact mirror of the oversaturated->shade fix
+  // below, applied here too. Of the 7 remaining "undersaturated" entries,
+  // 6 (Cream, Golden Yellow x2, Lemon Yellow Light, Naples Yellow, Deco
+  // Yellow) are LIGHTER than their matched point (dL>0), not just less
+  // saturated -- and "lighter + less saturated" is exactly the tint
+  // pattern already documented in this taxonomy (tints trend less
+  // saturated as they lighten). These are tints, not a separate category.
+  // Only Mustard (dL=-9.1, darker AND less saturated) doesn't fit the
+  // tint pattern or the shade pattern (shades that gain chroma darkening)
+  // -- stays "undersaturated" as the one entry that's genuinely its own
+  // case so far.
+  else if (dC < 0 && C >= 35 && dL > 0) category = 'tint (too light)';
   else if (dC < 0 && C >= 35) category = 'undersaturated (vivid pencil, anchor nearby is more vivid still)';
   // Found 2026-10-15 (Ray): the mirror of the fix above, on the high-chroma
   // side. Holly Green, Ice Blue, Pthalo Green Light, Peacock Green (Munsell

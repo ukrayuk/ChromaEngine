@@ -290,15 +290,15 @@ which Lab axis dominates the gap:
 
 | Category | Count | % of total 368 |
 |---|---|---|
-| **tint** (pencil lighter than any nearby model point) | 170 | 46.2% |
+| **tint** (pencil lighter than any nearby model point) | 176 | 47.8% |
 | neutral (see bands above) | 111 | 30.2% |
 | shade (pencil darker) | 39 | 10.6% |
 | high-neon chroma (pencil more saturated than the model reaches) | 20 | 5.4% |
 | **tone** (same value as the matched point, just lower chroma — see note below) | 7 | 1.9% |
 | genuine hue gap (not a value/chroma issue at all) | 7 | 1.9% |
-| undersaturated (vivid pencil, nearby anchor is more vivid still — see note below) | 7 | 1.9% |
 | low chroma (pencil genuinely muted/grey, but not neutral-band low) | 4 | 1.1% |
 | hue gap — unreliable match (see note below) | 3 | 0.8% |
+| undersaturated (vivid pencil, nearby anchor is more vivid still — see note below) | 1 | 0.3% |
 
 **Classifier fix #1 (Ray, 2026-10-15):** found 6 entries (Dark Sap Green,
 Walnut Brown Light, Lagoon, Indanthrone Blue, Hooker's Green, Walnut
@@ -377,8 +377,23 @@ substantial negative dC (e.g. Dandelion dL=0.0 dC=−18.8, Pineapple
 dL=3.5 dC=−20.4) — genuine tones of the Cadmium Yellow anchor family,
 not tints. Split out into its own **"tone"** category; the remaining 7
 "undersaturated" entries have larger |dL| and are correctly more
-tint-like. This makes the taxonomy's top-level shape line up exactly
-with the chapter: **tint (170), tone (7), shade (39)**, plus neutral and
+tint-like.
+
+**Classifier fix #6 (Ray, 2026-10-15), same day — exact mirror of fix #4,
+applied to the remaining 7 "undersaturated" entries.** Ray's question:
+these are the opposite of "oversaturated," so are they also mislabeled?
+Checked dL for each: 6 of 7 (Cream, Golden Yellow ×2, Lemon Yellow Light,
+Naples Yellow, Deco Yellow) are *lighter* than their matched point
+(dL>0), not just less saturated — and "lighter + less saturated" is
+exactly the tint pattern already documented in this taxonomy (tints
+trend less saturated as they lighten). Reclassified those 6 to tint.
+Only **Mustard** (dL=−9.1, darker *and* less saturated) doesn't fit the
+tint pattern or the shade pattern (shades that gain chroma as they
+darken) — it's genuinely its own case, so "undersaturated" now has just
+the one member. Net effect: **tint grows from 170 to 176**.
+
+This makes the taxonomy's top-level shape line up exactly
+with the chapter: **tint (176), tone (7), shade (39)**, plus neutral and
 the smaller diagnostic categories.
 
 **Calibration note, useful for any future by-eye pass:** across the 24
@@ -401,8 +416,8 @@ saturated primaries — there's no "toward white" dilution step anywhere in
 the pipeline, so the palest reachable colour at any hue is just the
 lighter of that arc's two anchors. Ray independently hue-tested a sample
 of the tint pool by eye and confirmed most genuinely read as lighter
-versions of existing arc colours, not unrelated hues — of the 170,
-**82.9% are within 20° hue of their nearest arc point** (70.6% within a
+versions of existing arc colours, not unrelated hues — of the 176,
+**83.5% are within 20° hue of their nearest arc point** (71.6% within a
 stricter 15°) — both improved further after the neutral-ceiling fix
 pulled 21 ambiguous entries out of this pool. The shade side is even
 cleaner: **92.3%** of shade misses
@@ -418,10 +433,11 @@ further, moving away from the target. The dark anchors themselves may
 need more chroma, not a dilution layer.
 
 **Tints are close to an even split between Level 1 and Level 2 — and
-they're geographically lopsided.** Of the 170 tint misses, 49% (84) are
-nearest to a pure Level 1 arc point and 51% (86) are nearest to a Level 2
-cross-mix point — near-even now that the neutral-ceiling fix pulled out
-the ambiguous low-chroma entries (was a clearer 44/56 split before). And
+they're geographically lopsided.** Of the 176 tint misses, 49% (87) are
+nearest to a pure Level 1 arc point and 51% (89) are nearest to a Level 2
+cross-mix point — near-even now that the neutral-ceiling and
+undersaturated-to-tint fixes pulled out the ambiguous entries (was a
+clearer 44/56 split originally). And
 **zero tints land anywhere near RoY (orange) or
 RoY×YgB** — every one clusters in the green-through-violet half of the
 wheel (Yellow-Blue, Blue-Red, and the YgB×BvR seam between them). Tracks

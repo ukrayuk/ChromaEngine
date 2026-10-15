@@ -50,11 +50,11 @@ Yellow anchor correction)
    ceiling raised 2.0→3.0 (Ray, by-eye: several mc 2-3 pencils genuinely
    read grey, not pastel — checked 2.5 instead, it's worse): True
    Achromatic 0-1 (54), Near-Neutral 1-2 (28), Earth-Adjacent 2-3 (29) —
-   **111/368 (30.2%)**. Of what's left: **tint 46.2% (170)**, shade 10.6%
-   (39), high-neon 5.4% (20), **tone 1.9% (7, new)**, hue gap 1.9% (7),
-   undersaturated 1.9% (7), low chroma 1.1% (4), hue gap (unreliable
-   match) 0.8% (3).
-   **Five classifier fixes total, all from Ray's by-eye review of the
+   **111/368 (30.2%)**. Of what's left: **tint 47.8% (176)**, shade 10.6%
+   (39), high-neon 5.4% (20), **tone 1.9% (7)**, hue gap 1.9% (7), low
+   chroma 1.1% (4), hue gap (unreliable match) 0.8% (3), undersaturated
+   0.3% (1, down to just Mustard).
+   **Six classifier fixes total, all from Ray's by-eye review of the
    xlsx tables**: #1 Dark Sap Green etc. mislabeled "too saturated" when
    their matched point was near-grey → "hue gap (unreliable match)". #2
    Golden Yellow/Mustard etc. (genuinely vivid, chroma 49-69) mislabeled
@@ -63,29 +63,38 @@ Yellow anchor correction)
    saturated" because their match was even less saturated → "oversaturated".
    #4 those same 4 are ALSO darker than their match → reclassified again,
    this time to "shade" (oversaturated now empty, logic kept for future
-   cases). #5 (Ray's own catch): "tone" was missing entirely — same value
+   cases). #5 "tone" was missing entirely (Ray's own catch) — same value
    as the match, just lower chroma, the classic third colour-theory case.
    7 of the 14 "undersaturated" entries have |dL|<5 (Dandelion dL=0.0,
    Pineapple dL=3.5) — genuine tones, not tints. Split into their own
-   category. Also found: Lab chroma runs ~4-6x Munsell chroma for ordinary
-   vivid pigments; Neon Yellow is the one outlier at 17.6x (fluorescent
-   pigments break standard Munsell conversion) — trust its Lab chroma
-   (92.7, exceeds the model's own max of 87.3), not its Munsell reading.
-   Hue-match testing confirms tints/shades are genuinely lighter/darker
-   versions of real arc colours (82.9%/92.3% within 20°/15° hue). Tints
-   split close to evenly between Level 1 and Level 2 (49%/51%) — zero land
-   near RoY/orange, all cluster in green-violet territory. Asymmetry:
-   tints desaturate as they lighten (a white-blend fix would work), shades
-   often saturate further as they darken (wouldn't be rescued by a
-   black-blend). **Open architecture question for Ray: add a tint-only
-   "Level 4"?** Current thinking: keep as a separate Ch5 operation (arc
-   colour + white/grey/black ladder), not an extension of Level 1/2/3
-   geometry — so Ch4 stays pure hue. 77.2% of taxonomy calls are clean,
-   22.8% are boundary/judgment cases (see README for the three specific
-   zones) — still at "confirm the concept" stage pending Ray's call. This
-   is an actively self-correcting process via the xlsx review, not a
-   one-shot classification — expect more refinements as Ray works through
-   the remaining tabs.
+   category. #6 (exact mirror of #4, on the remaining 7 "undersaturated"):
+   6 of 7 (Cream, Golden Yellow ×2, Lemon Yellow Light, Naples Yellow,
+   Deco Yellow) are LIGHTER than their match (dL>0), matching the
+   documented tint pattern (less saturated as they lighten) — reclassified
+   to tint. Only Mustard (darker AND less saturated) doesn't fit either
+   pattern, stays the sole "undersaturated" entry. Also found: Lab chroma
+   runs ~4-6x Munsell chroma for ordinary vivid pigments; Neon Yellow is
+   the one outlier at 17.6x (fluorescent pigments break standard Munsell
+   conversion) — trust its Lab chroma (92.7, exceeds the model's own max
+   of 87.3), not its Munsell reading. Checked the remaining 7 "hue gap"
+   entries (Primrose Yellow, Pink, Terre Verde Deep, Rose Pink, Violet
+   Pink, Burnt Sienna 10%, Clay Rose) for a similar bug — no clean split
+   found this time (Ray's call: these stay as genuine oddities, real hue
+   mismatches, not a classifier error). Hue-match testing confirms
+   tints/shades are genuinely lighter/darker versions of real arc colours
+   (83.5%/92.3% within 20°/15° hue). Tints split close to evenly between
+   Level 1 and Level 2 (49%/51%) — zero land near RoY/orange, all cluster
+   in green-violet territory. Asymmetry: tints desaturate as they lighten
+   (a white-blend fix would work), shades often saturate further as they
+   darken (wouldn't be rescued by a black-blend). **Open architecture
+   question for Ray: add a tint-only "Level 4"?** Current thinking: keep
+   as a separate Ch5 operation (arc colour + white/grey/black ladder), not
+   an extension of Level 1/2/3 geometry — so Ch4 stays pure hue. 77.2% of
+   taxonomy calls are clean, 22.8% are boundary/judgment cases — still at
+   "confirm the concept" stage pending Ray's call. This is an actively
+   self-correcting process via the xlsx review, not a one-shot
+   classification — six real fixes found so far, expect more as Ray works
+   through the remaining tabs.
 2. **Chapter 5 — olive/dechroma demo.** Pure-dechroma-from-Level-1 framing
    fails geometrically (README "Open items" #3). Resolution method found
    and proven on a different example (`#00bb00 → #497249` via Level 2
