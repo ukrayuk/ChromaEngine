@@ -4,13 +4,18 @@ const DATA = JSON.parse(fs.readFileSync('../../data/level3_cross_rows.json', 'ut
 
 // Level 3 standalone -- same filled style as Level 1/2 (G0/G1/G0 shared
 // inner band via EDGE_T, fully contiguous G2-G8 rings, 1px white stroke
-// between every cell). Four arcs evenly spaced around the full circle,
-// 10deg gap between each. "Arc1 -- aligned" sits at the top (12 o'clock) --
-// its two G0 anchor sets are the only ones where each of the three Level 1
-// primaries (RoY, YgB, BvR) contributes a different hue family (red,
-// yellow, blue) rather than two arcs doubling up on the same family,
-// confirmed directly against level1_pure_rows.json / level3_cross_rows.json.
-const GAP_TOTAL = 10, HALF_SPAN = 90 / 2 - GAP_TOTAL / 2; // 40deg each arc
+// between every cell). Three arcs evenly spaced around the full circle
+// (120deg each, same convention as Level 1's three sectors), 10deg gap
+// between each.
+//
+// "Arc1 -- aligned" (originally at 12 o'clock -- the one combination where
+// each of the three Level 1 primaries contributed a different hue family
+// rather than two doubling up) was dropped 2026-10-15 (Ray's call): it
+// always mixed a blend of warm and cool anchors, stayed permanently
+// medium-muted (chroma 22.2-41.0 vs 0.4-70.3 for the other three), and
+// rescued zero book-scope pencils. See README "Open items" and
+// data/level3_cross_rows.json, which now holds only Arc2/3/4.
+const GAP_TOTAL = 10, HALF_SPAN = 120 / 2 - GAP_TOTAL / 2; // 55deg each arc
 const CX = 900, CY = 900;
 const HOLE_R = 80;
 const BAND = 46;
@@ -19,10 +24,9 @@ const MAXGEN = 8;
 const EDGE_T = 0.25;
 
 const ARCS = [
-  { key: 'Arc1 — aligned', center: 0 },
-  { key: 'Arc2 — BvR flipped', center: 90 },
-  { key: 'Arc3 — RoY flipped', center: 180 },
-  { key: 'Arc4 — YgB flipped', center: 270 },
+  { key: 'Arc2 — BvR flipped', center: 0 },
+  { key: 'Arc3 — RoY flipped', center: 120 },
+  { key: 'Arc4 — YgB flipped', center: 240 },
 ];
 
 function boundsFn(center) { return { startDeg: center - HALF_SPAN, endDeg: center + HALF_SPAN }; }
