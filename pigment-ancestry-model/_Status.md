@@ -112,6 +112,26 @@ Yellow anchor correction)
    Chapter 5 approach (Ray's own todo, tracked separately); BvR arc demos
    for the navigator chapter (explicitly deferred); P3-vs-sRGB gamut
    investigation (flagged, not actioned).
+6. **Level 2 standalone diagram (`build_level2_standalone.cjs`) can't
+   currently be regenerated** — depends on `level2_standalone_rows.json`,
+   never migrated into this repo. Two ways to unblock: find/migrate the
+   original `gen_level2_standalone_rows.cjs` generator if it still exists,
+   or adapt the current canonical `level2_cross_rows.json` into the
+   `["G2", step, steps, t, hex]` row-array shape this script expects (more
+   work, different data format than the rest of the current pipeline).
+
+## Diagram line-removal experiment (2026-10-16) — tried and reverted
+
+Tried removing the per-cell stroke + inter-generation-ring gap from the
+generation-ladder diagrams (standalone Level 1/3, the combo, and patched
+but unverified on Level 2 standalone) to fix a moire/dense-grid-of-lines
+problem Ray flagged on screen. Ray's call after seeing it live: revert all
+of it — "that diagram did not need the white lines removed... one thing at
+a time." All four scripts are back to the original stroke+gap convention.
+If this comes up again: the technique itself worked (confirmed via polar
+pixel-sampling, SEAM_EPS_DEG=0.08 fully closed the seam), it just wasn't
+wanted here — don't re-litigate the "does it work" question, only "is it
+wanted" if asked again.
 
 ## Recent activity (newest first)
 
