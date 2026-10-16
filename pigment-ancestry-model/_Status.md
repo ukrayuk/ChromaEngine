@@ -115,6 +115,24 @@ Yellow anchor correction)
 
 ## Recent activity (newest first)
 
+- **2026-10-16**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session): fixed
+  the Level 3 diagram scripts (standalone + the 3-ring quick-ref composite,
+  the latter now actually committed -- it only ever lived in scratchpad
+  before) for the current 3-arc data; both still had the dropped "Arc1 --
+  aligned" baked in. Also restored `polar_lib.cjs`, a dependency both
+  scripts needed but that was never committed, so neither could run from a
+  fresh clone. Fixed a moire/flicker artifact in the full-resolution rings
+  (sub-pixel seam between 257 abutting per-cell wedges) with a tiny angular
+  overlap. Found and fixed a real unit-scale bug in the quick-ref composite:
+  its canvas grew from 1800 to 3000 viewBox units at some point but the CSS
+  render size stayed at 1800px, so the old mm-based gap constants were
+  silently off by 0.6x. Redesigned Level 2's gap convention per Ray's visual
+  review: 60px between pairs (unrelated families meeting, at 0/120/240deg,
+  matched to Level 1's gap at the same angular position) vs. 10px within a
+  pair (a join, not a separation) -- previously both were close enough in
+  size to read as arbitrary. Also built and validated (not yet committed)
+  a "Level 4" tint/tone ladder concept -- see below, this is new ground,
+  separate from the diagram fixes above.
 - **2026-10-15**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session):
   **locked in Cool Yellow correction** — Cadmium Yellow Lemon (Faber-Castell
   Polychromos, `#e7ed46`) replaces Lemon Cadmium (`#f6e83b`). Found by
