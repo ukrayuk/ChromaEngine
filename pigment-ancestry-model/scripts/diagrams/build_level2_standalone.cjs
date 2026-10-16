@@ -89,16 +89,26 @@ function drawArc(key) {
     svg.appendChild(dot);
   });
 
+  // No explicit stroke here, but adjacent cells share an EXACT boundary
+  // (cell i's a1 === cell i+1's a0), which still leaves a sub-pixel
+  // rasterisation seam at G7/G8 density -- the same moire/fine-grid-lines
+  // problem as the other diagrams, just without a stroke to blame. Fixed
+  // the same way: tiny angular overlap between neighbours.
+  const SEAM_EPS_DEG = 0.03;
+  function pushPath(rI, rO, a0, a1, hex) {
+    const dir = a1 >= a0 ? 1 : -1;
+    const path = document.createElementNS(NS, "path");
+    path.setAttribute("d", annularWedgePath(rI, rO, a0 - dir * SEAM_EPS_DEG, a1 + dir * SEAM_EPS_DEG));
+    path.setAttribute("fill", hex);
+    svg.appendChild(path);
+  }
+
   const b1 = boundsAtRadius(key, (R0 + (R0 + BAND)) / 2);
   const angleForT1 = (t) => b1.startDeg + (b1.endDeg - b1.startDeg) * t;
   const EDGE_T = 0.25;
   const g1Row = rows.find(r => r[0] === "G1" && r[1] === 1);
   [{ t0: 0, t1: EDGE_T, row: t0Row }, { t0: EDGE_T, t1: 1 - EDGE_T, row: g1Row }, { t0: 1 - EDGE_T, t1: 1, row: t1Row }].forEach(seg => {
-    const a0 = angleForT1(seg.t0), a1 = angleForT1(seg.t1);
-    const path = document.createElementNS(NS, "path");
-    path.setAttribute("d", annularWedgePath(R0, R0 + BAND, a0, a1));
-    path.setAttribute("fill", seg.row[4]);
-    svg.appendChild(path);
+    pushPath(R0, R0 + BAND, angleForT1(seg.t0), angleForT1(seg.t1), seg.row[4]);
   });
 
   for (let g = 2; g <= MAXGEN; g++) {
@@ -112,10 +122,7 @@ function drawArc(key) {
       const halfWidthT = 1 / steps;
       const a0 = angleForT(Math.max(0, t - halfWidthT));
       const a1 = angleForT(Math.min(1, t + halfWidthT));
-      const path = document.createElementNS(NS, "path");
-      path.setAttribute("d", annularWedgePath(rInner, rOuter, a0, a1));
-      path.setAttribute("fill", hex);
-      svg.appendChild(path);
+      pushPath(rInner, rOuter, a0, a1, hex);
     });
   }
 

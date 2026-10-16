@@ -19,10 +19,19 @@ structure: radius = generation depth, each ring is one generation.
   split at `EDGE_T = 0.25` (i.e. t=0–0.25 / 0.25–0.75 / 0.75–1).
 - G2–G8 each get their own ring, showing ONLY that generation's new colours
   (not the full accumulated set).
-- Cells are fully contiguous (no inset), with a **permanent 1px white
-  stroke** between neighbours — safe here because each ring has a modest
-  cell count (at most 128 new cells per arc at G8), unlike Family 2 below.
-- `RADIAL_GAP = 1` between generation rings.
+- **No stroke between cells, `RADIAL_GAP = 0` between generation rings**
+  (changed 2026-10-16 — Ray: "I cannot look at it on screen"). The original
+  "filled" convention here was a permanent 1px white stroke between
+  neighbouring cells plus a 1px gap between generation rings; at G7/G8
+  density (up to 128 cells per ring, 8 rings per arc) that's a dense grid of
+  fine lines, visually uncomfortable regardless of whether it technically
+  caused moiré. Fixed the same way as Family 2 below: `SEAM_EPS_DEG = 0.08`
+  angular overlap between neighbouring cells (needed a larger value here
+  than Family 2's 0.03 — verified by polar pixel-sampling that 0.03 still
+  left ~1% residual near-white hits at Level 2's narrower cell width before
+  bumping it). No equivalent radial-overlap fix was needed for the
+  ring-to-ring boundary; setting `RADIAL_GAP` straight to 0 was enough on
+  its own.
 - `HOLE_R = 80` (empty centre hole before G0 starts), `BAND_1 = 46` per
   generation (standalone Level 1, Level 3; the combo's Level 1 half matches
   this exactly since it's the same visual unit).

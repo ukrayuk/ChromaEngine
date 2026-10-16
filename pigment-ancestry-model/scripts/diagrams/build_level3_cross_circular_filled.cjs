@@ -3,10 +3,15 @@ const { annularWedgePath } = require('./polar_lib.cjs');
 const DATA = JSON.parse(fs.readFileSync('../../data/level3_cross_rows.json', 'utf8'));
 
 // Level 3 standalone -- same filled style as Level 1/2 (G0/G1/G0 shared
-// inner band via EDGE_T, fully contiguous G2-G8 rings, 1px white stroke
-// between every cell). Three arcs evenly spaced around the full circle
-// (120deg each, same convention as Level 1's three sectors), 10deg gap
-// between each.
+// inner band via EDGE_T, fully contiguous G2-G8 rings). Three arcs evenly
+// spaced around the full circle (120deg each, same convention as Level 1's
+// three sectors), 10deg gap between each.
+//
+// No per-cell stroke -- at G7/G8 density (64-128 cells in one ring) a 1px
+// white stroke reads as a dense grid of fine lines, uncomfortable to look
+// at on screen. Tiny angular overlap between neighbouring cells instead
+// (SEAM_EPS_DEG), same fix as the quick-ref rings and the other two
+// generation-ladder diagrams.
 //
 // "Arc1 -- aligned" (originally at 12 o'clock -- the one combination where
 // each of the three Level 1 primaries contributed a different hue family
@@ -19,7 +24,7 @@ const GAP_TOTAL = 10, HALF_SPAN = 120 / 2 - GAP_TOTAL / 2; // 55deg each arc
 const CX = 900, CY = 900;
 const HOLE_R = 80;
 const BAND = 46;
-const RADIAL_GAP = 1;
+const RADIAL_GAP = 0;
 const MAXGEN = 8;
 const EDGE_T = 0.25;
 
@@ -32,12 +37,21 @@ const ARCS = [
 function boundsFn(center) { return { startDeg: center - HALF_SPAN, endDeg: center + HALF_SPAN }; }
 
 const svgParts = [];
+const SEAM_EPS_DEG = 0.08;
 
 for (const f of ARCS) {
   const points = DATA[f.key].points;
   const b = boundsFn(f.center);
   const angleForT = (t) => b.startDeg + (b.endDeg - b.startDeg) * t;
   let rInner = HOLE_R;
+
+  function pushCell(rI, rO, t0, t1, hex) {
+    let a0 = angleForT(t0), a1 = angleForT(t1);
+    const dir = a1 >= a0 ? 1 : -1;
+    a0 -= dir * SEAM_EPS_DEG;
+    a1 += dir * SEAM_EPS_DEG;
+    svgParts.push(`<path d="${annularWedgePath(CX, CY, rI, rO, a0, a1)}" fill="${hex}"/>`);
+  }
 
   {
     const rOuter = rInner + BAND;
@@ -49,10 +63,7 @@ for (const f of ARCS) {
       { hex: g1.hex, t0: EDGE_T, t1: 1 - EDGE_T },
       { hex: g0b.hex, t0: 1 - EDGE_T, t1: 1 },
     ];
-    for (const c of cells) {
-      const a0 = angleForT(c.t0), a1 = angleForT(c.t1);
-      svgParts.push(`<path d="${annularWedgePath(CX, CY, rInner, rOuter, a0, a1)}" fill="${c.hex}" stroke="#ffffff" stroke-width="1"/>`);
-    }
+    for (const c of cells) pushCell(rInner, rOuter, c.t0, c.t1, c.hex);
     rInner = rOuter + RADIAL_GAP;
   }
 
@@ -62,8 +73,7 @@ for (const f of ARCS) {
     const n = newPoints.length;
     newPoints.forEach((p, i) => {
       const t0 = i / n, t1 = (i + 1) / n;
-      const a0 = angleForT(t0), a1 = angleForT(t1);
-      svgParts.push(`<path d="${annularWedgePath(CX, CY, rInner, rOuter, a0, a1)}" fill="${p.hex}" stroke="#ffffff" stroke-width="1"/>`);
+      pushCell(rInner, rOuter, t0, t1, p.hex);
     });
     rInner = rOuter + RADIAL_GAP;
   }
