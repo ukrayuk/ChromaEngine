@@ -119,14 +119,35 @@ Yellow anchor correction)
    or adapt the current canonical `level2_cross_rows.json` into the
    `["G2", step, steps, t, hex]` row-array shape this script expects (more
    work, different data format than the rest of the current pipeline).
-7. **Added to the Level 4 tint/tone/shade testing list (Ray, 2026-10-16):**
-   take the real rescued tint/shade pencils from the never-fit taxonomy and
-   plot where they actually land on the tint/shade ring prototype
-   (https://claude.ai/artifact/Qz8hLXeMAHTGT8UUiuQuTv, scratchpad-only, not
-   yet committed) — does a real tint pencil's nearest match fall in the
-   ring at roughly the t-step distance its own ΔE would predict, same
-   check for shade. Validates the prototype's radial layout against real
-   data, not just the ladder math in isolation. Not started.
+7. **Tint/shade ring prototype real-pencil validation** (added to the
+   testing list 2026-10-16): take the real rescued tint/shade pencils from
+   the never-fit taxonomy and plot where they actually land on the
+   tint/shade ring prototype (https://claude.ai/artifact/Qz8hLXeMAHTGT8UUiuQuTv,
+   scratchpad-only, not yet committed) — does a real tint pencil's nearest
+   match fall in the ring at roughly the t-step distance its own ΔE would
+   predict, same check for shade. Validates the prototype's radial layout
+   against real data, not just the ladder math in isolation. Not started.
+
+## Level 4 tint ladder — now committed (2026-10-16)
+
+The tint ladder (toward white, `mixSpectral`, no new anchors -- see
+"Mixing Method") is formalized: `scripts/ladder/gen_tint_ladder.cjs`
+builds `data/ladder/tint_ladder_full.json` from every current Level 1 +
+Level 2 point (2313 sources) at 19 fixed steps (43,947 points total).
+`scripts/ladder/validate_tint_ladder.cjs` re-tests it against the real
+never-fit "tint" pencils (their actual measured `lab_d65_2`, not a hex
+approximation) and writes `data/ladder/tint_ladder_validation.json`.
+Reproduces the originally-found result exactly: **170/176 (96.6%)** of
+the taxonomy's tint pencils now fit at ΔE≤15.3 against the ladder, where
+none did before. Level 3 deliberately excluded from the source set --
+its colours are already a borrowed-depth mix of Level 1 (see the
+"generation ring" finding above), so tinting it would retrace ground
+Level 1/2 already cover, not open new territory.
+
+Tone and shade ladders are NOT yet formalized this way -- tone's
+construction (hold L/H, scale C, via a `labToHex` round-trip) and shade's
+(toward black, unvalidated against real pencils -- see item 7) are both
+still scratchpad-only. Same treatment as this one, once validated.
 
 ## Diagram line-removal experiment (2026-10-16) — tried and reverted
 

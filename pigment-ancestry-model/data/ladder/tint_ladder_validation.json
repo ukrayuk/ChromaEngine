@@ -1,0 +1,1586 @@
+[
+  {
+    "name": "Cream",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#f9e38a",
+    "oldDist": 26.441769893967585,
+    "newDist": 2.4295367834313946,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Rose Carmine",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#e75970",
+    "oldDist": 16.67112153176096,
+    "newDist": 1.0116438950317248,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Light Magenta",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#e977bc",
+    "oldDist": 46.12439436876685,
+    "newDist": 3.6509508823584027,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Pink Madder Lake",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#eb6292",
+    "oldDist": 31.501973342280856,
+    "newDist": 8.804574859787285,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Sky Blue",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#74a4e9",
+    "oldDist": 45.35435613442084,
+    "newDist": 9.312991860659551,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Light Cobalt Turquoise",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#00bcd2",
+    "oldDist": 51.35521812361958,
+    "newDist": 6.673082792423276,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Salmon",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#f6797e",
+    "oldDist": 16.572657133216772,
+    "newDist": 2.914280631861274,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Beige Red",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#f5b19c",
+    "oldDist": 30.31478597107666,
+    "newDist": 1.5501263201650406,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Arylide Yellow",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#ebf38f",
+    "oldDist": 22.998164130355875,
+    "newDist": 1.3051722144746642,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Lizardlite Green",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#d2f088",
+    "oldDist": 21.067156616596524,
+    "newDist": 2.1302955763899907,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Thulite Yellowish",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#f5d2ba",
+    "oldDist": 36.78695068502496,
+    "newDist": 1.0970667186457541,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Quinacridone Magenta",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#e05fab",
+    "oldDist": 46.51218704224708,
+    "newDist": 5.36187949040776,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Tyrian Purple",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#a293ca",
+    "oldDist": 36.77828139753391,
+    "newDist": 3.9335464840681844,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Aquamarine Blue",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#c8daeb",
+    "oldDist": 50.20506505349737,
+    "newDist": 2.651631596743052,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Parmesan",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#f6eba1",
+    "oldDist": 30.373900019646744,
+    "newDist": 2.8407754104814287,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Soft Yellow",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#f6dc88",
+    "oldDist": 26.951816814452805,
+    "newDist": 2.679093225940414,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Sandcastle",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#dfac4b",
+    "oldDist": 17.213110025198972,
+    "newDist": 9.314429329269801,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Salmon",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#edb4aa",
+    "oldDist": 32.77973932001769,
+    "newDist": 1.8887147260672588,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Ash Rose",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#d4a7a8",
+    "oldDist": 30.07064604504515,
+    "newDist": 5.266429534931433,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Orchid",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#cd71c1",
+    "oldDist": 48.313287605019255,
+    "newDist": 8.275251591232102,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Rose Pink",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#f5cdd9",
+    "oldDist": 45.16393793132201,
+    "newDist": 2.365027130191314,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Pink Heather",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#c48bb6",
+    "oldDist": 38.24601749772007,
+    "newDist": 6.965828843436328,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Light Mauve",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#e0c0df",
+    "oldDist": 47.22771824535215,
+    "newDist": 1.6948149595328097,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "French Mauve",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#bd8bbd",
+    "oldDist": 38.063217983203806,
+    "newDist": 4.2248537087979585,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Light Heather",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#c98ed3",
+    "oldDist": 45.38087515438198,
+    "newDist": 5.318908978171931,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Dewberry",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#b878a3",
+    "oldDist": 33.82371420382511,
+    "newDist": 10.447839300536623,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Blue Orchid",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#66a6e5",
+    "oldDist": 45.08136472269185,
+    "newDist": 8.01000908999085,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Carolina Blue",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#7fa4c7",
+    "oldDist": 36.945262540429916,
+    "newDist": 5.549819370512946,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Glacier Blue",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#9bcee9",
+    "oldDist": 48.48554198069952,
+    "newDist": 4.705819665427309,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Turquoise Green",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#00cec0",
+    "oldDist": 44.31211374141999,
+    "newDist": 9.799363774288032,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Pastel Mint",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#a0c3a7",
+    "oldDist": 30.61322204718405,
+    "newDist": 1.2623050255385009,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Saffron Mango",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#f5c688",
+    "oldDist": 23.56176416567983,
+    "newDist": 3.916123119127343,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Peach Sand",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#f1b580",
+    "oldDist": 19.40098689996158,
+    "newDist": 2.2447311932766856,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Champagne",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#f7dfa4",
+    "oldDist": 33.27115222229612,
+    "newDist": 2.8200265582412696,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Pale Peach",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#f4d3b9",
+    "oldDist": 36.602163564120026,
+    "newDist": 1.0756988479294567,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Salmon",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#ebbaaf",
+    "oldDist": 34.462570921525234,
+    "newDist": 1.9827048301942687,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Heather",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#bb85ae",
+    "oldDist": 35.46616207941412,
+    "newDist": 8.94474720711405,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Wild Lavender",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#a27cac",
+    "oldDist": 30.79528391176562,
+    "newDist": 9.038774017421156,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Mid Ultramarine",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#7ea9e3",
+    "oldDist": 43.78446761189653,
+    "newDist": 8.997396777378608,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Turquoise Green",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#35d0c7",
+    "oldDist": 44.46535613832119,
+    "newDist": 4.451779115996467,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Yellow Ochre",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#eec071",
+    "oldDist": 20.716721168074958,
+    "newDist": 5.705727581736919,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Ultramarine Pink",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#dc8ac4",
+    "oldDist": 44.75108434370493,
+    "newDist": 0.7556060517762363,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Manganese Violet",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#b381bb",
+    "oldDist": 36.968076539673234,
+    "newDist": 2.604345108431852,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Light Malachite Green",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#44c3bf",
+    "oldDist": 42.053184326716995,
+    "newDist": 1.3821677516067172,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Primrose",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#f2e9be",
+    "oldDist": 39.04863727632399,
+    "newDist": 1.9525749910930175,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Ultramarine Violet",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#9b93d1",
+    "oldDist": 38.4576050302322,
+    "newDist": 0.8390277725336891,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Cobalt Blue 5%",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#9ac3eb",
+    "oldDist": 47.85346926193466,
+    "newDist": 9.55976931213331,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Naples Ochre",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#f4daa3",
+    "oldDist": 32.12462716103976,
+    "newDist": 3.6445773803029735,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Brown Ochre 10%",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#ecc69f",
+    "oldDist": 28.71040786184402,
+    "newDist": 2.1975172974810144,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Burnt Ochre 10%",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#eeb89b",
+    "oldDist": 28.163920914421578,
+    "newDist": 1.1095408710577659,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Hibiscus Pink",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#bf6c80",
+    "oldDist": 20.842148016093553,
+    "newDist": 1.4050463097563568,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Butternut",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#f9ca8b",
+    "oldDist": 24.86874015852592,
+    "newDist": 3.6871920999691814,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Chrysocolla Blue",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#00b8d0",
+    "oldDist": 56.37908329824775,
+    "newDist": 14.810841671183926,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Pale Yellow",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#efe9a0",
+    "oldDist": 29.669276507666318,
+    "newDist": 4.354894416482555,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Apricot",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#ffbb76",
+    "oldDist": 18.279212075711,
+    "newDist": 1.828128515617251,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Salmon",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#ffa784",
+    "oldDist": 22.624275555377277,
+    "newDist": 1.950331174914112,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Salmon Pink",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#ffa199",
+    "oldDist": 27.113857185285084,
+    "newDist": 1.2387289829356076,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Pink",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#ec7ea6",
+    "oldDist": 32.69064942088828,
+    "newDist": 7.624765519565884,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Light Purple",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#f07aab",
+    "oldDist": 36.533776588127914,
+    "newDist": 5.500300628514487,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Mauve",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#b46fb3",
+    "oldDist": 38.967718327361816,
+    "newDist": 0.9536314856594708,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Light Malachite Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#42cdcc",
+    "oldDist": 46.160372244566375,
+    "newDist": 2.5276402960056568,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Turquoise Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#00b9b9",
+    "oldDist": 44.556203870284364,
+    "newDist": 5.949499879171586,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Jade Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#54cdaa",
+    "oldDist": 32.791826711973044,
+    "newDist": 0.9183236821594915,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Light Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#aade89",
+    "oldDist": 24.775124669292996,
+    "newDist": 3.911561572545306,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Lime Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#dceb90",
+    "oldDist": 22.807377354613237,
+    "newDist": 1.7806846347516005,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Light Lemon Yellow",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#f0eeb5",
+    "oldDist": 35.60854223185225,
+    "newDist": 3.6765378480899997,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Bluish Pale",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#a2cfe7",
+    "oldDist": 48.025022693415835,
+    "newDist": 5.811758286126915,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Granite Rose",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#f4c8b3",
+    "oldDist": 35.32499996063775,
+    "newDist": 0.6729639241644765,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Cherry Blossom",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#ffcbcc",
+    "oldDist": 42.28542734462801,
+    "newDist": 1.0067812648741181,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Shell Pink",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#ffd7c7",
+    "oldDist": 41.01357087459574,
+    "newDist": 0.794453117437691,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Coral",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#ff9189",
+    "oldDist": 21.66543390651123,
+    "newDist": 4.274606798902006,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Ash Rose",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#d0a2a1",
+    "oldDist": 27.949877841905717,
+    "newDist": 5.6295335889268,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Peach",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#f9bba1",
+    "oldDist": 30.329875634039745,
+    "newDist": 1.6698699812158622,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Jaune Brillant",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#fdcb9a",
+    "oldDist": 27.832399424086162,
+    "newDist": 0.6552570701591655,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Light Sand",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#f9d69f",
+    "oldDist": 30.42187302946643,
+    "newDist": 2.4081990985488826,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Cream",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#ffe376",
+    "oldDist": 24.466294778203427,
+    "newDist": 0.9770876841535732,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Naples Yellow",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#ffd776",
+    "oldDist": 29.702534721665796,
+    "newDist": 3.1166669629632304,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Cork",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#d9b197",
+    "oldDist": 26.96632951277979,
+    "newDist": 1.906662001790711,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Beige",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#d8bb99",
+    "oldDist": 26.69677438341322,
+    "newDist": 0.6619527291288948,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Sand",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#d3bf95",
+    "oldDist": 25.816170460221336,
+    "newDist": 3.1610000354859307,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Lettuce Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#b7ea88",
+    "oldDist": 23.81630376586063,
+    "newDist": 3.2367449458067794,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Cobalt Green [hue]",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#65dda8",
+    "oldDist": 30.726949409257465,
+    "newDist": 2.3427589017660293,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Jade Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#00caab",
+    "oldDist": 36.91161799040321,
+    "newDist": 8.815269783689367,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Ice Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#6fe1d9",
+    "oldDist": 47.08302663623502,
+    "newDist": 1.583039373438577,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Emerald Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#00c882",
+    "oldDist": 27.3455813482917,
+    "newDist": 15.278290840518133,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Opal Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#c1d299",
+    "oldDist": 26.24888151272026,
+    "newDist": 1.6115586252306817,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Misty Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#aac097",
+    "oldDist": 25.518194263475113,
+    "newDist": 3.134155717404644,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Mint Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#8fbd94",
+    "oldDist": 25.176110266577084,
+    "newDist": 4.164499490788456,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Surf Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#7bb39a",
+    "oldDist": 26.697593324488547,
+    "newDist": 6.136049957042927,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Celadon",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#73b4a1",
+    "oldDist": 29.574115381486855,
+    "newDist": 4.437836334554319,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Horizon Blue",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#b1dfea",
+    "oldDist": 49.8402543099401,
+    "newDist": 2.7601942647004956,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Porcelain Blue",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#00c2db",
+    "oldDist": 52.91955168077027,
+    "newDist": 6.877851216905741,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Aqua",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#1ebdef",
+    "oldDist": 53.87593735659624,
+    "newDist": 8.521286948519023,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Sky Blue",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#65c3f1",
+    "oldDist": 51.674708887511166,
+    "newDist": 3.852910130328142,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Forget-me-not Blue",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#81b4eb",
+    "oldDist": 46.67168490018492,
+    "newDist": 10.739525932015818,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Lavender Blue",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#8ab4eb",
+    "oldDist": 46.254073695989895,
+    "newDist": 8.655765111421072,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Sky Mist",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#73a4ab",
+    "oldDist": 31.237408936793155,
+    "newDist": 4.384452432176894,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Smoke Blue",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#8f9ab3",
+    "oldDist": 30.99800835797297,
+    "newDist": 4.2541774854372125,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Lilac",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#bba8d4",
+    "oldDist": 41.77638883281252,
+    "newDist": 3.7978978689170217,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Rose Pink",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#fc94ae",
+    "oldDist": 32.137505280093386,
+    "newDist": 1.8450987946189075,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Wisteria",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#968ad9",
+    "oldDist": 42.39780572464176,
+    "newDist": 4.717443981513982,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Mauve",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#e483cb",
+    "oldDist": 50.0503772655617,
+    "newDist": 6.074718520759206,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Fuchsia",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#f08cce",
+    "oldDist": 48.66757682044589,
+    "newDist": 5.170563330978429,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Cosmos",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#f070a8",
+    "oldDist": 37.87230413305152,
+    "newDist": 4.112840481358296,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Sea Fog",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#c2a3b5",
+    "oldDist": 34.97756098779352,
+    "newDist": 6.601391881091229,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Rose Grey",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#b872a7",
+    "oldDist": 35.481086546607266,
+    "newDist": 6.149838731908383,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Pale Gold",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#b5a57a",
+    "oldDist": 16.95449177687707,
+    "newDist": 2.2563621605717503,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Luminous Red",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#ff5980",
+    "oldDist": 25.62905249353548,
+    "newDist": 12.743211171569733,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Luminous Orange",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#ff9b54",
+    "oldDist": 24.149679979691715,
+    "newDist": 14.426718334320357,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Naples Yellow Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#fce5a5",
+    "oldDist": 33.93902712583213,
+    "newDist": 2.41127995212723,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Tuscan Yellow Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ffe193",
+    "oldDist": 30.927639913838306,
+    "newDist": 1.6347657480473279,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Golden Yellow",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ffd266",
+    "oldDist": 29.572423878906605,
+    "newDist": 2.9869772212900445,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Yellow Ochre Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ffc791",
+    "oldDist": 25.089366743274102,
+    "newDist": 2.130534777700541,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Cadmium Orange Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ffc196",
+    "oldDist": 26.108581982613085,
+    "newDist": 2.6789049715040543,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Tangerine",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#f9c0aa",
+    "oldDist": 33.0529112640842,
+    "newDist": 0.5635961923571332,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Coral",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#f6a494",
+    "oldDist": 27.328400283632025,
+    "newDist": 2.6298758034554637,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Azalea Pink",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#f75f84",
+    "oldDist": 24.15753222756398,
+    "newDist": 2.569555955624237,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Sepia Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#af7185",
+    "oldDist": 23.27568207790454,
+    "newDist": 7.531728012451992,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Pink Bloom",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ffa6a4",
+    "oldDist": 29.787527164504418,
+    "newDist": 2.8674333719005327,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Apricot Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ffaf9c",
+    "oldDist": 31.25411626776067,
+    "newDist": 2.1342888727327556,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Mauve",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#9b87d3",
+    "oldDist": 41.222344046266464,
+    "newDist": 4.131228667748442,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Cerulean Blue Middle",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#00abe4",
+    "oldDist": 53.72117617785891,
+    "newDist": 11.819397505107277,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Cobalt Turquoise",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#50caea",
+    "oldDist": 52.53254086614636,
+    "newDist": 3.2394669240767238,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Cobalt Turquoise Green",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#009ca8",
+    "oldDist": 50.40595563361202,
+    "newDist": 16.640531439607464,
+    "rescued": false,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Jade Green Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#00d2bc",
+    "oldDist": 42.506343097666836,
+    "newDist": 10.745220046069646,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Teal Green",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#009eb9",
+    "oldDist": 49.272711241909846,
+    "newDist": 12.562367923307436,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Mint Green",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#88e2ac",
+    "oldDist": 32.400254006893725,
+    "newDist": 1.1281555462371673,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Naples Yellow Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#f7e5b5",
+    "oldDist": 37.21781509514163,
+    "newDist": 2.7378743882835526,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Lemon Yellow Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#f4f08f",
+    "oldDist": 24.165395300452555,
+    "newDist": 2.9401610185454854,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Primrose Yellow",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ffdc8a",
+    "oldDist": 30.267840924177918,
+    "newDist": 1.5815705605038186,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Golden Yellow",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ffcf69",
+    "oldDist": 27.552558053335435,
+    "newDist": 3.2111879011921762,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Naples Yellow",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ffc66c",
+    "oldDist": 22.122544605289626,
+    "newDist": 3.1715947752422715,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Cadmium Orange Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ffb575",
+    "oldDist": 16.779553029691016,
+    "newDist": 4.281518375780646,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Tangerine",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ffa975",
+    "oldDist": 16.254482875401568,
+    "newDist": 1.971885049875531,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Azalea Pink",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#f981a1",
+    "oldDist": 29.59725305155994,
+    "newDist": 2.921487679348352,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Grenadine Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#fb738e",
+    "oldDist": 23.982541201428152,
+    "newDist": 1.5455336776920525,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Grenadine",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#f24a6c",
+    "oldDist": 19.63906668404023,
+    "newDist": 3.276136960100037,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Opera Rose",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#f16ca5",
+    "oldDist": 37.273782588753406,
+    "newDist": 4.761987424168147,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Rose Pink",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ef6da3",
+    "oldDist": 36.34978076563622,
+    "newDist": 5.302017402230362,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Bengal Rose Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ec68b8",
+    "oldDist": 48.565243459442804,
+    "newDist": 7.485063395138516,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Lavender Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#c372d4",
+    "oldDist": 52.60309284558055,
+    "newDist": 16.191113783216792,
+    "rescued": false,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Mauve",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#9993d8",
+    "oldDist": 40.40980206074982,
+    "newDist": 1.9524549908212399,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Cobalt Turquoise",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#00aed0",
+    "oldDist": 50.31466490068184,
+    "newDist": 8.06351674991668,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Cobalt Turquoise Green",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#00a5b3",
+    "oldDist": 49.20976826028044,
+    "newDist": 11.536492933259714,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Jade Green",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#00aa93",
+    "oldDist": 41.44912913909054,
+    "newDist": 20.051290793635367,
+    "rescued": false,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Mint Green Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#00bd7b",
+    "oldDist": 29.649770165853102,
+    "newDist": 18.497420221613993,
+    "rescued": false,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Mint Green",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#00c086",
+    "oldDist": 31.567652599441036,
+    "newDist": 18.41443476505305,
+    "rescued": false,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Cream",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#f4e6b7",
+    "oldDist": 37.379908609053686,
+    "newDist": 3.7172439464595577,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Eggshell",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#f5d49f",
+    "oldDist": 30.084970111524594,
+    "newDist": 3.1106005634723894,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Deco Yellow",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#f7e771",
+    "oldDist": 21.0033005290941,
+    "newDist": 2.9525875563716992,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Jasmine",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#f7ce73",
+    "oldDist": 26.493899834676697,
+    "newDist": 3.1585058078280523,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Sand",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#f3bf62",
+    "oldDist": 21.538341785719403,
+    "newDist": 4.273004400386421,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Hot Pink",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#f473b1",
+    "oldDist": 41.275056212355324,
+    "newDist": 2.552508599450476,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Pink",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#f8789c",
+    "oldDist": 29.358355834572695,
+    "newDist": 2.4627973060469035,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Blush Pink",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#fea6ae",
+    "oldDist": 32.03026595778875,
+    "newDist": 0.8565156192418149,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Pink Rose",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#e4b0bc",
+    "oldDist": 36.039408162161536,
+    "newDist": 0.3377486010659405,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Deco Pink",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#f7c5d1",
+    "oldDist": 42.431389230208744,
+    "newDist": 2.5050183027726542,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Deco Peach",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#fbc7c2",
+    "oldDist": 39.82528683734369,
+    "newDist": 1.3243440797908297,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Light Peach",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#f4c9bc",
+    "oldDist": 38.583441859015274,
+    "newDist": 0.0852962793063364,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Salmon Pink",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#ffaa85",
+    "oldDist": 22.630994928487155,
+    "newDist": 3.8201329942138242,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
+    "name": "Beige",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#f5cca4",
+    "oldDist": 30.419204854653394,
+    "newDist": 2.047152977805918,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Peach",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#f0ab94",
+    "oldDist": 28.24317355521468,
+    "newDist": 0.9428988682379218,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Greyed Lavender",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#b3a1ba",
+    "oldDist": 36.1235582227356,
+    "newDist": 5.197059078641622,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Powder Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#afcdef",
+    "oldDist": 49.75439637571164,
+    "newDist": 7.381589123253029,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Caribbean Sea",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#75a1d7",
+    "oldDist": 40.223319288049034,
+    "newDist": 9.97291488431801,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Cloud Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#c3d1e8",
+    "oldDist": 48.773932327798256,
+    "newDist": 1.379266257409172,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Blue Slate",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#79ade8",
+    "oldDist": 45.46823901865535,
+    "newDist": 10.305171390213285,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Electric Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#43bce7",
+    "oldDist": 50.64383339616499,
+    "newDist": 5.490445623836657,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Non- Photo Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#00b0e6",
+    "oldDist": 51.08927584542791,
+    "newDist": 7.956817998149865,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Light Aqua",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#00bec0",
+    "oldDist": 46.706833441061285,
+    "newDist": 7.535930917677432,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Sky Blue Light",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#b6dcef",
+    "oldDist": 50.883645717244974,
+    "newDist": 4.31888957460405,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Light Cerulean Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#5da3e1",
+    "oldDist": 44.355461931481145,
+    "newDist": 5.917071031272774,
+    "rescued": true,
+    "group": "other"
+  },
+  {
+    "name": "Light Green",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#7edea9",
+    "oldDist": 31.349694834682573,
+    "newDist": 1.9241143803634264,
+    "rescued": true,
+    "group": "YgB-dominant"
+  },
+  {
+    "name": "Neon Pink",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#ff5dc3",
+    "oldDist": 55.141882468051726,
+    "newDist": 22.68347738906581,
+    "rescued": false,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Orchid",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#ba7ac3",
+    "oldDist": 42.22683738493587,
+    "newDist": 4.203909607635801,
+    "rescued": true,
+    "group": "BvR-dominant"
+  },
+  {
+    "name": "Amethyst",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#b289d7",
+    "oldDist": 44.57330947893969,
+    "newDist": 7.117554004081403,
+    "rescued": true,
+    "group": "BvR-dominant"
+  }
+]
