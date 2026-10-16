@@ -13,7 +13,7 @@ const L2 = JSON.parse(fs.readFileSync('../../data/level2_cross_rows.json', 'utf8
 const CX = 900, CY = 900;
 const MAXGEN = 8;
 const EDGE_T = 0.25;
-const RADIAL_GAP = 0;
+const RADIAL_GAP = 1;
 
 const HOLE_R = 80, BAND_1 = 46;
 const L1_OUTER = HOLE_R + MAXGEN * BAND_1; // 448
@@ -62,28 +62,11 @@ const ZONE_GAP = 3, PAIR_GAP = 11;
 
 const svgParts = [];
 
-// Per-cell 1px white stroke was the original "filled" convention, but at
-// G7/G8 density (64-128 cells in one ring) it reads as a dense grid of fine
-// lines -- uncomfortable to look at on screen even without true moire
-// (confirmed by Ray, same category of problem as the quick-ref rings' seam
-// artifact). Fixed the same way: no stroke, tiny angular overlap between
-// neighbouring cells instead, so there's no edge for anti-aliasing to catch
-// a visible line on.
-const SEAM_EPS_DEG = 0.08;
-
 function drawRingStack(points, startDeg, endDeg, r0, band, reversed) {
   const angleForT = reversed
     ? (t) => endDeg - (endDeg - startDeg) * t
     : (t) => startDeg + (endDeg - startDeg) * t;
   let rInner = r0;
-
-  function pushCell(rI, rO, t0, t1, hex) {
-    let a0 = angleForT(t0), a1 = angleForT(t1);
-    const dir = a1 >= a0 ? 1 : -1;
-    a0 -= dir * SEAM_EPS_DEG;
-    a1 += dir * SEAM_EPS_DEG;
-    svgParts.push(`<path d="${annularWedgePath(CX, CY, rI, rO, a0, a1)}" fill="${hex}"/>`);
-  }
 
   {
     const rOuter = rInner + band;
@@ -95,7 +78,10 @@ function drawRingStack(points, startDeg, endDeg, r0, band, reversed) {
       { hex: g1.hex, t0: EDGE_T, t1: 1 - EDGE_T },
       { hex: g0b.hex, t0: 1 - EDGE_T, t1: 1 },
     ];
-    for (const c of cells) pushCell(rInner, rOuter, c.t0, c.t1, c.hex);
+    for (const c of cells) {
+      const a0 = angleForT(c.t0), a1 = angleForT(c.t1);
+      svgParts.push(`<path d="${annularWedgePath(CX, CY, rInner, rOuter, a0, a1)}" fill="${c.hex}" stroke="#ffffff" stroke-width="1"/>`);
+    }
     rInner = rOuter + RADIAL_GAP;
   }
 
@@ -105,7 +91,8 @@ function drawRingStack(points, startDeg, endDeg, r0, band, reversed) {
     const n = newPoints.length;
     newPoints.forEach((p, i) => {
       const t0 = i / n, t1 = (i + 1) / n;
-      pushCell(rInner, rOuter, t0, t1, p.hex);
+      const a0 = angleForT(t0), a1 = angleForT(t1);
+      svgParts.push(`<path d="${annularWedgePath(CX, CY, rInner, rOuter, a0, a1)}" fill="${p.hex}" stroke="#ffffff" stroke-width="1"/>`);
     });
     rInner = rOuter + RADIAL_GAP;
   }
