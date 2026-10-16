@@ -152,7 +152,11 @@ scripts/
                                 + per-range breakdown; also the template for
                                 testing a candidate anchor swap (loadModel()
                                 takes any L1/L2/L3 file triple)
-  diagrams/                    SVG diagram builders. build_level1_level2_combo_v2.cjs
+  diagrams/                    SVG diagram builders. See RENDERING.md in
+                                this folder for the full conventions (gap
+                                widths, radius bands, the two different
+                                cell-boundary styles, a scale gotcha to
+                                watch for). build_level1_level2_combo_v2.cjs
                                 is the proven, bug-fixed reference pattern
                                 (polar wedge math, "filled" cell style —
                                 contiguous cells + white 1px stroke). Needs
