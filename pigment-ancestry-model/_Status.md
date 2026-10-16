@@ -119,6 +119,14 @@ Yellow anchor correction)
    or adapt the current canonical `level2_cross_rows.json` into the
    `["G2", step, steps, t, hex]` row-array shape this script expects (more
    work, different data format than the rest of the current pipeline).
+7. **Added to the Level 4 tint/tone/shade testing list (Ray, 2026-10-16):**
+   take the real rescued tint/shade pencils from the never-fit taxonomy and
+   plot where they actually land on the tint/shade ring prototype
+   (https://claude.ai/artifact/Qz8hLXeMAHTGT8UUiuQuTv, scratchpad-only, not
+   yet committed) — does a real tint pencil's nearest match fall in the
+   ring at roughly the t-step distance its own ΔE would predict, same
+   check for shade. Validates the prototype's radial layout against real
+   data, not just the ladder math in isolation. Not started.
 
 ## Diagram line-removal experiment (2026-10-16) — tried and reverted
 
