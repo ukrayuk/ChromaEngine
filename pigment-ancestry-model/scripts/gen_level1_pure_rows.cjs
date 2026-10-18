@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { mixSpectral } = require(path.join(__dirname, '../lib.cjs'));
+const { mixSpectral, mixSpectralTrueLab } = require(path.join(__dirname, '../lib.cjs'));
 
 // The three Level 1 arcs are the cross-family ancestry pairs, not same-family
 // warm/cool pairs: Red-Yellow (-> Orange), Yellow-Blue (-> Green), Blue-Red
@@ -43,9 +43,18 @@ const { mixSpectral } = require(path.join(__dirname, '../lib.cjs'));
 // 65.4%->66.5%), no range lost ground anywhere. Diagrams need
 // re-rendering this time -- hue shift is large enough to be visible
 // (99.4 -> 105.7deg), unlike the near-identical ffd200->ffd800 correction.
+// trueLab added 2026-10-18 (Ray) for the two real anchors confirmed
+// sRGB-gamut-clipped in master.json (srgb_gamut_status: "clipped") --
+// Warm Yellow and Cool Blue. The hex stays the correct DISPLAY colour;
+// trueLab is the real measured lab_d65_2, used only for the first
+// generation's mix (see mixSpectralTrueLab in lib.cjs and buildDyadic
+// below) so that mixing starts from the pigment's true saturation instead
+// of a value already compressed by the hex round-trip. Vermilion and
+// Cadmium Yellow Lemon are both confirmed "in gamut" (real vs hex-derived
+// Lab match closely) -- no trueLab needed, nothing to correct.
 const ARCS = {
-  'Red-Yellow (Orange)': { P1: { name: 'Vermilion — Warm Red', hex: '#e3212f' }, P2: { name: 'Medium Cadmium Yellow (Imit.), Caran d\'Ache Luminance 6901 — Warm Yellow', hex: '#ffd800' } },
-  'Yellow-Blue (Green)': { P1: { name: 'Cadmium Yellow Lemon, Faber-Castell Polychromos 9201 — Cool Yellow', hex: '#e7ed46' }, P2: { name: 'Cerulean Blue — Cool Blue', hex: '#0082b5' } },
+  'Red-Yellow (Orange)': { P1: { name: 'Vermilion — Warm Red', hex: '#e3212f' }, P2: { name: 'Medium Cadmium Yellow (Imit.), Caran d\'Ache Luminance 6901 — Warm Yellow', hex: '#ffd800', trueLab: [87.26, -2.24, 94.56] } },
+  'Yellow-Blue (Green)': { P1: { name: 'Cadmium Yellow Lemon, Faber-Castell Polychromos 9201 — Cool Yellow', hex: '#e7ed46' }, P2: { name: 'Cerulean Blue — Cool Blue', hex: '#0082b5', trueLab: [48.74, -24.69, -38.99] } },
   'Blue-Red (Violet)':   { P1: { name: 'Warm Blue (synthetic) — 8PB 4.8/13', hex: '#5f6bca' }, P2: { name: 'Cool Red (synthetic) — 8.25RP 4.5/14', hex: '#c62d6a' } },
 };
 const MAXGEN = 8;
@@ -57,13 +66,22 @@ const MAXGEN = 8;
 // Confirmed against real physically-swatched, layered pencils: plain
 // spectral.js mixing (no luminance "correction", no directional layering
 // weighting) matches reality -- that experiment was tried and reverted.
-function buildDyadic(hexP1, hexP2, maxGen) {
+//
+// trueLabP1/trueLabP2: only generation 1 ever mixes a raw anchor directly
+// (points start as just the two endpoints, so g=1's single midpoint IS
+// that first mix) -- every generation after that mixes already-computed
+// hex points, where there's no clipped-anchor correction left to apply.
+function buildDyadic(hexP1, hexP2, maxGen, trueLabP1, trueLabP2) {
   let points = [{ t: 0, hex: hexP1, gen: 0 }, { t: 1, hex: hexP2, gen: 0 }];
   for (let g = 1; g <= maxGen; g++) {
     const next = [];
     for (let i = 0; i < points.length - 1; i++) {
       const a = points[i], b = points[i + 1];
-      next.push({ t: (a.t + b.t) / 2, hex: mixSpectral(a.hex, b.hex, 0.5), gen: g });
+      let hex;
+      if (g === 1 && i === 0 && trueLabP1) hex = mixSpectralTrueLab(trueLabP1, b.hex, 0.5);
+      else if (g === 1 && i === 0 && trueLabP2) hex = mixSpectralTrueLab(trueLabP2, a.hex, 0.5);
+      else hex = mixSpectral(a.hex, b.hex, 0.5);
+      next.push({ t: (a.t + b.t) / 2, hex, gen: g });
     }
     const merged = [];
     let i = 0, j = 0;
@@ -81,7 +99,7 @@ for (const [key, arc] of Object.entries(ARCS)) {
   out[key] = {
     p1Name: arc.P1.name,
     p2Name: arc.P2.name,
-    points: buildDyadic(arc.P1.hex, arc.P2.hex, MAXGEN),
+    points: buildDyadic(arc.P1.hex, arc.P2.hex, MAXGEN, arc.P1.trueLab, arc.P2.trueLab),
   };
 }
 
