@@ -9,21 +9,69 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-15 (this session, after locking in the Cool
-Yellow anchor correction)
+**Last updated:** 2026-10-18 (this session, after the gamut-clipped
+anchor fix and the full tint/shade/pure value-shifted sweep)
 
-## Current state — MILESTONE: all six anchors now locked
+## Current state — MILESTONE: gamut-clipped anchors corrected, 209/257 non-neutral never-fit pencils now explained
 
-- **All six anchors are now locked**, including Cool Yellow (the last open
-  one) — see README "Cool Yellow correction" for the full writeup. This
-  closes out weeks of anchor-correction work (BvR six-sector dead end →
-  synthetic BvR, two Warm Yellow corrections, Lime Green rejected, now
-  Cadmium Yellow Lemon locked for Cool Yellow).
+- **Two of the four real-pencil Level 1 anchors were sRGB-gamut-clipped**
+  (Warm Yellow, Cool Blue — confirmed via `master.json`'s own
+  `srgb_gamut_status` field; Cool Blue is clipped even in P3). The stored
+  hex was always the correct DISPLAY colour, but `spectral.Color(hex)`
+  re-estimates a reflectance curve FROM that already-clipped hex for
+  mixing, understating real pigment saturation in everything mixed from
+  it. Raw spectral reflectance (the real fix) was lost to a drive failure,
+  but Lab->XYZ->linear-RGB->gamma-encode is lossless, reversible linear
+  algebra with no inherent 0-255 bound — `lib.cjs`'s new
+  `colorFromTrueLab`/`mixSpectralTrueLab` skip the hex string and build
+  the anchor's spectral.Color from its real measured `lab_d65_2` instead,
+  used only for Level 1's first generation (where a raw anchor gets
+  mixed). Warm Yellow recovers its true chroma exactly; Cool Blue (further
+  outside gamut) recovers about a quarter of the gap — the rest is the
+  reflectance estimator's own one-to-many ambiguity, not something more
+  arithmetic can fix without the lost spectral data. Warm Red and Cool
+  Yellow confirmed already in-gamut, untouched. All three levels
+  regenerated (L2/L3 both inherit from L1). See README for the full
+  writeup and the commit history for exact before/after chroma numbers.
+- **All six anchors are now locked**, including Cool Yellow — see README
+  "Cool Yellow correction" for the full writeup. This closes out weeks of
+  anchor-correction work (BvR six-sector dead end → synthetic BvR, two
+  Warm Yellow corrections, Lime Green rejected, now Cadmium Yellow Lemon
+  locked for Cool Yellow).
 - Coverage: **68.0% book-scope (782/1150), 66.5% combined (860/1294)**, at
   ΔE≤15.3. Verified reproducible via `scripts/classify_coverage.cjs`. The
   Cool Yellow fix was a genuine GAIN (+11 book / +14 combined), unlike
   every other candidate tested (all cost coverage) — first anchor change
-  in this project that didn't trade accuracy for appearance.
+  in this project that didn't trade accuracy for appearance. The
+  gamut-clipped anchor fix (above) holds this coarse pure-arc number
+  steady (localized shift, doesn't flip binary pass/fail for most
+  pencils) but moves real ground at the value-shifted level — see below.
+- **Full value-shifted search (tint+shade, all three levels) now explains
+  209/257 (81.3%) of the non-neutral never-fit taxonomy**, up from a
+  baseline of 0% before this session's work (the original taxonomy only
+  ever compared against PURE L1/L2 points). Built by generating a 0.1-0.9
+  step tint AND shade ladder from every point in L1+L2+L3 and taking the
+  nearest match across the whole set. Two categories fully dissolved —
+  **tone (7/7) and hue gap (6/6)** — meaning not one taxonomy "hue
+  mismatch" survived once tested against the real value-shifted space;
+  every one was a tint or shade the old pure-only search couldn't see.
+  Also **low chroma (5/5)** and **undersaturated (1/1)**. The **"hue gap +
+  tint (too light) (combo)" category is new this session** (32 pencils) —
+  found by widening the existing hue-gap rule to not require a small `dL`,
+  catching pencils that had a real hue gap AND a lightness gap
+  simultaneously but got mislabeled pure "tint" because `dL` numerically
+  dominated the old dL-vs-dC tiebreak; **100% of these (32/32) resolve**
+  once tested against the full ladder, mostly on a Level 2 cross arc
+  (overwhelmingly YgB×BvR) — a real, concentrated gap in that one arc's
+  pastel region, not scattered noise. **48 pencils remain genuinely
+  unexplained**, concentrated almost entirely in two places that are real
+  model limits, not search gaps: **27 shade** (see "Shade-direction
+  investigation" below) and **14 high-neon-chroma** (likely still beyond
+  gamut even after the anchor fix), plus 6 tint stragglers and 1
+  hue-gap-unreliable case already confirmed as genuine outliers. Full list
+  with per-pencil fail reason sent to Ray as a CSV (`still_unresolved.csv`,
+  matches his review-spreadsheet columns) — not yet committed to the repo
+  as a tracked file, scratchpad-only right now.
 - **Level 3 is 3 arcs, not 4** — "Arc1 — aligned" dropped (Ray's call): it
   always mixed a blend of warm and cool anchors, stayed permanently
   medium-muted, rescued zero book-scope pencils. Coverage unaffected.
@@ -42,6 +90,70 @@ Yellow anchor correction)
   `session_015oNn7JJnmfrU2nTdNo75yn`). Expect concurrent edits — pull
   first, merge README conflicts rather than overwrite.
 
+## Shade-direction investigation (2026-10-17/18) — real problem identified, not yet fixed
+
+Extensive testing this session on why shade (arc → black) rescues so much
+worse than tint (arc → white): L1-only 28.2% (11/39), L1+L2 33.3%
+(13/39), full L1+L2+L3 still only 33.3% (14/41 against the post-anchor-fix
+taxonomy) — adding more levels barely moves it, unlike tint where it
+closed almost the whole gap. This is NOT a resolution/coverage problem.
+
+**Reverse-direction test (Ray's idea) confirmed the real pigments ARE on
+the right arcs.** Taking each failing shade pencil's own real colour and
+lightening IT toward white (instead of darkening the arc toward black)
+rescues **39/39 (100%)** — every one lands cleanly back on its pure arc,
+most within ΔE 1-5. So the hue/chroma identity is correct; only the
+*direction* of the shade construction is wrong.
+
+**Root cause, confirmed with real pigment data (Ray supplied Color Index
+codes from artistpigments.org for several failing pencils):**
+Bleu de Nîmes = PB15:3 (Phthalo Blue) + PV23 (Dioxazine Violet), both
+extremely high-tinting-strength pigments that get dark by STACKING chroma,
+not by adding a neutral. Carmine Lake = PR179 + PBk7 (genuinely contains
+black) and Dark English Green = PG7 + PBk9 (ditto) — yet even these still
+needed real lightening to match, because the ACTUAL black pigments used
+(PBk7 carbon black, PBk9 bone/ivory black) aren't neutral the way
+`#000000` is. Checked directly: PBk9-type bone black (`#1C1814`,
+real-world reference) sits at Lab C≈9.3 from pure black, with a
+persistent warm/brown undertone even when tinted up — and swapping the
+model's shade-mix target from `#000000` to this more "realistic" black
+made results *worse* overall (8/39), not better, because it fights the
+many blue-family shade pencils. Holbein's own "Black" pencil
+(`#262628`, in the Neutral taxonomy, not Shade) is the closest real
+measurement to true neutral available (Munsell `8.47PB 1.5/0.28` —
+chroma so low the hue reading is essentially noise) but using it as the
+shade target also didn't help (same 11/39 either way, since it never
+reaches true L=0). **Conclusion: no substitute "black" fixes this,
+because different pencils are built from different dark/strong pigments
+(PBk7, PBk9, PG7-alone, PB15:3+PV23 seen so far) — there's no single right
+answer to "what black." The structural problem is the arc→black
+construction itself, not which colour sits at its dark end.** The working
+alternative (lighten the real pencil, check it lands on the arc) isn't
+yet built into anything reusable — it's a validation test, not a shade
+model. Open question for whenever this gets picked back up: can a shade
+ladder be built FROM this reverse relationship instead of the forward
+one.
+
+## Level 2 diagram — re-laid out, pencil-placement data gathered (2026-10-17)
+
+Reworked from the original side-by-side "like"/"flipped" layout (hard to
+compare the two cross-pairing orientations) to a stacked radial layout:
+Level 1 innermost (200-400), "like" middle (440-620), "flipped" outermost
+(640-820) and wider-banded — not because either pairing is more
+"correct" (they're equally valid, different mixes), but because real
+pencils land on "flipped" roughly 2x as often as "like" in every one of
+the 3 zones (64%/36% split, book-scope: 340 vs 194 of 534 Level 2 fits;
+RoY×YgB alone is closer to 3:1). Gap geometry also fixed: a straight
+radial-line gap tapers in exact proportion to `rOuter/rInner` no matter
+which radius its angle is calibrated at (confirmed with the actual math,
+not just visually) — the real fix is solving the gap angle separately at
+each ring's inner and outer radius and connecting those two points with a
+straight line instead of one through centre, giving a true constant-width
+cut. Current artifact: https://claude.ai/artifact/MSm8TBvNeC1scWWaoFzNmN
+(regenerated against the corrected anchor data, not yet committed as a
+repo script — still scratchpad-only, same status as the tint/shade ring
+prototype below).
+
 ## Open items (priority order)
 
 1. **Never-fit taxonomy — now lines up exactly with the book's own Ch5
@@ -50,10 +162,18 @@ Yellow anchor correction)
    ceiling raised 2.0→3.0 (Ray, by-eye: several mc 2-3 pencils genuinely
    read grey, not pastel — checked 2.5 instead, it's worse): True
    Achromatic 0-1 (54), Near-Neutral 1-2 (28), Earth-Adjacent 2-3 (29) —
-   **111/368 (30.2%)**. Of what's left: **tint 47.8% (176)**, shade 10.6%
-   (39), high-neon 5.4% (20), **tone 1.9% (7)**, hue gap 1.9% (7), low
-   chroma 1.1% (4), hue gap (unreliable match) 0.8% (3), undersaturated
-   0.3% (1, down to just Mustard).
+   **111/368 (30.2%)**.
+   **Categories as of 2026-10-18** (after the gamut-clipped anchor fix and
+   the new hue-gap+tint combo category — see sections above; the
+   2026-10-15 numbers below this paragraph are now stale, kept for
+   history): tint 141 (38.3%), shade 41 (11.1%), hue gap + tint (combo) 32
+   (8.7%), high-neon chroma 18 (4.9%), tone 10 (2.7%), hue gap 6 (1.6%),
+   low chroma 5 (1.4%), hue gap (unreliable match) 3 (0.8%),
+   undersaturated 1 (0.3%, still just Mustard).
+   **2026-10-15 numbers (stale, pre-anchor-fix, pre-combo-category):** tint
+   47.8% (176), shade 10.6% (39), high-neon 5.4% (20), tone 1.9% (7), hue
+   gap 1.9% (7), low chroma 1.1% (4), hue gap (unreliable match) 0.8% (3),
+   undersaturated 0.3% (1, down to just Mustard).
    **Six classifier fixes total, all from Ray's by-eye review of the
    xlsx tables**: #1 Dark Sap Green etc. mislabeled "too saturated" when
    their matched point was near-grey → "hue gap (unreliable match)". #2
@@ -86,15 +206,14 @@ Yellow anchor correction)
    Level 1 and Level 2 (49%/51%) — zero land near RoY/orange, all cluster
    in green-violet territory. Asymmetry: tints desaturate as they lighten
    (a white-blend fix would work), shades often saturate further as they
-   darken (wouldn't be rescued by a black-blend). **Open architecture
-   question for Ray: add a tint-only "Level 4"?** Current thinking: keep
-   as a separate Ch5 operation (arc colour + white/grey/black ladder), not
-   an extension of Level 1/2/3 geometry — so Ch4 stays pure hue. 77.2% of
-   taxonomy calls are clean, 22.8% are boundary/judgment cases — still at
-   "confirm the concept" stage pending Ray's call. This is an actively
+   darken (wouldn't be rescued by a black-blend). **Resolved 2026-10-16:
+   yes, Level 4 tint ladder built and committed** — see "Level 4 tint
+   ladder" section below, now includes Level 3 too. 77.2% of taxonomy
+   calls are clean, 22.8% are boundary/judgment cases. This is an actively
    self-correcting process via the xlsx review, not a one-shot
-   classification — six real fixes found so far, expect more as Ray works
-   through the remaining tabs.
+   classification — many real fixes found over the life of this item,
+   most recently the hue-gap+tint combo category (2026-10-17/18, see
+   above).
 2. **Chapter 5 — olive/dechroma demo.** Pure-dechroma-from-Level-1 framing
    fails geometrically (README "Open items" #3). Resolution method found
    and proven on a different example (`#00bb00 → #497249` via Level 2
@@ -119,35 +238,97 @@ Yellow anchor correction)
    or adapt the current canonical `level2_cross_rows.json` into the
    `["G2", step, steps, t, hex]` row-array shape this script expects (more
    work, different data format than the rest of the current pipeline).
-7. **Tint/shade ring prototype real-pencil validation** (added to the
-   testing list 2026-10-16): take the real rescued tint/shade pencils from
-   the never-fit taxonomy and plot where they actually land on the
-   tint/shade ring prototype (https://claude.ai/artifact/Qz8hLXeMAHTGT8UUiuQuTv,
-   scratchpad-only, not yet committed) — does a real tint pencil's nearest
-   match fall in the ring at roughly the t-step distance its own ΔE would
-   predict, same check for shade. Validates the prototype's radial layout
-   against real data, not just the ladder math in isolation. Not started.
+7. **Tint/shade ring prototype real-pencil validation — largely done
+   numerically, not yet done visually.** The ladder-math side is fully
+   validated (see "Level 4 tint ladder" below and the shade-direction
+   section above). What's still open: actually plotting real rescued
+   pencils ON the ring diagram itself (https://claude.ai/artifact/Qz8hLXeMAHTGT8UUiuQuTv,
+   now v2 — half-width bands, 9 steps each side 0.1-0.9, regenerated
+   against the corrected anchor data, still scratchpad-only) so Ray can
+   see it visually rather than just as numbers. Also resolved this
+   session: coarse-step testing confirmed the original 2-step (0.3/0.6)
+   prototype genuinely drops real pencils through value gaps (65.3% vs
+   96.6% at full 19-step resolution) — diminishing returns kick in hard
+   past ~4 extra steps per side (90.3%, vs 65.3% at 2 steps), which is why
+   the ring was rebuilt at 9 steps instead of settling for one more.
+8. **Shade-direction math — real problem identified this session, not yet
+   fixed.** See "Shade-direction investigation" section above for the
+   full writeup. 27 of 41 shade pencils remain genuinely unexplained;
+   confirmed it's not a coverage/resolution gap (adding Level 2/3 barely
+   helps) and not simply "wrong black colour" (tried bone black, tried
+   Holbein's own near-neutral black, both made things worse or didn't
+   help) — it's the arc→black construction direction itself that doesn't
+   match how real pigments darken. The reverse test (lighten the real
+   pencil, confirm it lands on the arc) works at 100% but isn't a shade
+   MODEL, just a validator. Whoever picks this up next should start from
+   "can a shade ladder be built from the reverse relationship instead."
+9. **14 high-neon-chroma pencils still unexplained even after the
+   gamut-clipped anchor fix.** Down from 17 before the fix (3 more
+   captured: Perylene Brown, Mauve Deep, Cobalt Purple pre-fix; Luminous
+   Green and Brilliant Yellow post-fix, both via the PURE arc directly
+   with no tint/shade needed — direct confirmation the arc's own gamut
+   genuinely expanded). Only 4 of the original 20 in this category are
+   actually named neon/luminous (Neon Yellow, Luminous Rose, Luminous
+   Opera, Luminous Green — all now resolved or confirmed fluorescent);
+   the rest (Fra Angelico Blue, Hollywood Pink, two Ultramarines, Marigold,
+   Summer Green, Brilliant Yellow [now resolved], Purple, Purple Light,
+   French Rose, Cobalt Purple [resolved], Mauve Deep x2 [one resolved],
+   Violet Blue) read as genuinely strong conventional pigments, not
+   special-effect ones — Fra Angelico Blue specifically confirmed as one
+   of Faber-Castell's professional "new 20" Polychromos colours with their
+   TOP lightfastness rating (fluorescent pigments fade fast, so a top
+   lightfastness score argues against it being one). These are a real
+   gamut ceiling, not a classification error — not clear there's more to
+   do here without either more real spectral data or accepting the limit.
+10. **`RENDERING.md` is stale** (flagged 2026-10-16, never actioned) —
+    still describes the Family 1 generation-ladder diagrams as having had
+    their stroke/gap removed, when that whole experiment was reverted the
+    same day. Low priority but should be corrected before anyone trusts
+    it at face value.
+11. **Level 2's new stacked-radial layout (see section above) is
+    scratchpad-only** — not yet migrated into a committed
+    `scripts/diagrams/` script the way the three-ring quick-ref composite
+    was. Do that once Ray's pencil-testing pass on the current artifact
+    is done and the layout is confirmed stable (he said he wants to test
+    it against real swatches before anything else changes).
 
-## Level 4 tint ladder — now committed (2026-10-16)
+## Level 4 tint ladder — now committed (2026-10-16), extended to Level 3 (2026-10-18)
 
 The tint ladder (toward white, `mixSpectral`, no new anchors -- see
 "Mixing Method") is formalized: `scripts/ladder/gen_tint_ladder.cjs`
-builds `data/ladder/tint_ladder_full.json` from every current Level 1 +
-Level 2 point (2313 sources) at 19 fixed steps (43,947 points total).
+builds `data/ladder/tint_ladder_full.json` at 19 fixed steps.
 `scripts/ladder/validate_tint_ladder.cjs` re-tests it against the real
-never-fit "tint" pencils (their actual measured `lab_d65_2`, not a hex
+never-fit taxonomy pencils (their actual measured `lab_d65_2`, not a hex
 approximation) and writes `data/ladder/tint_ladder_validation.json`.
-Reproduces the originally-found result exactly: **170/176 (96.6%)** of
-the taxonomy's tint pencils now fit at ΔE≤15.3 against the ladder, where
-none did before. Level 3 deliberately excluded from the source set --
-its colours are already a borrowed-depth mix of Level 1 (see the
-"generation ring" finding above), so tinting it would retrace ground
-Level 1/2 already cover, not open new territory.
+Originally **170/176 (96.6%)** on Level 1+Level 2 sources alone (Level 3
+deliberately excluded -- reasoning at the time: its colours are already a
+borrowed-depth mix of Level 1, so tinting it would just retrace ground
+Level 1/2 already cover).
+
+**Reversed 2026-10-18 (Ray):** that reasoning didn't survive contact with
+real data. Testing the new "hue gap + tint (combo)" taxonomy entries
+against a full L1+L2+L3 value-shifted pool captured all 30/30 of them --
+and 8 specifically needed Level 3 tints; L1/L2 tints alone weren't close
+enough. L3's geometry overlaps L1/L2 in *colour* but tinting it still
+opens genuinely different ground, since the three-way mix sits at a
+different point in the space than any L1/L2 tint reaches. `gen_tint_ladder.cjs`
+now includes Level 3 (3084 sources x 19 steps = 58,596 points).
+Re-validated against the combined tint+combo universe (178 pencils, the
+original 176 tint plus the 2 reclassified-from-elsewhere combo entries
+that are genuinely tint-direction): **172/178 (96.6%)** -- same headline
+rate as before but over a larger, more honest set, with 13 of those 172
+rescues now depending on Level 3. The 6 that still fail even at full
+19-step L1+L2+L3 resolution are confirmed genuine outliers (Cobalt
+Turquoise Green, Lavender Light, Jade Green, Mint Green Light, Mint
+Green, Neon Pink) -- their coarse-ladder distance and full-ladder
+distance are identical, meaning no amount of resolution would ever catch
+them; they're just not close to the tint ladder anywhere.
 
 Tone and shade ladders are NOT yet formalized this way -- tone's
-construction (hold L/H, scale C, via a `labToHex` round-trip) and shade's
-(toward black, unvalidated against real pencils -- see item 7) are both
-still scratchpad-only. Same treatment as this one, once validated.
+construction (hold L/H, scale C, via a `labToHex` round-trip) is still
+scratchpad-only. Shade is NOT a resolution problem (see "Shade-direction
+investigation" above) -- formalizing a ladder the same way tint was would
+not fix it; the construction itself needs rethinking first.
 
 ## Diagram line-removal experiment (2026-10-16) — tried and reverted
 
@@ -163,6 +344,41 @@ wanted here — don't re-litigate the "does it work" question, only "is it
 wanted" if asked again.
 
 ## Recent activity (newest first)
+
+- **2026-10-18**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session):
+  **gamut-clipped anchor fix** — found via `master.json`'s own
+  `srgb_gamut_status` field that Warm Yellow and Cool Blue are clipped;
+  built `colorFromTrueLab`/`mixSpectralTrueLab` in `lib.cjs` to construct
+  spectral.Color from the real unclamped Lab instead of the clipped hex,
+  applied to Level 1's first generation only, regenerated all three
+  levels, regenerated the taxonomy. Confirmed real visual impact (not
+  just internal math) with a concrete before/after midpoint (Lab chroma
+  78.3→93.0). Captured 7 previously-unreachable pencils (5 blue-family
+  shades, 2 high-chroma via the pure arc directly). Also this session:
+  extended the Level 4 tint ladder to include Level 3 (see above), added
+  the "hue gap + tint (combo)" taxonomy category (32 pencils, 100%
+  resolve against the full ladder), ran a full value-shifted tint+shade
+  sweep across all three levels landing at 209/257 (81.3%) of the
+  non-neutral never-fit taxonomy explained, and did extensive
+  shade-direction investigation (see section above) including real
+  pigment Color Index lookups (PB15:3, PV23, PBk7, PBk9) supplied by Ray.
+  Regenerated every diagram (both the scratchpad artifacts and the five
+  repo-committed `scripts/diagrams/*.cjs` outputs) against the corrected
+  data and sent Ray PNGs of all of them. Sent Ray a CSV of the 48
+  remaining genuinely-unexplained pencils matching his review-spreadsheet
+  columns plus a fail-reason column.
+- **2026-10-17**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session):
+  reworked the Level 2 diagram from side-by-side like/flipped to a
+  stacked radial layout (see "Level 2 diagram" section above), fixed the
+  radial-line gap-taper bug (constant-width cuts instead of wedge-shaped
+  ones), computed the real pencil split between "like" and "flipped"
+  (64%/36%), and did the coarse-tint-step investigation that led to
+  rebuilding the tint/shade ring prototype at 9 steps per side instead of
+  2. Confirmed via Ray's own review spreadsheet
+  (`never_fit_review_v3`, Google Sheets) that Holbein's "Black" is a
+  near-true-neutral outlier (Munsell `8.47PB 1.5/0.28`) sitting in the
+  Neutral tab, not Shade -- this fed directly into the shade-direction
+  investigation's "what counts as black" dead-end.
 
 - **2026-10-16**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session): fixed
   the Level 3 diagram scripts (standalone + the 3-ring quick-ref composite,
