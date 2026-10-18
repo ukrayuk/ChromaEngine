@@ -85,10 +85,12 @@ anchor fix and the full tint/shade/pure value-shifted sweep)
 - **Chapter worked-example data is STALE** (`data/chapter_*.json`) — built
   against the pre-correction Cool Yellow anchor, not yet regenerated. Flag
   before reusing any t/generation/ΔE value from those files.
-- Two Claude sessions are active on this repo: one in the cloud (tag:
-  `session_01X5dmXMWGXhLU1XoXY5WjKm`), one on Ray's own machine (tag:
-  `session_015oNn7JJnmfrU2nTdNo75yn`). Expect concurrent edits — pull
-  first, merge README conflicts rather than overwrite.
+- **Correction (2026-10-18): there is only ever one active session** —
+  this cloud session (`session_01X5dmXMWGXhLU1XoXY5WjKm`). The earlier
+  note about a second session on Ray's own machine
+  (`session_015oNn7JJnmfrU2nTdNo75yn`) was inaccurate/stale — Ray
+  confirmed this cloud session is the only one he's used. No concurrent-
+  edit risk from a second session; don't assume one exists.
 
 ## Shade-direction investigation (2026-10-17/18) — real problem identified, not yet fixed
 
