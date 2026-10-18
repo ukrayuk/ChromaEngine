@@ -102,6 +102,20 @@ const results = neverFit.map(p => {
   }
   let category;
   if (hueIsMeaningful && dH > 20 && Math.abs(dL) < 15 && Math.abs(dC) < 20) category = 'hue gap';
+  // Found 2026-10-18 (Ray): spotted a cluster of pinks/mauves at the tint
+  // tail of the review spreadsheet that didn't look like simple pastels.
+  // Checked the full taxonomy for the same pattern (dH>20 but |dL|>=15, so
+  // the clean "hue gap" rule above missed them because dL numerically wins
+  // the tint/shade tiebreak below) -- found 29, not just the 2 Rose Pink
+  // entries Ray flagged by eye. 27 of 29 match a Level 2 cross arc
+  // (YgB x BvR, overwhelmingly), not a Level 1 arc -- this is a real,
+  // concentrated gap in that one cross arc's light/pastel region, not
+  // scattered noise. The old rule was burying a genuine hue problem under
+  // a lightness label because dL happened to be the bigger number. All 29
+  // are lighter than their match (dL>0 in every case so far) -- no shade-
+  // side cases exist yet, but the category stays direction-aware in case
+  // that changes.
+  else if (hueIsMeaningful && dH > 20) category = 'hue gap + ' + (dL > 0 ? 'tint (too light)' : 'shade (too dark)') + ' (combo)';
   else if (Math.abs(dL) >= Math.abs(dC)) category = dL > 0 ? 'tint (too light)' : 'shade (too dark)';
   // Found 2026-10-15 (Ray): the project's own chapter structure is Tints,
   // Tones, Shades -- "tone" was missing from the taxonomy entirely. A tone

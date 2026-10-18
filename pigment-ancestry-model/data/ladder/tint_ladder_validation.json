@@ -1,5 +1,14 @@
 [
   {
+    "name": "Ivory",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#f8ebc9",
+    "oldDist": 41.862896570463036,
+    "newDist": 2.0363352839146427,
+    "rescued": true,
+    "group": "RoY-dominant"
+  },
+  {
     "name": "Cream",
     "range": "Faber-Castell Polychromos 9201",
     "hex": "#f9e38a",
@@ -157,7 +166,7 @@
     "range": "Derwent Chromaflow Pencils",
     "hex": "#edb4aa",
     "oldDist": 32.77973932001769,
-    "newDist": 1.8887147260672588,
+    "newDist": 0.8443355124758924,
     "rescued": true,
     "group": "other"
   },
@@ -283,9 +292,9 @@
     "range": "Derwent Chromaflow Pencils",
     "hex": "#f5c688",
     "oldDist": 23.56176416567983,
-    "newDist": 3.916123119127343,
+    "newDist": 1.2768977158866501,
     "rescued": true,
-    "group": "RoY-dominant"
+    "group": "other"
   },
   {
     "name": "Peach Sand",
@@ -319,7 +328,7 @@
     "range": "Derwent Lightfast Pencils",
     "hex": "#ebbaaf",
     "oldDist": 34.462570921525234,
-    "newDist": 1.9827048301942687,
+    "newDist": 0.6314683054498488,
     "rescued": true,
     "group": "other"
   },
@@ -427,9 +436,9 @@
     "range": "Caran d'Ache Luminance 6901",
     "hex": "#f4daa3",
     "oldDist": 32.12462716103976,
-    "newDist": 3.6445773803029735,
+    "newDist": 3.411602964283208,
     "rescued": true,
-    "group": "RoY-dominant"
+    "group": "other"
   },
   {
     "name": "Brown Ochre 10%",
@@ -463,9 +472,9 @@
     "range": "Caran d'Ache Luminance 6901",
     "hex": "#f9ca8b",
     "oldDist": 24.86874015852592,
-    "newDist": 3.6871920999691814,
+    "newDist": 2.2750502343772006,
     "rescued": true,
-    "group": "RoY-dominant"
+    "group": "other"
   },
   {
     "name": "Chrysocolla Blue",
@@ -589,7 +598,7 @@
     "range": "Caran d'Ache Pablo 666",
     "hex": "#f0eeb5",
     "oldDist": 35.60854223185225,
-    "newDist": 3.6765378480899997,
+    "newDist": 3.560347848806341,
     "rescued": true,
     "group": "other"
   },
@@ -648,6 +657,15 @@
     "group": "other"
   },
   {
+    "name": "Ivory",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#faeed0",
+    "oldDist": 43.793548835712166,
+    "newDist": 1.6683064562909993,
+    "rescued": true,
+    "group": "other"
+  },
+  {
     "name": "Peach",
     "range": "Holbein Artists' Colored Pencil",
     "hex": "#f9bba1",
@@ -670,9 +688,9 @@
     "range": "Holbein Artists' Colored Pencil",
     "hex": "#f9d69f",
     "oldDist": 30.42187302946643,
-    "newDist": 2.4081990985488826,
+    "newDist": 1.528852465520549,
     "rescued": true,
-    "group": "RoY-dominant"
+    "group": "other"
   },
   {
     "name": "Cream",
@@ -778,7 +796,7 @@
     "range": "Holbein Artists' Colored Pencil",
     "hex": "#aac097",
     "oldDist": 25.518194263475113,
-    "newDist": 3.134155717404644,
+    "newDist": 1.8691676713611405,
     "rescued": true,
     "group": "other"
   },
@@ -940,7 +958,7 @@
     "range": "Holbein Artists' Colored Pencil",
     "hex": "#c2a3b5",
     "oldDist": 34.97756098779352,
-    "newDist": 6.601391881091229,
+    "newDist": 4.44370963455831,
     "rescued": true,
     "group": "other"
   },
@@ -1336,9 +1354,9 @@
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
     "hex": "#f5d49f",
     "oldDist": 30.084970111524594,
-    "newDist": 3.1106005634723894,
+    "newDist": 0.8598825395782418,
     "rescued": true,
-    "group": "RoY-dominant"
+    "group": "other"
   },
   {
     "name": "Deco Yellow",
@@ -1417,7 +1435,7 @@
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
     "hex": "#fbc7c2",
     "oldDist": 39.82528683734369,
-    "newDist": 1.3243440797908297,
+    "newDist": 0.24230787004191334,
     "rescued": true,
     "group": "other"
   },
@@ -1462,7 +1480,7 @@
     "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
     "hex": "#b3a1ba",
     "oldDist": 36.1235582227356,
-    "newDist": 5.197059078641622,
+    "newDist": 2.3441526618858632,
     "rescued": true,
     "group": "other"
   },

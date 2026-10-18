@@ -31,7 +31,7 @@
     "dL": 24.393069755242422,
     "dC": -25.415875910400267,
     "dH": 25.65608791199608,
-    "category": "low chroma (too muted/grey)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Faber-Castell",
@@ -52,7 +52,7 @@
     "dL": 21.40260312509247,
     "dC": 2.709477455876666,
     "dH": 23.5474452673686,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Faber-Castell",
@@ -630,7 +630,7 @@
     "dL": 19.357064545180833,
     "dC": 0.9264444025363971,
     "dH": 26.13853750367683,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Derwent",
@@ -735,7 +735,7 @@
     "dL": 18.027676283686546,
     "dC": -8.630632977883014,
     "dH": 35.858039648732195,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Derwent",
@@ -777,7 +777,7 @@
     "dL": 31.540423271757234,
     "dC": -10.302769841917703,
     "dH": 57.51408896558678,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Derwent",
@@ -895,7 +895,7 @@
     "dL": 27.916524193985154,
     "dC": -1.7402857252645063,
     "dH": 95.12349032944928,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Derwent",
@@ -1463,7 +1463,7 @@
     "dL": 20.6216250100925,
     "dC": -11.574249630961031,
     "dH": 28.5030970131523,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Derwent",
@@ -2206,7 +2206,7 @@
     "dL": 19.09943669489678,
     "dC": -13.121643640827138,
     "dH": 30.925146277025775,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Caran",
@@ -3060,7 +3060,7 @@
     "dL": 30.15742895662548,
     "dC": -12.113781740219736,
     "dH": 30.760415000680762,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Holbein",
@@ -3144,7 +3144,7 @@
     "dL": 16.24096902069121,
     "dC": -8.021811948470287,
     "dH": 32.34887241270633,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Holbein",
@@ -3165,7 +3165,7 @@
     "dL": 25.44478772301035,
     "dC": -27.538251930065886,
     "dH": 26.04864938064972,
-    "category": "low chroma (too muted/grey)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Holbein",
@@ -3228,7 +3228,7 @@
     "dL": 18.4778620680175,
     "dC": -11.496716070542561,
     "dH": 37.112171059899566,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Holbein",
@@ -3375,7 +3375,7 @@
     "dL": 24.792776738650517,
     "dC": 2.913963861953629,
     "dH": 22.82400745765051,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Holbein",
@@ -3892,7 +3892,7 @@
     "dL": 23.02468103255339,
     "dC": -0.04715314300963236,
     "dH": 27.707577680864574,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Holbein",
@@ -3913,7 +3913,7 @@
     "dL": 23.41837337412494,
     "dC": -11.351786293044043,
     "dH": 47.47949436162503,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Holbein",
@@ -3934,7 +3934,7 @@
     "dL": 15.061814488080145,
     "dC": 2.318095976849669,
     "dH": 39.20375797937842,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Holbein",
@@ -4081,7 +4081,7 @@
     "dL": 17.32618029747671,
     "dC": -3.9267132470939092,
     "dH": 87.4008910028403,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Holbein",
@@ -4405,7 +4405,7 @@
     "dL": 22.558893565058057,
     "dC": -9.40926728112941,
     "dH": 26.79579207080768,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Castle",
@@ -4439,7 +4439,7 @@
     "dL": 21.542605484717043,
     "dC": -1.6449223378362774,
     "dH": 28.836096065303522,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Castle",
@@ -5244,7 +5244,7 @@
     "dL": 22.42262101611543,
     "dC": -17.844832303869797,
     "dH": 26.37577023955211,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Castle",
@@ -5349,7 +5349,7 @@
     "dL": 19.42156716861247,
     "dC": 0.8774488072395812,
     "dH": 21.700062806558556,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Castle",
@@ -5863,7 +5863,7 @@
     "dL": 22.46621772121766,
     "dC": -18.758386317187632,
     "dH": 23.147544591359903,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Newell",
@@ -5884,7 +5884,7 @@
     "dL": 17.6265659487117,
     "dC": -12.756804268458481,
     "dH": 36.50004657913249,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Newell",
@@ -6052,7 +6052,7 @@
     "dL": 19.13518038673928,
     "dC": -5.123267112259811,
     "dH": 28.290576298008517,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Newell",
@@ -6073,7 +6073,7 @@
     "dL": 22.27695700469455,
     "dC": -5.51976952088004,
     "dH": 51.74890489140042,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Newell",
@@ -6094,7 +6094,7 @@
     "dL": 29.61868613642413,
     "dC": -6.662668764751167,
     "dH": 52.74165260321448,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Newell",
@@ -6115,7 +6115,7 @@
     "dL": 28.598479089949976,
     "dC": -11.611728181636057,
     "dH": 21.84166135273153,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Newell",
@@ -6322,7 +6322,7 @@
     "dL": 16.032588924504395,
     "dC": -2.7032873498022063,
     "dH": 115.50663238535134,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Newell",
@@ -6343,7 +6343,7 @@
     "dL": 29.73953192317309,
     "dC": -13.060250856743455,
     "dH": 21.792929357784715,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Newell",
@@ -6385,7 +6385,7 @@
     "dL": 31.76043219407036,
     "dC": -19.227814920660904,
     "dH": 33.816501950381905,
-    "category": "tint (too light)"
+    "category": "hue gap + tint (too light) (combo)"
   },
   {
     "maker": "Newell",
