@@ -9,11 +9,76 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-19 (this session, after the Cool Blue anchor
-correction and fluorescent-pencil exclusion — 228/253, 90.1%, now
-explained; Level 1 diagrams regenerated and sent to Ray)
+**Last updated:** 2026-10-20 (this session, after the chroma-ceiling
+taxonomy category — 18 non-neutral pencils genuinely unexplained, down
+from 368 at the start of this whole investigation)
 
-## Current state — MILESTONE: all six primary anchors now real pencils, 228/253 non-neutral never-fit pencils now explained
+## Current state — MILESTONE: 18 non-neutral pencils genuinely unexplained (down from 368)
+
+- **Chroma ceiling taxonomy category added (2026-10-20)**: the 7
+  remaining "high-neon chroma" pencils (Fra Angelico Blue, Hollywood
+  Pink, Ultramarine, Marigold, Purple, Purple Light, French Rose) pulled
+  out as structurally explained rather than unresolved -- mirror of the
+  neutral bands at the other end of the chroma axis. No mix of the six
+  anchors can exceed the chroma of its own ingredients, and all 7 sit
+  above every anchor's own Munsell chroma near their hue (anchors run
+  10.85-16.65, these 7 run 15.71-17.84). Threshold Munsell C >=15.65 set
+  from the real data's own clean gap (last rescued: Brilliant Yellow,
+  15.60; first never-rescued: Marigold, 15.71), same method as the
+  neutral bands. Confirmed nothing available can raise the ceiling
+  without cost -- every anchor candidate tested this session that gained
+  saturation also cost book-scope coverage (-9 to -28 each time). Full
+  writeup: README "Chroma ceiling category". Live genuinely-unexplained
+  count: 25 -> **18**.
+
+- **Extensive shade-direction investigation (2026-10-19/20, same session
+  as the Cool Blue fix)**: tried and ruled out, in order: near-neutral
+  dark-green targets (Hooker's Green, Dark Sap Green -- small real effect,
+  0/12 rescued); a genuinely saturated same-family target applied
+  UNIFORMLY across all arcs (Beryl Green -- found 2/12 "rescued" but this
+  turned out to be a misapplication artifact, see below); per-arc "own
+  dark" targets properly scoped (Perylene Brown/Beryl Green/Bleu de
+  Nimes for RoY/YgB/BvR respectively, plus correctly-blended cross-arc
+  targets) -- 0/12 once scoped correctly, confirming the earlier 2/12 was
+  a false positive from applying a green target to a cross-arc point it
+  didn't belong to; a self-generated darkened G1 at several fractions --
+  0/12, no better than black. **Then a real result**: building Yellow-Blue
+  as its own 2-point arc with BOTH primaries independently dropped in
+  value (chroma/hue held fixed) -- asynchronous drops (Yellow dropping
+  further than Blue, e.g. Yellow -15, Blue -10) genuinely rescue **4/12**
+  (Jungle Green, Grass Green, Pthalo Green, Pthalo Green Light), all
+  confirmed as PURE arc points (not tint/shade derivatives, not
+  cross-arc -- this test never built one) at t=0.67-0.91. Pooling across
+  a full grid of drop combinations doesn't add any more than this single
+  best pair -- confirms the other 8 aren't reachable by sliding value on
+  this axis at all, at any amount. Checked exactly where on the real
+  (unmodified) YgB arc the remaining 12's nearest matches fall: **100% of
+  them sit in the G1-to-Cool-Blue half of the arc (t>0.5), none in the
+  Yellow-to-G1 half** -- the problem is geometrically confined to that
+  one segment. Isolated WHY: held Cool Blue completely fixed and varied
+  ONLY Cool Yellow -- dropping Yellow's VALUE alone (chroma/hue
+  untouched) rescues 2/12 on its own; dropping Yellow's CHROMA alone
+  rescues 0/12 and combining a chroma cut with a value drop actively
+  undoes the value drop's own benefit. So Yellow's extreme brightness
+  (L~90.7) is the real constraint on G1's reachable chroma-at-depth, not
+  its own saturation, which needs to stay exactly where it is. Caught and
+  fixed a real bug along the way: `colorFromTrueLab(...).toString()`
+  produces an invalid string when called standalone on an extreme
+  synthetic Lab point (not through a proper spectral.js mix/gradient
+  call) -- the broken string then cascades NaN through roughly half of a
+  dyadic tree if reused in later generations. Fix: always re-derive from
+  the true Lab via `mixSpectralTrueLab` whenever a generation touches the
+  original anchor, any generation, not just generation 1 -- confirmed the
+  4/12 headline result unaffected either way (the corrupted points were
+  excluded from "nearest" automatically, never produced a false match).
+  **Net conclusion**: value alone (on this Yellow-Blue axis) cannot reach
+  the remaining 8 at any combination -- the only lever left is a
+  different Yellow and/or Blue (hue/chroma, not value), which is a bigger
+  change than tonight's testing and needs its own session. None of this
+  investigation changed any committed anchor or data file -- all
+  scratchpad-only hypothesis testing.
+
+## Previous state (2026-10-19, earlier the same day): all six primary anchors now real pencils, 228/253 non-neutral never-fit pencils now explained
 
 - **Cool Blue anchor corrected (2026-10-19, same day as Warm Blue)**:
   Cerulean Blue, Castle Arts Gold (`#0082b5`, 6.77B 4.78/10.78,
@@ -356,21 +421,18 @@ prototype below).
    is purely a green/teal arc→black problem now, nothing to do with
    either blue anchor. Whoever picks this up next should start from "can
    a shade ladder be built from the reverse relationship instead."
-9. **7 high-neon-chroma pencils still unexplained** (down from 11 after
-   the Cool Blue fix, 10 total in the category now before the sweep —
-   down from 12 after the fluorescent exclusion removed Neon Yellow).
-   Fra Angelico Blue, Hollywood Pink, Ultramarine (Luminance), Marigold,
-   Purple, Purple Light, French Rose read as genuinely strong
-   conventional pigments, not special-effect ones — Fra Angelico Blue
-   specifically confirmed as one of Faber-Castell's professional "new 20"
-   Polychromos colours with their TOP lightfastness rating (fluorescent
-   pigments fade fast, so a top lightfastness score argues against it
-   being one). These are a real gamut ceiling, not a classification
-   error — not clear there's more to do here without either more real
-   spectral data or accepting the limit. Plus 4 "tint (too light)" and 2
-   "oversaturated" stragglers (Peacock Green, Peacock Blue) round out the
-   full 25 unexplained — see "Current state" above for the category
-   breakdown.
+9. **RESOLVED 2026-10-20 — 7 "high-neon chroma" pencils reclassified as
+   `chroma ceiling (exceeds anchor maximum)`, no longer counted as
+   unexplained.** Fra Angelico Blue, Hollywood Pink, Ultramarine
+   (Luminance), Marigold, Purple, Purple Light, French Rose all sit above
+   every anchor's own Munsell chroma near their hue (anchors 10.85-16.65,
+   these 7 at 15.71-17.84) — structurally unreachable, the mirror of the
+   neutral bands at the top of the chroma axis rather than the bottom.
+   Confirmed nothing available raises the ceiling without cost (every
+   anchor candidate tested that gained saturation this session cost -9 to
+   -28 book-scope coverage). See "Current state" above and README
+   "Chroma ceiling category" for the full writeup. Remaining genuinely
+   unexplained: 18 (12 shade-greens, 4 tint, 2 oversaturated).
 10. **`RENDERING.md` is stale** (flagged 2026-10-16, never actioned) —
     still describes the Family 1 generation-ladder diagrams as having had
     their stroke/gap removed, when that whole experiment was reverted the

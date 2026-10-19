@@ -194,6 +194,26 @@ const results = neverFit.map(p => {
   else if (dC > 0 && mc < 10 && C < 50) category = 'oversaturated (moderate pencil, anchor nearby is even less saturated)';
   else category = dC > 0 ? 'high-neon chroma (too saturated)' : 'low chroma (too muted/grey)';
 
+  // Found 2026-10-20 (Ray): "high-neon chroma" entries with Munsell C this
+  // far above the anchors are the mirror of the neutral bands at the other
+  // end of the chroma axis -- not a coincidental near-miss worth chasing,
+  // a structural ceiling. The six primary anchors' own Munsell chroma:
+  // Cool Yellow 10.85, Cool Blue 13.15, Warm Yellow 13.41, Warm Blue
+  // 13.86, Cool Red (synthetic) 14.0, Warm Red 16.65 (the outlier). No mix
+  // of anchors can exceed the chroma of its own ingredients, so a pencil
+  // more saturated than every anchor near its hue is permanently out of
+  // reach, the same way a near-achromatic pencil is permanently below the
+  // vivid-pigment floor. Confirmed against the full L1+L2+L3+tint+shade
+  // sweep (2026-10-19/20): clean gap in the real data between the last
+  // entry that DOES get rescued by the sweep (Brilliant Yellow, Munsell C
+  // 15.60) and the first that never does (Marigold, 15.71) -- so 15.65 is
+  // the line, same by-eye-plus-data-gap method as the neutral bands.
+  // Re-labelled rather than left in the generic "too saturated" bucket so
+  // it reads as explained-and-excluded, not still-unresolved.
+  if (category === 'high-neon chroma (too saturated)' && mc >= 15.65) {
+    category = 'chroma ceiling (exceeds anchor maximum)';
+  }
+
   return { ...p, L: lab[0], C, H, munsellC: mc, nearestL: pt[0], nearestC: pt.C, nearestH: pt.H, nearestLevel: pt.level, nearestArc: pt.arc, dL, dC, dH, category };
 });
 

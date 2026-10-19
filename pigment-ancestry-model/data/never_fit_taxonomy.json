@@ -337,7 +337,7 @@
     "dL": 3.5753656579418234,
     "dC": 9.73600813141428,
     "dH": 10.78994154586303,
-    "category": "high-neon chroma (too saturated)"
+    "category": "chroma ceiling (exceeds anchor maximum)"
   },
   {
     "maker": "Faber-Castell",
@@ -840,7 +840,7 @@
     "dL": 2.4510838724677484,
     "dC": 22.73324501737654,
     "dH": 5.614937096675931,
-    "category": "high-neon chroma (too saturated)"
+    "category": "chroma ceiling (exceeds anchor maximum)"
   },
   {
     "maker": "Derwent",
@@ -2358,7 +2358,7 @@
     "dL": -1.1783631108918087,
     "dC": 17.5024899018981,
     "dH": 6.765708713565061,
-    "category": "high-neon chroma (too saturated)"
+    "category": "chroma ceiling (exceeds anchor maximum)"
   },
   {
     "maker": "Caran",
@@ -3291,7 +3291,7 @@
     "dL": -0.24269297440783077,
     "dC": 1.031797993146725,
     "dH": 0.11886810671673231,
-    "category": "high-neon chroma (too saturated)"
+    "category": "chroma ceiling (exceeds anchor maximum)"
   },
   {
     "maker": "Holbein",
@@ -4586,7 +4586,7 @@
     "dL": 8.464064567489764,
     "dC": 22.064059092046527,
     "dH": 3.4599169931489087,
-    "category": "high-neon chroma (too saturated)"
+    "category": "chroma ceiling (exceeds anchor maximum)"
   },
   {
     "maker": "Castle",
@@ -4607,7 +4607,7 @@
     "dL": 0.015113346232787706,
     "dC": 14.690711359408319,
     "dH": 9.367836850295873,
-    "category": "high-neon chroma (too saturated)"
+    "category": "chroma ceiling (exceeds anchor maximum)"
   },
   {
     "maker": "Castle",
@@ -4670,7 +4670,7 @@
     "dL": 9.16916324236496,
     "dC": 25.758446269704855,
     "dH": 11.183715813169158,
-    "category": "high-neon chroma (too saturated)"
+    "category": "chroma ceiling (exceeds anchor maximum)"
   },
   {
     "maker": "Castle",

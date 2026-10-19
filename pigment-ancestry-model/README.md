@@ -353,7 +353,9 @@ close enough to the B/PB boundary that it still reads as the cooler,
 cyan-leaning end against Warm Blue's violet-leaning 9.59PB. The full
 tint+shade+pure sweep across the non-neutral never-fit taxonomy (now 253
 after also excluding 4 confirmed-fluorescent pencils, see below) went to
-**228/253 (90.1%)**, 25 genuinely unexplained.
+**228/253 (90.1%)**, 25 genuinely unexplained — see "Chroma ceiling
+category" below for 7 of those 25 being pulled out as structurally
+explained rather than unresolved, bringing the live count to 18.
 
 ## Fluorescent pencils excluded from the taxonomy (2026-10-19)
 
@@ -365,6 +367,36 @@ the fluorescent-pigment section below), not pigments that mix by ordinary
 subtractive colour theory. Out of scope for this model rather than
 unsolved. Same mechanism as `DROPPED_RANGES` in
 `classify_never_fit_taxonomy.cjs` — see `EXCLUDED_FLUORESCENT` there.
+
+## Chroma ceiling category (2026-10-20)
+
+Ray's observation: the 7 "high-neon chroma" pencils still unresolved
+after the Cool Blue fix (Fra Angelico Blue, Hollywood Pink, Ultramarine,
+Marigold, Purple, Purple Light, French Rose) are the mirror image of the
+neutral bands at the other end of the chroma axis — not a coincidental
+near-miss worth continuing to chase, a structural ceiling. No mix of the
+six primary anchors can exceed the chroma of its own ingredients, and the
+anchors' own Munsell chroma (Cool Yellow 10.85, Cool Blue 13.15, Warm
+Yellow 13.41, Warm Blue 13.86, Cool Red synthetic 14.0, Warm Red 16.65 —
+the outlier) tops out well below all 7 of these pencils (Munsell C
+15.71–17.84). Confirmed by testing whether anything available could raise
+the ceiling without cost: every anchor candidate pushed toward higher
+saturation this session (Fra Angelico Blue as Warm Blue, the earlier
+strong-blue Warm Blue candidates, the saturated Cool Blue candidates) did
+gain local chroma but cost book-scope coverage everywhere else (−9 to
+−28 each time) — the anchors already sit close to the best chroma/
+coverage balance the real pencil pool offers.
+
+Added a `'chroma ceiling (exceeds anchor maximum)'` taxonomy category in
+`classify_never_fit_taxonomy.cjs`, threshold Munsell C ≥15.65 — set from
+the real data's own clean gap between the last entry the full sweep DOES
+rescue (Brilliant Yellow, Munsell C 15.60) and the first that never does
+(Marigold, 15.71), same by-eye-plus-data-gap method as the neutral bands.
+Only applied within pencils already landing in "high-neon chroma (too
+saturated)" by the normal nearest-point logic, so it can't misfire on an
+unrelated category. Pulled out of the "still unresolved" count the same
+way neutral and fluorescent are — explained-and-excluded, not open.
+Brings the live genuinely-unexplained count from 25 to **18**.
 
 ## Open items (read this part)
 
