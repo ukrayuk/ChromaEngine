@@ -1,0 +1,626 @@
+{
+  "data/master.json": {
+    "mtime": 1792358564.142741,
+    "seen": 1792387576.083453,
+    "ast_hash": "2a6ec546d86f1d1adea693a008cdb2c7",
+    "semantic_hash": "2a6ec546d86f1d1adea693a008cdb2c7"
+  },
+  "data/parse_pencils.js": {
+    "mtime": 1792358564.1437426,
+    "seen": 1792387576.083464,
+    "ast_hash": "b7b8712b9e2b9197e20c235174969388",
+    "semantic_hash": "b7b8712b9e2b9197e20c235174969388"
+  },
+  "pigment-ancestry-model/data/chapter_3color_results.json": {
+    "mtime": 1792358564.152742,
+    "seen": 1792387576.083469,
+    "ast_hash": "01e62c84ed6f843527f85ddbda0b2023",
+    "semantic_hash": "01e62c84ed6f843527f85ddbda0b2023"
+  },
+  "pigment-ancestry-model/data/chapter_bestpair_results.json": {
+    "mtime": 1792358564.1537402,
+    "seen": 1792387576.0834715,
+    "ast_hash": "eba92839bcd444a20aeb722209eaffe2",
+    "semantic_hash": "eba92839bcd444a20aeb722209eaffe2"
+  },
+  "pigment-ancestry-model/data/chapter_generations.json": {
+    "mtime": 1792358564.15474,
+    "seen": 1792387576.0834746,
+    "ast_hash": "4fd68d674e6c4726c3f179b0ffd8b8b6",
+    "semantic_hash": "4fd68d674e6c4726c3f179b0ffd8b8b6"
+  },
+  "pigment-ancestry-model/data/chapter_official_positions.json": {
+    "mtime": 1792358564.15474,
+    "seen": 1792387576.083477,
+    "ast_hash": "b8b156a7cfe9a715dfe7ae16f1d58917",
+    "semantic_hash": "b8b156a7cfe9a715dfe7ae16f1d58917"
+  },
+  "pigment-ancestry-model/data/chapter_owned_recipes.json": {
+    "mtime": 1792358564.1557407,
+    "seen": 1792387576.08348,
+    "ast_hash": "5a6d0eed567792d17b87f944e37934f9",
+    "semantic_hash": "5a6d0eed567792d17b87f944e37934f9"
+  },
+  "pigment-ancestry-model/data/chapter_perset_arc_results.json": {
+    "mtime": 1792358564.1557407,
+    "seen": 1792387576.0834818,
+    "ast_hash": "35cab2f34e9983892a9ebf62a7b86b49",
+    "semantic_hash": "35cab2f34e9983892a9ebf62a7b86b49"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level1_test_coolyellow_cadmiumlemon_rows.json": {
+    "mtime": 1792358564.156747,
+    "seen": 1792387576.0834842,
+    "ast_hash": "09cd8052b9d647f26cdeb28460d4b374",
+    "semantic_hash": "09cd8052b9d647f26cdeb28460d4b374"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level1_test_coolyellow_lemonlime_rows.json": {
+    "mtime": 1792358564.156747,
+    "seen": 1792387576.0834868,
+    "ast_hash": "0bc4f71fc1657df40cf917ac27138cfb",
+    "semantic_hash": "0bc4f71fc1657df40cf917ac27138cfb"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level1_test_coolyellow_lime_rows.json": {
+    "mtime": 1792358564.158847,
+    "seen": 1792387576.0834885,
+    "ast_hash": "2617dfbf50a0a1c0535f71e77ac67fed",
+    "semantic_hash": "2617dfbf50a0a1c0535f71e77ac67fed"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level1_test_coolyellow_limegreen_rows.json": {
+    "mtime": 1792358564.158847,
+    "seen": 1792387576.0834913,
+    "ast_hash": "5709c48041017eed4de826756d587d1b",
+    "semantic_hash": "5709c48041017eed4de826756d587d1b"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level1_test_coolyellow_luminance_rows.json": {
+    "mtime": 1792358564.158847,
+    "seen": 1792387576.0834935,
+    "ast_hash": "b219b9310389c12056ce20e6a43ee5f7",
+    "semantic_hash": "b219b9310389c12056ce20e6a43ee5f7"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level2_test_coolyellow_cadmiumlemon_rows.json": {
+    "mtime": 1792358564.1608558,
+    "seen": 1792387576.0834954,
+    "ast_hash": "0500d8400a17f7c16c1f445137af0bfb",
+    "semantic_hash": "0500d8400a17f7c16c1f445137af0bfb"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level2_test_coolyellow_lemonlime_rows.json": {
+    "mtime": 1792358564.1608558,
+    "seen": 1792387576.0834975,
+    "ast_hash": "b4815543b057ca63343232fe220b53e9",
+    "semantic_hash": "b4815543b057ca63343232fe220b53e9"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level2_test_coolyellow_lime_rows.json": {
+    "mtime": 1792358564.1628654,
+    "seen": 1792387576.0834992,
+    "ast_hash": "8eeb4b54a58e55c7c58c7e9fa82f8ccd",
+    "semantic_hash": "8eeb4b54a58e55c7c58c7e9fa82f8ccd"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level2_test_coolyellow_limegreen_rows.json": {
+    "mtime": 1792358564.1628654,
+    "seen": 1792387576.0835018,
+    "ast_hash": "abc7d79aabb57460745c068422540fde",
+    "semantic_hash": "abc7d79aabb57460745c068422540fde"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level2_test_coolyellow_luminance_rows.json": {
+    "mtime": 1792358564.1628654,
+    "seen": 1792387576.0835037,
+    "ast_hash": "aecea44dece7ea1d7e4d7c30ed26e71a",
+    "semantic_hash": "aecea44dece7ea1d7e4d7c30ed26e71a"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level3_test_coolyellow_cadmiumlemon_rows.json": {
+    "mtime": 1792358564.1648767,
+    "seen": 1792387576.0835054,
+    "ast_hash": "a1a873e0d02d069163cc50c62e76a7ca",
+    "semantic_hash": "a1a873e0d02d069163cc50c62e76a7ca"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level3_test_coolyellow_lemonlime_rows.json": {
+    "mtime": 1792358564.1648767,
+    "seen": 1792387576.0835078,
+    "ast_hash": "2d0280d4201cd4e095127319483ffec7",
+    "semantic_hash": "2d0280d4201cd4e095127319483ffec7"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level3_test_coolyellow_lime_rows.json": {
+    "mtime": 1792358564.1668859,
+    "seen": 1792387576.0835094,
+    "ast_hash": "56c313242441873db9ee528707a0cefd",
+    "semantic_hash": "56c313242441873db9ee528707a0cefd"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level3_test_coolyellow_limegreen_rows.json": {
+    "mtime": 1792358564.1668859,
+    "seen": 1792387576.0835118,
+    "ast_hash": "a0561731244c721a6cdb4c285de8b551",
+    "semantic_hash": "a0561731244c721a6cdb4c285de8b551"
+  },
+  "pigment-ancestry-model/data/coolyellow_candidates/level3_test_coolyellow_luminance_rows.json": {
+    "mtime": 1792358564.168893,
+    "seen": 1792387576.0835147,
+    "ast_hash": "25fda1b43b606451e10499b8f1aa9792",
+    "semantic_hash": "25fda1b43b606451e10499b8f1aa9792"
+  },
+  "pigment-ancestry-model/data/final_classification_stats.json": {
+    "mtime": 1792358564.168893,
+    "seen": 1792387576.0835168,
+    "ast_hash": "22a786adef2ac704e2a7a9d35f9cd627",
+    "semantic_hash": "22a786adef2ac704e2a7a9d35f9cd627"
+  },
+  "pigment-ancestry-model/data/history/level1_pure_rows_PRECOOLYELLOWFIX_backup.json": {
+    "mtime": 1792358564.168893,
+    "seen": 1792387576.083519,
+    "ast_hash": "ff55fe519ac689006338e6ab074eeabd",
+    "semantic_hash": "ff55fe519ac689006338e6ab074eeabd"
+  },
+  "pigment-ancestry-model/data/history/level1_pure_rows_PREFFD800FIX_backup.json": {
+    "mtime": 1792358564.170899,
+    "seen": 1792387576.0835207,
+    "ast_hash": "11cf08350ec5525d0cb01999aba48435",
+    "semantic_hash": "11cf08350ec5525d0cb01999aba48435"
+  },
+  "pigment-ancestry-model/data/history/level1_pure_rows_PREVIVIDYELLOW_backup.json": {
+    "mtime": 1792358564.170899,
+    "seen": 1792387576.083523,
+    "ast_hash": "c08fd5503043e9f21b450395fc865a57",
+    "semantic_hash": "c08fd5503043e9f21b450395fc865a57"
+  },
+  "pigment-ancestry-model/data/history/level1_pure_rows_REALANCHORS_backup.json": {
+    "mtime": 1792358564.170899,
+    "seen": 1792387576.0835252,
+    "ast_hash": "9f4d54861e169e4f35a89de6237f44be",
+    "semantic_hash": "9f4d54861e169e4f35a89de6237f44be"
+  },
+  "pigment-ancestry-model/data/history/level2_cross_rows_PRECOOLYELLOWFIX_backup.json": {
+    "mtime": 1792358564.1726487,
+    "seen": 1792387576.083527,
+    "ast_hash": "5f32223c2701962fd94298ad69029bc5",
+    "semantic_hash": "5f32223c2701962fd94298ad69029bc5"
+  },
+  "pigment-ancestry-model/data/history/level2_cross_rows_PREFFD800FIX_backup.json": {
+    "mtime": 1792358564.1726487,
+    "seen": 1792387576.083529,
+    "ast_hash": "d97337cf6a8410350b749fa5bbdb18da",
+    "semantic_hash": "d97337cf6a8410350b749fa5bbdb18da"
+  },
+  "pigment-ancestry-model/data/history/level2_cross_rows_PREVIVIDYELLOW_backup.json": {
+    "mtime": 1792358564.174659,
+    "seen": 1792387576.083531,
+    "ast_hash": "41faa0e78dcf3ddd65f3b3f542efacbe",
+    "semantic_hash": "41faa0e78dcf3ddd65f3b3f542efacbe"
+  },
+  "pigment-ancestry-model/data/history/level2_cross_rows_REALANCHORS_backup.json": {
+    "mtime": 1792358564.174659,
+    "seen": 1792387576.0835328,
+    "ast_hash": "4c28e1c14326ffe5c8f2f4efe623a798",
+    "semantic_hash": "4c28e1c14326ffe5c8f2f4efe623a798"
+  },
+  "pigment-ancestry-model/data/history/level3_cross_rows_PREARC1DROP_backup.json": {
+    "mtime": 1792358564.174659,
+    "seen": 1792387576.083535,
+    "ast_hash": "10c11158e0ab10208826f36aa5135139",
+    "semantic_hash": "10c11158e0ab10208826f36aa5135139"
+  },
+  "pigment-ancestry-model/data/history/level3_cross_rows_PRECOOLYELLOWFIX_backup.json": {
+    "mtime": 1792358564.1766675,
+    "seen": 1792387576.0835366,
+    "ast_hash": "79a84f0d8286830cccb7c31766f5332a",
+    "semantic_hash": "79a84f0d8286830cccb7c31766f5332a"
+  },
+  "pigment-ancestry-model/data/history/level3_cross_rows_PREFFD800FIX_backup.json": {
+    "mtime": 1792358564.1766675,
+    "seen": 1792387576.0835385,
+    "ast_hash": "318e7aab71534b54b98db81e1e7b26ef",
+    "semantic_hash": "318e7aab71534b54b98db81e1e7b26ef"
+  },
+  "pigment-ancestry-model/data/history/level3_cross_rows_PREVIVIDYELLOW_backup.json": {
+    "mtime": 1792358564.1766675,
+    "seen": 1792387576.0835404,
+    "ast_hash": "14edb03c7922d0d98156bd25f6bde55c",
+    "semantic_hash": "14edb03c7922d0d98156bd25f6bde55c"
+  },
+  "pigment-ancestry-model/data/history/level3_cross_rows_REALANCHORS_backup.json": {
+    "mtime": 1792358564.178677,
+    "seen": 1792387576.0835426,
+    "ast_hash": "ba3d41f7e9305156dbc11b461b5a1e10",
+    "semantic_hash": "ba3d41f7e9305156dbc11b461b5a1e10"
+  },
+  "pigment-ancestry-model/data/ladder/tint_ladder_full.json": {
+    "mtime": 1792358564.1904676,
+    "seen": 1792387576.083544,
+    "ast_hash": "45bb1630bceadeeb75935989b993d51a",
+    "semantic_hash": "45bb1630bceadeeb75935989b993d51a"
+  },
+  "pigment-ancestry-model/data/ladder/tint_ladder_validation.json": {
+    "mtime": 1792358564.1904676,
+    "seen": 1792387576.083546,
+    "ast_hash": "ba3a56759745972565ad0d8072c863fe",
+    "semantic_hash": "ba3a56759745972565ad0d8072c863fe"
+  },
+  "pigment-ancestry-model/data/level1_pure_rows.json": {
+    "mtime": 1792358564.1924756,
+    "seen": 1792387576.0835476,
+    "ast_hash": "a79818c998bc2deb75f78092183459c5",
+    "semantic_hash": "a79818c998bc2deb75f78092183459c5"
+  },
+  "pigment-ancestry-model/data/level2_cross_rows.json": {
+    "mtime": 1792358564.1924756,
+    "seen": 1792387576.0835493,
+    "ast_hash": "9d2515407435f5ffcdb4ed2d51821a6c",
+    "semantic_hash": "9d2515407435f5ffcdb4ed2d51821a6c"
+  },
+  "pigment-ancestry-model/data/level3_cross_rows.json": {
+    "mtime": 1792358564.1924756,
+    "seen": 1792387576.0835512,
+    "ast_hash": "28202bef89626094ae6e095426be135c",
+    "semantic_hash": "28202bef89626094ae6e095426be135c"
+  },
+  "pigment-ancestry-model/data/matches/pencils-arteza-matches.json": {
+    "mtime": 1792358564.1944866,
+    "seen": 1792387576.083553,
+    "ast_hash": "45a071a1b8d45e8cf040227520644969",
+    "semantic_hash": "45a071a1b8d45e8cf040227520644969"
+  },
+  "pigment-ancestry-model/data/matches/pencils-castlegold-matches.json": {
+    "mtime": 1792358564.1944866,
+    "seen": 1792387576.0835564,
+    "ast_hash": "4733a6a31e3f1e2f34b83c410d794383",
+    "semantic_hash": "4733a6a31e3f1e2f34b83c410d794383"
+  },
+  "pigment-ancestry-model/data/matches/pencils-castleharmonious-matches.json": {
+    "mtime": 1792358564.1964967,
+    "seen": 1792387576.0835588,
+    "ast_hash": "247b8f81166192104d260f982c739125",
+    "semantic_hash": "247b8f81166192104d260f982c739125"
+  },
+  "pigment-ancestry-model/data/matches/pencils-castlesofttouch-matches.json": {
+    "mtime": 1792358564.1964967,
+    "seen": 1792387576.0835607,
+    "ast_hash": "8ea3629e0f4b47d9af6f747a777ecd83",
+    "semantic_hash": "8ea3629e0f4b47d9af6f747a777ecd83"
+  },
+  "pigment-ancestry-model/data/matches/pencils-chromaflow-matches.json": {
+    "mtime": 1792358564.1985056,
+    "seen": 1792387576.083563,
+    "ast_hash": "2b0155c42df0617eb5068b6d17e016ad",
+    "semantic_hash": "2b0155c42df0617eb5068b6d17e016ad"
+  },
+  "pigment-ancestry-model/data/matches/pencils-derwentdrawing-matches.json": {
+    "mtime": 1792358564.1985056,
+    "seen": 1792387576.0835648,
+    "ast_hash": "fc890ec1bdf1679efb9a618936d6dc8f",
+    "semantic_hash": "fc890ec1bdf1679efb9a618936d6dc8f"
+  },
+  "pigment-ancestry-model/data/matches/pencils-holbein-matches.json": {
+    "mtime": 1792358564.1985056,
+    "seen": 1792387576.0835667,
+    "ast_hash": "adc18a0700e99dc0c0be4f86dbd25e69",
+    "semantic_hash": "adc18a0700e99dc0c0be4f86dbd25e69"
+  },
+  "pigment-ancestry-model/data/matches/pencils-lightfast-matches.json": {
+    "mtime": 1792358564.200514,
+    "seen": 1792387576.0835683,
+    "ast_hash": "35405b379e6086a3d335872a734851a2",
+    "semantic_hash": "35405b379e6086a3d335872a734851a2"
+  },
+  "pigment-ancestry-model/data/matches/pencils-luminance-matches.json": {
+    "mtime": 1792358564.200514,
+    "seen": 1792387576.0835702,
+    "ast_hash": "7eb6503b2c13fb59dca35f550f41c4e6",
+    "semantic_hash": "7eb6503b2c13fb59dca35f550f41c4e6"
+  },
+  "pigment-ancestry-model/data/matches/pencils-pablo-matches.json": {
+    "mtime": 1792358564.200514,
+    "seen": 1792387576.0835721,
+    "ast_hash": "774fb35cf0cdf5587245c75c70a6545b",
+    "semantic_hash": "774fb35cf0cdf5587245c75c70a6545b"
+  },
+  "pigment-ancestry-model/data/matches/pencils-polychromos-matches.json": {
+    "mtime": 1792358564.202523,
+    "seen": 1792387576.0835743,
+    "ast_hash": "ba4d036d05624881608e10dc1f090f4a",
+    "semantic_hash": "ba4d036d05624881608e10dc1f090f4a"
+  },
+  "pigment-ancestry-model/data/matches/pencils-prismacolor-matches.json": {
+    "mtime": 1792358564.2042725,
+    "seen": 1792387576.0835762,
+    "ast_hash": "5c6e2a6d00034c28ec6c9aeabf451f4f",
+    "semantic_hash": "5c6e2a6d00034c28ec6c9aeabf451f4f"
+  },
+  "pigment-ancestry-model/data/never_fit_final_153.json": {
+    "mtime": 1792358564.2062805,
+    "seen": 1792387576.083578,
+    "ast_hash": "386a82ee622dfec5f3813d19a2f661c7",
+    "semantic_hash": "386a82ee622dfec5f3813d19a2f661c7"
+  },
+  "pigment-ancestry-model/data/never_fit_taxonomy.json": {
+    "mtime": 1792358564.2082899,
+    "seen": 1792387576.08358,
+    "ast_hash": "f8308e5122d43d644a7c0a605079fe50",
+    "semantic_hash": "f8308e5122d43d644a7c0a605079fe50"
+  },
+  "pigment-ancestry-model/lib.cjs": {
+    "mtime": 1792358564.2082899,
+    "seen": 1792387576.083582,
+    "ast_hash": "513b47cf2c3a6100353519d4a2fd28aa",
+    "semantic_hash": "513b47cf2c3a6100353519d4a2fd28aa"
+  },
+  "pigment-ancestry-model/package.json": {
+    "mtime": 1792358564.2103002,
+    "seen": 1792387576.083584,
+    "ast_hash": "f0216df6f15634fbb419fac91f8e7f3d",
+    "semantic_hash": "f0216df6f15634fbb419fac91f8e7f3d"
+  },
+  "pigment-ancestry-model/scripts/classify_coverage.cjs": {
+    "mtime": 1792358564.2341356,
+    "seen": 1792387576.0835857,
+    "ast_hash": "aa8dd5137c203f135d5dacc835fc4410",
+    "semantic_hash": "aa8dd5137c203f135d5dacc835fc4410"
+  },
+  "pigment-ancestry-model/scripts/classify_never_fit_taxonomy.cjs": {
+    "mtime": 1792358564.2351332,
+    "seen": 1792387576.0835876,
+    "ast_hash": "b8e3de80ae4360fa8e23c9b0abdbf82a",
+    "semantic_hash": "b8e3de80ae4360fa8e23c9b0abdbf82a"
+  },
+  "pigment-ancestry-model/scripts/diagrams/build_deltaE_swatches.cjs": {
+    "mtime": 1792358564.236138,
+    "seen": 1792387576.0835896,
+    "ast_hash": "5c8c54c9443d4f593f58ed6b18ded137",
+    "semantic_hash": "5c8c54c9443d4f593f58ed6b18ded137"
+  },
+  "pigment-ancestry-model/scripts/diagrams/build_level1_level2_combo_v2.cjs": {
+    "mtime": 1792358564.237135,
+    "seen": 1792387576.0835915,
+    "ast_hash": "9eae6537306db5ec59fa82804cdbaa25",
+    "semantic_hash": "9eae6537306db5ec59fa82804cdbaa25"
+  },
+  "pigment-ancestry-model/scripts/diagrams/build_level1_pure_circular_filled.cjs": {
+    "mtime": 1792358564.2381337,
+    "seen": 1792387576.0835934,
+    "ast_hash": "b251ffc498e217ca37460c603c696585",
+    "semantic_hash": "b251ffc498e217ca37460c603c696585"
+  },
+  "pigment-ancestry-model/scripts/diagrams/build_level2_standalone.cjs": {
+    "mtime": 1792358564.2381337,
+    "seen": 1792387576.0835955,
+    "ast_hash": "6f707408fce44c4787ec4c11cc21442d",
+    "semantic_hash": "6f707408fce44c4787ec4c11cc21442d"
+  },
+  "pigment-ancestry-model/scripts/diagrams/build_level3_cross_circular_filled.cjs": {
+    "mtime": 1792358564.2391338,
+    "seen": 1792387576.0835977,
+    "ast_hash": "9369c434ec3b139d1b94aad48257ba36",
+    "semantic_hash": "9369c434ec3b139d1b94aad48257ba36"
+  },
+  "pigment-ancestry-model/scripts/diagrams/build_summary_level2_ring.cjs": {
+    "mtime": 1792358564.240132,
+    "seen": 1792387576.0835996,
+    "ast_hash": "17a81e616cb3047487ca2f6c98764a09",
+    "semantic_hash": "17a81e616cb3047487ca2f6c98764a09"
+  },
+  "pigment-ancestry-model/scripts/diagrams/build_summary_rings.cjs": {
+    "mtime": 1792358564.240132,
+    "seen": 1792387576.0836017,
+    "ast_hash": "9d7297e59859e123b033316097b9babc",
+    "semantic_hash": "9d7297e59859e123b033316097b9babc"
+  },
+  "pigment-ancestry-model/scripts/diagrams/polar_lib.cjs": {
+    "mtime": 1792358564.2411318,
+    "seen": 1792387576.0836039,
+    "ast_hash": "42d2a8fd56b7f9d32f06205d6fadc50f",
+    "semantic_hash": "42d2a8fd56b7f9d32f06205d6fadc50f"
+  },
+  "pigment-ancestry-model/scripts/diagrams/render_arc_positions.cjs": {
+    "mtime": 1792358564.2411318,
+    "seen": 1792387576.0836058,
+    "ast_hash": "787fba4bd567db039640fa5a10f351e6",
+    "semantic_hash": "787fba4bd567db039640fa5a10f351e6"
+  },
+  "pigment-ancestry-model/scripts/diagrams/render_deltaE_swatches.cjs": {
+    "mtime": 1792358564.242133,
+    "seen": 1792387576.083608,
+    "ast_hash": "1c6733e13423dbf321cb131c9d78c905",
+    "semantic_hash": "1c6733e13423dbf321cb131c9d78c905"
+  },
+  "pigment-ancestry-model/scripts/gen_level1_pure_rows.cjs": {
+    "mtime": 1792358564.2431326,
+    "seen": 1792387576.0836096,
+    "ast_hash": "fcd69ed4e5a8a85f657dfd3b11f21875",
+    "semantic_hash": "fcd69ed4e5a8a85f657dfd3b11f21875"
+  },
+  "pigment-ancestry-model/scripts/gen_level2_cross_rows.cjs": {
+    "mtime": 1792358564.2431326,
+    "seen": 1792387576.0836115,
+    "ast_hash": "9538bbc0e56e3cb4581ddf144e3e7505",
+    "semantic_hash": "9538bbc0e56e3cb4581ddf144e3e7505"
+  },
+  "pigment-ancestry-model/scripts/gen_level3_cross_rows.cjs": {
+    "mtime": 1792358564.2441351,
+    "seen": 1792387576.0836132,
+    "ast_hash": "049a9d7723f0d168c8708a5f2f7a5e5e",
+    "semantic_hash": "049a9d7723f0d168c8708a5f2f7a5e5e"
+  },
+  "pigment-ancestry-model/scripts/investigations/build_all_owned_recipes.cjs": {
+    "mtime": 1792358564.2451339,
+    "seen": 1792387576.083615,
+    "ast_hash": "9c798868077f4196d730ccf3c643c0f3",
+    "semantic_hash": "9c798868077f4196d730ccf3c643c0f3"
+  },
+  "pigment-ancestry-model/scripts/investigations/build_crossarc_demo.cjs": {
+    "mtime": 1792358564.2451339,
+    "seen": 1792387576.0836165,
+    "ast_hash": "f76cede290c73d4fbb143f0112ec358c",
+    "semantic_hash": "f76cede290c73d4fbb143f0112ec358c"
+  },
+  "pigment-ancestry-model/scripts/investigations/build_olive_dechroma.cjs": {
+    "mtime": 1792358564.2461362,
+    "seen": 1792387576.0836184,
+    "ast_hash": "6b534bf6226a2c6e9d534d3905d66300",
+    "semantic_hash": "6b534bf6226a2c6e9d534d3905d66300"
+  },
+  "pigment-ancestry-model/scripts/investigations/build_worked_example.cjs": {
+    "mtime": 1792358564.247134,
+    "seen": 1792387576.0836203,
+    "ast_hash": "3bc1ac00075b186c9beff53ee3bc747a",
+    "semantic_hash": "3bc1ac00075b186c9beff53ee3bc747a"
+  },
+  "pigment-ancestry-model/scripts/investigations/build_worked_example_owned.cjs": {
+    "mtime": 1792358564.247134,
+    "seen": 1792387576.0836225,
+    "ast_hash": "7d86294eee5ec94608511b63b18505fa",
+    "semantic_hash": "7d86294eee5ec94608511b63b18505fa"
+  },
+  "pigment-ancestry-model/scripts/investigations/compare_coolyellow_test.cjs": {
+    "mtime": 1792358564.2485802,
+    "seen": 1792387576.0836246,
+    "ast_hash": "c94a9c46472a272990182d993efe25d8",
+    "semantic_hash": "c94a9c46472a272990182d993efe25d8"
+  },
+  "pigment-ancestry-model/scripts/investigations/gen_coolyellow_test_set.cjs": {
+    "mtime": 1792358564.2485802,
+    "seen": 1792387576.083627,
+    "ast_hash": "a696c6687bb9beb90bc0f540b0604473",
+    "semantic_hash": "a696c6687bb9beb90bc0f540b0604473"
+  },
+  "pigment-ancestry-model/scripts/investigations/render_all_owned_recipes.cjs": {
+    "mtime": 1792358564.2497065,
+    "seen": 1792387576.083629,
+    "ast_hash": "09ee40293c9d50eb20a246639778bd03",
+    "semantic_hash": "09ee40293c9d50eb20a246639778bd03"
+  },
+  "pigment-ancestry-model/scripts/investigations/render_bestpair_full.cjs": {
+    "mtime": 1792358564.2497065,
+    "seen": 1792387576.0836308,
+    "ast_hash": "89981a3dec4582d56f318809727c2175",
+    "semantic_hash": "89981a3dec4582d56f318809727c2175"
+  },
+  "pigment-ancestry-model/scripts/investigations/render_perset_arc.cjs": {
+    "mtime": 1792358564.2507038,
+    "seen": 1792387576.0836327,
+    "ast_hash": "1e28001ea704e4dd7e225f7496755c0d",
+    "semantic_hash": "1e28001ea704e4dd7e225f7496755c0d"
+  },
+  "pigment-ancestry-model/scripts/investigations/screenshot_crossarc.cjs": {
+    "mtime": 1792358564.2517025,
+    "seen": 1792387576.0836344,
+    "ast_hash": "2312e24576d621a2c4dcb6f677db10a9",
+    "semantic_hash": "2312e24576d621a2c4dcb6f677db10a9"
+  },
+  "pigment-ancestry-model/scripts/investigations/screenshot_olive.cjs": {
+    "mtime": 1792358564.2517025,
+    "seen": 1792387576.0836365,
+    "ast_hash": "fb58227d68f5627b64a9175e9325c1cf",
+    "semantic_hash": "fb58227d68f5627b64a9175e9325c1cf"
+  },
+  "pigment-ancestry-model/scripts/investigations/search_3color.cjs": {
+    "mtime": 1792358564.252703,
+    "seen": 1792387576.0836382,
+    "ast_hash": "eb93bcea4d4185c053dd0b5537515e31",
+    "semantic_hash": "eb93bcea4d4185c053dd0b5537515e31"
+  },
+  "pigment-ancestry-model/scripts/investigations/search_best_pairs.cjs": {
+    "mtime": 1792358564.2537093,
+    "seen": 1792387576.083642,
+    "ast_hash": "675a88eaeeedbe28df638ad9743d7298",
+    "semantic_hash": "675a88eaeeedbe28df638ad9743d7298"
+  },
+  "pigment-ancestry-model/scripts/investigations/search_perset_arc.cjs": {
+    "mtime": 1792358564.2537093,
+    "seen": 1792387576.0836442,
+    "ast_hash": "7b77de277c442d9e6cd9fb951f0e27b4",
+    "semantic_hash": "7b77de277c442d9e6cd9fb951f0e27b4"
+  },
+  "pigment-ancestry-model/scripts/ladder/gen_tint_ladder.cjs": {
+    "mtime": 1792358564.2547052,
+    "seen": 1792387576.083646,
+    "ast_hash": "28042bb1b917bf905066c2ce68c58a2c",
+    "semantic_hash": "28042bb1b917bf905066c2ce68c58a2c"
+  },
+  "pigment-ancestry-model/scripts/ladder/validate_tint_ladder.cjs": {
+    "mtime": 1792358564.255706,
+    "seen": 1792387576.0836475,
+    "ast_hash": "16b54f88473ee57383557833b13c8c4a",
+    "semantic_hash": "16b54f88473ee57383557833b13c8c4a"
+  },
+  "README.md": {
+    "mtime": 1792358564.1235542,
+    "seen": 1792387576.0836496,
+    "ast_hash": "e001082dea43a924110de2b073e62f10",
+    "semantic_hash": "e001082dea43a924110de2b073e62f10"
+  },
+  "data/Pencil Spectral.txt": {
+    "mtime": 1792358564.1255717,
+    "seen": 1792387576.083651,
+    "ast_hash": "458e295c5f1db11c3c9801c93da42196",
+    "semantic_hash": "458e295c5f1db11c3c9801c93da42196"
+  },
+  "data/README.md": {
+    "mtime": 1792358564.1273248,
+    "seen": 1792387576.0836532,
+    "ast_hash": "86fc67682bcf264582b410fb009a6f01",
+    "semantic_hash": "86fc67682bcf264582b410fb009a6f01"
+  },
+  "index.html": {
+    "mtime": 1792358564.1487408,
+    "seen": 1792387576.0836549,
+    "ast_hash": "47b8dfa05bfda646b1c162e322603624",
+    "semantic_hash": "47b8dfa05bfda646b1c162e322603624"
+  },
+  "pigment-ancestry-model/README.md": {
+    "mtime": 1792358564.150742,
+    "seen": 1792387576.083657,
+    "ast_hash": "f0c8c5cc7c5bc1ac6060bb5ff5d037a4",
+    "semantic_hash": "f0c8c5cc7c5bc1ac6060bb5ff5d037a4"
+  },
+  "pigment-ancestry-model/_Status.md": {
+    "mtime": 1792358564.151742,
+    "seen": 1792387576.0836587,
+    "ast_hash": "d3afa469945d5cce14b355618f5a4bcf",
+    "semantic_hash": "d3afa469945d5cce14b355618f5a4bcf"
+  },
+  "pigment-ancestry-model/scripts/diagrams/RENDERING.md": {
+    "mtime": 1792358564.236138,
+    "seen": 1792387576.0836608,
+    "ast_hash": "7a45652a115528f54c1d446c64acc921",
+    "semantic_hash": "7a45652a115528f54c1d446c64acc921"
+  },
+  "pigment-ancestry-model/reference_images/arc_positions.png": {
+    "mtime": 1792358564.2103002,
+    "seen": 1792387576.0836625,
+    "ast_hash": "d745dd9f9515e5dbc0856bb3aa7b1d72",
+    "semantic_hash": "d745dd9f9515e5dbc0856bb3aa7b1d72"
+  },
+  "pigment-ancestry-model/reference_images/crossarc_demo.png": {
+    "mtime": 1792358564.2123077,
+    "seen": 1792387576.083665,
+    "ast_hash": "d5f6580e49d7455e4eb779e251fbe561",
+    "semantic_hash": "d5f6580e49d7455e4eb779e251fbe561"
+  },
+  "pigment-ancestry-model/reference_images/deltaE_swatches.png": {
+    "mtime": 1792358564.2123077,
+    "seen": 1792387576.0836668,
+    "ast_hash": "9fa53be8fdee8b98bf190aaf9e463cd3",
+    "semantic_hash": "9fa53be8fdee8b98bf190aaf9e463cd3"
+  },
+  "pigment-ancestry-model/reference_images/level1-level2-combo-v2.png": {
+    "mtime": 1792358564.2222576,
+    "seen": 1792387576.0836687,
+    "ast_hash": "abc4455fcccc29fe42e1a8483308cf03",
+    "semantic_hash": "abc4455fcccc29fe42e1a8483308cf03"
+  },
+  "pigment-ancestry-model/reference_images/level1-level2-combo-v2.svg": {
+    "mtime": 1792358564.2270725,
+    "seen": 1792387576.0836706,
+    "ast_hash": "d1c38ca233fcc09fa9aa0f19316d66e3",
+    "semantic_hash": "d1c38ca233fcc09fa9aa0f19316d66e3"
+  },
+  "pigment-ancestry-model/reference_images/level2-standalone.png": {
+    "mtime": 1792358564.2321355,
+    "seen": 1792387576.0836723,
+    "ast_hash": "e4cb4c39ae3bc30dfbde37f358b1d042",
+    "semantic_hash": "e4cb4c39ae3bc30dfbde37f358b1d042"
+  },
+  "pigment-ancestry-model/reference_images/olive_dechroma.png": {
+    "mtime": 1792358564.2331316,
+    "seen": 1792387576.0836747,
+    "ast_hash": "63d1bc94c5911fec63c4d0d128ee3c57",
+    "semantic_hash": "63d1bc94c5911fec63c4d0d128ee3c57"
+  }
+}
