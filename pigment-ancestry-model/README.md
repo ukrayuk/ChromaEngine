@@ -57,7 +57,7 @@ before) since Arc1 was never contributing. Old 4-arc data backed up at
 | Warm Red | `#e3212f` | Vermilion, Castle Arts Gold | — |
 | Warm Yellow | `#ffd800` | Medium Cadmium Yellow (Imit.), Caran d'Ache Luminance 6901 | 4.68Y 8.69/13.41 |
 | Cool Yellow | `#e7ed46` | Cadmium Yellow Lemon, Faber-Castell Polychromos 9201 | 1.54GY 9.04/10.85 |
-| Cool Blue | `#0082b5` | Cerulean Blue, Castle Arts Gold | — |
+| Cool Blue | `#0088d6` | Cerulean Blue, Castle Arts Premium Soft Touch | 1.33PB 5.17/13.15 |
 | Warm Blue | `#5a42ab` | Mauve Deep, Castle Arts Premium Soft Touch | 9.59PB 3.57/13.86 |
 | Cool Red | `#c62d6a` | synthetic (Munsell-derived) | 8.25RP 4.5/14 |
 
@@ -69,13 +69,13 @@ still the one fully synthetic anchor left. See `data/history/` for the two
 earlier BvR approaches that were tried and abandoned before landing here.
 
 **Current coverage** (ΔE≤15.3, `scripts/classify_coverage.cjs`):
-- Book-scope (9 ranges, 1150 pencils): 785/1150 = **68.3%**
-- Combined (11 ranges, 1294 pencils): 862/1294 = **66.6%**
+- Book-scope (9 ranges, 1150 pencils): 802/1150 = **69.7%**
+- Combined (11 ranges, 1294 pencils): 881/1294 = **68.1%**
 
 **Status (2026-10-19): five of six anchors locked on real pencils**,
 Cool Red the sole remaining synthetic one — see the "Warm Blue correction"
-writeup below for the full cause/trade-off, same by-eye-overrides-numbers
-pattern as Cool Yellow.
+and "Cool Blue correction" writeups below for the full cause/trade-off,
+same by-eye-overrides-numbers pattern as Cool Yellow.
 
 ## Decision history (condensed)
 
@@ -95,7 +95,10 @@ pattern as Cool Yellow.
 3. **Replaced BvR with a single synthetic arc** (then: Warm Blue `#5f6bca`
    / Cool Red `#c62d6a`, both Munsell-derived). Superseded 2026-10-19 —
    Warm Blue moved to a real pencil, see "Warm Blue correction" below;
-   Cool Red is now the only fully synthetic anchor left.
+   Cool Red is now the only fully synthetic anchor left. Cool Blue (never
+   synthetic, but only ever gamut-corrected rather than re-picked) also
+   moved to a better real pencil the same day — see "Cool Blue correction"
+   below.
 4. **Warm Yellow**: started as Yellow Ochre (`#f7c81e`, chroma 11.61,
    chosen by hue-precision-first search). Found a systematic cross-brand
    gap — every pencil range is missing a vivid "Cadmium Yellow"-type
@@ -285,6 +288,83 @@ non-neutral never-fit taxonomy went from 209/257 (81.3%) to **227/257
 on the shade side (14/41 → 26/39). Also incidentally resolves Mauve
 Deep's own prior standing as one of the never-fit high-neon-chroma
 pencils, since an anchor trivially fits itself.
+
+## Cool Blue correction (2026-10-19) — RESOLVED, six of six primary anchors now on real pencils
+
+Previous: Cerulean Blue, Castle Arts Gold (`#0082b5`, 6.77B 4.78/10.78,
+gamut-clipped, trueLab-corrected 2026-10-18). Prompted by the Warm Blue
+correction above: once Warm Blue became a real, darker, more saturated
+pencil, the ΔE between the two blue anchors jumped from 37.1→53.3 on
+stored hex (48.6→64.4 on true Lab) — hue separation widened from 56° to
+67°. Unlike Warm Blue, Cool Blue had never been checked against
+alternative real pencils, only gamut-corrected in place.
+
+Tested real B/PB-family book-scope pencils, same two-axis method:
+
+| Candidate | Hex | Munsell | Book coverage delta | ΔE to Warm Blue |
+|---|---|---|---|---|
+| Turquoise Blue, Caran d'Ache Pablo 666 | `#01afce` | 4.96B | −24 | 74.5 |
+| Turquoise Blue, Holbein | `#0075a8` | 7.41B | −6 | 59.9 |
+| Cobalt Blue [hue], Caran d'Ache Pablo 666 | `#00689c` | 9.71B | −14 | 52.1 |
+| Ice Blue, Caran d'Ache Luminance 6901 | `#00557f` | 7.63B | −33 | 56.2 |
+| Grey Blue, Caran d'Ache Luminance 6901 | `#1976a4` | 0.67PB | −43 | 51.9 |
+| Cerulean Blue Middle, Castle Arts Gold | `#00abe4` | 8.03B | +0 | 67.8 |
+| Intense Blue, Castle Arts Premium Soft Touch | `#0076ad` | 8.38B | +2 | 57.4 |
+| Spectrum Blue, Holbein | `#0069b2` | 1.33PB | +2 | 46.0 |
+| Brilliant Blue, Derwent Chromaflow | `#006dab` | 1.27PB | +3 | 47.0 |
+| Cerulean Blue Middle, Castle Arts Premium Soft Touch | `#0096da` | 9.71B | +17 | 59.3 |
+| True Blue, Newell Prismacolor | `#0083cd` | 1.7PB | +17 | 48.4 |
+| **Cerulean Blue, Castle Arts Premium Soft Touch** | `#0088d6` | 1.33PB | **+17** | **51.0** |
+| Cerulean Blue [hue], Holbein | `#0082cf` | 1.45PB | +18 | 49.4 |
+
+Four candidates gained +17/+18 book-scope coverage, well clear of
+everything else tested — a bigger single-anchor gain than the Warm Blue
+fix's own +3. None of them rescued the still-failing shade-greens cluster
+(Pthalo/Jungle/Peacock Green etc.), confirming that failure is the
+arc→black construction problem, not Cool Blue's placement.
+
+Checked the gain isn't a numbers-only illusion before locking it in (Ray's
+challenge: "if we move it more PB, no pencils will be captured anyway?").
+Diffed the exact book-scope fit sets old vs new: **23 gained, 6 lost, net
++17.** 21 of the 23 gained are real blues at hue 243–310° — Light
+Ultramarine, Sky Blue ×2, Middle Phthalo Blue, Lapis Blue, Blue Orchid,
+Cobalt Blue 10%/Deep/Hue, Smalt Blue, Cerulean Blue ×3 variants, Primary
+Blue, Blue Violet Lake, Blue Lake, Non-Photo Blue, Light Cerulean Blue —
+exactly the real cobalt/ultramarine/phthalo-blue pencils that sit in the
+hue gap *between* the old Cool Blue (238°) and Warm Blue (305°), with
+nowhere to land until that gap got filled in. The 6 lost are all real
+greens (hue 159–199°: Dark Phthalo Green, Tropical Rain, Peridot, Dark
+Sap Green, Castle Green Deep, Grass Green) that drift just outside
+threshold as the YgB arc's green midpoint shifts slightly. A genuine,
+specific trade, not cosmetic rebalancing.
+
+Picked Castle Arts Premium Soft Touch's "Cerulean Blue" over the
+numerically-tied Holbein "Cerulean Blue [hue]" — same pigment name as the
+outgoing anchor, just the better-calibrated real sample; Ray's call after
+comparing swatches ("very similar though, give it a go"). **Locked in as
+the new canonical Cool Blue.** Old data backed up to
+`data/history/*_PRECOOLBLUEFIX_backup.json`.
+
+Net effect: book-scope 785→**802** (+17, 68.3%→69.7%), combined
+862→**881** (+19, 66.6%→68.1%). Also tightens the Warm/Cool Blue family
+split: ΔE to Warm Blue drops from 64.4 to 51.0, hue separation from 67.1°
+to 47.3° — Cool Blue sits just inside Munsell PB (1.33PB) rather than B,
+close enough to the B/PB boundary that it still reads as the cooler,
+cyan-leaning end against Warm Blue's violet-leaning 9.59PB. The full
+tint+shade+pure sweep across the non-neutral never-fit taxonomy (now 253
+after also excluding 4 confirmed-fluorescent pencils, see below) went to
+**228/253 (90.1%)**, 25 genuinely unexplained.
+
+## Fluorescent pencils excluded from the taxonomy (2026-10-19)
+
+Luminous Rose, Luminous Opera (Holbein) and Neon Yellow, Neon Pink
+(Newell Prismacolor) dropped from `never_fit_taxonomy.json` entirely —
+confirmed fluorescent/emissive pigments (literal "Neon"/"Luminous"
+branding; Neon Yellow's own Lab chroma runs 17.6× its Munsell chroma, see
+the fluorescent-pigment section below), not pigments that mix by ordinary
+subtractive colour theory. Out of scope for this model rather than
+unsolved. Same mechanism as `DROPPED_RANGES` in
+`classify_never_fit_taxonomy.cjs` — see `EXCLUDED_FLUORESCENT` there.
 
 ## Open items (read this part)
 

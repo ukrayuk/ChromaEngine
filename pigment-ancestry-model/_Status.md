@@ -9,10 +9,52 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-19 (this session, after the Warm Blue anchor
-correction — 227/257, 88.3%, now explained)
+**Last updated:** 2026-10-19 (this session, after the Cool Blue anchor
+correction and fluorescent-pencil exclusion — 228/253, 90.1%, now
+explained; Level 1 diagrams regenerated and sent to Ray)
 
-## Current state — MILESTONE: Warm Blue moved to a real pencil, 227/257 non-neutral never-fit pencils now explained
+## Current state — MILESTONE: all six primary anchors now real pencils, 228/253 non-neutral never-fit pencils now explained
+
+- **Cool Blue anchor corrected (2026-10-19, same day as Warm Blue)**:
+  Cerulean Blue, Castle Arts Gold (`#0082b5`, 6.77B 4.78/10.78,
+  gamut-clipped, only ever gamut-corrected not re-picked) replaced with
+  **Cerulean Blue, Castle Arts Premium Soft Touch (`#0088d6`, 1.33PB
+  5.17/13.15, also gamut-clipped, trueLab-corrected)**. Prompted by Ray
+  noticing the dE between the two blue anchors had grown a lot once Warm
+  Blue became real (37.1->53.3 hex, 48.6->64.4 true Lab). Tested real
+  B/PB candidates the same two-axis way: four gained +17/+18 book-scope
+  coverage, well clear of everything else, none rescuing the
+  shade-greens cluster (confirms that's the arc->black problem, not Cool
+  Blue placement). Checked the gain wasn't a numbers-only illusion (Ray's
+  challenge: "if we move it more PB, no pencils will be captured
+  anyway?") by diffing the exact fit sets: **23 gained, 6 lost, net
+  +17** -- 21 of the 23 gained are real blues at hue 243-310deg (Light
+  Ultramarine, Lapis Blue, Cobalt Blue 10%/Deep/Hue, Cerulean Blue x3
+  variants, etc.) that sat in the gap between the two blue anchors with
+  nowhere to land; the 6 lost are real greens (hue 159-199deg) that drift
+  just outside threshold as the YgB arc's green midpoint shifts. Picked
+  Premium Soft Touch's own "Cerulean Blue" over the numerically-tied
+  Holbein "Cerulean Blue [hue]" -- Ray's call after swatch comparison
+  ("very similar though, give it a go"), same pigment name as the
+  outgoing anchor. Full writeup and candidate table: README "Cool Blue
+  correction". Coverage: book-scope 785->**802** (+17, 68.3%->69.7%),
+  combined 862->**881** (+19, 66.6%->68.1%). Also tightens the blue
+  family split: dE to Warm Blue 64.4->51.0, hue separation 67.1deg->
+  47.3deg. Old data backed up to `data/history/*_PRECOOLBLUEFIX_backup.json`.
+
+- **Fluorescent pencils excluded from the taxonomy (2026-10-19)**:
+  Luminous Rose, Luminous Opera (Holbein), Neon Yellow, Neon Pink (Newell
+  Prismacolor) dropped entirely from `never_fit_taxonomy.json` -- Ray's
+  call, confirmed fluorescent/emissive (literal "Neon"/"Luminous"
+  branding), out of scope for a reflective-pigment mixing model rather
+  than unsolved. Taxonomy denominator drops from 368 to 364 (257->253
+  non-neutral).
+
+- Full value-shifted sweep after both changes: **228/253 (90.1%)**, 25
+  genuinely unexplained (12 shade-greens, 7 high-neon-chroma, 4 tint, 2
+  oversaturated) -- see "Open items" #9 below for the full list.
+
+## Previous milestone (2026-10-19): Warm Blue moved to a real pencil, 227/257 non-neutral never-fit pencils now explained
 
 - **Warm Blue anchor corrected (2026-10-19)**: synthetic (`#5f6bca`,
   Munsell-derived, never a real pencil) replaced with **Mauve Deep, Castle
@@ -289,47 +331,46 @@ prototype below).
    section above). What's still open: actually plotting real rescued
    pencils ON the ring diagram itself (https://claude.ai/artifact/Qz8hLXeMAHTGT8UUiuQuTv,
    now v2 — half-width bands, 9 steps each side 0.1-0.9, regenerated
-   2026-10-19 against the new Warm Blue anchor, still scratchpad-only) so
+   2026-10-19 against the new Warm Blue anchor, now STALE again against
+   the same-day Cool Blue anchor change, still scratchpad-only) so
    Ray can see it visually rather than just as numbers. Also resolved this
    session: coarse-step testing confirmed the original 2-step (0.3/0.6)
    prototype genuinely drops real pencils through value gaps (65.3% vs
    96.6% at full 19-step resolution) — diminishing returns kick in hard
    past ~4 extra steps per side (90.3%, vs 65.3% at 2 steps), which is why
    the ring was rebuilt at 9 steps instead of settling for one more.
-8. **Shade-direction math — still a real, unfixed problem, but the Warm
-   Blue anchor fix (2026-10-19, see "Current state" above) took a big
-   bite out of it.** 13 of 39 shade pencils remain genuinely unexplained
-   (down from 27), after the blue-anchor cluster got resolved as an
-   anchor-accuracy problem rather than a direction problem. See
-   "Shade-direction investigation" above for the full writeup — the
-   underlying arc→black construction issue is unchanged and still applies
-   to whatever's left: not a coverage/resolution gap (adding Level 2/3
+8. **Shade-direction math — still a real, unfixed problem.** After both
+   blue-anchor fixes, 12 of 39 shade pencils remain genuinely unexplained
+   (down from 27 pre-Warm-Blue), all greens/teals (Jungle Green, Beryl/
+   Grass Green, Summer Green, Viridian, Pthalo Turquoise x2, Castle
+   Premium Soft Touch's Teal/Pthalo Green/Pthalo Green Light/Pthalo
+   Turquoise/Emerald/Castle Green) — see "Shade-direction investigation"
+   above for the full writeup. The underlying arc→black construction
+   issue is unchanged: not a coverage/resolution gap (adding Level 2/3
    barely helps) and not simply "wrong black colour" (tried bone black,
    tried Holbein's own near-neutral black, both made things worse or
    didn't help). The reverse test (lighten the real pencil, confirm it
    lands on the arc) works at 100% but isn't a shade MODEL, just a
-   validator. Whoever picks this up next should start from "can a shade
-   ladder be built from the reverse relationship instead," and should
-   re-pull the still-failing list first since it's shifted since this was
-   last written.
-9. **11 high-neon-chroma pencils still unexplained** (down from 14, then
-   17 before the gamut-clip fix — 15 total in the category now, down from
-   18, since Mauve Deep itself moved out when it became the new Warm Blue
-   anchor on 2026-10-19 — an anchor trivially fits itself). Only 4 of the
-   original 20 in this category are actually named neon/luminous (Neon
-   Yellow, Luminous Rose, Luminous Opera, Luminous Green — all now
-   resolved or confirmed fluorescent); the rest (Fra Angelico Blue,
-   Hollywood Pink, two Ultramarines, Marigold, Summer Green, Brilliant
-   Yellow [resolved], Purple, Purple Light, French Rose, Cobalt Purple
-   [resolved], the Castle Arts Gold "Mauve Deep" — true Munsell P family,
-   genuinely purple, not the one that became the anchor, Violet Blue)
-   read as genuinely strong conventional pigments, not special-effect
-   ones — Fra Angelico Blue specifically confirmed as one of
-   Faber-Castell's professional "new 20" Polychromos colours with their
-   TOP lightfastness rating (fluorescent pigments fade fast, so a top
-   lightfastness score argues against it being one). These are a real
-   gamut ceiling, not a classification error — not clear there's more to
-   do here without either more real spectral data or accepting the limit.
+   validator. Confirmed 2026-10-19 the Cool Blue candidate search doesn't
+   touch this cluster either (0/8 rescued by any candidate tested) — this
+   is purely a green/teal arc→black problem now, nothing to do with
+   either blue anchor. Whoever picks this up next should start from "can
+   a shade ladder be built from the reverse relationship instead."
+9. **7 high-neon-chroma pencils still unexplained** (down from 11 after
+   the Cool Blue fix, 10 total in the category now before the sweep —
+   down from 12 after the fluorescent exclusion removed Neon Yellow).
+   Fra Angelico Blue, Hollywood Pink, Ultramarine (Luminance), Marigold,
+   Purple, Purple Light, French Rose read as genuinely strong
+   conventional pigments, not special-effect ones — Fra Angelico Blue
+   specifically confirmed as one of Faber-Castell's professional "new 20"
+   Polychromos colours with their TOP lightfastness rating (fluorescent
+   pigments fade fast, so a top lightfastness score argues against it
+   being one). These are a real gamut ceiling, not a classification
+   error — not clear there's more to do here without either more real
+   spectral data or accepting the limit. Plus 4 "tint (too light)" and 2
+   "oversaturated" stragglers (Peacock Green, Peacock Blue) round out the
+   full 25 unexplained — see "Current state" above for the category
+   breakdown.
 10. **`RENDERING.md` is stale** (flagged 2026-10-16, never actioned) —
     still describes the Family 1 generation-ladder diagrams as having had
     their stroke/gap removed, when that whole experiment was reverted the
@@ -395,6 +436,29 @@ wanted" if asked again.
 
 ## Recent activity (newest first)
 
+- **2026-10-19 (later same day)**, `session_01X5dmXMWGXhLU1XoXY5WjKm`
+  (this session): **Cool Blue anchor correction** — Cerulean Blue, Castle
+  Arts Gold (`#0082b5`) replaced with Cerulean Blue, Castle Arts Premium
+  Soft Touch (`#0088d6`). Prompted by Ray noticing the dE between the two
+  blue anchors had grown a lot once Warm Blue became real. Tested real
+  B/PB candidates the same two-axis way as Warm Blue; four candidates
+  gained +17/+18 book-scope coverage. Ray pushed back hard on whether
+  this was a real gain or a numbers illusion ("if we move it more PB, no
+  pencils will be captured anyway?") — diffed the exact fit sets to
+  confirm: 23 gained (21 real blues filling the gap between the two
+  anchors), 6 lost (real greens drifting out), net +17, genuinely
+  specific not cosmetic. Picked Premium Soft Touch's own "Cerulean Blue"
+  over the numerically-tied Holbein one, Ray's call after a swatch
+  comparison. Book-scope 785->802 (+17), combined 862->881 (+19), full
+  value-shifted sweep 88.3%->90.1% (25 unexplained). Also excluded 4
+  confirmed-fluorescent pencils (Luminous Rose, Luminous Opera, Neon
+  Yellow, Neon Pink) from the taxonomy entirely, Ray's call. Regenerated
+  all three levels, the taxonomy, and the three Level 1 diagrams
+  (primary/equal/real-distance); sent Ray the PNGs and the list of all 25
+  remaining never-fit pencils by category. README and this file both
+  updated with the full writeup. Level 2 stacked-radial ring prototype
+  still needs re-regenerating against this anchor (flagged in Open Items
+  #7, not yet done).
 - **2026-10-19**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session):
   **Warm Blue anchor correction** — synthetic `#5f6bca` replaced with
   Mauve Deep, Castle Arts Premium Soft Touch (`#5a42ab`). Found by

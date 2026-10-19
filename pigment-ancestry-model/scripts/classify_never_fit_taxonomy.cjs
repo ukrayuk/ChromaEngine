@@ -11,8 +11,23 @@ const ROOT = require('path').join(__dirname, '..');
 // 1150 book-scope total - 771 book-scope fit), confirming that's all they
 // were contributing here.
 const DROPPED_RANGES = ['Derwent Drawing Pencils', 'Castle Arts Harmonious Collection'];
+// Ray's call (2026-10-19): Luminous Rose, Luminous Opera, Neon Yellow and
+// Neon Pink are confirmed fluorescent/emissive pigments (literal "Neon"/
+// "Luminous" branding, and Neon Yellow's own Lab chroma runs 17.6x its
+// Munsell chroma -- see README's fluorescent-pigment section), not pigments
+// that mix by ordinary subtractive colour theory. The model only covers
+// reflective pigment mixing, so these are out of scope rather than unsolved
+// -- dropped the same way as DROPPED_RANGES, not left in the taxonomy to be
+// chased.
+const EXCLUDED_FLUORESCENT = [
+  { range: "Holbein Artists' Colored Pencil", name: 'Luminous Rose' },
+  { range: "Holbein Artists' Colored Pencil", name: 'Luminous Opera' },
+  { range: 'Newell Brands Prismacolor Premier Soft Core Colored Pencils', name: 'Neon Yellow' },
+  { range: 'Newell Brands Prismacolor Premier Soft Core Colored Pencils', name: 'Neon Pink' },
+];
 const neverFit = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/never_fit_final_153.json')))
-  .filter(p => !DROPPED_RANGES.includes(p.range));
+  .filter(p => !DROPPED_RANGES.includes(p.range))
+  .filter(p => !EXCLUDED_FLUORESCENT.some(e => e.range === p.range && e.name === p.name));
 const L1 = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/level1_pure_rows.json')));
 const L2 = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/level2_cross_rows.json')));
 
