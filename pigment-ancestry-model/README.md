@@ -58,23 +58,24 @@ before) since Arc1 was never contributing. Old 4-arc data backed up at
 | Warm Yellow | `#ffd800` | Medium Cadmium Yellow (Imit.), Caran d'Ache Luminance 6901 | 4.68Y 8.69/13.41 |
 | Cool Yellow | `#e7ed46` | Cadmium Yellow Lemon, Faber-Castell Polychromos 9201 | 1.54GY 9.04/10.85 |
 | Cool Blue | `#0082b5` | Cerulean Blue, Castle Arts Gold | — |
-| Warm Blue | `#5f6bca` | synthetic (Munsell-derived) | 8PB 4.8/13 |
+| Warm Blue | `#5a42ab` | Mauve Deep, Castle Arts Premium Soft Touch | 9.59PB 3.57/13.86 |
 | Cool Red | `#c62d6a` | synthetic (Munsell-derived) | 8.25RP 4.5/14 |
 
-Why RoY/YgB use real pencils and BvR uses synthetic (Munsell/colour-science
-derived) anchors: compared all-real vs all-synthetic vs this mix against
-book-scope classification coverage — the mix won, and BvR's own coverage
-jumps substantially on synthetic anchors while RoY/YgB do best on their real
-ones. See `data/history/` for the two earlier BvR approaches that were
-tried and abandoned before landing here (below).
+Why RoY/YgB use real pencils and BvR (now partly) too: compared all-real vs
+all-synthetic vs this mix against book-scope classification coverage early
+on — the mix won at the time. BvR's Warm Blue has since also moved to a
+real pencil (see "Warm Blue correction" below, 2026-10-19); Cool Red is
+still the one fully synthetic anchor left. See `data/history/` for the two
+earlier BvR approaches that were tried and abandoned before landing here.
 
 **Current coverage** (ΔE≤15.3, `scripts/classify_coverage.cjs`):
-- Book-scope (9 ranges, 1150 pencils): 782/1150 = **68.0%**
-- Combined (11 ranges, 1294 pencils): 860/1294 = **66.5%**
+- Book-scope (9 ranges, 1150 pencils): 785/1150 = **68.3%**
+- Combined (11 ranges, 1294 pencils): 862/1294 = **66.6%**
 
-**Status (2026-10-15): all six anchors now locked**, including Cool
-Yellow — see the "Cool Yellow correction" writeup below for the full
-cause/trade-off, same pattern as the two Warm Yellow corrections.
+**Status (2026-10-19): five of six anchors locked on real pencils**,
+Cool Red the sole remaining synthetic one — see the "Warm Blue correction"
+writeup below for the full cause/trade-off, same by-eye-overrides-numbers
+pattern as Cool Yellow.
 
 ## Decision history (condensed)
 
@@ -91,9 +92,10 @@ cause/trade-off, same pattern as the two Warm Yellow corrections.
    while the actual colour is wrong — always confirm with a rendered
    swatch/diagram, not just the number. (Same lesson relearned below with
    Cool Yellow.)
-3. **Replaced BvR with a single synthetic arc** (current: Warm Blue
-   `#5f6bca` / Cool Red `#c62d6a`, Munsell-derived). This is what's locked
-   in now.
+3. **Replaced BvR with a single synthetic arc** (then: Warm Blue `#5f6bca`
+   / Cool Red `#c62d6a`, both Munsell-derived). Superseded 2026-10-19 —
+   Warm Blue moved to a real pencil, see "Warm Blue correction" below;
+   Cool Red is now the only fully synthetic anchor left.
 4. **Warm Yellow**: started as Yellow Ochre (`#f7c81e`, chroma 11.61,
    chosen by hue-precision-first search). Found a systematic cross-brand
    gap — every pencil range is missing a vivid "Cadmium Yellow"-type
@@ -229,6 +231,60 @@ a net **coverage gain**, not a cost: book-scope 771→**782** (+11,
 67.0%→68.0%), combined 846→**860** (+14, 65.4%→66.5%), no range lost
 ground anywhere. **Locked in as the new canonical Cool Yellow.**
 Old data backed up to `data/history/*_PRECOOLYELLOWFIX_backup.json`.
+
+## Warm Blue correction (2026-10-19) — RESOLVED, five of six anchors now on real pencils
+
+Previous: `#5f6bca` (synthetic, Munsell-derived, 8PB 4.8/13 — never a real
+pencil at all). Found while investigating the never-fit "shade" taxonomy:
+of 39 shade pencils, 24 sat in the 180–320° hue band spanning both blue
+anchors. Outside that band every single one (17/17) was already explained
+by the full tint+shade value-shifted search; inside it only 13/24 — and
+critically, the 11 still failing weren't spread across the band, they sat
+in a tight 288.8–311.8° window centred almost exactly on Warm Blue, not
+Cool Blue (whose neighbourhood was already clear after the gamut-clipping
+fix, see "Current state" in `_Status.md`). Unlike Cool Blue, Warm Blue had
+never been validated against a real pigment at all — pure colour-science
+construction from a Munsell target, never checked against a measured
+anchor.
+
+Tested real PB-family book-scope pencils near the target, same method as
+Cool Yellow — swap candidate in, regenerate all three levels, check both
+overall coverage and how many of the 11 cluster pencils rescue:
+
+| Candidate | Hex | Book coverage delta | Cluster rescued |
+|---|---|---|---|
+| Ultramarine, Caran d'Ache Luminance 6901 | `#1e5cda` | −17 | 10/11 |
+| Fra Angelico Blue, Faber-Castell Polychromos | `#2353ce` | −11 | 10/11 |
+| Lapis Blue, Derwent Chromaflow | `#1f5ac6` | −18 | 10/11 |
+| Cobalt Blue Hue, Newell Prismacolor | `#2561cc` | −13 | 10/11 |
+| **Mauve Deep, Castle Arts Premium Soft Touch** | `#5a42ab` | **+3** | **10/11** |
+| Ultra Blue, Holbein | `#445bba` | +2 | 8/11 |
+| Imperial Violet, Newell Prismacolor | `#5251a7` | +4 | 8/11 |
+| Purple Lake, Castle Arts Gold | `#685fbb` | +0 | 1/11 |
+| Dark Ultramarine Violet, Faber-Castell Polychromos | `#6062b3` | −9 | 0/11 |
+
+The strong blues rescue most of the cluster but cost real coverage
+elsewhere — too saturated/narrow, pulls the whole arc off balance. Mauve
+Deep is the only candidate that does both at once. **Same numbers-vs-eye
+pattern as Cool Yellow**: Ray's first reaction to a swatch comparison was
+"mauve deep is too purple" — but that swatch comparison included *two*
+different "Mauve Deep" pencils that exist in the dataset, Castle Arts
+Gold's (`#9f59b7`, true Munsell **P** family — genuinely too purple, never
+tested as a candidate) and Castle Arts Premium Soft Touch's (`#5a42ab`,
+Munsell **PB** family — the actual candidate). Once clarified which one
+was on the table, confirmed by eye as fine. **Locked in as the new
+canonical Warm Blue.** Old data backed up to
+`data/history/*_PREWARMBLUE_backup.json`.
+
+Net effect: book-scope 782→**785** (+3, 68.0%→68.3%), combined
+860→**862** (+2, 66.5%→66.6%) — modest on the coarse pure-arc number, as
+expected, since this is primarily a value-shifted-space fix. The real
+effect shows up there: the full tint+shade+pure sweep across the
+non-neutral never-fit taxonomy went from 209/257 (81.3%) to **227/257
+(88.3%)** — an 18-pencil gain from this one anchor swap, almost entirely
+on the shade side (14/41 → 26/39). Also incidentally resolves Mauve
+Deep's own prior standing as one of the never-fit high-neon-chroma
+pencils, since an anchor trivially fits itself.
 
 ## Open items (read this part)
 
@@ -486,6 +542,10 @@ itself, so Ch4 stays purely about hue. Not actioned yet — still at the
 scope before anything gets built as an actual figure.
 
 ### 2. The Level 2 cross-arc "rescue" method — a reusable technique
+**Worked example below is STALE as of 2026-10-19** — built against the
+pre-correction synthetic Warm Blue, the exact hex values (BvR arc point,
+final mix) will have shifted since the anchor change. The *method* is
+still valid, just needs re-running for current numbers before reuse.
 Worked example: target `#497249` (muted sage-green) doesn't fit the pure
 YgB arc at all, but fits **ΔE 8.7** on the `YgB × BvR — like` Level 2
 dataset. Recipe: YgB arc point at t=0.430 (G7) = `#49c454` (a vivid green,

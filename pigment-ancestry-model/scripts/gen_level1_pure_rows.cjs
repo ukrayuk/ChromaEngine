@@ -52,10 +52,36 @@ const { mixSpectral, mixSpectralTrueLab } = require(path.join(__dirname, '../lib
 // of a value already compressed by the hex round-trip. Vermilion and
 // Cadmium Yellow Lemon are both confirmed "in gamut" (real vs hex-derived
 // Lab match closely) -- no trueLab needed, nothing to correct.
+//
+// 2026-10-19: Warm Blue swapped from synthetic (8PB 4.8/13, #5f6bca) to a
+// real pencil -- Mauve Deep, Castle Arts Premium Soft Touch (#5a42ab,
+// 9.59PB 3.57/13.86). Found while investigating why "shade" never-fit
+// pencils clustered so heavily around the two blue anchors: of 39 shade
+// pencils, 24 sat in the 180-320deg hue band spanning both; outside that
+// band every single one (17/17) was already rescued by the full
+// tint+shade search, but inside it only 13/24 -- and the 11 still
+// failing all sat in a tight 288.8-311.8deg window centred on Warm Blue
+// specifically, not spread across the band. Unlike Cool Blue (just
+// gamut-corrected), Warm Blue had never been checked against a real
+// pigment at all -- it was built from a Munsell target, never validated.
+// Tested real PB-family candidates near that target the same way as the
+// Cool Yellow fix: most strong blues (Ultramarine, Lapis Blue, Cobalt
+// Blue Hue, Fra Angelico Blue) rescued most of the cluster (8-10/11) but
+// COST book-scope coverage (-9 to -18) -- too saturated/narrow, pulled
+// the whole arc off balance. Mauve Deep is the one candidate that did
+// both: rescued 10/11 of the cluster AND gained book-scope coverage
+// (782->785, +3) -- same "numbers alone would have picked the wrong one"
+// pattern as Cool Yellow (Ray rejected the castle Arts GOLD range's
+// "Mauve Deep", #9f59b7, true Munsell P family, genuinely too purple --
+// confirmed the PREMIUM SOFT TOUCH range's "Mauve Deep", #5a42ab,
+// Munsell PB family not P, by eye against a swatch comparison). Also
+// closes out Mauve Deep's own prior standing as one of the 14 unresolved
+// high-neon-chroma never-fit pencils, since an anchor trivially fits
+// itself.
 const ARCS = {
   'Red-Yellow (Orange)': { P1: { name: 'Vermilion — Warm Red', hex: '#e3212f' }, P2: { name: 'Medium Cadmium Yellow (Imit.), Caran d\'Ache Luminance 6901 — Warm Yellow', hex: '#ffd800', trueLab: [87.26, -2.24, 94.56] } },
   'Yellow-Blue (Green)': { P1: { name: 'Cadmium Yellow Lemon, Faber-Castell Polychromos 9201 — Cool Yellow', hex: '#e7ed46' }, P2: { name: 'Cerulean Blue — Cool Blue', hex: '#0082b5', trueLab: [48.74, -24.69, -38.99] } },
-  'Blue-Red (Violet)':   { P1: { name: 'Warm Blue (synthetic) — 8PB 4.8/13', hex: '#5f6bca' }, P2: { name: 'Cool Red (synthetic) — 8.25RP 4.5/14', hex: '#c62d6a' } },
+  'Blue-Red (Violet)':   { P1: { name: 'Mauve Deep, Castle Arts Premium Soft Touch — Warm Blue', hex: '#5a42ab' }, P2: { name: 'Cool Red (synthetic) — 8.25RP 4.5/14', hex: '#c62d6a' } },
 };
 const MAXGEN = 8;
 

@@ -9,10 +9,38 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-18 (this session, after the gamut-clipped
-anchor fix and the full tint/shade/pure value-shifted sweep)
+**Last updated:** 2026-10-19 (this session, after the Warm Blue anchor
+correction — 227/257, 88.3%, now explained)
 
-## Current state — MILESTONE: gamut-clipped anchors corrected, 209/257 non-neutral never-fit pencils now explained
+## Current state — MILESTONE: Warm Blue moved to a real pencil, 227/257 non-neutral never-fit pencils now explained
+
+- **Warm Blue anchor corrected (2026-10-19)**: synthetic (`#5f6bca`,
+  Munsell-derived, never a real pencil) replaced with **Mauve Deep, Castle
+  Arts Premium Soft Touch (`#5a42ab`, 9.59PB 3.57/13.86)**. Found by
+  noticing the never-fit "shade" taxonomy clustered heavily (24/39) in the
+  180-320deg hue band spanning both blue anchors, and that outside that
+  band every single shade pencil (17/17) was already explained by the
+  value-shifted search while inside it only 13/24 were -- the 11 still
+  failing sat in a tight 288.8-311.8deg window centred on Warm Blue
+  specifically, not Cool Blue (whose neighbourhood was already clear after
+  the gamut-clip fix). Tested real PB-family candidates the same way as
+  Cool Yellow: strong blues (Ultramarine, Lapis Blue, Fra Angelico Blue,
+  Cobalt Blue Hue) rescued 10/11 of the cluster but cost book-scope
+  coverage (-9 to -18); Mauve Deep is the one that both rescued 10/11 AND
+  gained coverage (+3). Same numbers-vs-eye pattern as Cool Yellow: Ray's
+  first look at a swatch comparison said "too purple" -- turned out to be
+  a mix-up between two different "Mauve Deep" pencils in the dataset
+  (Castle Arts Gold's, `#9f59b7`, genuinely Munsell **P** family; Castle
+  Arts Premium Soft Touch's, `#5a42ab`, Munsell **PB** -- the actual
+  candidate), confirmed fine once clarified which one was on the table.
+  Full writeup and candidate table: README "Warm Blue correction".
+  Coverage: book-scope 782->**785** (+3, 68.0%->68.3%), combined
+  860->**862** (+2, 66.5%->66.6%). Full value-shifted sweep: **209/257
+  (81.3%) -> 227/257 (88.3%)**, an 18-pencil gain, almost entirely on the
+  shade side (14/41 -> 26/39 -- see updated breakdown below). Old data
+  backed up to `data/history/*_PREWARMBLUE_backup.json`.
+
+## Previous milestone (2026-10-18): gamut-clipped anchors corrected, 209/257 non-neutral never-fit pencils explained
 
 - **Two of the four real-pencil Level 1 anchors were sRGB-gamut-clipped**
   (Warm Yellow, Cool Blue — confirmed via `master.json`'s own
@@ -92,7 +120,17 @@ anchor fix and the full tint/shade/pure value-shifted sweep)
   confirmed this cloud session is the only one he's used. No concurrent-
   edit risk from a second session; don't assume one exists.
 
-## Shade-direction investigation (2026-10-17/18) — real problem identified, not yet fixed
+## Shade-direction investigation (2026-10-17/18) — real problem identified; partly resolved 2026-10-19 (anchor, not the math itself)
+
+**Update 2026-10-19**: the cluster of shade failures sitting right at the
+blue anchors turned out to be an anchor-accuracy problem, not the
+arc→black direction problem this section describes — see "Current state"
+above and README "Warm Blue correction". Fixing Warm Blue rescued 12 of
+the shade pencils in that cluster (14/41 → 26/39). The DIRECTION problem
+documented below is still real and still unfixed for whatever's left —
+the Warm Blue fix explains why so many failures happened to sit in that
+one hue neighbourhood, it doesn't touch the underlying arc→black
+construction issue for shades elsewhere on the wheel.
 
 Extensive testing this session on why shade (arc → black) rescues so much
 worse than tint (arc → white): L1-only 28.2% (11/39), L1+L2 33.3%
@@ -165,13 +203,18 @@ prototype below).
    read grey, not pastel — checked 2.5 instead, it's worse): True
    Achromatic 0-1 (54), Near-Neutral 1-2 (28), Earth-Adjacent 2-3 (29) —
    **111/368 (30.2%)**.
-   **Categories as of 2026-10-18** (after the gamut-clipped anchor fix and
-   the new hue-gap+tint combo category — see sections above; the
-   2026-10-15 numbers below this paragraph are now stale, kept for
-   history): tint 141 (38.3%), shade 41 (11.1%), hue gap + tint (combo) 32
-   (8.7%), high-neon chroma 18 (4.9%), tone 10 (2.7%), hue gap 6 (1.6%),
-   low chroma 5 (1.4%), hue gap (unreliable match) 3 (0.8%),
-   undersaturated 1 (0.3%, still just Mustard).
+   **Categories as of 2026-10-19** (after the Warm Blue anchor correction
+   — see "Current state" above; the 2026-10-18 and 2026-10-15 numbers
+   below this paragraph are now stale, kept for history): tint 146
+   (39.7%), shade 39 (10.6%), hue gap + tint (combo) 28 (7.6%), high-neon
+   chroma 15 (4.1%), tone 13 (3.5%), hue gap 8 (2.2%), hue gap (unreliable
+   match) 4 (1.1%), low chroma 2 (0.5%), undersaturated 1 (0.3%),
+   oversaturated 1 (0.3%, a category that had sat empty since 2026-10-15,
+   now has its first member again from the anchor shift).
+   **2026-10-18 numbers (stale):** tint 141 (38.3%), shade 41 (11.1%), hue
+   gap + tint (combo) 32 (8.7%), high-neon chroma 18 (4.9%), tone 10
+   (2.7%), hue gap 6 (1.6%), low chroma 5 (1.4%), hue gap (unreliable
+   match) 3 (0.8%), undersaturated 1 (0.3%).
    **2026-10-15 numbers (stale, pre-anchor-fix, pre-combo-category):** tint
    47.8% (176), shade 10.6% (39), high-neon 5.4% (20), tone 1.9% (7), hue
    gap 1.9% (7), low chroma 1.1% (4), hue gap (unreliable match) 0.8% (3),
@@ -246,38 +289,43 @@ prototype below).
    section above). What's still open: actually plotting real rescued
    pencils ON the ring diagram itself (https://claude.ai/artifact/Qz8hLXeMAHTGT8UUiuQuTv,
    now v2 — half-width bands, 9 steps each side 0.1-0.9, regenerated
-   against the corrected anchor data, still scratchpad-only) so Ray can
-   see it visually rather than just as numbers. Also resolved this
+   2026-10-19 against the new Warm Blue anchor, still scratchpad-only) so
+   Ray can see it visually rather than just as numbers. Also resolved this
    session: coarse-step testing confirmed the original 2-step (0.3/0.6)
    prototype genuinely drops real pencils through value gaps (65.3% vs
    96.6% at full 19-step resolution) — diminishing returns kick in hard
    past ~4 extra steps per side (90.3%, vs 65.3% at 2 steps), which is why
    the ring was rebuilt at 9 steps instead of settling for one more.
-8. **Shade-direction math — real problem identified this session, not yet
-   fixed.** See "Shade-direction investigation" section above for the
-   full writeup. 27 of 41 shade pencils remain genuinely unexplained;
-   confirmed it's not a coverage/resolution gap (adding Level 2/3 barely
-   helps) and not simply "wrong black colour" (tried bone black, tried
-   Holbein's own near-neutral black, both made things worse or didn't
-   help) — it's the arc→black construction direction itself that doesn't
-   match how real pigments darken. The reverse test (lighten the real
-   pencil, confirm it lands on the arc) works at 100% but isn't a shade
-   MODEL, just a validator. Whoever picks this up next should start from
-   "can a shade ladder be built from the reverse relationship instead."
-9. **14 high-neon-chroma pencils still unexplained even after the
-   gamut-clipped anchor fix.** Down from 17 before the fix (3 more
-   captured: Perylene Brown, Mauve Deep, Cobalt Purple pre-fix; Luminous
-   Green and Brilliant Yellow post-fix, both via the PURE arc directly
-   with no tint/shade needed — direct confirmation the arc's own gamut
-   genuinely expanded). Only 4 of the original 20 in this category are
-   actually named neon/luminous (Neon Yellow, Luminous Rose, Luminous
-   Opera, Luminous Green — all now resolved or confirmed fluorescent);
-   the rest (Fra Angelico Blue, Hollywood Pink, two Ultramarines, Marigold,
-   Summer Green, Brilliant Yellow [now resolved], Purple, Purple Light,
-   French Rose, Cobalt Purple [resolved], Mauve Deep x2 [one resolved],
-   Violet Blue) read as genuinely strong conventional pigments, not
-   special-effect ones — Fra Angelico Blue specifically confirmed as one
-   of Faber-Castell's professional "new 20" Polychromos colours with their
+8. **Shade-direction math — still a real, unfixed problem, but the Warm
+   Blue anchor fix (2026-10-19, see "Current state" above) took a big
+   bite out of it.** 13 of 39 shade pencils remain genuinely unexplained
+   (down from 27), after the blue-anchor cluster got resolved as an
+   anchor-accuracy problem rather than a direction problem. See
+   "Shade-direction investigation" above for the full writeup — the
+   underlying arc→black construction issue is unchanged and still applies
+   to whatever's left: not a coverage/resolution gap (adding Level 2/3
+   barely helps) and not simply "wrong black colour" (tried bone black,
+   tried Holbein's own near-neutral black, both made things worse or
+   didn't help). The reverse test (lighten the real pencil, confirm it
+   lands on the arc) works at 100% but isn't a shade MODEL, just a
+   validator. Whoever picks this up next should start from "can a shade
+   ladder be built from the reverse relationship instead," and should
+   re-pull the still-failing list first since it's shifted since this was
+   last written.
+9. **11 high-neon-chroma pencils still unexplained** (down from 14, then
+   17 before the gamut-clip fix — 15 total in the category now, down from
+   18, since Mauve Deep itself moved out when it became the new Warm Blue
+   anchor on 2026-10-19 — an anchor trivially fits itself). Only 4 of the
+   original 20 in this category are actually named neon/luminous (Neon
+   Yellow, Luminous Rose, Luminous Opera, Luminous Green — all now
+   resolved or confirmed fluorescent); the rest (Fra Angelico Blue,
+   Hollywood Pink, two Ultramarines, Marigold, Summer Green, Brilliant
+   Yellow [resolved], Purple, Purple Light, French Rose, Cobalt Purple
+   [resolved], the Castle Arts Gold "Mauve Deep" — true Munsell P family,
+   genuinely purple, not the one that became the anchor, Violet Blue)
+   read as genuinely strong conventional pigments, not special-effect
+   ones — Fra Angelico Blue specifically confirmed as one of
+   Faber-Castell's professional "new 20" Polychromos colours with their
    TOP lightfastness rating (fluorescent pigments fade fast, so a top
    lightfastness score argues against it being one). These are a real
    gamut ceiling, not a classification error — not clear there's more to
@@ -347,6 +395,25 @@ wanted" if asked again.
 
 ## Recent activity (newest first)
 
+- **2026-10-19**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session):
+  **Warm Blue anchor correction** — synthetic `#5f6bca` replaced with
+  Mauve Deep, Castle Arts Premium Soft Touch (`#5a42ab`). Found by
+  noticing the never-fit shade taxonomy clustered heavily around both
+  blue anchors and, once Cool Blue's neighbourhood was checked, that the
+  remaining cluster sat in a tight 23deg window centred on Warm Blue
+  specifically. Tested real PB-family candidates the same way as Cool
+  Yellow; most strong blues rescued the cluster but cost coverage
+  elsewhere, Mauve Deep was the one net gain on both counts. Repeated the
+  Cool Yellow "numbers vs eye" pattern almost exactly — Ray's first
+  reaction to a swatch was "too purple," which turned out to be a mix-up
+  between two different pencils both named "Mauve Deep" in the dataset;
+  confirmed fine once clarified which one. Book-scope 782->785 (+3),
+  combined 860->862 (+2), full value-shifted sweep 209/257 (81.3%) ->
+  227/257 (88.3%) -- an 18-pencil gain, almost entirely on the shade
+  side. Regenerated all three levels, the taxonomy, and every diagram
+  (scratchpad artifacts and the five repo-committed scripts); sent Ray
+  PNGs of all of them. README and this file both updated with the full
+  writeup.
 - **2026-10-18**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session):
   **gamut-clipped anchor fix** — found via `master.json`'s own
   `srgb_gamut_status` field that Warm Yellow and Cool Blue are clipped;
