@@ -587,6 +587,50 @@ against the Level 2 cross arcs in isolation, then Level 3, then the tint
 ladders, then look for a pattern across all of them together — this first
 pass was the proof of method.
 
+## Never-fit taxonomy staleness bug, found and fixed (2026-10-20)
+
+Ray spotted it directly: exporting a spreadsheet of the Level 1/2/3
+"caught" pencils alongside a spreadsheet of the never-fit taxonomy, the
+same pencil — Hooker's Green, Castle Arts Premium Soft Touch (`#244038`)
+— appeared in **both**, caught at Level 3 (ΔE≈14.9, under the 15.3
+threshold) and simultaneously filed as never-fit under "neutral
+(Earth-Adjacent)". That shouldn't be possible if both were being computed
+from the same current model.
+
+**Root cause**: `data/never_fit_final_153.json` — the source list that
+feeds `classify_never_fit_taxonomy.cjs` — was last regenerated at the
+Cool Yellow anchor fix (commit `6743cd1`, 2026-10-15) and never rebuilt
+since. Every anchor correction after that point (Warm Blue, Cool Blue,
+the true-Lab anchor rebuild, Cool Red) only reran the *categorization*
+script against this same frozen input, never refreshed which pencils
+actually fit under the new anchors. No script in the repo had ever
+regenerated this file from scratch — it was migrated whole from the
+pre-repo cloud session (see this file's opening line) and there was
+never a dedicated builder for it.
+
+**Scope of the drift**: wrote `scripts/build_never_fit_list.cjs` to
+regenerate it properly (same scope/threshold as `classify_coverage.cjs`:
+all 11 ranges, ΔE≤15.3 against L1∪L2 first, L3 fallback). Fresh count:
+**415 never-fit (was 434)** — 44 pencils that now genuinely fit moved out
+(mostly rescued by the Warm Blue/Cool Blue/Cool Red corrections), 25 that
+no longer fit moved in (expected — anchor swaps aren't purely additive,
+moving one shifts the whole geometry). Net −19, landing exactly on
+879/1294 combined — **this matches the coverage percentages already
+published everywhere in this README**, because `classify_coverage.cjs`
+has always computed its headline numbers directly from the live
+level1/2/3 data, bypassing this stale file entirely. **The bug only
+affected the per-pencil taxonomy breakdown and any spreadsheet built from
+it — not the coverage stats.** Reran `classify_never_fit_taxonomy.cjs`
+against the corrected list: taxonomy drops from 364 to 344 entries.
+Hooker's Green no longer appears anywhere in it. Old versions of both
+files backed up to `data/history/*_PRESTALENESSFIX_backup.json`.
+
+**Going forward**: run `node scripts/build_never_fit_list.cjs` then
+`node scripts/classify_never_fit_taxonomy.cjs`, in that order, after
+*any* anchor change — not just when a taxonomy category itself needs
+updating. The old pattern (relabel categories in place, leave the source
+list alone) is exactly how this drifted for five anchor fixes running.
+
 ## Open items (read this part)
 
 ### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing

@@ -2,7 +2,7 @@
 status: Active
 stage: anchor calibration complete, structural limits being proven and written up
 last_touched: 20 October 2026
-next_action: continue the blind human-vs-model validation test -- Level 2 cross arcs in isolation next, then Level 3, then tints, then map disagreement patterns across all of them; separately, investigate the 6 remaining stragglers (4 tint-too-light, 2 oversaturated) -- no mechanism found yet
+next_action: re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy (category membership shifted when the staleness bug was fixed -- the old "6" figure predates the fix and needs rechecking, not just restating); continue the blind human-vs-model validation test -- Level 2 cross arcs in isolation next, then Level 3, then tints, then map disagreement patterns across all of them
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,12 +17,45 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-20 (this session, after running the first
-blind human-vs-model validation test against Level 1 — the model's
-placements agree closely with Ray's own eye everywhere except two
-specific, explainable clusters, both confined to loose-ΔE pencils)
+**Last updated:** 2026-10-20 (this session, after Ray caught the same
+pencil appearing in both a "caught" export and a "never-fit" export,
+which traced back to a real staleness bug in the never-fit taxonomy's
+source data — now fixed)
 
-## Current state — MILESTONE: all six primary anchors now real pencils; the shade-greens limit is proven structural, not unsolved; 6 non-neutral pencils genuinely still open (down from 368); first blind validation test run against Level 1
+## Current state — MILESTONE: all six primary anchors now real pencils; the shade-greens limit is proven structural, not unsolved; never-fit taxonomy staleness bug found and fixed; the "genuinely unexplained" headline count needs re-derivation against the corrected data (see Open Items)
+
+- **Never-fit taxonomy staleness bug found and fixed (2026-10-20, Ray
+  caught it)**: exported spreadsheets of the Level 1/2/3 "caught"
+  pencils and of the never-fit taxonomy, and Ray noticed Hooker's Green
+  (Castle Arts Premium Soft Touch) in both -- caught at Level 3 and
+  simultaneously filed as never-fit "neutral (Earth-Adjacent)". Root
+  cause: `data/never_fit_final_153.json` (the source list the taxonomy
+  categorizer runs against) hadn't been regenerated since the Cool
+  Yellow anchor fix (2026-10-15) -- every anchor correction since (Warm
+  Blue, Cool Blue, the true-Lab anchor rebuild, Cool Red) only reran the
+  categorization script against this same frozen list, never refreshed
+  which pencils actually fit under the new anchors. No script in the
+  repo had ever built this file from scratch -- it was migrated whole
+  from the pre-repo cloud session. Wrote
+  `scripts/build_never_fit_list.cjs` to do that properly (same
+  scope/threshold as `classify_coverage.cjs`). Fresh count: 415 never-fit
+  (was 434) -- 44 pencils that now genuinely fit moved out, 25 that no
+  longer fit moved in, net -19, landing exactly on the 879/1294 combined
+  coverage already published everywhere -- confirming the headline
+  coverage stats were never wrong (`classify_coverage.cjs` always reads
+  live model data directly), only the per-pencil taxonomy breakdown and
+  anything built from it. Reran `classify_never_fit_taxonomy.cjs` against
+  the corrected list: taxonomy drops from 364 to 344 entries, Hooker's
+  Green no longer appears in it at all. Old files backed up to
+  `data/history/*_PRESTALENESSFIX_backup.json`. Full writeup: README
+  "Never-fit taxonomy staleness bug, found and fixed". **Not yet done**:
+  the "6 genuinely unexplained" headline figure was computed against the
+  OLD taxonomy and needs re-deriving against the corrected 344-entry one
+  -- category membership shifted (e.g. low chroma 4->6, chroma ceiling
+  7->6, shade-too-dark-non-structural 28->19), so the old number can't
+  just be restated. Going forward: run `build_never_fit_list.cjs` then
+  `classify_never_fit_taxonomy.cjs`, in that order, after any anchor
+  change.
 
 - **Blind human-vs-model validation test, Level 1 (2026-10-20)**: built
   three blank linear Level 1 arcs (A3-landscape) plus 60 ID-only colour
@@ -602,6 +635,29 @@ wanted" if asked again.
 
 ## Recent activity (newest first)
 
+- **2026-10-20 (later same day)**, `session_01X5dmXMWGXhLU1XoXY5WjKm`
+  (this session): **Found and fixed a never-fit taxonomy staleness bug**,
+  caught by Ray cross-referencing two exported spreadsheets (Level
+  catches vs never-fit taxonomy) and spotting the same pencil (Hooker's
+  Green, Castle Arts Premium Soft Touch) in both. Traced it to
+  `data/never_fit_final_153.json` not having been regenerated since the
+  Cool Yellow fix (2026-10-15) -- four anchor corrections since then only
+  reran the taxonomy categorizer against that same stale input, never
+  refreshed the underlying fit/no-fit list. Wrote
+  `scripts/build_never_fit_list.cjs` (didn't exist before -- the file was
+  migrated whole from the pre-repo session with no generator in this
+  repo) and reran it plus `classify_never_fit_taxonomy.cjs`. Net result:
+  415 never-fit (was 434, -19), taxonomy 344 entries (was 364). Confirmed
+  this didn't touch the published coverage percentages (802/1150,
+  879/1294 both unchanged -- `classify_coverage.cjs` always read live
+  data directly) -- only the per-pencil breakdown was stale. Old files
+  backed up to `data/history/*_PRESTALENESSFIX_backup.json`. Full
+  writeup in README. Rebuilt and resent Ray's Level-catches, low-chroma
+  and neutrals spreadsheet exports against the corrected data. Flagged
+  the "6 genuinely unexplained" headline figure as needing re-derivation
+  against the corrected taxonomy -- did not recompute it without being
+  sure of the exact prior methodology, left as an open item rather than
+  guess.
 - **2026-10-20 (later same day)**, `session_01X5dmXMWGXhLU1XoXY5WjKm`
   (this session): **Ran the first blind human-vs-model validation test**
   against Level 1. Built three blank A3-landscape linear arcs and 60
