@@ -441,6 +441,84 @@ touch that problem at all. **All six primary anchors are now real
 pencils, closing out the last item from the original "mix of real and
 synthetic" decision (see Decision history #3 above).**
 
+## YgB shade-greens — a proven structural limit, not an open search (2026-10-20)
+
+The 12 pencils left in the "shade (too dark)" category after the Cool
+Blue fix (Jungle Green, Beryl Green, Grass Green, Summer Green, Viridian,
+Pthalo Turquoise ×2, Castle Arts Premium Soft Touch's Teal Green/Pthalo
+Green/Pthalo Green Light/Pthalo Turquoise/Emerald Green/Castle Green)
+cannot be reached by any Yellow-Blue construction — real, synthetic, or
+hypothetical. This was tested exhaustively rather than assumed.
+
+**Where the problem sits.** Checked each of the 12 against the real,
+unmodified YgB arc at full resolution: every nearest match sits at t>0.5
+(the G1-to-Cool-Blue half), none in the Yellow-to-G1 half. Checked L2/L3
+cross-arcs directly against all 12: consistently 1.2–2.5× *worse* than
+the pure L1 arc, ruling out a third-family escape route — mixing in Red
+or Blue-Red just pulls hue further from where these greens sit.
+
+**What was tried on the anchors themselves, all ruled out:**
+- Per-arc dark mixing targets (a real saturated pigment per family —
+  Perylene Brown/Beryl Green/Bleu de Nîmes for RoY/YgB/BvR respectively,
+  correctly scoped) instead of mixing toward black: 0/12.
+- A self-generated darkened G1 as the shade target, several fractions:
+  0/12, no better than black.
+- Asynchronous value-drop on both Yellow and Blue (Yellow dropping
+  further than Blue — e.g. −15/−10): genuinely rescued **4/12** as pure
+  arc points (Jungle Green, Grass Green, Pthalo Green, Pthalo Green
+  Light), confirmed clean after finding and fixing a real bug in the test
+  harness (`colorFromTrueLab(...).toString()` produces an invalid string
+  when called outside a proper spectral.js mix on an extreme synthetic
+  Lab point, which then cascades NaN through roughly half a dyadic tree
+  if reused — fixed by always re-deriving from the true Lab at every
+  generation that touches an original anchor, not just generation 1; the
+  4/12 headline was unaffected either way).
+- A 315-combination grid over value-drop × hue-rotation on **both**
+  primaries together: still capped at exactly 4/12 throughout.
+- A theoretical chroma boost to 1.5× any real pencil's chroma (beyond
+  what any real pigment could supply, purely diagnostic): still 4/12,
+  and several pencils actually got *worse* with more chroma available.
+- Reparametrising the real, unmodified primaries at a different blend
+  ratio (same two anchors, "g" skewed from 50:50 toward more blue, Ray's
+  own proposed test): 0/12 — confirmed this just resamples points already
+  present on the same fixed curve, it can't add new colour information.
+- Rotating the Blue anchor's hue all the way to literal teal (185°):
+  doesn't help either. Traced the path directly — even with the anchor
+  sitting exactly at teal, the spectral mixing path is backloaded: it
+  only turns teal-hued in the last ~15–19% of its length, by which point
+  chroma has already collapsed (75→38 across that stretch).
+
+**The real shape of the problem**, visualised directly (hue vs
+lightness, real arc path vs all 12 targets): the 12 split into two
+genuinely different groups landing at nearly the same hue —
+
+| | hue | needs L |
+|---|---|---|
+| Pthalo Green, Pthalo Green Light | 179–187° | 40.0–41.5 |
+| Pthalo Turquoise ×2, Viridian, Beryl Green | 179–183° | 50.5–53.0 |
+| Jungle Green, Grass Green | 150–154° | 42.6–45.4 |
+| Castle Green, Summer Green, Emerald Green | 157–164° | 51.6–61.7 |
+
+A single arc can only hold one lightness value per hue. These pairs sit
+within 10° of each other in hue but 10–19 points apart in lightness —
+no construction, real or hypothetical, can pass through both halves of
+either split at once. Likely explanation: two genuinely different
+pigment chemistries (phthalocyanine-based "Pthalo"-named pigments vs
+chromium/cadmium-style greens) coincidentally sharing a hue — a real
+chemistry fact, not a modelling gap.
+
+**Conclusion**: closed, not open. Reclassify these 12 as a second
+structural-explanation category alongside the chroma ceiling and the
+neutral bands — a divergent path would be needed to reach them, and a
+divergent (forking) path cannot exist within a Level 1 arc without
+breaking the model's whole premise: each arc is a single deterministic
+two-primary blend, which is what makes the generation ladder, the tint
+ladder, and the Level 2/3 cross-arc construction all work the way they
+do. A fork would mean two different results from the same starting
+point depending on which branch is taken — not a mixing method a reader
+could actually use. Brings the live genuinely-unexplained count from 18
+to **6** (4 tint, 2 oversaturated — see Open Items below).
+
 ## Open items (read this part)
 
 ### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing

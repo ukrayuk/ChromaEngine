@@ -9,12 +9,38 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-20 (this session, after the Cool Red anchor
-correction — all six primary anchors now real pencils, 18 non-neutral
-pencils genuinely unexplained, down from 368 at the start of this whole
-investigation)
+**Last updated:** 2026-10-20 (this session, after proving the 12
+shade-greens are a structural limit rather than an open search — 6
+non-neutral pencils genuinely still open, down from 368 at the start of
+this whole investigation)
 
-## Current state — MILESTONE: all six primary anchors now real pencils, 18 non-neutral pencils genuinely unexplained (down from 368)
+## Current state — MILESTONE: all six primary anchors now real pencils; the shade-greens limit is proven structural, not unsolved; 6 non-neutral pencils genuinely still open (down from 368)
+
+- **YgB shade-greens proven a structural limit (2026-10-20)**: the 12
+  remaining shade failures (Jungle/Beryl/Grass/Summer/Viridian, Pthalo
+  Turquoise x2, Castle Premium Soft Touch's Teal/Pthalo Green/Pthalo
+  Green Light/Pthalo Turquoise/Emerald/Castle Green) cannot be reached by
+  any Yellow-Blue construction -- proven, not assumed. Plotting hue
+  against lightness for the real arc vs all 12 targets showed why: they
+  split into two groups landing at nearly the same hue (one needing
+  L~40-42, the other L~50-62, under 10deg apart) -- a single arc can only
+  hold one lightness per hue, so no construction, real or hypothetical,
+  reaches both. Confirmed exhaustively: a 315-combination grid over
+  value-drop x hue-rotation on both primaries capped at 4/12 throughout;
+  a theoretical 1.5x chroma boost past any real pencil still capped at
+  4/12 (several pencils got WORSE); reparametrising the real unmodified
+  primaries at a different blend ratio gave 0/12 (just resamples a fixed
+  curve); rotating Blue's hue all the way to literal teal didn't help
+  either (the mixing path is backloaded, chroma collapses before hue
+  arrives). L2/L3 tested directly against all 12: consistently 1.2-2.5x
+  worse than L1, ruling out a third-family escape route too. Likely
+  explanation: two genuinely different pigment chemistries (e.g.
+  phthalocyanine-based "Pthalo" names vs chromium/cadmium-style greens)
+  coincidentally sharing a hue. Full writeup: README "YgB shade-greens —
+  a proven structural limit, not an open search". This closes the
+  genuinely-unexplained count from 18 to **6** (the 12 shade-greens move
+  to explained-and-excluded, same treatment as neutrals, fluorescents and
+  the chroma ceiling) -- see Open Items #8 above.
 
 - **Cool Red anchor corrected (2026-10-20)**: synthetic (`#c62d6a`,
   Munsell-derived, 8.25RP 4.5/14, never a real pencil) replaced with
@@ -97,6 +123,8 @@ investigation)
   change than tonight's testing and needs its own session. None of this
   investigation changed any committed anchor or data file -- all
   scratchpad-only hypothesis testing.
+
+## Previous state (2026-10-20, earlier the same day): all six primary anchors now real pencils, 18 non-neutral pencils genuinely unexplained
 
 ## Previous state (2026-10-19, earlier the same day): five of six primary anchors now real pencils (corrected, was mis-stated as six here; Cool Red was still synthetic until 2026-10-20), 228/253 non-neutral never-fit pencils now explained
 
@@ -247,7 +275,21 @@ investigation)
   confirmed this cloud session is the only one he's used. No concurrent-
   edit risk from a second session; don't assume one exists.
 
-## Shade-direction investigation (2026-10-17/18) — real problem identified; partly resolved 2026-10-19 (anchor, not the math itself)
+## Shade-direction investigation (2026-10-17/18) — real problem identified; partly resolved 2026-10-19 (anchor, not the math itself); CLOSED 2026-10-20 (proven structural, not unsolved)
+
+**Update 2026-10-20**: the 12 shade-greens left after the Warm Blue fix
+(the ones this section's "DIRECTION problem... still unfixed" refers to)
+are now proven to be a structural limit of the YgB arc, not an open
+arc→black direction problem to keep chasing. See Open Items #8 above and
+README "YgB shade-greens — a proven structural limit, not an open
+search" for the full evidence trail. Short version: two real pigment
+families land at nearly the same hue needing very different lightness,
+which no single arc can straddle. This closes out the item the note
+below left open ("can a shade ladder be built from the reverse
+relationship instead") — the answer turned out to be no, not for this
+cluster, because the problem isn't the construction direction, it's that
+a single path can't do two lightness values at one hue regardless of
+which direction it's built in.
 
 **Update 2026-10-19**: the cluster of shade failures sitting right at the
 blue anchors turned out to be an anchor-accuracy problem, not the
@@ -424,23 +466,27 @@ prototype below).
    96.6% at full 19-step resolution) — diminishing returns kick in hard
    past ~4 extra steps per side (90.3%, vs 65.3% at 2 steps), which is why
    the ring was rebuilt at 9 steps instead of settling for one more.
-8. **Shade-direction math — still a real, unfixed problem.** After both
-   blue-anchor fixes, 12 of 39 shade pencils remain genuinely unexplained
-   (down from 27 pre-Warm-Blue), all greens/teals (Jungle Green, Beryl/
+8. **RESOLVED 2026-10-20 — the 12 shade-greens are a proven structural
+   limit of the YgB arc, not an unsolved search.** Jungle Green, Beryl/
    Grass Green, Summer Green, Viridian, Pthalo Turquoise x2, Castle
    Premium Soft Touch's Teal/Pthalo Green/Pthalo Green Light/Pthalo
-   Turquoise/Emerald/Castle Green) — see "Shade-direction investigation"
-   above for the full writeup. The underlying arc→black construction
-   issue is unchanged: not a coverage/resolution gap (adding Level 2/3
-   barely helps) and not simply "wrong black colour" (tried bone black,
-   tried Holbein's own near-neutral black, both made things worse or
-   didn't help). The reverse test (lighten the real pencil, confirm it
-   lands on the arc) works at 100% but isn't a shade MODEL, just a
-   validator. Confirmed 2026-10-19 the Cool Blue candidate search doesn't
-   touch this cluster either (0/8 rescued by any candidate tested) — this
-   is purely a green/teal arc→black problem now, nothing to do with
-   either blue anchor. Whoever picks this up next should start from "can
-   a shade ladder be built from the reverse relationship instead."
+   Turquoise/Emerald/Castle Green. Full writeup: README "YgB shade-greens
+   — a proven structural limit, not an open search". Short version: these
+   12 split into two real pigment families landing at nearly the same hue
+   (one group needing L~40-42, the other L~50-62, at hue differences
+   under 10deg) — a single arc can only hold one lightness per hue, so no
+   Yellow-Blue construction, real or hypothetical, can ever reach both at
+   once. Exhaustively tested: per-arc dark targets, darkened G1, a 315-
+   combination grid over value-drop x hue-rotation on both primaries
+   (capped at 4/12 throughout), a theoretical 1.5x chroma boost beyond any
+   real pencil (still capped at 4/12, several pencils got WORSE), blend-
+   ratio reparametrisation of the real unmodified primaries (0/12 -- just
+   resamples a fixed curve), and rotating the Blue anchor's hue all the
+   way to literal teal (the mixing path is backloaded, only turns teal in
+   the last ~15-19% of its length with chroma already collapsed by then).
+   L2/L3 cross-arcs tested directly against all 12: consistently 1.2-2.5x
+   WORSE than L1, confirms there's no escape route via a third family
+   either. Closed, not open -- nothing left to search for here.
 9. **RESOLVED 2026-10-20 — 7 "high-neon chroma" pencils reclassified as
    `chroma ceiling (exceeds anchor maximum)`, no longer counted as
    unexplained.** Fra Angelico Blue, Hollywood Pink, Ultramarine
@@ -451,8 +497,10 @@ prototype below).
    Confirmed nothing available raises the ceiling without cost (every
    anchor candidate tested that gained saturation this session cost -9 to
    -28 book-scope coverage). See "Current state" above and README
-   "Chroma ceiling category" for the full writeup. Remaining genuinely
-   unexplained: 18 (12 shade-greens, 4 tint, 2 oversaturated).
+   "Chroma ceiling category" for the full writeup. At this point:
+   18 remained (12 shade-greens, 4 tint, 2 oversaturated) -- the
+   shade-greens were then proven structural the same session (#8 above),
+   leaving **6 genuinely open** (4 tint, 2 oversaturated).
 10. **`RENDERING.md` is stale** (flagged 2026-10-16, never actioned) —
     still describes the Family 1 generation-ladder diagrams as having had
     their stroke/gap removed, when that whole experiment was reverted the
@@ -518,6 +566,41 @@ wanted" if asked again.
 
 ## Recent activity (newest first)
 
+- **2026-10-20 (later same day)**, `session_01X5dmXMWGXhLU1XoXY5WjKm`
+  (this session): **Proved the 12 shade-greens are a structural limit of
+  the YgB arc**, not an open search. Started from Ray's observation that
+  nearest matches were geometrically confined to the G1-to-Blue half of
+  the real arc (confirmed: all 12 at t>0.5, none in the Yellow-to-G1
+  half). Tried and ruled out in sequence: per-arc dark mixing targets
+  (Perylene Brown/Beryl Green/Bleu de Nimes, properly scoped -- 0/12);
+  a self-generated darkened G1 (0/12); asynchronous value-drop on both
+  Yellow and Blue, which genuinely rescued 4/12 as pure arc points (found
+  and fixed a real bug along the way in a scratchpad test harness,
+  `colorFromTrueLab` producing an invalid string when stringified outside
+  a proper spectral.js mix, cascading NaN through half a dyadic tree --
+  confirmed the 4/12 result unaffected); a 315-combination grid over
+  value-drop x hue-rotation on both primaries together (still capped at
+  4/12); a theoretical chroma boost to 1.5x any real pencil (still 4/12,
+  several pencils got WORSE); reparametrising the real unmodified
+  primaries at a different blend ratio, Ray's own proposed test (0/12 --
+  confirmed this just resamples a fixed curve, can't add new information);
+  rotating Blue's hue all the way to literal teal (doesn't help -- the
+  spectral mixing path is backloaded, only turns teal in the last
+  15-19% of its length with chroma already collapsed). Checked L2/L3
+  cross-arcs directly against all 12: consistently 1.2-2.5x worse than
+  L1, ruling out a third-family escape route. Built a hue-vs-lightness
+  chart (real arc path vs all 12 targets) that made the real shape of the
+  problem visible: the 12 split into two groups landing at nearly the
+  same hue needing very different lightness (e.g. Pthalo Green/Pthalo
+  Green Light need L~40-41.5, Pthalo Turquoise/Viridian/Beryl Green need
+  L~50-53, at hue within 10deg of each other) -- a single arc can only
+  hold one lightness value per hue, so no construction can ever reach
+  both groups regardless of where the anchors sit. Likely explanation:
+  two genuinely different pigment chemistries (phthalocyanine-based
+  "Pthalo" names vs chromium/cadmium-style greens) coincidentally sharing
+  a hue. Full writeup in README; closes genuinely-unexplained count from
+  18 to 6. All testing was scratchpad-only hypothesis work -- no
+  committed data file changed.
 - **2026-10-20**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session):
   **Cool Red anchor correction** — synthetic `#c62d6a` replaced with
   Middle Purple Pink, Faber-Castell Polychromos (`#c13074`), the last

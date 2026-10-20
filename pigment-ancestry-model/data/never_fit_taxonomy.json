@@ -1210,7 +1210,7 @@
     "dL": -10.12846229320877,
     "dC": -0.7627858252703916,
     "dH": 16.205761981286855,
-    "category": "shade (too dark)"
+    "category": "structural limit (divergent path needed, cannot exist)"
   },
   {
     "maker": "Derwent",
@@ -1994,7 +1994,7 @@
     "dL": -3.1907188815882677,
     "dC": -1.0777175551915832,
     "dH": 1.594273034402903,
-    "category": "shade (too dark)"
+    "category": "structural limit (divergent path needed, cannot exist)"
   },
   {
     "maker": "Caran",
@@ -2015,7 +2015,7 @@
     "dL": -10.016354446106895,
     "dC": 0.747814931605852,
     "dH": 9.567708515919719,
-    "category": "shade (too dark)"
+    "category": "structural limit (divergent path needed, cannot exist)"
   },
   {
     "maker": "Caran",
@@ -3501,7 +3501,7 @@
     "dL": -1.0204809569298163,
     "dC": -0.3203553805375847,
     "dH": 0.39360669383989944,
-    "category": "shade (too dark)"
+    "category": "structural limit (divergent path needed, cannot exist)"
   },
   {
     "maker": "Holbein",
@@ -3522,7 +3522,7 @@
     "dL": -2.855440947679739,
     "dC": -0.5176062073493028,
     "dH": 2.2769271069294916,
-    "category": "shade (too dark)"
+    "category": "structural limit (divergent path needed, cannot exist)"
   },
   {
     "maker": "Holbein",
@@ -5011,7 +5011,7 @@
     "dL": -3.207731690301202,
     "dC": -0.6617772137024858,
     "dH": 2.3905111052930295,
-    "category": "shade (too dark)"
+    "category": "structural limit (divergent path needed, cannot exist)"
   },
   {
     "maker": "Castle",
@@ -5580,7 +5580,7 @@
     "dL": -1.713348266495771,
     "dC": 5.492797336957416,
     "dH": 3.8450619029926543,
-    "category": "shade (too dark)"
+    "category": "structural limit (divergent path needed, cannot exist)"
   },
   {
     "maker": "Castle",
@@ -5601,7 +5601,7 @@
     "dL": -5.519939077234092,
     "dC": 10.002473274482547,
     "dH": 9.942297211500062,
-    "category": "shade (too dark)"
+    "category": "structural limit (divergent path needed, cannot exist)"
   },
   {
     "maker": "Castle",
@@ -5622,7 +5622,7 @@
     "dL": -4.540411122283636,
     "dC": 9.181062431756203,
     "dH": 0.5525982804080343,
-    "category": "shade (too dark)"
+    "category": "structural limit (divergent path needed, cannot exist)"
   },
   {
     "maker": "Castle",
@@ -5643,7 +5643,7 @@
     "dL": -4.990692114786157,
     "dC": -1.5312278682085605,
     "dH": 2.897813534199173,
-    "category": "shade (too dark)"
+    "category": "structural limit (divergent path needed, cannot exist)"
   },
   {
     "maker": "Castle",
@@ -5727,7 +5727,7 @@
     "dL": -3.7690608041847327,
     "dC": 0.46633278347481166,
     "dH": 2.5563482488508953,
-    "category": "shade (too dark)"
+    "category": "structural limit (divergent path needed, cannot exist)"
   },
   {
     "maker": "Castle",
@@ -5748,7 +5748,7 @@
     "dL": -8.76058814600249,
     "dC": -0.7658662062660753,
     "dH": 5.640655125015371,
-    "category": "shade (too dark)"
+    "category": "structural limit (divergent path needed, cannot exist)"
   },
   {
     "maker": "Castle",
