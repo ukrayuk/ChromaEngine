@@ -519,6 +519,74 @@ point depending on which branch is taken — not a mixing method a reader
 could actually use. Brings the live genuinely-unexplained count from 18
 to **6** (4 tint, 2 oversaturated — see Open Items below).
 
+## Blind human-vs-model validation test (2026-10-20)
+
+First direct check of whether the model's nearest-point placements agree
+with a human eye, independent of the ΔE math. Design: three blank linear
+Level 1 arcs rendered large (A3-landscape proportions) with only the two
+endpoint labels shown, plus 60 colour swatches shown as plain squares
+carrying only an ID number — no name, no range, no computed position
+anywhere in the client-facing material (verified by inspecting the
+injected JSON). Samples were a stratified, seeded-shuffle selection
+(book-scope ranges, pure-L1-arc catches only) so the set couldn't be
+cherry-picked. Ray placed each swatch by eye on the matching arc with no
+knowledge of the model's own computed position, then positions were
+compared back against the private sample file afterward.
+
+**Result: strong agreement overall, with two consistent, explainable
+disagreement clusters** — not noise, not a methodology problem:
+
+1. **YgB, blue-leaning end (t≈0.75–0.90):** 6 pencils (Greenish Blue,
+   Turquoise Blue, Non-Photo Blue, Phthalo Green, Empire Green, Cobalt
+   Green) all placed by eye noticeably earlier (lower t, less blue) than
+   the model's own nearest point — consistently by about 0.15.
+2. **RoY, mid-arc (t≈0.23 vs 0.42):** 3 near-identical reds (Vermilion,
+   Burnt Ochre, Light Cadmium Red — all `#f5xxxx`) placed together by eye
+   at t≈0.42, while the model places all three together at t≈0.23 — same
+   ~0.19 gap, same pattern of moving as a block.
+
+**Ruled out as a general calibration problem.** Re-checked the opposite
+(yellow) end of YgB specifically, including the Cool Blue anchor's own
+placement: Cadmium Yellow Lemon (the anchor itself), three different
+Spring Green samples, Yellow Green, Luminous Lemon, Leaf Green Light, and
+Cerulean Blue (the Cool Blue anchor itself, placed at t=0.996 against a
+model value of 0.973) were **all within ~0.05 of the model**, most within
+0.02. So the disagreement isn't a left-right calibration drift and isn't
+about the endpoint anchors — it's specific to a handful of pencils.
+
+**The mechanism (Ray's observation, confirmed against the data): every
+single disagreement is a loose ΔE match (7.8–13.9); every tight match
+(ΔE below ~5) placed almost exactly where the model predicted, with zero
+exceptions found.** ΔE76 blends hue, chroma and lightness into one
+number, so the model can find a genuinely-lowest-distance point even when
+the hue itself has drifted, as long as lightness/chroma compensate for
+it. A human eye reads hue first — a pencil whose hue has drifted from the
+arc's hue at its true nearest point visually "belongs" further along,
+where the hue itself lines up, even though that isn't the lowest-ΔE
+point. This is independent, human-eye corroboration of the earlier
+concern about the ΔE≤15.3 threshold (see the conventional-interpretation-
+band discussion elsewhere in the project): pencils in the ΔE 10+ range —
+"not the same colour at all" on that scale — are exactly the ones a human
+notices don't quite belong, even before being told the number.
+
+**Methodology notes for anyone re-running this:** the first round-trip
+through Canva (export → re-import) was lossy enough to make pixel-exact
+position recovery unreliable, so the test pivoted to Ray reporting
+positions directly as plain decimals (0–1, read left-to-right exactly as
+printed on the canvas, left label = 0, right label = 1 — "side" words are
+a spoken sanity-check only, never a distance instruction). A later full
+screenshot was still useful for cross-validation via exact-hex pixel
+matching, filtered to the three known gradient-bar y-ranges to avoid both
+gradient-bleed-through false positives (the background bar itself
+matching within tolerance over a huge area) and the reference sheet's
+duplicate swatches sitting below the arcs.
+
+**Not yet done:** roughly a third of the 60 samples remain unplaced/
+unreported. Ray's plan for the next session: repeat the same blind test
+against the Level 2 cross arcs in isolation, then Level 3, then the tint
+ladders, then look for a pattern across all of them together — this first
+pass was the proof of method.
+
 ## Open items (read this part)
 
 ### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing

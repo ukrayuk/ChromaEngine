@@ -2,7 +2,7 @@
 status: Active
 stage: anchor calibration complete, structural limits being proven and written up
 last_touched: 20 October 2026
-next_action: investigate the 6 remaining stragglers (4 tint-too-light, 2 oversaturated) -- no mechanism found yet
+next_action: continue the blind human-vs-model validation test -- Level 2 cross arcs in isolation next, then Level 3, then tints, then map disagreement patterns across all of them; separately, investigate the 6 remaining stragglers (4 tint-too-light, 2 oversaturated) -- no mechanism found yet
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,12 +17,40 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-20 (this session, after proving the 12
-shade-greens are a structural limit rather than an open search — 6
-non-neutral pencils genuinely still open, down from 368 at the start of
-this whole investigation)
+**Last updated:** 2026-10-20 (this session, after running the first
+blind human-vs-model validation test against Level 1 — the model's
+placements agree closely with Ray's own eye everywhere except two
+specific, explainable clusters, both confined to loose-ΔE pencils)
 
-## Current state — MILESTONE: all six primary anchors now real pencils; the shade-greens limit is proven structural, not unsolved; 6 non-neutral pencils genuinely still open (down from 368)
+## Current state — MILESTONE: all six primary anchors now real pencils; the shade-greens limit is proven structural, not unsolved; 6 non-neutral pencils genuinely still open (down from 368); first blind validation test run against Level 1
+
+- **Blind human-vs-model validation test, Level 1 (2026-10-20)**: built
+  three blank linear Level 1 arcs (A3-landscape) plus 60 ID-only colour
+  swatches (stratified, seeded, book-scope, no identifying info visible)
+  and had Ray place each by eye with no knowledge of the model's own
+  computed position. Result: strong agreement overall, with two
+  consistent disagreement clusters, both loose-ΔE pencils moving together
+  as a block -- (1) 6 pencils at the YgB blue-leaning end (t~0.75-0.90),
+  model reading ~0.15 further toward blue than Ray's eye; (2) 3
+  near-identical reds in RoY (Vermilion/Burnt Ochre/Light Cadmium Red,
+  all `#f5xxxx`), model at t~0.23, Ray's eye at t~0.42. Ruled out a
+  general calibration problem by re-checking the opposite (yellow) end of
+  YgB and both arcs' own anchor placements -- all within ~0.05 of the
+  model, several near-exact. Mechanism (Ray's read, confirmed against the
+  data with zero exceptions): every disagreement is a loose ΔE match
+  (7.8-13.9); every tight match (ΔE below ~5) placed almost exactly where
+  the model predicted. ΔE76 blends hue+chroma+lightness into one number
+  so the model can find the true lowest-distance point even with hue
+  drift, compensating via lightness/chroma -- a human eye reads hue
+  first, so a drifted-hue pencil visually "belongs" further along where
+  the hue itself lines up. Independent human-eye corroboration of the
+  earlier ΔE<=15.3 threshold concern: ΔE 10+ pencils ("not the same
+  colour at all" on the conventional interpretation scale) are exactly
+  the ones a human notices don't quite belong. Roughly a third of the 60
+  samples still unplaced/unreported. Full writeup: README "Blind
+  human-vs-model validation test". Next session: repeat against Level 2
+  cross arcs in isolation, then Level 3, then tints, then map the pattern
+  across all of them.
 
 - **YgB shade-greens proven a structural limit (2026-10-20)**: the 12
   remaining shade failures (Jungle/Beryl/Grass/Summer/Viridian, Pthalo
@@ -574,6 +602,38 @@ wanted" if asked again.
 
 ## Recent activity (newest first)
 
+- **2026-10-20 (later same day)**, `session_01X5dmXMWGXhLU1XoXY5WjKm`
+  (this session): **Ran the first blind human-vs-model validation test**
+  against Level 1. Built three blank A3-landscape linear arcs and 60
+  ID-only swatches (stratified seeded sample, book-scope ranges, pure-L1
+  catches only, no identifying info in the client-facing material --
+  verified by grepping the injected JSON). Ray placed each by eye blind,
+  with positions reported back as plain 0-1 decimals read left-to-right
+  off the printed canvas (worked out a standard convention for this
+  mid-session after an early ambiguity in "[colour] side X" phrasing
+  caused one entry, Purplish Red/ID25, to be mis-logged and need
+  re-confirming). Cross-validated against a Canva screenshot via
+  exact-hex pixel matching (filtered to the three known bar y-ranges to
+  avoid gradient-bleed-through and reference-sheet-duplicate false
+  positives -- the same approach developed earlier this session). Found
+  strong agreement overall plus two consistent clusters: 6 pencils at the
+  YgB blue-leaning end placed ~0.15 earlier than the model by eye, and 3
+  near-identical reds in RoY placed as a block at t~0.42 against the
+  model's t~0.23. Ruled out general calibration drift by re-checking the
+  yellow end of YgB and both arcs' anchor placements directly (all within
+  ~0.05, several near-exact). Identified the mechanism with Ray: every
+  disagreement is a loose ΔE match (7.8-13.9ΔE), every tight match (ΔE
+  <~5) placed almost exactly where the model predicted, zero exceptions --
+  ΔE blends hue/chroma/lightness into one number so the model can find
+  the true lowest-distance point despite hue drift, but a human eye reads
+  hue first and gets visually misled by it. This independently
+  corroborates the earlier concern about the ΔE<=15.3 threshold (pencils
+  at ΔE 10+ are exactly the ones a human notices don't quite belong).
+  Full writeup in README. Roughly a third of the 60 samples remain
+  unplaced -- next session continues with Level 2 cross arcs in
+  isolation, then Level 3, then tints, then mapping the pattern across
+  all of them. No data pipeline files changed -- this was a validation
+  exercise against the existing model, scratchpad-only test materials.
 - **2026-10-20 (later same day)**, `session_01X5dmXMWGXhLU1XoXY5WjKm`
   (this session): **Proved the 12 shade-greens are a structural limit of
   the YgB arc**, not an open search. Started from Ray's observation that
