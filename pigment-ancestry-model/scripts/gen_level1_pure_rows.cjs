@@ -104,10 +104,29 @@ const { mixSpectral, mixSpectralTrueLab } = require(path.join(__dirname, '../lib
 // inside Munsell PB (1.33PB) rather than B -- close enough to the B/PB
 // boundary that it still reads as the cooler, cyan-leaning end against
 // Warm Blue's violet-leaning 9.59PB.
+//
+// 2026-10-20: Cool Red swapped from synthetic (Munsell-derived, 8.25RP
+// 4.5/14, never a real pencil) to Middle Purple Pink, Faber-Castell
+// Polychromos (#c13074, 6.39RP 4.46/13.88) -- Ray's call: "cannot have 5
+// pencil based and one not". This is the last of the six primary anchors
+// to move off a synthetic value; all six are now real pencils. Candidate
+// search: Ray's own first pick (Bengal Rose Deep, Castle Arts Gold,
+// #cb166a, 8.04RP 4.41/15.5) tested at -15 book-scope -- same pattern as
+// every other "more saturated real candidate" tried on the other
+// anchors, too strong, pulls the arc off balance. Scanned the wider RP/R
+// neighbourhood (hue 345-20deg, L 30-58, C>40 across the book ranges):
+// most candidates cost -11 to -19, only two tie the synthetic exactly at
+// +0 -- Middle Purple Pink and Fuchsia (Faber-Castell Polychromos,
+// #d83a70, 8.97RP 4.97/14.64). Picked Middle Purple Pink: numerically
+// tied with Fuchsia, but it's also the closer visual match to the
+// outgoing synthetic (L 45.2 vs 45.5, C 61.8 vs 62.8, hue 356.3 vs
+// 2.3deg -- barely 6deg apart), confirmed by Ray looking at the swatch
+// directly rather than the numbers alone, same by-eye-confirms-the-data
+// pattern as every other anchor fix this project.
 const ARCS = {
   'Red-Yellow (Orange)': { P1: { name: 'Vermilion — Warm Red', hex: '#e3212f' }, P2: { name: 'Medium Cadmium Yellow (Imit.), Caran d\'Ache Luminance 6901 — Warm Yellow', hex: '#ffd800', trueLab: [87.26, -2.24, 94.56] } },
   'Yellow-Blue (Green)': { P1: { name: 'Cadmium Yellow Lemon, Faber-Castell Polychromos 9201 — Cool Yellow', hex: '#e7ed46' }, P2: { name: 'Cerulean Blue, Castle Arts Premium Soft Touch — Cool Blue', hex: '#0088d6', trueLab: [52.59, -11.4, -51.84] } },
-  'Blue-Red (Violet)':   { P1: { name: 'Mauve Deep, Castle Arts Premium Soft Touch — Warm Blue', hex: '#5a42ab' }, P2: { name: 'Cool Red (synthetic) — 8.25RP 4.5/14', hex: '#c62d6a' } },
+  'Blue-Red (Violet)':   { P1: { name: 'Mauve Deep, Castle Arts Premium Soft Touch — Warm Blue', hex: '#5a42ab' }, P2: { name: 'Middle Purple Pink, Faber-Castell Polychromos 9201 — Cool Red', hex: '#c13074' } },
 };
 const MAXGEN = 8;
 

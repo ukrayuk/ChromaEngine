@@ -9,11 +9,31 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-20 (this session, after the chroma-ceiling
-taxonomy category — 18 non-neutral pencils genuinely unexplained, down
-from 368 at the start of this whole investigation)
+**Last updated:** 2026-10-20 (this session, after the Cool Red anchor
+correction — all six primary anchors now real pencils, 18 non-neutral
+pencils genuinely unexplained, down from 368 at the start of this whole
+investigation)
 
-## Current state — MILESTONE: 18 non-neutral pencils genuinely unexplained (down from 368)
+## Current state — MILESTONE: all six primary anchors now real pencils, 18 non-neutral pencils genuinely unexplained (down from 368)
+
+- **Cool Red anchor corrected (2026-10-20)**: synthetic (`#c62d6a`,
+  Munsell-derived, 8.25RP 4.5/14, never a real pencil) replaced with
+  **Middle Purple Pink, Faber-Castell Polychromos (`#c13074`, 6.39RP
+  4.46/13.88)** -- the last fully synthetic anchor, closed out. Ray's
+  call: "cannot have 5 pencil based and one not". Ray's own first
+  candidate (Bengal Rose Deep, Castle Arts Gold, `#cb166a`) tested at -15
+  book-scope -- same "too saturated, pulls the arc off balance" pattern
+  as every other anchor fix this project. Scanned the wider RP/R
+  neighbourhood; only two candidates tied the synthetic exactly at +0
+  cost (Middle Purple Pink, Fuchsia). Picked Middle Purple Pink -- near
+  hue/value/chroma twin of the outgoing synthetic, confirmed by Ray
+  looking at the swatch directly ("looking at the colour itself middle
+  purple pink is the better option"). Full writeup: README "Cool Red
+  correction". Coverage: book-scope holds exactly at 802/1150 (69.7%,
+  +0), combined 881->879 (-2, from ranges outside the candidate search).
+  The 18 genuinely-unexplained pencils are completely unchanged -- Cool
+  Red sits nowhere near the green/teal shade cluster. Old data backed up
+  to `data/history/*_PRECOOLREDFIX_backup.json`.
 
 - **Chroma ceiling taxonomy category added (2026-10-20)**: the 7
   remaining "high-neon chroma" pencils (Fra Angelico Blue, Hollywood
@@ -78,7 +98,7 @@ from 368 at the start of this whole investigation)
   investigation changed any committed anchor or data file -- all
   scratchpad-only hypothesis testing.
 
-## Previous state (2026-10-19, earlier the same day): all six primary anchors now real pencils, 228/253 non-neutral never-fit pencils now explained
+## Previous state (2026-10-19, earlier the same day): five of six primary anchors now real pencils (corrected, was mis-stated as six here; Cool Red was still synthetic until 2026-10-20), 228/253 non-neutral never-fit pencils now explained
 
 - **Cool Blue anchor corrected (2026-10-19, same day as Warm Blue)**:
   Cerulean Blue, Castle Arts Gold (`#0082b5`, 6.77B 4.78/10.78,
@@ -498,6 +518,18 @@ wanted" if asked again.
 
 ## Recent activity (newest first)
 
+- **2026-10-20**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session):
+  **Cool Red anchor correction** — synthetic `#c62d6a` replaced with
+  Middle Purple Pink, Faber-Castell Polychromos (`#c13074`), the last
+  fully synthetic anchor closed out. Ray's own first candidate (Bengal
+  Rose Deep) cost -15 book-scope; scanned the wider RP/R neighbourhood
+  and found only two candidates tying the synthetic at +0 cost, picked
+  the one that was also the closer visual match, confirmed by Ray looking
+  at the swatch directly. Book-scope holds exactly at 802/1150, combined
+  dips -2 from ranges outside the search. Also this session: added the
+  "chroma ceiling" taxonomy category (7 high-neon-chroma pencils
+  reclassified as structurally explained, not unresolved -- see "Current
+  state" above), bringing the genuinely-unexplained count to 18.
 - **2026-10-19 (later same day)**, `session_01X5dmXMWGXhLU1XoXY5WjKm`
   (this session): **Cool Blue anchor correction** — Cerulean Blue, Castle
   Arts Gold (`#0082b5`) replaced with Cerulean Blue, Castle Arts Premium

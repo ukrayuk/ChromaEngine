@@ -59,23 +59,23 @@ before) since Arc1 was never contributing. Old 4-arc data backed up at
 | Cool Yellow | `#e7ed46` | Cadmium Yellow Lemon, Faber-Castell Polychromos 9201 | 1.54GY 9.04/10.85 |
 | Cool Blue | `#0088d6` | Cerulean Blue, Castle Arts Premium Soft Touch | 1.33PB 5.17/13.15 |
 | Warm Blue | `#5a42ab` | Mauve Deep, Castle Arts Premium Soft Touch | 9.59PB 3.57/13.86 |
-| Cool Red | `#c62d6a` | synthetic (Munsell-derived) | 8.25RP 4.5/14 |
+| Cool Red | `#c13074` | Middle Purple Pink, Faber-Castell Polychromos 9201 | 6.39RP 4.46/13.88 |
 
-Why RoY/YgB use real pencils and BvR (now partly) too: compared all-real vs
+Why RoY/YgB use real pencils and BvR too: compared all-real vs
 all-synthetic vs this mix against book-scope classification coverage early
-on — the mix won at the time. BvR's Warm Blue has since also moved to a
-real pencil (see "Warm Blue correction" below, 2026-10-19); Cool Red is
-still the one fully synthetic anchor left. See `data/history/` for the two
-earlier BvR approaches that were tried and abandoned before landing here.
+on — the mix won at the time. All three BvR primaries have since moved to
+real pencils (see "Warm Blue correction" and "Cool Red correction" below).
+See `data/history/` for the two earlier BvR approaches that were tried and
+abandoned before landing here.
 
 **Current coverage** (ΔE≤15.3, `scripts/classify_coverage.cjs`):
 - Book-scope (9 ranges, 1150 pencils): 802/1150 = **69.7%**
-- Combined (11 ranges, 1294 pencils): 881/1294 = **68.1%**
+- Combined (11 ranges, 1294 pencils): 879/1294 = **67.9%**
 
-**Status (2026-10-19): five of six anchors locked on real pencils**,
-Cool Red the sole remaining synthetic one — see the "Warm Blue correction"
-and "Cool Blue correction" writeups below for the full cause/trade-off,
-same by-eye-overrides-numbers pattern as Cool Yellow.
+**Status (2026-10-20): all six anchors locked on real pencils** — see the
+"Warm Blue correction", "Cool Blue correction" and "Cool Red correction"
+writeups below for the full cause/trade-off, same by-eye-overrides-numbers
+pattern as Cool Yellow.
 
 ## Decision history (condensed)
 
@@ -94,11 +94,12 @@ same by-eye-overrides-numbers pattern as Cool Yellow.
    Cool Yellow.)
 3. **Replaced BvR with a single synthetic arc** (then: Warm Blue `#5f6bca`
    / Cool Red `#c62d6a`, both Munsell-derived). Superseded 2026-10-19 —
-   Warm Blue moved to a real pencil, see "Warm Blue correction" below;
-   Cool Red is now the only fully synthetic anchor left. Cool Blue (never
-   synthetic, but only ever gamut-corrected rather than re-picked) also
-   moved to a better real pencil the same day — see "Cool Blue correction"
-   below.
+   Warm Blue moved to a real pencil, see "Warm Blue correction" below.
+   Cool Blue (never synthetic, but only ever gamut-corrected rather than
+   re-picked) also moved to a better real pencil the same day — see
+   "Cool Blue correction" below. Cool Red, the last fully synthetic
+   anchor, moved to a real pencil the next day — see "Cool Red
+   correction" below. All six primary anchors are now real pencils.
 4. **Warm Yellow**: started as Yellow Ochre (`#f7c81e`, chroma 11.61,
    chosen by hue-precision-first search). Found a systematic cross-brand
    gap — every pencil range is missing a vivid "Cadmium Yellow"-type
@@ -289,7 +290,7 @@ on the shade side (14/41 → 26/39). Also incidentally resolves Mauve
 Deep's own prior standing as one of the never-fit high-neon-chroma
 pencils, since an anchor trivially fits itself.
 
-## Cool Blue correction (2026-10-19) — RESOLVED, six of six primary anchors now on real pencils
+## Cool Blue correction (2026-10-19) — RESOLVED, five of six primary anchors now on real pencils (corrected, was mis-stated as six here; Cool Red was still synthetic until 2026-10-20 — see "Cool Red correction" below)
 
 Previous: Cerulean Blue, Castle Arts Gold (`#0082b5`, 6.77B 4.78/10.78,
 gamut-clipped, trueLab-corrected 2026-10-18). Prompted by the Warm Blue
@@ -397,6 +398,48 @@ saturated)" by the normal nearest-point logic, so it can't misfire on an
 unrelated category. Pulled out of the "still unresolved" count the same
 way neutral and fluorescent are — explained-and-excluded, not open.
 Brings the live genuinely-unexplained count from 25 to **18**.
+
+## Cool Red correction (2026-10-20) — RESOLVED, six of six primary anchors now on real pencils
+
+Previous: synthetic, Munsell-derived (`#c62d6a`, 8.25RP 4.5/14, never a
+real pencil). Ray's call: "cannot have 5 pencil based and one not" — the
+last fully synthetic anchor left, after Warm Blue and Cool Blue both
+moved to real pencils the day before.
+
+Ray's own first candidate, Bengal Rose Deep (Castle Arts Gold, `#cb166a`,
+8.04RP 4.41/15.5), tested at −15 book-scope — same pattern as every
+other "more saturated real candidate" tried on the other anchors this
+project, too strong, pulls the arc off balance. Scanned the wider RP/R
+neighbourhood (hue 345–20°, L 30–58, Lab C>40 across the book ranges):
+
+| Candidate | Hex | Munsell | Book delta |
+|---|---|---|---|
+| Bengal Rose Deep, Castle Arts Gold | `#cb166a` | 8.04RP 4.41/15.5 | −15 |
+| Magenta, Derwent Chromaflow | `#a52158` | 8.5RP 3.71/11.85 | −11 |
+| Purplish Red, Caran d'Ache Luminance 6901 | `#ba175e` | 8.63RP 4.04/14.24 | −19 |
+| Magenta, Holbein | `#c62061` | 9.19RP 4.34/14.5 | −12 |
+| **Middle Purple Pink, Faber-Castell Polychromos** | `#c13074` | 6.39RP 4.46/13.88 | **+0** |
+| Magenta, Newell Prismacolor | `#cd3765` | 9.9RP 4.71/13.65 | −3 |
+| Carmine, Caran d'Ache Pablo 666 | `#ca2857` | 1.27R 4.45/14.1 | −11 |
+| **Fuchsia, Faber-Castell Polychromos** | `#d83a70` | 8.97RP 4.97/14.64 | **+0** |
+| Purplish Red, Caran d'Ache Pablo 666 | `#b23374` | 5.19RP 4.22/12.71 | −11 |
+
+Only two candidates tie the synthetic exactly at +0 cost: Middle Purple
+Pink and Fuchsia. Middle Purple Pink is also the closer visual match to
+the outgoing synthetic (L 45.2 vs 45.5, C 61.8 vs 62.8, hue 356.3° vs
+2.3° — barely 6° apart), confirmed by Ray looking at the swatch directly
+rather than the numbers alone ("looking at the colour itself middle
+purple pink is the better option"). **Locked in as the new canonical
+Cool Red.** Old data backed up to `data/history/*_PRECOOLREDFIX_backup.json`.
+
+Net effect: book-scope holds exactly at 802/1150 (69.7%, confirmed +0),
+combined dips slightly to 879/1294 (67.9%, −2 — from the two extra
+non-book ranges, not part of the candidate search). The 18
+genuinely-unexplained pencils are completely unchanged — Cool Red sits
+nowhere near the green/teal shade cluster, so this correction doesn't
+touch that problem at all. **All six primary anchors are now real
+pencils, closing out the last item from the original "mix of real and
+synthetic" decision (see Decision history #3 above).**
 
 ## Open items (read this part)
 
