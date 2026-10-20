@@ -3,7 +3,7 @@ status: Active
 stage: anchor calibration complete, structural limits being proven and written up
 last_touched: 20 October 2026
 next_action: investigate the 6 remaining stragglers (4 tint-too-light, 2 oversaturated) -- no mechanism found yet
-feeds_into: ["Colour Theory for the Coloured Pencil Artist"]
+feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
 # Status — Pigment Ancestry Model
