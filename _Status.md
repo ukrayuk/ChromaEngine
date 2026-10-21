@@ -1,4 +1,4 @@
-# ChromaEngine — Project Status
+﻿# ChromaEngine — Project Status
 *Updated: 13 August 2026*
 
 status:
