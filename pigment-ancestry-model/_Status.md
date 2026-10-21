@@ -1,8 +1,8 @@
 ---
 status: Active
-stage: all six anchors now have first-pass tint/shade/normal thresholds (by eye, against ChromaEngine's ramp tool) -- next step is wiring these into the classifier
+stage: all six anchors now have first-pass tint/shade/normal thresholds (by eye, against ChromaEngine's ramp tool); a real ΔE-positional-precision limitation found and validated -- explains why loose-ΔE matches read as wrong by eye in both blind test rounds
 last_touched: 21 October 2026
-next_action: wire data/anchor_thresholds.json into the never-fit taxonomy classifier (currently tint/shade/tone are decided by dL/dC/dH against the nearest arc point, not by a per-anchor lightness threshold -- these are a different, more direct mechanism and need reconciling with the existing logic, not just bolted on); re-check the Cool Blue/Cool Red "shade"/"dark" sub-clusters (3 and 5 entries respectively) for a second instance of the proven structural-limit split now that real shade boundaries exist to test them against; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3 and tints
+next_action: decide whether/how to report positional confidence alongside a ΔE match (e.g. flag matches landing in a shallow-gradient stretch of the arc as lower-confidence even if they're within threshold) -- not yet designed, just diagnosed; wire data/anchor_thresholds.json into the never-fit taxonomy classifier (currently tint/shade/tone are decided by dL/dC/dH against the nearest arc point, not by a per-anchor lightness threshold -- these are a different, more direct mechanism and need reconciling with the existing logic, not just bolted on); re-check the Cool Blue/Cool Red "shade"/"dark" sub-clusters (3 and 5 entries respectively) for a second instance of the proven structural-limit split now that real shade boundaries exist to test them against; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3 and tints
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,13 +17,56 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-21 (this session, after a threshold-sensitivity
-check confirmed the outlier population isn't noise -- 82% of what drops
-off a tighter ΔE cutoff on the Yellow-Blue arc is the same cyan/teal/
-phthalo pigment family flagged the day before, from an entirely
-different angle)
+**Last updated:** 2026-10-21 (this session, after finding and validating
+a real ΔE-positional-precision limitation of the model -- a fixed ΔE
+threshold does NOT give consistent positional confidence along an arc,
+and this explains a pattern from both blind-test rounds rather than
+just being a new isolated finding)
 
-## Current state — MILESTONE: all six anchors now have first-pass tint/shade/normal thresholds; threshold-sensitivity check confirms the Yellow-Blue outlier population is one coherent pigment-chemistry cluster, not noise
+## Current state — MILESTONE: a genuine model limitation found and quantified (ΔE-threshold positional precision varies ~7x along an arc depending on local gradient steepness) -- explains the loose-ΔE rejection pattern from both blind-test rounds; all six anchors now have first-pass tint/shade/normal thresholds; threshold-sensitivity check confirms the Yellow-Blue outlier population is one coherent pigment-chemistry cluster, not noise
+
+- **ΔE-threshold positional-precision limitation found and validated
+  (2026-10-21, Ray's own reasoning, checked against real data)**: Ray
+  worked through this from first principles -- comparing a physical
+  pencil against the arc isn't about the raw end-to-end ΔE between the
+  two anchors, it's about ΔE *between adjacent generation points along
+  the arc*, and that local step size isn't constant. Checked it
+  directly against the real Yellow-Blue arc data: the arc's local rate
+  of colour change (ΔE per 0.1 of t) ranges from **6.6 at its shallowest
+  (t=0.3-0.4) to 50.1 at its steepest (t=0.9-1.0, near Cool Blue)** --
+  roughly an 8x difference. That means a fixed ΔE<=11 "fits" tolerance
+  corresponds to wildly different amounts of positional uncertainty
+  depending on WHERE on the arc a match lands: as tight as ~2.2% of the
+  arc's length near the anchors (steep gradient, confident placement),
+  as loose as ~16.7% in the shallow middle stretch (same tolerance,
+  much less certain where on the arc a pencil actually belongs). Ray's
+  own back-of-envelope estimate (~25%) was in the right range once finer
+  sampling than the 0.1-wide check bins is accounted for.
+
+  **Why this matters beyond being a new finding**: it gives a genuine
+  mechanism for a pattern already seen independently in BOTH blind-test
+  rounds -- every tight-ΔE match agreed with Ray's eye (clean steep-
+  gradient territory, hard to be positionally wrong), while loose-ΔE
+  matches were the ones repeatedly rejected (shallow-gradient territory,
+  where "within threshold" can mean almost anywhere across a wide
+  stretch of the arc). This isn't a new, separate problem -- it's the
+  likely explanation for something the project had already observed
+  twice from a completely different angle (human perception) before
+  understanding the geometric cause.
+
+  **Separately worth recording for the record**: also traced and
+  confirmed a real, small data-precision gap specific to the two
+  gamut-clipped anchors (Cool Blue, Warm Yellow) -- the real measured
+  Cool Blue pencil has a ~10.2 ΔE gap against its own stored arc
+  endpoint, because the endpoint is stored as a display hex (lossy,
+  clamped to sRGB) rather than the true measured Lab, which is only
+  used internally for generation 1's mix
+  (`gen_level1_pure_rows.cjs`'s own comment already documents this
+  design choice). Not the anchors' fault, not a reason to swap anchors
+  -- a measurement-layer precision gap in any script (including today's)
+  that re-derives Lab from a stored arc-point hex instead of using the
+  anchor's own `trueLab` directly. Not yet fixed, flagged for whichever
+  session next touches the classification scripts.
 
 - **Scope note (2026-10-21, Ray caught it)**: all of today's and
   yesterday's outlier/threshold work (`outlier_tracker.json`,

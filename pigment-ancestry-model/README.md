@@ -631,6 +631,73 @@ files backed up to `data/history/*_PRESTALENESSFIX_backup.json`.
 updating. The old pattern (relabel categories in place, leave the source
 list alone) is exactly how this drifted for five anchor fixes running.
 
+## ΔE-threshold positional-precision limitation (2026-10-21)
+
+A real, validated model limitation, found by Ray reasoning through what
+"matching a physical pencil against the arc" actually means: it isn't
+about the end-to-end ΔE between the two anchors (Cool Yellow→Cool Blue
+is ΔE 130.5) — it's about the *local* ΔE step size between neighbouring
+generation points along the arc, and that step size is not constant.
+
+**Checked directly against the real Yellow-Blue arc data.** The local
+rate of colour change (ΔE per 0.1 of t) ranges from **6.6 at its
+shallowest** (t=0.3–0.4) **to 50.1 at its steepest** (t=0.9–1.0, near
+Cool Blue) — roughly an 8x difference across the arc. That means a fixed
+ΔE≤15.3 (or any fixed threshold) "fits" tolerance corresponds to wildly
+different amounts of real positional uncertainty depending on *where*
+on the arc a match lands:
+
+| Region | Local ΔE/0.1t | t-width of an ΔE=11 window |
+|---|---|---|
+| t=0.0–0.1 (near Cool Yellow) | 34.8 | 3.2% |
+| t=0.1–0.2 | 12.0 | 9.1% |
+| t=0.2–0.3 | 7.5 | 14.7% |
+| t=0.3–0.4 | 6.6 | **16.7% (widest)** |
+| t=0.4–0.5 | 8.6 | 12.7% |
+| t=0.5–0.6 | 8.9 | 12.3% |
+| t=0.6–0.7 | 10.2 | 10.8% |
+| t=0.7–0.8 | 14.9 | 7.4% |
+| t=0.8–0.9 | 21.0 | 5.3% |
+| t=0.9–1.0 (near Cool Blue) | 50.1 | **2.2% (tightest)** |
+
+Near either anchor the colour changes fast (steep gradient), so even a
+loose ΔE tolerance only buys a few percent of positional ambiguity — a
+confident placement. In the shallow middle stretch, the same tolerance
+corresponds to **roughly 7x more positional uncertainty** — a pencil
+"fitting" there could genuinely belong almost anywhere across a sixth
+of the arc's whole length.
+
+**Why this matters beyond being a new finding**: it supplies a real
+mechanism for a pattern the project had already found twice,
+independently, from a completely different angle — human perception.
+In both the Level 1 and Level 2 blind validation rounds (see below),
+every tight-ΔE match agreed cleanly with Ray's own placement by eye,
+while loose-ΔE matches were the ones repeatedly rejected. This is likely
+why: tight matches sit in steep-gradient territory where there's little
+room to be positionally wrong, loose matches cluster in shallow-gradient
+territory where "within threshold" can mean almost anywhere along a wide
+stretch of the arc. Two independent lines of evidence (geometric
+analysis of the model's own data, and blind human perception testing)
+now point at the same underlying cause.
+
+**Separately, also traced and confirmed** a small, real data-precision
+gap specific to the two gamut-clipped anchors (Cool Blue, Warm Yellow):
+the real measured Cool Blue pencil has a ~10.2 ΔE gap against its own
+stored arc endpoint, because the endpoint is stored as a display hex
+(lossy, clamped to sRGB) rather than the true measured Lab — which is
+only used internally for generation 1's first mix
+(`gen_level1_pure_rows.cjs`'s own comment documents this as a deliberate
+design choice, not an oversight). This isn't a reason to change the
+anchors — it's a measurement-layer precision gap in any script
+(including several written this session) that re-derives Lab from a
+stored arc-point hex instead of using the anchor's own `trueLab`
+directly. Not yet fixed.
+
+**Not yet decided**: how (or whether) to surface positional confidence
+alongside a ΔE match in the model's output — e.g. flagging a match that
+lands in a shallow-gradient stretch as lower-confidence even though it's
+within threshold. Diagnosed, not yet designed.
+
 ## Open items (read this part)
 
 ### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing
