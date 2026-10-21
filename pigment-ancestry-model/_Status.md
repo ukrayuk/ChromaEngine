@@ -1,8 +1,8 @@
 ---
 status: Active
-stage: anchor calibration complete, structural limits being proven and written up
-last_touched: 20 October 2026
-next_action: re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy (category membership shifted when the staleness bug was fixed -- the old "6" figure predates the fix and needs rechecking, not just restating); continue the blind human-vs-model validation test -- Level 2 cross arcs in isolation next, then Level 3, then tints, then map disagreement patterns across all of them
+stage: primary-arc investigation underway (Cool Blue, Cool Red) using a new outlier-tracker methodology; Level 2 blind validation complete
+last_touched: 21 October 2026
+next_action: apply the per-arc, per-population methodology (split tint/shade extremes first, then assess what's left; treat each anchor's problem as its own target function, not a shared script) to Cool Blue and Cool Red properly -- today's three anchor-swap attempts all used the same generic recipe despite knowing better, per Ray's own catch; check the Cool Blue/Cool Red "shade"/"dark" sub-clusters (3 and 5 entries respectively) for a second instance of the proven structural-limit split; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3 and tints
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,12 +17,98 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-20 (this session, after Ray caught the same
-pencil appearing in both a "caught" export and a "never-fit" export,
-which traced back to a real staleness bug in the never-fit taxonomy's
-source data — now fixed)
+**Last updated:** 2026-10-21 (this session, after a Level 2 blind
+validation round and a first primary-arc outlier investigation —
+Cool Blue and Cool Red identified as the two anchors needing real work,
+three anchor-swap attempts this session all failed for informative
+reasons, and a methodology for how to approach it properly is now
+written down below)
 
-## Current state — MILESTONE: all six primary anchors now real pencils; the shade-greens limit is proven structural, not unsolved; never-fit taxonomy staleness bug found and fixed; the "genuinely unexplained" headline count needs re-derivation against the corrected data (see Open Items)
+## Current state — Level 2 blind validation complete (same pattern as Level 1 confirmed); Cool Blue and Cool Red identified as the primary anchors needing work; methodology for the next attempt defined
+
+- **Level 2 blind human-vs-model validation test (2026-10-20/21)**: same
+  method as the Level 1 round -- 48 ID-only swatches (8 per cross-arc
+  variant, all 6 of RoY×YgB/YgB×BvR/BvR×RoY like+flipped), Ray placing
+  blind with no knowledge of the model's computed position. Result:
+  same core pattern as Level 1, replicated independently -- tight ΔE
+  matches (<5) agreed 8/8 after one correction (a canvas-tool opacity
+  bug was briefly mistaken for a real "too light" rejection, caught and
+  fixed mid-test); loose matches (ΔE>=5) were rejected roughly 25 of 35.
+  New finding not seen on Level 1: a "like"/"flipped" arc-variant
+  confusion (IDs 07, 26) -- position can be correct while the specific
+  cross-arc variant is still misread, when both variants sit in similar
+  muted territory. Sorting all judged entries by ΔE showed a real
+  crossover, not a fuzzy gradient: 0-5 is 100% agreement, 5-7 is a
+  genuine 50/50 toss-up, 7-11 leans reject with real exceptions, above
+  ~11.2 is 10 of 11 rejected. This independently corroborates Ray's
+  recollection of ~11 as an earlier candidate ΔE threshold (vs the
+  current 15.3) -- checked the coverage cost directly: dropping to 11
+  would lose 198 book-scope pencils (802->604, -17.2 points), judged too
+  large a jump to do as a blanket change right now. Full test data in
+  scratchpad (not yet committed to README -- see Open Items).
+
+- **Primary-arc outlier investigation, first pass (2026-10-21)**: Ray's
+  question "which arc is hardest" led to building
+  `scripts/build_outlier_tracker.cjs` -- catalogues every still-open
+  never-fit pencil (excluding already-explained categories: neutrals,
+  chroma ceiling, structural limit) whose GOVERNING nearest match is a
+  pure Level 1 arc, tagged to whichever of the arc's two anchors it
+  sits nearer to. Result, by anchor: Warm Red 0, Warm Yellow 6, Cool
+  Yellow 4, **Cool Blue 43**, Warm Blue 3, **Cool Red 36**. Checked this
+  wasn't just a population-density artifact: Cool Blue's territory IS
+  denser (652 of 1294 total pencils nearest there), but its FIT RATE
+  (12.9%) is still 3-4x worse than every other anchor (37-50%) -- a
+  genuine rate problem, not just more pencils nearby. Cool Red fit rate
+  is 12.8%, same story. Written to `data/outlier_tracker.json`.
+
+  Three anchor-swap attempts tested against the Cool Blue outlier pool,
+  all negative, all informative: Middle Phthalo Blue (`#0085d4`, close
+  pigment neighbour) made 30/43 worse, rescued 1; a "true blue" leaning
+  candidate (`#184aa8`, Ray's own pick, deliberately less cyan-leaning)
+  made 41/43 worse and cost 48 book-scope pencils overall; a near-
+  neighbour candidate (`#007fd4`) was coverage-neutral (-1) but still
+  left 39/43 worse, rescuing only the same recurring 3-pencil "shade"
+  sub-cluster every time (Castle Green Deep, Grass Green, Peridot
+  Yellow). Conclusion: the dominant problem (~38/43, "tint -- too
+  light") is NOT a pigment-choice or hue-direction problem -- every
+  candidate tested was at a similar lightness to the current anchor,
+  and none touched it. Fixing it would require a genuinely lighter
+  anchor, which conflicts with the anchor's job as a vivid reference
+  pigment (it currently also correctly catches 84 genuinely vivid
+  blues). This is the same "can't be two things from one point" shape
+  as the proven shade-greens structural limit, just on the tint side.
+
+  Cool Red's pool has the same two-population shape: 32 of 36 are
+  "tint," the other 5 (Pomegranate "shade," Dahlia Purple/Midnight
+  Mauve "low chroma," Light Red-Violet/Aubergine "tone") form a small,
+  distinct darker/muted cluster, mirroring Cool Blue's 3-entry shade
+  trio. Checked whether a simple Munsell-Value band (<=3 shade, 4-7
+  normal, >7 tint, Ray's proposal) would explain the split cleanly --
+  it doesn't: Cool Blue's split partially fits (0/17/26 across the
+  bands) but Cool Red's doesn't at all (1/35/0 -- almost the entire
+  pool sits in the "normal" 4-7 band by absolute value despite being
+  92% "tint"), because the tint/shade call is driven by lightness
+  *relative to the nearest arc point*, not an absolute Munsell Value
+  threshold. Confirms each arc needs its own calibration, not one
+  shared rule.
+
+  **Methodology defined for the next attempt (Ray's call, explicitly
+  correcting course mid-session after noticing all three swap attempts
+  used the same generic test regardless of what we already knew)**:
+  (1) collect outliers first, analyse once complete, don't fix ad hoc
+  as found -- one pencil's fix can quietly break another; (2) for each
+  pure arc, split off the value extremes (tint and shade) BEFORE
+  assessing anything else, since each needs a different fix; (3) a tint
+  or shade cluster right at t~0/t~1 means the anchor itself is at the
+  edge of what's reachable (a different problem from outliers spread
+  through the arc's middle); (4) Cool Blue's problem is *absolute*
+  lightness gap, Cool Red's is lightness *relative to its own nearest
+  match* -- these need different scoring functions in the next search,
+  not the same script re-run with a different hex; (5) a hue family
+  (e.g. yellow) may have no real "shade" version at all -- it goes
+  brown/olive first -- so forcing a tint/shade split onto every hue is
+  itself a category error. Confirmed against data: Cool Yellow's open
+  pool has zero "shade" entries, all "tone."
 
 - **Never-fit taxonomy staleness bug found and fixed (2026-10-20, Ray
   caught it)**: exported spreadsheets of the Level 1/2/3 "caught"
@@ -434,6 +520,14 @@ prototype below).
 
 ## Open items (priority order)
 
+0. **(Top priority, added 2026-10-21) Fix Cool Blue and Cool Red properly,
+   using the per-arc methodology defined in "Current state" above, not
+   another generic hex-swap test.** `data/outlier_tracker.json` has the
+   full catalogued pool for both (43 and 36 entries). Also worth a quick
+   check: the Level 1 blind-test writeup still needs its own README
+   section (the Level 2 round above does too) — both are documented in
+   `_Status.md` only so far.
+
 1. **Never-fit taxonomy — now lines up exactly with the book's own Ch5
    structure (Tints/Tones/Shades).** 368 book-scope pencils (post Cool
    Yellow correction). Neutrals pulled out first via **Munsell chroma**,
@@ -635,6 +729,31 @@ wanted" if asked again.
 
 ## Recent activity (newest first)
 
+- **2026-10-21**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session): Ran
+  the **Level 2 blind validation round** (48 ID-only swatches, all 6
+  cross-arc variants), replicating the Level 1 pattern independently and
+  surfacing a new like/flipped arc-variant confusion case. Sorted all
+  judged entries by ΔE and found a real crossover around ΔE~11 (not a
+  fuzzy gradient), corroborating Ray's recollection of an earlier
+  candidate threshold — checked the coverage cost of actually adopting
+  it (802→604 book-scope, -198 pencils) and judged it too large to do as
+  a blanket change right now. Then built
+  `scripts/build_outlier_tracker.cjs` to catalogue every still-open
+  never-fit pencil by which of the 6 primary anchors it's nearest to:
+  Cool Blue (43) and Cool Red (36) dominate, confirmed as a genuine fit-
+  rate problem (12.9%/12.8% vs 37-50% for every other anchor) and not
+  just population density. Tested three Cool Blue anchor-swap
+  candidates (Middle Phthalo Blue, a true-blue-leaning pick, a near-
+  neighbour pick) — all failed, all for informative reasons, converging
+  on the same conclusion: the dominant "tint (too light)" problem isn't
+  fixable by pigment/hue choice at a similar lightness, it's a structural
+  lightness gap the same shape as the proven shade-greens limit. Ray
+  caught that all three tests used the same generic method despite
+  already knowing Cool Blue and Cool Red fail for different reasons —
+  defined an explicit per-arc, split-extremes-first methodology for the
+  next attempt (see "Current state" above and Open Items #0). No data
+  pipeline files changed except the new outlier tracker; this was
+  investigation and methodology work.
 - **2026-10-20 (later same day)**, `session_01X5dmXMWGXhLU1XoXY5WjKm`
   (this session): **Found and fixed a never-fit taxonomy staleness bug**,
   caught by Ray cross-referencing two exported spreadsheets (Level
