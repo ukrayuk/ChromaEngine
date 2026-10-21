@@ -17,13 +17,44 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-21 (this session, after setting first-pass
-tint/shade/normal thresholds for all six primary anchors by eye against
-ChromaEngine's Tints & Shades ramp tool — a real, numeric answer to
-"where does each anchor stop being itself," not yet wired into the
-classifier)
+**Last updated:** 2026-10-21 (this session, after a threshold-sensitivity
+check confirmed the outlier population isn't noise -- 82% of what drops
+off a tighter ΔE cutoff on the Yellow-Blue arc is the same cyan/teal/
+phthalo pigment family flagged the day before, from an entirely
+different angle)
 
-## Current state — MILESTONE: all six anchors now have first-pass tint/shade/normal thresholds (data/anchor_thresholds.json); Level 2 blind validation complete; Cool Blue and Cool Red confirmed as the primary anchors needing work, now with real boundaries to work from
+## Current state — MILESTONE: all six anchors now have first-pass tint/shade/normal thresholds; threshold-sensitivity check confirms the Yellow-Blue outlier population is one coherent pigment-chemistry cluster, not noise
+
+- **Scope note (2026-10-21, Ray caught it)**: all of today's and
+  yesterday's outlier/threshold work (`outlier_tracker.json`,
+  `anchor_thresholds.json`) has been scoped to the 1294-pencil book+
+  stress-test set, not the full 1825-pencil `master.json` (17 ranges).
+  That's the right scope for published coverage numbers, but Ray's
+  point stands for calibration work specifically: restricting to 9
+  ranges before setting thresholds risks the thresholds being shaped by
+  which ranges got picked, not the real population. **Not yet done**:
+  rebuild outlier tracker + threshold sort against the full 1825 first,
+  then check how the book's 9 ranges perform against that -- flagged as
+  the right next step, not yet executed.
+
+- **Threshold-sensitivity / edge-clustering check (2026-10-21)**: tested
+  what tightening YgB's fit threshold from 15.3 to 11 actually does.
+  Confirmed the edge-clustering is real and gets MORE pronounced under a
+  tighter threshold, not less (81.5% of all pure-YgB catches already
+  sit within t<=0.2 or t>=0.8 of either anchor at the current 15.3
+  threshold; at 11 that rises to the same pattern holding, since the
+  thin middle -22 of 119 catches, t 0.2-0.8- empties out faster than the
+  edges do). Middle-of-arc and edge-of-arc matches have near-identical
+  ΔE distributions (mean ~10 both) -- the middle isn't full of worse
+  matches, there are just far fewer real pencils that land there at
+  all. Pulled and grouped the 55 pencils that would drop off YgB at
+  threshold=11 (`data/threshold_dropout_ygb.json`,
+  `scripts/build_threshold_dropout.cjs`): **82% (45/55) are the same
+  cyan/teal/turquoise/Phthalo/cerulean/green pigment-chemistry cluster**
+  flagged in the previous day's dedicated Phthalo-arc investigation --
+  independent confirmation, via a completely different method (threshold
+  sensitivity rather than a dedicated test arc), that this is one real,
+  coherent population, not scattered noise.
 
 - **Per-anchor tint/shade thresholds set for all six primary anchors
   (2026-10-21)**: using ChromaEngine's own Tints & Shades ramp tool
