@@ -11,8 +11,23 @@ const ROOT = require('path').join(__dirname, '..');
 // 1150 book-scope total - 771 book-scope fit), confirming that's all they
 // were contributing here.
 const DROPPED_RANGES = ['Derwent Drawing Pencils', 'Castle Arts Harmonious Collection'];
+// Ray's call (2026-10-19): Luminous Rose, Luminous Opera, Neon Yellow and
+// Neon Pink are confirmed fluorescent/emissive pigments (literal "Neon"/
+// "Luminous" branding, and Neon Yellow's own Lab chroma runs 17.6x its
+// Munsell chroma -- see README's fluorescent-pigment section), not pigments
+// that mix by ordinary subtractive colour theory. The model only covers
+// reflective pigment mixing, so these are out of scope rather than unsolved
+// -- dropped the same way as DROPPED_RANGES, not left in the taxonomy to be
+// chased.
+const EXCLUDED_FLUORESCENT = [
+  { range: "Holbein Artists' Colored Pencil", name: 'Luminous Rose' },
+  { range: "Holbein Artists' Colored Pencil", name: 'Luminous Opera' },
+  { range: 'Newell Brands Prismacolor Premier Soft Core Colored Pencils', name: 'Neon Yellow' },
+  { range: 'Newell Brands Prismacolor Premier Soft Core Colored Pencils', name: 'Neon Pink' },
+];
 const neverFit = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/never_fit_final_153.json')))
-  .filter(p => !DROPPED_RANGES.includes(p.range));
+  .filter(p => !DROPPED_RANGES.includes(p.range))
+  .filter(p => !EXCLUDED_FLUORESCENT.some(e => e.range === p.range && e.name === p.name));
 const L1 = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/level1_pure_rows.json')));
 const L2 = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/level2_cross_rows.json')));
 
@@ -178,6 +193,63 @@ const results = neverFit.map(p => {
   else if (dC > 0 && mc < 10 && C < 50 && dL < 0) category = 'shade (too dark)';
   else if (dC > 0 && mc < 10 && C < 50) category = 'oversaturated (moderate pencil, anchor nearby is even less saturated)';
   else category = dC > 0 ? 'high-neon chroma (too saturated)' : 'low chroma (too muted/grey)';
+
+  // Found 2026-10-20 (Ray): "high-neon chroma" entries with Munsell C this
+  // far above the anchors are the mirror of the neutral bands at the other
+  // end of the chroma axis -- not a coincidental near-miss worth chasing,
+  // a structural ceiling. The six primary anchors' own Munsell chroma:
+  // Cool Yellow 10.85, Cool Blue 13.15, Warm Yellow 13.41, Cool Red 13.88,
+  // Warm Blue 13.86, Warm Red 16.65 (the outlier). No mix
+  // of anchors can exceed the chroma of its own ingredients, so a pencil
+  // more saturated than every anchor near its hue is permanently out of
+  // reach, the same way a near-achromatic pencil is permanently below the
+  // vivid-pigment floor. Confirmed against the full L1+L2+L3+tint+shade
+  // sweep (2026-10-19/20): clean gap in the real data between the last
+  // entry that DOES get rescued by the sweep (Brilliant Yellow, Munsell C
+  // 15.60) and the first that never does (Marigold, 15.71) -- so 15.65 is
+  // the line, same by-eye-plus-data-gap method as the neutral bands.
+  // Re-labelled rather than left in the generic "too saturated" bucket so
+  // it reads as explained-and-excluded, not still-unresolved.
+  if (category === 'high-neon chroma (too saturated)' && mc >= 15.65) {
+    category = 'chroma ceiling (exceeds anchor maximum)';
+  }
+
+  // Found 2026-10-20 (Ray): these 12 "shade (too dark)" pencils are a
+  // proven structural limit of the YgB arc, not an open search -- tested
+  // exhaustively (per-arc dark targets, darkened G1, a 315-combination
+  // value-drop x hue-rotation grid on both primaries, a theoretical 1.5x
+  // chroma boost past any real pencil, reparametrising the real
+  // unmodified primaries at a different blend ratio, rotating Blue's hue
+  // all the way to literal teal, L2/L3 cross-arcs directly), none of
+  // which gets past 4/12. Plotting hue against lightness (real arc vs all
+  // 12 targets) showed why: they split into two groups landing at nearly
+  // the same hue needing very different lightness (e.g. Pthalo Green/
+  // Pthalo Green Light need L~40-41.5 at hue 179-187deg, Pthalo
+  // Turquoise/Viridian/Beryl Green need L~50-53 at the same hue) -- a
+  // single arc can only hold one lightness per hue, so no construction
+  // can ever reach both. Likely two different pigment chemistries
+  // (phthalocyanine-based "Pthalo" names vs chromium/cadmium-style
+  // greens) coincidentally sharing a hue. Full writeup: README "YgB
+  // shade-greens -- a proven structural limit, not an open search".
+  // Re-labelled the same way as the chroma ceiling -- explained and
+  // excluded, not still being chased.
+  const STRUCTURAL_LIMIT_SHADE_GREENS = [
+    { range: 'Derwent Chromaflow Pencils', name: 'Jungle Green' },
+    { range: "Caran d'Ache Luminance 6901", name: 'Beryl Green' },
+    { range: "Caran d'Ache Luminance 6901", name: 'Grass Green' },
+    { range: "Holbein Artists' Colored Pencil", name: 'Summer Green' },
+    { range: "Holbein Artists' Colored Pencil", name: 'Viridian' },
+    { range: 'Castle Arts Gold Coloured Pencils', name: 'Pthalo Turquoise' },
+    { range: 'Castle Arts Premium Soft Touch Colored Pencils', name: 'Teal Green' },
+    { range: 'Castle Arts Premium Soft Touch Colored Pencils', name: 'Pthalo Green Light' },
+    { range: 'Castle Arts Premium Soft Touch Colored Pencils', name: 'Pthalo Green' },
+    { range: 'Castle Arts Premium Soft Touch Colored Pencils', name: 'Pthalo Turquoise' },
+    { range: 'Castle Arts Premium Soft Touch Colored Pencils', name: 'Emerald Green' },
+    { range: 'Castle Arts Premium Soft Touch Colored Pencils', name: 'Castle Green' },
+  ];
+  if (category === 'shade (too dark)' && STRUCTURAL_LIMIT_SHADE_GREENS.some(e => e.range === p.range && e.name === p.name)) {
+    category = 'structural limit (divergent path needed, cannot exist)';
+  }
 
   return { ...p, L: lab[0], C, H, munsellC: mc, nearestL: pt[0], nearestC: pt.C, nearestH: pt.H, nearestLevel: pt.level, nearestArc: pt.arc, dL, dC, dH, category };
 });

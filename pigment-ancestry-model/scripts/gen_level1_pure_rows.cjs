@@ -52,10 +52,81 @@ const { mixSpectral, mixSpectralTrueLab } = require(path.join(__dirname, '../lib
 // of a value already compressed by the hex round-trip. Vermilion and
 // Cadmium Yellow Lemon are both confirmed "in gamut" (real vs hex-derived
 // Lab match closely) -- no trueLab needed, nothing to correct.
+//
+// 2026-10-19: Warm Blue swapped from synthetic (8PB 4.8/13, #5f6bca) to a
+// real pencil -- Mauve Deep, Castle Arts Premium Soft Touch (#5a42ab,
+// 9.59PB 3.57/13.86). Found while investigating why "shade" never-fit
+// pencils clustered so heavily around the two blue anchors: of 39 shade
+// pencils, 24 sat in the 180-320deg hue band spanning both; outside that
+// band every single one (17/17) was already rescued by the full
+// tint+shade search, but inside it only 13/24 -- and the 11 still
+// failing all sat in a tight 288.8-311.8deg window centred on Warm Blue
+// specifically, not spread across the band. Unlike Cool Blue (just
+// gamut-corrected), Warm Blue had never been checked against a real
+// pigment at all -- it was built from a Munsell target, never validated.
+// Tested real PB-family candidates near that target the same way as the
+// Cool Yellow fix: most strong blues (Ultramarine, Lapis Blue, Cobalt
+// Blue Hue, Fra Angelico Blue) rescued most of the cluster (8-10/11) but
+// COST book-scope coverage (-9 to -18) -- too saturated/narrow, pulled
+// the whole arc off balance. Mauve Deep is the one candidate that did
+// both: rescued 10/11 of the cluster AND gained book-scope coverage
+// (782->785, +3) -- same "numbers alone would have picked the wrong one"
+// pattern as Cool Yellow (Ray rejected the castle Arts GOLD range's
+// "Mauve Deep", #9f59b7, true Munsell P family, genuinely too purple --
+// confirmed the PREMIUM SOFT TOUCH range's "Mauve Deep", #5a42ab,
+// Munsell PB family not P, by eye against a swatch comparison). Also
+// closes out Mauve Deep's own prior standing as one of the 14 unresolved
+// high-neon-chroma never-fit pencils, since an anchor trivially fits
+// itself.
+//
+// 2026-10-19 (same day): Cool Blue swapped from Cerulean Blue, Castle Arts
+// GOLD (#0082b5, 6.77B 4.78/10.78, gamut-clipped, trueLab-corrected) to
+// Cerulean Blue, Castle Arts PREMIUM SOFT TOUCH (#0088d6, 1.33PB
+// 5.17/13.15, also gamut-clipped, trueLab-corrected). Prompted by Ray
+// noticing the dE between the two blue anchors had grown a lot once Warm
+// Blue became a real (darker, more saturated) pencil -- 37.1->53.3 on the
+// stored hex, 48.6->64.4 on true Lab. Cool Blue itself had only ever been
+// gamut-corrected, never checked against alternative real pencils the way
+// Warm Blue and Cool Yellow were. Tested real B/PB-family candidates
+// across the book ranges the same two-axis way: several (Castle Arts Gold
+// Cerulean Blue Middle, Prismacolor True Blue, Holbein Cerulean Blue
+// [hue], and this one) all gained +17/+18 book-scope coverage over the
+// Gold anchor -- a bigger single-anchor gain than the Warm Blue fix's own
+// +3. None of them rescued the shade-greens cluster (Pthalo/Jungle/
+// Peacock Green etc.), confirming that failure is the arc->black
+// construction problem, not Cool Blue's placement. Picked the Soft
+// Touch range's own "Cerulean Blue" over the numerically-tied Holbein
+// "Cerulean Blue [hue]" -- Ray's call after comparing swatches ("very
+// similar though, give it a go") -- same pigment name as the outgoing
+// anchor, just the better-calibrated real sample. Also tightens the
+// Warm/Cool Blue family split: dE to Warm Blue drops from 64.4 to 51.0,
+// hue separation from 67.1deg to 47.3deg, while Cool Blue stays just
+// inside Munsell PB (1.33PB) rather than B -- close enough to the B/PB
+// boundary that it still reads as the cooler, cyan-leaning end against
+// Warm Blue's violet-leaning 9.59PB.
+//
+// 2026-10-20: Cool Red swapped from synthetic (Munsell-derived, 8.25RP
+// 4.5/14, never a real pencil) to Middle Purple Pink, Faber-Castell
+// Polychromos (#c13074, 6.39RP 4.46/13.88) -- Ray's call: "cannot have 5
+// pencil based and one not". This is the last of the six primary anchors
+// to move off a synthetic value; all six are now real pencils. Candidate
+// search: Ray's own first pick (Bengal Rose Deep, Castle Arts Gold,
+// #cb166a, 8.04RP 4.41/15.5) tested at -15 book-scope -- same pattern as
+// every other "more saturated real candidate" tried on the other
+// anchors, too strong, pulls the arc off balance. Scanned the wider RP/R
+// neighbourhood (hue 345-20deg, L 30-58, C>40 across the book ranges):
+// most candidates cost -11 to -19, only two tie the synthetic exactly at
+// +0 -- Middle Purple Pink and Fuchsia (Faber-Castell Polychromos,
+// #d83a70, 8.97RP 4.97/14.64). Picked Middle Purple Pink: numerically
+// tied with Fuchsia, but it's also the closer visual match to the
+// outgoing synthetic (L 45.2 vs 45.5, C 61.8 vs 62.8, hue 356.3 vs
+// 2.3deg -- barely 6deg apart), confirmed by Ray looking at the swatch
+// directly rather than the numbers alone, same by-eye-confirms-the-data
+// pattern as every other anchor fix this project.
 const ARCS = {
   'Red-Yellow (Orange)': { P1: { name: 'Vermilion — Warm Red', hex: '#e3212f' }, P2: { name: 'Medium Cadmium Yellow (Imit.), Caran d\'Ache Luminance 6901 — Warm Yellow', hex: '#ffd800', trueLab: [87.26, -2.24, 94.56] } },
-  'Yellow-Blue (Green)': { P1: { name: 'Cadmium Yellow Lemon, Faber-Castell Polychromos 9201 — Cool Yellow', hex: '#e7ed46' }, P2: { name: 'Cerulean Blue — Cool Blue', hex: '#0082b5', trueLab: [48.74, -24.69, -38.99] } },
-  'Blue-Red (Violet)':   { P1: { name: 'Warm Blue (synthetic) — 8PB 4.8/13', hex: '#5f6bca' }, P2: { name: 'Cool Red (synthetic) — 8.25RP 4.5/14', hex: '#c62d6a' } },
+  'Yellow-Blue (Green)': { P1: { name: 'Cadmium Yellow Lemon, Faber-Castell Polychromos 9201 — Cool Yellow', hex: '#e7ed46' }, P2: { name: 'Cerulean Blue, Castle Arts Premium Soft Touch — Cool Blue', hex: '#0088d6', trueLab: [52.59, -11.4, -51.84] } },
+  'Blue-Red (Violet)':   { P1: { name: 'Mauve Deep, Castle Arts Premium Soft Touch — Warm Blue', hex: '#5a42ab' }, P2: { name: 'Middle Purple Pink, Faber-Castell Polychromos 9201 — Cool Red', hex: '#c13074' } },
 };
 const MAXGEN = 8;
 
