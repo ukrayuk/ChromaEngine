@@ -1,8 +1,8 @@
 ---
 status: Active
-stage: primary-arc investigation underway (Cool Blue, Cool Red) using a new outlier-tracker methodology; Level 2 blind validation complete
+stage: all six anchors now have first-pass tint/shade/normal thresholds (by eye, against ChromaEngine's ramp tool) -- next step is wiring these into the classifier
 last_touched: 21 October 2026
-next_action: apply the per-arc, per-population methodology (split tint/shade extremes first, then assess what's left; treat each anchor's problem as its own target function, not a shared script) to Cool Blue and Cool Red properly -- today's three anchor-swap attempts all used the same generic recipe despite knowing better, per Ray's own catch; check the Cool Blue/Cool Red "shade"/"dark" sub-clusters (3 and 5 entries respectively) for a second instance of the proven structural-limit split; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3 and tints
+next_action: wire data/anchor_thresholds.json into the never-fit taxonomy classifier (currently tint/shade/tone are decided by dL/dC/dH against the nearest arc point, not by a per-anchor lightness threshold -- these are a different, more direct mechanism and need reconciling with the existing logic, not just bolted on); re-check the Cool Blue/Cool Red "shade"/"dark" sub-clusters (3 and 5 entries respectively) for a second instance of the proven structural-limit split now that real shade boundaries exist to test them against; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3 and tints
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,14 +17,55 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-21 (this session, after a Level 2 blind
-validation round and a first primary-arc outlier investigation —
-Cool Blue and Cool Red identified as the two anchors needing real work,
-three anchor-swap attempts this session all failed for informative
-reasons, and a methodology for how to approach it properly is now
-written down below)
+**Last updated:** 2026-10-21 (this session, after setting first-pass
+tint/shade/normal thresholds for all six primary anchors by eye against
+ChromaEngine's Tints & Shades ramp tool — a real, numeric answer to
+"where does each anchor stop being itself," not yet wired into the
+classifier)
 
-## Current state — Level 2 blind validation complete (same pattern as Level 1 confirmed); Cool Blue and Cool Red identified as the primary anchors needing work; methodology for the next attempt defined
+## Current state — MILESTONE: all six anchors now have first-pass tint/shade/normal thresholds (data/anchor_thresholds.json); Level 2 blind validation complete; Cool Blue and Cool Red confirmed as the primary anchors needing work, now with real boundaries to work from
+
+- **Per-anchor tint/shade thresholds set for all six primary anchors
+  (2026-10-21)**: using ChromaEngine's own Tints & Shades ramp tool
+  (HSL lightness %, 10-point steps from each anchor's own hue), Ray
+  called by eye where each anchor stops reading as itself in each
+  direction. Cross-checked every ramp against the real anchor hex first
+  (all matched the tool's own 48% step almost exactly) and checked
+  every HSL-L baseline computation against Ray's own slider readings
+  before logging (caught one real mismatch: "WR" at 47% matched Cool
+  Red's hex, not Warm Red's -- confirmed). Result, written to
+  `data/anchor_thresholds.json`:
+
+  | Anchor | Baseline L | Tint | Shade |
+  |---|---|---|---|
+  | Warm Red | ~51% | 70% | 40% |
+  | Warm Yellow | ~50% | 65% | 40% |
+  | Cool Yellow | 60% | 65% | 40%* |
+  | Cool Blue | 42% | 55-60% | 35% |
+  | Warm Blue | 46% | 60% | 35% |
+  | Cool Red | 47% | 60% | 35% |
+
+  *Cool Yellow's shade boundary is a genuine hue-exit, not just
+  darkening -- below ~40% it reads as olive/green, confirmed directly
+  against the ramp's own hex values (`#D8DF16` at 48% is still clearly
+  yellow, `#ABB111` at 38% is unmistakably olive).
+
+  Clear per-arc pattern: **RoY** (Warm Red/Warm Yellow) has the widest,
+  best-centred margins, matching it being by far the cleanest arc in
+  the outlier tracker (7 never-fit total). **YgB** is asymmetric --
+  Cool Yellow has real room on both sides, Cool Blue is pressed right
+  against its own shade edge (baseline 42%, cutoff 35%, only 7 points
+  of headroom). **BvR** runs narrower than the other two arcs across
+  the board -- both Warm Blue and Cool Red carry a 35% shade margin,
+  not the 40% every RoY/YgB anchor gets.
+
+  **Not yet done**: these thresholds aren't wired into the taxonomy
+  classifier. The existing `classify_never_fit_taxonomy.cjs` decides
+  tint/shade/tone from dL/dC/dH against the nearest arc point -- a
+  relative, per-pencil comparison. These new thresholds are a direct,
+  per-anchor lightness boundary -- a different mechanism that needs
+  reconciling with the existing logic (next session), not just bolted
+  on alongside it.
 
 - **Level 2 blind human-vs-model validation test (2026-10-20/21)**: same
   method as the Level 1 round -- 48 ID-only swatches (8 per cross-arc
@@ -729,6 +770,25 @@ wanted" if asked again.
 
 ## Recent activity (newest first)
 
+- **2026-10-21 (later same day)**, `session_01X5dmXMWGXhLU1XoXY5WjKm`
+  (this session): **Set first-pass tint/shade/normal thresholds for all
+  six primary anchors**, using ChromaEngine's own Tints & Shades ramp
+  tool (HSL lightness %, 10-point steps). Verified every ramp matched
+  its anchor's real hex before trusting Ray's by-eye calls against it,
+  and caught/corrected one genuine mix-up along the way (a baseline
+  reading labelled "WR" turned out to match Cool Red's hex, not Warm
+  Red's -- flagged and confirmed before logging). Found a clear,
+  consistent per-arc pattern: RoY has the widest margins and best-
+  centred anchors (matching it being the cleanest arc by far in
+  yesterday's outlier tracker), YgB is asymmetric (Cool Yellow has real
+  room, Cool Blue is pressed against its own shade edge), BvR runs
+  narrower across both its anchors than the other two arcs. Also
+  confirmed directly against ramp hex values that Cool Yellow's "shade"
+  boundary is a genuine hue-exit into olive/green, not just darkening --
+  independent numeric support for something suspected earlier in the
+  session. Written to `data/anchor_thresholds.json`. Not yet wired into
+  the classifier -- that's a real mechanism-reconciliation task for next
+  session, not a trivial wire-up (see Current State and next_action).
 - **2026-10-21**, `session_01X5dmXMWGXhLU1XoXY5WjKm` (this session): Ran
   the **Level 2 blind validation round** (48 ID-only swatches, all 6
   cross-arc variants), replicating the Level 1 pattern independently and

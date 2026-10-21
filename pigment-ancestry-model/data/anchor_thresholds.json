@@ -1,0 +1,17 @@
+{
+  "_description": "First-pass per-anchor tint/shade/normal thresholds, set by eye against ChromaEngine's Tints & Shades ramp tool (HSL lightness %, 10-point steps) and cross-checked against each anchor's own measured HSL-L baseline. Ray and Claude, 2026-10-21. These are starting points for the next session's classifier work, not yet wired into the taxonomy pipeline.",
+  "metric": "HSL lightness %, 0=black 100=white",
+  "anchors": {
+    "Warm Red": { "hex": "#e3212f", "baselineL": 51, "tint": 70, "shade": 40 },
+    "Warm Yellow": { "hex": "#ffd800", "baselineL": 50, "tint": 65, "shade": 40 },
+    "Cool Yellow": { "hex": "#e7ed46", "baselineL": 60, "tint": 65, "shade": 40, "note": "shade boundary is a hue-exit point, not just darkening -- below ~40% it reads as olive/green, not dark yellow" },
+    "Cool Blue": { "hex": "#0088d6", "baselineL": 42, "tint": [55, 60], "shade": 35, "note": "narrowest shade margin of the six -- sits close to its own edge" },
+    "Warm Blue": { "hex": "#5a42ab", "baselineL": 46, "tint": 60, "shade": 35 },
+    "Cool Red": { "hex": "#c13074", "baselineL": 47, "tint": 60, "shade": 35 }
+  },
+  "by_arc": {
+    "Red-Yellow (Orange)": { "anchors": ["Warm Red", "Warm Yellow"], "pattern": "widest margins, best centred, matches this arc being by far the cleanest in the outlier tracker (7 never-fit total)" },
+    "Yellow-Blue (Green)": { "anchors": ["Cool Yellow", "Cool Blue"], "pattern": "asymmetric -- Cool Yellow has real room on both sides, Cool Blue is pressed against its shade edge (baseline 42%, shade cutoff 35%)" },
+    "Blue-Red (Violet)": { "anchors": ["Warm Blue", "Cool Red"], "pattern": "consistently narrower than the other two arcs -- both anchors run a 35% shade margin, not 40%" }
+  }
+}
