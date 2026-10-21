@@ -1,13 +1,6 @@
 ﻿# ChromaEngine — Project Status
 *Updated: 13 August 2026*
 
-status:
-stage:
-last_touched:
-next_action:
-feeds_into: []        # or content_source: [] for multi-parent (e.g. a
-                       # project fed by more than one upstream)
-
 ---
 
 ## Current State
