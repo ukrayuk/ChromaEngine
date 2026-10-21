@@ -1,5 +1,13 @@
 # Status — Pigment Ancestry Model
 
+status:
+stage:
+last_touched:
+next_action:
+feeds_into: []        # or content_source: [] for multi-parent (e.g. a
+                       # project fed by more than one upstream)
+
+
 Living dashboard for this work. Read this *before* `README.md` when
 resuming on either machine — README has the deep methodology and decision
 history, this file has where things stand *right now*. This repo is the
