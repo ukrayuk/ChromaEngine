@@ -1,0 +1,954 @@
+[
+  {
+    "name": "Lemon Yellow Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#f5f041",
+    "t": 0,
+    "dL": 2,
+    "dE": 5.76
+  },
+  {
+    "name": "Tuscan Yellow",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#f9ee4f",
+    "t": 0,
+    "dL": 1.7,
+    "dE": 7.45
+  },
+  {
+    "name": "Primary Blue",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#007fd4",
+    "t": 1,
+    "dL": -3.6,
+    "dE": 6.06
+  },
+  {
+    "name": "Cerulean Blue",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#0082b5",
+    "t": 0.97265625,
+    "dL": -6.2,
+    "dE": 12.91
+  },
+  {
+    "name": "Teal Green",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#009eb9",
+    "t": 0.93359375,
+    "dL": 2.4,
+    "dE": 13.38
+  },
+  {
+    "name": "Mint Green Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#00cb77",
+    "t": 0.515625,
+    "dL": 3.1,
+    "dE": 10.69
+  },
+  {
+    "name": "Leaf Green Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#9acd06",
+    "t": 0.03125,
+    "dL": -10.8,
+    "dE": 12.42
+  },
+  {
+    "name": "Castle Green Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#00c752",
+    "t": 0.3671875,
+    "dL": -2.6,
+    "dE": 3.68
+  },
+  {
+    "name": "Gentian Blue",
+    "range": "Castle Arts Harmonious Collection",
+    "hex": "#4c91b2",
+    "t": 0.96484375,
+    "dL": 2,
+    "dE": 8.3
+  },
+  {
+    "name": "Lemon Yellow",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#fce555",
+    "t": 0,
+    "dL": -0.4,
+    "dE": 14.41
+  },
+  {
+    "name": "Sky Blue",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#0073c9",
+    "t": 1,
+    "dL": -8.1,
+    "dE": 10.16
+  },
+  {
+    "name": "Cerulean Blue Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#0083d1",
+    "t": 0.99609375,
+    "dL": -3.5,
+    "dE": 7.6
+  },
+  {
+    "name": "Cerulean Blue Middle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#0096da",
+    "t": 0.98828125,
+    "dL": 2.3,
+    "dE": 11.78
+  },
+  {
+    "name": "Cerulean Blue",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#0088d6",
+    "t": 0.99609375,
+    "dL": -2,
+    "dE": 9.58
+  },
+  {
+    "name": "Primary Blue",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#007fce",
+    "t": 1,
+    "dL": -5,
+    "dE": 8.8
+  },
+  {
+    "name": "Intense Blue",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#0076ad",
+    "t": 0.98046875,
+    "dL": -9.9,
+    "dE": 12.58
+  },
+  {
+    "name": "Cobalt Turquoise",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#00aed0",
+    "t": 0.94921875,
+    "dL": 9.3,
+    "dE": 13.52
+  },
+  {
+    "name": "Cobalt Turquoise Green",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#00a5b3",
+    "t": 0.91015625,
+    "dL": 4,
+    "dE": 13.02
+  },
+  {
+    "name": "Teal Green Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#007e88",
+    "t": 0.90625,
+    "dL": -10.5,
+    "dE": 14.75
+  },
+  {
+    "name": "Castle Green Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#30bc3f",
+    "t": 0.33984375,
+    "dL": -6.7,
+    "dE": 8.59
+  },
+  {
+    "name": "Leaf Green Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#b0ea5c",
+    "t": 0.0546875,
+    "dL": 0.8,
+    "dE": 7.1
+  },
+  {
+    "name": "Leaf Green Middle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#25d351",
+    "t": 0.3046875,
+    "dL": -0.8,
+    "dE": 3.7
+  },
+  {
+    "name": "Leaf Green",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#5ac61d",
+    "t": 0.14453125,
+    "dL": -9.8,
+    "dE": 12.13
+  },
+  {
+    "name": "Citrus Yellow",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#e9e940",
+    "t": 0,
+    "dL": -0.8,
+    "dE": 2.93
+  },
+  {
+    "name": "Lemon",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#f6e757",
+    "t": 0,
+    "dL": -0.3,
+    "dE": 12
+  },
+  {
+    "name": "Blue Orchid",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#66a6e5",
+    "t": 0.9921875,
+    "dL": 11.7,
+    "dE": 13.41
+  },
+  {
+    "name": "Brilliant Blue",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#006dab",
+    "t": 0.9921875,
+    "dL": -12,
+    "dE": 12.11
+  },
+  {
+    "name": "Blue",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#007bc4",
+    "t": 0.99609375,
+    "dL": -5.8,
+    "dE": 6.4
+  },
+  {
+    "name": "Blue Yonder",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#5281a1",
+    "t": 0.96875,
+    "dL": -2.9,
+    "dE": 13.41
+  },
+  {
+    "name": "Light Blue",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#0092cb",
+    "t": 0.98046875,
+    "dL": 1.7,
+    "dE": 5.46
+  },
+  {
+    "name": "Bondi Blue",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#008cb4",
+    "t": 0.9609375,
+    "dL": -2.4,
+    "dE": 8.3
+  },
+  {
+    "name": "Orient",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#008199",
+    "t": 0.9375,
+    "dL": -7.6,
+    "dE": 10.23
+  },
+  {
+    "name": "Teal",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#008d9e",
+    "t": 0.92578125,
+    "dL": -4.2,
+    "dE": 11.13
+  },
+  {
+    "name": "Caribbean Green",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#009387",
+    "t": 0.859375,
+    "dL": -3.9,
+    "dE": 7.71
+  },
+  {
+    "name": "Pine Green",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#39836d",
+    "t": 0.859375,
+    "dL": -7.7,
+    "dE": 13.87
+  },
+  {
+    "name": "Mint Leaf",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#00a067",
+    "t": 0.6796875,
+    "dL": -6.7,
+    "dE": 12.55
+  },
+  {
+    "name": "Green Meadow",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#56d380",
+    "t": 0.578125,
+    "dL": 9.6,
+    "dE": 11.03
+  },
+  {
+    "name": "Key Lime",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#add005",
+    "t": 0.015625,
+    "dL": -10.1,
+    "dE": 11.63
+  },
+  {
+    "name": "Grass Green",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#39af2f",
+    "t": 0.32421875,
+    "dL": -11,
+    "dE": 14.48
+  },
+  {
+    "name": "Lemon Lime",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#cbdd00",
+    "t": 0.00390625,
+    "dL": -5.9,
+    "dE": 14.98
+  },
+  {
+    "name": "Polar Ice",
+    "range": "Derwent Drawing Pencils",
+    "hex": "#608cd6",
+    "t": 1,
+    "dL": 3.8,
+    "dE": 10.86
+  },
+  {
+    "name": "Lemon",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#f1ee42",
+    "t": 0,
+    "dL": 1.1,
+    "dE": 4.3
+  },
+  {
+    "name": "Emerald Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#00c882",
+    "t": 0.578125,
+    "dL": 3.8,
+    "dE": 13.22
+  },
+  {
+    "name": "Chartreuse Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#d8f24d",
+    "t": 0.01171875,
+    "dL": 1.9,
+    "dE": 2.02
+  },
+  {
+    "name": "Spring Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#b0eb53",
+    "t": 0.046875,
+    "dL": 0.5,
+    "dE": 2.77
+  },
+  {
+    "name": "Fresh Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#68df4b",
+    "t": 0.15625,
+    "dL": -1,
+    "dE": 2.38
+  },
+  {
+    "name": "Apple Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#a8c41e",
+    "t": 0.015625,
+    "dL": -13.9,
+    "dE": 14.17
+  },
+  {
+    "name": "Evergreen",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#42a94b",
+    "t": 0.5859375,
+    "dL": -4.6,
+    "dE": 13.4
+  },
+  {
+    "name": "Malachite Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#008651",
+    "t": 0.7265625,
+    "dL": -14,
+    "dE": 15.14
+  },
+  {
+    "name": "Cerulean Blue [hue]",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#0082cf",
+    "t": 0.99609375,
+    "dL": -4,
+    "dE": 9.04
+  },
+  {
+    "name": "Turquoise Blue",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#0075a8",
+    "t": 0.9765625,
+    "dL": -10.7,
+    "dE": 13.5
+  },
+  {
+    "name": "Spectrum Blue",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#0069b2",
+    "t": 0.99609375,
+    "dL": -13.8,
+    "dE": 15.07
+  },
+  {
+    "name": "Saxe Blue",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#5a97be",
+    "t": 0.97265625,
+    "dL": 4.8,
+    "dE": 10.32
+  },
+  {
+    "name": "Luminous Lemon",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#edff4f",
+    "t": 0.0078125,
+    "dL": 9.7,
+    "dE": 13.05
+  },
+  {
+    "name": "Luminous Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#86fd5c",
+    "t": 0.12890625,
+    "dL": 8.3,
+    "dE": 10.97
+  },
+  {
+    "name": "Peridot (Blue)",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#00836f",
+    "t": 0.8359375,
+    "dL": -11.4,
+    "dE": 14.76
+  },
+  {
+    "name": "Grass Green (70%)",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#2d9e42",
+    "t": 0.6015625,
+    "dL": -8.3,
+    "dE": 14.18
+  },
+  {
+    "name": "Light Blue",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#00a1d3",
+    "t": 0.97265625,
+    "dL": 6.7,
+    "dE": 7.99
+  },
+  {
+    "name": "Turquoise Blue",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#00aac5",
+    "t": 0.94140625,
+    "dL": 8.6,
+    "dE": 9.63
+  },
+  {
+    "name": "Cobalt Green",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#56ae86",
+    "t": 0.796875,
+    "dL": 5.5,
+    "dE": 11
+  },
+  {
+    "name": "Lemon Yellow",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#f1ec29",
+    "t": 0,
+    "dL": 0.3,
+    "dE": 9.58
+  },
+  {
+    "name": "Spring Green",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#abde1d",
+    "t": 0.03125,
+    "dL": -4.7,
+    "dE": 9.74
+  },
+  {
+    "name": "Cobalt Blue 10%",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#4992e0",
+    "t": 1,
+    "dL": 4.9,
+    "dE": 6.48
+  },
+  {
+    "name": "Grey Blue",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#1976a4",
+    "t": 0.98046875,
+    "dL": -7.8,
+    "dE": 9.42
+  },
+  {
+    "name": "Sky Blue",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#5b8ed0",
+    "t": 0.99609375,
+    "dL": 3.7,
+    "dE": 9.9
+  },
+  {
+    "name": "Pastel Blue",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#3e8ccc",
+    "t": 0.9921875,
+    "dL": 1.6,
+    "dE": 5.06
+  },
+  {
+    "name": "Blue Jeans",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#427caa",
+    "t": 0.98046875,
+    "dL": -4.4,
+    "dE": 10.59
+  },
+  {
+    "name": "Cobalt Blue [hue]",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#00689c",
+    "t": 0.98046875,
+    "dL": -14.3,
+    "dE": 14.42
+  },
+  {
+    "name": "Light Blue",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#0f9adf",
+    "t": 0.9921875,
+    "dL": 5.8,
+    "dE": 6.21
+  },
+  {
+    "name": "Azurite Blue",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#00839a",
+    "t": 0.9375,
+    "dL": -7,
+    "dE": 10.35
+  },
+  {
+    "name": "Turquoise Blue",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#01afce",
+    "t": 0.94921875,
+    "dL": 10.6,
+    "dE": 11.56
+  },
+  {
+    "name": "Malachite Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#006d87",
+    "t": 0.9453125,
+    "dL": -14.1,
+    "dE": 14.3
+  },
+  {
+    "name": "Greenish Blue",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#00787b",
+    "t": 0.8984375,
+    "dL": -12.3,
+    "dE": 13.11
+  },
+  {
+    "name": "Turquoise Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#00b9b9",
+    "t": 0.88671875,
+    "dL": 10.7,
+    "dE": 13.19
+  },
+  {
+    "name": "Opaline Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#008c8e",
+    "t": 0.8984375,
+    "dL": -5.3,
+    "dE": 9.27
+  },
+  {
+    "name": "Bluish Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#007a5f",
+    "t": 0.8125,
+    "dL": -14.7,
+    "dE": 15.06
+  },
+  {
+    "name": "Veronese Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#00b07f",
+    "t": 0.71875,
+    "dL": 0.9,
+    "dE": 8.48
+  },
+  {
+    "name": "Emerald Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#008561",
+    "t": 0.796875,
+    "dL": -11.4,
+    "dE": 12.42
+  },
+  {
+    "name": "Greyish Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#009f76",
+    "t": 0.7734375,
+    "dL": -2.4,
+    "dE": 2.92
+  },
+  {
+    "name": "Grass Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#009660",
+    "t": 0.71875,
+    "dL": -7.9,
+    "dE": 8.22
+  },
+  {
+    "name": "Yellow Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#91df59",
+    "t": 0.08984375,
+    "dL": -1.8,
+    "dE": 8.01
+  },
+  {
+    "name": "Lemon Yellow",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#f0ed4c",
+    "t": 0,
+    "dL": 0.8,
+    "dE": 4.36
+  },
+  {
+    "name": "Canary Yellow",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#f8e538",
+    "t": 0,
+    "dL": -0.8,
+    "dE": 11.45
+  },
+  {
+    "name": "Empire Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#007f5d",
+    "t": 0.8046875,
+    "dL": -13.2,
+    "dE": 13.86
+  },
+  {
+    "name": "Gentian Blue",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#006fbf",
+    "t": 1,
+    "dL": -10,
+    "dE": 10.39
+  },
+  {
+    "name": "Peacock Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#00af7b",
+    "t": 0.7109375,
+    "dL": 0.2,
+    "dE": 7.07
+  },
+  {
+    "name": "Spring Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#cae550",
+    "t": 0.015625,
+    "dL": -2,
+    "dE": 6.28
+  },
+  {
+    "name": "Light Yellow Glaze",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#f4f35b",
+    "t": 0,
+    "dL": 2.7,
+    "dE": 6.47
+  },
+  {
+    "name": "Cadmium Yellow Lemon",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#e7ed46",
+    "t": 0,
+    "dL": -0.1,
+    "dE": 0.27
+  },
+  {
+    "name": "Light Ultramarine",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#5589e4",
+    "t": 1,
+    "dL": 2.9,
+    "dE": 13.16
+  },
+  {
+    "name": "Sky Blue",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#74a4e9",
+    "t": 0.99609375,
+    "dL": 12.1,
+    "dE": 15.28
+  },
+  {
+    "name": "Phthalo Blue",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#0068bb",
+    "t": 1,
+    "dL": -11.5,
+    "dE": 13.58
+  },
+  {
+    "name": "Middle Phthalo Blue",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#0085d4",
+    "t": 1,
+    "dL": -1.9,
+    "dE": 3.46
+  },
+  {
+    "name": "Light Phthalo Blue",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#0097dd",
+    "t": 0.9921875,
+    "dL": 4.3,
+    "dE": 5.77
+  },
+  {
+    "name": "Cobalt Turquoise",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#00698c",
+    "t": 0.9609375,
+    "dL": -14.5,
+    "dE": 14.61
+  },
+  {
+    "name": "Cobalt Green",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#00a0aa",
+    "t": 0.91015625,
+    "dL": 3,
+    "dE": 7.02
+  },
+  {
+    "name": "Chrome Oxide Green Fiery",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#007f72",
+    "t": 0.859375,
+    "dL": -11.1,
+    "dE": 11.99
+  },
+  {
+    "name": "Phthalo Green",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#00927a",
+    "t": 0.8125,
+    "dL": -6.5,
+    "dE": 13.21
+  },
+  {
+    "name": "Emerald Green",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#009864",
+    "t": 0.7109375,
+    "dL": -8.3,
+    "dE": 12.74
+  },
+  {
+    "name": "Light Phthalo Green",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#00b87b",
+    "t": 0.6484375,
+    "dL": 1,
+    "dE": 11.07
+  },
+  {
+    "name": "Light Green",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#6fdd57",
+    "t": 0.16796875,
+    "dL": -0.3,
+    "dE": 3.38
+  },
+  {
+    "name": "Grass Green",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#34c147",
+    "t": 0.33984375,
+    "dL": -4.9,
+    "dE": 6.49
+  },
+  {
+    "name": "Leaf Green",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#00a744",
+    "t": 0.50390625,
+    "dL": -9.2,
+    "dE": 10
+  },
+  {
+    "name": "Lemon Yellow",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#f2ea50",
+    "t": 0,
+    "dL": 0.3,
+    "dE": 6.89
+  },
+  {
+    "name": "Blue Violet Lake",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#6b8fca",
+    "t": 0.9921875,
+    "dL": 4.5,
+    "dE": 13.97
+  },
+  {
+    "name": "Blue Lake",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#5d96d9",
+    "t": 0.99609375,
+    "dL": 6.4,
+    "dE": 10.11
+  },
+  {
+    "name": "Non- Photo Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#00b0e6",
+    "t": 0.9765625,
+    "dL": 12.2,
+    "dE": 13.79
+  },
+  {
+    "name": "True Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#0083cd",
+    "t": 0.99609375,
+    "dL": -3.5,
+    "dE": 6.47
+  },
+  {
+    "name": "Aquamarine",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#0090a0",
+    "t": 0.92578125,
+    "dL": -2.9,
+    "dE": 9.35
+  },
+  {
+    "name": "Light Cerulean Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#5da3e1",
+    "t": 0.98828125,
+    "dL": 10.2,
+    "dE": 11.64
+  },
+  {
+    "name": "Cerulean Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#006db5",
+    "t": 0.99609375,
+    "dL": -11.4,
+    "dE": 11.63
+  },
+  {
+    "name": "Parrot Green",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#009a88",
+    "t": 0.828125,
+    "dL": -3.4,
+    "dE": 13.5
+  },
+  {
+    "name": "Mediterranean Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#2274a5",
+    "t": 0.984375,
+    "dL": -8,
+    "dE": 10.26
+  },
+  {
+    "name": "Peacock Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#006896",
+    "t": 0.98046875,
+    "dL": -14.3,
+    "dE": 14.5
+  },
+  {
+    "name": "Yellow Chartreuse",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#deea53",
+    "t": 0.00390625,
+    "dL": -0.6,
+    "dE": 5.46
+  },
+  {
+    "name": "Chartreuse",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#b9d215",
+    "t": 0.01171875,
+    "dL": -9.3,
+    "dE": 10.38
+  },
+  {
+    "name": "Spring Green",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#80cf41",
+    "t": 0.08984375,
+    "dL": -7.7,
+    "dE": 9.07
+  },
+  {
+    "name": "Muted Turquoise",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#639fae",
+    "t": 0.94140625,
+    "dL": 6.5,
+    "dE": 13.03
+  },
+  {
+    "name": "True Green",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#06cc86",
+    "t": 0.6171875,
+    "dL": 7.9,
+    "dE": 9.06
+  }
+]

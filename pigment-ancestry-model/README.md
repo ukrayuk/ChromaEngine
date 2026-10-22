@@ -698,6 +698,67 @@ alongside a ΔE match in the model's output — e.g. flagging a match that
 lands in a shallow-gradient stretch as lower-confidence even though it's
 within threshold. Diagnosed, not yet designed.
 
+## The ΔE ladder visualization (2026-10-22)
+
+Grew directly out of the positional-precision finding above, through a
+conversation working out what ΔE actually *is* geometrically. The
+clearest image that emerged: each point on the arc has its own ΔE
+sphere around it (radius = the fit threshold); the spheres overlapping
+along the whole arc trace out a **tube**, and a pencil fits if it falls
+anywhere inside that tube. A separate, harder question followed: two
+pencils could both sit on the *surface* of the same sphere — one at the
+"top" (lighter), one at the "bottom" (darker) — and a raw ΔE check
+can't tell them apart, it's a direction-blind scalar. That's exactly
+why dL/dC/dH exist as a separate, direction-aware layer in the taxonomy
+classifier (tint = top of the sphere, shade = bottom).
+
+**The practical problem this exposed**: every blind-test gradient bar
+built so far has only ever shown the *exact* arc colour as a single
+thin line. A pencil whose true position is, say, ΔE 6.5 away has never
+had anywhere to visually sit — it was always going to look like it
+"doesn't match," because the tolerance itself was never shown, only
+implied by a number nobody could picture.
+
+**The fix**: `scripts/build_de_ladder.cjs` builds a full ladder of every
+integer lightness step from the exact arc colour out to ±15 (clamped to
+however far the project's fit threshold reaches), using the arc's real
+Lab value at each t and shifting purely in the lightness direction —
+the same direction the anchor tint/shade thresholds from the day before
+were calibrated against, so the two pieces of work line up rather than
+being separate ideas. `scripts/diagrams/build_de_ladder_viz.cjs` renders
+it: 31 rows (tint +15 down to shade −15, exact arc bolded in the
+middle), each spanning the full t=0→1 width. Every pencil that
+currently fits gets placed on the row matching its own real ΔL from its
+nearest arc point (not just "fits/doesn't"), so a pencil at ΔE 6.5 has
+an actual rung to land on instead of being judged against an impossible
+single line.
+
+**What it showed immediately, for Yellow-Blue**: most fitting pencils
+cluster within about ±5 rows of the exact arc, a handful sit out at
+±10–15, and — independently confirming yesterday's edge-clustering
+finding a third way — there's a visible pile-up of swatches at the very
+tip of each anchor end, spanning a wide range of rows (rows as far
+apart as tint +12 and shade −11 at the Cool Blue end alone). Checked
+directly: this isn't a visualisation artefact or something that would
+be fixed by extending the anchors — dozens of genuinely different real
+pencils (Primary Blue, Sky Blue, Non-Photo Blue, Blue Orchid...) land at
+literally the same one or two discrete points (t=1.0000, t=0.9961)
+despite a 23-point spread in lightness, because moving away from the
+anchor in either t-direction doesn't bring the arc closer to any of
+them — it moves toward a different hue entirely. They share a column
+because they're similar in **hue**; the ladder is what makes it visible
+that they genuinely differ in **lightness**.
+
+**Next step (2026-10-22, queued for the next session)**: a blank
+version of the ladder (`--clean` flag, no pencil swatches, with a t-axis
+scale added along the bottom) has been generated for Yellow-Blue and
+sent to Ray, to place real pencils against by eye and report back as
+e.g. "ΔE 11 tint, t=0.7" — a third round of blind validation, this time
+testing against the full tolerance structure instead of a single
+impossible line. Should give a much more honest read on how well the
+model's positioning actually matches human perception than either of
+the first two rounds could.
+
 ## Open items (read this part)
 
 ### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing

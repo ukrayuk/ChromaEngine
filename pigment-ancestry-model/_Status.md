@@ -1,8 +1,8 @@
 ---
 status: Active
-stage: all six anchors now have first-pass tint/shade/normal thresholds (by eye, against ChromaEngine's ramp tool); a real ΔE-positional-precision limitation found and validated -- explains why loose-ΔE matches read as wrong by eye in both blind test rounds
-last_touched: 21 October 2026
-next_action: decide whether/how to report positional confidence alongside a ΔE match (e.g. flag matches landing in a shallow-gradient stretch of the arc as lower-confidence even if they're within threshold) -- not yet designed, just diagnosed; wire data/anchor_thresholds.json into the never-fit taxonomy classifier (currently tint/shade/tone are decided by dL/dC/dH against the nearest arc point, not by a per-anchor lightness threshold -- these are a different, more direct mechanism and need reconciling with the existing logic, not just bolted on); re-check the Cool Blue/Cool Red "shade"/"dark" sub-clusters (3 and 5 entries respectively) for a second instance of the proven structural-limit split now that real shade boundaries exist to test them against; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3 and tints
+stage: built the ΔE ladder visualization (every integer lightness step, both directions, for the Yellow-Blue arc) so blind-test placements can be reported as real coordinates (ΔE N tint/shade, t=X.X) instead of against a single impossible exact-match line; clean blank version sent to Ray for a third blind-validation round tomorrow
+last_touched: 22 October 2026
+next_action: process Ray's ΔE-ladder blind-placement round (reported as "ΔE N tint/shade, t=X.X" coordinate pairs) against the model's actual computed positions once he provides them; build the ladder for RoY and BvR once YgB's is validated; decide whether/how to report positional confidence alongside a ΔE match -- not yet designed, just diagnosed; wire data/anchor_thresholds.json into the never-fit taxonomy classifier (currently tint/shade/tone are decided by dL/dC/dH against the nearest arc point, not by a per-anchor lightness threshold -- these are a different, more direct mechanism and need reconciling with the existing logic, not just bolted on); re-check the Cool Blue/Cool Red "shade"/"dark" sub-clusters (3 and 5 entries respectively) for a second instance of the proven structural-limit split now that real shade boundaries exist to test them against; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; rebuild the outlier tracker/anchor-threshold analysis against the full 1825-pencil master.json (not just the 1294-pencil book+extra scope); continue the blind validation test with Level 3 and tints
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,13 +17,41 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-21 (this session, after finding and validating
-a real ΔE-positional-precision limitation of the model -- a fixed ΔE
-threshold does NOT give consistent positional confidence along an arc,
-and this explains a pattern from both blind-test rounds rather than
-just being a new isolated finding)
+**Last updated:** 2026-10-22 (this session, after building the ΔE ladder
+visualization -- grew directly out of the 2026-10-21 positional-precision
+finding, makes the whole tolerance structure visible instead of just a
+single exact-match line, and a clean blank version has gone to Ray for a
+third blind-validation round tomorrow)
 
-## Current state — MILESTONE: a genuine model limitation found and quantified (ΔE-threshold positional precision varies ~7x along an arc depending on local gradient steepness) -- explains the loose-ΔE rejection pattern from both blind-test rounds; all six anchors now have first-pass tint/shade/normal thresholds; threshold-sensitivity check confirms the Yellow-Blue outlier population is one coherent pigment-chemistry cluster, not noise
+## Current state — the ΔE ladder: Ray's "eureka" fix for the blind-test diagrams, now built and committed for Yellow-Blue
+
+- **ΔE ladder visualization (2026-10-22)**: Ray's own insight the day
+  before -- the blind-test comparison images only ever showed the arc's
+  single exact (ΔE=0) colour, so a pencil that's a real ΔE=6.5 away had
+  nowhere to visually sit, which is a big part of why matching by eye
+  against those diagrams felt so hard. Built `scripts/build_de_ladder.cjs`
+  (data) and `scripts/diagrams/build_de_ladder_viz.cjs` (rendering, with a
+  `--clean` flag) to fix this directly: every integer lightness step from
+  the exact Yellow-Blue arc colour out to ±15 (tint=lighter, shade=
+  darker), each currently-fitting pencil placed on the *rung matching its
+  own real ΔL* from its nearest arc point (not just binned to "fits" vs
+  "doesn't"), at its true t-position left-right. Ran against the full
+  11-range master.json scope: 119 fitting pencils, clustering tightly
+  within ±5 rows of the exact arc as expected, with a genuine pile-up at
+  both anchor tips spanning tint+12 to shade−11 -- checked directly against
+  real t-values and dL-spread and confirmed this is hue-similarity forcing
+  a shared t-position (many different pencils, genuinely spread across a
+  wide lightness range, converging on the same column because the arc has
+  nowhere left to go hue-wise), not an anchor-extension-fixable artifact.
+  A blank (`--clean`) version with pencil swatches removed and a t-axis
+  scale added in their place has been sent to Ray (`ygb_ladder_clean.png`)
+  for a third round of blind validation tomorrow: rather than matching
+  against one impossible exact line, he'll report real placements as
+  coordinate pairs like "ΔE 11 tint, t=0.7", directly testing the model's
+  computed position against his own eye across the whole tolerance
+  structure, not just a binary accept/reject.
+
+## Current state — MILESTONE (2026-10-21): a genuine model limitation found and quantified (ΔE-threshold positional precision varies ~7x along an arc depending on local gradient steepness) -- explains the loose-ΔE rejection pattern from both blind-test rounds; all six anchors now have first-pass tint/shade/normal thresholds; threshold-sensitivity check confirms the Yellow-Blue outlier population is one coherent pigment-chemistry cluster, not noise
 
 - **ΔE-threshold positional-precision limitation found and validated
   (2026-10-21, Ray's own reasoning, checked against real data)**: Ray
