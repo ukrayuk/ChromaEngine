@@ -44,11 +44,12 @@ for (const p of fit) {
 const parts = [];
 parts.push('<!doctype html>');
 parts.push('<html><head><meta charset="utf-8"><style>');
-parts.push('  body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding: 60px 60px 60px 280px; width: 4400px; box-sizing: border-box; }');
+parts.push('  body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding: 60px 280px 60px 280px; width: 4620px; box-sizing: border-box; }');
 parts.push('  h1 { font-size: 34px; margin: 0 0 6px 0; }');
 parts.push('  .sub { font-size: 20px; color: #555; margin: 0 0 24px 0; max-width: 3900px; }');
 parts.push('  .ladder { position: relative; border: 2px solid #999; border-radius: 4px; }');
 parts.push('  .rlabel { position: absolute; left: -210px; width: 195px; text-align: right; font-size: 17px; color: #444; font-family: monospace; }');
+parts.push('  .rlabel.right { left: auto; right: -210px; text-align: left; }');
 parts.push('  .row { width: ' + BAR_WIDTH + 'px; height: ' + ROW_HEIGHT + 'px; position: relative; }');
 parts.push('  .row.exact { outline: 3px solid #000; outline-offset: -2px; }');
 parts.push('  .swatch { position: absolute; width: ' + SWATCH + 'px; height: ' + SWATCH + 'px; top: 3px; border: 2px solid #000; box-sizing: border-box; }');
@@ -71,6 +72,7 @@ for (const r of rowOrder) {
   const cls = r.dl === 0 ? 'row exact' : 'row';
   parts.push('<div class="' + cls + '" style="background: linear-gradient(to right, ' + stops(ladder[r.key]) + ');">');
   parts.push('  <div class="rlabel" style="top:12px;">' + r.label + '</div>');
+  parts.push('  <div class="rlabel right" style="top:12px;">' + r.label + '</div>');
   const rowPencils = byRow[r.key] || [];
   for (const p of rowPencils) {
     const left = (p.t * BAR_WIDTH) - (SWATCH / 2);

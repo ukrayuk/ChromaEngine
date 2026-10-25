@@ -1,8 +1,8 @@
 ---
 status: Active
-stage: ran the third blind-validation round against the ΔE ladder (25 real pencils, blind-placed by Ray as row+t coordinates) -- t-axis positioning was excellent (median error ~0.02-0.03) and the big misses weren't noise: 4 of 5 clustered in the shallow-gradient mid-arc band (t=0.32-0.60) and all 4 were shade pencils read as systematically darker than they measure, a directional confirmation of the 2026-10-21 positional-precision finding
+stage: ran a fourth blind-validation round (10 fresh pencils, all from the t=0.3-0.7 shallow-gradient zone, +/-2-row tolerance) specifically to test round 3's "shade reads darker in the shallow zone" claim -- it did NOT replicate: shades placed fine this round, the misses were on tints (both directions) and one near-exact swatch misread as shade. Revised verdict: the shallow mid-arc zone has a real elevated error rate, but no established direction -- round 3's directional pattern looks more like a small-sample artefact of that particular cluster than a general law. Ladder diagrams now have row labels on both left and right edges.
 last_touched: 25 October 2026
-next_action: decide whether to run the same round-3 protocol (blank ladder + 25-pencil blind set) against RoY and BvR to see if the same shallow-gradient shade-direction bias shows up there too; investigate the ID22 "near-anchor lightness ceiling" outlier (real tint+10 near t=0 called only tint+4 -- opposite direction and different location from the main cluster, not yet understood) with a few more near-anchor pale-pencil placements before concluding anything; decide whether/how to report positional confidence alongside a ΔE match now that the bias has a direction, not just a magnitude; wire data/anchor_thresholds.json into the never-fit taxonomy classifier (currently tint/shade/tone are decided by dL/dC/dH against the nearest arc point, not by a per-anchor lightness threshold -- these are a different, more direct mechanism and need reconciling with the existing logic, not just bolted on); re-check the Cool Blue/Cool Red "shade"/"dark" sub-clusters (3 and 5 entries respectively) for a second instance of the proven structural-limit split now that real shade boundaries exist to test them against; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; rebuild the outlier tracker/anchor-threshold analysis against the full 1825-pencil master.json (not just the 1294-pencil book+extra scope); continue the blind validation test with Level 3 and tints
+next_action: decide whether a larger round-5 sample (20+) in the t=0.3-0.7 zone is worth running to settle the direction question properly, now that round 3 vs round 4 disagree; investigate the Fern (round 4 ID9) near-exact-misread-as-shade case -- a different, possibly more interesting pattern (why would a swatch barely different from the arc get read as meaningfully darker?) than either round's main story; decide whether to run the round-3/4 protocol against RoY and BvR to see if either arc shows a cleaner version of the pattern; decide whether/how to report positional confidence alongside a ΔE match given the direction is still unsettled; wire data/anchor_thresholds.json into the never-fit taxonomy classifier (currently tint/shade/tone are decided by dL/dC/dH against the nearest arc point, not by a per-anchor lightness threshold -- these are a different, more direct mechanism and need reconciling with the existing logic, not just bolted on); re-check the Cool Blue/Cool Red "shade"/"dark" sub-clusters (3 and 5 entries respectively) for a second instance of the proven structural-limit split now that real shade boundaries exist to test them against; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; rebuild the outlier tracker/anchor-threshold analysis against the full 1825-pencil master.json (not just the 1294-pencil book+extra scope); continue the blind validation test with Level 3 and tints
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,13 +17,55 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-25 (this session, after scoring the third
-blind-validation round against the ΔE ladder -- t-axis placement was
-excellent, and the misses weren't noise: they cluster by location and
-share a direction, the first time this project has found a *directional*
-bias rather than just "less certain here")
+**Last updated:** 2026-10-25 (this session, after scoring a fourth
+blind-validation round built specifically to test round 3's directional
+claim -- it didn't replicate, so the claim has been walked back to
+"elevated error, direction unsettled" rather than quietly left standing)
 
-## Current state — ROUND 3 RESULT: the shallow-gradient zone doesn't just lose precision, it loses it in one direction (shade reads as deeper than it measures)
+## Current state — ROUND 4 RESULT: round 3's directional shade bias did NOT replicate -- shallow zone still elevated-error, but not proven one-directional
+
+- **Fourth blind-validation round, scored (2026-10-25)**: built directly
+  to test round 3's "shade reads darker in the shallow mid-arc zone"
+  claim. 10 fresh pencils (none reused from round 3's 25), all drawn
+  from the t≈0.3–0.7 shallow-gradient band -- including, for the first
+  time, pencils pulled from the full 1825-pencil `master.json` rather
+  than just the 1294-pencil book+extra scope, since the book+extra pool
+  was too thin in this exact zone to fill 10 unused pencils. Mixed
+  shade and tint deliberately (round 3's cluster was all-shade, so this
+  was the direct test of whether the bias is shade-specific or hits
+  both directions). Tolerance recalibrated to ±2 rows per Ray's
+  observation that ±1 is probably finer than the eye reliably resolves
+  (round 3 showed 14/25 within ±1, mostly off by exactly 1). Selection,
+  shuffle, scoring: `scripts/score_de_ladder_round4.cjs` (reads
+  `data/ygb_blind10_round4.json`, writes
+  `data/ygb_blind10_round4_scored.json`). Ray's annotated placement
+  image: `scripts/diagrams/ygb_ladder_round4_ray_placements.png`.
+
+  **Result: 7/10 within ±2 rows, t-axis still excellent.** But the
+  3 misses broke the round-3 pattern rather than confirming it: all 3
+  real shade pencils this round placed fine (within ±2); the misses
+  were two tints (one under-read by 3, one over-read by 3 -- opposite
+  directions) and one near-exact swatch (ΔL≈+1, essentially sitting on
+  the arc) read as shade −4, the single biggest miss of the round.
+
+  **Revised verdict**: round 3's "shade reads darker in the shallow
+  zone" claim does not look like a stable, generalizable law -- it may
+  have been real for that specific 4-pencil cluster, or a small-sample
+  coincidence. What holds across both rounds: the shallow mid-arc zone
+  genuinely produces more/larger misses than elsewhere (consistent with
+  the 2026-10-21 gradient-steepness finding). What does NOT hold: a
+  consistent direction to those misses. The directional claim from the
+  round-3 write-up below is superseded by this result -- left in place
+  as the historical record of what round 3 actually showed, not deleted,
+  but should not be treated as established going forward.
+
+  **A new, separate thread worth tracking**: the Fern near-exact
+  misread (real ΔL≈+1, called shade −4) is an odd one on its own merits
+  -- a swatch barely different from the arc got read as meaningfully
+  darker, not "basically on the line." Worth watching for in future
+  rounds; not enough data yet to say anything about it.
+
+## Current state — ROUND 3 RESULT: the shallow-gradient zone doesn't just lose precision, it loses it in one direction (shade reads as deeper than it measures) -- SEE ROUND 4 ABOVE: this directional claim did not replicate and should not be treated as established
 
 - **Third blind-validation round, scored (2026-10-25)**: 25 real
   Yellow-Blue-fitting pencils, stratified across t (near Cool Yellow /

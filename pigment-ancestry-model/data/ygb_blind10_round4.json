@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Apple Green",
+    "range": "Faber-Castell Black Edition Coloured Pencils",
+    "t": 0.484,
+    "dL": 9.8,
+    "dE": 12.92,
+    "hex": "#63dc7e"
+  },
+  {
+    "id": 2,
+    "name": "Leaf Green Middle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "t": 0.305,
+    "dL": -0.8,
+    "dE": 3.7,
+    "hex": "#25d351"
+  },
+  {
+    "id": 3,
+    "name": "Emerald Green",
+    "range": "Faber-Castell Polychromos 9201",
+    "t": 0.711,
+    "dL": -8.3,
+    "dE": 12.74,
+    "hex": "#009864"
+  },
+  {
+    "id": 4,
+    "name": "Leaf Green",
+    "range": "Faber-Castell Polychromos 9201",
+    "t": 0.504,
+    "dL": -9.2,
+    "dE": 10,
+    "hex": "#00a744"
+  },
+  {
+    "id": 5,
+    "name": "Mint",
+    "range": "Derwent Coloursoft Pencils",
+    "t": 0.625,
+    "dL": 3,
+    "dE": 3.06,
+    "hex": "#1cbc74"
+  },
+  {
+    "id": 6,
+    "name": "Pastel Green",
+    "range": "Faber-Castell Black Edition Coloured Pencils",
+    "t": 0.625,
+    "dL": 9.7,
+    "dE": 12.11,
+    "hex": "#5dcd82"
+  },
+  {
+    "id": 7,
+    "name": "Pea Green",
+    "range": "Koh-I-Noor Polycolor 3800",
+    "t": 0.617,
+    "dL": 8,
+    "dE": 8.33,
+    "hex": "#30cb84"
+  },
+  {
+    "id": 8,
+    "name": "Emerald Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "t": 0.578,
+    "dL": 3.8,
+    "dE": 13.22,
+    "hex": "#00c882"
+  },
+  {
+    "id": 9,
+    "name": "Fern",
+    "range": "Faber-Castell Black Edition Coloured Pencils",
+    "t": 0.504,
+    "dL": 0.9,
+    "dE": 7.16,
+    "hex": "#43c05e"
+  },
+  {
+    "id": 10,
+    "name": "Emerald Green",
+    "range": "Derwent Artists Pencils",
+    "t": 0.594,
+    "dL": 8.2,
+    "dE": 10.18,
+    "hex": "#53cd7e"
+  }
+]

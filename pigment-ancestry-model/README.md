@@ -805,10 +805,70 @@ from the main cluster. Possible "near-anchor lightness ceiling" effect
 lightening — but this is one data point, not a finding. Worth testing
 with a few more near-anchor pale placements before concluding anything.
 
-**Next step**: decide whether to run the same round-3 protocol (blank
-ladder + stratified 25-pencil blind set) against RoY and BvR, to check
-whether the same shallow-gradient shade-direction bias shows up on
-those arcs too, or is specific to Yellow-Blue's particular geometry.
+**Next step (superseded by round 4, below)**: decide whether to run the
+same round-3 protocol against RoY and BvR. Before that happened, Ray
+asked for a direct test of the directional claim itself — see round 4.
+
+## The ΔE ladder, round 4: the directional claim didn't survive a direct test (2026-10-25)
+
+Round 3's headline was that shade pencils in the shallow mid-arc zone
+(t≈0.32–0.60) read as systematically darker than they measure. Before
+extending that to other arcs, Ray asked to test the claim directly: a
+smaller, fresh sample (10 pencils, none reused from round 3) drawn
+specifically from the shallow zone (t≈0.3–0.7), mixing shade and tint
+so a shade-specific bias would show up as shades missing and tints not.
+Tolerance was also recalibrated to ±2 rows, per Ray's observation that
+±1 is probably finer than the eye reliably resolves — round 3 had 14/25
+within ±1, most of those off by exactly 1, which reads as a resolution
+floor rather than error.
+
+The book+extra 9-range scope (119-pencil pool) turned out too thin in
+this exact zone to supply 10 unused pencils, so this round is the first
+to pull real pencils from the full 1825-pencil `master.json` — a
+genuine, if small, step toward the long-flagged "rebuild against the
+full pencil set" item. Two extra ranges used here for the first time:
+Faber-Castell Black Edition and Koh-I-Noor Polycolor 3800.
+
+Also added for this round: row labels on **both** the left and right
+edges of the ladder (`scripts/diagrams/build_de_ladder_viz.cjs`), so a
+pencil placed mid-arc doesn't require tracking all the way back to the
+left edge to read its row.
+
+Selection, shuffle, scoring: `scripts/score_de_ladder_round4.cjs`
+(reads `data/ygb_blind10_round4.json`, writes
+`data/ygb_blind10_round4_scored.json`). Ray's annotated placements:
+`scripts/diagrams/ygb_ladder_round4_ray_placements.png`.
+
+**Result: 7/10 within ±2 rows, t-axis still excellent — but the 3
+misses broke the round-3 pattern instead of confirming it.** All three
+real shade pencils this round placed fine. The misses were two tints —
+one under-read by 3 rows, one over-read by 3 rows, opposite directions
+— and one near-exact swatch (ΔL≈+1, essentially sitting on the arc)
+called shade −4, the single biggest miss of the round.
+
+**Revised verdict**: the round-3 "shade reads darker in the shallow
+zone" claim does not look like a stable, generalizable law. It may have
+been real for that specific 4-pencil cluster, or a small-sample
+coincidence — round 4's different, more tint-heavy sample from the same
+zone didn't reproduce it. What *does* hold across both rounds: the
+shallow mid-arc zone produces a genuinely elevated error rate compared
+to elsewhere (consistent with the 2026-10-21 gradient-steepness
+finding). What does *not* hold: a consistent direction to those errors.
+The round-3 directional claim above is left in place as the historical
+record of what that round actually showed, not deleted — but it should
+not be treated as established, and should not be assumed to generalize
+to RoY or BvR without its own test.
+
+One new thread, not yet understood: the near-exact swatch misread as
+shade −4 is odd on its own terms — a pencil barely different from the
+arc got read as meaningfully darker rather than "basically on the
+line." Not enough data to say anything about why yet.
+
+**Next step**: decide whether a larger round-5 sample (20+, still in
+the t≈0.3–0.7 zone) is worth running to settle the direction question
+properly, now that round 3 and round 4 disagree — or whether to treat
+"elevated error, no established direction" as the working answer for
+this zone and move on to testing RoY/BvR instead.
 
 ## Open items (read this part)
 
