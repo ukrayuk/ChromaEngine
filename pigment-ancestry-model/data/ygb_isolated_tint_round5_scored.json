@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Turquoise Blue",
+    "range": "Caran d'Ache Luminance 6901",
+    "t": 0.941,
+    "realDL": 8.6,
+    "realRow": 9,
+    "rayRow": 9,
+    "err": 0,
+    "dE": 0
+  },
+  {
+    "id": 2,
+    "name": "Cobalt Blue 10%",
+    "range": "Caran d'Ache Luminance 6901",
+    "t": 1,
+    "realDL": 4.9,
+    "realRow": 5,
+    "rayRow": 5,
+    "err": 0,
+    "dE": 0
+  },
+  {
+    "id": 3,
+    "name": "Turquoise Green",
+    "range": "Caran d'Ache Pablo 666",
+    "t": 0.887,
+    "realDL": 10.7,
+    "realRow": 11,
+    "rayRow": 11,
+    "err": 0,
+    "dE": 0
+  },
+  {
+    "id": 4,
+    "name": "Gentian Blue",
+    "range": "Castle Arts Harmonious Collection",
+    "t": 0.965,
+    "realDL": 2,
+    "realRow": 2,
+    "rayRow": 2,
+    "err": 0,
+    "dE": 0
+  },
+  {
+    "id": 5,
+    "name": "Light Yellow Glaze",
+    "range": "Faber-Castell Polychromos 9201",
+    "t": 0,
+    "realDL": 2.7,
+    "realRow": 3,
+    "rayRow": 3,
+    "err": 0,
+    "dE": 0
+  },
+  {
+    "id": 6,
+    "name": "Non- Photo Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "t": 0.977,
+    "realDL": 12.2,
+    "realRow": 12,
+    "rayRow": 13,
+    "err": 1,
+    "dE": 1
+  },
+  {
+    "id": 7,
+    "name": "Sky Blue",
+    "range": "Caran d'Ache Pablo 666",
+    "t": 0.996,
+    "realDL": 3.7,
+    "realRow": 4,
+    "rayRow": 3,
+    "err": -1,
+    "dE": 1
+  },
+  {
+    "id": 8,
+    "name": "Cerulean Blue Middle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "t": 0.988,
+    "realDL": 2.3,
+    "realRow": 2,
+    "rayRow": 4,
+    "err": 2,
+    "dE": 2
+  },
+  {
+    "id": 9,
+    "name": "Light Blue",
+    "range": "Caran d'Ache Luminance 6901",
+    "t": 0.973,
+    "realDL": 6.7,
+    "realRow": 7,
+    "rayRow": 7,
+    "err": 0,
+    "dE": 0
+  },
+  {
+    "id": 10,
+    "name": "Blue Violet Lake",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "t": 0.992,
+    "realDL": 4.5,
+    "realRow": 5,
+    "rayRow": 4,
+    "err": -1,
+    "dE": 1
+  }
+]

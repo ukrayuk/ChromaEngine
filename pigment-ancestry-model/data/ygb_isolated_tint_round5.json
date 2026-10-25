@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Turquoise Blue",
+    "range": "Caran d'Ache Luminance 6901",
+    "t": 0.94140625,
+    "dL": 8.6,
+    "dE": 9.63,
+    "hex": "#00aac5"
+  },
+  {
+    "id": 2,
+    "name": "Cobalt Blue 10%",
+    "range": "Caran d'Ache Luminance 6901",
+    "t": 1,
+    "dL": 4.9,
+    "dE": 6.48,
+    "hex": "#4992e0"
+  },
+  {
+    "id": 3,
+    "name": "Turquoise Green",
+    "range": "Caran d'Ache Pablo 666",
+    "t": 0.88671875,
+    "dL": 10.7,
+    "dE": 13.19,
+    "hex": "#00b9b9"
+  },
+  {
+    "id": 4,
+    "name": "Gentian Blue",
+    "range": "Castle Arts Harmonious Collection",
+    "t": 0.96484375,
+    "dL": 2,
+    "dE": 8.3,
+    "hex": "#4c91b2"
+  },
+  {
+    "id": 5,
+    "name": "Light Yellow Glaze",
+    "range": "Faber-Castell Polychromos 9201",
+    "t": 0,
+    "dL": 2.7,
+    "dE": 6.47,
+    "hex": "#f4f35b"
+  },
+  {
+    "id": 6,
+    "name": "Non- Photo Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "t": 0.9765625,
+    "dL": 12.2,
+    "dE": 13.79,
+    "hex": "#00b0e6"
+  },
+  {
+    "id": 7,
+    "name": "Sky Blue",
+    "range": "Caran d'Ache Pablo 666",
+    "t": 0.99609375,
+    "dL": 3.7,
+    "dE": 9.9,
+    "hex": "#5b8ed0"
+  },
+  {
+    "id": 8,
+    "name": "Cerulean Blue Middle",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "t": 0.98828125,
+    "dL": 2.3,
+    "dE": 11.78,
+    "hex": "#0096da"
+  },
+  {
+    "id": 9,
+    "name": "Light Blue",
+    "range": "Caran d'Ache Luminance 6901",
+    "t": 0.97265625,
+    "dL": 6.7,
+    "dE": 7.99,
+    "hex": "#00a1d3"
+  },
+  {
+    "id": 10,
+    "name": "Blue Violet Lake",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "t": 0.9921875,
+    "dL": 4.5,
+    "dE": 13.97,
+    "hex": "#6b8fca"
+  }
+]

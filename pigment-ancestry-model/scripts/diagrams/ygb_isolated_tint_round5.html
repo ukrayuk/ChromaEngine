@@ -1,0 +1,247 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  body { font-family: Arial, sans-serif; background: #fff; margin: 0; padding: 50px; width: 1700px; box-sizing: border-box; }
+  h1 { font-size: 26px; margin: 0 0 8px 0; }
+  .sub { font-size: 16px; color: #555; margin: 0 0 24px 0; max-width: 1600px; }
+  .board { display: flex; align-items: flex-start; }
+  .rowlabels { display: flex; flex-direction: column; margin-right: 6px; }
+  .rowlabels .cell { height: 32px; font-size: 13px; color: #444; font-family: monospace; display: flex; align-items: center; justify-content: flex-end; width: 80px; padding-right: 6px; box-sizing: border-box; }
+  .col { width: 130px; margin-right: 10px; }
+  .col .idlabel { text-align: center; font-weight: bold; font-family: monospace; font-size: 16px; margin-bottom: 4px; }
+  .col .cell { height: 32px; border-left: 1px solid rgba(0,0,0,0.15); border-right: 1px solid rgba(0,0,0,0.15); }
+  .col .cell.exact { outline: 2px solid #000; outline-offset: -1px; }
+  .col .cell:first-child { border-top: 1px solid rgba(0,0,0,0.15); }
+  .col .cell:last-child { border-bottom: 1px solid rgba(0,0,0,0.15); }
+  .swatchrow { display: flex; margin-top: 30px; }
+  .swatchcard { width: 130px; margin-right: 10px; text-align: center; }
+  .swatchcard .swatch { width: 110px; height: 90px; margin: 0 auto; border: 2px solid #000; border-radius: 3px; }
+  .swatchcard .idlabel { font-weight: bold; font-family: monospace; font-size: 16px; margin-top: 6px; }
+  .spacer { width: 86px; flex: none; }
+</style></head>
+<body>
+<h1>Round 5 -- isolated tint test (t removed from the judgment)</h1>
+<p class="sub">Each column below is already built at that pencil’s own correct position on the Yellow-Blue arc -- you do not need to find t, only how light. Compare each swatch (bottom row) against its own numbered column above and report just the row, e.g. "ID 4: tint +6".</p>
+<div class="board">
+<div class="rowlabels"><div class="cell"></div>
+<div class="cell">tint +15</div>
+<div class="cell">tint +14</div>
+<div class="cell">tint +13</div>
+<div class="cell">tint +12</div>
+<div class="cell">tint +11</div>
+<div class="cell">tint +10</div>
+<div class="cell">tint +9</div>
+<div class="cell">tint +8</div>
+<div class="cell">tint +7</div>
+<div class="cell">tint +6</div>
+<div class="cell">tint +5</div>
+<div class="cell">tint +4</div>
+<div class="cell">tint +3</div>
+<div class="cell">tint +2</div>
+<div class="cell">tint +1</div>
+<div class="cell">EXACT</div>
+</div>
+<div class="col">
+<div class="idlabel">ID 1</div>
+<div class="cell" style="background:#4CBAD1;"></div>
+<div class="cell" style="background:#48B8CE;"></div>
+<div class="cell" style="background:#45B5CC;"></div>
+<div class="cell" style="background:#41B2C9;"></div>
+<div class="cell" style="background:#3EAFC6;"></div>
+<div class="cell" style="background:#3AADC3;"></div>
+<div class="cell" style="background:#36AAC0;"></div>
+<div class="cell" style="background:#32A7BE;"></div>
+<div class="cell" style="background:#2EA5BB;"></div>
+<div class="cell" style="background:#2AA2B8;"></div>
+<div class="cell" style="background:#259FB6;"></div>
+<div class="cell" style="background:#209DB3;"></div>
+<div class="cell" style="background:#1A9AB0;"></div>
+<div class="cell" style="background:#1497AD;"></div>
+<div class="cell" style="background:#0B95AB;"></div>
+<div class="cell exact" style="background:#0092A8;"></div>
+</div>
+<div class="col">
+<div class="idlabel">ID 2</div>
+<div class="cell" style="background:#54AFFF;"></div>
+<div class="cell" style="background:#50ADFE;"></div>
+<div class="cell" style="background:#4DAAFB;"></div>
+<div class="cell" style="background:#49A7F8;"></div>
+<div class="cell" style="background:#45A5F6;"></div>
+<div class="cell" style="background:#41A2F3;"></div>
+<div class="cell" style="background:#3D9FF0;"></div>
+<div class="cell" style="background:#399DED;"></div>
+<div class="cell" style="background:#349AEA;"></div>
+<div class="cell" style="background:#3098E7;"></div>
+<div class="cell" style="background:#2B95E4;"></div>
+<div class="cell" style="background:#2592E1;"></div>
+<div class="cell" style="background:#1F90DF;"></div>
+<div class="cell" style="background:#188DDC;"></div>
+<div class="cell" style="background:#0E8BD9;"></div>
+<div class="cell exact" style="background:#0088D6;"></div>
+</div>
+<div class="col">
+<div class="idlabel">ID 3</div>
+<div class="cell" style="background:#4AC2BB;"></div>
+<div class="cell" style="background:#47BFB8;"></div>
+<div class="cell" style="background:#43BCB6;"></div>
+<div class="cell" style="background:#40BAB3;"></div>
+<div class="cell" style="background:#3CB7B0;"></div>
+<div class="cell" style="background:#38B4AE;"></div>
+<div class="cell" style="background:#35B1AB;"></div>
+<div class="cell" style="background:#31AFA8;"></div>
+<div class="cell" style="background:#2DACA6;"></div>
+<div class="cell" style="background:#29A9A3;"></div>
+<div class="cell" style="background:#24A6A0;"></div>
+<div class="cell" style="background:#1FA49E;"></div>
+<div class="cell" style="background:#1AA19B;"></div>
+<div class="cell" style="background:#139E98;"></div>
+<div class="cell" style="background:#0A9C96;"></div>
+<div class="cell exact" style="background:#009993;"></div>
+</div>
+<div class="col">
+<div class="idlabel">ID 4</div>
+<div class="cell" style="background:#4DB7DE;"></div>
+<div class="cell" style="background:#4AB4DB;"></div>
+<div class="cell" style="background:#46B2D8;"></div>
+<div class="cell" style="background:#43AFD5;"></div>
+<div class="cell" style="background:#3FACD2;"></div>
+<div class="cell" style="background:#3CAAD0;"></div>
+<div class="cell" style="background:#38A7CD;"></div>
+<div class="cell" style="background:#34A4CA;"></div>
+<div class="cell" style="background:#2FA1C7;"></div>
+<div class="cell" style="background:#2B9FC4;"></div>
+<div class="cell" style="background:#269CC2;"></div>
+<div class="cell" style="background:#219ABF;"></div>
+<div class="cell" style="background:#1B97BC;"></div>
+<div class="cell" style="background:#1594B9;"></div>
+<div class="cell" style="background:#0C92B7;"></div>
+<div class="cell exact" style="background:#008FB4;"></div>
+</div>
+<div class="col">
+<div class="idlabel">ID 5</div>
+<div class="cell" style="background:#FBFD66;"></div>
+<div class="cell" style="background:#FBFD66;"></div>
+<div class="cell" style="background:#FBFD66;"></div>
+<div class="cell" style="background:#FBFD66;"></div>
+<div class="cell" style="background:#FBFD66;"></div>
+<div class="cell" style="background:#FBFD66;"></div>
+<div class="cell" style="background:#FBFE65;"></div>
+<div class="cell" style="background:#FEFF60;"></div>
+<div class="cell" style="background:#FCFF5B;"></div>
+<div class="cell" style="background:#F9FE58;"></div>
+<div class="cell" style="background:#F6FB55;"></div>
+<div class="cell" style="background:#F3F852;"></div>
+<div class="cell" style="background:#F0F64F;"></div>
+<div class="cell" style="background:#EDF34C;"></div>
+<div class="cell" style="background:#EAF049;"></div>
+<div class="cell exact" style="background:#E7ED46;"></div>
+</div>
+<div class="col">
+<div class="idlabel">ID 6</div>
+<div class="cell" style="background:#4FB5E7;"></div>
+<div class="cell" style="background:#4BB2E4;"></div>
+<div class="cell" style="background:#48AFE1;"></div>
+<div class="cell" style="background:#44ADDF;"></div>
+<div class="cell" style="background:#41AADC;"></div>
+<div class="cell" style="background:#3DA7D9;"></div>
+<div class="cell" style="background:#39A5D6;"></div>
+<div class="cell" style="background:#35A2D3;"></div>
+<div class="cell" style="background:#319FD0;"></div>
+<div class="cell" style="background:#2C9DCE;"></div>
+<div class="cell" style="background:#279ACB;"></div>
+<div class="cell" style="background:#2297C8;"></div>
+<div class="cell" style="background:#1C95C5;"></div>
+<div class="cell" style="background:#1592C3;"></div>
+<div class="cell" style="background:#0C90C0;"></div>
+<div class="cell exact" style="background:#008DBD;"></div>
+</div>
+<div class="col">
+<div class="idlabel">ID 7</div>
+<div class="cell" style="background:#53B0FC;"></div>
+<div class="cell" style="background:#4FAEF9;"></div>
+<div class="cell" style="background:#4CABF6;"></div>
+<div class="cell" style="background:#48A8F3;"></div>
+<div class="cell" style="background:#44A6F0;"></div>
+<div class="cell" style="background:#40A3EE;"></div>
+<div class="cell" style="background:#3CA0EB;"></div>
+<div class="cell" style="background:#389EE8;"></div>
+<div class="cell" style="background:#349BE5;"></div>
+<div class="cell" style="background:#2F99E2;"></div>
+<div class="cell" style="background:#2A96DF;"></div>
+<div class="cell" style="background:#2493DC;"></div>
+<div class="cell" style="background:#1E91D9;"></div>
+<div class="cell" style="background:#178ED7;"></div>
+<div class="cell" style="background:#0D8CD4;"></div>
+<div class="cell exact" style="background:#0089D1;"></div>
+</div>
+<div class="col">
+<div class="idlabel">ID 8</div>
+<div class="cell" style="background:#51B3F3;"></div>
+<div class="cell" style="background:#4EB0F0;"></div>
+<div class="cell" style="background:#4AADED;"></div>
+<div class="cell" style="background:#46ABEA;"></div>
+<div class="cell" style="background:#43A8E7;"></div>
+<div class="cell" style="background:#3FA5E4;"></div>
+<div class="cell" style="background:#3BA3E1;"></div>
+<div class="cell" style="background:#37A0DF;"></div>
+<div class="cell" style="background:#329DDC;"></div>
+<div class="cell" style="background:#2E9BD9;"></div>
+<div class="cell" style="background:#2998D6;"></div>
+<div class="cell" style="background:#2395D3;"></div>
+<div class="cell" style="background:#1D93D0;"></div>
+<div class="cell" style="background:#1690CE;"></div>
+<div class="cell" style="background:#0D8ECB;"></div>
+<div class="cell exact" style="background:#008BC8;"></div>
+</div>
+<div class="col">
+<div class="idlabel">ID 9</div>
+<div class="cell" style="background:#4EB6E4;"></div>
+<div class="cell" style="background:#4BB3E1;"></div>
+<div class="cell" style="background:#47B1DE;"></div>
+<div class="cell" style="background:#44AEDB;"></div>
+<div class="cell" style="background:#40ABD9;"></div>
+<div class="cell" style="background:#3CA8D6;"></div>
+<div class="cell" style="background:#39A6D3;"></div>
+<div class="cell" style="background:#34A3D0;"></div>
+<div class="cell" style="background:#30A0CD;"></div>
+<div class="cell" style="background:#2C9ECB;"></div>
+<div class="cell" style="background:#279BC8;"></div>
+<div class="cell" style="background:#2298C5;"></div>
+<div class="cell" style="background:#1C96C2;"></div>
+<div class="cell" style="background:#1593C0;"></div>
+<div class="cell" style="background:#0C91BD;"></div>
+<div class="cell exact" style="background:#008EBA;"></div>
+</div>
+<div class="col">
+<div class="idlabel">ID 10</div>
+<div class="cell" style="background:#52B2F7;"></div>
+<div class="cell" style="background:#4EAFF4;"></div>
+<div class="cell" style="background:#4BACF1;"></div>
+<div class="cell" style="background:#47AAEE;"></div>
+<div class="cell" style="background:#43A7EB;"></div>
+<div class="cell" style="background:#3FA4E8;"></div>
+<div class="cell" style="background:#3BA2E5;"></div>
+<div class="cell" style="background:#379FE3;"></div>
+<div class="cell" style="background:#339CE0;"></div>
+<div class="cell" style="background:#2E9ADD;"></div>
+<div class="cell" style="background:#2997DA;"></div>
+<div class="cell" style="background:#2494D7;"></div>
+<div class="cell" style="background:#1E92D4;"></div>
+<div class="cell" style="background:#178FD2;"></div>
+<div class="cell" style="background:#0D8DCF;"></div>
+<div class="cell exact" style="background:#008ACC;"></div>
+</div>
+</div>
+<div class="swatchrow">
+<div class="spacer"></div>
+<div class="swatchcard"><div class="swatch" style="background:#00aac5;"></div><div class="idlabel">ID 1</div></div>
+<div class="swatchcard"><div class="swatch" style="background:#4992e0;"></div><div class="idlabel">ID 2</div></div>
+<div class="swatchcard"><div class="swatch" style="background:#00b9b9;"></div><div class="idlabel">ID 3</div></div>
+<div class="swatchcard"><div class="swatch" style="background:#4c91b2;"></div><div class="idlabel">ID 4</div></div>
+<div class="swatchcard"><div class="swatch" style="background:#f4f35b;"></div><div class="idlabel">ID 5</div></div>
+<div class="swatchcard"><div class="swatch" style="background:#00b0e6;"></div><div class="idlabel">ID 6</div></div>
+<div class="swatchcard"><div class="swatch" style="background:#5b8ed0;"></div><div class="idlabel">ID 7</div></div>
+<div class="swatchcard"><div class="swatch" style="background:#0096da;"></div><div class="idlabel">ID 8</div></div>
+<div class="swatchcard"><div class="swatch" style="background:#00a1d3;"></div><div class="idlabel">ID 9</div></div>
+<div class="swatchcard"><div class="swatch" style="background:#6b8fca;"></div><div class="idlabel">ID 10</div></div>
+</div>
+</body></html>

@@ -864,11 +864,90 @@ shade −4 is odd on its own terms — a pencil barely different from the
 arc got read as meaningfully darker rather than "basically on the
 line." Not enough data to say anything about why yet.
 
-**Next step**: decide whether a larger round-5 sample (20+, still in
-the t≈0.3–0.7 zone) is worth running to settle the direction question
-properly, now that round 3 and round 4 disagree — or whether to treat
-"elevated error, no established direction" as the working answer for
-this zone and move on to testing RoY/BvR instead.
+**Next step (superseded by round 5, below)**: Ray reviewed round 3/4's
+three worst individual misses (Light Phthalo Green, Evergreen, Light
+Ultramarine) and found they split into three different mechanisms, not
+one: a pure t-miss (row was close, t wasn't), a shallow-zone shade-
+magnitude miss, and a near-anchor hue-drift miss ("it looked purple" —
+right at the Cool Blue tip where the gradient is steepest). That
+observation reframed the question: is the real difficulty reading
+lightness, or finding the right hue-path position at the same time?
+
+## The ΔE ladder, round 5: isolate the lightness judgment, and the error nearly vanishes (2026-10-25)
+
+Direct test of that reframing. Instead of asking for a (row, t)
+coordinate on the full arc, round 5 gave each of 10 tint pencils its
+*own* vertical ladder column, pre-built at that pencil's own correct
+t — so the "where on the hue path" judgment was removed from the task
+entirely, not just made easier. Only "which row" was left to answer.
+
+9 of the 10 pencils were unused near-Cool-Blue tints — the mid-arc tint
+pool was already exhausted by rounds 3 and 4, and Cool Blue is the
+project's narrowest-margin anchor, so if anything this was a harder
+population than average, not an easier one. Build script:
+`scripts/diagrams/build_isolated_tint_round5.cjs`. Data:
+`data/ygb_isolated_tint_round5.json` / `_scored.json`.
+
+**Result: 6 of 10 exact, mean ΔE = 0.50.** That's roughly a tenth of
+round 3's 5.14 and round 4's 3.68 combined-judgment averages, computed
+the same way (ΔE between the ladder point you called and the model's
+actual point). The single worst miss this round (ΔE 2) is smaller than
+either previous round's *average* miss.
+
+This is the cleanest result of the whole ΔE-ladder investigation: once
+the hue-path judgment is taken out of the task, lightness reading is
+close to exact. The difficulty in rounds 3 and 4 was never really about
+"how light" — it was almost entirely about "where." That reframes
+everything upstream of this: the loose-ΔE rejections from the original
+two blind-test rounds, the shallow-zone elevated error, the
+near-anchor "it looks purple" confusion, even round 3's un-replicated
+directional claim — all plausible instances of one underlying
+difficulty (simultaneous row+t placement), not several unrelated
+perceptual quirks.
+
+It also raises a real, separate question for the book itself: if tints
+are taught or tested as part of full-arc hue-path matching, a reader
+may be fighting a harder combined task than the concept of "tint" on
+its own requires. Worth a genuine design conversation about presenting
+tints on their own fixed-hue lightness ladder, independent of anything
+about ΔE thresholds below.
+
+## The fit-threshold question: coverage cost of ΔE=11 vs coverage gain of ΔE=20 (2026-10-25)
+
+Off the back of round 5, Ray asked a direct, separate question: rather
+than only tightening the fit threshold to the long-flagged ΔE≈11
+crossover point (first found 2026-10-21, cost estimated then at -198
+pencils across the whole book-scope classifier), what about *also*
+widening it to ΔE=20 to rescue more never-fit pencils — as long as
+that doesn't create ambiguity with a neighbouring primary arc?
+
+Computed directly (book+extra 9-range scope, matched against all three
+primary Level-1 arcs; a parallel run against the full 1825-pencil
+`master.json` gives the same picture at larger scale):
+
+| arc | fit ≤11 | fit ≤15.3 (current) | fit ≤20 | newly caught at 20 | ambiguous vs a neighbour |
+|---|---|---|---|---|---|
+| Red-Yellow (Orange) | 76 | 99 | 120 | 21 | 0 |
+| Yellow-Blue (Green) | 64 | 119 | 183 | 64 | 1 |
+| Blue-Red (Violet) | 43 | 63 | 98 | 35 | 0 |
+
+For Yellow-Blue: tightening to 11 would **cost 55 pencils** (119→64).
+Widening to 20 would **gain 64 pencils** (119→183), and only **1** of
+those is genuinely ambiguous against a neighbour arc — Olive Yellow
+(Derwent Chromaflow), home ΔE 16.56 to Yellow-Blue vs 17.20 to
+Red-Yellow, a real boundary-straddling olive hue. Every other
+newly-caught pencil is unambiguously closer to Yellow-Blue than to
+either neighbour even at the wider radius.
+
+**Conclusion**: the ambiguity risk Ray flagged is real but tiny — the
+tightening cost and the widening gain are close to independent
+questions, not one trade-off. That makes a dual-threshold policy
+technically clean to build if wanted: a tight ΔE≤11 "confident core
+match" tier, and a separate ΔE≤20 "plausible/extended" tier gated by
+the same neighbour-arc check used above. This is a real change to the
+matching system itself, not a testing-methodology fix — worth deciding
+deliberately rather than folding in as a side effect of the ladder
+work.
 
 ## Open items (read this part)
 
