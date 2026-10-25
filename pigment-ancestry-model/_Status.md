@@ -1,8 +1,8 @@
 ---
 status: Active
-stage: built the ΔE ladder visualization (every integer lightness step, both directions, for the Yellow-Blue arc) so blind-test placements can be reported as real coordinates (ΔE N tint/shade, t=X.X) instead of against a single impossible exact-match line; clean blank version sent to Ray for a third blind-validation round tomorrow
-last_touched: 22 October 2026
-next_action: process Ray's ΔE-ladder blind-placement round (reported as "ΔE N tint/shade, t=X.X" coordinate pairs) against the model's actual computed positions once he provides them; build the ladder for RoY and BvR once YgB's is validated; decide whether/how to report positional confidence alongside a ΔE match -- not yet designed, just diagnosed; wire data/anchor_thresholds.json into the never-fit taxonomy classifier (currently tint/shade/tone are decided by dL/dC/dH against the nearest arc point, not by a per-anchor lightness threshold -- these are a different, more direct mechanism and need reconciling with the existing logic, not just bolted on); re-check the Cool Blue/Cool Red "shade"/"dark" sub-clusters (3 and 5 entries respectively) for a second instance of the proven structural-limit split now that real shade boundaries exist to test them against; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; rebuild the outlier tracker/anchor-threshold analysis against the full 1825-pencil master.json (not just the 1294-pencil book+extra scope); continue the blind validation test with Level 3 and tints
+stage: ran the third blind-validation round against the ΔE ladder (25 real pencils, blind-placed by Ray as row+t coordinates) -- t-axis positioning was excellent (median error ~0.02-0.03) and the big misses weren't noise: 4 of 5 clustered in the shallow-gradient mid-arc band (t=0.32-0.60) and all 4 were shade pencils read as systematically darker than they measure, a directional confirmation of the 2026-10-21 positional-precision finding
+last_touched: 25 October 2026
+next_action: decide whether to run the same round-3 protocol (blank ladder + 25-pencil blind set) against RoY and BvR to see if the same shallow-gradient shade-direction bias shows up there too; investigate the ID22 "near-anchor lightness ceiling" outlier (real tint+10 near t=0 called only tint+4 -- opposite direction and different location from the main cluster, not yet understood) with a few more near-anchor pale-pencil placements before concluding anything; decide whether/how to report positional confidence alongside a ΔE match now that the bias has a direction, not just a magnitude; wire data/anchor_thresholds.json into the never-fit taxonomy classifier (currently tint/shade/tone are decided by dL/dC/dH against the nearest arc point, not by a per-anchor lightness threshold -- these are a different, more direct mechanism and need reconciling with the existing logic, not just bolted on); re-check the Cool Blue/Cool Red "shade"/"dark" sub-clusters (3 and 5 entries respectively) for a second instance of the proven structural-limit split now that real shade boundaries exist to test them against; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; rebuild the outlier tracker/anchor-threshold analysis against the full 1825-pencil master.json (not just the 1294-pencil book+extra scope); continue the blind validation test with Level 3 and tints
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,11 +17,61 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-22 (this session, after building the ΔE ladder
-visualization -- grew directly out of the 2026-10-21 positional-precision
-finding, makes the whole tolerance structure visible instead of just a
-single exact-match line, and a clean blank version has gone to Ray for a
-third blind-validation round tomorrow)
+**Last updated:** 2026-10-25 (this session, after scoring the third
+blind-validation round against the ΔE ladder -- t-axis placement was
+excellent, and the misses weren't noise: they cluster by location and
+share a direction, the first time this project has found a *directional*
+bias rather than just "less certain here")
+
+## Current state — ROUND 3 RESULT: the shallow-gradient zone doesn't just lose precision, it loses it in one direction (shade reads as deeper than it measures)
+
+- **Third blind-validation round, scored (2026-10-25)**: 25 real
+  Yellow-Blue-fitting pencils, stratified across t (near Cool Yellow /
+  mid-arc / near Cool Blue) and ΔL (strong/mild tint, near-exact,
+  mild/strong shade) -- deliberately weighted toward the shallow-gradient
+  mid-arc stretch and the anchor-tip pile-up zones, the two places the
+  2026-10-21 positional-precision finding predicted trouble. Selection,
+  shuffle, and answer key: `scripts/score_de_ladder_round3.cjs` (reads
+  `data/ygb_blind25_round3.json`, writes
+  `data/ygb_blind25_round3_scored.json`). Ray placed each pencil blind
+  (ID + swatch only, no name/position) on the `--clean` ladder as a
+  (row, t) coordinate; his own annotated placements are saved at
+  `scripts/diagrams/ygb_ladder_round3_ray_placements.png`.
+
+  **t-axis (left-right position) was excellent across the board** --
+  median error ~0.02-0.03 of the arc's length, essentially pencil-width
+  accurate, including in the shallow-gradient middle where the model
+  predicted positional confidence should be lowest. 13/25 landed within
+  ±1 row AND ±0.05 t by a tight standard.
+
+  **The misses weren't noise -- they're a specific, located, directional
+  bias.** Four of the five big dL misses (≥3 rows off) all sit in the
+  mid-arc band (t≈0.32-0.60, the shallow-gradient stretch), are all
+  shade pencils, and were ALL read as darker than they actually measure,
+  by 3-5 rows:
+
+  | pencil | real row | Ray's call | real t |
+  |---|---|---|---|
+  | Evergreen | shade −5 | shade −10 | 0.59 |
+  | Grass Green (70%) | shade −8 | shade −13 | 0.60 |
+  | Castle Green Light | shade −7 | shade −10 | 0.34 |
+  | Grass Green (Derwent) | shade −11 | shade −14 | 0.32 |
+
+  This is the third independent line of evidence for the
+  ΔE-positional-precision effect (after both earlier blind-test rounds'
+  loose-ΔE rejection pattern), and the first time it's shown a clear
+  *direction* rather than just reduced certainty: in the shallow part of
+  the arc, shade depth specifically reads as more extreme than it
+  measures, not randomly scattered either way.
+
+  **One outlier doesn't fit that pattern and is still open**: Luminous
+  Lemon (real tint+10, t≈0.01, near the Cool Yellow anchor) was called
+  only tint+4 -- a large miss in the opposite direction (under, not
+  over) and the opposite location (near-anchor, not mid-arc) from the
+  main cluster. Possible "near-anchor lightness ceiling" effect (an
+  already-pale swatch leaves less visual room to judge further
+  lightening) -- flagged, not concluded; needs more near-anchor pale
+  placements to test.
 
 ## Current state — the ΔE ladder: Ray's "eureka" fix for the blind-test diagrams, now built and committed for Yellow-Blue
 

@@ -749,15 +749,66 @@ them — it moves toward a different hue entirely. They share a column
 because they're similar in **hue**; the ladder is what makes it visible
 that they genuinely differ in **lightness**.
 
-**Next step (2026-10-22, queued for the next session)**: a blank
-version of the ladder (`--clean` flag, no pencil swatches, with a t-axis
-scale added along the bottom) has been generated for Yellow-Blue and
+A blank version of the ladder (`--clean` flag, no pencil swatches, with
+a t-axis scale added along the bottom) was generated for Yellow-Blue and
 sent to Ray, to place real pencils against by eye and report back as
 e.g. "ΔE 11 tint, t=0.7" — a third round of blind validation, this time
 testing against the full tolerance structure instead of a single
-impossible line. Should give a much more honest read on how well the
-model's positioning actually matches human perception than either of
-the first two rounds could.
+impossible line. Results below.
+
+## The ΔE ladder, round 3: a directional bias, not just reduced precision (2026-10-25)
+
+Ran the third blind-validation round against the blank ladder above. 25
+real Yellow-Blue-fitting pencils were selected (deliberately stratified
+across t and ΔL, weighted toward the shallow-gradient mid-arc stretch
+and the anchor-tip pile-up zones — the two places the 2026-10-21
+positional-precision finding predicted trouble), shuffled, and shown to
+Ray as ID + swatch only (no name, no computed position). He placed each
+one on the blank ladder as a (row, t) coordinate by eye.
+
+Selection, shuffle, and scoring: `scripts/score_de_ladder_round3.cjs`
+(reads `data/ygb_blind25_round3.json`, writes
+`data/ygb_blind25_round3_scored.json`). Ray's own annotated placement
+image is saved at `scripts/diagrams/ygb_ladder_round3_ray_placements.png`.
+
+**t-axis (left-right position) was excellent across the board** —
+median error around 0.02–0.03 of the arc's length, essentially
+pencil-width accurate, including in the shallow-gradient middle where
+the model predicted confidence should be lowest. 13 of 25 placements
+landed within ±1 row AND ±0.05 t by a fairly tight standard.
+
+**The misses weren't noise — they're located and directional.** Four of
+the five big row misses (≥3 rows off) all sit in the mid-arc band
+(t≈0.32–0.60, the shallow-gradient stretch), are all shade pencils, and
+were all read as darker than they actually measure, by 3–5 rows:
+
+| pencil | real row | Ray's call | real t |
+|---|---|---|---|
+| Evergreen | shade −5 | shade −10 | 0.59 |
+| Grass Green (70%) | shade −8 | shade −13 | 0.60 |
+| Castle Green Light | shade −7 | shade −10 | 0.34 |
+| Grass Green (Derwent) | shade −11 | shade −14 | 0.32 |
+
+This is the third independent line of evidence for the
+ΔE-positional-precision effect (after the loose-ΔE rejection pattern in
+both earlier blind-test rounds), and the first time it has shown a
+clear *direction* rather than just reduced certainty: in the shallow
+part of the arc, shade depth specifically reads as more extreme than it
+measures — a consistent bias, not scatter in both directions.
+
+**One outlier doesn't fit that pattern and is still open**: Luminous
+Lemon (real tint+10, t≈0.01, right next to the Cool Yellow anchor) was
+called only tint+4 — a large miss, but in the opposite direction
+(under, not over) and the opposite location (near-anchor, not mid-arc)
+from the main cluster. Possible "near-anchor lightness ceiling" effect
+— an already-pale swatch may leave less visual room to judge further
+lightening — but this is one data point, not a finding. Worth testing
+with a few more near-anchor pale placements before concluding anything.
+
+**Next step**: decide whether to run the same round-3 protocol (blank
+ladder + stratified 25-pencil blind set) against RoY and BvR, to check
+whether the same shallow-gradient shade-direction bias shows up on
+those arcs too, or is specific to Yellow-Blue's particular geometry.
 
 ## Open items (read this part)
 

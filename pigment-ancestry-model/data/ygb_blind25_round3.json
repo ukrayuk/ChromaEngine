@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "name": "Lemon Yellow Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#f5f041",
+    "t": 0,
+    "dL": 2,
+    "dE": 5.76
+  },
+  {
+    "id": 2,
+    "name": "Chartreuse Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#d8f24d",
+    "t": 0.01171875,
+    "dL": 1.9,
+    "dE": 2.02
+  },
+  {
+    "id": 3,
+    "name": "True Green",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#06cc86",
+    "t": 0.6171875,
+    "dL": 7.9,
+    "dE": 9.06
+  },
+  {
+    "id": 4,
+    "name": "Middle Phthalo Blue",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#0085d4",
+    "t": 1,
+    "dL": -1.9,
+    "dE": 3.46
+  },
+  {
+    "id": 5,
+    "name": "Green Meadow",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#56d380",
+    "t": 0.578125,
+    "dL": 9.6,
+    "dE": 11.03
+  },
+  {
+    "id": 6,
+    "name": "Cobalt Green",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#56ae86",
+    "t": 0.796875,
+    "dL": 5.5,
+    "dE": 11
+  },
+  {
+    "id": 7,
+    "name": "Mint Leaf",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#00a067",
+    "t": 0.6796875,
+    "dL": -6.7,
+    "dE": 12.55
+  },
+  {
+    "id": 8,
+    "name": "Blue Lake",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#5d96d9",
+    "t": 0.99609375,
+    "dL": 6.4,
+    "dE": 10.11
+  },
+  {
+    "id": 9,
+    "name": "Luminous Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#86fd5c",
+    "t": 0.12890625,
+    "dL": 8.3,
+    "dE": 10.97
+  },
+  {
+    "id": 10,
+    "name": "Grass Green",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#34c147",
+    "t": 0.33984375,
+    "dL": -4.9,
+    "dE": 6.49
+  },
+  {
+    "id": 11,
+    "name": "Light Phthalo Green",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#00b87b",
+    "t": 0.6484375,
+    "dL": 1,
+    "dE": 11.07
+  },
+  {
+    "id": 12,
+    "name": "Spring Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#cae550",
+    "t": 0.015625,
+    "dL": -2,
+    "dE": 6.28
+  },
+  {
+    "id": 13,
+    "name": "Evergreen",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#42a94b",
+    "t": 0.5859375,
+    "dL": -4.6,
+    "dE": 13.4
+  },
+  {
+    "id": 14,
+    "name": "Mint Green Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#00cb77",
+    "t": 0.515625,
+    "dL": 3.1,
+    "dE": 10.69
+  },
+  {
+    "id": 15,
+    "name": "Peacock Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#00af7b",
+    "t": 0.7109375,
+    "dL": 0.2,
+    "dE": 7.07
+  },
+  {
+    "id": 16,
+    "name": "Light Ultramarine",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#5589e4",
+    "t": 1,
+    "dL": 2.9,
+    "dE": 13.16
+  },
+  {
+    "id": 17,
+    "name": "Greyish Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#009f76",
+    "t": 0.7734375,
+    "dL": -2.4,
+    "dE": 2.92
+  },
+  {
+    "id": 18,
+    "name": "Cobalt Turquoise Green",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#00a5b3",
+    "t": 0.91015625,
+    "dL": 4,
+    "dE": 13.02
+  },
+  {
+    "id": 19,
+    "name": "Fresh Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#68df4b",
+    "t": 0.15625,
+    "dL": -1,
+    "dE": 2.38
+  },
+  {
+    "id": 20,
+    "name": "Lemon Lime",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#cbdd00",
+    "t": 0.00390625,
+    "dL": -5.9,
+    "dE": 14.98
+  },
+  {
+    "id": 21,
+    "name": "Grass Green (70%)",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#2d9e42",
+    "t": 0.6015625,
+    "dL": -8.3,
+    "dE": 14.18
+  },
+  {
+    "id": 22,
+    "name": "Luminous Lemon",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#edff4f",
+    "t": 0.0078125,
+    "dL": 9.7,
+    "dE": 13.05
+  },
+  {
+    "id": 23,
+    "name": "Castle Green Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#30bc3f",
+    "t": 0.33984375,
+    "dL": -6.7,
+    "dE": 8.59
+  },
+  {
+    "id": 24,
+    "name": "Lemon Yellow",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#fce555",
+    "t": 0,
+    "dL": -0.4,
+    "dE": 14.41
+  },
+  {
+    "id": 25,
+    "name": "Grass Green",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#39af2f",
+    "t": 0.32421875,
+    "dL": -11,
+    "dE": 14.48
+  }
+]
