@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Light Blue",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#0092cb",
+    "t": 0.98046875,
+    "dL": 1.7,
+    "dE": 5.46
+  },
+  {
+    "id": 2,
+    "name": "Yellow Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#91df59",
+    "t": 0.08984375,
+    "dL": -1.8,
+    "dE": 8.01
+  },
+  {
+    "id": 3,
+    "name": "Cobalt Turquoise",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#00698c",
+    "t": 0.9609375,
+    "dL": -14.5,
+    "dE": 14.61
+  },
+  {
+    "id": 4,
+    "name": "Light Cerulean Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#5da3e1",
+    "t": 0.98828125,
+    "dL": 10.2,
+    "dE": 11.64
+  },
+  {
+    "id": 5,
+    "name": "Blue Jeans",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#427caa",
+    "t": 0.98046875,
+    "dL": -4.4,
+    "dE": 10.59
+  },
+  {
+    "id": 6,
+    "name": "Leaf Green Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#9acd06",
+    "t": 0.03125,
+    "dL": -10.8,
+    "dE": 12.42
+  },
+  {
+    "id": 7,
+    "name": "Cadmium Yellow Lemon",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#e7ed46",
+    "t": 0,
+    "dL": -0.1,
+    "dE": 0.27
+  },
+  {
+    "id": 8,
+    "name": "Lemon",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#f1ee42",
+    "t": 0,
+    "dL": 1.1,
+    "dE": 4.3
+  },
+  {
+    "id": 9,
+    "name": "Castle Green Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#00c752",
+    "t": 0.3671875,
+    "dL": -2.6,
+    "dE": 3.68
+  },
+  {
+    "id": 10,
+    "name": "Veronese Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#00b07f",
+    "t": 0.71875,
+    "dL": 0.9,
+    "dE": 8.48
+  }
+]

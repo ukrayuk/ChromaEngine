@@ -1,8 +1,8 @@
 ---
 status: Active
-stage: ran a fifth blind-validation round testing Ray's "isolate the lightness judgment from the hue-path judgment" hypothesis -- each pencil placed on its OWN vertical ladder column, already fixed at its correct t, so only "which row" was being judged. Result: 6/10 exact, mean deltaE 0.50 -- roughly a tenth of rounds 3/4's combined-judgment averages (5.14/3.68). This is now the clearest finding of the whole ΔE-ladder arc: the error lives almost entirely in the combined row+t judgment, not in reading lightness itself. Also ran a full coverage-impact analysis of tightening the fit threshold to ΔE<=11 vs widening it to ΔE<=20, with a cross-arc ambiguity check, at Ray's request.
-last_touched: 25 October 2026
-next_action: decide on the ΔE threshold question now that real numbers exist -- tightening YgB to 11 would drop it from 119 to 64 fitting pencils (-55), widening to 20 would add 64 (to 183), with only 1 of those 64 ambiguous against a neighbouring arc (Olive Yellow, sitting between YgB and RoY); decide whether a dual-threshold policy (tight 11 for confident core matches, wide 20 as a second "plausible/extended" tier, gated by the neighbour-arc check) is worth building, vs a single blanket change; decide whether to redesign how tints are tested/taught given round 5's result (isolated-column placement vs combined row+t) -- this could be a real structural change to how the book presents tints, not just a testing-methodology fix; rebuild this same threshold analysis against the full 1825-pencil master.json scope (already have the numbers, just need to decide which scope the model should actually use going forward); decide whether to run rounds 3-5's protocols against RoY and BvR; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3
+stage: ran a sixth blind-validation round against the redesigned white-row-divider ladder (10 fresh pencils, standard combined row+t placement) -- 10/10 within +/-2 rows, the best raw-accuracy round yet, supporting that the divider lines genuinely help. One steep-gradient artifact found in the process: the final t=0.98-1.0 sliver right at the Cool Blue anchor produces ~16.5 ΔE on its own, sharper than the previously-recorded ~50-per-0.1-t rate once measured at finer resolution. Starting the same protocol (round 1 equivalent, n=25) on the Blue-Red (Violet) arc next.
+last_touched: 26 October 2026
+next_action: run and score the BvR 25-pencil stratified round (data/scripts being built now); decide on the ΔE threshold question (tightening YgB to 11 costs 55 pencils, widening to 20 gains 64 with only 1 ambiguous against a neighbour arc; ΔE=16 as a gentler middle option gives 132, +13 over current); decide whether a dual-threshold policy (tight 11 core + wide 20 plausible tier, gated by the neighbour-arc check) is worth building; decide whether to redesign how tints are tested/taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,11 +17,45 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-25 (this session, after scoring a fifth
-blind-validation round that isolated lightness judgment from hue-path
-judgment -- the clearest result of the whole ΔE-ladder arc, mean ΔE
-dropped by roughly 10x -- plus a real coverage-impact analysis of the
-ΔE=11/20 threshold question Ray has been circling since round 1)
+**Last updated:** 2026-10-26 (this session, after scoring a sixth round
+against the redesigned white-divider ladder -- best raw accuracy yet,
+10/10 within tolerance -- and about to start the same protocol on the
+Blue-Red (Violet) arc)
+
+## Current state — ROUND 6 RESULT: white row-dividers, best accuracy yet; now extending the whole protocol to BvR
+
+- **Sixth blind-validation round, scored (2026-10-26)**: first round
+  run against the redesigned ladder with white dividers between every
+  row (added this session per Ray's request, to stop rows blending
+  into one continuous gradient). 10 fresh pencils, none reused from
+  rounds 3-5, stratified across t and ΔL from the 80 still-unused
+  pencils in the 119-pencil fit pool. Standard combined row+t
+  placement (not isolated, unlike round 5). Selection/scoring:
+  `scripts/score_de_ladder_round6.cjs` (reads
+  `data/ygb_blind10_round6.json`, writes `_scored.json`). Sheet build:
+  `scripts/diagrams/build_blind10_round6_sheet.cjs`.
+
+  **Result: 10/10 within ±2 rows — the best raw-accuracy round yet.**
+  Supports that the white dividers are genuinely helping (round 4, the
+  last standard combined-judgment round before the redesign, only hit
+  7/10). Mean ΔE across the round was 4.23, but that's skewed by one
+  genuine anomaly, not a real placement miss (next item).
+
+  **New sub-finding: the gradient gets sharper than previously
+  recorded in the final approach to Cool Blue.** ID1 (Light Blue) was
+  placed essentially perfectly — exact row, t off by only 0.02 — yet
+  scored ΔE 16.5, the worst of the round. Checked directly: between
+  t=0.98 and t=1.0 (the literal anchor), the arc's own colour moves by
+  ~16.5 ΔE in that last 2% alone — equivalent to ~82 ΔE per 0.1 of t,
+  sharper than the ~50-per-0.1 rate recorded on 2026-10-21 at coarser
+  (0.1-bin) resolution. Same root cause as before (Cool Blue's
+  gamut-clipping precision gap), now pinned to an even tighter final
+  window. Excluding ID1, the other 9 placements average ΔE 2.93.
+
+- **Next**: same protocol (stratified 25-pencil round) starting on the
+  Blue-Red (Violet) arc, to see whether the white-divider improvement
+  and the general accuracy picture (rounds 1-6) hold on a different
+  arc or were partly specific to Yellow-Blue's geometry.
 
 ## Current state — ROUND 5 RESULT: the error lives in the combined row+t judgment, not in reading lightness itself
 

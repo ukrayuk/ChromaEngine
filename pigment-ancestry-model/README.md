@@ -947,7 +947,47 @@ match" tier, and a separate ΔE≤20 "plausible/extended" tier gated by
 the same neighbour-arc check used above. This is a real change to the
 matching system itself, not a testing-methodology fix — worth deciding
 deliberately rather than folding in as a side effect of the ladder
-work.
+work. As a gentler middle option, ΔE≤16 gives 132 fitting pencils for
+Yellow-Blue — a modest +13 over the current 119, much smaller than
+either the −55 cost of 11 or the +64 gain of 20.
+
+Also added this session: white 2px divider lines between every row of
+the ladder diagram (`scripts/diagrams/build_de_ladder_viz.cjs`), per
+Ray's observation that the rows were blending into one continuous
+gradient, making them hard to count/read precisely by eye.
+
+## The ΔE ladder, round 6: white dividers, best accuracy yet (2026-10-26)
+
+First round run against the redesigned white-divider ladder. 10 fresh
+pencils (none reused from rounds 3–5), stratified across t and ΔL from
+the 80 still-unused pencils in the 119-pencil fit pool, standard
+combined row+t placement (not isolated, unlike round 5). Selection and
+scoring: `scripts/score_de_ladder_round6.cjs` (reads
+`data/ygb_blind10_round6.json`, writes `_scored.json`). Sheet:
+`scripts/diagrams/build_blind10_round6_sheet.cjs`.
+
+**Result: 10/10 within ±2 rows — the best raw-accuracy round yet**,
+beating round 4's 7/10 on the same style of combined-judgment task.
+Consistent with the white dividers genuinely helping readability.
+
+**One real anomaly, not a placement error**: ID1 (Light Blue) was
+called almost perfectly — exact row, t off by only 0.02 — but scored
+ΔE 16.5, the worst of the round. Traced directly: between t=0.98 and
+t=1.0 (the literal Cool Blue anchor), the arc's own colour shifts by
+~16.5 ΔE in that final 2% alone — about 82 ΔE per 0.1 of t, sharper
+than the ~50-per-0.1 rate recorded on 2026-10-21 at coarser (0.1-bin)
+resolution. Same underlying cause as before (Cool Blue's
+gamut-clipping gap between its true and displayed Lab), now shown to
+bite hardest in an even tighter window right at the anchor than
+previously measured. Excluding ID1, the other 9 placements average
+ΔE 2.93 — a genuinely strong result.
+
+**Next**: run the same stratified-25-pencil protocol (round 1's design)
+on the Blue-Red (Violet) arc, to see whether the accuracy picture from
+rounds 1–6 — and the white-divider improvement specifically — holds on
+a different arc, or was partly shaped by Yellow-Blue's own geometry
+(its asymmetric anchor margins, the Cool Blue gamut-clipping gap, the
+specific shape of its shallow mid-arc stretch).
 
 ## Open items (read this part)
 
