@@ -989,6 +989,45 @@ a different arc, or was partly shaped by Yellow-Blue's own geometry
 (its asymmetric anchor margins, the Cool Blue gamut-clipping gap, the
 specific shape of its shallow mid-arc stretch).
 
+## Blue-Red (Violet), round 1: the accuracy picture holds on a second arc (2026-10-26)
+
+Same protocol as Yellow-Blue's round 3: 25 pencils stratified across t
+and ΔL, ID-only swatches, placed against the white-divider ladder. Ladder
+built the same way (`scripts/build_de_ladder.cjs "Blue-Red (Violet)"
+bvr`, a smaller 63-pencil book+extra fit pool vs Yellow-Blue's 119).
+Selection/scoring: `scripts/score_de_ladder_bvr_round1.cjs` (reads
+`data/bvr_blind25_round1.json`, writes `_scored.json`). Sheet:
+`scripts/diagrams/build_bvr_blind25_round1_sheet.cjs`.
+
+**Result: mean ΔE 2.92 across 24 scored placements, 22/24 within ±2
+rows** — the best mean ΔE of any standard (non-isolated) round run so
+far, ahead of Yellow-Blue round 6's 4.23. Ray expected this arc to be
+harder; it wasn't. This is good evidence the white-divider redesign and
+the overall placement accuracy found on Yellow-Blue generalise, rather
+than being specific to that arc's geometry.
+
+**One real miss, flagged by Ray before scoring**: ID23 (Purple Lake)
+is a genuine mild shade (row −1) but was called tint +7 — a full
+direction flip, not just a magnitude error, and the single largest
+miss recorded across every round to date (ΔE 8.7).
+
+**A second miss consistent with a known mechanism**: ID22 (Purple) had
+the row essentially right (off by 1) but t off by 0.08 right near the
+Cool Red anchor, pushing ΔE to 6.0 — plausibly the same
+steep-near-anchor gradient effect already documented at Cool Blue.
+
+**New finding: ID11 (Ultra Blue) couldn't be placed at all — "too
+blue."** It sits at t≈0.04, right next to the Warm Blue anchor. This is
+a second, independent instance of the near-anchor hue-drift effect
+first seen on Yellow-Blue's Cool Blue end (Light Ultramarine reading as
+"purple" in round 3). Two different arcs, two different anchors, same
+effect: right at an anchor's tip, a swatch can stop reading as
+belonging to the arc's hue family at all. With two independent
+instances now, this looks like a general property of anchor-adjacent
+tints rather than a Cool-Blue-specific quirk — a real candidate for a
+standing caveat in how the book presents tints near any anchor, not
+just a testing footnote.
+
 ## Open items (read this part)
 
 ### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing

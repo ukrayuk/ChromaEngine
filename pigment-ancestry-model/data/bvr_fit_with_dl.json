@@ -1,0 +1,506 @@
+[
+  {
+    "name": "Purple Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#b71282",
+    "t": 0.875,
+    "dL": -0.8,
+    "dE": 14.24
+  },
+  {
+    "name": "Bengal Rose Deep",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#cb166a",
+    "t": 1,
+    "dL": -0.5,
+    "dE": 9.74
+  },
+  {
+    "name": "Violet Deep",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#795cb9",
+    "t": 0.125,
+    "dL": 10.6,
+    "dE": 11.19
+  },
+  {
+    "name": "Purple Lake Deep",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#3e2a72",
+    "t": 0.23828125,
+    "dL": -11.5,
+    "dE": 14.28
+  },
+  {
+    "name": "Purple Lake",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#685fbb",
+    "t": 0.08203125,
+    "dL": 9.9,
+    "dE": 12.85
+  },
+  {
+    "name": "Lavender",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#8245aa",
+    "t": 0.19140625,
+    "dL": 6.4,
+    "dE": 9.52
+  },
+  {
+    "name": "Heather Purple",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#483e93",
+    "t": 0.11328125,
+    "dL": -3.7,
+    "dE": 8.5
+  },
+  {
+    "name": "Mulberry",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#45256d",
+    "t": 0.26953125,
+    "dL": -12,
+    "dE": 13.68
+  },
+  {
+    "name": "Cornflower Blue",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#3a3485",
+    "t": 0.14453125,
+    "dL": -8.2,
+    "dE": 12.27
+  },
+  {
+    "name": "Eggplant",
+    "range": "Castle Arts Harmonious Collection",
+    "hex": "#552e78",
+    "t": 0.30078125,
+    "dL": -7.3,
+    "dE": 8.68
+  },
+  {
+    "name": "Purple Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#b91877",
+    "t": 0.9375,
+    "dL": -1.9,
+    "dE": 8.67
+  },
+  {
+    "name": "Purple",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#a52371",
+    "t": 0.859375,
+    "dL": -3,
+    "dE": 4.13
+  },
+  {
+    "name": "Purple Deep",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#892064",
+    "t": 0.72265625,
+    "dL": -6.4,
+    "dE": 7.32
+  },
+  {
+    "name": "Cobalt Purple",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#8e358f",
+    "t": 0.50390625,
+    "dL": 2.5,
+    "dE": 8.57
+  },
+  {
+    "name": "Bengal Rose",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#db5198",
+    "t": 0.99609375,
+    "dL": 10.2,
+    "dE": 11.72
+  },
+  {
+    "name": "Bengal Rose Deep",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#d33788",
+    "t": 1,
+    "dL": 4.6,
+    "dE": 8.21
+  },
+  {
+    "name": "Lavender",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#8662ba",
+    "t": 0.1875,
+    "dL": 13.8,
+    "dE": 14.37
+  },
+  {
+    "name": "Mauve Deep",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#5a42ab",
+    "t": 0,
+    "dL": -0.1,
+    "dE": 0.16
+  },
+  {
+    "name": "Purple Lake",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#68398a",
+    "t": 0.30078125,
+    "dL": -1.2,
+    "dE": 1.82
+  },
+  {
+    "name": "Heather Purple",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#574aa4",
+    "t": 0.08203125,
+    "dL": 1.6,
+    "dE": 6.45
+  },
+  {
+    "name": "Purple Lake Deep",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#56367a",
+    "t": 0.30078125,
+    "dL": -5.2,
+    "dE": 10.6
+  },
+  {
+    "name": "Cornflower Blue",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#4b4aa9",
+    "t": 0.04296875,
+    "dL": 0.7,
+    "dE": 7.05
+  },
+  {
+    "name": "Cerise Pink",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#d42570",
+    "t": 1,
+    "dL": 2.4,
+    "dE": 10.42
+  },
+  {
+    "name": "Magenta",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#a52158",
+    "t": 0.9609375,
+    "dL": -6.5,
+    "dE": 10.76
+  },
+  {
+    "name": "Jazzberry",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#ab0060",
+    "t": 0.97265625,
+    "dL": -7.8,
+    "dE": 9.04
+  },
+  {
+    "name": "Ultra Pink",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#be308d",
+    "t": 0.875,
+    "dL": 3.4,
+    "dE": 11.43
+  },
+  {
+    "name": "Wild Berry",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#8a0061",
+    "t": 0.78515625,
+    "dL": -11,
+    "dE": 13.77
+  },
+  {
+    "name": "Mardi Gras",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#892a82",
+    "t": 0.56640625,
+    "dL": -1.5,
+    "dE": 7.44
+  },
+  {
+    "name": "Amethyst",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#754288",
+    "t": 0.42578125,
+    "dL": 1.5,
+    "dE": 5.63
+  },
+  {
+    "name": "Lilac",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#624198",
+    "t": 0.17578125,
+    "dL": 0.3,
+    "dE": 2.18
+  },
+  {
+    "name": "Aztec Purple",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#7f5dac",
+    "t": 0.25,
+    "dL": 11,
+    "dE": 12.83
+  },
+  {
+    "name": "Mariner",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#2a45a1",
+    "t": 0.04296875,
+    "dL": -3,
+    "dE": 13.13
+  },
+  {
+    "name": "Ultra Blue",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#445bba",
+    "t": 0.04296875,
+    "dL": 6,
+    "dE": 15.2
+  },
+  {
+    "name": "Pansy",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#42348c",
+    "t": 0.10546875,
+    "dL": -7.1,
+    "dE": 8.52
+  },
+  {
+    "name": "Violet",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#542884",
+    "t": 0.19140625,
+    "dL": -7.9,
+    "dE": 8.19
+  },
+  {
+    "name": "Iris",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#652a73",
+    "t": 0.42578125,
+    "dL": -6.8,
+    "dE": 6.99
+  },
+  {
+    "name": "Amethyst",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#a52a7b",
+    "t": 0.8046875,
+    "dL": -0.9,
+    "dE": 5.36
+  },
+  {
+    "name": "Azalea",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#ce237c",
+    "t": 1,
+    "dL": 1.5,
+    "dE": 8.35
+  },
+  {
+    "name": "Magenta",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#c62061",
+    "t": 1,
+    "dL": -1.2,
+    "dE": 10.92
+  },
+  {
+    "name": "Violet",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#4d2c81",
+    "t": 0.19921875,
+    "dL": -8.1,
+    "dE": 8.2
+  },
+  {
+    "name": "Purplish Red",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#ba175e",
+    "t": 1,
+    "dL": -4.3,
+    "dE": 8.88
+  },
+  {
+    "name": "Quinacridone Purple",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#8b2b81",
+    "t": 0.56640625,
+    "dL": -1,
+    "dE": 6.44
+  },
+  {
+    "name": "Purple",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#b74888",
+    "t": 0.84375,
+    "dL": 6.2,
+    "dE": 6.76
+  },
+  {
+    "name": "Purple Violet",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#a7427d",
+    "t": 0.81640625,
+    "dL": 3,
+    "dE": 5.93
+  },
+  {
+    "name": "Lilac",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#874b8a",
+    "t": 0.53515625,
+    "dL": 5.1,
+    "dE": 9.18
+  },
+  {
+    "name": "Violet",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#50397b",
+    "t": 0.26953125,
+    "dL": -5.1,
+    "dE": 13.09
+  },
+  {
+    "name": "Royal Blue",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#49458e",
+    "t": 0.23828125,
+    "dL": -1.6,
+    "dE": 14.08
+  },
+  {
+    "name": "Periwinkle Blue",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#7252a0",
+    "t": 0.23828125,
+    "dL": 6.7,
+    "dE": 9.42
+  },
+  {
+    "name": "Ultramarine",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#2c338f",
+    "t": 0.04296875,
+    "dL": -9.3,
+    "dE": 11.58
+  },
+  {
+    "name": "Purplish Red",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#b23374",
+    "t": 0.91015625,
+    "dL": 0.1,
+    "dE": 1.35
+  },
+  {
+    "name": "Fuchsia",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#d83a70",
+    "t": 1,
+    "dL": 5.3,
+    "dE": 12.33
+  },
+  {
+    "name": "Middle Purple Pink",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#c13074",
+    "t": 1,
+    "dL": 0,
+    "dE": 0.26
+  },
+  {
+    "name": "Crimson",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#a24b89",
+    "t": 0.703125,
+    "dL": 6.1,
+    "dE": 7.86
+  },
+  {
+    "name": "Manganese Violet",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#7b4784",
+    "t": 0.47265625,
+    "dL": 2.8,
+    "dE": 9.92
+  },
+  {
+    "name": "Violet",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#7c5197",
+    "t": 0.36328125,
+    "dL": 7.1,
+    "dE": 10.53
+  },
+  {
+    "name": "Purple Violet",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#69478d",
+    "t": 0.26953125,
+    "dL": 2.1,
+    "dE": 9.28
+  },
+  {
+    "name": "Magenta",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#cd3765",
+    "t": 1,
+    "dL": 2.6,
+    "dE": 13.67
+  },
+  {
+    "name": "Process Red",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#d63586",
+    "t": 1,
+    "dL": 4.9,
+    "dE": 8.14
+  },
+  {
+    "name": "Mulberry",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#aa3883",
+    "t": 0.78125,
+    "dL": 2.5,
+    "dE": 4.07
+  },
+  {
+    "name": "Violet Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#2f3687",
+    "t": 0.11328125,
+    "dL": -8.6,
+    "dE": 14.28
+  },
+  {
+    "name": "Ultramarine",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#3844a8",
+    "t": 0.02734375,
+    "dL": -2.1,
+    "dE": 8.9
+  },
+  {
+    "name": "Violet",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#5d408e",
+    "t": 0.23828125,
+    "dL": -0.8,
+    "dE": 6.34
+  },
+  {
+    "name": "Imperial Violet",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#5251a7",
+    "t": 0.08203125,
+    "dL": 3.3,
+    "dE": 11.7
+  }
+]

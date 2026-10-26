@@ -1,8 +1,8 @@
 ---
 status: Active
-stage: ran a sixth blind-validation round against the redesigned white-row-divider ladder (10 fresh pencils, standard combined row+t placement) -- 10/10 within +/-2 rows, the best raw-accuracy round yet, supporting that the divider lines genuinely help. One steep-gradient artifact found in the process: the final t=0.98-1.0 sliver right at the Cool Blue anchor produces ~16.5 ΔE on its own, sharper than the previously-recorded ~50-per-0.1-t rate once measured at finer resolution. Starting the same protocol (round 1 equivalent, n=25) on the Blue-Red (Violet) arc next.
+stage: ran the first Blue-Red (Violet) blind round (25 pencils, stratified, white-divider ladder) -- same protocol as YgB round 3, to see whether the accuracy picture held on a second arc. It did, cleanly: mean deltaE 2.92 (best of any standard combined-judgment round so far), 22/24 within +/-2 rows. One pencil (ID11, Ultra Blue) couldn't be placed at all -- "too blue" -- right next to the Warm Blue anchor, a second independent instance of the near-anchor hue-drift effect first seen on Cool Blue ("it looked purple"). One real miss (ID23) was a full direction flip (mild shade called as strong tint), self-flagged by Ray as hard before scoring.
 last_touched: 26 October 2026
-next_action: run and score the BvR 25-pencil stratified round (data/scripts being built now); decide on the ΔE threshold question (tightening YgB to 11 costs 55 pencils, widening to 20 gains 64 with only 1 ambiguous against a neighbour arc; ΔE=16 as a gentler middle option gives 132, +13 over current); decide whether a dual-threshold policy (tight 11 core + wide 20 plausible tier, gated by the neighbour-arc check) is worth building; decide whether to redesign how tints are tested/taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3
+next_action: decide whether to run the RoY arc next to complete the three-arc picture; decide whether the near-anchor "doesn't read as belonging to this arc" effect (now seen on both Cool Blue and Warm Blue) is common enough across all 6 anchors to warrant a standing caveat in the book, separate from the ΔE-threshold work; decide on the ΔE threshold question (tightening YgB to 11 costs 55 pencils, widening to 20 gains 64 with only 1 ambiguous against a neighbour arc; ΔE=16 as a gentler middle option gives 132, +13 over current); decide whether a dual-threshold policy (tight 11 core + wide 20 plausible tier, gated by the neighbour-arc check) is worth building; decide whether to redesign how tints are tested/taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,10 +17,53 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-26 (this session, after scoring a sixth round
-against the redesigned white-divider ladder -- best raw accuracy yet,
-10/10 within tolerance -- and about to start the same protocol on the
-Blue-Red (Violet) arc)
+**Last updated:** 2026-10-26 (this session, after scoring the first
+Blue-Red (Violet) blind round -- the accuracy picture from Yellow-Blue
+holds on a second arc, with a genuinely new finding: the near-anchor
+"doesn't read as belonging to this arc" effect showed up again, on a
+different arc's different anchor)
+
+## Current state — BvR ROUND 1 RESULT: the YgB accuracy picture holds on a second arc; near-anchor hue-drift confirmed a second time, independently
+
+- **First Blue-Red (Violet) blind round, scored (2026-10-26)**: same
+  protocol as Yellow-Blue round 3 -- 25 pencils stratified across t and
+  ΔL, ID-only swatches, run against the white-divider ladder built for
+  BvR the same way as YgB's (`scripts/build_de_ladder.cjs "Blue-Red
+  (Violet)" bvr`, 63-pencil book+extra fit pool). Selection/scoring:
+  `scripts/score_de_ladder_bvr_round1.cjs` (reads
+  `data/bvr_blind25_round1.json`, writes `_scored.json`). Sheet:
+  `scripts/diagrams/build_bvr_blind25_round1_sheet.cjs`.
+
+  **Result: mean ΔE 2.92 across 24 scored placements, 22/24 within ±2
+  rows** -- the best mean ΔE of any standard (non-isolated)
+  combined-judgment round run so far, better than YgB round 6's 4.23.
+  Ray expected this to be harder than it turned out to be. Supports
+  that the white-divider redesign and the general placement accuracy
+  found on Yellow-Blue were not YgB-specific -- they hold on a
+  structurally different arc (Warm Blue to Cool Red, a much smaller
+  63-pencil fit pool vs YgB's 119).
+
+  **One real miss, self-flagged before scoring**: ID23 (Purple Lake) is
+  a genuine mild shade (row −1) but was called tint +7 -- a full
+  direction flip, not just a magnitude error, and the single largest
+  miss across all rounds to date (ΔE 8.7). Ray flagged it as "hard to
+  place" before the answer was revealed.
+
+  **A second real miss, consistent with a known pattern**: ID22
+  (Purple) had the row essentially right (off by 1) but t off by 0.08
+  right near the Cool Red anchor, driving ΔE to 6.0 -- plausibly the
+  same steep-near-anchor-gradient effect documented on Cool Blue.
+
+  **New finding: ID11 (Ultra Blue) couldn't be placed at all -- "too
+  blue."** It sits at t≈0.04, right next to the Warm Blue anchor. This
+  is a second, independent instance of the near-anchor hue-drift effect
+  first seen on Yellow-Blue's Cool Blue end (Light Ultramarine reading
+  as "purple"): right at an anchor tip, a swatch can stop reading as
+  belonging to the arc's hue family at all, regardless of which arc or
+  which anchor. Worth treating as a general pattern across (at least)
+  two of the six primary anchors now, not a Cool-Blue-specific quirk --
+  a real candidate for a standing caveat in how the book presents
+  anchor-adjacent tints.
 
 ## Current state — ROUND 6 RESULT: white row-dividers, best accuracy yet; now extending the whole protocol to BvR
 
