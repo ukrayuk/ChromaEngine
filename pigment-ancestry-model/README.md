@@ -999,22 +999,26 @@ Selection/scoring: `scripts/score_de_ladder_bvr_round1.cjs` (reads
 `data/bvr_blind25_round1.json`, writes `_scored.json`). Sheet:
 `scripts/diagrams/build_bvr_blind25_round1_sheet.cjs`.
 
-**Result: mean ΔE 2.92 across 24 scored placements, 22/24 within ±2
+**Result: mean ΔE 2.60 across 24 scored placements, 23/24 within ±2
 rows** — the best mean ΔE of any standard (non-isolated) round run so
 far, ahead of Yellow-Blue round 6's 4.23. Ray expected this arc to be
 harder; it wasn't. This is good evidence the white-divider redesign and
 the overall placement accuracy found on Yellow-Blue generalise, rather
 than being specific to that arc's geometry.
 
-**One real miss, flagged by Ray before scoring**: ID23 (Purple Lake)
-is a genuine mild shade (row −1) but was called tint +7 — a full
-direction flip, not just a magnitude error, and the single largest
-miss recorded across every round to date (ΔE 8.7).
+*(Correction, same day: ID23's original call — "tint +7, t=0.24",
+scored as a full direction-flip miss at ΔE 8.7 — turned out to be a
+Canva colour-picker error, not a real perceptual one: the pick had
+grabbed a line pixel rather than the swatch fill. Ray caught it and
+corrected the call to "shade −2, t=0.3", which scores ΔE 1.0 — one of
+the better placements of the round, not the worst. The figures above
+already reflect the correction; `scripts/score_de_ladder_bvr_round1.cjs`
+documents it inline.)*
 
-**A second miss consistent with a known mechanism**: ID22 (Purple) had
-the row essentially right (off by 1) but t off by 0.08 right near the
-Cool Red anchor, pushing ΔE to 6.0 — plausibly the same
-steep-near-anchor gradient effect already documented at Cool Blue.
+**One real miss**: ID22 (Purple) had the row essentially right (off by
+1) but t off by 0.08 right near the Cool Red anchor, pushing ΔE to
+6.0 — plausibly the same steep-near-anchor gradient effect already
+documented at Cool Blue.
 
 **New finding: ID11 (Ultra Blue) couldn't be placed at all — "too
 blue."** It sits at t≈0.04, right next to the Warm Blue anchor. This is

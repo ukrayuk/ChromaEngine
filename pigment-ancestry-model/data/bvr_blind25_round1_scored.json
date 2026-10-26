@@ -287,12 +287,12 @@
     "range": "Castle Arts Premium Soft Touch Colored Pencils",
     "realDL": -1.2,
     "realRow": -1,
-    "rayDL": 7,
-    "dlErr": 8,
+    "rayDL": -2,
+    "dlErr": -1,
     "realT": 0.301,
-    "rayT": 0.24,
-    "tErr": -0.061,
-    "dE": 8.7
+    "rayT": 0.3,
+    "tErr": -0.001,
+    "dE": 1
   },
   {
     "id": 24,

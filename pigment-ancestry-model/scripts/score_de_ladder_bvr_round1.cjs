@@ -6,6 +6,10 @@
 // ("too blue" -- read as not belonging to this arc's hue family at
 // all, right next to the Warm Blue anchor) and is reported separately,
 // not scored as a numeric miss.
+// ID23's call was corrected after the fact (2026-10-26): the original
+// "tint +7, t=0.24" was a Canva colour-picker error (grabbed a line
+// pixel, not the swatch fill), not a real perceptual miss -- Ray
+// corrected it to "shade -2, t=0.3" once he spotted it.
 // Output: data/bvr_blind25_round1_scored.json.
 const fs = require('fs');
 const path = require('path');
@@ -33,7 +37,7 @@ const ray = {
   6: { dl: 6, t: 0.31 }, 7: { dl: -8, t: 0 }, 8: { dl: 0, t: 0 }, 9: { dl: 7, t: 0.98 }, 10: { dl: 2, t: 0.34 },
   12: { dl: 1, t: 0.24 }, 13: { dl: 6, t: 0.67 }, 14: { dl: -2, t: 0.615 }, 15: { dl: 7, t: 1 }, 16: { dl: -5, t: 0.94 },
   17: { dl: -8, t: 0.79 }, 18: { dl: 2, t: 0.795 }, 19: { dl: -6, t: 0.29 }, 20: { dl: -8, t: 0.45 }, 21: { dl: 2, t: 0.02 },
-  22: { dl: -4, t: 0.94 }, 23: { dl: 7, t: 0.24 }, 24: { dl: 1, t: 0.98 }, 25: { dl: 2, t: 0.56 },
+  22: { dl: -4, t: 0.94 }, 23: { dl: -2, t: 0.3 }, 24: { dl: 1, t: 0.98 }, 25: { dl: 2, t: 0.56 },
 };
 
 const rows = [];

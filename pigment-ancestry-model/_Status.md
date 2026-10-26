@@ -1,6 +1,6 @@
 ---
 status: Active
-stage: ran the first Blue-Red (Violet) blind round (25 pencils, stratified, white-divider ladder) -- same protocol as YgB round 3, to see whether the accuracy picture held on a second arc. It did, cleanly: mean deltaE 2.92 (best of any standard combined-judgment round so far), 22/24 within +/-2 rows. One pencil (ID11, Ultra Blue) couldn't be placed at all -- "too blue" -- right next to the Warm Blue anchor, a second independent instance of the near-anchor hue-drift effect first seen on Cool Blue ("it looked purple"). One real miss (ID23) was a full direction flip (mild shade called as strong tint), self-flagged by Ray as hard before scoring.
+stage: ran the first Blue-Red (Violet) blind round (25 pencils, stratified, white-divider ladder) -- same protocol as YgB round 3, to see whether the accuracy picture held on a second arc. It did, cleanly: mean deltaE 2.60 (best of any standard combined-judgment round so far), 23/24 within +/-2 rows. One pencil (ID11, Ultra Blue) couldn't be placed at all -- "too blue" -- right next to the Warm Blue anchor, a second independent instance of the near-anchor hue-drift effect first seen on Cool Blue ("it looked purple"). ID23's original call looked like a full direction-flip miss (dE 8.7) but was corrected same-day to a Canva colour-picker error (grabbed a line pixel, not the swatch) -- true call scores dE 1.0, one of the round's better placements. The one real remaining miss is ID22 (near Cool Red anchor, t off by 0.08).
 last_touched: 26 October 2026
 next_action: decide whether to run the RoY arc next to complete the three-arc picture; decide whether the near-anchor "doesn't read as belonging to this arc" effect (now seen on both Cool Blue and Warm Blue) is common enough across all 6 anchors to warrant a standing caveat in the book, separate from the ΔE-threshold work; decide on the ΔE threshold question (tightening YgB to 11 costs 55 pencils, widening to 20 gains 64 with only 1 ambiguous against a neighbour arc; ΔE=16 as a gentler middle option gives 132, +13 over current); decide whether a dual-threshold policy (tight 11 core + wide 20 plausible tier, gated by the neighbour-arc check) is worth building; decide whether to redesign how tints are tested/taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
@@ -34,7 +34,7 @@ different arc's different anchor)
   `data/bvr_blind25_round1.json`, writes `_scored.json`). Sheet:
   `scripts/diagrams/build_bvr_blind25_round1_sheet.cjs`.
 
-  **Result: mean ΔE 2.92 across 24 scored placements, 22/24 within ±2
+  **Result: mean ΔE 2.60 across 24 scored placements, 23/24 within ±2
   rows** -- the best mean ΔE of any standard (non-isolated)
   combined-judgment round run so far, better than YgB round 6's 4.23.
   Ray expected this to be harder than it turned out to be. Supports
@@ -43,16 +43,21 @@ different arc's different anchor)
   structurally different arc (Warm Blue to Cool Red, a much smaller
   63-pencil fit pool vs YgB's 119).
 
-  **One real miss, self-flagged before scoring**: ID23 (Purple Lake) is
-  a genuine mild shade (row −1) but was called tint +7 -- a full
-  direction flip, not just a magnitude error, and the single largest
-  miss across all rounds to date (ΔE 8.7). Ray flagged it as "hard to
-  place" before the answer was revealed.
+  **Correction, same day**: ID23's original call ("tint +7, t=0.24")
+  scored as a full direction-flip miss (real: mild shade, row −1) at
+  ΔE 8.7 -- the single largest miss across all rounds at the time. Ray
+  flagged it as "hard to place" before the answer was revealed, then
+  traced it to a Canva colour-picker error (the pick had grabbed a line
+  pixel, not the swatch fill) and corrected the call to "shade −2,
+  t=0.3" -- which scores ΔE 1.0, one of the round's *better*
+  placements. The result above already reflects the correction;
+  `scripts/score_de_ladder_bvr_round1.cjs` documents it inline so the
+  history isn't lost.
 
-  **A second real miss, consistent with a known pattern**: ID22
-  (Purple) had the row essentially right (off by 1) but t off by 0.08
-  right near the Cool Red anchor, driving ΔE to 6.0 -- plausibly the
-  same steep-near-anchor-gradient effect documented on Cool Blue.
+  **The one real remaining miss**: ID22 (Purple) had the row
+  essentially right (off by 1) but t off by 0.08 right near the Cool
+  Red anchor, driving ΔE to 6.0 -- plausibly the same
+  steep-near-anchor-gradient effect documented on Cool Blue.
 
   **New finding: ID11 (Ultra Blue) couldn't be placed at all -- "too
   blue."** It sits at t≈0.04, right next to the Warm Blue anchor. This
