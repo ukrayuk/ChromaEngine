@@ -6,7 +6,8 @@
   .ladder { position: relative; border: 2px solid #999; border-radius: 4px; }
   .rlabel { position: absolute; left: -210px; width: 195px; text-align: right; font-size: 17px; color: #444; font-family: monospace; }
   .rlabel.right { left: auto; right: -210px; text-align: left; }
-  .row { width: 4080px; height: 46px; position: relative; }
+  .row { width: 4080px; height: 46px; position: relative; border-bottom: 2px solid #fff; box-sizing: border-box; }
+  .row:last-child { border-bottom: none; }
   .row.exact { outline: 3px solid #000; outline-offset: -2px; }
   .swatch { position: absolute; width: 40px; height: 40px; top: 3px; border: 2px solid #000; box-sizing: border-box; }
   .tscale { position: relative; width: 4080px; height: 46px; margin-top: 2px; border-top: 3px solid #333; }

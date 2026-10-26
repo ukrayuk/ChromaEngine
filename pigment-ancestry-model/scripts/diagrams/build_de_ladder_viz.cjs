@@ -50,7 +50,8 @@ parts.push('  .sub { font-size: 20px; color: #555; margin: 0 0 24px 0; max-width
 parts.push('  .ladder { position: relative; border: 2px solid #999; border-radius: 4px; }');
 parts.push('  .rlabel { position: absolute; left: -210px; width: 195px; text-align: right; font-size: 17px; color: #444; font-family: monospace; }');
 parts.push('  .rlabel.right { left: auto; right: -210px; text-align: left; }');
-parts.push('  .row { width: ' + BAR_WIDTH + 'px; height: ' + ROW_HEIGHT + 'px; position: relative; }');
+parts.push('  .row { width: ' + BAR_WIDTH + 'px; height: ' + ROW_HEIGHT + 'px; position: relative; border-bottom: 2px solid #fff; box-sizing: border-box; }');
+parts.push('  .row:last-child { border-bottom: none; }');
 parts.push('  .row.exact { outline: 3px solid #000; outline-offset: -2px; }');
 parts.push('  .swatch { position: absolute; width: ' + SWATCH + 'px; height: ' + SWATCH + 'px; top: 3px; border: 2px solid #000; box-sizing: border-box; }');
 parts.push('  .tscale { position: relative; width: ' + BAR_WIDTH + 'px; height: 46px; margin-top: 2px; border-top: 3px solid #333; }');
