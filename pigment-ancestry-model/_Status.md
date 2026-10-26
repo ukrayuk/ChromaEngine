@@ -1,8 +1,8 @@
 ---
 status: Active
-stage: ran the first Blue-Red (Violet) blind round (25 pencils, stratified, white-divider ladder) -- same protocol as YgB round 3, to see whether the accuracy picture held on a second arc. It did, cleanly: mean deltaE 2.60 (best of any standard combined-judgment round so far), 23/24 within +/-2 rows. One pencil (ID11, Ultra Blue) couldn't be placed at all -- "too blue" -- right next to the Warm Blue anchor, a second independent instance of the near-anchor hue-drift effect first seen on Cool Blue ("it looked purple"). ID23's original call looked like a full direction-flip miss (dE 8.7) but was corrected same-day to a Canva colour-picker error (grabbed a line pixel, not the swatch) -- true call scores dE 1.0, one of the round's better placements. The one real remaining miss is ID22 (near Cool Red anchor, t off by 0.08).
+stage: ran a quick 5-swatch trial (round 7) of a new viewing-method hypothesis Ray raised after looking back at his own zoomed-in screenshots: colour is judged relative to its neighbours (simultaneous contrast), so zooming in tight on the ladder to place a swatch may be destroying the very context that makes the judgment possible. Protocol: zoom in only to pick each swatch's colour, then zoom OUT to the full ladder before deciding where it goes. Result: every placement within +/-1 row (two exact) -- the cleanest row accuracy of any round. The round's raw mean deltaE (5.67) is misleading on its own -- 4 of the 5 pencils sit at t=0.81-1.0, in the known near-anchor steep-gradient zone, so small/sub-threshold t-errors there still produce large deltaE through no fault of the row judgment itself.
 last_touched: 26 October 2026
-next_action: decide whether to run the RoY arc next to complete the three-arc picture; decide whether the near-anchor "doesn't read as belonging to this arc" effect (now seen on both Cool Blue and Warm Blue) is common enough across all 6 anchors to warrant a standing caveat in the book, separate from the ΔE-threshold work; decide on the ΔE threshold question (tightening YgB to 11 costs 55 pencils, widening to 20 gains 64 with only 1 ambiguous against a neighbour arc; ΔE=16 as a gentler middle option gives 132, +13 over current); decide whether a dual-threshold policy (tight 11 core + wide 20 plausible tier, gated by the neighbour-arc check) is worth building; decide whether to redesign how tints are tested/taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3
+next_action: decide whether to build this "zoom in to pick, zoom out to place" instruction into the standard protocol for all future rounds (including re-running a larger sample to confirm the n=5 result holds); decide whether to run the RoY arc next to complete the three-arc picture; decide whether the near-anchor "doesn't read as belonging to this arc" effect (now seen on both Cool Blue and Warm Blue) is common enough across all 6 anchors to warrant a standing caveat in the book; decide on the ΔE threshold question (tightening YgB to 11 costs 55 pencils, widening to 20 gains 64 with only 1 ambiguous against a neighbour arc; ΔE=16 as a gentler middle option gives 132, +13 over current); decide whether a dual-threshold policy (tight 11 core + wide 20 plausible tier, gated by the neighbour-arc check) is worth building; decide whether to redesign how tints are tested/taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,11 +17,50 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-26 (this session, after scoring the first
-Blue-Red (Violet) blind round -- the accuracy picture from Yellow-Blue
-holds on a second arc, with a genuinely new finding: the near-anchor
-"doesn't read as belonging to this arc" effect showed up again, on a
-different arc's different anchor)
+**Last updated:** 2026-10-26 (this session, after a quick 5-swatch
+trial of a new viewing-method hypothesis -- zoom in only to pick a
+swatch's colour, zoom OUT to the full ladder to place it -- which
+produced the cleanest row accuracy of any round run so far)
+
+## Current state — ROUND 7 RESULT: viewing the whole ladder (not a zoomed-in crop) may be the single biggest lever on accuracy
+
+- **Round 7, a quick methodology trial (2026-10-26)**: Ray, reviewing
+  his own screenshots from round 6, noticed that zooming in tight on
+  the ladder to read off a row leaves almost no neighbouring rows in
+  view -- and colour is judged relative to its surroundings
+  (simultaneous contrast), so the zoomed-in view may be destroying the
+  very context the ladder is designed to provide. Tested directly: 5
+  fresh pencils (none reused from rounds 3-6), same white-divider YgB
+  ladder, with the instruction to zoom in only far enough to pick each
+  swatch's own colour, then zoom back OUT to the full ladder before
+  deciding where it belongs. Selection/scoring:
+  `scripts/score_de_ladder_round7.cjs` (reads
+  `data/ygb_blind5_round7.json`, writes `_scored.json`). Sheet:
+  `scripts/diagrams/build_blind5_round7_sheet.cjs`.
+
+  **Result: every placement within ±1 row, two exact** -- the cleanest
+  row accuracy of any round to date, better even than round 6's
+  already-strong 10/10-within-±2. The round's raw mean ΔE (5.67) looks
+  worse than that on its own, but is misleading in isolation: 4 of the
+  5 pencils happen to sit at t=0.81-1.0, inside the known near-anchor
+  steep-gradient zone (the same effect behind round 6's ID1 anomaly),
+  where even a sub-0.04 t-error produces a large ΔE through no fault of
+  the row judgment. Stripped of that zone's known distortion, the
+  underlying placement accuracy here is as good as or better than any
+  prior round.
+
+  **Why this matters**: if this holds on a larger sample, it suggests
+  the single biggest lever on blind-placement accuracy isn't anything
+  about the ladder's design (white dividers, isolated columns, etc) --
+  it's simply ensuring the whole arc stays in view when the judgment is
+  made. That's a cheap, high-leverage fix to standardise across all
+  future rounds, and a real candidate for a note in the book itself
+  about how to view colour comparisons (not just how to build them).
+
+  **n=5 caveat**: this is a quick trial, not a properly powered round --
+  worth re-running at a larger sample before treating "zoom in to pick,
+  zoom out to place" as a settled protocol change, but promising enough
+  to standardise on going forward.
 
 ## Current state — BvR ROUND 1 RESULT: the YgB accuracy picture holds on a second arc; near-anchor hue-drift confirmed a second time, independently
 

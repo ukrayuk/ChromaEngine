@@ -1032,6 +1032,49 @@ tints rather than a Cool-Blue-specific quirk — a real candidate for a
 standing caveat in how the book presents tints near any anchor, not
 just a testing footnote.
 
+## Round 7: viewing the whole ladder, not a zoomed-in crop, may be the biggest lever on accuracy (2026-10-26)
+
+Ray noticed something reviewing his own round-6 screenshots: zooming in
+tight on the ladder to read off a row leaves almost none of the
+neighbouring rows in view. Colour is judged *relative* to its
+surroundings (simultaneous contrast) — the whole point of a ladder
+showing every lightness step is to give that relative context, and
+zooming in to read it precisely may destroy the exact thing that makes
+the reading possible.
+
+Tested directly, as a quick trial: 5 fresh pencils (none reused from
+rounds 3–6), same white-divider Yellow-Blue ladder, with one change to
+the instruction — zoom in only far enough to pick each swatch's own
+colour, then zoom back **out** to the full ladder before deciding where
+it belongs. Selection/scoring: `scripts/score_de_ladder_round7.cjs`
+(reads `data/ygb_blind5_round7.json`, writes `_scored.json`). Sheet:
+`scripts/diagrams/build_blind5_round7_sheet.cjs`.
+
+**Result: every placement within ±1 row, two exact** — the cleanest row
+accuracy of any round run so far, ahead even of round 6's strong
+10/10-within-±2. The round's raw mean ΔE (5.67) looks worse on its own,
+but that's misleading: 4 of the 5 pencils happened to land at
+t=0.81–1.0, inside the already-documented near-anchor steep-gradient
+zone, where even a t-error under 0.04 produces a large ΔE regardless of
+how accurate the underlying row judgment was. Once that known
+distortion is accounted for, this round's placement accuracy is as
+good as, or better than, any prior round.
+
+**Why this might matter more than any single design change tried so
+far**: if it holds at a larger sample, the biggest lever on
+blind-placement accuracy may not be anything about the ladder's own
+design (white dividers, isolated columns, dual threshold tiers) — it
+may simply be making sure the whole arc stays in view at the moment the
+judgment is made. That's a cheap, high-leverage protocol fix, worth
+standardising across all future rounds, and a real candidate for a note
+in the book itself about *how* to compare colours, not just how the
+arcs are built.
+
+**Caveat**: n=5 is a quick trial, not a properly powered round. Worth
+re-confirming at a larger sample before treating "zoom in to pick, zoom
+out to place" as a settled instruction — but promising enough to adopt
+as the default going forward regardless.
+
 ## Open items (read this part)
 
 ### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing

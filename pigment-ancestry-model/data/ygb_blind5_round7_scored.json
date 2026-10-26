@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Lemon Yellow",
+    "range": "Caran d'Ache Luminance 6901",
+    "realDL": 0.3,
+    "realRow": 0,
+    "rayDL": 0,
+    "dlErr": 0,
+    "realT": 0,
+    "rayT": 0,
+    "tErr": 0,
+    "dE": 0
+  },
+  {
+    "id": 2,
+    "name": "Primary Blue",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "realDL": -5,
+    "realRow": -5,
+    "rayDL": -4,
+    "dlErr": 1,
+    "realT": 1,
+    "rayT": 0.99,
+    "tErr": -0.01,
+    "dE": 10.89
+  },
+  {
+    "id": 3,
+    "name": "Orient",
+    "range": "Derwent Chromaflow Pencils",
+    "realDL": -7.6,
+    "realRow": -8,
+    "rayDL": -7,
+    "dlErr": 1,
+    "realT": 0.938,
+    "rayT": 0.95,
+    "tErr": 0.012,
+    "dE": 4.5
+  },
+  {
+    "id": 4,
+    "name": "Bluish Green",
+    "range": "Caran d'Ache Pablo 666",
+    "realDL": -14.7,
+    "realRow": -15,
+    "rayDL": -14,
+    "dlErr": 1,
+    "realT": 0.813,
+    "rayT": 0.85,
+    "tErr": 0.037,
+    "dE": 7.26
+  },
+  {
+    "id": 5,
+    "name": "Peacock Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "realDL": -14.3,
+    "realRow": -14,
+    "rayDL": -14,
+    "dlErr": 0,
+    "realT": 0.98,
+    "rayT": 0.99,
+    "tErr": 0.01,
+    "dE": 5.68
+  }
+]

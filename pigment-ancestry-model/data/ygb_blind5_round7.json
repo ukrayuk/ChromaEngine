@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Lemon Yellow",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#f1ec29",
+    "t": 0,
+    "dL": 0.3,
+    "dE": 9.58
+  },
+  {
+    "id": 2,
+    "name": "Primary Blue",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#007fce",
+    "t": 1,
+    "dL": -5,
+    "dE": 8.8
+  },
+  {
+    "id": 3,
+    "name": "Orient",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#008199",
+    "t": 0.9375,
+    "dL": -7.6,
+    "dE": 10.23
+  },
+  {
+    "id": 4,
+    "name": "Bluish Green",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#007a5f",
+    "t": 0.8125,
+    "dL": -14.7,
+    "dE": 15.06
+  },
+  {
+    "id": 5,
+    "name": "Peacock Blue",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#006896",
+    "t": 0.98046875,
+    "dL": -14.3,
+    "dE": 14.5
+  }
+]
