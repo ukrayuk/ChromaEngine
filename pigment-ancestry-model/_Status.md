@@ -1,8 +1,8 @@
 ---
 status: Active
-stage: ran a quick 5-swatch trial (round 7) of a new viewing-method hypothesis Ray raised after looking back at his own zoomed-in screenshots: colour is judged relative to its neighbours (simultaneous contrast), so zooming in tight on the ladder to place a swatch may be destroying the very context that makes the judgment possible. Protocol: zoom in only to pick each swatch's colour, then zoom OUT to the full ladder before deciding where it goes. Result: every placement within +/-1 row (two exact) -- the cleanest row accuracy of any round. The round's raw mean deltaE (5.67) is misleading on its own -- 4 of the 5 pencils sit at t=0.81-1.0, in the known near-anchor steep-gradient zone, so small/sub-threshold t-errors there still produce large deltaE through no fault of the row judgment itself.
-last_touched: 26 October 2026
-next_action: decide whether to build this "zoom in to pick, zoom out to place" instruction into the standard protocol for all future rounds (including re-running a larger sample to confirm the n=5 result holds); decide whether to run the RoY arc next to complete the three-arc picture; decide whether the near-anchor "doesn't read as belonging to this arc" effect (now seen on both Cool Blue and Warm Blue) is common enough across all 6 anchors to warrant a standing caveat in the book; decide on the ΔE threshold question (tightening YgB to 11 costs 55 pencils, widening to 20 gains 64 with only 1 ambiguous against a neighbour arc; ΔE=16 as a gentler middle option gives 132, +13 over current); decide whether a dual-threshold policy (tight 11 core + wide 20 plausible tier, gated by the neighbour-arc check) is worth building; decide whether to redesign how tints are tested/taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3
+stage: built a new arc-length (ΔE-uniform) version of the YgB ladder, at Ray's request after he asked about "pushing the anchor out" to reduce the near-anchor steepness. Tested his literal mechanism first (reapplying the trueLab gamut-clip correction at every generation, not just the first) -- it barely moved the numbers (16.50 -> 16.39 dE in the last 2% of t), so that's not the cause; the real cause is that Cool Blue's true pigment is far more saturated than its sRGB-clamped display anchor, and the mixing has to converge back to that fixed, correct display value right at the end, which is inherent, not a bug. Actually relocating the anchor would reshape every pencil's classification along the whole arc -- too large a lever for a diagnostic-tool problem. Built the safe equivalent instead: resample the SAME real arc/anchors by cumulative arc-length (ΔE) rather than raw t. Confirmed: local rate drops from a 6.6-to-~82-per-0.1-unit range (t axis) to a tight 14.6-19.3 (u axis), fixing both the shallow-middle and steep-anchor problems at once, with zero change to the real model or any pencil's classification (119 fitting pencils, same as before). Clean diagram built and sent; not yet tested with a blind round.
+last_touched: 30 October 2026
+next_action: run a blind-placement round against the new arc-length ("u-axis") ladder to see whether it actually improves accuracy near the anchors (the real test of the whole idea); decide whether to build the arc-length version for BvR/RoY too, or wait for the YgB trial result first; decide whether to build this "zoom in to pick, zoom out to place" instruction (round 7's finding) into the standard protocol for all future rounds, including re-running a larger sample to confirm the n=5 result holds; decide whether to run the RoY arc next to complete the three-arc picture; decide whether the near-anchor "doesn't read as belonging to this arc" effect (now seen on both Cool Blue and Warm Blue) is common enough across all 6 anchors to warrant a standing caveat in the book; decide on the ΔE threshold question (tightening YgB to 11 costs 55 pencils, widening to 20 gains 64 with only 1 ambiguous against a neighbour arc; ΔE=16 as a gentler middle option gives 132, +13 over current); decide whether a dual-threshold policy (tight 11 core + wide 20 plausible tier, gated by the neighbour-arc check) is worth building; decide whether to redesign how tints are tested/taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,10 +17,49 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-26 (this session, after a quick 5-swatch
-trial of a new viewing-method hypothesis -- zoom in only to pick a
-swatch's colour, zoom OUT to the full ladder to place it -- which
-produced the cleanest row accuracy of any round run so far)
+**Last updated:** 2026-10-30 (this session, after building a new
+arc-length/ΔE-uniform version of the YgB ladder -- a risk-free fix for
+the near-anchor steepness problem that changes nothing about the real
+model, only how the diagnostic ladder is labelled)
+
+## Current state — NEW TOOL: arc-length (ΔE-uniform) ladder, ready for its first blind test
+
+- **Arc-length ladder built (2026-10-30)**: Ray asked whether the
+  anchors could be "pushed out" to reduce the near-anchor steepness
+  found in rounds 6/7 (Cool Blue's gamut-clipping gap forcing a sharp
+  final approach). Tested his literal mechanism first -- a fix that
+  reapplies the trueLab gamut-clip correction at every generation of
+  `buildDyadic`, not just the coarsest one -- against the real arc:
+  barely moved the last-2%-of-t deltaE (16.50 -> 16.39). That ruled out
+  "incomplete correction propagation" as the cause. The real mechanism:
+  Cool Blue's true pigment is far more saturated than its sRGB-clamped
+  display anchor; the mixing path gets a saturation boost early on but
+  has to converge back down to the fixed, correct display colour right
+  at t=1 -- that convergence is inherent to representing a gamut-clipped
+  anchor honestly, not a bug to patch. Actually relocating the anchor
+  (what "pushing it out" would really mean) reshapes every pencil's
+  classification along the whole arc, since every point is a mix
+  *toward* that anchor -- far too large a lever to pull just to fix a
+  diagnostic tool.
+
+  Built the safe equivalent instead: `scripts/build_de_ladder_arclength.cjs`
+  resamples the exact same arc and real pencil classifications by
+  cumulative arc-length (ΔE) instead of raw t. Confirmed numerically:
+  local rate drops from a 6.6-to-~82-per-0.1-unit range (old t axis) to
+  a tight 14.6-19.3 (new u axis) -- fixing both the shallow-middle
+  problem AND the steep-anchor problem at once, since they're really
+  the same underlying issue (t isn't proportional to colour distance)
+  viewed from two ends. Zero change to the real model: same 119 fitting
+  pencils as the t-axis version, same anchors, same classifications --
+  only the diagnostic ladder's horizontal axis is relabelled.
+  Visualization: `scripts/diagrams/build_de_ladder_arclength_viz.cjs`.
+  Clean version rendered and sent to Ray; not yet blind-tested.
+
+  **Next**: the real test of this idea is a blind-placement round
+  against the new u-axis ladder, to see whether it actually produces
+  better near-anchor accuracy than the old t-axis one did in rounds 6/7
+  -- the numeric argument for it is solid, but it hasn't been checked
+  against a human eye yet.
 
 ## Current state — ROUND 7 RESULT: viewing the whole ladder (not a zoomed-in crop) may be the single biggest lever on accuracy
 

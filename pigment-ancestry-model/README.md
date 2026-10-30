@@ -1075,6 +1075,68 @@ re-confirming at a larger sample before treating "zoom in to pick, zoom
 out to place" as a settled instruction — but promising enough to adopt
 as the default going forward regardless.
 
+## The arc-length (ΔE-uniform) ladder: a risk-free fix for the near-anchor steepness problem (2026-10-30)
+
+Ray asked whether the anchors could be "pushed out" to reduce the
+sharp near-anchor steepness found in rounds 6 and 7 (Cool Blue's
+gamut-clipping gap forcing a compressed, fast-changing final approach
+in the last couple of percent of t).
+
+**Tested the literal mechanism first.** The suspicion was that the
+`trueLab` gamut-clip correction in `buildDyadic` (lib.cjs) only applies
+at the single coarsest bisection (generation 1), so every finer
+subdivision closer to the anchor falls back to ordinary hex-to-hex
+mixing without the correction — a plausible bug. Rebuilt the arc with
+the correction reapplied at *every* generation that touches the
+literal anchor point, not just the first, and compared the last-2%-of-t
+ΔE: 16.50 (old) vs 16.39 (new) — barely moved. The correction already
+propagates through the recursive mixing chain; this wasn't the cause.
+
+**The real mechanism, once that was ruled out**: Cool Blue's true
+pigment is substantially more saturated than its sRGB-clamped display
+anchor. The mixing path gets a saturation boost early (from the
+trueLab-corrected first midpoint), but by construction it must still
+land exactly on the real, correct, clamped display colour at t=1 — so
+whatever gap has opened up has to close in the final stretch. That
+convergence is inherent to honestly representing a gamut-clipped
+anchor, not a defect to patch.
+
+That also clarifies what "pushing the anchor out" would actually mean:
+not relabelling the diagram, but choosing a different real colour to
+sit at the arc's endpoint. Since every point along the whole arc is a
+mix *toward* that anchor, moving it reshapes every pencil's
+classification along the entire arc, not just the compressed final
+stretch — a far bigger and riskier lever than it sounds, for a problem
+that's really about how a diagnostic tool is drawn, not about the
+anchors themselves.
+
+**Built the safe equivalent instead**: `scripts/build_de_ladder_arclength.cjs`
+resamples the exact same real arc, same real anchors, same real
+pencil-to-arc classifications — by cumulative arc-length (ΔE) rather
+than raw t. The new parameter, u, is defined so that equal steps in u
+correspond to roughly equal real colour distance everywhere along the
+arc, not just locally:
+
+| | old axis (t, raw mixing ratio) | new axis (u, arc-length) |
+|---|---|---|
+| local rate range across the whole arc | 6.6 to ~82 ΔE per 0.1 step | 14.6 to 19.3 ΔE per 0.1 step |
+
+This fixes both the shallow-middle problem (from 2026-10-21) and the
+steep-near-anchor problem (from rounds 6/7) with the same change,
+because they're really the same underlying fact — t isn't proportional
+to colour distance — viewed from opposite ends of the arc. Nothing
+about the model changes: the arc-length fit pool is still 119 pencils
+for Yellow-Blue, same anchors, same classifications, same colours —
+only the diagnostic ladder's horizontal axis is relabelled.
+Visualization: `scripts/diagrams/build_de_ladder_arclength_viz.cjs`
+(same white-divider, dual-edge-label design as the current ladder, just
+keyed on u instead of t). Clean version built and sent to Ray.
+
+**Not yet blind-tested.** The numeric argument is solid, but the real
+test of whether this actually helps a human eye place pencils more
+accurately near the anchors — the whole point of building it — is
+still to come.
+
 ## Open items (read this part)
 
 ### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing
