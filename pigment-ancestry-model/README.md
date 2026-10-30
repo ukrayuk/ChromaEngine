@@ -1137,6 +1137,76 @@ test of whether this actually helps a human eye place pencils more
 accurately near the anchors — the whole point of building it — is
 still to come.
 
+## Round 8: the arc-length fix confirmed at Cool Blue; a new, different issue found at Cool Yellow (2026-10-30)
+
+First blind test of the arc-length ladder. 18 pencils: 10 deliberately
+placed near the two arc edges (the exact zone the u-axis was built to
+fix), 8 scattered through the middle for comparison, none reused from
+rounds 3–7. Selection/scoring: `scripts/score_de_ladder_round8.cjs`
+(reads `data/ygb_blind18_round8.json`, writes `_scored.json`). Sheet:
+`scripts/diagrams/build_blind18_round8_sheet.cjs`.
+
+**The fix worked exactly where it was built to work.** All 5 pencils
+near the Cool Blue edge scored ΔE 1.6–5.9, row errors of 2 or less —
+no repeat of the ~16.5 steep-anchor spike that hit near-identical
+pencils on the old t-axis ladder in rounds 6 and 7, even with similarly
+small position errors. Direct, clean confirmation that resampling by
+arc-length fixed the Cool Blue gamut-clipping distortion.
+
+**But a separate, unrelated miss cluster showed up at the other edge.**
+Two pale pencils near Cool Yellow — Tuscan Yellow (real tint+2 at
+u=0.00, called tint+5 at u=0.15, ΔE 26.6, the worst of the round) and
+Leaf Green Light (ΔE 21.8) — missed badly on *position* despite the new
+axis giving that zone extra room. Cool Yellow was never gamut-clipped
+(only Cool Blue was, for this arc — confirmed directly against
+master.json's `srgb_gamut_status`), so this isn't the mechanism the fix
+addresses. It looks like a genuine hue-discrimination difficulty
+telling pale yellow-greens apart near that end, independent of the axis
+geometry — not yet understood, flagged for its own look. Excluding
+those two outliers, the other 8 edge placements averaged ΔE 2.65 — as
+good as round 7's best result.
+
+**Checked whether Blue-Red (Violet) needs the same fix: it doesn't.**
+Neither of BvR's anchors (Mauve Deep, Middle Purple Pink) is
+gamut-clipped — both measure "in gamut" on sRGB and P3 directly against
+master.json. Confirmed by checking BvR's own gradient profile: 5.0–7.7
+ΔE per 0.1 of t across the *entire* arc (vs Yellow-Blue's 6.6-to-82
+range), and just 1.7 ΔE in the final 2% at *both* ends — no spike
+anywhere. This also explains, after the fact, why BvR's round 1 scored
+the best mean ΔE of any standard round (2.60) with no fix applied: it
+never needed one. Red-Yellow is a separate question — its Warm Yellow
+anchor *is* gamut-clipped per `gen_level1_pure_rows.cjs`, so it may
+share Yellow-Blue's problem; worth checking before building that arc's
+ladder.
+
+## Major methodology reframe: the real test is print, not screen (2026-10-30)
+
+Ray's observation, after round 8: every round from 1 through 8 has
+tested an idealized digital task — exact hex colour vs exact hex
+colour, on a screen, scored to the decimal ΔE. That is not the book's
+real use case. A reader will hold a physical pencil swatch up against a
+**printed** reference card and judge "is this roughly the right spot"
+by eye — a much looser standard (right *area*, not exact row) and a
+physically different comparison (an ink-on-paper pencil mark against a
+printed card, not two on-screen colour blocks).
+
+Two variables none of rounds 1–8 have touched at all:
+
+1. **Screen-to-print colour reproduction** — untested, and CMYK print
+   can't reproduce the full sRGB gamut these ladders were built in, so
+   printed colours may shift from their on-screen originals in ways
+   nothing so far has measured.
+2. **Physical-swatch-vs-printed-card comparison** — a real pencil mark
+   on paper may behave differently under this judgment than two flat
+   on-screen colour blocks do.
+
+Ray is moving the next phase of testing to an actual printout. This
+reframes every precision number gathered in rounds 1–8 as an idealized,
+best-case upper bound on accuracy — a useful baseline for how the
+*model itself* behaves, but not a direct prediction of how accurate
+placement will be in the finished, printed book. The next real
+validation step is print-based, not further screen-based tuning.
+
 ## Open items (read this part)
 
 ### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing

@@ -1,8 +1,10 @@
 ---
 status: Active
-stage: built a new arc-length (ΔE-uniform) version of the YgB ladder, at Ray's request after he asked about "pushing the anchor out" to reduce the near-anchor steepness. Tested his literal mechanism first (reapplying the trueLab gamut-clip correction at every generation, not just the first) -- it barely moved the numbers (16.50 -> 16.39 dE in the last 2% of t), so that's not the cause; the real cause is that Cool Blue's true pigment is far more saturated than its sRGB-clamped display anchor, and the mixing has to converge back to that fixed, correct display value right at the end, which is inherent, not a bug. Actually relocating the anchor would reshape every pencil's classification along the whole arc -- too large a lever for a diagnostic-tool problem. Built the safe equivalent instead: resample the SAME real arc/anchors by cumulative arc-length (ΔE) rather than raw t. Confirmed: local rate drops from a 6.6-to-~82-per-0.1-unit range (t axis) to a tight 14.6-19.3 (u axis), fixing both the shallow-middle and steep-anchor problems at once, with zero change to the real model or any pencil's classification (119 fitting pencils, same as before). Clean diagram built and sent; not yet tested with a blind round.
+stage: ran round 8, the first blind test of the arc-length ("u-axis") ladder (18 pencils: 10 at the arc edges, 8 scattered). Confirmed the fix worked for its intended target -- all 5 Cool-Blue-edge pencils scored ΔE 1.6-5.9, none of the ~16.5 steep-anchor spikes seen on the old t-axis ladder in rounds 6/7. But found a separate, unrelated miss cluster at the OTHER edge: two pale-yellow/light-green pencils near Cool Yellow (which was never gamut-clipped, so this isn't the same mechanism) scored badly (dE 21.8, 26.6) despite the extra room the new axis gives that zone -- looks like a genuine hue-discrimination difficulty in that pale region, not a geometry problem. Excluding those two, edge accuracy averaged dE 2.65, as good as round 7's best result.
+
+MAJOR METHODOLOGY REFRAME (2026-10-30, Ray): all 8 rounds so far have been an idealized digital test -- exact hex vs exact hex, on screen, scored to the decimal. The book's real use case is looser and physically different: a reader holds up their own physical pencil swatch against a PRINTED card and judges "is this in the right area" by eye, not to decimal ΔE precision. Two things the digital test hasn't touched at all: (1) screen-to-print colour reproduction is untested and could shift things meaningfully (CMYK can't reproduce full sRGB gamut), (2) comparing a physical pencil mark to a printed swatch is a different perceptual task than comparing two on-screen colour blocks. Ray is moving the next round of testing to an actual printout. This reframes every prior round's precision findings as an upper-bound/idealized baseline, not a direct prediction of real-book accuracy.
 last_touched: 30 October 2026
-next_action: run a blind-placement round against the new arc-length ("u-axis") ladder to see whether it actually improves accuracy near the anchors (the real test of the whole idea); decide whether to build the arc-length version for BvR/RoY too, or wait for the YgB trial result first; decide whether to build this "zoom in to pick, zoom out to place" instruction (round 7's finding) into the standard protocol for all future rounds, including re-running a larger sample to confirm the n=5 result holds; decide whether to run the RoY arc next to complete the three-arc picture; decide whether the near-anchor "doesn't read as belonging to this arc" effect (now seen on both Cool Blue and Warm Blue) is common enough across all 6 anchors to warrant a standing caveat in the book; decide on the ΔE threshold question (tightening YgB to 11 costs 55 pencils, widening to 20 gains 64 with only 1 ambiguous against a neighbour arc; ΔE=16 as a gentler middle option gives 132, +13 over current); decide whether a dual-threshold policy (tight 11 core + wide 20 plausible tier, gated by the neighbour-arc check) is worth building; decide whether to redesign how tints are tested/taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count against the corrected never-fit taxonomy; continue the blind validation test with Level 3
+next_action: support Ray's printout-based test (print the arc-length ladder, compare screen vs print reproduction, then test placing real physical pencils against the printed card) once he's ready -- this is now the priority, more important than further screen-based precision tuning; investigate the Cool-Yellow pale-yellow/light-green discrimination difficulty found in round 8 (separate from the gamut-clipping mechanism, not yet understood); decide whether to build the arc-length ladder for BvR/RoY; decide whether to standardise round 7's "zoom in to pick, zoom out to place" instruction for all future rounds; decide whether the near-anchor "doesn't read as belonging to this arc" effect (seen on both Cool Blue and Warm Blue) warrants a standing book caveat; decide on the ΔE threshold question (11 vs 16 vs 20, from 2026-10-25/26); decide whether a dual-threshold policy is worth building; decide whether to redesign how tints are taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count; continue with Level 3
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,10 +19,64 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-30 (this session, after building a new
-arc-length/ΔE-uniform version of the YgB ladder -- a risk-free fix for
-the near-anchor steepness problem that changes nothing about the real
-model, only how the diagnostic ladder is labelled)
+**Last updated:** 2026-10-30 (this session, after scoring round 8 --
+the arc-length ladder fix confirmed working at Cool Blue, a new
+unrelated pale-yellow-green difficulty found at Cool Yellow -- and a
+major methodology reframe from Ray: every round so far has been an
+idealized screen/exact-hex test, but the book's real use case is a
+printed card judged "right area" by eye, not decimal ΔE precision.
+Next testing moves to an actual printout.)
+
+## Current state — ROUND 8 RESULT + METHODOLOGY REFRAME: screen precision confirmed, but the real test is print
+
+- **Round 8, first blind test of the arc-length ladder (2026-10-30)**:
+  18 pencils -- 10 deliberately near the two arc edges (the zone the
+  u-axis fix targets), 8 scattered through the middle for comparison.
+  None reused from rounds 3-7. Selection/scoring:
+  `scripts/score_de_ladder_round8.cjs` (reads
+  `data/ygb_blind18_round8.json`, writes `_scored.json`). Sheet:
+  `scripts/diagrams/build_blind18_round8_sheet.cjs`.
+
+  **The fix worked exactly where it was built to work.** All 5
+  pencils near the Cool Blue edge scored ΔE 1.6-5.9, row errors of 2 or
+  less -- no repeat of the ~16.5 steep-anchor spike that hit near-
+  identical pencils on the old t-axis ladder in rounds 6 and 7, even
+  with similarly small position errors. Direct, clean confirmation that
+  resampling by arc-length fixed the Cool Blue gamut-clipping distortion.
+
+  **But a separate, unrelated miss cluster showed up at the OTHER
+  edge.** Two pale pencils near Cool Yellow -- Tuscan Yellow (real
+  tint+2 at u=0.00, called tint+5 at u=0.15, ΔE 26.6, the worst of the
+  round) and Leaf Green Light (ΔE 21.8) -- missed badly on POSITION
+  despite the new axis giving that zone extra room. Cool Yellow was
+  never gamut-clipped (only Cool Blue was, for this arc), so this isn't
+  the mechanism the fix addresses -- it looks like a genuine
+  hue-discrimination difficulty telling pale yellow-greens apart near
+  that end, independent of the axis geometry. Excluding those two
+  outliers, the other 8 edge placements averaged ΔE 2.65 -- as good as
+  round 7's best result. Not yet understood; flagged for its own
+  investigation.
+
+  **Overall**: EDGE mean ΔE 6.95, MID mean ΔE 7.49 (both pulled up by
+  one outlier each) -- roughly comparable, confirming the arc-length
+  axis didn't make the edges *worse*, and clearly made the Cool-Blue
+  side better.
+
+- **Methodology reframe (2026-10-30, Ray)**: every round from 1 through
+  8 has tested an idealized digital task -- exact hex colour vs exact
+  hex colour, on a screen, scored to the decimal ΔE. That's not the
+  book's real use case. A reader will hold a physical pencil swatch up
+  against a PRINTED reference card and judge "is this roughly the right
+  spot" by eye -- a much looser standard ("right area," not exact row)
+  and a physically different comparison (ink-on-paper pencil mark vs
+  printed card, not two on-screen colour blocks). Two variables none of
+  rounds 1-8 have touched at all: screen-to-print colour reproduction
+  (CMYK can't reproduce the full sRGB gamut the ladders were built in),
+  and whether comparing a physical pencil mark to a printed swatch
+  behaves differently than comparing two screen colours. Ray is moving
+  the next phase of testing to an actual printout -- this reframes
+  every precision number gathered so far as an idealized upper bound,
+  not a direct prediction of how accurate the printed book will be.
 
 ## Current state — NEW TOOL: arc-length (ΔE-uniform) ladder, ready for its first blind test
 
