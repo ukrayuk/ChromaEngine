@@ -1,0 +1,802 @@
+[
+  {
+    "name": "Lemon Yellow",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ffe000",
+    "t": 1,
+    "dL": 2.2,
+    "dE": 14.77
+  },
+  {
+    "name": "Cadmium Yellow Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ffb900",
+    "t": 0.90625,
+    "dL": 2.5,
+    "dE": 13.74
+  },
+  {
+    "name": "Naples Yellow",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ffae35",
+    "t": 0.85546875,
+    "dL": 2.2,
+    "dE": 8.73
+  },
+  {
+    "name": "Brilliant Yellow",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ffa700",
+    "t": 0.84375,
+    "dL": 2.8,
+    "dE": 15.17
+  },
+  {
+    "name": "Cadmium Yellow",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#e6951d",
+    "t": 0.82421875,
+    "dL": -5.3,
+    "dE": 11.42
+  },
+  {
+    "name": "Marigold",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ff7b00",
+    "t": 0.65625,
+    "dL": 2.4,
+    "dE": 5.83
+  },
+  {
+    "name": "Cadmium Orange Deep",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ff6400",
+    "t": 0.515625,
+    "dL": 3.1,
+    "dE": 5.81
+  },
+  {
+    "name": "Red Ochre",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#ee3022",
+    "t": 0.171875,
+    "dL": 0.9,
+    "dE": 1.29
+  },
+  {
+    "name": "Scarlet Red",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#d80029",
+    "t": 0,
+    "dL": -3.8,
+    "dE": 4.23
+  },
+  {
+    "name": "Vermilion",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#e3212f",
+    "t": 0,
+    "dL": -0.1,
+    "dE": 0.09
+  },
+  {
+    "name": "Alizarin Crimson",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "hex": "#d30038",
+    "t": 0,
+    "dL": -4.6,
+    "dE": 12.28
+  },
+  {
+    "name": "Cadmium Yellow Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ffd02a",
+    "t": 0.96484375,
+    "dL": 2.4,
+    "dE": 4.62
+  },
+  {
+    "name": "Golden Yellow Deep",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ffda00",
+    "t": 1,
+    "dL": 0.7,
+    "dE": 10.28
+  },
+  {
+    "name": "Cadmium Yellow",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#f5b322",
+    "t": 0.90234375,
+    "dL": -1.3,
+    "dE": 6.79
+  },
+  {
+    "name": "Brilliant Yellow",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ffbc3d",
+    "t": 0.8984375,
+    "dL": 2.8,
+    "dE": 10.46
+  },
+  {
+    "name": "Cadmium Yellow Deep",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ffa939",
+    "t": 0.828125,
+    "dL": 2.9,
+    "dE": 9.83
+  },
+  {
+    "name": "Marigold",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ff8b2c",
+    "t": 0.70703125,
+    "dL": 2.8,
+    "dE": 6.79
+  },
+  {
+    "name": "Cadmium Orange",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ff7125",
+    "t": 0.57421875,
+    "dL": 3.1,
+    "dE": 6.22
+  },
+  {
+    "name": "Orange Lake",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#f85628",
+    "t": 0.33984375,
+    "dL": 3.6,
+    "dE": 7.5
+  },
+  {
+    "name": "Cadmium Orange Deep",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#fe5f11",
+    "t": 0.49609375,
+    "dL": 1.6,
+    "dE": 2.35
+  },
+  {
+    "name": "Burnt Ochre",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#f55232",
+    "t": 0.2265625,
+    "dL": 5.4,
+    "dE": 9.47
+  },
+  {
+    "name": "Red Ochre",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#ef463b",
+    "t": 0.0390625,
+    "dL": 5.6,
+    "dE": 8.38
+  },
+  {
+    "name": "Venetian Red",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#fa5852",
+    "t": 0,
+    "dL": 10.8,
+    "dE": 15.07
+  },
+  {
+    "name": "Scarlet Red",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#e62d36",
+    "t": 0,
+    "dL": 1.5,
+    "dE": 3.01
+  },
+  {
+    "name": "Vermilion",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#e02c3a",
+    "t": 0,
+    "dL": 0.4,
+    "dE": 6.82
+  },
+  {
+    "name": "Cadmium Red",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#df2940",
+    "t": 0,
+    "dL": 0,
+    "dE": 10.07
+  },
+  {
+    "name": "Sun Yellow",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#ffdb00",
+    "t": 1,
+    "dL": 0.7,
+    "dE": 10.43
+  },
+  {
+    "name": "Sunflower",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#ffca00",
+    "t": 0.96484375,
+    "dL": 1.3,
+    "dE": 6.99
+  },
+  {
+    "name": "Amber Gold",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#ffab2c",
+    "t": 0.84765625,
+    "dL": 1.9,
+    "dE": 5.92
+  },
+  {
+    "name": "Mango",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#ff9c17",
+    "t": 0.77734375,
+    "dL": 3.9,
+    "dE": 4.58
+  },
+  {
+    "name": "Clementine",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#fb7126",
+    "t": 0.609375,
+    "dL": 0.1,
+    "dE": 8.53
+  },
+  {
+    "name": "Red Orange",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#fa5931",
+    "t": 0.2890625,
+    "dL": 5.8,
+    "dE": 9.96
+  },
+  {
+    "name": "Scarlet",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#e03a3b",
+    "t": 0,
+    "dL": 1.9,
+    "dE": 8.6
+  },
+  {
+    "name": "Pure Red",
+    "range": "Derwent Chromaflow Pencils",
+    "hex": "#e32b30",
+    "t": 0,
+    "dL": 0.7,
+    "dE": 2.23
+  },
+  {
+    "name": "Sunflower",
+    "range": "Derwent Drawing Pencils",
+    "hex": "#ffc91d",
+    "t": 0.94921875,
+    "dL": 2.2,
+    "dE": 2.39
+  },
+  {
+    "name": "Mustard",
+    "range": "Derwent Drawing Pencils",
+    "hex": "#f2b527",
+    "t": 0.9140625,
+    "dL": -2.1,
+    "dE": 8.61
+  },
+  {
+    "name": "Carmine",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#d21a35",
+    "t": 0,
+    "dL": -3.9,
+    "dE": 10.07
+  },
+  {
+    "name": "Signal Red",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#df2436",
+    "t": 0,
+    "dL": -0.4,
+    "dE": 4.73
+  },
+  {
+    "name": "Scarlet",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#eb372b",
+    "t": 0.1171875,
+    "dL": 2.1,
+    "dE": 3.18
+  },
+  {
+    "name": "Vermilion",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#f94123",
+    "t": 0.265625,
+    "dL": 2.8,
+    "dE": 2.97
+  },
+  {
+    "name": "Tiger Lily",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#fe5b1f",
+    "t": 0.43359375,
+    "dL": 3.1,
+    "dE": 4.67
+  },
+  {
+    "name": "Orange",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#ff7116",
+    "t": 0.59375,
+    "dL": 2.1,
+    "dE": 2.66
+  },
+  {
+    "name": "Tangerine",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#ff9b00",
+    "t": 0.78515625,
+    "dL": 3.5,
+    "dE": 10.42
+  },
+  {
+    "name": "Sunflower",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#ffbf00",
+    "t": 0.9375,
+    "dL": 1,
+    "dE": 14.47
+  },
+  {
+    "name": "Dandelion",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#ffcd00",
+    "t": 0.984375,
+    "dL": -0.3,
+    "dE": 12.39
+  },
+  {
+    "name": "Canary Yellow",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#fedf00",
+    "t": 1,
+    "dL": 1.7,
+    "dE": 7.39
+  },
+  {
+    "name": "Banana",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#f2c91b",
+    "t": 0.97265625,
+    "dL": -2.1,
+    "dE": 6.51
+  },
+  {
+    "name": "Sun Yellow",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#ffd500",
+    "t": 1,
+    "dL": -0.7,
+    "dE": 5.6
+  },
+  {
+    "name": "Yellow",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#fab503",
+    "t": 0.9140625,
+    "dL": -1.2,
+    "dE": 1.48
+  },
+  {
+    "name": "Mustard",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#f3af26",
+    "t": 0.89453125,
+    "dL": -1.9,
+    "dE": 8.17
+  },
+  {
+    "name": "Amber Gold",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#ffa01c",
+    "t": 0.80078125,
+    "dL": 2.9,
+    "dE": 3.08
+  },
+  {
+    "name": "Flame",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#ff682a",
+    "t": 0.48046875,
+    "dL": 4.3,
+    "dE": 8.7
+  },
+  {
+    "name": "Derwent Red",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#c82934",
+    "t": 0,
+    "dL": -4.8,
+    "dE": 13.98
+  },
+  {
+    "name": "Scarlet",
+    "range": "Derwent Lightfast Pencils",
+    "hex": "#d13039",
+    "t": 0,
+    "dL": -2,
+    "dE": 12.2
+  },
+  {
+    "name": "Orange",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#ff8f00",
+    "t": 0.75,
+    "dL": 1.9,
+    "dE": 8.19
+  },
+  {
+    "name": "Yellow Ochre",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#e7a621",
+    "t": 0.8828125,
+    "dL": -4.8,
+    "dE": 11.44
+  },
+  {
+    "name": "Permanent Red",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#e2271b",
+    "t": 0.16015625,
+    "dL": -2,
+    "dE": 2.05
+  },
+  {
+    "name": "Scarlet",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#d72230",
+    "t": 0,
+    "dL": -2.3,
+    "dE": 5.36
+  },
+  {
+    "name": "Bismuth Yellow",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#fcd738",
+    "t": 0.98828125,
+    "dL": 1,
+    "dE": 9.48
+  },
+  {
+    "name": "Golden Bismuth Yellow",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#ffc630",
+    "t": 0.93359375,
+    "dL": 2.2,
+    "dE": 6.68
+  },
+  {
+    "name": "Cornelian",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#f05612",
+    "t": 0.44921875,
+    "dL": -0.6,
+    "dE": 4.93
+  },
+  {
+    "name": "Medium Cadmium Yellow (Imit.)",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#ffd800",
+    "t": 1,
+    "dL": 0.1,
+    "dE": 7.26
+  },
+  {
+    "name": "Indian Yellow",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#f0c200",
+    "t": 0.96484375,
+    "dL": -3.2,
+    "dE": 4.8
+  },
+  {
+    "name": "Dark Cadmium Orange (Imit.)",
+    "range": "Caran d'Ache Luminance 6901",
+    "hex": "#ff661c",
+    "t": 0.515625,
+    "dL": 3.7,
+    "dE": 4.75
+  },
+  {
+    "name": "Yellow",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#ffd300",
+    "t": 1,
+    "dL": -1.3,
+    "dE": 8.15
+  },
+  {
+    "name": "Golden Yellow",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#ffc100",
+    "t": 0.9453125,
+    "dL": 0.3,
+    "dE": 9.26
+  },
+  {
+    "name": "Orange",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#ff8e08",
+    "t": 0.7421875,
+    "dL": 1.5,
+    "dE": 2.34
+  },
+  {
+    "name": "Orangish Yellow",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#ffba47",
+    "t": 0.8828125,
+    "dL": 3.2,
+    "dE": 14.21
+  },
+  {
+    "name": "Reddish Orange",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#fe7433",
+    "t": 0.609375,
+    "dL": 1.1,
+    "dE": 12.75
+  },
+  {
+    "name": "Flame Red",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#ff7335",
+    "t": 0.57421875,
+    "dL": 2.7,
+    "dE": 12.88
+  },
+  {
+    "name": "Vermilion",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#f75333",
+    "t": 0.2265625,
+    "dL": 5.8,
+    "dE": 9.61
+  },
+  {
+    "name": "Scarlet",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#d93034",
+    "t": 0,
+    "dL": -0.7,
+    "dE": 7.49
+  },
+  {
+    "name": "Canary Yellow",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#f8e538",
+    "t": 1,
+    "dL": 2.8,
+    "dE": 11.58
+  },
+  {
+    "name": "Fast Orange",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#ffa102",
+    "t": 0.81640625,
+    "dL": 1.9,
+    "dE": 3.58
+  },
+  {
+    "name": "Light Cadmium Yellow",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#fee700",
+    "t": 1,
+    "dL": 3.7,
+    "dE": 9.8
+  },
+  {
+    "name": "Light Chrome Yellow",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#fedd29",
+    "t": 1,
+    "dL": 1.4,
+    "dE": 5.53
+  },
+  {
+    "name": "Cadmium Yellow",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#ffdb00",
+    "t": 1,
+    "dL": 1.4,
+    "dE": 8.9
+  },
+  {
+    "name": "Dark Cadmium Yellow",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#ffc000",
+    "t": 0.92578125,
+    "dL": 2.8,
+    "dE": 12.99
+  },
+  {
+    "name": "Dark Chrome Yellow",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#ffa42d",
+    "t": 0.796875,
+    "dL": 4.8,
+    "dE": 5.99
+  },
+  {
+    "name": "Cadmium Orange",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#ff951e",
+    "t": 0.73828125,
+    "dL": 4.6,
+    "dE": 5.05
+  },
+  {
+    "name": "Orange Glaze",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#ff7b1e",
+    "t": 0.62109375,
+    "dL": 4.5,
+    "dE": 4.9
+  },
+  {
+    "name": "Dark Cadmium Orange",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#ff5f30",
+    "t": 0.38671875,
+    "dL": 5.1,
+    "dE": 9.9
+  },
+  {
+    "name": "Light Cadmium Red",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#f94f32",
+    "t": 0.2265625,
+    "dL": 5.6,
+    "dE": 7.79
+  },
+  {
+    "name": "Scarlet Red",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#e84e41",
+    "t": 0,
+    "dL": 6,
+    "dE": 13.1
+  },
+  {
+    "name": "Pale Geranium Lake",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#e9373d",
+    "t": 0,
+    "dL": 3.2,
+    "dE": 6.03
+  },
+  {
+    "name": "Deep Scarlet Red",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#d02b3c",
+    "t": 0,
+    "dL": -2.7,
+    "dE": 13.82
+  },
+  {
+    "name": "Deep Red",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#ce2a3b",
+    "t": 0,
+    "dL": -3.3,
+    "dE": 14.32
+  },
+  {
+    "name": "Naples Yellow",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#fac23d",
+    "t": 0.9296875,
+    "dL": 0.8,
+    "dE": 12.18
+  },
+  {
+    "name": "Canary Yellow",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#fcdb00",
+    "t": 1,
+    "dL": 0.6,
+    "dE": 4.83
+  },
+  {
+    "name": "Yellowed Orange",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#ff9f2c",
+    "t": 0.7890625,
+    "dL": 3.5,
+    "dE": 5.65
+  },
+  {
+    "name": "Spanish Orange",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#ffba00",
+    "t": 0.90625,
+    "dL": 2.3,
+    "dE": 7.54
+  },
+  {
+    "name": "Sunburst Yellow",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#ffb80a",
+    "t": 0.8984375,
+    "dL": 2.3,
+    "dE": 3.53
+  },
+  {
+    "name": "Orange",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#ff7e3c",
+    "t": 0.609375,
+    "dL": 5.5,
+    "dE": 12.73
+  },
+  {
+    "name": "Poppy Red",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#ed3b2e",
+    "t": 0.09375,
+    "dL": 3.2,
+    "dE": 4.32
+  },
+  {
+    "name": "Permanent Red",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#e54146",
+    "t": 0,
+    "dL": 3.8,
+    "dE": 12.04
+  },
+  {
+    "name": "Scarlet Lake",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#d42333",
+    "t": 0,
+    "dL": -2.9,
+    "dE": 8.22
+  },
+  {
+    "name": "Crimson Red",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#c82736",
+    "t": 0,
+    "dL": -4.7,
+    "dE": 14.54
+  },
+  {
+    "name": "Perinone Orange",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#ff6827",
+    "t": 0.48046875,
+    "dL": 5.3,
+    "dE": 7.22
+  },
+  {
+    "name": "Pyrrole Red",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#eb3445",
+    "t": 0,
+    "dL": 3.5,
+    "dE": 9.21
+  },
+  {
+    "name": "Golden Ochre",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#efa034",
+    "t": 0.8359375,
+    "dL": -2.2,
+    "dE": 14
+  }
+]

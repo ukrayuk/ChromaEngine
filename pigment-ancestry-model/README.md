@@ -1207,6 +1207,37 @@ best-case upper bound on accuracy — a useful baseline for how the
 placement will be in the finished, printed book. The next real
 validation step is print-based, not further screen-based tuning.
 
+## Red-Yellow (Orange): both ladder versions built, ready to test (2026-10-30)
+
+With Yellow-Blue's near-anchor issue fixed and Blue-Red confirmed to
+not need the fix, checked the third primary arc. RoY's Warm Yellow
+anchor is gamut-clipped too (per `gen_level1_pure_rows.cjs`'s
+`trueLab`), the same situation Yellow-Blue's Cool Blue was in — worth
+checking for the same problem.
+
+**Found a real but much gentler version.** Local rate climbs gradually
+from 6.5 to 22.4 ΔE per 0.1 of t across the arc — elevated toward Warm
+Yellow, but nothing like Yellow-Blue's extreme 6.6-to-~82 range. More
+tellingly, the fine 0.01-step breakdown right at the tip shows no sharp
+last-moment cliff (values bounce between 1.2 and 3.7, no single
+dominant jump) — unlike Yellow-Blue, where ~16.5 ΔE was concentrated
+into the final 2% alone. So whatever's happening here is a broader,
+gentler slope, not the same sharp compression.
+
+Built both versions anyway, since the question is worth answering with
+data rather than assumption: `scripts/build_de_ladder.cjs` and
+`scripts/build_de_ladder_arclength.cjs` "Red-Yellow (Orange)" roy — a
+100-pencil fit pool (the largest of the three arcs). Both clean
+diagrams sent to Ray to judge the visual difference directly and decide
+on a test size.
+
+**Bug fixed in passing**: the arc-length viz's caption text had Yellow-
+Blue's specific measured numbers (6.6 to ~82) hardcoded, which would
+have displayed wrong and misleading against RoY's own (quite different)
+numbers. Made the caption generic
+(`scripts/diagrams/build_de_ladder_arclength_viz.cjs`) rather than
+re-hardcoding per arc.
+
 ## Open items (read this part)
 
 ### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing

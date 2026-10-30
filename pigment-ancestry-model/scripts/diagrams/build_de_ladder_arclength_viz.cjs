@@ -66,7 +66,7 @@ parts.push('</style></head>');
 parts.push('<body>');
 parts.push('<h1>' + ARC_LABEL + ' — ' + (CLEAN ? 'blank' : 'full') + ' ΔE ladder, arc-length (ΔE-uniform) axis</h1>');
 if (CLEAN) {
-  parts.push('<p class="sub">Same real arc and anchors as the standard ladder -- only the horizontal axis changed. Equal steps across the page now mean roughly equal real colour distance everywhere (the standard ladder\'s t axis moved 6.6 to ~82 deltaE per 0.1 step depending on location; this one holds to roughly 15-19 throughout). Place a real pencil by eye: which row (deltaE/direction) and which u (position left-right) does it look closest to? Report as e.g. "deltaE 11 tint, u=0.7".</p>');
+  parts.push('<p class="sub">Same real arc and anchors as the standard ladder -- only the horizontal axis changed. Equal steps across the page now mean roughly equal real colour distance everywhere, unlike the standard ladder\'s t axis (which moves unevenly depending on location). Place a real pencil by eye: which row (deltaE/direction) and which u (position left-right) does it look closest to? Report as e.g. "deltaE 11 tint, u=0.7".</p>');
 } else {
   parts.push('<p class="sub">Arc-length (ΔE-uniform) axis: u is the pencil\'s cumulative-colour-distance position along the arc, not its raw mixing ratio t. Each fitting pencil sits on the row matching its own real ΔL, at its true u-position.</p>');
 }

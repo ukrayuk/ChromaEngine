@@ -4,7 +4,7 @@ stage: ran round 8, the first blind test of the arc-length ("u-axis") ladder (18
 
 MAJOR METHODOLOGY REFRAME (2026-10-30, Ray): all 8 rounds so far have been an idealized digital test -- exact hex vs exact hex, on screen, scored to the decimal. The book's real use case is looser and physically different: a reader holds up their own physical pencil swatch against a PRINTED card and judges "is this in the right area" by eye, not to decimal ΔE precision. Two things the digital test hasn't touched at all: (1) screen-to-print colour reproduction is untested and could shift things meaningfully (CMYK can't reproduce full sRGB gamut), (2) comparing a physical pencil mark to a printed swatch is a different perceptual task than comparing two on-screen colour blocks. Ray is moving the next round of testing to an actual printout. This reframes every prior round's precision findings as an upper-bound/idealized baseline, not a direct prediction of real-book accuracy.
 last_touched: 30 October 2026
-next_action: support Ray's printout-based test (print the arc-length ladder, compare screen vs print reproduction, then test placing real physical pencils against the printed card) once he's ready -- this is now the priority, more important than further screen-based precision tuning; investigate the Cool-Yellow pale-yellow/light-green discrimination difficulty found in round 8 (separate from the gamut-clipping mechanism, not yet understood); decide whether to build the arc-length ladder for BvR/RoY; decide whether to standardise round 7's "zoom in to pick, zoom out to place" instruction for all future rounds; decide whether the near-anchor "doesn't read as belonging to this arc" effect (seen on both Cool Blue and Warm Blue) warrants a standing book caveat; decide on the ΔE threshold question (11 vs 16 vs 20, from 2026-10-25/26); decide whether a dual-threshold policy is worth building; decide whether to redesign how tints are taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count; continue with Level 3
+next_action: decide the sample size/protocol for RoY's first blind round (both t-axis and arc-length ladders built and sent to Ray, 100-pencil fit pool -- waiting on his call); support Ray's printout-based test (print the arc-length ladder, compare screen vs print reproduction, then test placing real physical pencils against the printed card) once he's ready -- this is now the priority, more important than further screen-based precision tuning; investigate the Cool-Yellow pale-yellow/light-green discrimination difficulty found in round 8 (separate from the gamut-clipping mechanism, not yet understood); decide whether to standardise round 7's "zoom in to pick, zoom out to place" instruction for all future rounds; decide whether the near-anchor "doesn't read as belonging to this arc" effect (seen on both Cool Blue and Warm Blue) warrants a standing book caveat; decide on the ΔE threshold question (11 vs 16 vs 20, from 2026-10-25/26); decide whether a dual-threshold policy is worth building; decide whether to redesign how tints are taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count; continue with Level 3
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -21,11 +21,27 @@ need to ask permission first.
 
 **Last updated:** 2026-10-30 (this session, after scoring round 8 --
 the arc-length ladder fix confirmed working at Cool Blue, a new
-unrelated pale-yellow-green difficulty found at Cool Yellow -- and a
-major methodology reframe from Ray: every round so far has been an
-idealized screen/exact-hex test, but the book's real use case is a
-printed card judged "right area" by eye, not decimal ΔE precision.
-Next testing moves to an actual printout.)
+unrelated pale-yellow-green difficulty found at Cool Yellow -- a major
+methodology reframe from Ray toward print-based testing -- and setting
+up both ladder versions for Red-Yellow (Orange), the third primary arc)
+
+- **Red-Yellow (Orange) ladder set up (2026-10-30)**: checked Ray's
+  question directly -- RoY's Warm Yellow anchor IS gamut-clipped (per
+  `gen_level1_pure_rows.cjs`'s `trueLab`), same situation as Yellow-
+  Blue's Cool Blue, so it was worth checking for the same steepness
+  problem. Found a real but much gentler version: gradual steepening
+  from 6.5 to 22.4 ΔE per 0.1 of t across the arc (not YgB's extreme
+  6.6-to-~82 range), and no sharp last-moment cliff in the fine 0.01
+  breakdown near the tip (unlike YgB's ~16.5 ΔE packed into the final
+  2%). Built both the standard t-axis ladder and the arc-length (u-axis)
+  one (`scripts/build_de_ladder.cjs` / `build_de_ladder_arclength.cjs`
+  "Red-Yellow (Orange)" roy -- 100-pencil fit pool) and sent both clean
+  diagrams to Ray so he can judge the visual difference and decide on a
+  test size/protocol. Also fixed a real bug while doing this: the
+  arc-length viz's caption text had YgB's specific measured numbers
+  (6.6 to ~82) hardcoded, which would have been wrong and misleading
+  shown against RoY's own data -- made generic
+  (`scripts/diagrams/build_de_ladder_arclength_viz.cjs`).
 
 ## Current state — ROUND 8 RESULT + METHODOLOGY REFRAME: screen precision confirmed, but the real test is print
 
