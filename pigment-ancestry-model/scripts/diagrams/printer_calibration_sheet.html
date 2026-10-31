@@ -1,0 +1,103 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  @page { size: A4 portrait; margin: 12mm; }
+  body { font-family: Arial, sans-serif; margin: 0; color: #111; }
+  h1 { font-size: 20px; margin: 0 0 4px 0; }
+  h2 { font-size: 15px; margin: 18px 0 6px 0; border-bottom: 2px solid #333; padding-bottom: 2px; }
+  .note { font-size: 11.5px; color: #333; line-height: 1.5; background: #f3f3f3; border: 1px solid #ccc; border-radius: 4px; padding: 10px 12px; margin: 8px 0 16px 0; }
+  .note b { color: #000; }
+  .anchors { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .anchor { border: 1px solid #999; border-radius: 4px; overflow: hidden; }
+  .swatch { height: 70px; border-bottom: 1px solid #999; }
+  .label { padding: 6px 8px; font-size: 10.5px; line-height: 1.4; }
+  .label .role { font-weight: bold; font-size: 12px; }
+  .ramp { display: flex; border: 1px solid #999; border-radius: 4px; overflow: hidden; }
+  .ramp div { flex: 1; height: 50px; display: flex; align-items: flex-end; justify-content: center; font-size: 10px; padding-bottom: 3px; font-family: monospace; }
+  .prims { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .prim { border: 1px solid #999; border-radius: 4px; overflow: hidden; }
+  .prim .sw { height: 45px; } .prim .lb { font-size: 10px; font-family: monospace; padding: 3px 6px; }
+  ol { font-size: 11.5px; line-height: 1.6; padding-left: 20px; margin: 4px 0; }
+</style></head>
+<body>
+<h1>Printer calibration check sheet — Pigment Ancestry Model</h1>
+<p class="note"><b>No colorimeter in use — this is an eye-based check, not a numeric profile.</b> Print this page at <b>100% / actual size</b> (not "fit to page" or "shrink to fit"). Turn off any automatic photo enhancement / vivid colour / colour boost setting in the print driver — you want the most literal, unmodified reproduction of the file, not the printer’s idea of a nicer photo. If your print software offers a colour management choice, try <b>"No colour management" / "Let printer manage colours"</b> first — the model’s hex values are plain sRGB, nothing in them expects an aggressive print-side transform. Compare under consistent, neutral light — daylight from a window or a daylight-balanced lamp (~5000-6500K), not warm incandescent bulbs, which will push everything yellow/orange regardless of the printer.</p>
+<h2>1. The six anchor pencils — the real ground truth</h2>
+<p class="note">Hold each real pencil directly against its printed swatch below, in the same light, touching if possible. This is the single most reliable check available without an instrument: these hex values were measured FROM these exact physical pencils, so if a printed swatch looks off from its own real pencil, that tells you the direction and rough size of your printer’s shift at that part of the colour wheel. Note what you see (e.g. "Cool Blue prints a bit more purple / less saturated than the real pencil") — even a rough by-eye note is useful, and the same bias likely applies to the printed arc ladders too.</p>
+<div class="anchors">
+<div class="anchor">
+  <div class="swatch" style="background:#e3212f;"></div>
+  <div class="label"><span class="role">Warm Red</span><br>Vermilion<br>Castle Arts Gold Coloured Pencils<br>#e3212f — 6.51R 4.82/16.65</div>
+</div>
+<div class="anchor">
+  <div class="swatch" style="background:#ffd800;"></div>
+  <div class="label"><span class="role">Warm Yellow</span><br>Medium Cadmium Yellow (Imit.)<br>Caran d'Ache Luminance 6901<br>#ffd800 — 4.68Y 8.69/13.41</div>
+</div>
+<div class="anchor">
+  <div class="swatch" style="background:#e7ed46;"></div>
+  <div class="label"><span class="role">Cool Yellow</span><br>Cadmium Yellow Lemon<br>Faber-Castell Polychromos 9201<br>#e7ed46 — 1.54GY 9.04/10.85</div>
+</div>
+<div class="anchor">
+  <div class="swatch" style="background:#0088d6;"></div>
+  <div class="label"><span class="role">Cool Blue</span><br>Cerulean Blue<br>Castle Arts Premium Soft Touch<br>#0088d6 — 1.33PB 5.17/13.15</div>
+</div>
+<div class="anchor">
+  <div class="swatch" style="background:#5a42ab;"></div>
+  <div class="label"><span class="role">Warm Blue</span><br>Mauve Deep<br>Castle Arts Premium Soft Touch<br>#5a42ab — 9.59PB 3.57/13.86</div>
+</div>
+<div class="anchor">
+  <div class="swatch" style="background:#c13074;"></div>
+  <div class="label"><span class="role">Cool Red</span><br>Middle Purple Pink<br>Faber-Castell Polychromos 9201<br>#c13074 — 6.39RP 4.46/13.88</div>
+</div>
+</div>
+<h2>2. Neutral grey ramp — colour-cast check</h2>
+<p class="note">These are pure greys (equal R=G=B) at 0/25/50/75/100%. If any step looks tinted — pink, green, yellow, blue — rather than a clean grey, that tint is your printer/paper’s own colour cast, and it will be pushing every other swatch on the page the same way.</p>
+<div class="ramp">
+<div style="background:#000000; color:#fff;">0%</div>
+<div style="background:#404040; color:#fff;">25%</div>
+<div style="background:#808080; color:#fff;">50%</div>
+<div style="background:#bfbfbf; color:#000;">75%</div>
+<div style="background:#ffffff; color:#000;">100%</div>
+</div>
+<h2>3. Pure RGB/CMY primaries — hue sanity check</h2>
+<p class="note">Rough sanity check only (these printers cannot reproduce fully saturated red/green/blue, so some flattening is expected and not a problem) — mainly useful for spotting a gross hue shift, e.g. "red" printing visibly orange or magenta-leaning.</p>
+<div class="prims">
+<div class="prim">
+  <div class="sw" style="background:#ff0000;"></div>
+  <div class="lb">Red #ff0000</div>
+</div>
+<div class="prim">
+  <div class="sw" style="background:#00ff00;"></div>
+  <div class="lb">Green #00ff00</div>
+</div>
+<div class="prim">
+  <div class="sw" style="background:#0000ff;"></div>
+  <div class="lb">Blue #0000ff</div>
+</div>
+<div class="prim">
+  <div class="sw" style="background:#00ffff;"></div>
+  <div class="lb">Cyan #00ffff</div>
+</div>
+<div class="prim">
+  <div class="sw" style="background:#ff00ff;"></div>
+  <div class="lb">Magenta #ff00ff</div>
+</div>
+<div class="prim">
+  <div class="sw" style="background:#ffff00;"></div>
+  <div class="lb">Yellow #ffff00</div>
+</div>
+<div class="prim">
+  <div class="sw" style="background:#000000;"></div>
+  <div class="lb">Black #000000</div>
+</div>
+<div class="prim">
+  <div class="sw" style="background:#ffffff;"></div>
+  <div class="lb">White #ffffff</div>
+</div>
+</div>
+<h2>4. Using this going forward</h2>
+<ol>
+<li>Print this sheet and the arc-length ladder on the <b>same printer, paper, and print settings</b> — any bias found here should carry over consistently.</li>
+<li>Keep this sheet next to the ladder while testing. If you notice a pencil placement looks "wrong" in a way that keeps happening in the same direction (e.g. always reads a bit too dark, or too blue), check whether that matches the bias you noted on the anchor swatches above — a systematic printer shift would explain it, not a placement error.</li>
+<li>This is a one-time-ish check, not something to repeat every round — redo it only if you change printer, paper, or print settings.</li>
+</ol>
+</body></html>
