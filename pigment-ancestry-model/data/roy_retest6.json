@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Scarlet Red",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "hex": "#e62d36",
+    "t": 0,
+    "u": 0,
+    "dL": 1.5,
+    "dE": 3.01
+  },
+  {
+    "id": 2,
+    "name": "Golden Ochre",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#efa034",
+    "t": 0.8359375,
+    "u": 0.7025,
+    "dL": -2.2,
+    "dE": 14
+  },
+  {
+    "id": 3,
+    "name": "Tiger Lily",
+    "range": "Holbein Artists' Colored Pencil",
+    "hex": "#fe5b1f",
+    "t": 0.43359375,
+    "u": 0.2951,
+    "dL": 3.1,
+    "dE": 4.67
+  },
+  {
+    "id": 4,
+    "name": "Yellow",
+    "range": "Caran d'Ache Pablo 666",
+    "hex": "#ffd300",
+    "t": 1,
+    "u": 1,
+    "dL": -1.3,
+    "dE": 8.15
+  },
+  {
+    "id": 5,
+    "name": "Orange",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "hex": "#ff7e3c",
+    "t": 0.609375,
+    "u": 0.4451,
+    "dL": 5.5,
+    "dE": 12.73
+  },
+  {
+    "id": 6,
+    "name": "Dark Cadmium Orange",
+    "range": "Faber-Castell Polychromos 9201",
+    "hex": "#ff5f30",
+    "t": 0.38671875,
+    "u": 0.2583,
+    "dL": 5.1,
+    "dE": 9.9
+  }
+]

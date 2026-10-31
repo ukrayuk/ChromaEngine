@@ -1,10 +1,8 @@
 ---
 status: Active
-stage: ran round 8, the first blind test of the arc-length ("u-axis") ladder (18 pencils: 10 at the arc edges, 8 scattered). Confirmed the fix worked for its intended target -- all 5 Cool-Blue-edge pencils scored ΔE 1.6-5.9, none of the ~16.5 steep-anchor spikes seen on the old t-axis ladder in rounds 6/7. But found a separate, unrelated miss cluster at the OTHER edge: two pale-yellow/light-green pencils near Cool Yellow (which was never gamut-clipped, so this isn't the same mechanism) scored badly (dE 21.8, 26.6) despite the extra room the new axis gives that zone -- looks like a genuine hue-discrimination difficulty in that pale region, not a geometry problem. Excluding those two, edge accuracy averaged dE 2.65, as good as round 7's best result.
-
-MAJOR METHODOLOGY REFRAME (2026-10-30, Ray): all 8 rounds so far have been an idealized digital test -- exact hex vs exact hex, on screen, scored to the decimal. The book's real use case is looser and physically different: a reader holds up their own physical pencil swatch against a PRINTED card and judges "is this in the right area" by eye, not to decimal ΔE precision. Two things the digital test hasn't touched at all: (1) screen-to-print colour reproduction is untested and could shift things meaningfully (CMYK can't reproduce full sRGB gamut), (2) comparing a physical pencil mark to a printed swatch is a different perceptual task than comparing two on-screen colour blocks. Ray is moving the next round of testing to an actual printout. This reframes every prior round's precision findings as an upper-bound/idealized baseline, not a direct prediction of real-book accuracy.
-last_touched: 30 October 2026
-next_action: decide the sample size/protocol for RoY's first blind round (both t-axis and arc-length ladders built and sent to Ray, 100-pencil fit pool -- waiting on his call); support Ray's printout-based test (print the arc-length ladder, compare screen vs print reproduction, then test placing real physical pencils against the printed card) once he's ready -- this is now the priority, more important than further screen-based precision tuning; investigate the Cool-Yellow pale-yellow/light-green discrimination difficulty found in round 8 (separate from the gamut-clipping mechanism, not yet understood); decide whether to standardise round 7's "zoom in to pick, zoom out to place" instruction for all future rounds; decide whether the near-anchor "doesn't read as belonging to this arc" effect (seen on both Cool Blue and Warm Blue) warrants a standing book caveat; decide on the ΔE threshold question (11 vs 16 vs 20, from 2026-10-25/26); decide whether a dual-threshold policy is worth building; decide whether to redesign how tints are taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count; continue with Level 3
+stage: RoY's first blind round (25 pencils, whole-arc spread) came in far worse than any prior round -- mean dE 8.54, only 10/25 within +/-2 rows, 6 direction flips (shade called tint or vice versa). Diagnosed and partly fixed it: confirmed the ladder itself has zero colorimetric duplicate/lookalike cells anywhere (checked directly -- "blends into the background" is a loose signal on a smooth gradient, not proof of exact position, but not a ladder bug either); re-ran just the 6 flipped pencils in isolation with fresh IDs and the round-7 zoom-out step, and 4 of 6 resolved immediately (mean dE dropped to 3.41). Two pencils (Golden Ochre, Tiger Lily) flipped again on the clean retest -- genuinely repeatable, not fatigue, but the obvious explanation (lower chroma than their matched arc point) doesn't fit both cases consistently, so still unexplained.
+last_touched: 31 October 2026
+next_action: decide whether to re-run RoY's full 25 incrementally (one at a time, zoom-out step, per round-1's now-confirmed lesson) now that the retest shows the method, not the arc, was the main problem; dig further into the Golden Ochre/Tiger Lily repeat-flip case -- 2 data points isn't enough to find the real pattern; support Ray's printout-based test (print the arc-length ladder, compare screen vs print reproduction, then test placing real physical pencils against a printed card) -- still the top priority over further screen-based tuning; investigate the Cool-Yellow pale-yellow/light-green discrimination difficulty found in round 8 (separate, unrelated to gamut-clipping, not yet understood); decide whether to standardise round 7's zoom-out instruction for all future rounds; decide whether the near-anchor "doesn't read as belonging to this arc" effect (seen on Cool Blue and Warm Blue) warrants a standing book caveat; decide on the ΔE threshold question (11 vs 16 vs 20); decide whether a dual-threshold policy is worth building; decide whether to redesign how tints are taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count; continue with Level 3
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -19,11 +17,65 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-30 (this session, after scoring round 8 --
-the arc-length ladder fix confirmed working at Cool Blue, a new
-unrelated pale-yellow-green difficulty found at Cool Yellow -- a major
-methodology reframe from Ray toward print-based testing -- and setting
-up both ladder versions for Red-Yellow (Orange), the third primary arc)
+**Last updated:** 2026-10-31 (this session, after RoY's rough first
+round and a focused retest that resolved most of it -- the ladder data
+itself checked out clean; the failure was mostly methodology, isolating
+and re-running the worst misses recovered most of the accuracy)
+
+## Current state — RoY ROUND 1 + RETEST: a rough first round, mostly explained and fixed
+
+- **RoY round 1, scored (2026-10-30/31)**: 25 pencils stratified across
+  the whole arc, against the arc-length ladder -- the first use of that
+  axis on a brand-new arc, done as one full batch with no edge/scatter
+  split. Mean ΔE 8.54 (worse than every prior round, including round
+  3's 5.14), only 10/25 within ±2 rows, and 6 outright direction flips
+  (a shade called tint or vice versa -- a different, more basic kind of
+  error than anything in rounds 1-8). Selection/scoring:
+  `scripts/score_de_ladder_roy_round1.cjs` (reads
+  `data/roy_blind25_round1.json`, writes `_scored.json`). Sheet:
+  `scripts/diagrams/build_roy_blind25_sheet.cjs`. Ray's annotated
+  placements: `scripts/diagrams/roy_ladder_round1_ray_placements.png`.
+
+- **Lookalike check (2026-10-31)**: Ray asked directly whether the
+  ladder might contain duplicate-looking colours at different
+  positions -- a real, testable question, since his placements visually
+  "disappeared into the background" at spots that turned out to be far
+  from correct. Built `scripts/check_ladder_lookalikes.cjs`: scanned a
+  dense grid (every row × every 0.02 of u) for any cell that closely
+  resembles another cell at least 2 rows and 0.15 of u away. Result:
+  **zero matches under ΔE 4 anywhere** -- every position on the ladder
+  is colorimetrically unique. So the "it disappeared into the
+  background at the wrong spot" effect isn't a data/duplicate-colour
+  bug. Conclusion: on a smooth gradient, "blends in" confirms the right
+  *neighbourhood*, not the exact row/u -- several nearby cells can all
+  look like an acceptable blend even though only one is the true match.
+  A real, generally-applicable caveat about gradient ladders, separate
+  from the screen/print question, and one that will apply on a printed
+  card too.
+
+- **Retest of the 6 flipped pencils (2026-10-31)**: re-ran just the 6
+  direction-flip pencils from round 1, with fresh shuffled IDs (so Ray
+  couldn't recognise them by position) and the round-7 "zoom in to
+  pick, zoom out to place" instruction, isolated as their own small
+  round rather than buried in a 25-item batch. Selection/scoring:
+  `scripts/score_de_ladder_roy_retest6.cjs` (reads
+  `data/roy_retest6.json`, writes `_scored.json`).
+
+  **Result: mean ΔE dropped to 3.41 (from 8.54), and 4 of the 6 flips
+  resolved immediately.** Strong evidence that round 1's batch size and
+  lack of a zoom-out checkpoint were doing real, measurable damage --
+  not the arc, not the u-axis, not the ladder's data.
+
+  **But 2 pencils flipped again, identically, on the clean retest**:
+  Golden Ochre and Tiger Lily. Not fatigue -- a real, repeatable
+  per-pencil confusion. Checked the obvious hypothesis (lower chroma
+  than their matched arc point causing a lightness misjudgment): both
+  are indeed less saturated than their arc point (Golden Ochre
+  notably, −13.8 chroma; Tiger Lily only slightly, −3.3), but the two
+  flips go in *opposite* directions (one called lighter, one called
+  darker), so low-chroma-alone doesn't explain both. Genuinely
+  unexplained with 2 data points; needs more examples before a real
+  pattern can be claimed.
 
 - **Red-Yellow (Orange) ladder set up (2026-10-30)**: checked Ray's
   question directly -- RoY's Warm Yellow anchor IS gamut-clipped (per

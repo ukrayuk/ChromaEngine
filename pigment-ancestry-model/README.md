@@ -1238,6 +1238,66 @@ numbers. Made the caption generic
 (`scripts/diagrams/build_de_ladder_arclength_viz.cjs`) rather than
 re-hardcoding per arc.
 
+## RoY round 1: a rough first round on a new arc, mostly diagnosed and fixed (2026-10-30/31)
+
+Ray's call for RoY's first round: 25 pencils stratified across the
+whole arc, no edge focus this time, against the arc-length ladder. This
+was also the first time the u-axis had been used on a brand-new arc,
+done as one full 25-item batch.
+
+**It went much worse than any prior round.** Mean ΔE 8.54 (round 3,
+Yellow-Blue's own first-ever round, was 5.14 — the previous worst), only
+10/25 within ±2 rows, and 6 outright direction flips — a shade pencil
+called a tint or vice versa, a more basic kind of error than any seen
+in rounds 1–8. Selection/scoring: `scripts/score_de_ladder_roy_round1.cjs`
+(reads `data/roy_blind25_round1.json`, writes `_scored.json`). Sheet:
+`scripts/diagrams/build_roy_blind25_sheet.cjs`. Ray's annotated
+placements: `scripts/diagrams/roy_ladder_round1_ray_placements.png`.
+
+**Ray's own observation pointed at something real**: his placed swatches
+visually "disappeared into the background" at spots that turned out to
+be far from correct — which raised a direct, testable question: does
+the ladder contain duplicate-looking colours at different positions?
+Built `scripts/check_ladder_lookalikes.cjs` to check properly: scanned
+a dense grid (every row × every 0.02 of u) for any cell resembling
+another cell at least 2 rows and 0.15 of u away. **Zero matches under
+ΔE 4 anywhere** — every position on the ladder is colorimetrically
+unique. So this isn't a duplicate-colour bug in the data. The real
+explanation: on a smooth gradient, "blends in" only confirms the right
+*neighbourhood* — several nearby cells can all look like an acceptable
+blend even though only one is the exact match. That's a genuine,
+general property of gradient ladders (not specific to RoY, not
+specific to screen vs print), worth keeping in mind for every future
+round and for the printed card too.
+
+**Retest of the 6 flipped pencils, isolated**: re-ran just the 6
+direction-flip pencils with fresh shuffled IDs and round 7's "zoom in
+to pick, zoom out to place" instruction, as their own small round
+rather than buried in a 25-item batch. Selection/scoring:
+`scripts/score_de_ladder_roy_retest6.cjs` (reads
+`data/roy_retest6.json`, writes `_scored.json`).
+
+**Result: mean ΔE dropped to 3.41, and 4 of the 6 flips resolved
+immediately.** Strong, direct evidence that round 1's batch size and
+lack of a zoom-out checkpoint — not the arc itself, not the u-axis, not
+the ladder's data — were doing real, measurable damage.
+
+**But 2 pencils flipped again, identically, on the clean retest**:
+Golden Ochre and Tiger Lily. Not fatigue — genuinely repeatable.
+Checked the obvious hypothesis (lower saturation than their matched arc
+point causing a lightness misjudgment): both pencils are indeed less
+saturated than their arc point (Golden Ochre notably, chroma −13.8;
+Tiger Lily only slightly, −3.3) — but the two flips go in *opposite*
+directions (one called lighter than it is, one called darker), so
+"lower chroma" alone doesn't explain both cases. Genuinely unexplained
+with only 2 data points; needs more examples before claiming a real
+pattern.
+
+**Next**: decide whether to re-run RoY's full 25 incrementally (one at
+a time, zoom-out step) now that the retest shows the method mattered
+more than the arc — and keep an eye out for more Golden-Ochre/Tiger-Lily-style
+repeat flips to build up enough examples to actually explain them.
+
 ## Open items (read this part)
 
 ### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing
