@@ -1,0 +1,1090 @@
+{
+  "True Achromatic": [
+    {
+      "name": "Warm Grey III",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "0.81Y 6.09/0.54",
+      "hex": "#9a958f",
+      "dE": 15.44,
+      "desc": "YgB × BvR — flipped, t=0.1836 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Antique Silver",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "2.86PB 5.62/0.32",
+      "hex": "#888a8b",
+      "dE": 15.63,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Black",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "8.47PB 1.5/0.28",
+      "hex": "#262628",
+      "dE": 16.35,
+      "desc": "Arc4 — YgB flipped, t=0.0820 (L3) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Graphite Light",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "6.76BG 5.96/0.53",
+      "hex": "#8d9493",
+      "dE": 16.55,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Granite",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "1.62PB 5.45/0.9",
+      "hex": "#80868b",
+      "dE": 16.57,
+      "desc": "YgB × BvR — like, t=0.6289 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Warm Grey #3",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "0.99Y 6.41/0.77",
+      "hex": "#a49d95",
+      "dE": 16.94,
+      "desc": "YgB × BvR — flipped, t=0.1758 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Beige",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "6.75YR 6.36/0.74",
+      "hex": "#a49b96",
+      "dE": 17.46,
+      "desc": "YgB × BvR — flipped, t=0.1680 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Dark Indigo",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "5.96P 1.26/0.63",
+      "hex": "#242025",
+      "dE": 18.19,
+      "desc": "Arc4 — YgB flipped, t=0.0742 (L3) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Cold Grey III",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "1.13PB 5.91/0.93",
+      "hex": "#8c9296",
+      "dE": 18.5,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Graphite",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "0.57PB 6.14/0.64",
+      "hex": "#93979a",
+      "dE": 19.2,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Silver",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "0.4PB 6.13/0.58",
+      "hex": "#93979a",
+      "dE": 19.2,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Dove Gray",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "6.5BG 6.4/0.45",
+      "hex": "#999f9e",
+      "dE": 19.5,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Silver",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "2.03PB 6.14/0.73",
+      "hex": "#93979b",
+      "dE": 19.66,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Silver",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "1.28PB 6.17/0.7",
+      "hex": "#94989c",
+      "dE": 19.89,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Silver",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "8.81B 6.38/0.41",
+      "hex": "#9a9e9f",
+      "dE": 20.12,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "30% Warm Grey",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "1.08RP 6.41/0.56",
+      "hex": "#a19d9f",
+      "dE": 20.87,
+      "desc": "YgB × BvR — flipped, t=0.1836 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Warm Gray Light",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "0.51Y 7.01/0.76",
+      "hex": "#b3ada5",
+      "dE": 21.99,
+      "desc": "YgB × BvR — flipped, t=0.1680 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Moon Rock",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "1.64G 6.86/0.08",
+      "hex": "#a9aaa9",
+      "dE": 23.12,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Morning Mist",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "6.07Y 7.29/0.87",
+      "hex": "#b8b5a9",
+      "dE": 23.73,
+      "desc": "YgB × BvR — flipped, t=0.1719 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "20% Warm Grey",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "6.09P 6.86/0.37",
+      "hex": "#aba9ab",
+      "dE": 24.03,
+      "desc": "YgB × BvR — flipped, t=0.1797 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Cool Grey",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "5.12Y 7.24/0.59",
+      "hex": "#b7b4ab",
+      "dE": 24.05,
+      "desc": "YgB × BvR — flipped, t=0.1719 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Argent Gray",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "3.39YR 7.19/0.85",
+      "hex": "#bab1ac",
+      "dE": 24.13,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "30% French Grey",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "5.06YR 7.24/0.81",
+      "hex": "#bbb2ac",
+      "dE": 24.17,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Moonstone",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "6.92Y 7.29/0.51",
+      "hex": "#b7b5ae",
+      "dE": 24.87,
+      "desc": "YgB × BvR — flipped, t=0.1758 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Light Beige",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "8.0YR 7.4/0.57",
+      "hex": "#bdb7b2",
+      "dE": 26.03,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Cold Grey II",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "6.86B 7.26/0.38",
+      "hex": "#b1b5b6",
+      "dE": 26.96,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Mist",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "2.89GY 7.45/0.22",
+      "hex": "#b9b9b6",
+      "dE": 27.22,
+      "desc": "YgB × BvR — flipped, t=0.1797 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Warm Grey #2",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "9.92YR 7.73/0.83",
+      "hex": "#c7c0b6",
+      "dE": 27.89,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "20% French Grey",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "7.6YR 7.67/0.57",
+      "hex": "#c4beb9",
+      "dE": 28.31,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Fell Mist",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "0.93GY 7.81/0.27",
+      "hex": "#c3c3bf",
+      "dE": 30.18,
+      "desc": "YgB × BvR — flipped, t=0.1719 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Platinum",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "9.86B 7.68/0.4",
+      "hex": "#bdc0c1",
+      "dE": 30.54,
+      "desc": "YgB × BvR — flipped, t=0.1836 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Warm Grey I",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "1.02Y 8.19/1.0",
+      "hex": "#d4ccc0",
+      "dE": 31.62,
+      "desc": "YgB × BvR — flipped, t=0.1563 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Serpentine Grey",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "9.18BG 7.95/0.66",
+      "hex": "#bfc8c8",
+      "dE": 32.55,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "20% Cool Grey",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "9.66B 7.87/0.95",
+      "hex": "#bec5c9",
+      "dE": 32.72,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Ash Grey",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "7.94Y 8.43/0.81",
+      "hex": "#d6d4c7",
+      "dE": 34.08,
+      "desc": "YgB × BvR — like, t=0.0273 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "10% Warm Grey",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "8.11YR 8.26/0.08",
+      "hex": "#cfcfce",
+      "dE": 34.76,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Cold Grey I",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "9.58GY 8.3/0.09",
+      "hex": "#cfd0cf",
+      "dE": 35.09,
+      "desc": "YgB × BvR — flipped, t=0.1680 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Silver Grey",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "8.6B 8.27/0.93",
+      "hex": "#c9d0d4",
+      "dE": 36.25,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "10% Cool Grey",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "9.66B 8.35/0.65",
+      "hex": "#cdd2d5",
+      "dE": 36.69,
+      "desc": "YgB × BvR — flipped, t=0.1797 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "10% French Grey",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "6.13YR 8.71/0.69",
+      "hex": "#e1dad4",
+      "dE": 37.43,
+      "desc": "YgB × BvR — flipped, t=0.1563 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Grey Green Light",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "7.26GY 9.0/0.82",
+      "hex": "#dfe5d8",
+      "dE": 37.91,
+      "desc": "YgB × BvR — like, t=0.0273 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Warm Grey #1",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "9.34YR 8.88/0.6",
+      "hex": "#e5dfd8",
+      "dE": 38.89,
+      "desc": "YgB × BvR — flipped, t=0.1563 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Cool Grey #1",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "3.38GY 8.87/0.14",
+      "hex": "#dfe0dd",
+      "dE": 39.88,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Arctic",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "1.88G 9.09/0.36",
+      "hex": "#e2e7e3",
+      "dE": 41.92,
+      "desc": "YgB × BvR — like, t=0.0352 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Titanium White",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "4.27Y 9.44/0.96",
+      "hex": "#f2efe6",
+      "dE": 42.35,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "White",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "6.73Y 9.37/0.36",
+      "hex": "#eeede9",
+      "dE": 43.62,
+      "desc": "YgB × BvR — like, t=0.0273 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "White",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "9.92YR 9.44/0.64",
+      "hex": "#f2efea",
+      "dE": 43.84,
+      "desc": "YgB × BvR — like, t=0.0273 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Titanium White",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "5.89Y 9.59/0.82",
+      "hex": "#f5f3ed",
+      "dE": 44.43,
+      "desc": "YgB × BvR — like, t=0.0273 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "White",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "3.85Y 9.54/0.62",
+      "hex": "#f4f2ed",
+      "dE": 44.54,
+      "desc": "YgB × BvR — like, t=0.0273 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "White",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "4.51Y 9.55/0.68",
+      "hex": "#f4f2ed",
+      "dE": 44.54,
+      "desc": "YgB × BvR — like, t=0.0273 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "White",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "4.61Y 9.46/0.16",
+      "hex": "#f0f0ee",
+      "dE": 45.08,
+      "desc": "YgB × BvR — like, t=0.0273 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "White",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "0.34BG 9.48/0.13",
+      "hex": "#eff0f0",
+      "dE": 45.69,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "White",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "6.48RP 9.54/0.35",
+      "hex": "#f3f2f2",
+      "dE": 46.37,
+      "desc": "YgB × BvR — flipped, t=0.1563 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Soft White",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "9.9P 9.58/0.38",
+      "hex": "#f4f3f3",
+      "dE": 46.62,
+      "desc": "YgB × BvR — like, t=0.0273 (L2) -- nearest point, does not fit (>15.3)"
+    }
+  ],
+  "Near-Neutral": [
+    {
+      "name": "Lavender Ash",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "3.95P 4.84/1.54",
+      "hex": "#79737e",
+      "dE": 16.1,
+      "desc": "YgB × BvR — like, t=0.7227 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Cool Grey #4",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "4.17PB 5.5/1.46",
+      "hex": "#818790",
+      "dE": 17.07,
+      "desc": "YgB × BvR — like, t=0.6563 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Sepia 10%",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "2.49R 6.04/1.27",
+      "hex": "#9f9191",
+      "dE": 17.19,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Pebble",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "0.56Y 6.69/1.28",
+      "hex": "#aea496",
+      "dE": 17.47,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "50% Cool Grey",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "9.66B 5.85/1.69",
+      "hex": "#849199",
+      "dE": 18.22,
+      "desc": "YgB × BvR — like, t=0.6289 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Gold",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "2.79Y 7.05/1.59",
+      "hex": "#b8ae9a",
+      "dE": 19.85,
+      "desc": "YgB × BvR — flipped, t=0.1563 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Jade Green",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "6.04BG 6.63/1.92",
+      "hex": "#8da9a6",
+      "dE": 21.12,
+      "desc": "YgB × BvR — flipped, t=0.3125 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Silver",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "3.88PB 6.24/1.07",
+      "hex": "#969aa0",
+      "dE": 21.27,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Oyster",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "6.3RP 6.5/1.84",
+      "hex": "#ad9ca0",
+      "dE": 21.61,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "French Grey 10%",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "5.32YR 6.99/1.01",
+      "hex": "#b6aba4",
+      "dE": 21.67,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Red Storm",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "4.59RP 6.62/1.67",
+      "hex": "#aea0a4",
+      "dE": 22.49,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Cool Grey #3",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "4.72PB 6.19/1.75",
+      "hex": "#9299a3",
+      "dE": 22.52,
+      "desc": "YgB × BvR — like, t=0.6289 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Fossil Grey",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "3.67R 6.95/1.08",
+      "hex": "#b5aaa9",
+      "dE": 23.26,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Warm Grey II",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "0.62Y 7.29/1.08",
+      "hex": "#bdb4a8",
+      "dE": 23.41,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Raw Umber 10%",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "0.14Y 7.65/1.97",
+      "hex": "#ccbca6",
+      "dE": 24.82,
+      "desc": "YgB × BvR — flipped, t=0.1328 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Steel Grey",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "7.77B 6.82/1.52",
+      "hex": "#9dabb1",
+      "dE": 25.27,
+      "desc": "YgB × BvR — flipped, t=0.2656 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Slate Green",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "7.02Y 7.67/1.36",
+      "hex": "#c4c0ab",
+      "dE": 26.12,
+      "desc": "YgB × BvR — flipped, t=0.1563 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Oxford Grey",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "4.94B 7.02/1.74",
+      "hex": "#9eb1b6",
+      "dE": 26.43,
+      "desc": "YgB × BvR — flipped, t=0.2656 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Warm Gray Light",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "8.32YR 7.59/1.02",
+      "hex": "#c6bcb2",
+      "dE": 26.6,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Putty Beige",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "2.72Y 7.81/1.35",
+      "hex": "#cbc2b0",
+      "dE": 27.21,
+      "desc": "YgB × BvR — flipped, t=0.1563 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Platinum",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "0.99PB 7.25/1.04",
+      "hex": "#aeb5ba",
+      "dE": 28.06,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "30% Cool Grey",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "9.06B 7.43/1.05",
+      "hex": "#b2babe",
+      "dE": 29.22,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Cool Grey #2",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "5.54PB 7.44/1.28",
+      "hex": "#b5b9c0",
+      "dE": 30.09,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Light Grey",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "9.67B 7.62/1.35",
+      "hex": "#b5bfc5",
+      "dE": 31.28,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Thulite Brown",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "9.11YR 8.56/1.77",
+      "hex": "#e5d5c1",
+      "dE": 32.14,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Silver Grey",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "0.97PB 8.39/1.37",
+      "hex": "#cbd4d9",
+      "dE": 37.68,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Buff Titanium",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "0.01Y 9.14/1.36",
+      "hex": "#f0e5d6",
+      "dE": 37.8,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Oyster",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "1.81RP 8.74/1.78",
+      "hex": "#e4d9de",
+      "dE": 39.62,
+      "desc": "YgB × BvR — flipped, t=0.1328 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Pink White",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "1.67YR 9.05/1.58",
+      "hex": "#f1e1db",
+      "dE": 39.88,
+      "desc": "YgB × BvR — flipped, t=0.1328 (L2) -- nearest point, does not fit (>15.3)"
+    }
+  ],
+  "Earth-Adjacent": [
+    {
+      "name": "Dark Sap Green",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "6.26BG 2.52/2.94",
+      "hex": "#1f4243",
+      "dE": 15.18,
+      "desc": "Arc4 — YgB flipped, t=0.1250 (L3) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Ice Blue",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "0.11PB 5.61/2.13",
+      "hex": "#7b8c96",
+      "dE": 15.79,
+      "desc": "YgB × BvR — like, t=0.6484 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Copper",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "4.37YR 6.62/2.26",
+      "hex": "#b79f91",
+      "dE": 16.05,
+      "desc": "YgB × BvR — flipped, t=0.1328 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Winter Lake",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "9.77B 5.66/2.23",
+      "hex": "#7c8d98",
+      "dE": 16.21,
+      "desc": "YgB × BvR — like, t=0.6484 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Willow Green",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "1.33GY 7.49/2.65",
+      "hex": "#bcbd96",
+      "dE": 17.56,
+      "desc": "YgB × BvR — like, t=0.0273 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Celadon Green",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "6.45G 6.51/2.08",
+      "hex": "#8ba799",
+      "dE": 17.73,
+      "desc": "YgB × BvR — flipped, t=0.2813 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Almond Frost",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "8.52RP 5.74/2.37",
+      "hex": "#9e878b",
+      "dE": 17.87,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Olive Brown 10%",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "3.44Y 7.65/2.92",
+      "hex": "#cdbe98",
+      "dE": 19.11,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Payne’s Grey 30%",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "3.01PB 6.0/2.83",
+      "hex": "#8695a5",
+      "dE": 19.91,
+      "desc": "YgB × BvR — like, t=0.6797 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Peach Beige",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "4.03Y 8.04/2.78",
+      "hex": "#d6c9a3",
+      "dE": 21.89,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Violet Grey",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "9.75P 5.73/2.3",
+      "hex": "#988894",
+      "dE": 22.04,
+      "desc": "YgB × BvR — flipped, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Seashell Pink",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "0.28Y 7.76/2.91",
+      "hex": "#d5be9e",
+      "dE": 22.43,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Almond",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "0.08Y 7.77/2.89",
+      "hex": "#d5be9f",
+      "dE": 22.85,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Middle Verdigris",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "1.36G 7.54/2.44",
+      "hex": "#a7c3aa",
+      "dE": 23.2,
+      "desc": "YgB × BvR — like, t=0.1328 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Pale Sage",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "6.03GY 8.26/2.98",
+      "hex": "#c6d5aa",
+      "dE": 23.37,
+      "desc": "YgB × BvR — like, t=0.0273 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Steel Grey",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "9.67B 6.51/2.24",
+      "hex": "#92a3ad",
+      "dE": 23.8,
+      "desc": "YgB × BvR — like, t=0.6094 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Rose Quartz",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "4.5P 5.96/2.36",
+      "hex": "#988f9f",
+      "dE": 23.94,
+      "desc": "YgB × BvR — like, t=0.7109 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Bohemian Green Earth",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "4.69GY 8.38/2.7",
+      "hex": "#ced6ad",
+      "dE": 24.17,
+      "desc": "YgB × BvR — like, t=0.0273 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Rosy Beige",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "0.74R 7.15/2.95",
+      "hex": "#c8aaac",
+      "dE": 24.9,
+      "desc": "YgB × BvR — flipped, t=0.1328 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Wheat",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "2.37Y 8.58/2.87",
+      "hex": "#e8d6b0",
+      "dE": 26.09,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Green Jasper",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "9.59G 8.06/2.03",
+      "hex": "#b1d0c5",
+      "dE": 31.71,
+      "desc": "YgB × BvR — like, t=0.1680 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Amethyst Grey",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "7.48PB 7.67/2.04",
+      "hex": "#bcbfca",
+      "dE": 33.26,
+      "desc": "YgB × BvR — flipped, t=0.2344 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Cream",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "3.55Y 9.16/2.27",
+      "hex": "#f2e7ca",
+      "dE": 33.41,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Thulite Reddish",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "3.42YR 8.77/2.68",
+      "hex": "#f5d7c6",
+      "dE": 34.8,
+      "desc": "YgB × BvR — flipped, t=0.0977 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Zircon Red Bright",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "8.31R 8.65/2.83",
+      "hex": "#f3d2cb",
+      "dE": 34.95,
+      "desc": "YgB × BvR — flipped, t=0.0977 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Oyster",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "7.46RP 8.8/2.18",
+      "hex": "#ebd9dc",
+      "dE": 39.19,
+      "desc": "YgB × BvR — flipped, t=0.1328 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Light Aqua",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "4.55BG 9.02/2.17",
+      "hex": "#c8ebe3",
+      "dE": 40.24,
+      "desc": "YgB × BvR — like, t=0.1328 (L2) -- nearest point, does not fit (>15.3)"
+    }
+  ],
+  "Pastel-Adjacent": [
+    {
+      "name": "Lagoon",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "8.03PB 1.4/3.72",
+      "hex": "#22213d",
+      "dE": 16.95,
+      "desc": "Arc4 — YgB flipped, t=0.0078 (L3) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Misty Green",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "7.38GY 7.43/3.29",
+      "hex": "#aac097",
+      "dE": 17.21,
+      "desc": "YgB × BvR — like, t=0.0820 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Sky Mist",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "2.19B 6.33/3.62",
+      "hex": "#73a4ab",
+      "dE": 17.35,
+      "desc": "Yellow-Blue (Green), t=0.9297 (L1) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Sand",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "2.63Y 7.75/3.41",
+      "hex": "#d3bf95",
+      "dE": 18.39,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Ginger Root",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "8.6Y 8.1/3.5",
+      "hex": "#d2cd99",
+      "dE": 18.54,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Cork",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "4.59YR 7.42/3.84",
+      "hex": "#d9b197",
+      "dE": 20.6,
+      "desc": "YgB × BvR — flipped, t=0.0977 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Clay Rose",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "4.32RP 5.83/3.46",
+      "hex": "#a68792",
+      "dE": 21.8,
+      "desc": "YgB × BvR — flipped, t=0.1328 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Pastel Mint",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "2.04G 7.49/3.07",
+      "hex": "#a0c3a7",
+      "dE": 21.85,
+      "desc": "YgB × BvR — like, t=0.1641 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Beige",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "8.97YR 7.68/3.44",
+      "hex": "#d8bb99",
+      "dE": 21.86,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Smoke Blue",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "5.79PB 6.26/3.81",
+      "hex": "#8f9ab3",
+      "dE": 23.25,
+      "desc": "YgB × BvR — like, t=0.7109 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Naples Yellow Light",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "3.6Y 9.12/3.78",
+      "hex": "#f7e5b5",
+      "dE": 28.39,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Cream",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "4.66Y 9.13/3.58",
+      "hex": "#f4e6b7",
+      "dE": 28.53,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Granite Rose",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "2.17YR 8.33/3.79",
+      "hex": "#f4c8b3",
+      "dE": 29.37,
+      "desc": "YgB × BvR — flipped, t=0.0703 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Primrose",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "6.02Y 9.18/3.22",
+      "hex": "#f2e9be",
+      "dE": 30.03,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Light Peach",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "9.52R 8.39/3.59",
+      "hex": "#f4c9bc",
+      "dE": 30.91,
+      "desc": "YgB × BvR — flipped, t=0.0820 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Pale Peach",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "5.79YR 8.64/3.1",
+      "hex": "#f4d3b9",
+      "dE": 31.19,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Thulite Yellowish",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "4.57YR 8.61/3.24",
+      "hex": "#f5d2ba",
+      "dE": 31.97,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Greyed Lavender",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "5.68P 6.77/3.91",
+      "hex": "#b3a1ba",
+      "dE": 32.18,
+      "desc": "YgB × BvR — like, t=0.7422 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Ivory",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "3.42Y 9.32/3.33",
+      "hex": "#f8ebc9",
+      "dE": 33.23,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Horizon Blue",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "5.19B 8.57/3.47",
+      "hex": "#b1dfea",
+      "dE": 34.37,
+      "desc": "Yellow-Blue (Green), t=0.9336 (L1) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Sky Blue Light",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "9.79B 8.53/3.85",
+      "hex": "#b6dcef",
+      "dE": 34.99,
+      "desc": "Yellow-Blue (Green), t=0.9492 (L1) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Shell Pink",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "0.98YR 8.87/3.4",
+      "hex": "#ffd7c7",
+      "dE": 35.15,
+      "desc": "YgB × BvR — flipped, t=0.0820 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Ivory",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "3.48Y 9.43/3.51",
+      "hex": "#faeed0",
+      "dE": 35.22,
+      "desc": "YgB × BvR — like, t=0.0000 (L2) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Cloud Blue",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "5.49PB 8.31/3.58",
+      "hex": "#c3d1e8",
+      "dE": 37.25,
+      "desc": "Yellow-Blue (Green), t=0.9570 (L1) -- nearest point, does not fit (>15.3)"
+    },
+    {
+      "name": "Aquamarine Blue",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "2.91PB 8.6/3.04",
+      "hex": "#c8daeb",
+      "dE": 38.98,
+      "desc": "Yellow-Blue (Green), t=0.9492 (L1) -- nearest point, does not fit (>15.3)"
+    }
+  ]
+}
