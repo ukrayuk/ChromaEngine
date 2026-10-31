@@ -1,8 +1,8 @@
 ---
 status: Active
-stage: RoY's first blind round (25 pencils, whole-arc spread) came in far worse than any prior round -- mean dE 8.54, only 10/25 within +/-2 rows, 6 direction flips (shade called tint or vice versa). Diagnosed and partly fixed it: confirmed the ladder itself has zero colorimetric duplicate/lookalike cells anywhere (checked directly -- "blends into the background" is a loose signal on a smooth gradient, not proof of exact position, but not a ladder bug either); re-ran just the 6 flipped pencils in isolation with fresh IDs and the round-7 zoom-out step, and 4 of 6 resolved immediately (mean dE dropped to 3.41). Two pencils (Golden Ochre, Tiger Lily) flipped again on the clean retest -- genuinely repeatable, not fatigue, but the obvious explanation (lower chroma than their matched arc point) doesn't fit both cases consistently, so still unexplained.
+stage: Built proper Fit/Tint/Shade/Won't-Fit spreadsheet exports for all three primary arcs (reproducing and correcting an old one-off Green Arc export), plus a 4th "Unclassified" sheet (57 pencils) for whatever lands in none of the five configured buckets. Along the way: found and fixed a real bug (never-fit pencils were being force-assigned to whichever primary arc they were LEAST far from, even at 40-90+ dE -- Light Mauve/Copper landing in the Green tabs was the tell; fixed with a dE<=30 plausibility cutoff), and added a 4th neutral band ("Pastel-Adjacent", Munsell C 3-4) to the core taxonomy classifier after Ray spotted that pale pencils just above the old C=3 ceiling were mostly being read as tint when they're really near-neutral. This also closes out the long-standing "wire anchor_thresholds.json into the never-fit taxonomy" item -- the per-arc Tint/Shade split now uses those thresholds directly.
 last_touched: 31 October 2026
-next_action: decide whether to re-run RoY's full 25 incrementally (one at a time, zoom-out step, per round-1's now-confirmed lesson) now that the retest shows the method, not the arc, was the main problem; dig further into the Golden Ochre/Tiger Lily repeat-flip case -- 2 data points isn't enough to find the real pattern; support Ray's printout-based test (print the arc-length ladder, compare screen vs print reproduction, then test placing real physical pencils against a printed card) -- still the top priority over further screen-based tuning; investigate the Cool-Yellow pale-yellow/light-green discrimination difficulty found in round 8 (separate, unrelated to gamut-clipping, not yet understood); decide whether to standardise round 7's zoom-out instruction for all future rounds; decide whether the near-anchor "doesn't read as belonging to this arc" effect (seen on Cool Blue and Warm Blue) warrants a standing book caveat; decide on the ΔE threshold question (11 vs 16 vs 20); decide whether a dual-threshold policy is worth building; decide whether to redesign how tints are taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; wire data/anchor_thresholds.json into the never-fit taxonomy classifier; re-derive the "genuinely unexplained" headline count; continue with Level 3
+next_action: decide whether to re-run RoY's full 25 incrementally (one at a time, zoom-out step, per round-1's now-confirmed lesson) now that the retest shows the method, not the arc, was the main problem; dig further into the Golden Ochre/Tiger Lily repeat-flip case from the RoY retest -- 2 data points isn't enough to find the real pattern; support Ray's printout-based test (print the arc-length ladder, compare screen vs print reproduction, then test placing real physical pencils against a printed card) -- still the top priority over further screen-based tuning; check the Lagoon outlier (Munsell C=3.72 but genuinely dark, L=14.2) by eye -- flagged, not resolved, in the new Pastel-Adjacent band; investigate the Cool-Yellow pale-yellow/light-green discrimination difficulty found in round 8; decide whether to standardise round 7's zoom-out instruction for all future rounds; decide whether the near-anchor "doesn't read as belonging to this arc" effect (seen on Cool Blue and Warm Blue) warrants a standing book caveat; decide on the ΔE threshold question (11 vs 16 vs 20); decide whether a dual-threshold policy is worth building; decide whether to redesign how tints are taught given round 5's isolated-column result; rebuild the threshold analysis against the full 1825-pencil master.json scope; re-derive the "genuinely unexplained" headline count against the new taxonomy; continue with Level 3
 feeds_into: ["Colour Theory for the Coloured Pencil Artist", "ChromaEngine"]
 ---
 
@@ -17,10 +17,73 @@ session working in `pigment-ancestry-model/` should update this file when
 something changes — current state, a resolved item, a new finding — no
 need to ask permission first.
 
-**Last updated:** 2026-10-31 (this session, after RoY's rough first
-round and a focused retest that resolved most of it -- the ladder data
-itself checked out clean; the failure was mostly methodology, isolating
-and re-running the worst misses recovered most of the accuracy)
+**Last updated:** 2026-10-31 (this session, after building per-arc
+Fit/Tint/Shade/Won't-Fit spreadsheets for all three primaries, finding
+and fixing a real nearest-arc assignment bug along the way, and adding
+a 4th neutral band to the core taxonomy classifier)
+
+## Current state — SPREADSHEET EXPORTS: Fit/Tint/Shade/Won't-Fit for all 3 arcs, a new Unclassified sheet, and a taxonomy fix
+
+- **Per-arc Fit/Tint/Shade/Won't-Fit spreadsheets (2026-10-31)**: Ray
+  asked for the same 4-tab structure as an old one-off Green Arc export,
+  redone for all three primary arcs so he could check consistency.
+  Reverse-engineered the old file's real structure from 3 verified
+  examples (it wasn't dL-sign-based as first assumed -- Fit is the
+  WHOLE single-arc fit pool, and Tint/Shade/Won't-Fit are never-fit
+  pencils split by comparing their own HSL lightness against
+  `data/anchor_thresholds.json`'s per-anchor tint/shade thresholds,
+  linearly interpolated by t between the arc's two anchors, with a
+  hue-gap pre-check first). Script:
+  `scripts/exports/build_arc_fit_tint_shade_tabs.cjs`, output
+  `data/exports/{roy,ygb,bvr}_fit_tint_shade.json`.
+
+  **Found and fixed a real bug Ray caught by eye**: Light Mauve, Copper,
+  and similar pencils were appearing in the Green arc's Won't-Fit tab
+  despite having nothing to do with green -- because every never-fit
+  pencil was being force-assigned to whichever of the 3 primary arcs it
+  was LEAST far from, even when that distance was 40-90+ ΔE (not
+  remotely close to any of them). Confirmed via the real distribution:
+  the median best-of-3-arcs distance among all 344 never-fit pencils is
+  34.4 ΔE. Fixed with a plausibility cutoff (ΔE≤30, ~2x the fit
+  threshold) -- beyond that, a pencil doesn't appear in any of the three
+  arcs' tabs at all.
+
+  Final counts: RoY Fit=100/Tint=7/Shade=0/WontFit=5; YgB
+  Fit=119/Tint=24/Shade=29/WontFit=21; BvR Fit=63/Tint=24/Shade=4/WontFit=19.
+
+- **New "Unclassified" sheet (2026-10-31)**: Ray's follow-up ask -- one
+  consolidated list of every pencil that lands in NONE of the five
+  configured buckets (Fit/Tint/Tone/Shade/Neutral), anywhere in the
+  whole model. Runs the existing `classify_never_fit_taxonomy.cjs`
+  directly rather than reinventing it, filters out the five named
+  categories, keeps the rest (hue gap variants, chroma ceiling,
+  structural limit, over/undersaturated). Script:
+  `scripts/exports/build_unclassified_sheet.cjs`, output
+  `data/exports/unclassified.json` -- 57 pencils.
+
+- **New neutral band added to the core taxonomy (2026-10-31)**: Ray
+  noticed pencils with Munsell chroma just above the old neutral
+  ceiling (3.0) were mostly landing in "tint" rather than "neutral."
+  Checked: of 25 never-fit pencils with Munsell C in (3,4], 23 are
+  genuinely pale/pastel (L 59-94 -- Ivory, Cream, Shell Pink, Sky Mist,
+  Cloud Blue...), confirming they belong with the neutral bands. Added
+  a 4th band, **"Pastel-Adjacent"** (Munsell C 3-4), to
+  `scripts/classify_never_fit_taxonomy.cjs`'s `NEUTRAL_BANDS`, named
+  separately from Earth-Adjacent since pastel and earthy read
+  differently even at similar chroma. **One flagged exception, not yet
+  resolved**: Lagoon (Munsell C=3.72, but L=14.2 -- genuinely dark, not
+  pastel) sits in this chroma band by the numbers but doesn't read as
+  neutral at all; same "needs a by-eye check" pattern as the 2026-10-15
+  Payne's Grey finding that originally set the 3.0 ceiling. Re-running
+  the taxonomy after this change also updated the per-arc spreadsheets
+  (excluded now-neutral pencils from their Tint/Shade/Won't-Fit tabs)
+  and the Unclassified sheet.
+
+  This closes out the long-standing "wire anchor_thresholds.json into
+  the never-fit taxonomy classifier" item from 2026-10-25/26 -- the
+  per-arc Tint/Shade split now uses those thresholds directly, even
+  though the core `classify_never_fit_taxonomy.cjs` categorisation
+  (dL/dC/dH dominance) remains a separate, still-unreconciled mechanism.
 
 ## Current state — RoY ROUND 1 + RETEST: a rough first round, mostly explained and fixed
 

@@ -54,11 +54,26 @@ function hueDiff(h1, h2) { const d = Math.abs(h1 - h2); return Math.min(d, 360 -
 // (Ivory mc=3.33/3.51, Raisin mc=4.33) -- those need a hue-based check,
 // not a tighter chroma line, left as a future refinement. Bands simplified
 // to round 0-1/1-2/2-3 at the same time (previously 0-0.5/0.5-1.5/1.5-2.0).
+// Ceiling raised again, 2.0 -> 3.0 -> 4.0 (Ray, 2026-10-31, after
+// spotting that the tint/hue-gap categories just above 3.0 were mostly
+// genuinely near-neutral too): checked all 25 never-fit pencils with
+// Munsell C in (3,4] -- 24 of them (then split across tint/hue-gap/
+// combo) are clearly pale/pastel (L 59-94: Ivory, Cream, Shell Pink,
+// Sky Mist, Cloud Blue, Light Peach...), confirming they belong with
+// the neutral bands rather than being read as real tints. One
+// exception found and left as a flagged outlier rather than silently
+// included: Lagoon (mc=3.72, L=14.2) is genuinely dark, not pastel --
+// same "needs a by-eye check, not just the chroma number" pattern as
+// the 2026-10-15 Payne's Grey finding. New band given its own name
+// (Pastel-Adjacent) rather than folded into Earth-Adjacent, since the
+// two read differently (earthy/muted vs genuinely pale) even though
+// both sit outside the stricter neutral bands below them.
 function munsellChroma(m) { const parts = m.split('/'); return parseFloat(parts[parts.length - 1]); }
 const NEUTRAL_BANDS = [
   { name: 'True Achromatic', lo: 0, hi: 1 },
   { name: 'Near-Neutral', lo: 1, hi: 2 },
   { name: 'Earth-Adjacent', lo: 2, hi: 3 },
+  { name: 'Pastel-Adjacent', lo: 3, hi: 4 },
 ];
 function neutralBand(mc) {
   for (const b of NEUTRAL_BANDS) if (mc > b.lo && mc <= b.hi) return b.name;

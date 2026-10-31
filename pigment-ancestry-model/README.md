@@ -1298,6 +1298,62 @@ a time, zoom-out step) now that the retest shows the method mattered
 more than the arc — and keep an eye out for more Golden-Ochre/Tiger-Lily-style
 repeat flips to build up enough examples to actually explain them.
 
+## Per-arc Fit/Tint/Shade/Won't-Fit spreadsheets, a new "Unclassified" sheet, and a taxonomy fix (2026-10-31)
+
+Ray asked for the same 4-tab structure as an old one-off Green Arc
+export, redone for all three primary arcs to check consistency.
+
+**The old file's real structure took reverse-engineering** — it
+wasn't dL-sign-based (my first guess). Verified against 3 of Ray's own
+examples: Fit is the *whole* single-arc fit pool; Tint/Shade/Won't-Fit
+split the never-fit pencils by comparing each one's own HSL lightness
+against `data/anchor_thresholds.json`'s per-anchor tint/shade
+thresholds, linearly interpolated between the arc's two anchors by t,
+with a hue-gap pre-check run first (so a wrong-hue pencil doesn't get
+mislabeled by lightness alone). Script:
+`scripts/exports/build_arc_fit_tint_shade_tabs.cjs`.
+
+**Found and fixed a real bug, caught by Ray by eye**: Light Mauve,
+Copper, and similar pencils were showing up in the *Green* arc's
+Won't-Fit tab despite having nothing to do with green — because every
+never-fit pencil was force-assigned to whichever of the three arcs it
+was *least* far from, even at 40–90+ ΔE. The real distribution: median
+best-of-3-arcs distance across all 344 never-fit pencils is 34.4 ΔE, so
+"nearest of three" alone means nothing for most of the pool. Fixed with
+a plausibility cutoff (ΔE≤30) — beyond that, a pencil doesn't appear in
+any of the three arcs' tabs.
+
+Final counts: RoY Fit=100/Tint=7/Shade=0/WontFit=5; YgB
+Fit=119/Tint=24/Shade=29/WontFit=21; BvR Fit=63/Tint=24/Shade=4/WontFit=19.
+
+**New "Unclassified" sheet**: one consolidated list of every pencil
+landing in none of the five configured buckets (Fit/Tint/Tone/Shade/
+Neutral) anywhere in the whole model — runs
+`classify_never_fit_taxonomy.cjs` directly and keeps whatever's left
+over (hue gap variants, chroma ceiling, structural limit,
+over/undersaturated). Script:
+`scripts/exports/build_unclassified_sheet.cjs` — 57 pencils.
+
+**New neutral band added to the core taxonomy**: Ray noticed pencils
+just above the old neutral ceiling (Munsell C=3.0) were mostly landing
+in "tint" rather than "neutral." Checked: of 25 never-fit pencils with
+Munsell C in (3,4], 23 are genuinely pale/pastel (L 59–94 — Ivory,
+Cream, Shell Pink, Sky Mist, Cloud Blue...). Added a 4th band,
+**"Pastel-Adjacent"** (Munsell C 3–4), to
+`classify_never_fit_taxonomy.cjs`'s `NEUTRAL_BANDS`, named separately
+from Earth-Adjacent since pastel and earthy read differently even at
+similar chroma. One flagged exception, not resolved: **Lagoon**
+(Munsell C=3.72, L=14.2 — genuinely dark) sits in this band by the
+numbers but doesn't read as pastel at all — same "needs a by-eye check"
+pattern as the 2026-10-15 Payne's Grey finding that set the original
+3.0 ceiling.
+
+This also closes out the long-standing "wire `anchor_thresholds.json`
+into the never-fit taxonomy classifier" item (2026-10-25/26) — the
+per-arc Tint/Shade split now uses those thresholds directly, though the
+core taxonomy's own dL/dC/dH-dominance categorisation remains a
+separate mechanism, still not reconciled with this one.
+
 ## Open items (read this part)
 
 ### 1. Level 1 vs Level 2 — structural finding, not a bug, but worth knowing

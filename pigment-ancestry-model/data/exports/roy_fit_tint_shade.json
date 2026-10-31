@@ -1,0 +1,918 @@
+{
+  "arcLabel": "Red-Yellow (Orange)",
+  "fit": [
+    {
+      "name": "Vermilion",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "6.51R 4.82/16.65",
+      "hex": "#e3212f",
+      "dE": 0.09,
+      "t": 0
+    },
+    {
+      "name": "Red Ochre",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "7.73R 5.14/17.28",
+      "hex": "#ee3022",
+      "dE": 1.29,
+      "t": 0.1719
+    },
+    {
+      "name": "Yellow",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "0.65Y 7.74/12.53",
+      "hex": "#fab503",
+      "dE": 1.48,
+      "t": 0.9141
+    },
+    {
+      "name": "Permanent Red",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "7.89R 4.83/16.88",
+      "hex": "#e2271b",
+      "dE": 2.05,
+      "t": 0.1602
+    },
+    {
+      "name": "Pure Red",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "6.68R 4.89/16.24",
+      "hex": "#e32b30",
+      "dE": 2.23,
+      "t": 0
+    },
+    {
+      "name": "Orange",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "4.17YR 7.0/14.47",
+      "hex": "#ff8e08",
+      "dE": 2.34,
+      "t": 0.7422
+    },
+    {
+      "name": "Cadmium Orange Deep",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "9.98R 6.03/16.24",
+      "hex": "#fe5f11",
+      "dE": 2.35,
+      "t": 0.4961
+    },
+    {
+      "name": "Sunflower",
+      "range": "Derwent Drawing Pencils",
+      "munsell": "2.0Y 8.37/12.29",
+      "hex": "#ffc91d",
+      "dE": 2.39,
+      "t": 0.9492
+    },
+    {
+      "name": "Orange",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "1.07YR 6.42/15.63",
+      "hex": "#ff7116",
+      "dE": 2.66,
+      "t": 0.5938
+    },
+    {
+      "name": "Vermilion",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "8.17R 5.52/17.24",
+      "hex": "#f94123",
+      "dE": 2.97,
+      "t": 0.2656
+    },
+    {
+      "name": "Scarlet Red",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "6.27R 4.98/16.31",
+      "hex": "#e62d36",
+      "dE": 3.01,
+      "t": 0
+    },
+    {
+      "name": "Amber Gold",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "5.78YR 7.44/13.56",
+      "hex": "#ffa01c",
+      "dE": 3.08,
+      "t": 0.8008
+    },
+    {
+      "name": "Scarlet",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "7.49R 5.16/16.38",
+      "hex": "#eb372b",
+      "dE": 3.18,
+      "t": 0.1172
+    },
+    {
+      "name": "Sunburst Yellow",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "9.34YR 7.99/13.26",
+      "hex": "#ffb80a",
+      "dE": 3.53,
+      "t": 0.8984
+    },
+    {
+      "name": "Fast Orange",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "6.39YR 7.43/13.87",
+      "hex": "#ffa102",
+      "dE": 3.58,
+      "t": 0.8164
+    },
+    {
+      "name": "Scarlet Red",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "6.3R 4.45/16.71",
+      "hex": "#d80029",
+      "dE": 4.23,
+      "t": 0
+    },
+    {
+      "name": "Poppy Red",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "7.47R 5.24/16.19",
+      "hex": "#ed3b2e",
+      "dE": 4.32,
+      "t": 0.0938
+    },
+    {
+      "name": "Mango",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "4.91YR 7.41/14.11",
+      "hex": "#ff9c17",
+      "dE": 4.58,
+      "t": 0.7773
+    },
+    {
+      "name": "Cadmium Yellow Light",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "2.99Y 8.55/11.73",
+      "hex": "#ffd02a",
+      "dE": 4.62,
+      "t": 0.9648
+    },
+    {
+      "name": "Tiger Lily",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "9.41R 5.96/16.29",
+      "hex": "#fe5b1f",
+      "dE": 4.67,
+      "t": 0.4336
+    },
+    {
+      "name": "Signal Red",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "5.94R 4.78/16.07",
+      "hex": "#df2436",
+      "dE": 4.73,
+      "t": 0
+    },
+    {
+      "name": "Dark Cadmium Orange (Imit.)",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "9.89R 6.31/16.37",
+      "hex": "#ff661c",
+      "dE": 4.75,
+      "t": 0.5156
+    },
+    {
+      "name": "Indian Yellow",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "3.68Y 7.97/11.88",
+      "hex": "#f0c200",
+      "dE": 4.8,
+      "t": 0.9648
+    },
+    {
+      "name": "Canary Yellow",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "5.64Y 8.74/12.72",
+      "hex": "#fcdb00",
+      "dE": 4.83,
+      "t": 1
+    },
+    {
+      "name": "Orange Glaze",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "1.39YR 6.76/15.52",
+      "hex": "#ff7b1e",
+      "dE": 4.9,
+      "t": 0.6211
+    },
+    {
+      "name": "Cornelian",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "9.9R 5.64/15.6",
+      "hex": "#f05612",
+      "dE": 4.93,
+      "t": 0.4492
+    },
+    {
+      "name": "Cadmium Orange",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "3.84YR 7.3/14.4",
+      "hex": "#ff951e",
+      "dE": 5.05,
+      "t": 0.7383
+    },
+    {
+      "name": "Scarlet",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "6.36R 4.6/15.66",
+      "hex": "#d72230",
+      "dE": 5.36,
+      "t": 0
+    },
+    {
+      "name": "Light Chrome Yellow",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "5.24Y 8.82/11.54",
+      "hex": "#fedd29",
+      "dE": 5.53,
+      "t": 1
+    },
+    {
+      "name": "Sun Yellow",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "4.37Y 8.61/13.22",
+      "hex": "#ffd500",
+      "dE": 5.6,
+      "t": 1
+    },
+    {
+      "name": "Yellowed Orange",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "5.14YR 7.44/13.16",
+      "hex": "#ff9f2c",
+      "dE": 5.65,
+      "t": 0.7891
+    },
+    {
+      "name": "Cadmium Orange Deep",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "0.3YR 6.25/17.12",
+      "hex": "#ff6400",
+      "dE": 5.81,
+      "t": 0.5156
+    },
+    {
+      "name": "Marigold",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "2.1YR 6.69/15.93",
+      "hex": "#ff7b00",
+      "dE": 5.83,
+      "t": 0.6563
+    },
+    {
+      "name": "Amber Gold",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "7.55YR 7.62/12.27",
+      "hex": "#ffab2c",
+      "dE": 5.92,
+      "t": 0.8477
+    },
+    {
+      "name": "Dark Chrome Yellow",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "5.42YR 7.62/13.22",
+      "hex": "#ffa42d",
+      "dE": 5.99,
+      "t": 0.7969
+    },
+    {
+      "name": "Pale Geranium Lake",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "6.11R 5.14/15.85",
+      "hex": "#e9373d",
+      "dE": 6.03,
+      "t": 0
+    },
+    {
+      "name": "Cadmium Orange",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "0.62YR 6.44/15.19",
+      "hex": "#ff7125",
+      "dE": 6.22,
+      "t": 0.5742
+    },
+    {
+      "name": "Banana",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "4.21Y 8.15/11.45",
+      "hex": "#f2c91b",
+      "dE": 6.51,
+      "t": 0.9727
+    },
+    {
+      "name": "Golden Bismuth Yellow",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "1.71Y 8.25/11.51",
+      "hex": "#ffc630",
+      "dE": 6.68,
+      "t": 0.9336
+    },
+    {
+      "name": "Cadmium Yellow",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "0.62Y 7.64/11.59",
+      "hex": "#f5b322",
+      "dE": 6.79,
+      "t": 0.9023
+    },
+    {
+      "name": "Marigold",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "3.1YR 6.94/13.61",
+      "hex": "#ff8b2c",
+      "dE": 6.79,
+      "t": 0.707
+    },
+    {
+      "name": "Vermilion",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "5.78R 4.86/15.72",
+      "hex": "#e02c3a",
+      "dE": 6.82,
+      "t": 0
+    },
+    {
+      "name": "Sunflower",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "2.28Y 8.43/13.51",
+      "hex": "#ffca00",
+      "dE": 6.99,
+      "t": 0.9648
+    },
+    {
+      "name": "Perinone Orange",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "9.73R 6.34/15.85",
+      "hex": "#ff6827",
+      "dE": 7.22,
+      "t": 0.4805
+    },
+    {
+      "name": "Medium Cadmium Yellow (Imit.)",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "4.68Y 8.69/13.41",
+      "hex": "#ffd800",
+      "dE": 7.26,
+      "t": 1
+    },
+    {
+      "name": "Canary Yellow",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "5.97Y 8.85/12.99",
+      "hex": "#fedf00",
+      "dE": 7.39,
+      "t": 1
+    },
+    {
+      "name": "Scarlet",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "6.56R 4.76/15.06",
+      "hex": "#d93034",
+      "dE": 7.49,
+      "t": 0
+    },
+    {
+      "name": "Orange Lake",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "8.94R 5.77/15.81",
+      "hex": "#f85628",
+      "dE": 7.5,
+      "t": 0.3398
+    },
+    {
+      "name": "Spanish Orange",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "9.52YR 8.06/13.91",
+      "hex": "#ffba00",
+      "dE": 7.54,
+      "t": 0.9063
+    },
+    {
+      "name": "Light Cadmium Red",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "8.07R 5.7/16.03",
+      "hex": "#f94f32",
+      "dE": 7.79,
+      "t": 0.2266
+    },
+    {
+      "name": "Yellow",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "4.2Y 8.54/13.6",
+      "hex": "#ffd300",
+      "dE": 8.15,
+      "t": 1
+    },
+    {
+      "name": "Mustard",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "0.15Y 7.53/11.44",
+      "hex": "#f3af26",
+      "dE": 8.17,
+      "t": 0.8945
+    },
+    {
+      "name": "Orange",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "4.38YR 7.08/15.39",
+      "hex": "#ff8f00",
+      "dE": 8.19,
+      "t": 0.75
+    },
+    {
+      "name": "Scarlet Lake",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "5.98R 4.54/15.29",
+      "hex": "#d42333",
+      "dE": 8.22,
+      "t": 0
+    },
+    {
+      "name": "Red Ochre",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "7.13R 5.42/15.44",
+      "hex": "#ef463b",
+      "dE": 8.38,
+      "t": 0.0391
+    },
+    {
+      "name": "Clementine",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "1.06YR 6.27/14.38",
+      "hex": "#fb7126",
+      "dE": 8.53,
+      "t": 0.6094
+    },
+    {
+      "name": "Scarlet",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "6.4R 5.01/15.06",
+      "hex": "#e03a3b",
+      "dE": 8.6,
+      "t": 0
+    },
+    {
+      "name": "Mustard",
+      "range": "Derwent Drawing Pencils",
+      "munsell": "1.18Y 7.65/11.28",
+      "hex": "#f2b527",
+      "dE": 8.61,
+      "t": 0.9141
+    },
+    {
+      "name": "Flame",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "9.85R 6.23/15.29",
+      "hex": "#ff682a",
+      "dE": 8.7,
+      "t": 0.4805
+    },
+    {
+      "name": "Naples Yellow",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "7.92YR 7.69/11.75",
+      "hex": "#ffae35",
+      "dE": 8.73,
+      "t": 0.8555
+    },
+    {
+      "name": "Cadmium Yellow",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "4.52Y 8.83/13.64",
+      "hex": "#ffdb00",
+      "dE": 8.9,
+      "t": 1
+    },
+    {
+      "name": "Pyrrole Red",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "5.15R 5.17/16.04",
+      "hex": "#eb3445",
+      "dE": 9.21,
+      "t": 0
+    },
+    {
+      "name": "Golden Yellow",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "1.34Y 8.16/13.97",
+      "hex": "#ffc100",
+      "dE": 9.26,
+      "t": 0.9453
+    },
+    {
+      "name": "Burnt Ochre",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "8.28R 5.68/15.5",
+      "hex": "#f55232",
+      "dE": 9.47,
+      "t": 0.2266
+    },
+    {
+      "name": "Bismuth Yellow",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "4.48Y 8.63/10.9",
+      "hex": "#fcd738",
+      "dE": 9.48,
+      "t": 0.9883
+    },
+    {
+      "name": "Vermilion",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "8.3R 5.72/15.55",
+      "hex": "#f75333",
+      "dE": 9.61,
+      "t": 0.2266
+    },
+    {
+      "name": "Light Cadmium Yellow",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "7.35Y 9.05/13.55",
+      "hex": "#fee700",
+      "dE": 9.8,
+      "t": 1
+    },
+    {
+      "name": "Cadmium Yellow Deep",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "6.78YR 7.6/11.85",
+      "hex": "#ffa939",
+      "dE": 9.83,
+      "t": 0.8281
+    },
+    {
+      "name": "Dark Cadmium Orange",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "9.0R 6.05/15.6",
+      "hex": "#ff5f30",
+      "dE": 9.9,
+      "t": 0.3867
+    },
+    {
+      "name": "Red Orange",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "8.69R 5.86/15.56",
+      "hex": "#fa5931",
+      "dE": 9.96,
+      "t": 0.2891
+    },
+    {
+      "name": "Cadmium Red",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "5.05R 4.83/15.67",
+      "hex": "#df2940",
+      "dE": 10.07,
+      "t": 0
+    },
+    {
+      "name": "Carmine",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "5.44R 4.44/15.41",
+      "hex": "#d21a35",
+      "dE": 10.07,
+      "t": 0
+    },
+    {
+      "name": "Golden Yellow Deep",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "4.68Y 8.75/13.81",
+      "hex": "#ffda00",
+      "dE": 10.28,
+      "t": 1
+    },
+    {
+      "name": "Tangerine",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "5.34YR 7.41/15.28",
+      "hex": "#ff9b00",
+      "dE": 10.42,
+      "t": 0.7852
+    },
+    {
+      "name": "Sun Yellow",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "5.2Y 8.75/13.71",
+      "hex": "#ffdb00",
+      "dE": 10.43,
+      "t": 1
+    },
+    {
+      "name": "Brilliant Yellow",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "9.63YR 8.04/11.26",
+      "hex": "#ffbc3d",
+      "dE": 10.46,
+      "t": 0.8984
+    },
+    {
+      "name": "Cadmium Yellow",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "7.75YR 6.74/11.57",
+      "hex": "#e6951d",
+      "dE": 11.42,
+      "t": 0.8242
+    },
+    {
+      "name": "Yellow Ochre",
+      "range": "Caran d'Ache Luminance 6901",
+      "munsell": "0.21Y 7.16/11.11",
+      "hex": "#e7a621",
+      "dE": 11.44,
+      "t": 0.8828
+    },
+    {
+      "name": "Canary Yellow",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "7.46Y 8.96/10.94",
+      "hex": "#f8e538",
+      "dE": 11.58,
+      "t": 1
+    },
+    {
+      "name": "Permanent Red",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "5.68R 5.19/14.79",
+      "hex": "#e54146",
+      "dE": 12.04,
+      "t": 0
+    },
+    {
+      "name": "Naples Yellow",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "1.83Y 8.08/10.65",
+      "hex": "#fac23d",
+      "dE": 12.18,
+      "t": 0.9297
+    },
+    {
+      "name": "Scarlet",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "5.97R 4.62/14.34",
+      "hex": "#d13039",
+      "dE": 12.2,
+      "t": 0
+    },
+    {
+      "name": "Alizarin Crimson",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "4.67R 4.38/16.14",
+      "hex": "#d30038",
+      "dE": 12.28,
+      "t": 0
+    },
+    {
+      "name": "Dandelion",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "3.09Y 8.47/14.34",
+      "hex": "#ffcd00",
+      "dE": 12.39,
+      "t": 0.9844
+    },
+    {
+      "name": "Orange",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "0.55YR 6.83/14.22",
+      "hex": "#ff7e3c",
+      "dE": 12.73,
+      "t": 0.6094
+    },
+    {
+      "name": "Reddish Orange",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "0.66YR 6.38/13.88",
+      "hex": "#fe7433",
+      "dE": 12.75,
+      "t": 0.6094
+    },
+    {
+      "name": "Flame Red",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "0.47YR 6.39/13.97",
+      "hex": "#ff7335",
+      "dE": 12.88,
+      "t": 0.5742
+    },
+    {
+      "name": "Dark Cadmium Yellow",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "0.08Y 8.26/14.76",
+      "hex": "#ffc000",
+      "dE": 12.99,
+      "t": 0.9258
+    },
+    {
+      "name": "Scarlet Red",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "7.17R 5.41/14.22",
+      "hex": "#e84e41",
+      "dE": 13.1,
+      "t": 0
+    },
+    {
+      "name": "Cadmium Yellow Light",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "9.26YR 8.08/15.02",
+      "hex": "#ffb900",
+      "dE": 13.74,
+      "t": 0.9063
+    },
+    {
+      "name": "Deep Scarlet Red",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "5.23R 4.56/14.46",
+      "hex": "#d02b3c",
+      "dE": 13.82,
+      "t": 0
+    },
+    {
+      "name": "Derwent Red",
+      "range": "Derwent Lightfast Pencils",
+      "munsell": "5.97R 4.36/14.09",
+      "hex": "#c82934",
+      "dE": 13.98,
+      "t": 0
+    },
+    {
+      "name": "Golden Ochre",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "7.81YR 7.13/11.01",
+      "hex": "#efa034",
+      "dE": 14,
+      "t": 0.8359
+    },
+    {
+      "name": "Orangish Yellow",
+      "range": "Caran d'Ache Pablo 666",
+      "munsell": "9.14YR 7.98/10.75",
+      "hex": "#ffba47",
+      "dE": 14.21,
+      "t": 0.8828
+    },
+    {
+      "name": "Deep Red",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "5.28R 4.5/14.32",
+      "hex": "#ce2a3b",
+      "dE": 14.32,
+      "t": 0
+    },
+    {
+      "name": "Sunflower",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "0.72Y 8.17/14.96",
+      "hex": "#ffbf00",
+      "dE": 14.47,
+      "t": 0.9375
+    },
+    {
+      "name": "Crimson Red",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "5.59R 4.36/14.16",
+      "hex": "#c82736",
+      "dE": 14.54,
+      "t": 0
+    },
+    {
+      "name": "Lemon Yellow",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "5.46Y 8.9/14.25",
+      "hex": "#ffe000",
+      "dE": 14.77,
+      "t": 1
+    },
+    {
+      "name": "Venetian Red",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "6.19R 5.89/14.91",
+      "hex": "#fa5852",
+      "dE": 15.07,
+      "t": 0
+    },
+    {
+      "name": "Brilliant Yellow",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "6.93YR 7.69/15.6",
+      "hex": "#ffa700",
+      "dE": 15.17,
+      "t": 0.8438
+    }
+  ],
+  "tint": [
+    {
+      "name": "Butterscotch",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "8.08YR 8.06/10.25",
+      "hex": "#ffba55",
+      "dE": 20.48,
+      "t": 0.875,
+      "reason": "lightness beyond tint threshold"
+    },
+    {
+      "name": "Pineapple",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "2.1Y 8.29/9.1",
+      "hex": "#fac959",
+      "dE": 21.89,
+      "t": 0.9297,
+      "reason": "lightness beyond tint threshold"
+    },
+    {
+      "name": "Luminous Orange",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "0.74YR 7.93/14.35",
+      "hex": "#ff9b54",
+      "dE": 23.16,
+      "t": 0.7578,
+      "reason": "lightness beyond tint threshold"
+    },
+    {
+      "name": "Golden Yellow",
+      "range": "Castle Arts Gold Coloured Pencils",
+      "munsell": "1.34Y 8.66/8.87",
+      "hex": "#ffd266",
+      "dE": 25.24,
+      "t": 0.9336,
+      "reason": "lightness beyond tint threshold"
+    },
+    {
+      "name": "Golden Yellow",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "0.77Y 8.58/8.67",
+      "hex": "#ffcf69",
+      "dE": 26.76,
+      "t": 0.9297,
+      "reason": "lightness beyond tint threshold"
+    },
+    {
+      "name": "Sand",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "0.73Y 7.96/8.24",
+      "hex": "#f3bf62",
+      "dE": 28.15,
+      "t": 0.9023,
+      "reason": "lightness beyond tint threshold"
+    },
+    {
+      "name": "Naples Yellow",
+      "range": "Castle Arts Premium Soft Touch Colored Pencils",
+      "munsell": "8.57YR 8.38/8.74",
+      "hex": "#ffc66c",
+      "dE": 28.95,
+      "t": 0.8984,
+      "reason": "lightness beyond tint threshold"
+    }
+  ],
+  "shade": [],
+  "wontFit": [
+    {
+      "name": "Marigold",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "6.97YR 7.7/15.71",
+      "hex": "#ffa800",
+      "dE": 1.07,
+      "t": 0.8633,
+      "reason": "lightness is normal for this anchor, not a tint/shade"
+    },
+    {
+      "name": "Dark Naples Ochre",
+      "range": "Faber-Castell Polychromos 9201",
+      "munsell": "9.18YR 7.53/10.27",
+      "hex": "#f3ae41",
+      "dE": 16.56,
+      "t": 0.8711,
+      "reason": "lightness is normal for this anchor, not a tint/shade"
+    },
+    {
+      "name": "Mustard",
+      "range": "Holbein Artists' Colored Pencil",
+      "munsell": "2.58Y 6.94/10.18",
+      "hex": "#d5a51e",
+      "dE": 17.21,
+      "t": 0.9141,
+      "reason": "lightness is normal for this anchor, not a tint/shade"
+    },
+    {
+      "name": "Dandelion",
+      "range": "Derwent Chromaflow Pencils",
+      "munsell": "1.74Y 7.87/9.4",
+      "hex": "#f1bd4c",
+      "dE": 20.09,
+      "t": 0.918,
+      "reason": "lightness is normal for this anchor, not a tint/shade"
+    },
+    {
+      "name": "Neon Orange",
+      "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+      "munsell": "1.47YR 7.85/13.91",
+      "hex": "#ff9c4f",
+      "dE": 20.85,
+      "t": 0.7656,
+      "reason": "lightness is normal for this anchor, not a tint/shade"
+    }
+  ]
+}

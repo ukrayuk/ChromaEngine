@@ -1,0 +1,572 @@
+[
+  {
+    "name": "Marigold",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "6.97YR 7.7/15.71",
+    "hex": "#ffa800",
+    "dE": 16.02,
+    "category": "chroma ceiling (exceeds anchor maximum)",
+    "nearestArc": "Red-Yellow (Orange)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Fra Angelico Blue",
+    "range": "Faber-Castell Polychromos 9201",
+    "munsell": "6.88PB 3.93/17.04",
+    "hex": "#2353ce",
+    "dE": 16.7,
+    "category": "chroma ceiling (exceeds anchor maximum)",
+    "nearestArc": "Blue-Red (Violet)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Ultramarine",
+    "range": "Caran d'Ache Luminance 6901",
+    "munsell": "6.75PB 4.24/17.28",
+    "hex": "#1e5cda",
+    "dE": 18.82,
+    "category": "chroma ceiling (exceeds anchor maximum)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Hollywood Pink",
+    "range": "Derwent Chromaflow Pencils",
+    "munsell": "1.18RP 3.97/16.45",
+    "hex": "#ac1590",
+    "dE": 20.11,
+    "category": "chroma ceiling (exceeds anchor maximum)",
+    "nearestArc": "Blue-Red (Violet)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Purple",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "munsell": "8.74P 4.26/15.93",
+    "hex": "#a931a3",
+    "dE": 20.81,
+    "category": "chroma ceiling (exceeds anchor maximum)",
+    "nearestArc": "Blue-Red (Violet)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "French Rose",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "munsell": "1.09RP 4.8/17.84",
+    "hex": "#cb2ba9",
+    "dE": 26.03,
+    "category": "chroma ceiling (exceeds anchor maximum)",
+    "nearestArc": "Blue-Red (Violet)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Cherry Red",
+    "range": "Derwent Lightfast Pencils",
+    "munsell": "3.02R 3.98/12.06",
+    "hex": "#b02b46",
+    "dE": 15.49,
+    "category": "high-neon chroma (too saturated)",
+    "nearestArc": "BvR × RoY — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Salmon",
+    "range": "Faber-Castell Polychromos 9201",
+    "munsell": "3.43R 6.47/11.42",
+    "hex": "#f6797e",
+    "dE": 19.11,
+    "category": "hue gap",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Burnt Sienna 10%",
+    "range": "Caran d'Ache Luminance 6901",
+    "munsell": "3.15R 6.6/4.43",
+    "hex": "#c79797",
+    "dE": 19.58,
+    "category": "hue gap",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Violet Pink",
+    "range": "Caran d'Ache Luminance 6901",
+    "munsell": "0.51R 5.94/7.02",
+    "hex": "#c77d86",
+    "dE": 20.76,
+    "category": "hue gap",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Pink",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "3.25R 7.34/9.67",
+    "hex": "#ff9799",
+    "dE": 21.47,
+    "category": "hue gap",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Rose Pink",
+    "range": "Caran d'Ache Pablo 666",
+    "munsell": "0.73R 6.4/11.45",
+    "hex": "#f27789",
+    "dE": 25.45,
+    "category": "hue gap",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Rose Pink",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "7.6RP 7.21/9.98",
+    "hex": "#fc94ae",
+    "dE": 32.73,
+    "category": "hue gap",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Carmine Lake",
+    "range": "Caran d'Ache Luminance 6901",
+    "munsell": "6.05R 2.06/4.66",
+    "hex": "#522428",
+    "dE": 20.95,
+    "category": "hue gap (unreliable match)",
+    "nearestArc": "RoY × YgB — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Indanthrone Blue",
+    "range": "Caran d'Ache Luminance 6901",
+    "munsell": "8.33PB 1.13/4.16",
+    "hex": "#1d1b39",
+    "dE": 22.62,
+    "category": "hue gap (unreliable match)",
+    "nearestArc": "RoY × YgB — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Ash Rose",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "3.56R 6.99/4.24",
+    "hex": "#d0a2a1",
+    "dE": 21.89,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Pink Bloom",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "munsell": "3.71R 7.71/8.37",
+    "hex": "#ffa6a4",
+    "dE": 23.78,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Ash Rose",
+    "range": "Derwent Chromaflow Pencils",
+    "munsell": "2.68R 7.18/4.11",
+    "hex": "#d4a7a8",
+    "dE": 23.91,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Saffron Mango",
+    "range": "Derwent Chromaflow Pencils",
+    "munsell": "8.98YR 8.21/6.06",
+    "hex": "#f5c688",
+    "dE": 23.96,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Cadmium Orange Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "munsell": "4.12YR 8.06/9.02",
+    "hex": "#ffb575",
+    "dE": 24.13,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Brown Ochre 10%",
+    "range": "Caran d'Ache Luminance 6901",
+    "munsell": "7.86YR 8.19/4.21",
+    "hex": "#ecc69f",
+    "dE": 24.53,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Butternut",
+    "range": "Caran d'Ache Luminance 6901",
+    "munsell": "8.99YR 8.36/6.04",
+    "hex": "#f9ca8b",
+    "dE": 24.98,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Mauve",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "munsell": "9.77PB 6.3/9.25",
+    "hex": "#9993d8",
+    "dE": 25.59,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Ultramarine Violet",
+    "range": "Caran d'Ache Luminance 6901",
+    "munsell": "0.21P 6.28/8.53",
+    "hex": "#9b93d1",
+    "dE": 26.47,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Beige",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "munsell": "7.18YR 8.42/4.31",
+    "hex": "#f5cca4",
+    "dE": 26.73,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Wild Lavender",
+    "range": "Derwent Lightfast Pencils",
+    "munsell": "6.18P 5.62/7.19",
+    "hex": "#a27cac",
+    "dE": 26.97,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Jaune Brillant",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "7.13YR 8.46/5.36",
+    "hex": "#fdcb9a",
+    "dE": 27.05,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Blush Pink",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "munsell": "0.75R 7.64/7.84",
+    "hex": "#fea6ae",
+    "dE": 27.49,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Yellow Ochre Light",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "munsell": "6.32YR 8.4/6.32",
+    "hex": "#ffc791",
+    "dE": 28.65,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Sea Fog",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "1.18RP 6.93/4.16",
+    "hex": "#c2a3b5",
+    "dE": 30.2,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Pink Rose",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "munsell": "6.61RP 7.62/5.27",
+    "hex": "#e4b0bc",
+    "dE": 31.19,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Deco Peach",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "munsell": "4.76R 8.42/4.46",
+    "hex": "#fbc7c2",
+    "dE": 32.08,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Cherry Blossom",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "1.64R 8.61/4.78",
+    "hex": "#ffcbcc",
+    "dE": 35.02,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Lilac",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "3.36P 7.12/6.24",
+    "hex": "#bba8d4",
+    "dE": 35.57,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Deco Pink",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "munsell": "6.42RP 8.37/4.95",
+    "hex": "#f7c5d1",
+    "dE": 36.44,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Rose Pink",
+    "range": "Derwent Chromaflow Pencils",
+    "munsell": "5.08RP 8.59/4.16",
+    "hex": "#f5cdd9",
+    "dE": 38.57,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Light Mauve",
+    "range": "Derwent Chromaflow Pencils",
+    "munsell": "7.41P 8.09/5.29",
+    "hex": "#e0c0df",
+    "dE": 42.03,
+    "category": "hue gap + tint (too light) (combo)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Dahlia Purple",
+    "range": "Newell Brands Prismacolor Premier Soft Core Colored Pencils",
+    "munsell": "0.47RP 3.02/7.05",
+    "hex": "#6b3461",
+    "dE": 16.62,
+    "category": "low chroma (too muted/grey)",
+    "nearestArc": "Blue-Red (Violet)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Celadon",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "0.26BG 6.77/4.53",
+    "hex": "#73b4a1",
+    "dE": 17.67,
+    "category": "low chroma (too muted/grey)",
+    "nearestArc": "Yellow-Blue (Green)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Ruby Earth",
+    "range": "Derwent Lightfast Pencils",
+    "munsell": "1.56R 4.07/4.82",
+    "hex": "#885359",
+    "dE": 18.63,
+    "category": "low chroma (too muted/grey)",
+    "nearestArc": "BvR × RoY — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Carolina Blue",
+    "range": "Derwent Chromaflow Pencils",
+    "munsell": "2.83PB 6.51/5.83",
+    "hex": "#7fa4c7",
+    "dE": 18.97,
+    "category": "low chroma (too muted/grey)",
+    "nearestArc": "Yellow-Blue (Green)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Midnight Mauve",
+    "range": "Derwent Chromaflow Pencils",
+    "munsell": "3.2RP 2.55/7.13",
+    "hex": "#63264f",
+    "dE": 20.56,
+    "category": "low chroma (too muted/grey)",
+    "nearestArc": "Blue-Red (Violet)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Peacock Blue",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "1.52B 4.24/8.94",
+    "hex": "#00778e",
+    "dE": 16.59,
+    "category": "oversaturated (moderate pencil, anchor nearby is even less saturated)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Peacock Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "6.6BG 4.34/9.44",
+    "hex": "#007c7e",
+    "dE": 18.7,
+    "category": "oversaturated (moderate pencil, anchor nearby is even less saturated)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Emerald Green",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "munsell": "2.98G 6.05/14.31",
+    "hex": "#00b157",
+    "dE": 15.58,
+    "category": "structural limit (divergent path needed, cannot exist)",
+    "nearestArc": "Yellow-Blue (Green)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Pthalo Turquoise",
+    "range": "Castle Arts Gold Coloured Pencils",
+    "munsell": "1.52BG 5.18/10.69",
+    "hex": "#00957b",
+    "dE": 16.1,
+    "category": "structural limit (divergent path needed, cannot exist)",
+    "nearestArc": "Yellow-Blue (Green)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Pthalo Turquoise",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "munsell": "2.6BG 4.94/10.3",
+    "hex": "#008e7a",
+    "dE": 16.28,
+    "category": "structural limit (divergent path needed, cannot exist)",
+    "nearestArc": "Yellow-Blue (Green)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Summer Green",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "4.6G 6.01/13.74",
+    "hex": "#00b06a",
+    "dE": 17.82,
+    "category": "structural limit (divergent path needed, cannot exist)",
+    "nearestArc": "Yellow-Blue (Green)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Pthalo Green Light",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "munsell": "1.12BG 4.07/9.24",
+    "hex": "#00755f",
+    "dE": 19.03,
+    "category": "structural limit (divergent path needed, cannot exist)",
+    "nearestArc": "YgB × BvR — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Pthalo Green",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "munsell": "3.62BG 3.92/8.8",
+    "hex": "#007066",
+    "dE": 19.46,
+    "category": "structural limit (divergent path needed, cannot exist)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Beryl Green",
+    "range": "Caran d'Ache Luminance 6901",
+    "munsell": "2.96BG 5.09/11.09",
+    "hex": "#009380",
+    "dE": 19.64,
+    "category": "structural limit (divergent path needed, cannot exist)",
+    "nearestArc": "Yellow-Blue (Green)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Teal Green",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "munsell": "9.34BG 3.94/9.06",
+    "hex": "#00707e",
+    "dE": 20.07,
+    "category": "structural limit (divergent path needed, cannot exist)",
+    "nearestArc": "YgB × BvR — flipped",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Viridian",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "1.88BG 5.17/11.48",
+    "hex": "#00967c",
+    "dE": 20.46,
+    "category": "structural limit (divergent path needed, cannot exist)",
+    "nearestArc": "Yellow-Blue (Green)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Castle Green",
+    "range": "Castle Arts Premium Soft Touch Colored Pencils",
+    "munsell": "4.49G 5.04/12.97",
+    "hex": "#009455",
+    "dE": 20.88,
+    "category": "structural limit (divergent path needed, cannot exist)",
+    "nearestArc": "Yellow-Blue (Green)",
+    "nearestLevel": "L1"
+  },
+  {
+    "name": "Jungle Green",
+    "range": "Derwent Chromaflow Pencils",
+    "munsell": "2.01G 4.16/10.45",
+    "hex": "#007834",
+    "dE": 21.71,
+    "category": "structural limit (divergent path needed, cannot exist)",
+    "nearestArc": "RoY × YgB — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Grass Green",
+    "range": "Caran d'Ache Luminance 6901",
+    "munsell": "1.45G 4.44/11.82",
+    "hex": "#00812b",
+    "dE": 21.83,
+    "category": "structural limit (divergent path needed, cannot exist)",
+    "nearestArc": "RoY × YgB — like",
+    "nearestLevel": "L2"
+  },
+  {
+    "name": "Mustard",
+    "range": "Holbein Artists' Colored Pencil",
+    "munsell": "2.58Y 6.94/10.18",
+    "hex": "#d5a51e",
+    "dE": 17.17,
+    "category": "undersaturated (vivid pencil, anchor nearby is more vivid still)",
+    "nearestArc": "Red-Yellow (Orange)",
+    "nearestLevel": "L1"
+  }
+]

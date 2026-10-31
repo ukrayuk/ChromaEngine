@@ -660,15 +660,7 @@
     "C": 25.68701887985787,
     "H": 92.35972134389264,
     "munsellC": 3.78,
-    "nearestL": 64.83403473869323,
-    "nearestC": 34.973234201825015,
-    "nearestH": 100.69068959163116,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 26.467990639480348,
-    "dC": -9.286215321967145,
-    "dH": 8.330968247738511,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Castle",
@@ -1623,15 +1615,7 @@
     "C": 19.92915630155853,
     "H": 296.54981605300674,
     "munsellC": 3.72,
-    "nearestL": 30.442090562554768,
-    "nearestC": 11.54747462454103,
-    "nearestH": 325.3246070992618,
-    "nearestLevel": "L2",
-    "nearestArc": "RoY × YgB — flipped",
-    "dL": -16.241562371049422,
-    "dC": 8.381681677017498,
-    "dH": 28.774791046255075,
-    "category": "hue gap (unreliable match)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Derwent",
@@ -1791,15 +1775,7 @@
     "C": 20.028443437451582,
     "H": 149.31910778853583,
     "munsellC": 3.07,
-    "nearestL": 57.110177398385176,
-    "nearestC": 29.537797144455872,
-    "nearestH": 133.64729700402685,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 18.523181691745933,
-    "dC": -9.50935370700429,
-    "dH": 15.671810784508978,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Derwent",
@@ -2120,15 +2096,7 @@
     "C": 17.444122470027867,
     "H": 48.55621039042463,
     "munsellC": 3.4,
-    "nearestL": 55.12676641047348,
-    "nearestC": 26.565094540524278,
-    "nearestH": 57.375856084605914,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 33.788973431873245,
-    "dC": -9.12097207049641,
-    "dH": 8.819645694181283,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Holbein",
@@ -2204,15 +2172,7 @@
     "C": 15.993599253661781,
     "H": 92.68684220279503,
     "munsellC": 3.51,
-    "nearestL": 64.83403473869323,
-    "nearestC": 34.973234201825015,
-    "nearestH": 100.69068959163116,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 29.49015734637527,
-    "dC": -18.979634948163234,
-    "dH": 8.003847388836121,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Holbein",
@@ -2372,15 +2332,7 @@
     "C": 21.634196922449377,
     "H": 60.17609344826368,
     "munsellC": 3.84,
-    "nearestL": 54.71638600870406,
-    "nearestC": 24.4410980920756,
-    "nearestH": 62.647868112036974,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 20.379861092900853,
-    "dC": -2.8069011696262223,
-    "dH": 2.471774663773296,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Holbein",
@@ -2393,15 +2345,7 @@
     "C": 21.712385527682688,
     "H": 75.85331758719576,
     "munsellC": 3.44,
-    "nearestL": 64.83403473869323,
-    "nearestC": 34.973234201825015,
-    "nearestH": 100.69068959163116,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 12.709379604612437,
-    "dC": -13.260848674142327,
-    "dH": 24.837372004435395,
-    "category": "hue gap"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Holbein",
@@ -2414,15 +2358,7 @@
     "C": 23.806815358940636,
     "H": 88.2337883838125,
     "munsellC": 3.41,
-    "nearestL": 64.83403473869323,
-    "nearestC": 34.973234201825015,
-    "nearestH": 100.69068959163116,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 13.206630721162412,
-    "dC": -11.16641884288438,
-    "dH": 12.45690120781866,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Holbein",
@@ -2616,15 +2552,7 @@
     "C": 23.567658279791505,
     "H": 129.4019083605282,
     "munsellC": 3.29,
-    "nearestL": 60.38567924179304,
-    "nearestC": 31.09086881103221,
-    "nearestH": 119.39191262179871,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 14.7405990593264,
-    "dC": -7.523210531240704,
-    "dH": 10.0099957387295,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Holbein",
@@ -2700,15 +2628,7 @@
     "C": 16.107086984545727,
     "H": 219.59830029023246,
     "munsellC": 3.47,
-    "nearestL": 55.63092566693929,
-    "nearestC": 32.01597579286625,
-    "nearestH": 214.7490497265409,
-    "nearestLevel": "L1",
-    "nearestArc": "Yellow-Blue (Green)",
-    "dL": 30.406389593641038,
-    "dC": -15.908888808320523,
-    "dH": 4.849250563691555,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Holbein",
@@ -2847,15 +2767,7 @@
     "C": 17.00652689580332,
     "H": 211.42028959324222,
     "munsellC": 3.62,
-    "nearestL": 55.55815229613795,
-    "nearestC": 32.0044614262329,
-    "nearestH": 212.53822671163394,
-    "nearestLevel": "L1",
-    "nearestArc": "Yellow-Blue (Green)",
-    "dL": 8.712099701273146,
-    "dC": -14.997934530429582,
-    "dH": 1.1179371183917226,
-    "category": "low chroma (too muted/grey)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Holbein",
@@ -2868,15 +2780,7 @@
     "C": 14.38822815067178,
     "H": 276.0518300309496,
     "munsellC": 3.81,
-    "nearestL": 41.81805244360099,
-    "nearestC": 15.43042133758987,
-    "nearestH": 243.6834095448795,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 21.69408887039036,
-    "dC": -1.0421931869180892,
-    "dH": 32.36842048607008,
-    "category": "hue gap + tint (too light) (combo)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Holbein",
@@ -3297,15 +3201,7 @@
     "C": 18.744045261810136,
     "H": 65.99847533668132,
     "munsellC": 3.1,
-    "nearestL": 64.83403473869323,
-    "nearestC": 34.973234201825015,
-    "nearestH": 100.69068959163116,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 21.83095787010629,
-    "dC": -16.22918894001488,
-    "dH": 34.69221425494983,
-    "category": "hue gap + tint (too light) (combo)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Derwent",
@@ -3828,15 +3724,7 @@
     "C": 22.338048927060196,
     "H": 99.54764539919515,
     "munsellC": 3.22,
-    "nearestL": 64.83403473869323,
-    "nearestC": 34.973234201825015,
-    "nearestH": 100.69068959163116,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 27.241244332260322,
-    "dC": -12.635185274764819,
-    "dH": 1.1430441924360082,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Caran",
@@ -4713,15 +4601,7 @@
     "C": 20.619889686089397,
     "H": 52.519731352529234,
     "munsellC": 3.79,
-    "nearestL": 55.79526258671082,
-    "nearestC": 29.214003387232054,
-    "nearestH": 55.06977261997861,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 28.065065390191435,
-    "dC": -8.594113701142657,
-    "dH": 2.550041267449373,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Caran",
@@ -4760,15 +4640,7 @@
     "C": 18.1159752733274,
     "H": 93.07940367144867,
     "munsellC": 3.33,
-    "nearestL": 64.83403473869323,
-    "nearestC": 34.973234201825015,
-    "nearestH": 100.69068959163116,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 28.43843937860734,
-    "dC": -16.857258928497615,
-    "dH": 7.611285920182482,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Faber-Castell",
@@ -5129,15 +5001,7 @@
     "C": 24.773464866540035,
     "H": 95.58794699208485,
     "munsellC": 3.58,
-    "nearestL": 64.83403473869323,
-    "nearestC": 34.973234201825015,
-    "nearestH": 100.69068959163116,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 26.51158734458258,
-    "dC": -10.19976933528498,
-    "dH": 5.102742599546303,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Newell",
@@ -5171,15 +5035,7 @@
     "C": 27.339455867651647,
     "H": 103.56303457928918,
     "munsellC": 3.5,
-    "nearestL": 64.83403473869323,
-    "nearestC": 34.973234201825015,
-    "nearestH": 100.69068959163116,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 16.821479013080676,
-    "dC": -7.633778334173368,
-    "dH": 2.8723449876580247,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Newell",
@@ -5402,15 +5258,7 @@
     "C": 18.024126553185283,
     "H": 42.59480416002742,
     "munsellC": 3.59,
-    "nearestL": 55.12676641047348,
-    "nearestC": 26.565094540524278,
-    "nearestH": 57.375856084605914,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 29.17036171728583,
-    "dC": -8.540967987338995,
-    "dH": 14.781051924578492,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Newell",
@@ -5525,15 +5373,7 @@
     "C": 13.707971099546484,
     "H": 354.0489553759778,
     "munsellC": 3.46,
-    "nearestL": 53.01504459861329,
-    "nearestC": 19.03904006200192,
-    "nearestH": 71.17502406163892,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — flipped",
-    "dL": 6.42910324698876,
-    "dC": -5.331068962455436,
-    "dH": 77.1260686856611,
-    "category": "hue gap"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Newell",
@@ -5546,15 +5386,7 @@
     "C": 15.331570591761487,
     "H": 316.89145316195885,
     "munsellC": 3.91,
-    "nearestL": 40.970599553096875,
-    "nearestC": 16.934594278626744,
-    "nearestH": 254.742046676942,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 27.50368937815861,
-    "dC": -1.6030236868652565,
-    "dH": 62.14940648501684,
-    "category": "hue gap + tint (too light) (combo)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Newell",
@@ -5651,15 +5483,7 @@
     "C": 12.934929869316194,
     "H": 269.5947515351962,
     "munsellC": 3.58,
-    "nearestL": 55.15454223192104,
-    "nearestC": 33.043359523523606,
-    "nearestH": 231.45371433948046,
-    "nearestLevel": "L1",
-    "nearestArc": "Yellow-Blue (Green)",
-    "dL": 28.30295462736204,
-    "dC": -20.108429654207413,
-    "dH": 38.14103719571577,
-    "category": "hue gap + tint (too light) (combo)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Newell",
@@ -5735,15 +5559,7 @@
     "C": 15.756187926894244,
     "H": 238.2556742832673,
     "munsellC": 3.85,
-    "nearestL": 55.306569020524876,
-    "nearestC": 32.42478797527261,
-    "nearestH": 225.995668716743,
-    "nearestLevel": "L1",
-    "nearestArc": "Yellow-Blue (Green)",
-    "dL": 30.38005623265134,
-    "dC": -16.668600048378366,
-    "dH": 12.260005566524285,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Newell",
@@ -6192,15 +6008,7 @@
     "C": 18.560789526719848,
     "H": 62.21266383677452,
     "munsellC": 3.24,
-    "nearestL": 64.83403473869323,
-    "nearestC": 34.973234201825015,
-    "nearestH": 100.69068959163116,
-    "nearestLevel": "L2",
-    "nearestArc": "YgB × BvR — like",
-    "dL": 21.695757515942034,
-    "dC": -16.412444675105167,
-    "dH": 38.47802575485664,
-    "category": "hue gap + tint (too light) (combo)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Faber-Castell",
@@ -6320,15 +6128,7 @@
     "C": 10.695188302463203,
     "H": 255.88731398812854,
     "munsellC": 3.04,
-    "nearestL": 55.306569020524876,
-    "nearestC": 32.42478797527261,
-    "nearestH": 225.995668716743,
-    "nearestLevel": "L1",
-    "nearestArc": "Yellow-Blue (Green)",
-    "dL": 30.90933452878876,
-    "dC": -21.729599672809407,
-    "dH": 29.891645271385528,
-    "category": "tint (too light)"
+    "category": "neutral (Pastel-Adjacent)"
   },
   {
     "maker": "Faber-Castell",
